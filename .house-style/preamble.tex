@@ -1,0 +1,92 @@
+% !TEX TS-program = xelatex
+% File: preamble.tex
+% Purpose: Brett Reynolds house style LaTeX preamble
+% Version: 1.0.0
+%
+% Usage: \input{.house-style/preamble.tex} in main document
+
+% --- Layout & language ---
+\usepackage[margin=1in]{geometry}
+\usepackage[british]{babel}            % British conventions; use -ize spellings in prose
+\usepackage{fontspec}                  % Xe/LuaLaTeX
+\IfFontExistsTF{Charis SIL}{
+  \setmainfont{Charis SIL}
+}{
+  % Fallback: direct path to local font files (keeps house font)
+  \setmainfont{Charis SIL}[
+    Path=/Users/brettreynolds/Library/Fonts/,
+    UprightFont=CharisSIL-Regular.ttf,
+    BoldFont=CharisSIL-Bold.ttf,
+    ItalicFont=CharisSIL-Italic.ttf,
+    BoldItalicFont=CharisSIL-BoldItalic.ttf
+  ]
+}
+\usepackage[final]{microtype}
+\usepackage{marvosym}                  % \Cross symbol for cross-linguistic subscripts
+
+% --- Quotation marks ---
+\usepackage{csquotes}                  % \enquote{…} with locale-aware quoting
+\setquotestyle{english}                % Use double quotes even under british babel
+\usepackage{orcidlink}
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdfauthor={Brett Reynolds}
+  % pdftitle will be set in main document
+}
+
+% --- Maths and symbols ---
+\usepackage{amsmath,amssymb}
+
+% --- Numbered linguistic examples (LangSci/gb4e wrapper, no 'exe' env) ---
+\usepackage{langsci-gb4e}
+\makeatletter
+\@ifundefined{noautomath}{}{\noautomath}
+\makeatother
+
+% --- Lists & small utilities ---
+\usepackage{enumitem}
+\setlist{itemsep=0.3\baselineskip, topsep=0.3\baselineskip}
+\usepackage{xspace}
+
+% =========================
+% Bibliography (biblatex)
+% =========================
+% Default portable setup:
+\usepackage[backend=biber,style=apa,natbib=true,doi=true,isbn=false,url=true]{biblatex}
+\addbibresource{references.bib}
+
+% If working in LangSci projects, you can switch to their unified style:
+% \usepackage[backend=biber,style=unified,natbib=true,doi=true,isbn=false,url=false]{biblatex}
+
+% =========================
+% Light house macros
+% =========================
+% Linguistic mentions (italics, for words as examples)
+\newcommand{\mention}[1]{\textit{#1}}
+
+% Technical terms when introduced (small caps, for key theoretical concepts)
+\newcommand{\term}[1]{\textsc{#1}}
+
+% Use \emph{} for emphasis (sparingly; semantically meaningful emphasis)
+
+% Small-caps abbreviations for glosses
+\newcommand{\abbr}[1]{\textsc{#1}}
+
+% Cross-linguistic subscript marker (e.g., \textsc{subject}\crossmark)
+\newcommand{\crossmark}{\textsubscript{\Cross}}
+
+% Judgement markers
+\newcommand{\ungram}[1]{*\!#1}
+\newcommand{\marg}[1]{?\!#1}
+\newcommand{\odd}[1]{\#\!#1}
+
+% e.g., i.e., etc., with sensible spacing
+\newcommand{\eg}{e.g.,\xspace}
+\newcommand{\ie}{i.e.,\xspace}
+\newcommand{\etc}{etc.\xspace}
