@@ -22,7 +22,7 @@
 *Why "it's all gradient/constructed/statistical" throws out the baby*
 
 **Key points:**
-- The retreat to gradience: prototypes and fuzzy boundaries
+- The retreat to gradience: prototypes, feature bundles, and fuzzy boundaries
 - What this captures (phenomena) vs. what it doesn't explain (stability)
 - Why similarity space alone can't account for acquisition, projectibility
 
