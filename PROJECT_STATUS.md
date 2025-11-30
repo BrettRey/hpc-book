@@ -16,9 +16,9 @@
 
 ## In Progress
 
-- 🔄 Chapter content development (14 chapters defined)
+- 🔄 Chapter 1 drafting (Sections 1.1 and 1.2 complete)
 - 🔄 Example identification and development
-- 🔄 Bibliography compilation
+- 🔄 Bibliography compilation (Initial batch imported)
 
 ## Next Actions
 
