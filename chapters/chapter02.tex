@@ -1,0 +1,135 @@
+\chapter{Essentialism and its discontents}
+
+\textcite{huddleston2002} are admirably explicit about what a clause is:
+
+\begin{quote}
+The head of a clause (the predicate) is realised by a VP, and the head of a VP (the predicator) is realised by a verb. The verb thus functions as the ultimate head of a clause, and is the syntactically most important element within it. (p.~50)
+\end{quote}
+
+\noindent A footnote sharpens the point: \enquote{Since the verb is the ultimate head, we can identify clauses by the verb} (p.~50, n.~3). Clauses are VP-headed. Verbs are criterial. You identify a clause by identifying its verb.
+
+Fourteen chapters later, discussing constructions like \mention{They were standing against the wall} [\mention{with \uline{their hands above their heads}}] and [\mention{Although \uline{no longer a minister}}]\mention{, she continued to exercise great power}, \textit{CGEL} states: \enquote{The underlined clauses have subject + predicate structure, but with no verb in the predicate} (p.~1266).
+
+Clauses are identified by their verbs. These clauses have no verb.
+
+This is not carelessness. \textit{CGEL} is a work of exceptional rigour, two decades in the making, with scrupulous attention to just the kind of definitional precision that would flag this inconsistency. If this grammar produces an incoherence this stark, the problem is not with the grammarians. The problem is with something in the method itself.
+
+To see what that something is, we need to step back. What did essentialism give us? Why was it the default? And why do its successes make failures like this one invisible?
+
+\section{What essentialism built}
+
+Essentialism is not a theory that linguists consciously adopt. It is the default assumption that grammatical categories have definitions: necessary and sufficient conditions that determine membership. To be a noun is to have whatever properties make something a noun. To be a phoneme is to satisfy whatever criteria distinguish phonemes from allophones. The analyst's task is to discover these conditions, state them precisely, and apply them consistently.
+
+This assumption underwrote a century of productive research.
+
+The great descriptive grammars--\textcite{jespersen1909modern}, \textcite{quirk1985}, \textcite{huddleston2002}--organized vast empirical coverage using, at least in part, essentialist architecture. Each category receives a definition; membership follows from the definition; exceptions are noted and, where possible, explained. The result is not mere taxonomy. It is systematization that reveals patterns invisible to casual observation. \textit{CGEL}'s treatment of the English verb phrase, for instance, distinguishes catenative constructions from auxiliary constructions from control constructions, each with distinct syntactic properties, and shows how surface similarities mask structural differences. This analytical power depends on treating categories as if they have determinate boundaries. You can't show that \mention{keep} in \mention{keep talking} differs structurally from \mention{will} in \mention{will talk} unless you have clear criteria for what counts as an auxiliary.
+
+Generative grammar pushed the essentialist method further and discovered genuine regularities. Binding theory identified conditions on the interpretation of anaphors and pronouns--Principle A, Principle B, Principle C--that predict grammaticality across constructions and languages \autocite{chomsky1981}. Island constraints revealed that extraction is not freely available but blocked by specifiable structural configurations \autocite{ross1967}. The c-command relation, once isolated, turned out to govern phenomena from negative polarity licensing to quantifier scope \autocite{reinhart1983,ladusaw1979}. These are discoveries, not stipulations. They make predictions; the predictions are often correct; the patterns would not have been visible without the assumption that categories like \term{anaphor}, \term{interrogative phrase}, and \term{bounding node} have determinate definitions.
+
+Phonology followed the same logic. The Prague School's distinctive features \autocite{jakobson1956fundamentals} proposed that phonemes are bundles of binary properties: [±voice], [±nasal], [±continuant], and so on. This was explicitly essentialist--a phoneme just is its feature bundle--and it yielded the concept of natural classes. Segments that share a feature behave uniformly in phonological processes: voiced obstruents trigger voicing assimilation; nasals condition vowel nasalization; continuants pattern together in lenition. The predictive power was real. English plural allomorphy ([s] after voiceless segments, [z] after voiced ones, [ɪz] after sibilants) falls out from natural class specifications without listing each conditioning environment \autocite{hayes2009introductory}.
+
+Practical applications followed. Parsers require categories with boundaries; you can't write a phrase-structure rule for NP unless \mention{noun} picks out a determinate set. Pedagogical grammars depend on the same architecture: learners need to know what counts as a noun, a verb, a clause. Speech recognition systems, corpus annotation schemes, machine translation models--all inherit the essentialist assumption because all require categories to have membership conditions.
+
+None of this was naive. Linguists knew that boundaries could be fuzzy, that edge cases existed, that definitions were sometimes stipulative. But the fuzziness seemed like noise at the margins of a fundamentally sound architecture. When \mention{near} resisted clean classification as adjective or preposition, the response was to note the difficulty and move on, not to question whether adjective and preposition were the right kinds of kind.
+
+\section{When criteria converge}
+
+The essentialist method works brilliantly when it works.
+
+Consider canonical nouns in English: \mention{dog}, \mention{table}, \mention{idea}. They inflect for number. They take determiners. They function as heads of phrases that serve as arguments. They exhibit characteristic derivational morphology (\mention{-ness}, \mention{-ity}, \mention{-ation} attach to other categories to form nouns). They denote entities. Any of these criteria--morphological, syntactic, semantic--picks out essentially the same set of items. You can define \mention{noun} by inflection, or by distribution, or by function, or by denotation, and the results converge.
+
+This convergence is what makes category membership feel factual. When someone asks \enquote{Is \mention{dog} a noun?} the question seems as straightforward as \enquote{Is Fido a dog?} The criteria agree; there is nothing to debate; the answer is simply yes.
+
+Canonical verbs show the same pattern. They inflect for tense. They head VPs. They function as predicates. They take arguments with specifiable semantic roles. They license aspect and voice morphology. Morphological, syntactic, and semantic criteria converge. \mention{Run}, \mention{believe}, \mention{destroy}--all are unambiguously verbs by any reasonable standard.
+
+When criteria converge like this, essentialism provides exactly what it promises: a clear answer to \enquote{What is an X?} and a reliable procedure for deciding membership. The success is not illusory. The categories are real in the sense that matters practically: they support generalizations, enable systematic description, and underwrite successful applications.
+
+The trouble is that criteria do not always converge.
+
+\section{When criteria diverge}
+
+The category SUBJECT has been central to syntactic theory since its inception. Every theory needs it or something like it. Yet decades of cross-linguistic research have failed to produce an agreed definition.
+
+\textcite{keenan1976towards} proposed a cluster of behavioural and coding properties: subjects tend to be nominative-marked, to trigger verb agreement, to control reflexivization, to be deletable under coordination, to be accessible to relativization. No single property is necessary; the category is identified by a preponderance of properties. This was already a retreat from strict essentialism--a family resemblance approach rather than a definition--but it preserved the assumption that SUBJECT names a cross-linguistic kind.
+
+Generative grammar took a different approach. The subject is the external argument: the argument merged outside VP, occupying Spec-IP (later Spec-TP). This is a configurational definition, not a behavioural one. An NP is a subject if it occupies the right structural position, regardless of its morphological marking or behavioural properties \autocite{chomsky1981}.
+
+\textcite{dixon1994ergativity} offered a third criterion: the syntactic pivot, the argument that controls cross-clausal operations like coordination deletion and relativization. In accusative languages, this is typically the agent; in ergative languages, it may be the absolutive argument (patient of transitives, sole argument of intransitives).
+
+These three approaches--behavioural cluster, configurational position, syntactic pivot--do not pick out the same set of NPs across languages. In Dyirbal, the absolutive argument controls coordination deletion; by Dixon's criterion, it is the subject. By the configurational criterion, the ergative argument might be the subject, depending on your phrase structure assumptions. By Keenan's cluster, neither argument has a clear majority of subject properties.
+
+The debate has continued for fifty years. It has not converged. And it can't converge, because the disputants are not disagreeing about facts. They are disagreeing about which essence the term \mention{subject} should name. The framework provides no procedure for resolving this, because the framework assumes there is an essence to be discovered. When there are multiple candidates, each internally coherent, essentialism offers only continued assertion.
+
+Phonology exhibits the same pattern. What is a phoneme?
+
+The Prague School answer: a bundle of distinctive features, defined by oppositions within the system. The distributional answer, characteristic of American structuralism \autocite{harris1951}: a class of sounds in complementary distribution, united by phonetic similarity. The generative answer \autocite{chomsky1968sound}: an underlying segment in lexical representation, related to surface forms by ordered rules.
+
+These are not notational variants. They produce different category assignments. For English /t/, all three approaches identify a single phoneme, because the criteria converge: [tʰ], [t], [ɾ], [ʔ] are phonetically similar, in complementary distribution, and derived by rule from a single underlying segment. But for cases like the PIN-PEN merger (where /ɪ/ and /ɛ/ neutralize before nasals in some American dialects \autocite{labov2006atlas}), the approaches diverge. Is this one phoneme or two? The phonetic-similarity criterion says two (the vowels remain distinct in other environments). The complementary-distribution criterion says one (before nasals, there is no contrast). The underlying-form criterion depends on your analysis.
+
+Again, the debate is not about facts. It is about which criterion should be definitional. Essentialism assumes there is a right answer. The practice of phonology has not found one.
+
+The pattern extends beyond syntax and phonology, but the structure is now clear enough to return to where we began.
+
+\section{The microcosm}
+
+Return now to \textit{CGEL}'s verbless clauses.
+
+The grammar provides two criteria for clausehood. Chapter 1 offers a syntactic criterion: clauses are VP-headed, identified by their verbs. Chapter 14 invokes a structural-relational criterion: clauses exhibit subject + predicate organization.
+
+For canonical clauses, these converge. \mention{She left} has a verb; the verb heads a VP; the VP is predicated of a subject. Both criteria are satisfied. There is nothing to debate.
+
+For \mention{with their hands above their heads}, the criteria diverge. There is no verb. The syntactic criterion is not satisfied. But there is a subject (\mention{their hands}) and a predicate (\mention{above their heads}). The structural-relational criterion is satisfied.
+
+\textit{CGEL} calls these clauses. The move is exactly the one we have seen elsewhere: when the primary criterion fails, invoke a secondary one. The syntactic essence gives way to a semantic one--predication is what clauses are \emph{for}--and the category is preserved.
+
+Note what this is not. It is not a mistake. It is not laziness. It is not a failure to notice the inconsistency. Huddleston and Pullum are scrupulous analysts; if anyone would flag a definitional problem, they would. The inconsistency passes unnoticed because, within essentialist practice, it is normal. Criterion-switching is how analysts handle cases where the primary criterion fails. You find a criterion that works and apply it. The result is locally coherent--these constructions do exhibit predication, they do function clause-like, calling them clauses is not unreasonable--and globally inconsistent.
+
+Within essentialist practice, this is not error; it is the normal procedure. The error lies in the framework that makes the procedure necessary.
+
+The global inconsistency only becomes visible when you step back and ask: what is the essence of clausehood? VP-headedness, or subject-predicate structure? If VP-headedness, then verbless clauses are not clauses. If subject-predicate structure, then Chapter 1's identification criterion is wrong. Essentialism requires a single answer. \textit{CGEL} provides two, deploying whichever one serves the immediate analysis. The question \textit{CGEL} can't ask is: why do VP-headedness and subject--predicate structure usually coincide?
+
+\section{The blocked question}
+
+The pattern across these cases is not just \enquote{definitions fail.} Definitions fail in a specific way that blocks a specific question.
+
+When criteria diverge, essentialism frames the problem as: \textit{Which criterion is correct?} Which property is truly essential to SUBJECT, to phoneme, to clause? The debate becomes a search for the right definition, and because the framework provides no resolution procedure, the search continues indefinitely.
+
+The question that does not arise is: \textit{Why do these criteria converge in the first place?}
+
+For canonical nouns, morphological, syntactic, and semantic criteria all pick out the same set. That is a remarkable fact. It demands explanation. What mechanisms produce this convergence? What keeps the properties bundled together? And what happens at the boundaries where the mechanisms weaken?
+
+Essentialism can't ask this question, because essentialism presupposes the convergence rather than explaining it. If \mention{noun} is defined by property P, then every noun has P by definition; the convergence with properties Q and R is either accidental or stipulated. The framework makes convergence invisible as an explanandum.
+
+Boundary cases--\mention{furniture}, verbless clauses, near-mergers, SUBJECT in ergative languages--are where criteria come apart. Under essentialism, these are embarrassments: problem cases to be filed away with special labels, exceptions that prove (in the old sense of \mention{test}) the rule. They generate debates about which criterion is really essential. They do not generate inquiry into the mechanisms that usually keep criteria aligned.
+
+But if you step outside the essentialist framework, boundary cases become the most informative data. They are where you can see the mechanisms at work, precisely because the mechanisms are under strain. Phonetic similarity and complementary distribution usually converge; where they do not, you learn something about what maintains phoneme categories. Morphosyntax and semantics usually align; where they do not, you learn something about the mapping between them.
+
+The essentialist search for definitions does not merely fail to find definitions. It prevents the question that boundary cases could answer. Once you treat convergence itself as something to be explained, you are asking the question that homeostatic property cluster theory was built to answer.
+
+\section{A parallel}
+
+This pattern will be familiar to philosophers of biology.
+
+The species problem has the same structure. Morphological species concepts, biological species concepts \autocite{mayr1942}, phylogenetic species concepts, ecological species concepts--each offers a criterion, each is internally coherent, and they do not converge on the same groupings. Ring species, hybridizing populations, asexual lineages--these are the boundary cases where criteria come apart.
+
+For a century, the debate was framed as: which criterion is the correct definition of \mention{species}? The debate did not resolve. It could not resolve, because the framework assumed there was an essence to be discovered.
+
+What dissolved the debate was not a better definition but a different question. Instead of \enquote{What is a species?} biologists began asking \enquote{What mechanisms maintain this population as a cohesive unit over time?} The answer varies: gene flow, shared selection pressures, developmental constraints, mate recognition systems. Different mechanisms predominate in different cases. \mention{Species} names not a single kind defined by a single essence but a cluster of populations maintained by overlapping mechanisms.
+
+This shift--from definition-seeking to mechanism-seeking--is what made boundary cases informative. Ring species are not embarrassments to be explained away; they are evidence of what happens when isolating mechanisms operate incompletely. Hybridization is not a failure of species boundaries; it reveals the conditions under which reproductive isolation is maintained or breaks down.
+
+Chapter 5 will develop this parallel in detail. For now, note only that linguistics is not uniquely embarrassed by essentialist failure. The pattern is general, and so, potentially, is the solution.
+
+\section{The temptation}
+
+There is an obvious response to these failures. If essentialism's failures are systemic, we might conclude that the fault lies not in the method but in the object of study--perhaps categories are illusions we project onto continuous data. If the essentialist search for definitions fails--if no single criterion captures SUBJECT, or phoneme, or clause--perhaps there are no real categories at all.
+
+Perhaps \mention{noun} and \mention{verb} are just convenient labels for regions of a continuous similarity space. Perhaps grammatical categories are prototype structures with fuzzy boundaries and no determinate membership. Perhaps the boundaries are constructed by analysts, not discovered in the data.
+
+This is the nominalist temptation. It captures something real. The gradience is real; the fuzzy boundaries exist; the variation is not noise. Prototype theory and exemplar models and usage-based approaches emerged precisely because essentialism could not accommodate these facts \autocite{taylor2003}.
+
+But nominalism comes at a cost. If categories are just gradient similarity clusters, why are they stable? Children acquire them; languages maintain them across centuries; typological patterns recur. Similarity space alone can't explain why these particular clusters, with these particular properties, rather than others.
+
+If the essentialist says \enquote{categories are defined,} and is wrong, it does not follow that categories are arbitrary or constructed. It may be that categories are real but not defined--maintained by mechanisms rather than constituted by essences.
+
+Chapter 3 must first show why the nominalist retreat fails; only then can Chapter 5 develop the alternative.
