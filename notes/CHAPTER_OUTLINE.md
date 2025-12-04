@@ -1,14 +1,16 @@
 # Chapter Outline: Language Without Essences
 
-## Part I: The Problem
+## Part I: The Problem (3 chapters)
 
-### Ch 1: What are grammatical categories?
+### Ch 1: Words That Won't Hold Still
 *The question linguists think they've answered but haven't*
 
 **Key points:**
 - The unexamined assumption: categories exist with determinate boundaries
 - What linguists ask vs. what those questions presuppose
-- Setting up the stakes
+- Setting up the stakes: linguistics has a problem it doesn't know it has
+- The "Impasse": Essentialism fails on data; Prototype Theory fails on explanation.
+- *Note: HPC introduction moved to Part II.*
 
 ### Ch 2: Essentialism and its discontents
 *Why the default view fails—furniture, weak definites, boundary cases*
@@ -17,22 +19,18 @@
 - The essentialist default: necessary and sufficient conditions
 - Systematic failures: *furniture*, *the*, reciprocals
 - Boundary cases aren't noise—they're evidence
+- The "blocked question": definition-seeking vs. mechanism-seeking
+- *Note: "The temptation" section moved/integrated into Chapter 3.*
 
-### Ch 3: The nominalist temptation
-*Why "it's all gradient/constructed/statistical" throws out the baby*
-
-**Key points:**
-- The retreat to gradience: prototypes, feature bundles, and fuzzy boundaries
-- What this captures (phenomena) vs. what it doesn't explain (stability)
-- Why similarity space alone can't account for acquisition, projectibility
-
-### Ch 4: The cost of confusion
-*Specific research programs held back by unclear foundations*
+### Ch 3: What we haven't been asking
+*The pivot: The nominalist temptation and why it fails*
 
 **Key points:**
-- Concrete examples of research stalled by bad metaphysics
-- Typology: assumed universals vs. empirical kinds
-- Methodology: when boundary cases become principled data
+- **The nominalist temptation:** Haspelmath's "comparative concepts" argument. If definitions fail, maybe categories are just convenient fictions?
+- **The cost:** If categories are just yardsticks, cross-linguistic stability is unexplained.
+- **The nominalist overcorrection:** Conflating "no essence" with "no determinacy."
+- **The need for discipline:** If some categories are natural kinds and some aren't, we need criteria.
+- **The questions neither tradition has posed:** What maintains stability without essence?
 
 ---
 
@@ -138,4 +136,4 @@
 - Part IV synthesizes implications for practice
 - Target: ~15-20 pages per chapter for substantive chapters
 
-**Total: 14 chapters across 4 parts**
+**Total: 13 chapters across 4 parts** (Chapter 4 was cut in December 2025)

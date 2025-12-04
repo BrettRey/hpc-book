@@ -18,10 +18,9 @@ This framework, adapted from philosophy of biology, resolves longstanding puzzle
 
 The book is organized in four parts:
 
-### Part I: The Problem
+### Part I: The Problem (3 chapters)
 - Diagnosis of essentialism's failures
 - Why nominalism/prototype theory leaves stability unexplained
-- The cost of unclear foundations
 
 ### Part II: The Solution
 - Projectibility: Why categories support induction
@@ -80,10 +79,11 @@ The book is organized in four parts:
 5. Compile bibliography
 6. Draft and revise complete manuscript
 
-## Notes
+## Editorial Notes
 
-This is a **foundations book** that makes explicit the metaphysics underlying grammatical category theory. The goal is not just to provide a useful analytical tool, but to correctly characterize what grammatical categories *are* and transform what questions linguists ask and what answers they accept.
+- **Chapter 4 ("The cost of confusion") was cut** from the book structure in December 2025. The book now has 13 chapters total across 4 parts.
+- This is a **foundations book** that makes explicit the metaphysics underlying grammatical category theory. The goal is not just to provide a useful analytical tool, but to correctly characterize what grammatical categories *are* and transform what questions linguists ask and what answers they accept.
 
 ---
 
-*Last updated: November 29, 2025*
+*Last updated: December 3, 2025*
