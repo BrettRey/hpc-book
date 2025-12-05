@@ -36,13 +36,31 @@
 
 ## Part II: The Fix
 
-### Ch 5: Kinds without essences
-*HPC introduced, but motivated by the problems in Part I*
+### Ch 4: Homeostatic Property Clusters
+*The third option: neither essence nor fiction*
 
 **Key points:**
-- The species problem in biology
-- HPC solution: property clusters + mechanisms
-- Extension to grammar (not mere analogy)
+- The species problem in biology: Boyd's HPC solution
+- What HPC kinds are: property clusters + mechanisms
+- The standing-wave metaphor: dynamic stability
+- Sciences that made the shift (biology, chemistry)
+- From biology to grammar: the parallel
+- Mechanisms preview (acquisition, entrenchment, alignment, transmission)
+- What counts as explanation: mechanism-talk vs. circular classification
+- HPC recovers determinacy: causal grounding, localized indeterminacy
+- Neo-Aristotelian coda: Ch 2 exonerated Aristotle; Ch 4 recovers him
+
+### Ch 5: Discrete from continuous
+*The discreteness problem and its hyperreal solution*
+
+**Key points:**
+- The discreteness problem: continuous substrates → discrete categories
+- Phase transitions as model: scale-dependent tolerance
+- The hyperreal formalization: infinitesimals, sharp boundaries
+- From heaps to categories: multi-dimensional feature spaces
+- Mechanisms and basins: geometry + maintenance
+- Gradient judgments, discrete categories
+- Dual membership explained
 
 ### Ch 6: Projectibility—why categories support induction
 *The epistemic payoff*
@@ -136,4 +154,4 @@
 - Part IV synthesizes implications for practice
 - Target: ~15-20 pages per chapter for substantive chapters
 
-**Total: 13 chapters across 4 parts** (Chapter 4 was cut in December 2025)
+**Total: 14 chapters across 4 parts** (Chapter 4 restored as HPC introduction, December 2025)

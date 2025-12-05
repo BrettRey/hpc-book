@@ -80,9 +80,9 @@ Uses `biblatex` with APA style and `natbib=true`:
 
 ## Book Structure
 
-Four parts, 13 chapters (Chapter 4 was cut):
+Four parts, 14 chapters:
 1. **Part I: The Problem** (Ch 1-3) - Essentialism's failures, nominalism's limits
-2. **Part II: The Fix** (Ch 5-8) - HPC kinds, projectibility, homeostasis, failure modes
+2. **Part II: The Fix** (Ch 4-8) - HPC kinds, discreteness, projectibility, homeostasis, failure modes
 3. **Part III: Categories Reconsidered** (Ch 9-12) - Countability, definiteness, word classes, constructions
 4. **Part IV: Implications** (Ch 13-14) - Grammaticality, methodological consequences
 
@@ -90,6 +90,7 @@ Four parts, 13 chapters (Chapter 4 was cut):
 - **Ch 1**: Drafted and revised
 - **Ch 2**: Drafted and revised
 - **Ch 3**: Drafted
+- **Ch 4**: Outlined (HPC introduction—species problem, mechanisms, standing-wave metaphor)
 - **Ch 5**: Drafted and revised (discreteness problem, hyperreal formalization)
 
 ## Key Concepts
