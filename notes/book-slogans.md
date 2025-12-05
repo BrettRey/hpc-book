@@ -17,6 +17,7 @@
    - "This is the \term{maintenance view}, and it's what Part II develops."
 
 3. **Chapter 4** (opening): Formally introduces the view and its origin (Boyd's HPC framework)
+   - Pivot paragraph: "kinds without essences → kinds with mechanisms"
 
 4. **Chapter 5** (conclusion): "The categories are real because they're maintained, not because they're defined."
 
@@ -35,3 +36,18 @@
 
 - "Gradience is easy; stability is the puzzle."
 - "Categories persist because mechanisms hold them in place."
+
+---
+
+## Terminology (Updated December 5, 2025)
+
+### Failure modes (from stack.tex):
+- **thin**: lacking stabilizing mechanisms (nonce coinages, idiolects)
+- **fat**: pooling heterogeneous phenomena (cross-linguistic umbrellas)
+- **negative**: complement/wastebasket categories defined by what they're not
+
+### Usage distinctions:
+- **\term{}**: for technical terms being defined (entrenchment, symmetry condition)
+- **\mention{}**: for mentioning specific words (fun, near, will, noun)
+- **determiner**: function in an NP
+- **determinative**: lexical category (~50 items)
