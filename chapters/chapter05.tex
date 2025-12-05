@@ -62,7 +62,7 @@ If $|\Delta\mu_i|/\mu(c_i)$ is infinitesimal, then $P(c_i) \leftrightarrow P(c_{
 
 In plain language: if the fractional change is infinitesimally small, the predicate's truth value is preserved. This captures the intuition that proportionally tiny changes don't matter, while allowing that accumulated changes can.
 
-Now model the entire Sorites series~-- from clear heap to clear non-heap~-- as a \emph{hyperfinite chain} of $\omega$ steps, where $\omega$ is an infinite hypernatural number. This is a standard construction in nonstandard analysis: a sequence indexed by hypernaturals, behaving internally like a finite sequence but containing infinitely many elements from the external perspective.
+Now model the entire Sorites series~-- from clear heap to clear non-heap~-- as a \emph{hyperfinite chain} of $\omega$ steps, where $\omega$ is an infinite hypernatural number (Figure~\ref{fig:hyperfinite-chain}). This is a standard construction in nonstandard analysis: a sequence indexed by hypernaturals, behaving internally like a finite sequence but containing infinitely many elements from the external perspective.
 
 \begin{figure}[t]
 \centering
@@ -133,7 +133,7 @@ where $\phi_k$ is the embedding function for feature $k$, $w_k$ is a weight refl
 
 This construction is a normed, slightly more structured cousin of Gower distance, widely used for mixed-type data \citep{gower1971}. It is also in the spirit of Gärdenfors's \emph{conceptual spaces}: multiple quality dimensions grouped into domains, each with its own metric, combined via weighted aggregation across domains \citep{gardenfors2000}. The connection to HPC is direct: the weights $w_k$ encode which properties play a stronger homeostatic role in stabilizing the category. Properties central to the cluster get large weights; free riders and peripheral features get small ones.
 
-I am not claiming this construction is uniquely correct. The point is that there exists a class of admissible metrics that yield the same small-change structure, and any member of that class makes precise the idea that some multi-dimensional perturbations are negligible relative to the current scale. The Relative Tolerance condition holds for all admissible metrics, not just one distinguished choice.
+I am not claiming this construction is uniquely correct. The point is that there exists a class of admissible metrics that yield the same small-change structure, and any member of that class makes precise the idea that some multi-dimensional perturbations are negligible relative to the current scale. The Relative Tolerance condition holds for all admissible metrics, not just one distinguished choice. Figure~\ref{fig:basin-visualization} illustrates the resulting landscape.
 
 \paragraph{Visualizing the landscape.}
 The three-dimensional surface we have been imagining is a visualization: the potential function $V$ is defined over the full feature space $X \subseteq \mathbb{R}^n$, with category cores corresponding to local minima and boundaries to the stable manifolds of saddle points. Any particular ``valley and ridge'' picture is the graph of $V$ over a low-dimensional slice of $X$ on which the relevant contrasts are visible. Choosing the metric~-- the weights $w_k$ and the embedding functions $\phi_k$~-- is, in effect, choosing a geometry for the energy landscape: which directions are steep, which are shallow, which features matter most for which basin. Relative Tolerance then says: stay within one valley when perturbations are small in that geometry.
@@ -182,7 +182,7 @@ Linguistic categories don't exist in isolation. Nouns compete with verbs; adject
 
 This creates additional structure. An item near the noun-verb boundary might be stably a noun (because it's deep in the noun basin) or unstably categorized (because small changes could push it into the verb basin). The same item might be far from the noun-adjective boundary, so its nominal vs.\ adjectival status is never in doubt. Category membership is determinate in multiple dimensions simultaneously, with different degrees of stability in different directions.
 
-Consider \mention{fun}. In the frequency-of-degree-modification dimension, it has drifted toward adjectives: \mention{very fun} is increasingly acceptable. In the takes-a-determiner dimension, it remains nominal: \mention{the fun we had} is unremarkable. The item sits near the noun-adjective boundary in one dimension, deep in noun territory in another. Its apparent mixed status reflects its location in a multi-dimensional space, not indeterminacy about what categories are.
+Consider \mention{fun}. In the frequency-of-degree-modification dimension, it has drifted toward adjectives: \mention{very fun} is increasingly acceptable. In the takes-a-determiner dimension, it remains nominal: \mention{the fun we had} is unremarkable. The item sits near the noun-adjective boundary in one dimension, deep in noun territory in another. Its apparent mixed status reflects its location in a multi-dimensional space, not indeterminacy about what categories are. Figure~\ref{fig:diachronic-trajectory} traces this movement over time.
 
 \begin{figure}[t]
 \centering
@@ -212,7 +212,7 @@ This predicts:
 \begin{itemize}
 \item Clear cases cluster at scale extremes (1s and 7s), because items deep in the grammatical or ungrammatical basin are stably categorized and noise doesn't flip them.
 \item Borderline cases distribute across the middle, because items near the boundary are sensitive to noise~-- small processing fluctuations can shift judgments in either direction.
-\item The gradient spread is widest near the boundary, not because grammaticality is gradient, but because that's where the signal-to-noise ratio is lowest.
+\item The gradient spread is widest near the boundary, not because grammaticality is gradient, but because that's where the signal-to-noise ratio is lowest (see Figures~\ref{fig:two-layer-model} and~\ref{fig:judgment-variance}).
 \end{itemize}
 
 \begin{figure}[t]
@@ -242,7 +242,7 @@ The answer is that discreteness holds predicate-by-predicate, not across predica
 
 This follows naturally from the HPC framework. Categories are maintained by mechanisms, not defined by partition. The mechanisms maintaining prepositionhood~-- patterns of complementation, head-of-PP status, lack of degree modification~-- are partially independent of those maintaining adjectivehood~-- gradability, predicative use, comparative morphology. An item can fall within the tolerance threshold for both, satisfying the clustering criteria for each.
 
-Where the mechanisms align, the basins are disjoint: nouns and verbs occupy separate regions because the mechanisms that maintain them pull in different directions. Where the mechanisms cross, the basins overlap: adjectives and prepositions share enough properties~-- predicative function, modification of nominals~-- that some items cluster with both.
+Where the mechanisms align, the basins are disjoint: nouns and verbs occupy separate regions because the mechanisms that maintain them pull in different directions (Figure~\ref{fig:disjoint-overlap}, left). Where the mechanisms cross, the basins overlap: adjectives and prepositions share enough properties~-- predicative function, modification of nominals~-- that some items cluster with both (Figure~\ref{fig:disjoint-overlap}, right).
 
 The regions of overlap are not arbitrary. They're located where the property clusters themselves overlap~-- where an item can satisfy the tolerance criteria for both categories simultaneously. These are exactly the cases that trouble essentialism: items that have \enquote{mixed} status because they satisfy criteria for multiple categories. On the HPC + hyperreal view, mixed status is not indeterminacy but dual location: the item is in two basins at once, stably, because the mechanisms that maintain each basin both apply.
 
