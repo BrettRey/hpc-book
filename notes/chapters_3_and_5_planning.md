@@ -41,7 +41,20 @@
 
 ## Chapter 5: Homeostatic Property Clusters
 
+**Status:** DRAFTED AND REVISED (Dec 4, 2025)
+
 **Core job:** Deliver the alternative. Show what you get in return. Make it work for linguistics.
+
+### Revision history
+
+- **Dec 4, 2025**: Consolidated from `drafts/chapter05_discreteness_section.tex` into `chapters/chapter05.tex`
+- Implemented advisory board feedback (Boyd, Rosch, Dąbrowska, Jackendoff, Godfrey-Smith, Croft)
+- Addressed Packaging Board concerns:
+  - Front-loaded problem statement and answer
+  - Cut defensive passages and phantom interlocutors
+  - Lightened paragraph load with strategic breaks
+  - Three-pass syntactic texture review (parataxis, coordination, subordination)
+- Current length: 325 lines, ~46KB
 
 ### Material identified:
 

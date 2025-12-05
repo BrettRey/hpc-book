@@ -62,28 +62,32 @@ The book is organized in four parts:
 ## Development Status
 
 - [x] Synopsis drafted (~880 words)
-- [ ] Part I outline
-- [ ] Part II outline
+- [x] Part I outline complete
+- [x] Part II outline complete
 - [ ] Part III outline
 - [ ] Part IV outline
-- [ ] Chapter drafts
-- [ ] Examples and case studies
-- [ ] Bibliography
+- [x] **Chapter 1** drafted and revised (introduction to HPC framework)
+- [x] **Chapter 2** drafted and revised (essentialism critique, Aristotle rehabilitation)
+- [x] **Chapter 3** drafted (nominalist retreat, Shilluk example)
+- [x] **Chapter 5** drafted and revised (discreteness problem, hyperreal formalization)
+- [ ] Remaining chapter drafts
+- [x] Figures for Chapters 1, 2, 5
+- [x] Bibliography (~3700 entries)
 
 ## Next Steps
 
-1. Develop detailed outlines for each part
-2. Identify key examples and case studies
-3. Draft chapters sequentially
-4. Create supporting figures and diagrams
-5. Compile bibliography
-6. Draft and revise complete manuscript
+1. Continue Packaging Board feedback implementation (Chapters 1–3)
+2. Draft remaining chapters (Part III–IV)
+3. Integrate cross-chapter forward/back references
+4. Final polish pass on completed chapters
+5. Compile and review complete manuscript
 
 ## Editorial Notes
 
 - **Chapter 4 ("The cost of confusion") was cut** from the book structure in December 2025. The book now has 13 chapters total across 4 parts.
 - This is a **foundations book** that makes explicit the metaphysics underlying grammatical category theory. The goal is not just to provide a useful analytical tool, but to correctly characterize what grammatical categories *are* and transform what questions linguists ask and what answers they accept.
+- **Chapter 5 revision (Dec 4, 2025)**: Consolidated from draft, implemented advisory board feedback (Boyd, Rosch, Dąbrowska, Jackendoff, Godfrey-Smith, Croft), and addressed Packaging Board concerns (front-loading, defensiveness, paragraph load, syntactic texture).
 
 ---
 
-*Last updated: December 3, 2025*
+*Last updated: December 4, 2025*
