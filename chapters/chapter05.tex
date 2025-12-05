@@ -3,10 +3,20 @@
 
 % Chapter 4 introduces HPC framework; this chapter applies it to the discreteness problem.
 
+I sent the synopsis to two colleagues asking if I should write this book. Geoff Pullum said yes. Ryan Nefdt said yes~-- and added something I hadn't thought of:
+
+\begin{quote}
+I personally favour a phase transition approach in which discreteness really is a feature of a system under a particular kind of measurement and context and continuity under a different one (like water moving from liquid to gas takes on different properties). So borrowing more from physics than biology.
+\end{quote}
+
+I woke at 4:15 the next morning thinking about phase transitions. By that evening, I had this chapter.
+
+Here is the puzzle I hadn't known I needed to solve.
+
 \section{How clusters become discrete}
 \label{sec:5:discreteness}
 
-Here is the puzzle. Grammatical categories look discrete: a word is a noun or it isn't, a sentence is grammatical or it isn't. But the properties underlying those categories are continuous: frequency distributions shade smoothly from one pattern to another, phonetic realisations vary along continuous dimensions, semantic features don't come with sharp edges. How do discrete categories emerge from continuous substrates?
+Grammatical categories look discrete: a word is a noun or it isn't, a sentence is grammatical or it isn't. But the properties underlying those categories are continuous: frequency distributions shade smoothly from one pattern to another, phonetic realisations vary along continuous dimensions, semantic features don't come with sharp edges. How do discrete categories emerge from continuous substrates?
 
 Two familiar answers, each half right. The essentialist says categories are discrete because their defining properties are discrete~-- either something has the essence or it doesn't. This gets the discreteness right but at the cost of definitions that don't exist. The prototype theorist accepts the gradience but can't explain the sharp edges or the stability~-- why don't categories blur into each other over time? We need a third option: an account of how mechanisms operating on continuous substrates produce categorical outcomes.
 
@@ -197,6 +207,21 @@ The homeostatic mechanisms are exactly these stabilising forces. They don't defi
 \textbf{Interactive alignment} maintains consistency across speakers. In conversation, speakers accommodate to each other's usage, converging on shared norms. This creates pressure toward uniformity within a speech community, keeping items in their basins even when individual variation would otherwise push them toward boundaries.
 
 \textbf{Iterated transmission} filters variation across generations. Not all variants survive transmission; some are easier to learn, easier to produce, easier to understand. The variants that survive tend to be those well inside basins~-- clear exemplars, not boundary cases. Over generations, this filtering effect stabilizes the basin structure.
+
+Consider a thought experiment. You invent a small language~-- twelve signals for twelve meanings~-- and teach it to someone. That person teaches what they learned to a third, who teaches a fourth, and so on. Each link in the chain introduces errors: the learner doesn't quite reproduce what they heard. You might expect the language to degrade into noise. But the opposite happens. Structure emerges.
+
+This isn't speculation. \citet{kirby2008} ran exactly this experiment in the laboratory. Participants learned an artificial language associating nonsense words with coloured shapes, then reproduced it for the next \enquote{generation}. The initial language was random: no pattern connected form to meaning. By generation ten, the language had become compositional~-- word parts systematically encoded colour, shape, and motion. Transmission error dropped from roughly 50\% in the first generation to under 10\%. Crucially, no individual designed this structure. It emerged from the transmission process itself, as learnable variants outcompeted arbitrary ones.
+
+Figure~\ref{fig:iterated-learning} shows the pattern. As transmission error decreases (left panel), compositionality increases (right panel). The languages that survive iterated transmission are those easiest to learn~-- and learnable languages, it turns out, are structured languages. The bottleneck of imperfect learning acts as a filter, selecting for systematicity.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/5.iterated-learning.png}
+\caption{Structure from transmission. Left: transmission error drops across generations as the language becomes more learnable. Right: compositionality index rises as systematic form--meaning mappings emerge. Data approximated from \citet{kirby2008} and \citet{kirby2015compression}. The pattern shows that iterated cultural transmission, not intentional design, produces linguistic structure.}
+\label{fig:iterated-learning}
+\end{figure}
+
+The relevance to grammatical categories is direct. If category structure is transmitted imperfectly across generations~-- as it must be, since every child learns anew~-- then the structures that persist are those that survive the transmission bottleneck. Clear exemplars transmit better than boundary cases. Systematic patterns transmit better than exceptions. The basin structure we observe today is the residue of this filtering process, iterated across thousands of generations.
 
 \textbf{Functional pressure} shapes the landscape. Categories exist because they serve functions: nouns package referents for tracking across discourse; verbs encode events and their participants; definiteness signals identifiability. Where functional pressure is strong, basins are deep and boundaries are sharp. Where it weakens, categories erode or restructure.
 
