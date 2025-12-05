@@ -41,3 +41,6 @@ env/
 # Backup files
 *.bak
 *.backup
+
+# Research PDFs (large files)
+literature/
