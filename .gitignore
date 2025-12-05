@@ -6,9 +6,17 @@
 *.toc
 *.bbl
 *.blg
+*.bcf
+*.run.xml
+*.xdv
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
 build/
 
 # OS files
