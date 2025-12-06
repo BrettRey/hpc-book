@@ -45,7 +45,7 @@
 - The standing-wave metaphor: dynamic stability
 - Sciences that made the shift (biology, chemistry)
 - From biology to grammar: the parallel
-- Mechanisms preview (acquisition, entrenchment, alignment, transmission)
+- Mechanisms preview (acquisition, entrenchment, alignment, transmission) — *conceptual intro; full treatment in Ch 7*
 - What counts as explanation: mechanism-talk vs. circular classification
 - HPC recovers determinacy: causal grounding, localized indeterminacy
 - Neo-Aristotelian coda: Ch 2 exonerated Aristotle; Ch 4 recovers him
@@ -58,7 +58,7 @@
 - Phase transitions as model: scale-dependent tolerance
 - The hyperreal formalization: infinitesimals, sharp boundaries
 - From heaps to categories: multi-dimensional feature spaces
-- Mechanisms and basins: geometry + maintenance
+- Mechanisms and basins: geometry + maintenance — *applied to discreteness; deep-dive in Ch 7*
 - Gradient judgments, discrete categories
 - Dual membership explained
 
@@ -74,9 +74,11 @@
 *The mechanistic story*
 
 **Key points:**
-- Acquisition, entrenchment, interactive alignment, iterated transmission
-- The *the* example: mechanisms in action
-- Why clusters stay bundled despite fuzzy boundaries
+- Multi-timescale framework (millisecond, year, decade mechanisms)
+- Internal vs. external mechanisms (Miller 2021)
+- Bidirectional inference (comprehension and production)
+- Case studies: phonemes, words, constructions
+- *Scope: Full treatment of mechanisms previewed in Ch 4; applied to basins in Ch 5*
 
 ### Ch 8: Failure modes—thin, fat, negative
 *How to know when you don't have a kind*
