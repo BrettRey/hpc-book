@@ -5,23 +5,26 @@
 % Sticky sentence: "The mechanism projects even though the category, as traditionally defined, doesn't."
 % See notes/book-slogans.md for the book-wide slogan strategy.
 
+% Epigraph from p. 206 of the edition cited in references.bib
 \epigraph{If there are not [pedicabs], Mr Tagomi thought, I would be well advised to retire to secluded place and kill myself.}{Philip K. Dick, \textit{The Man in the High Castle}}
 
-The previous chapter established that grammatical categories are real~-- maintained by mechanisms, not defined by essences. This chapter asks what we get in return. If categories aren't defined, why should learning about one instance tell us anything about others?
+Tagomi has slipped between worlds, and he needs to know which one he's in. Pedicabs exist in his home world but not in the other. He's betting his life on the projectibility of a single feature.
 
-The answer is \term{projectibility}: the ability of a category to support inductive inference. You learn that \mention{dog} is a noun~-- it takes determinatives, pluralises, functions as an argument. From this, you infer that unfamiliar nouns will behave similarly. The inference isn't guaranteed; \mention{sheep} doesn't pluralise the usual way. But it's reliable enough to be useful. That's projectibility: learning from instances and projecting to the category.
+You encounter \mention{car}. It takes determinatives, pluralises, functions as an argument. You've never seen \mention{pedicab}~-- but you bet it does the same. You're usually right. The category \term{noun} lets you project from instances you've seen to instances you haven't. That's the bet, and it usually pays off.
 
-The essentialist has a ready explanation. Categories support induction because they have definitions. If something satisfies the definition, it has the defining properties; those properties are what you project. Simple.
+Polish aspect offers a puzzle. Every textbook says the same thing: perfective aspect marks bounded events~-- completed, delimited, whole. Imperfective marks unbounded events~-- ongoing, habitual, incomplete. The definitions are centuries old, drilled into every language learner, refined in journal articles. They should work.
 
-The trouble is that the explanation requires definitions we don't have. Chapter~\ref{ch:essentialism} showed that no list of necessary and sufficient conditions distinguishes nouns from non-nouns, verbs from non-verbs. So where does projectibility come from?
+They don't. When computational models trained on those definitions try to predict which aspect Polish speakers actually use, they fail~-- 77\% accuracy for perfective, against 98\% for imperfective \citep{divjak2024aspect}. The definitions that have been taught for generations capture only half the system. Something is projectible about aspect; it just isn't what the textbooks say.
 
-The HPC answer: mechanisms. Categories support induction not because they're defined but because they're mechanistically grounded. The mechanisms that maintain the category also explain why its members resemble each other. Learning about one member tells you about others because the same mechanisms shaped both.
+This chapter asks what makes a category projectible~-- worth betting on. The previous chapter established that grammatical categories are real, maintained by mechanisms rather than defined by essences. This chapter asks what we get in return. The answer is \term{projectibility}: the ability of a category to support inductive inference. Categories earn their keep by supporting induction. But which categories, and why?
 
-The pattern shows up even in computational models trained without linguistic theory. \citet{decarlo2023} probed language models on negative polarity items---words like \mention{ever}, \mention{squat}, and \mention{anymore} that require licensing contexts like negation or questions. The category \term{NPI} looks uniform, but its members have idiosyncratic licensing signatures: \mention{ever} is licensed by superlatives; \mention{squat} isn't. Models succeed at NPI prediction only to the extent they learn each item's specific distribution, not the category. The label doesn't project.
+For constructed categories~-- mathematical sets, legal statuses, programming constructs~-- the essentialist answer works: definitions support induction (§\ref{sec:2:where-essentialism-works}). Grammatical categories aren't constructed, so definitions aren't there to do the work. What, then, grounds the bet? The HPC answer: mechanisms. Categories support induction not because they're defined but because they're mechanistically grounded. The mechanisms that maintain the category also explain why its members resemble each other. Learning about one member tells you about others because the same mechanisms shaped both.
+
+The pattern shows up even in computational models trained without linguistic theory. \citet{decarlo2023} probed language models on negative polarity items (NPIs)~-- or \term{non-affirmative items} in \textit{CGEL}'s terminology~-- expressions like \mention{ever}, \mention{yet}, \mention{at all}, and \mention{lift a finger} that require licensing contexts like negation or questions. The \term{NPI} class looks uniform, but \citet{hoeksema2012} documents at least twelve distinct licensing patterns across English NPIs~-- far more than the binary or ternary distinctions proposed by semantic theory. What clustering exists tracks lexical-semantic properties: minimizers pattern alike, temporal adverbs pattern alike, modal auxiliaries pattern alike. Models succeed at NPI prediction only to the extent they learn each item's distribution, not the category. The label groups items that share sensitivity to negative contexts; no mechanism maintains them as a kind.
 
 Contrast filler-gap constructions. \citet{boguraev2025} used causal interventions to test whether language models learn shared mechanisms across wh-questions, relative clauses, and clefts. They do: a mechanism learned on embedded wh-questions transfers to produce filler-gap behaviour in clefts. The structural dependency projects even when the surface constructions differ. The difference isn't arbitrary. Filler-gap is a structural mechanism maintained by parsing operations. NPI licensing is lexically specified, item by item. NPI is a distributional class; filler-gap is a mechanistic kind. The projectibility tracks the ontology.
 
-This chapter develops the same contrast through a linguistic worked example~-- one that dramatises how mechanism-based projectibility succeeds where definitional projectibility fails.
+This chapter develops the same contrast through Polish aspect~-- a case that dramatises how mechanism-based projectibility succeeds where definitional projectibility fails.
 
 
 \section{The textbook view of aspect}
@@ -33,7 +36,7 @@ The textbooks offer crisp definitions. Imperfective presents an event as unbound
 
 \begin{figure}[t]
 \centering
-% TODO: Figure showing bounded vs unbounded event representation
+\includegraphics[width=\textwidth]{figures/6.aspect-viewpoint.png}
 \caption{The textbook account of Slavic aspect. Imperfective presents the event from inside, as ongoing; perfective presents it from outside, as a completed whole. This is the \enquote{viewpoint} metaphor that has dominated aspectual theory for a century.}
 \label{fig:aspect-viewpoint}
 \end{figure}
