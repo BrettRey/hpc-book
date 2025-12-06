@@ -42,3 +42,46 @@ This was not independent convergence. Ryan's suggestion created Chapter 5.
 ### Technical note
 
 This book has been written with substantial assistance from LLMs (Claude Opus via Anthropic and Google's Antigravity interface). Project started 29 Nov; by 5 Dec, Chapters 1, 2, and 5 are drafted and revised. The speed is unprecedented.
+
+---
+
+## 5 December 2025 (evening) — Humour, Rhetoric, Figures, Feedback
+
+### Session summary
+
+Refined Chapters 4 and 5 for style, arguments, and visual clarity.
+
+### Humour and rhetoric
+- Added 3 humorous insertions (hyperreals eyebrow, alignment micro-exchange, streetcar metaphor)
+- Removed duplicate "sounds glib" aside (too similar to hyperreals line)
+- Added 3 rhetorical figures:
+  - Chiasmus at virtuous circle (Ch 4)
+  - Tricolon at thesis pivot (Ch 4)
+  - Antithesis at two-failures framing (Ch 5)
+
+### New figures
+- **3.phase-transition.png**: Ice/water/steam phase diagram (user-generated via Nano Banana Pro)
+- **4.top-vs-ball.png**: Passive equilibrium vs. dynamic stability (user-generated)
+- Added `\listoffigures` to front matter
+- Removed 5.diachronic-trajectory.png (figure cut)
+
+### Reviewer feedback integration
+- **Chapter 4 edits**:
+  - Cut "mechanism as HPC" hedging joke
+  - Clarified that biology parallels are functional analogues, not homologues
+  - Fixed "almost essentialist" → "tight maintenance produces a surface that *looks* essentialist"
+- **Chapter 5 edits**:
+  - Sharpened Rosch paragraph: gradience is typicality/stability, not degrees of membership
+  - Added footnote distinguishing Hull's replicators from Millikan's copies
+
+### Deferred feedback
+Created `notes/chapter-feedback-deferred.md` capturing items for:
+- Chapter 5 (structural improvements, theoretical clarifications)
+- Chapter 8 (homeostasis test, diverging populations)
+- Chapter 10 (cross-linguistic divergence)
+- Chapter 12 (looping effect, grammaticality as HPC kind)
+
+### State at end of session
+- 107 pages compiled
+- Chapters 3, 4, 5 revised
+- Ready to move to a new chapter tomorrow
