@@ -1,4 +1,209 @@
-\chapter{Projectibility}
+\chapter{Projectibility and the good bet}
 \label{ch:projectibility}
 
-% TODO: Write chapter content
+% SLOGAN: Categories earn their keep by supporting induction.
+% Sticky sentence: "The mechanism projects even though the category, as traditionally defined, doesn't."
+% See notes/book-slogans.md for the book-wide slogan strategy.
+
+\epigraph{If there are not [pedicabs], Mr Tagomi thought, I would be well advised to retire to secluded place and kill myself.}{Philip K. Dick, \textit{The Man in the High Castle}}
+
+The previous chapter established that grammatical categories are real—maintained by mechanisms, not defined by essences. This chapter asks what we get in return. If categories aren't defined, why should learning about one instance tell us anything about others?
+
+The answer is \term{projectibility}: the ability of a category to support inductive inference. You learn that \mention{dog} is a noun—it takes determinatives, pluralises, functions as an argument. From this, you infer that unfamiliar nouns will behave similarly. The inference isn't guaranteed; \mention{sheep} doesn't pluralise the usual way. But it's reliable enough to be useful. That's projectibility: learning from instances and projecting to the category.
+
+The essentialist has a ready explanation. Categories support induction because they have definitions. If something satisfies the definition, it has the defining properties; those properties are what you project. Simple.
+
+The trouble is that the explanation requires definitions we don't have. Chapter~\ref{ch:essentialism} showed that no list of necessary and sufficient conditions distinguishes nouns from non-nouns, verbs from non-verbs. So where does projectibility come from?
+
+The HPC answer: mechanisms. Categories support induction not because they're defined but because they're mechanistically grounded. The mechanisms that maintain the category also explain why its members resemble each other. Learning about one member tells you about others because the same mechanisms shaped both.
+
+The pattern shows up even in computational models trained without linguistic theory. \citet{decarlo2023} probed language models on negative polarity items---words like \mention{ever}, \mention{squat}, and \mention{anymore} that require licensing contexts like negation or questions. The category \term{NPI} looks uniform, but its members have idiosyncratic licensing signatures: \mention{ever} is licensed by superlatives; \mention{squat} isn't. Models succeed at NPI prediction only to the extent they learn each item's specific distribution, not the category. The label doesn't project.
+
+Contrast filler-gap constructions. \citet{boguraev2025} used causal interventions to test whether language models learn shared mechanisms across wh-questions, relative clauses, and clefts. They do: a mechanism learned on embedded wh-questions transfers to produce filler-gap behaviour in clefts. The structural dependency projects even when the surface constructions differ. The difference isn't arbitrary. Filler-gap is a structural mechanism maintained by parsing operations. NPI licensing is lexically specified, item by item. NPI is a distributional class; filler-gap is a mechanistic kind. The projectibility tracks the ontology.
+
+This chapter develops the same contrast through a linguistic worked example---one that dramatises how mechanism-based projectibility succeeds where definitional projectibility fails.
+
+
+\section{The textbook view of aspect}
+\label{sec:6:textbook-aspect}
+
+Slavic verbal aspect looks like a paradigm case of a grammaticalized binary. Every Polish verb bears aspectual marking: imperfective or perfective. The opposition is obligatory, pervasive, and ancient—codified in grammars for centuries, taught in every language classroom.
+
+The textbooks offer crisp definitions. Imperfective presents an event as unbounded—ongoing, habitual, incomplete. Perfective presents it as bounded—a completed whole with temporal limits. The terminology varies (totality, resultativeness, telicity), but the core claim is the same: there's an invariant semantic content distinguishing the two aspects, and knowing that content should let you predict which aspect a speaker will choose.
+
+\begin{figure}[t]
+\centering
+% TODO: Figure showing bounded vs unbounded event representation
+\caption{The textbook account of Slavic aspect. Imperfective presents the event from inside, as ongoing; perfective presents it from outside, as a completed whole. This is the \enquote{viewpoint} metaphor that has dominated aspectual theory for a century.}
+\label{fig:aspect-viewpoint}
+\end{figure}
+
+This is essentialism applied to morphology. The definitions are the essence; the essence determines behaviour. Learn the essence, and you can project: knowing what perfective \emph{means} should tell you when to use it.
+
+
+\section{Where the definitions fail}
+\label{sec:6:definitions-fail}
+
+The prediction is testable. If aspect has invariant semantic content, then a model that knows that content should predict aspectual usage. \citet{divjak2025learnability} tested exactly this.
+
+They built three computational models of Polish verb usage:
+\begin{itemize}
+    \item A \emph{lemma-concrete} model that learns cue-outcome associations without assuming aspect exists as a category at all.
+    \item An \emph{aspect-concrete} model that learns aspect from usage cues—distributional patterns in the input.
+    \item An \emph{aspect-abstract} model that learns aspect from the semantic labels proposed in the theoretical literature—boundedness, totality, resultativeness.
+\end{itemize}
+
+The aspect-abstract model is the textbook view formalised. If the invariant meanings are real, this model should win.
+
+It doesn't.
+
+On corpus data, the aspect-abstract model performs reasonably—87\% accuracy. But accuracy hides an asymmetry. The model predicts imperfective well: 98\% correct. It predicts perfective poorly: only 77\%. The semantic invariants that aspectologists have proposed for a century—the definitions on which projectibility supposedly depends—capture only half the system.
+
+More damaging: when validated against native-speaker judgments in a gap-filling task, the aspect-abstract model performs \emph{worse} than the simpler models. Native speakers' preferences align better with a model that doesn't even use the aspect category than with one that does. The lemma-concrete model—the one that treats each verb individually, without abstracting to aspect—best predicts which forms humans prefer.
+
+This is a failure of definitional projectibility. The category exists; the usage is systematic; but the definitions don't project to behaviour. Knowing what \enquote{perfective} supposedly \emph{means} doesn't reliably tell you when Polish speakers will \emph{use} it.
+
+
+\section{What the mechanisms reveal}
+\label{sec:6:mechanisms-reveal}
+
+Why does the textbook view fail? \citet{divjak2024aspect} provide the answer.
+
+Their corpus study of Polish aspect reveals a usage landscape strikingly different from the textbook picture. The key findings:
+
+\begin{enumerate}
+    \item \textbf{Lexical bias is the norm.} About 90\% of Polish verbs strongly prefer one aspect—greater than 90\% of their tokens appear in the preferred form. Only 11\% of aspectual pairs are genuinely equiprobable. The textbook suggestion that speakers \enquote{choose} aspect based on how they view the event applies to a small minority of cases.
+    
+    \item \textbf{Tense carries most of the signal.} A simple model using just the superlemma (verb identity) and three-way tense distinction (past, present, future) achieves F1 scores of 0.95 for imperfective and 0.90 for perfective. Aspect is largely predictable from tense, not from semantic viewpoint.
+    
+    \item \textbf{Context cues appear where needed.} Temporal adverbs and other contextual markers show up reliably only with the 11\% of verbs that lack lexical bias. The system is informationally efficient: redundant cues don't clutter unambiguous cases.
+    
+    \item \textbf{The \enquote{choice} is already made.} For most verbs, learning the verb means learning its aspect. The category isn't applied at the point of utterance; it's baked in at lexical acquisition.
+\end{enumerate}
+
+This reframes what aspect \emph{is}. It's not a binary semantic opposition applied at the moment of speaking. It's an emergent pattern reflecting the distributional signatures of how verbs are learned and used—a property cluster maintained by mechanisms of acquisition and entrenchment, not a category defined by invariant meaning.
+
+
+\section{Projectibility from mechanism}
+\label{sec:6:projectibility-mechanism}
+
+Now the HPC picture snaps into focus.
+
+Why can a Polish speaker project aspectual behaviour to unfamiliar verbs? Not by applying a definition. The definitions—boundedness, totality—predict only imperfective, and even then imperfectly. What projects is something different: the cue-outcome structure that learners extract from the input.
+
+Consider the Zimmer hook: You've learned \mention{robić} (impf) / \mention{zrobić} (pf)—to do, to accomplish. You encounter an unfamiliar verb \mention{pływać}—to swim. How do you know that \mention{przepływać} will be perfective?
+
+The textbook answer: You apply the semantic definition of perfectivity—the event is bounded, complete, telic—and infer that \mention{przepływać} (swim across, complete the crossing) satisfies those criteria.
+
+But as we've seen, the semantic definition predicts poorly. Worse, it predicts perfective worse than imperfective—exactly wrong for the case at hand.
+
+The mechanism-based answer: You've learned that certain prefixes, in certain tense contexts, pattern with perfective. You've learned that verbs of motion typically have strong aspectual biases carried by morphological material. You project not from a definition but from a web of cue-outcome associations maintained across your linguistic experience.
+
+This is projectibility grounded in mechanism rather than meaning. The category \term{perfective} exists—you can introspect about it, metalinguistic discourse depends on it—but its psycholinguistic reality needn't rest on invariant semantic content. What makes it projectible is the consistency of the distributional patterns that maintain it.
+
+\begin{figure}[t]
+\centering
+% TODO: Figure showing cue-outcome structure for aspect prediction
+\caption{The mechanism-based view of aspectual projectibility. Learners don't apply semantic definitions; they extract cue-outcome associations (morphological patterns, tense contexts, lexical biases) that allow prediction of novel forms. The category is real because the mechanisms are reliable, not because the definition is correct.}
+\label{fig:aspect-mechanism}
+\end{figure}
+
+
+\section{The tightening screw}
+\label{sec:6:tightening}
+
+Here's where the story takes a surprising turn. The 2025 validation study found that the best model—the one that most closely matches native-speaker preferences—is the one that doesn't use the category \term{aspect} at all.
+
+The lemma-concrete model predicts human behaviour better than the aspect-aware models. Not by much, but decisively: AIC 3,891 versus 3,954 for aspect-concrete, 4,037 for aspect-abstract. Evidence ratios in the $10^{13}$ to $10^{17}$ range.
+
+What does this mean for the ontological status of aspect?
+
+One reading: Aspect isn't a real category; it's a taxonomic convenience. Linguists invented a label for patterns that don't need a unifying abstraction. This is the nominalist temptation—but it overreaches. The patterns are real; native speakers agree on them; children acquire them reliably. Something systematic is happening.
+
+The better reading: The \emph{mechanism} may live lower than the \emph{label}. What learners acquire and what guides production is a web of lexeme-specific associations + tense-conditioned expectations, not an abstract binary \enquote{aspect} that mediates between input and behaviour. The category is an epiphenomenon of the mechanism—useful for metalinguistic discourse, but not the locus of projectibility.
+
+This is HPC in its strongest formulation. The mechanism maintains the clustering; the clustering supports induction; but the category label is a descriptor of the pattern, not a causal intermediary. You can project aspectual behaviour \emph{without} representing \enquote{aspect} as such—because what you're really projecting are cue-outcome associations that have an aspectual signature.
+
+
+\section{What the example teaches}
+\label{sec:6:lessons}
+
+Polish aspect illustrates a general HPC lesson. Let me extract the morals.
+
+\textbf{First}: Definitional categories can fail projectibility. Aspect has been defined for centuries; the definitions are taught in classrooms; theoretical linguistics refines them in journal articles. But when tested against actual usage and native-speaker psychology, the definitions don't do the work attributed to them. Knowing what \enquote{perfective} means doesn't reliably predict when speakers will use it.
+
+\textbf{Second}: Mechanism-based categories can succeed where definitions fail. The same aspect system becomes predictable once you attend to the distributional structure: lexical bias, tense context, morphological cues. These aren't the \enquote{meaning} of aspect; they're the mechanisms that maintain aspect as a pattern. And they project where the meanings don't.
+
+\textbf{Third}: The category and the mechanism need not coincide. \term{Aspect} is a useful label—it picks out a real pattern. But the psychological reality of the pattern may be a network of cue-outcome associations, not a represented binary. The mechanism lives below the category; the projectibility comes from the mechanism. This is HPC without category reification: clusters maintained by mechanisms, labels applied by analysts.
+
+\textbf{Fourth}: The failure is diagnostic. When a category fails to project—when its definition doesn't predict behaviour—that's evidence that the category isn't mechanistically grounded. Or more precisely: the grounding isn't where the definition puts it. The failure of aspect-abstract is evidence that the semantic characterisations (boundedness, totality) aren't doing causal work in the production system.
+
+
+\section{Beyond aspect: the general pattern}
+\label{sec:6:general-pattern}
+
+Polish aspect is a worked example, not an isolated curiosity. The pattern—definitional characterisations that fail to project, mechanism-based descriptions that succeed—appears across grammatical domains.
+
+\citet{ambridge2020} found that the causative alternation (\mention{break the vase} vs *\mention{laugh the man}) is predicted by a continuous semantic dimension (directness of causation) across five typologically unrelated languages. The semantic definitions of verb classes don't work; the mechanism (sensitivity to causal directness) does. Strikingly, a model trained on five languages predicts native-speaker judgments in a sixth (Balinese) without exposure. The mechanism projects cross-linguistically; the definitional verb classes don't.
+
+\citet{saldana2022} showed that morphological syncretism patterns are learned better when syncretic cells share semantic similarity—not when they share features in a definitional sense. The learnability gradient tracks similarity, not category membership. What projects is the similarity structure, not the feature system.
+
+\citet{chi2020} demonstrated that grammatical relations (subject, object) emerge spontaneously in multilingual BERT—trained without any symbolic rules—and transfer across languages. A probe trained only on English successfully identifies grammatical relations in French. The mechanism (distributional learning over the same functional pressures) produces the same categories cross-linguistically, without definitions.
+
+These aren't the only examples. Chapter~\ref{ch:word-classes} develops the case for word classes in detail. The upshot: projectibility is the empirical test for mechanistic grounding. When a category supports reliable induction, that's evidence that the mechanisms are real. When it doesn't, something about the proposed characterisation is off.
+
+
+\section{Answering Goodman}
+\label{sec:6:goodman}
+
+Liu Cixin's turkey parable captures the problem of induction with dark precision:
+
+\begin{quote}
+Every morning on a turkey farm, the farmer comes to feed the turkeys. A scientist turkey, having observed this pattern to hold without change for almost a year, makes the following discovery: \enquote{Every morning at eleven, food arrives.} On the morning of Thanksgiving, the scientist announces this law to the other turkeys. \citep[ch.~6]{liu2008}
+\end{quote}
+
+The turkey's law is perfectly confirmed by all available evidence. The problem isn't the evidence; it's that the law isn't grounded in mechanism. The farmer's purpose—invisible to the turkey—determines when the correlation breaks. Had the turkey understood \emph{why} food arrives (fattening for slaughter), it would have predicted its own demise rather than its next meal.
+
+Nelson Goodman's \term{grue} problem makes the same point in philosophical dress. Goodman's riddle: emeralds examined before time $t$ are green; emeralds examined after $t$ are blue. Define \term{grue} as \enquote{green if examined before $t$, blue otherwise}. Every emerald we've ever observed is grue. So why don't we project \term{grue} to unexamined emeralds?
+
+Goodman's own answer invoked entrenchment: \term{green} is projectible because it's been projected successfully in the past. \term{Grue} isn't because it hasn't. The circularity is deliberate—projectibility is bootstrapped from track record.
+
+HPC offers a different answer, or rather an elaboration. \term{Green} is projectible because emeralds share a mechanism that produces greenness: chromium traces interact with light in stable ways. There's no mechanism that produces grueness; there's nothing about emeralds that makes them switch from green to blue at time $t$. Projectibility tracks mechanism, not just predicational habit.
+
+For grammatical categories, the same logic applies. \term{Noun} is projectible because the mechanisms of acquisition, entrenchment, and functional pressure keep nominal properties clustering together. A pseudo-category like \term{nerboun} (noun if acquired before age 5, verb otherwise) isn't projectible because no mechanism produces that pattern—there's nothing about language acquisition that would cause a switch at age 5.
+
+This is why the aspect example matters. \term{Perfective} as traditionally defined—bounded, complete, telic—is less projectible than expected because those semantic properties, while correlated with aspectual usage, aren't produced by the mechanisms that maintain the aspectual system. The mechanisms are lexical bias + tense conditioning, not semantic boundedness. Project from the mechanisms and you succeed; project from the definitions and you're predicting imperfective while Polish speakers are saying perfective.
+
+A fair objection: doesn't this make projectibility interest-relative? \citet{craver2009} and \citet{onishi2022} argue that any mechanism-based account inherits context-dependence. Which mechanism you attend to, at what level of abstraction, with what boundaries—all depend on your explanatory goals. If so, the HPC answer to Goodman looks circular: a category is projectible relative to the mechanism you're interested in, and the mechanism you're interested in is whichever one makes the category projectible.
+
+The objection is partly right but doesn't collapse HPC into conventionalism. Interest constrains which slice of the causal web you attend to, but it doesn't fabricate the web. The aspect case shows the stakes. If your goal is to predict corpus distributions, the textbook mechanism (semantic boundedness) is the wrong one—it predicts imperfective well and perfective poorly. If your goal is to predict native-speaker gap-filling, the lemma-concrete mechanism is the right one—it outperforms aspect-aware models. The interest isn't arbitrary; it's indexed to a prediction task. And the prediction either succeeds or fails. That's the empirical constraint on which mechanism matters.
+
+Conventionalism can't explain why some mechanisms predict and others don't. HPC can: the mechanisms that predict are the ones that actually maintain the cluster. Interest selects among real causal structures; it doesn't invent them.
+\section{Degrees of projectibility}
+\label{sec:6:degrees}
+
+Not all categories are equally projectible. The framework expects a gradient.
+
+At one extreme: high-frequency, highly entrenched categories where the mechanisms are strong and consistent. English determinatives are a case: a closed class, stable across speakers, predictable in distribution. Learn \mention{the} and you can project to \mention{those} with high confidence. The mechanisms (entrenchment, functional specificity) are tight enough that the category approaches definitional coherence—not because there's a definition, but because the mechanisms are so strong that they produce uniform clustering.
+
+At the other extreme: low-frequency, loosely maintained categories where the mechanisms are variable or in flux. Nonce formations, idiolectal forms, constructions undergoing change—these are less projectible because the mechanisms haven't stabilised. Knowing about one instance tells you less about others.
+
+The middle ground is where the action is. Major open classes—nouns, verbs, adjectives—are projectible on average but variable at the margins. You can project from typical nouns to novel nouns with high confidence; you can project from \mention{fun} to other adjective-noun boundary cases with less. The mechanisms are strong enough to produce robust clustering at the core but not strong enough to determine the periphery.
+
+This predicts a characteristic signature. Core members of a category—high-frequency, prototypical, functionally central—should be more projectible. Peripheral members—low-frequency, boundary-straddling, functionally ambiguous—should be less. The prediction is testable: ask speakers to extrapolate from one instance to the category, and measure how confidence varies with centrality.
+
+
+\section{Projectibility as epistemic payoff}
+\label{sec:6:payoff}
+
+We can now answer the question that opened the chapter. Why should learning about one instance tell us anything about others?
+
+Because the same mechanisms that shaped the instance you learned are shaping the instances you haven't. Categories maintained by consistent mechanisms produce consistent members. The consistency underwrites induction.
+
+This is the epistemic payoff of HPC kinds. They're kinds you can learn from—not because they have definitions but because they have causal structure. The mechanism that makes a word a noun also makes other nouns. The mechanism that biases a verb toward perfective also biases similar verbs. The mechanism that entrains a speaker to one usage pattern entrains the same speaker to related patterns.
+
+Projectibility isn't metaphysically guaranteed. Categories can fail to project if their proposed characterisation doesn't match the maintaining mechanisms—as aspect-abstract fails. Categories can fail to project if the mechanisms are too weak or too variable—as nonce formations fail. But where the mechanisms are real and consistent, projectibility follows.
+
+This is what makes grammatical categories worth having. Not that they carve nature at the joints in some eternal sense—language changes, categories evolve. But that they support the inferences that make language learnable, usable, discussable. Categories earn their keep by supporting induction. That's the test of mechanism: does learning about instances let you project to the kind? If yes, the mechanisms are real. If no, look elsewhere for the causal structure.
+
+% TODO: Transition to Chapter 7 on the full mechanistic story

@@ -62,7 +62,7 @@
 - Gradient judgments, discrete categories
 - Dual membership explained
 
-### Ch 6: Projectibility—why categories support induction
+### Ch 6: Projectibility and the good bet
 *The epistemic payoff*
 
 **Key points:**
