@@ -10,9 +10,9 @@
 
 Tagomi has slipped between worlds, and he needs to know which one he's in. Pedicabs exist in his home world but not in the other. He's betting his life on the projectibility of a single feature.
 
-In your world, the stakes are lower but the logic is the same. You encounter \mention{car}. It takes determinatives, pluralises, functions as an argument. You've never seen \mention{pedicab}~-- but you bet it does the same. You're usually right. The category \term{noun} lets you project from instances you've seen to instances you haven't. That's the bet, and it usually pays off.
+In your world, the stakes are lower but the logic is the same. You encounter \mention{car}. It takes determinatives, pluralises, functions as an argument. You've never seen \mention{pedicab}~-- but you bet it behaves likewise. You're usually right. The category \term{noun} lets you project from instances you've seen to instances you haven't. That's the bet, and it usually pays off.
 
-Polish aspect offers a puzzle. Every textbook says the same thing: perfective aspect marks bounded events~-- completed, delimited, whole. Imperfective marks unbounded events~-- ongoing, habitual, incomplete. The definitions are centuries old, drilled into every language learner, refined in journal articles. They should work.
+Polish aspect offers a puzzle. Every textbook tells you: perfective aspect marks bounded events~-- completed, delimited, whole. Imperfective marks unbounded events~-- ongoing, habitual, incomplete. The definitions are centuries old, drilled into every language learner, refined in journal articles. They should work.
 
 When computational models trained on those definitions try to predict which aspect Polish speakers actually use, they fail~-- 77\% accuracy for perfective, against 98\% for imperfective \citep{divjak2025learnability}. The definitions that have been taught for generations capture only half the system. Something is projectible about aspect; it just isn't what the textbooks say.
 
@@ -43,7 +43,7 @@ The textbooks offer crisp definitions. Imperfective presents an event as unbound
 
 This is essentialism applied to morphology. The definitions are the essence; the essence determines behaviour. Learn the essence, and you can project: knowing what perfective \emph{means} should tell you when to use it.
 
-The HPC alternative makes a different prediction. On this view, category membership isn't maintained by definitions but by dynamics~-- the cue configurations that shape output. Learners don't learn that perfective ``means'' bounded completion and apply that knowledge; they traverse a constraint landscape shaped by prior input, settling into stable output configurations. The forces that tilt the landscape are distributional, not semantic. If HPC is right, a model that captures this constraint satisfaction should outperform one that applies semantic definitions. (We'll unpack these forces fully in Chapter~\ref{ch:homeostasis}; for now, the key point is that the prediction is testable.)
+The HPC alternative makes a different prediction. On this view, category membership isn't maintained by definitions but by dynamics~-- the cue configurations that shape output. Learners don't learn that perfective ``means'' bounded completion and apply that knowledge; they traverse a constraint landscape shaped by prior input, settling into stable output configurations. The forces that tilt the landscape are distributional and semantic and functional~-- but not definitional. If the maintenance view is right, a model that captures this constraint satisfaction should outperform one that applies semantic definitions. (We'll unpack these forces fully in Chapter~\ref{ch:homeostasis}; for now, the key point is that the prediction is testable.)
 
 \section{Where the definitions fail}
 \label{sec:6:definitions-fail}
@@ -61,7 +61,7 @@ The aspect-abstract model is the textbook view formalised. If the invariant mean
 
 It doesn't.
 
-On corpus data, the aspect-abstract model performs reasonably~-- 87\% accuracy \citep{divjak2025learnability}. But accuracy hides an asymmetry. The model predicts imperfective well: 98\% correct. It predicts perfective poorly: only 77\%. The semantic invariants that aspectologists have proposed for a century~-- the definitions on which projectibility supposedly depends~-- capture only half the system.
+On corpus data, the aspect-abstract model performs reasonably~-- 87\% accuracy \citep{divjak2025learnability}. But accuracy hides an asymmetry. The model predicts imperfective well: 98\% correct. It predicts perfective poorly: only 77\%~-- you lose the bet nearly one time in four. The semantic invariants that aspectologists have proposed for a century~-- the definitions on which projectibility supposedly depends~-- capture only half the system.
 
 More damaging: when validated against native-speaker judgments in a gap-filling task, the aspect-abstract model performs \emph{worse} than the simpler models. Native speakers' preferences align better with a model that doesn't even use the aspect category than with one that does. The lemma-concrete model~-- the one that treats each verb individually, without abstracting to aspect~-- best predicts which forms humans prefer.
 
@@ -77,11 +77,11 @@ Their corpus study of Polish aspect reveals a usage landscape strikingly differe
 
 First, lexical bias is the norm. About 90\% of Polish verbs strongly prefer one aspect~-- greater than 90\% of their tokens appear in the preferred form. Only 11\% of aspectual pairs are genuinely equiprobable. The textbook suggestion that speakers \enquote{choose} aspect based on how they view the event applies to a small minority of cases.
 
-Second, tense carries most of the signal. A simple model using just the superlemma (verb identity) and three-way tense distinction (past, present, future) achieves F1 scores of 0.95 for imperfective and 0.90 for perfective. Aspect is largely predictable from tense, not from semantic viewpoint.
+Second, tense carries most of the signal. A simple model using just the superlemma (verb identity) and three-way tense distinction (past, present, future) achieves F1 scores of 0.95 for imperfective and 0.90 for perfective~-- the perfective asymmetry persists, just smaller. Aspect is largely predictable from tense, not from semantic viewpoint.
 
 Third, context cues appear where needed. Temporal adverbs and other contextual markers show up reliably only with the 11\% of verbs that lack lexical bias. The system is informationally efficient: redundant cues don't clutter unambiguous cases.
 
-Finally, the \enquote{choice} is already made. For most verbs, learning the verb means learning its aspect. The category isn't applied at the point of utterance; it's baked in at lexical acquisition.
+Finally, the landscape is already shaped~-- and kept that way. For most verbs, learning the verb means entering a valley that ongoing use keeps deep. The category isn't applied at the point of utterance; it's maintained by the same forces that carved it.
 
 This reframes the question worth asking. Instead of \enquote{what does aspect mean?}~-- a question that invites ever more refined invariant definitions~-- we ask \enquote{what maintains the aspectual patterns speakers produce?} That question is open, investigable, and already yielding answers: distributional signatures, acquisition dynamics, lexical entrenchment. The textbook view isn't wrong; it's asking a question whose answer can't be found by the methods it uses. The mechanism view doesn't replace it~-- it explains why it worked as well as it did, and what it was missing.
 
@@ -174,7 +174,7 @@ HPC offers a different answer, or rather an elaboration. \term{Green} is project
 
 For grammatical categories, the same logic applies. \term{Noun} is projectible because the mechanisms of acquisition, entrenchment, and functional pressure keep nominal properties clustering together. A pseudo-category like \term{nerboun} (noun if acquired before age 5, verb otherwise) isn't projectible because no mechanism produces that pattern~-- there's nothing about language acquisition that would cause a switch at age 5.
 
-This is why the aspect example matters. \term{Perfective} as traditionally defined~-- bounded, complete, telic~-- is less projectible than expected because those semantic properties, while correlated with aspectual usage, don't shape the constraint landscape as strongly as other forces do. The actual tilts come from verb identity and tense context: a model using just superlemma and three-way tense distinction achieves F1 scores of 0.95 for imperfective and 0.90 for perfective \citep{divjak2025learnability}. For most Polish verbs, the landscape is already steep: about 90\% appear in their preferred aspect over 90\% of the time. Experience has carved the valleys; the output rolls downhill. Project from the terrain and you succeed; project from the definitions and you're predicting imperfective while Polish speakers are saying perfective.
+This is why the aspect example matters. \term{Perfective} as traditionally defined~-- bounded, complete, telic~-- is less projectible than expected because those semantic properties, while correlated with aspectual usage, don't shape the constraint landscape as strongly as other forces do. The actual tilts come from verb identity and tense context: a model using just superlemma and three-way tense distinction achieves F1 scores of 0.95 for imperfective and 0.90 for perfective \citep{divjak2025learnability}. For most Polish verbs, the landscape is already steep: about 90\% appear in their preferred aspect over 90\% of the time. The bias is bidirectional: verbs prefer aspects, and aspects are effectively restricted to verbs that prefer them. Experience has carved the valleys; the output rolls downhill. Project from the terrain and you succeed; project from the definitions and you're predicting imperfective while Polish speakers are saying perfective.
 
 This is the basin structure from Chapter~\ref{ch:discrete-from-continuous} in action. The ``valleys'' are regions where cue configurations consistently bias output; the ``ridges'' are where configurations conflict and additional cues are needed~-- which is exactly where the 11\% of equiprobable verbs sit, and where contextual markers appear to disambiguate.
 
