@@ -1,42 +1,176 @@
 % Chapter 7: Homeostasis—why categories hold together
-% Stub: See /Users/brettreynolds/Documents/LLM-CLI-projects/HPC book/notes/chapter07_mechanisms.md
+% See notes/chapter07-master.md for consolidated planning notes
 
-\chapter{Homeostasis—why categories hold together}\label{ch:homeostasis}
+\chapter{Homeostasis—why categories hold together}
+\label{ch:homeostasis}
 
-% TODO: Develop full chapter based on notes/chapter07_mechanisms.md
-% 
-% Key sections to include:
-% - Multi-timescale framework (millisecond, year, decade mechanisms)
-% - Internal vs. external mechanisms (Miller 2021)
-% - Bidirectional inference (comprehension and production)
-% - Evidence: acquisition, diachronic, cross-linguistic
-% - Case studies from phonemes, words, constructions
-%
-% NOTE: Entrenchment is introduced in Ch6 (Polish aspect example: 90% of verbs
-% strongly prefer one aspect). Develop the mechanism here: what entrenchment is,
-% how it works, evidence from other domains beyond aspect.
-%
-% NOTE: Ch6 uses terrain/constraint-landscape language (Chater-compliant). This
-% chapter should explain what "carves the valleys" — the forces that shape the
-% constraint surface:
-% - Acquisition: carves initial landscape from input
-% - Entrenchment: deepens valleys through frequency
-% - Alignment: maintains consistency across speakers (bidirectional)
-% - Transmission: filters what survives across generations
-% - Functional pressure: determines which valleys persist
-%
-% NOTE: Tense-conditioning introduced in Ch6 (F1 0.95/0.90). Explain why tense
-% predicts aspect — grammatical co-selection, acquisition of tense-aspect pairs.
-%
-% NOTE: Bidirectionality is key (discussed 2024-12-06). Aspect→verb and verb→aspect
-% are both active; production and comprehension draw on same shaped landscape.
-%
-% NOTE: Add forward reference to agent-based modelling (ABM). How the mechanisms
-% interact—whether alignment can override entrenchment, whether transmission
-% bottlenecks can shift basin boundaries—is an empirical question. ABM offers one
-% route; point readers to Chapter 14 for the full methodological discussion.
-%
-% For detailed mechanism inventory and synthesis, see:
-% /Users/brettreynolds/Documents/LLM-CLI-projects/HPC book/notes/chapter07_mechanisms.md
+% SLOGAN: Mechanisms maintain the clustering that definitions merely describe.
+% Sticky sentence: "A grammatical category is not a thing you find; it's a regime you maintain."
+% See notes/book-slogans.md for the book-wide slogan strategy.
 
-[Chapter content to be developed]
+\epigraph{The general rule would establish itself insensibly, and by slow degrees, in consequence of that love of analogy and similarity of sound, which is the foundation of by far the greater part of the rules of grammar.}{Adam Smith, \textit{Considerations Concerning the First Formation of Languages} (1761)}
+
+
+In Old English, \mention{pease} was a mass noun, like \mention{rice}. You could have much pease or little pease, but not three peases. Sometime in the seventeenth century, English speakers began treating \mention{pease} as a plural—and invented a singular to match. \mention{Pea} never existed until the category demanded it. The word is a fossil of a mechanism: speakers maintaining a count/mass distinction by backforming what the paradigm seemed to require.
+
+This is what it looks like when a grammatical category repairs itself. But what exactly is doing the repair?
+
+Chapter~\ref{ch:projectibility} left the question hanging: if categories earn their keep by supporting induction, what exactly is doing the keeping? If talk of mechanisms sounds like a metaphysical upgrade too far, good—the argument has to earn that upgrade by showing explanatory and predictive traction that definitional tidy-up can't deliver. The point is not that definitions are useless; they are often excellent summaries of what we already know. The point is that definitions don't explain stability. They don't tell us why a cluster of properties keeps reappearing across speakers, contexts, and generations, nor why certain generalisations remain a good bet even when boundary cases proliferate. The homeostatic picture shifts attention from classificatory checklists to maintenance regimes: the interacting feedback loops—acquisition and entrenchment, analogy and alignment, discourse-functional pressures and institutional norms—that make particular patterns resilient, transmissible, and epistemically useful. When a label projects, it's because these stabilisers keep the relevant similarities in circulation; when it doesn't, that failure is not a nuisance to be patched with a cleverer definition but a clue to where the maintenance regime is thin, conflicted, or absent.
+
+This chapter opens the black box. We'll sort mechanisms by timescale and by internal versus external location, then cash out what that commits us to metaphysically. The goal is not a taxonomy for its own sake but a framework that makes category stability—and category failure—explicable.
+
+
+\section{What kind of thing is a mechanism?}
+\label{sec:7:what-is-mechanism}
+
+Before inventorying mechanisms, we need to ask what we're inventorying. The word \term{mechanism} carries philosophical baggage: gears, levers, clockwork determinism. That's not what we mean.
+
+A mechanism, in the sense relevant here, is an organised pattern of causal activity that produces or maintains a phenomenon. The key features:
+
+\begin{itemize}
+    \item \textbf{Organised}: not a random collection of causes but a structured arrangement where parts and activities are coordinated.
+    \item \textbf{Causal}: actually doing something in the world, not merely a description or correlation.
+    \item \textbf{Productive or maintaining}: either bringing something about or keeping it in place over time.
+\end{itemize}
+
+This is the standard view in philosophy of science \citep{machamer2000thinking, bechtel2005explanation, craver2007explaining}. What makes it useful for linguistics is that mechanisms can be identified at multiple levels—neural, cognitive, social, institutional—without requiring reduction to any single substrate. A mechanism can be a neural circuit, a learning dynamic, a social coordination pattern, or an institutional practice. What matters is that it does stabilising work.
+
+Three clarifications prevent misunderstanding.
+
+First, mechanisms are not essences in disguise. An essence is supposed to be necessary, sufficient, and intrinsic to category members. A mechanism is none of these. It's a process that operates on and among category members, not a hidden property lurking inside them. The category \term{noun} doesn't have a mechanism the way a clock has a spring; rather, noun-ness is maintained by mechanisms the way a riverbed is maintained by the water flowing through it.
+
+Second, mechanisms can themselves be HPC kinds. The mechanism-type \term{entrenchment} doesn't have a sharp necessary-and-sufficient definition. It's a cluster of causal features—frequency effects, processing facilitation, resistance to analogical levelling—that tend to co-occur across contexts. Mechanism kinds are just as fuzzy at their boundaries as the categories they maintain. This recursion isn't a problem; it's the theory showing its depth.
+
+Third, a single category can be maintained by multiple mechanisms, none of which is individually necessary. This is \term{multi-mechanism realism}: the stabilising story is typically a braid of contributory causal strands rather than a single master gear. Polish aspect, as we saw in Chapter~\ref{ch:projectibility}, is maintained by lexeme-specific entrenchment, tense-conditioned expectations, and prefixal cueing—not by the semantic definition that textbooks provide.
+
+\citet{carrollparola2024} capture this with the concept of emergence: coarse-grained descriptions that support accurate predictions despite discarding micro-level information. What makes a coarse-graining legitimate is that it tracks real causal structure. Throw away the wrong information and predictions collapse. Throw away the right information—the information that doesn't matter for the phenomenon in question—and predictions hold. Mechanisms are what make the difference.
+
+
+\section{The five mechanisms}
+\label{sec:7:five-mechanisms}
+
+We can organise the stabilising mechanisms by timescale: from the milliseconds of online processing to the decades (or centuries) of institutional norm-setting. This isn't the only possible organisation—we could sort by internal versus external, or by cognitive versus social—but timescale has the advantage of making the interactions visible. Fast mechanisms generate the patterns that slow mechanisms crystallise.
+
+\subsection{Acquisition}
+\label{sec:7:acquisition}
+
+The fastest stabiliser is also the most foundational: learners extract patterns from the input they receive. Acquisition isn't passive absorption; it's active construction of categories from distributional regularities.
+
+\citet{tomasello2003} documents how children build grammatical categories through piecemeal generalisation rather than parameter-setting. They start with item-specific knowledge (\mention{give me the ball}, \mention{throw the ball}) and gradually abstract the pattern (verb + object). The category \term{transitive verb} doesn't exist for the child until enough instances have patterned together.
+
+Critically, acquisition is biased. Some patterns are easier to learn than others. \citet{kirby2008} demonstrate that when linguistic systems are transmitted through iterated learning—each generation learning from the previous—the systems become more learnable. Irregularities that are hard to acquire get regularised; distinctions that are easy to overgeneralise get reinforced. The acquisition bottleneck acts as a filter, favouring forms and categories that are transmissible.
+
+This means that the categories we observe in adult languages are not a random sample of logically possible categories. They're the survivors of an acquisitional gauntlet. A category that children reliably reconstruct from input is stable; one that they don't isn't.
+
+\subsection{Entrenchment}
+\label{sec:7:entrenchment}
+
+Closely linked to acquisition, but operating across the lifespan, is entrenchment: the deepening of processing routines through repeated use.
+
+\citet{bybee2010} shows that high-frequency forms resist analogical change. Irregular plurals like \mention{feet} and \mention{teeth} persist because they're encountered so often that their irregular patterns become deeply grooved. Low-frequency irregulars, by contrast, tend to regularise: \mention{strove} becomes \mention{strived}, \mention{wrought} becomes \mention{worked}.
+
+Entrenchment explains why core category members behave differently from peripheral ones. A high-frequency, prototypical noun like \mention{dog} has its nominal properties reinforced on every encounter: it takes determinatives, pluralises, appears in argument positions. A low-frequency boundary case like \mention{fun} (noun or adjective?) is entrenched in fewer contexts, making its category membership more labile.
+
+The Polish aspect case from Chapter~\ref{ch:projectibility} illustrates entrenchment at work. The 90\% of verbs that strongly prefer one aspect have that preference entrenched through sheer frequency. The 11\% that are genuinely equiprobable lack strong entrenchment in either direction—and it's precisely these verbs that require contextual cues.
+
+\subsection{Alignment}
+\label{sec:7:alignment}
+
+Acquisition and entrenchment operate within individual speakers. But grammatical categories are shared across speakers. What keeps them aligned?
+
+Interactive alignment, documented by \citet{pickering2004}, shows that speakers in dialogue converge on shared representations at multiple levels: lexical, syntactic, phonological. If you use a particular construction, I'm more likely to use it too. This convergence isn't deliberate; it's automatic, driven by priming and processing facilitation.
+
+The result is that speakers within a community don't just independently acquire similar categories—they actively coordinate their categories in use. Every conversation is a micro-negotiation in which categorical patterns are reinforced or adjusted. Over millions of conversations, the community converges on stable shared norms.
+
+Alignment is bidirectional. In production, speakers choose forms that their interlocutors will understand. In comprehension, listeners interpret forms using expectations shaped by prior usage. This bidirectional inference—form predicting meaning, meaning predicting form—creates a tight loop that maintains the consistency of form-function pairings.
+
+\subsection{Transmission}
+\label{sec:7:transmission}
+
+Categories persist not just within lifetimes but across generations. Transmission is the mechanism by which patterns survive the turnover of speakers.
+
+\citet{kirby2008} and colleagues have shown, through both computational models and laboratory experiments, that iterated transmission shapes language structure. When a language is learned and then taught, repeatedly, the features that survive are those that are learnable and expressible. Irregularities wash out. Compositional structure emerges.
+
+Transmission acts as a population-level filter. A category that one generation can learn and produce reliably will be available for the next generation to learn. A category that's too complex, too irregular, or too context-dependent may fail to transmit cleanly—and will drift or disappear.
+
+This explains why some categories are so robust across languages. Noun-verb distinctions, argument structure patterns, tense-aspect oppositions: these are the kinds of categories that survive iterated transmission because they're learnable, expressible, and useful. The apparent universality of certain categories isn't evidence of innate endowment; it's evidence of convergent evolution under shared transmission pressures.
+
+\subsection{Functional pressure}
+\label{sec:7:functional-pressure}
+
+Finally, categories are maintained by their usefulness. Functional pressure is the umbrella term for the communicative, cognitive, and social forces that favour certain distinctions over others.
+
+Some distinctions are communicatively valuable: the count/mass distinction allows speakers to convey different construals of quantity. Some are cognitively efficient: closed-class categories like determinatives reduce processing load by providing reliable cues to syntactic structure. Some are socially marked: register-specific forms signal identity and affiliation.
+
+When a category stops serving a function, it's vulnerable. The loss of grammatical gender in English wasn't a random drift; it correlated with the loss of case inflection and the rise of fixed word order—changes that made gender marking redundant for the work it had been doing. Functional pressure doesn't dictate outcomes, but it biases the space of stable configurations.
+
+
+\section{Internal and external}
+\label{sec:7:internal-external}
+
+The five mechanisms can be grouped along another dimension: internal (operating within individual minds) versus external (operating across the community).
+
+\citet{miller2021words} argues that word-kind maintenance requires both. Internal mechanisms—retrieval, recognition, derivational consistency—keep a speaker's lexical representations coherent. External mechanisms—community norms, tolerance thresholds, institutional standards—keep different speakers aligned with each other.
+
+Neither alone is sufficient. A speaker with perfectly coherent internal representations who doesn't align with the community isn't speaking the language. A community norm with no cognitive grounding in individual processing isn't a living category.
+
+The interaction matters. Internal entrenchment provides the substrate that external norms can reinforce or resist. Institutional norms (style guides, editorial practices, educational curricula) can accelerate or retard changes that would otherwise happen through individual learning. Prescriptive intervention, for languages that have it, adds a feedback loop atop the basic mechanisms—historically contingent and varying by register, but real in its effects on category sharpness in standardised varieties.
+
+
+\section{Timescales interacting}
+\label{sec:7:timescales}
+
+The mechanisms don't operate in isolation. Fast loops generate patterns that slow loops crystallise.
+
+Every utterance is shaped by processing facilitation (milliseconds), which reflects accumulated entrenchment (years), which reflects successful acquisition (early years), which reflects what was reliably transmitted (generations), which reflects what was functionally valued (centuries or longer).
+
+And the causation runs in both directions. Institutional norms can entrench patterns that would otherwise be unstable. Functional pressures can shape what gets acquired. Transmission bottlenecks can regularise what processing would preserve as irregular.
+
+This is why category stability is robust: multiple mechanisms reinforce each other. A category maintained by acquisition, entrenchment, alignment, and functional pressure all pointing in the same direction is hard to dislodge. And this is why category failure is diagnostic: when a category frays, it's because one or more mechanisms is weak, absent, or pulling in a different direction.
+
+
+\section{What this commits us to}
+\label{sec:7:commitments}
+
+Accepting this picture involves some commitments—not just empirical bets but philosophical stances.
+
+First, \textbf{process ontology}. A grammatical category is not a static object waiting to be discovered. It's a dynamically sustained pattern in a population-level causal field. Categories are more like standing waves than like sculpture: real, but real because something is actively maintaining them.
+
+Second, \textbf{interventionist realism}. A kind is real to the extent that tracking or manipulating it reliably changes expectations about related properties. This is stronger than mere description: it says that the category distinctions we draw are tracking causal structure in the world, not just organising our files conveniently.
+
+Third, \textbf{measurable metaphysics}. If categories differ in how strongly they're maintained, we should be able to measure that difference. Entropy reduction, cross-context generalisation accuracy, inter-speaker agreement as a function of frequency and entrenchment—these are the operational teeth of the framework.
+
+Fourth, \textbf{plural grounding}. The same category label across languages—\term{noun}, \term{adjective}—doesn't mean the same essence. It means similar maintenance packages producing similar projective behaviour. Crosslinguistic sameness is convergent maintenance, not shared constitution.
+
+Fifth, \textbf{reciprocal realism}. Mechanisms aren't hidden beneath categories waiting to be discovered. They're partially sculpted by the categories they maintain. Learning shapes usage shapes learning. The maintenance is bidirectional.
+
+
+\section{Redemption, not replacement}
+\label{sec:7:redemption}
+
+A word for the essentialists.
+
+The definitional work wasn't wasted. It was the empirical base on which mechanistic explanation becomes possible. Definitions clustered the phenomena well enough that we can now ask: what maintains the clustering? Traditional grammarians weren't wrong. They were preparatory.
+
+What changes is the explanatory aspiration. Definitions describe categories. Mechanisms explain why they hold together. The shift is from asking "what is a noun?" to asking "what keeps noun-ness coherent across speakers, contexts, and generations?" The answer is not a single thing. It is a conspiracy of mechanisms, each partial, together sufficient.
+
+This also reframes old disputes. Where traditional theory argues over definitions—what's the right characterisation of aspect, or of grammatical relations, or of the adjective/adverb boundary?—the mechanism view asks: what causal story would make this category projectible? Many definitional disputes dissolve when reframed as stabiliser disputes. The combatants weren't wrong about the patterns; they were wrong about what kind of explanation those patterns required.
+
+
+\section{What mechanisms are not}
+\label{sec:7:what-mechanisms-are-not}
+
+Three clarifications to prevent misapplication.
+
+First, mechanisms are not excuses for hand-waving. Saying "entrenchment maintains the category" is not an explanation unless you can specify what entrenchment is, how it operates, and what predictions it makes. The framework is only as good as the mechanisms it identifies are measurable and manipulable.
+
+Second, mechanisms are not deterministic. They bias outcomes; they don't guarantee them. A category can be well-maintained and still exhibit gradient membership, boundary disputes, and individual variation. The gradience isn't noise; it's the mechanisms operating with finite force on noisy input.
+
+Third, mechanisms are not beneath categories in some foundational sense. They're alongside categories, interacting with them. Categories shape what gets entrenched; entrenchment shapes what categories stabilise. The picture is ecological, not architectural.
+
+
+\bigskip
+
+A grammatical category is not a thing you find; it's a regime you maintain. Arguments over definitions are, at bottom, arguments over stabilisers. And the most telling facts about categories live in their failure modes—where boundaries blur, where judgments diverge, where the stabilising dynamics show their seams.
+
+But if categories are maintained, they can be undermaintained. The mechanisms can fail to cluster, or cluster too loosely, or cluster in ways that don't project. The next chapter asks: how do we know when we don't have a kind?
