@@ -365,3 +365,8 @@ Pick **one controlling figure per section**:
 
 Identify 600–900 word excerptable passage. Version 1 (aphorism-threaded) or polished hybrid of 1 and 2.
 
+
+### Version 3: Board-Integrated Opener (Final)
+
+Chapter 7 takes up the question that Chapter 6 deliberately left hanging: if categories earn their keep by supporting induction, what exactly is doing the keeping? If talk of mechanisms sounds like a metaphysical upgrade too far, good — the argument has to earn that upgrade by showing explanatory and predictive traction that definitional tidy-up can't deliver. The point is not that definitions are useless; they are often excellent summaries of what we already know. The point is that definitions don't explain stability. They don't tell us why a cluster of properties keeps reappearing across speakers, contexts, and generations, nor why certain generalisations remain a good bet even when boundary cases proliferate. The homeostatic picture shifts attention from classificatory checklists to maintenance regimes: the interacting feedback loops — acquisition and entrenchment, analogy and alignment, discourse-functional pressures and institutional norms — that make particular patterns resilient, transmissible, and epistemically useful. When a label projects, it's because these stabilisers keep the relevant similarities in circulation; when it doesn't, that failure is not a nuisance to be patched with a cleverer definition but a clue to where the maintenance regime is thin, conflicted, or absent.
+
