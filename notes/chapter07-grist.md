@@ -126,3 +126,52 @@ The last = **reciprocal realism**: mechanisms aren't just beneath categories —
 - The "reciprocal realism" thesis is the signature move — save for conclusion or Ch 14
 - Drop-in paragraph ready for Ch 7 or metaphysics chapter opening
 
+
+---
+
+## Part 4: Khalidi Alignment Check
+
+### Point-by-Point Assessment
+
+1. **Regime → needs property-hierarchy scaffold**
+   - "Regime" risks sounding purely dynamical without the *ordered causal hierarchy of properties* that generates derivative ones
+
+2. **Ecology → still owe a taxonomic payoff**
+   - Must show how ecological story explains why *this* partition yields stable, explanatory kinds
+
+3. **Strong agreement** — aligns with rejection of definitional essences
+
+4. **Almost straight Khalidi** — projectibility as core diagnostic for real kinds
+
+5. **Sympathetic** — frame as *similar causal-role profiles* rather than strict identity
+
+6. **Yes, in the right cases** — hook: interactive kinds and looping effects where classifications feed back on what's classified
+
+7. **Likes the re-description** — resonates with sorting real kinds vs vestiges of older schemes
+
+8. **Partial agreement + harder edge:**
+   - Sometimes non-projective labels are *conventional* not merely underspecified
+   - Tripartite view: mind-dependent yet real vs too convention-linked
+   - Gives principled way to say when "underspecified" should become "demote or split"
+
+9. **Comfortable** — so long as you make clear what *core causal structure* yields emergent sharpness
+
+10. **Methodologically congenial** — stress tests reveal real causal nexus vs historically sticky label
+
+### Khalidi-Flavoured Micro-Revisions
+
+- Replace some "mechanism" talk with **"ordered causal hierarchy of properties"** for maximum metaphysical bite
+- Build bridge to social-kinds framework when discussing grammar as population-level, coordination-sensitive system — distinguishes causal stabilisation from mere convention
+
+### Key Khalidi References
+
+- [Natural kinds as nodes in causal networks](https://philarchive.org/rec/KHANKA-4)
+- [Cognitive Ontology](https://philpapers.org/rec/KHACOT-5)
+- [Interactive kinds](https://philarchive.org/rec/KHAIK)
+- [Three Kinds of Social Kinds](https://philarchive.org/rec/KHATKO)
+
+### Main Value-Add
+
+Sharper rule for when "non-projective" means:
+- **"Needs better mechanism"** vs
+- **"Isn't the right kind at all"**
