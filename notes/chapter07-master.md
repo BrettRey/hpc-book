@@ -287,3 +287,81 @@ The last = **reciprocal realism**: mechanisms aren't just beneath categories —
 - Commitment 7 (mechanism individuation) addressed by "mechanisms as HPC kinds" framing
 - "Reciprocal realism" = signature move — save for conclusion or Ch 14
 - Drop-in paragraph ready for chapter opening
+
+---
+
+## Part O: Packaging Board Feedback (2025-12-07)
+
+### Shared Diagnosis
+The intellectual payload is right; the worry is *where the reader breathes* and *when abstract claims get a tactile handle*. Risk: reading like an internal map that forgets the outside world.
+
+### Board-Approved Action List
+
+1. **Open with mystery, not framework**
+   Start with one short "label fails to project" moment, then let reader feel the need for mechanisms.
+
+2. **Use Version 2 as backbone, add sceptic-friendly line**
+   Booth + McCloskey: acknowledge reader's doubt explicitly before cashing it out.
+   - Suggested addition after first two sentences: *"If that sounds like a metaphysical upgrade too far, good: the argument earns it by showing how the stabilisers do predictive work that definitions couldn't."*
+
+3. **Reduce mechanism-ontology menu to three stepping stones**
+   Too many framings early feels like literature map rather than narrative.
+   - Combine "real patterns" + "mechanisms as HPC kinds"
+   - Keep "multi-mechanism realism" prominent
+   - Make "model-first humility" a short end-cap
+
+4. **One crisp example per timescale**
+   Timescale organisation is strong — ensure each level has a vivid anchor.
+
+5. **Make "normative naturalism" concrete and symmetrical**
+   Show case where norms sharpen AND another where they mislead.
+
+6. **Single clean figure**
+   Tufte-Holmes compromise: minimal schematic + one playful metaphor if desired.
+
+### Structural Recommendations
+
+**Mendelson's narrative arc:**
+1. A crisp *failure* (category that doesn't project)
+2. The tempting definitional fix (briefly, then reject)
+3. The mechanism lens that actually explains the failure
+4. Only then: full mechanism ontology + inventory
+
+**McPhee's scaffolding:**
+- 2–3 paragraph micro-case at the top
+- "Zoom lens" move into general framework
+
+**Godin's one-line promise:**
+> *"Why grammar categories persist even when nobody can define them — and how that makes them trustworthy tools rather than academic habits."*
+
+**Sutherland's reframe:**
+Not "we've been wrong about categories," but "we finally have a way to explain why the categories that *work* keep working."
+
+### Figural Spine (Fahnestock)
+
+Pick **one controlling figure per section**:
+- Opening = *ecology/maintenance regimes*
+- Mechanism ontology = *real patterns / causal braids*
+- Timescales = *nested loops*
+- Failure modes = *stress-testing a bridge*
+
+### Hybrid Opener Shape
+
+1. **Cold open:** short failure case
+2. **Two-sentence teaser:** "definitions won't help; stabilisers will"
+3. **Version 2 paragraph (lightly tightened)**
+4. **Promise:** "We'll sort mechanisms by timescale and by internal/external location, then cash out what that commits us to metaphysically."
+
+### Voice Notes
+
+- **Booth:** Make implied reader feel *competent*, not instructed
+- **McCloskey:** Treat normativity as empirical social fact with costs, not philosophical trophy
+- **Pinker:** "This is not 'definitions are useless.' It's 'definitions don't explain the *stability* of the generalisations we rely on.'"
+- **Becker:** Show how framework lets you *read existing work more charitably*
+- **Morris:** Let essentialist sound reasonable right before showing explanatory shortfall
+- **Latour:** Show essentialism embedded in textbook templates, annotation schemes, software constraints, educational assessment
+
+### Excerptability (Holiday)
+
+Identify 600–900 word excerptable passage. Version 1 (aphorism-threaded) or polished hybrid of 1 and 2.
+
