@@ -85,18 +85,24 @@ Many disputes = disagreements about which stabilising mechanism does work, not w
 
 ---
 
-## Part 3: The Ten Aphorisms
+## Part 3: The Ten Aphorisms (revised)
 
 1. A grammatical category is not a thing you find; it's a regime you maintain.
 2. The ontology of grammar is closer to ecology than taxonomy.
-3. Category boundaries are often the shadow cast by stabilising dynamics.
+3. Category boundaries are often the visible face of stabilising dynamics.
 4. A kind's reality is indexed to the bets it makes safe.
 5. "Same category" across languages is a claim about convergent maintenance, not shared essence.
 6. Mechanisms are not beneath categories; they are partially sculpted by them.
-7. Where traditional theory argues over definitions, you are really arguing over stabilisers.
+7. Arguments over definitions are, at bottom, arguments over stabilisers.
 8. A label that doesn't project is not false; it's mechanistically underspecified.
 9. Discreteness is not a starting point; it's an emergent achievement.
 10. The most telling facts about categories live in their failure modes.
+
+---
+
+## Drop-In Manifesto Paragraph
+
+A grammatical category is not a thing you find; it's a regime you maintain. The ontology of grammar is closer to ecology than taxonomy—boundaries are often the visible face of stabilising dynamics, not arbitrary lines drawn on a continuous space. A kind's reality is indexed to the bets it makes safe: when a category supports reliable induction, something in the world is doing that work. Across languages, "same category" is a claim about convergent maintenance, not shared essence. Mechanisms are not hidden beneath categories; they are partially sculpted by them—a reciprocal loop where learning shapes usage shapes learning. Arguments over definitions are, at bottom, arguments over stabilisers. A label that doesn't project is not false; it's mechanistically underspecified. Discreteness is not a starting point; it's an emergent achievement. And the most telling facts about categories live in their failure modes—where boundaries blur, where judgments diverge, where the stabilising dynamics show their seams.
 
 ---
 
@@ -118,3 +124,5 @@ The last = **reciprocal realism**: mechanisms aren't just beneath categories —
 - Commitments 4–6 could structure Part III/IV chapters
 - Commitment 7 (mechanism individuation) is explicitly addressed by the "mechanisms as HPC kinds" framing
 - The "reciprocal realism" thesis is the signature move — save for conclusion or Ch 14
+- Drop-in paragraph ready for Ch 7 or metaphysics chapter opening
+
