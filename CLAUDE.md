@@ -9,7 +9,7 @@ This is a LaTeX academic book project: "Words That Won't Hold Still: How Grammat
 ## Build Commands
 
 ```bash
-# Compile the book (requires XeLaTeX and Biber)
+# Full compile (requires XeLaTeX and Biber)
 xelatex main.tex && biber main && xelatex main.tex && xelatex main.tex
 
 # Single pass for quick checks
@@ -21,23 +21,32 @@ python validate_bib.py
 
 The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL font.
 
+**Compilation workflow:** Most chapters in `main.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on. Currently only `chapter06.tex` is active.
+
 ## Repository Structure
 
-- `main.tex` - Main document, includes all chapters
+- `main.tex` - Main document; chapters are commented out for faster compilation
 - `chapters/` - Individual chapter files (chapter01.tex through chapter14.tex)
 - `.house-style/preamble.tex` - All LaTeX packages and custom macros
 - `.house-style/style-guide.md` - Writing conventions (MUST READ before editing prose)
 - `references.bib` - Bibliography (BibTeX format, Biber backend)
-- `notes/` - Planning documents and research notes
+- `notes/` - Planning documents and chapter development notes
 - `literature/` - Topic-specific literature review notes
+
+### Key Planning Documents
+
+- `notes/CHAPTER_OUTLINE.md` - Authoritative chapter structure and key points
+- `notes/chapter07-master.md` - Master notes consolidating all Ch 7 material (pattern for other chapters)
+- `notes/chapter07-grist.md` - Raw conceptual material for Ch 7
+- `synopsis.md` - Book synopsis (~880 words)
 
 ## House Style Conventions
 
 ### LaTeX Macros (defined in `.house-style/preamble.tex`)
 
 ```latex
-\term{text}         % Technical terms (small caps)
-\mention{text}      % Linguistic mentions (italics) - for words as examples
+\term{text}         % Technical terms when introduced (small caps)
+\mention{text}      % Linguistic mentions (italics) - words as examples
 \enquote{text}      % Quotations (locale-aware quotes)
 \abbr{text}         % Gloss abbreviations (small caps)
 \crossmark          % Cross-linguistic subscript marker (†)
@@ -46,6 +55,8 @@ The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL f
 \odd{#sentence}     % Semantically odd
 \eg \ie \etc        % Standard abbreviations with spacing
 ```
+
+**Important distinction:** `\term{}` = small caps for introducing key concepts; `\mention{}` = italics for citing linguistic forms.
 
 ### Numbered Examples
 
@@ -87,11 +98,27 @@ Four parts, 14 chapters:
 4. **Part IV: Implications** (Ch 13-14) - Grammaticality, methodological consequences
 
 ### Current Chapter Status (Dec 2025)
-- **Ch 1**: Drafted and revised
-- **Ch 2**: Drafted and revised
-- **Ch 3**: Drafted
-- **Ch 4**: Outlined (HPC introduction—species problem, mechanisms, standing-wave metaphor)
-- **Ch 5**: Drafted and revised (discreteness problem, hyperreal formalization)
+- **Ch 1-3**: Drafted (Part I: The Problem)
+- **Ch 4**: Outlined (HPC introduction)
+- **Ch 5**: Drafted and revised (discreteness problem)
+- **Ch 6**: In progress (projectibility) - currently active in main.tex
+- **Ch 7**: Planning stage - see `notes/chapter07-master.md` for consolidated notes
+- **Ch 8-14**: Outlined only
+
+## Chapter Development Workflow
+
+The project uses a master-notes pattern for chapter development:
+
+1. **Grist file** (`notes/chapterNN-grist.md`) - Raw conceptual material, quotes, ideas
+2. **Master file** (`notes/chapterNN-master.md`) - Consolidated structure with sections A-N covering:
+   - What the chapter must do (forward/backward references)
+   - Key concepts and frameworks
+   - Evidence to include
+   - Structural recommendations
+   - Open questions
+3. **LaTeX file** (`chapters/chapterNN.tex`) - Final prose
+
+When working on a chapter, check the master notes first to understand the planned structure and accumulated material.
 
 ## Key Concepts
 

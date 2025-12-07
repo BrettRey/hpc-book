@@ -189,7 +189,13 @@ Sharper rule for when "non-projective" means:
 
 ## Part G: Drop-In Manifesto
 
+### Version 1: Aphorism-threaded (more poetic)
+
 A grammatical category is not a thing you find; it's a regime you maintain. The ontology of grammar is closer to ecology than taxonomy—boundaries are often the visible face of stabilising dynamics, not arbitrary lines drawn on a continuous space. A kind's reality is indexed to the bets it makes safe: when a category supports reliable induction, something in the world is doing that work. Across languages, "same category" is a claim about convergent maintenance, not shared essence. Mechanisms are not hidden beneath categories; they are partially sculpted by them—a reciprocal loop where learning shapes usage shapes learning. Arguments over definitions are, at bottom, arguments over stabilisers. A label that doesn't project is not false; it's mechanistically underspecified. Discreteness is not a starting point; it's an emergent achievement. And the most telling facts about categories live in their failure modes—where boundaries blur, where judgments diverge, where the stabilising dynamics show their seams.
+
+### Version 2: Expository (more chapter-opener appropriate)
+
+A grammatical category is less a thing you discover than a regime you help explain: a maintained pattern of co-instantiating properties that earns its keep by making certain generalisations a good bet. On this view, the ontology of grammar is closer to ecology than to taxonomy. Boundaries are often stabilising dynamics made legible—analogy, entrenchment, acquisition biases, processing pressures, diachronic channeling—rather than the outward face of hidden definitions. And the relationship is reciprocal: mechanisms are not hidden beneath categories waiting to be discovered; they are partially sculpted by the very clusters they sustain. Discreteness is not a starting point; it is an emergent achievement: sharpness can emerge at particular scales even when the underlying causal story is plural and the membership conditions remain graded. Crosslinguistic sameness, then, is not a claim that languages share an essence called noun or adjective, but that different systems converge on similar maintenance packages that support similar projections. The deeper methodological payoff is that failure modes become diagnostic. When a label does not project, the right inference is not automatically that the label is wrong, but that its causal scaffolding is underspecified, mislocated, or heterogeneous—precisely the error pattern that can reveal whether yesterday's definitional dispute is really a disagreement about stabilisers.
 
 ---
 
