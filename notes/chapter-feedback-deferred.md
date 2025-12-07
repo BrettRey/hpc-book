@@ -72,3 +72,18 @@ Notes from the December 5, 2025 review-panel exercise. Items below were identifi
 - **Separate basin variance from measurement variance** (Dąbrowska): The framework predicts both sources of individual differences but doesn't explain which input dimensions produce which basin differences. Basin differences should be stable across tasks; measurement differences should vary.
 
 - **Overlay empirical data on prediction figures** (Tufte): The judgment-variance prediction (hyperbolic relationship) needs data to test it. A prediction figure without data is a promissory note.
+
+---
+
+## Chapter 14 (What changes)
+
+- **Agent-based modelling as methodological consequence**: If categories are maintained by interacting mechanisms, the natural methodological move is to simulate populations and test whether predicted basin dynamics emerge. ABM can probe:
+  - Whether the five mechanisms produce discrete basin structure from continuous substrates
+  - Whether boundary cases cluster where mechanisms compete (overlap at adj–prep, disjoint at noun–verb)
+  - Convergence vs. homology: independent populations under similar vs. different functional constraints
+  - Stability under perturbation (population size, learning noise, alignment strength)
+  - Timescale interactions (entrenchment on utterance scales; transmission on generational)
+  
+  Key predecessors: Kirby's iterated-learning experiments (already cited in Ch 5), Steels' naming games, Baronchelli's consensus models, Griffiths & Kalish cultural-transmission simulations. The maintenance view gives these scattered models a unified theoretical home.
+  
+  Gap to flag: most ABM work tunes parameters ad hoc. The maintenance view offers a principled anchor—mechanisms should be operationalised from independent psycholinguistic/acquisitional evidence, not reverse-engineered from output.

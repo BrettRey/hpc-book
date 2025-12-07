@@ -66,9 +66,11 @@
 *The epistemic payoff*
 
 **Key points:**
-- What makes a category projectible
-- How HPC delivers projectibility without essentialism
-- Linguistic generalizations as mechanistically grounded
+- **The definitional bet:** Definitions are predictions about clustering, not constitutive truths.
+- **The mechanistic alternative:** Projectibility tracks mechanism, not definition (Polish aspect & Goodman's grue).
+- **Labels aren't mechanisms:** "Aspect" as a legacy label vs. the actual causal maintenance.
+- **Generalising the lesson:** Definitional failure as diagnostic; mechanism-based success.
+- **The epistemic payoff:** Degrees of projectibility; why we are entitled to induce.
 
 ### Ch 7: Homeostasis—why categories hold together
 *The mechanistic story*
