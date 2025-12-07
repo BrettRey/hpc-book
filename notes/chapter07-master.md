@@ -498,3 +498,58 @@ Open with Divjak discovering the 77% figure, or Bybee noticing high-frequency ir
 | **Tone** | Invitation: "here's what the flow is" | Earned conclusion: "here's what we now see" |
 | **Bridge** | From Ch 6's "what maintains the island?" | To Ch 8's "how do we know when maintenance fails?" |
 
+
+---
+
+## Part R: Adam Smith Connection
+
+### Agreements with Smith
+
+1. **Categories emerge from use, not definitions from above**
+   Smith's *Considerations Concerning the First Formation of Languages* (1761) argues grammatical categories arose through speakers' practical need, generalised through analogy and frequency. Mechanism-talk avant la lettre.
+
+2. **The "man of system" warning applies to essentialist linguists**
+   "Every single piece has a principle of motion of its own." Speakers are agents shaped by, but not determined by, the system they inherit.
+
+3. **Simplification and complexification are trade-offs, not progress**
+   Mechanisms don't optimise for any single value—they produce coherence at some scales while sacrificing it at others.
+
+### Productive Friction
+
+1. **Where's the self-interest?**
+   What do individual speakers *gain* from maintaining a category boundary? Answer: they don't "bother"—they just do what's easy, and ease is shaped by frequency and processing costs. Make this explicit.
+
+2. **Is "mechanism" a reification?**
+   "Mechanisms stabilise the cluster" — who or what is doing the stabilising? If it's just speakers speaking, say so.
+
+---
+
+### Recommended Epigraph
+
+> "The general rule would establish itself insensibly, and by slow degrees, in consequence of that love of analogy and similarity of sound, which is the foundation of by far the greater part of the rules of grammar."
+> —Adam Smith, *Considerations Concerning the First Formation of Languages* (1761)
+
+Names the mechanism (analogy, phonological similarity), the timescale (insensibly, by slow degrees), the locus (the rule establishes *itself*—no legislator).
+
+### Alternative Epigraph (political resonance)
+
+> "He does not consider that the pieces upon the chess-board have no other principle of motion besides that which the hand impresses upon them; but that, in the great chess-board of human society, every single piece has a principle of motion of its own."
+> —Adam Smith, *Theory of Moral Sentiments* (VI.ii.2.17)
+
+### For the Body
+
+**On emergence without design:**
+> "It is this application of the name of an individual to a great multitude of objects, whose resemblance naturally recalls the idea of that individual, and of the name which expresses it, that seems originally to have given occasion to the formation of those classes and assortments, which, in the schools, are called *genera* and *species*."
+
+**Ferguson (for Scottish Enlightenment tradition explicitly):**
+> "Nations stumble upon establishments, which are indeed the result of human action, but not the execution of any human design."
+> —Adam Ferguson, *Essay on the History of Civil Society* (1767)
+
+---
+
+### Bibliography Additions
+
+- smith1761considerations (Adam Smith, *Considerations Concerning the First Formation of Languages*)
+- smith1759tms (Adam Smith, *Theory of Moral Sentiments*)
+- ferguson1767civil (Adam Ferguson, *Essay on the History of Civil Society*)
+
