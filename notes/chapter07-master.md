@@ -370,3 +370,131 @@ Identify 600–900 word excerptable passage. Version 1 (aphorism-threaded) or po
 
 Chapter 7 takes up the question that Chapter 6 deliberately left hanging: if categories earn their keep by supporting induction, what exactly is doing the keeping? If talk of mechanisms sounds like a metaphysical upgrade too far, good — the argument has to earn that upgrade by showing explanatory and predictive traction that definitional tidy-up can't deliver. The point is not that definitions are useless; they are often excellent summaries of what we already know. The point is that definitions don't explain stability. They don't tell us why a cluster of properties keeps reappearing across speakers, contexts, and generations, nor why certain generalisations remain a good bet even when boundary cases proliferate. The homeostatic picture shifts attention from classificatory checklists to maintenance regimes: the interacting feedback loops — acquisition and entrenchment, analogy and alignment, discourse-functional pressures and institutional norms — that make particular patterns resilient, transmissible, and epistemically useful. When a label projects, it's because these stabilisers keep the relevant similarities in circulation; when it doesn't, that failure is not a nuisance to be patched with a cleverer definition but a clue to where the maintenance regime is thin, conflicted, or absent.
 
+
+---
+
+## Part P: Opening and Closing Options
+
+### Key Insight
+**Don't start with the question. Start with a fact that makes the question unavoidable.**
+
+---
+
+### Opening Options
+
+**Option A: The backformation opening (pease/pea)**
+
+> In Old English, *pease* was a mass noun, like *rice*. You could have much pease or little pease, but not three peases. Sometime in the seventeenth century, English speakers began treating *pease* as a plural—and invented a singular to match. *Pea* never existed until the category demanded it. The word is a fossil of a mechanism: speakers maintaining a count/mass distinction by backforming what the paradigm seemed to require.
+
+Pivot: "This is what it looks like when a grammatical category repairs itself. But what exactly is doing the repair?"
+
+**Option B: The competing-pressures opening (foots/feet)**
+
+> A child says *foots*. Every adult in earshot knows it's wrong. Within a year, the child says *feet*. No one taught the rule; no one corrected explicitly. Something in the input, something in the child's processing, something in the community's gentle non-uptake of *foots*—some combination of pressures converged on the irregular form and held it there. What held it?
+
+Pivot: "That question—*what holds it*—is the one essentialism never asks. Definitions tell you what a category *is*. They don't tell you why it stays that way."
+
+**Option C: The diachronic-puzzle opening (will grammaticalisation)**
+
+> *Will* was a lexical verb meaning "to want." It still is, vestigially, in *willy-nilly* ("will he, nill he") and archaic *what you will*. But over six centuries, it grammaticalised into an auxiliary, acquiring new syntax (subject-auxiliary inversion, *n't* cliticisation) while shedding old semantics (volition faded to futurity). The puzzle isn't that it changed—everything changes. The puzzle is that it *stopped* changing: it reached auxiliary status and stabilised there. What stopped it?
+
+Pivot: "The answer isn't a definition. The answer is a bundle of mechanisms—processing pressures, frequency effects, paradigmatic slots, acquisitional biases—that converged on a stable configuration and held."
+
+---
+
+### Closing Options
+
+**Option A: The aphorism landing**
+
+> Discreteness is not a starting point; it's an emergent achievement. The grammatical categories we name and teach and parse are not the furniture of language waiting to be discovered. They are regimes—dynamic, maintained, susceptible to drift and repair. When we ask "what is a noun?" we are not asking for a definition. We are asking what keeps noun-ness coherent across speakers, generations, and contexts. The answer is not a single thing. It is a conspiracy of mechanisms, each partial, together sufficient. The next question is whether we can watch them interact—and whether, in watching, we can predict where the categories will go.
+
+**Option B: The metaphor payoff (coral reef)**
+
+> A coral reef is not a thing; it is a process slow enough to look like a thing. Polyps deposit calcium carbonate; currents distribute larvae; fish establish cleaning stations; the whole assembles into something that persists for millennia—until it doesn't. Grammatical categories are like this. They feel solid because the mechanisms that maintain them are invisible at the timescale of a conversation, a lesson, a paper. Zoom out, and you see the deposition, the distribution, the slow crystallisation of community standards. Zoom further, and you see the bleaching events: categories that drifted, merged, split, disappeared. What looks like an ontology is an ecology. What looks like a definition is a maintenance contract, perpetually renegotiated.
+
+**Option C: The challenge close**
+
+> The framework offered here makes predictions. If grammatical categories are HPC kinds maintained by identifiable mechanisms, then perturbing those mechanisms should shift the category boundaries in predictable ways. Disrupt acquisition input, and overgeneralisation patterns should change. Alter frequency distributions, and entrenchment should weaken. Isolate speakers from community norms, and alignment should drift. These are not metaphors. They are interventions. The next chapter asks whether we can model them—and the chapters after ask what we find when we look.
+
+---
+
+### Recommended Architecture
+
+1. **Open** with pease/pea or foots/feet—short, vivid, mechanism caught in action
+2. **First section**: "What kind of thing is a mechanism?" (compressed)
+3. **Core sections**: The five mechanisms, organised by timescale, each with concrete case
+4. **Penultimate section**: Hidden commitments, reframed as "what you're now committed to"
+5. **Close** with ecological-metaphor or challenge close, depending on audience
+
+---
+
+### Template Summaries
+
+**Opener template:**
+- Micro-case failure
+- Definitional "temptation"
+- One-sentence rejection framed as stability problem
+- Version 3 paragraph
+- Roadmap
+
+**Closer template:**
+- Revisit the same micro-case
+- Three-claim compression
+- Failure-as-diagnostic sting
+- Bridge to next chapter
+
+
+---
+
+## Part Q: Refined Opening/Closing Recommendations
+
+### Opening Dos and Don'ts
+
+**Don't open with:** Aphorisms, mechanism inventory, timescale taxonomy (conclusions/architecture, not invitations)
+
+**Do open with:** The question Chapter 6 leaves hanging
+
+**Option A: Return to the standing wave** (from Chapter 4)
+> A standing wave isn't a thing moving through water—it's a pattern held in place by flow. The flow is real; the wave is what the flow makes legible. We've been talking about grammatical categories as if they were standing waves: stable patterns without fixed substance. But we haven't yet said what the flow is.
+
+Then: one mechanism in concrete detail (cattle, pease→pea). Then zoom out.
+
+**Option B: A witness** (Morris's advice)
+Open with Divjak discovering the 77% figure, or Bybee noticing high-frequency irregulars resist analogy—a specific moment when someone realized definitions weren't doing the work. Then generalize.
+
+---
+
+### Closing Structure
+
+**Don't close with:** Mechanism inventory, Khalidi alignment, open questions (middle-chapter material)
+
+**Do close with:** Reciprocal realism + aphorisms as earned conclusions + bridge to failure modes
+
+**Structure:**
+
+1. **The reciprocal move** (chapter's payoff):
+> Mechanisms aren't hidden beneath categories waiting to be discovered. They're partially sculpted by the very clusters they sustain. Learning shapes usage shapes learning. The maintenance is bidirectional.
+
+2. **The subsumption framing** (Becker—redemption, not replacement):
+> The definitional work wasn't wasted. It was the empirical base on which mechanistic explanation becomes possible. Definitions clustered the phenomena well enough that we can now ask: what maintains the clustering? The essentialists weren't wrong. They were preparatory.
+
+3. **Select aphorisms as earned conclusions:**
+- A grammatical category is not a thing you find; it's a regime you maintain.
+- Arguments over definitions are, at bottom, arguments over stabilisers.
+- The most telling facts about categories live in their failure modes.
+
+4. **Bridge to Chapter 8:**
+> But if categories are maintained, they can be undermaintained. The mechanisms can fail to cluster, or cluster too loosely, or cluster in ways that don't project. The next chapter asks: how do we know when we don't have a kind?
+
+---
+
+### Summary Table
+
+| | Opening | Closing |
+|---|---|---|
+| **Lead with** | Standing-wave metaphor, or witness moment | Reciprocal realism as thesis |
+| **Then** | One mechanism in concrete detail | Subsumption framing (preparatory, not wrong) |
+| **Avoid** | Inventory, taxonomy, aphorisms-as-premises | Open questions, Khalidi technicalities |
+| **Tone** | Invitation: "here's what the flow is" | Earned conclusion: "here's what we now see" |
+| **Bridge** | From Ch 6's "what maintains the island?" | To Ch 8's "how do we know when maintenance fails?" |
+
