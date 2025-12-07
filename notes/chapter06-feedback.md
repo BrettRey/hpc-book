@@ -7,13 +7,17 @@ Simulated reviews from: Boyd, Bybee, Dąbrowska, Fahnestock, Tufte, Goldberg, Cr
 
 | Issue | Who raised it | Status |
 |-------|---------------|--------|
-| NPI section is abrupt | Structural, Goldberg | TODO |
-| Three metaphors compete | Fahnestock, McCloskey | TODO |
-| Lemma-concrete paradox underexplored | Goldberg, Croft, Godfrey-Smith | TODO |
-| No feedback loop shown | Godfrey-Smith, Boyd | TODO |
-| Individual differences unmarked | Dąbrowska | TODO |
-| Hostile phrasing | McCloskey | TODO |
+| NPI section is abrupt | Structural, Goldberg | DONE - added foil framing |
+| Three metaphors compete | Fahnestock, McCloskey | DONE - added partition |
+| Lemma-concrete paradox underexplored | Goldberg, Croft, Godfrey-Smith | DONE - added defense |
+| No feedback loop shown | Godfrey-Smith, Boyd | DONE - added robustness criterion |
+| Individual differences unmarked | Dąbrowska | DONE - added prediction |
+| Hostile phrasing | McCloskey | DONE - softened |
 | Figures are schematic | Tufte | DEFER |
+| Perfective asymmetry unexplained | Godfrey-Smith | DONE - added hypothesis |
+| Moderate semantics not acknowledged | Godfrey-Smith | DONE - added parenthetical |
+| Volcanic island needs constraint | Godfrey-Smith | DONE - added constraint |
+| NPI operational criterion needed | Godfrey-Smith | DONE - added criterion |
 
 ## Key Actionables
 
