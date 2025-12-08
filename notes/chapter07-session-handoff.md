@@ -15,10 +15,12 @@ Chapter 7 has been completely rewritten to embody the immunologist's explanatory
 
 **Both replacement case studies are now drafted:**
 - `notes/case-study-quotatives.tex` — Option A: Cross-linguistic quotatives
-  - *New:* Substantial subsection on colloquialisation as selection environment (not mechanism)
-  - Weighs Biber/Leech evidence against counter-evidence (non-universality, register persistence)
-  - Concludes: "It is the weather in which the mechanisms operate"
+  - *Ecology subsection:* Colloquialisation as selection environment (not mechanism)
+  - Weighs Biber/Leech evidence vs counter-evidence (non-universality, register persistence)
+  - Key line: "It is the weather in which the mechanisms operate"
 - `notes/case-study-evidentials.tex` — Option B: Japanese vs Turkish evidentials
+  - *Ecology subsection:* Areal contact (Eurasian evidential belt) + pragmatic function (Japanese hedging/politeness)
+  - Parallel framing: "The ecology is the wind; the mechanisms are the sails"
 
 **Current structure:**
 1. The cluster (macrophage → nouns)
