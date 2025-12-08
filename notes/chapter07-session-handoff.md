@@ -1,6 +1,6 @@
 # Chapter 7 Restructure: Status and Next Steps
 
-**Last updated:** 2025-12-08T12:52
+**Last updated:** 2025-12-08T13:20
 
 ---
 
@@ -12,6 +12,13 @@ Chapter 7 has been completely rewritten to embody the immunologist's explanatory
 - Treat variation as activation states
 - Show reciprocal causation
 - Use robustness tests that fall out of this style
+
+**Both replacement case studies are now drafted:**
+- `notes/case-study-quotatives.tex` — Option A: Cross-linguistic quotatives
+  - *New:* Substantial subsection on colloquialisation as selection environment (not mechanism)
+  - Weighs Biber/Leech evidence against counter-evidence (non-universality, register persistence)
+  - Concludes: "It is the weather in which the mechanisms operate"
+- `notes/case-study-evidentials.tex` — Option B: Japanese vs Turkish evidentials
 
 **Current structure:**
 1. The cluster (macrophage → nouns)
