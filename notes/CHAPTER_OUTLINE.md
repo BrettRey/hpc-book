@@ -72,15 +72,19 @@
 - **Generalising the lesson:** Definitional failure as diagnostic; mechanism-based success.
 - **The epistemic payoff:** Degrees of projectibility; why we are entitled to induce.
 
-### Ch 7: Homeostasis—why categories hold together
-*The mechanistic story*
+### Ch 7: The Stabilisers (renamed from Homeostasis)
+*The mechanistic story — biological explanatory style*
 
 **Key points:**
-- Multi-timescale framework (millisecond, year, decade mechanisms)
-- Internal vs. external mechanisms (Miller 2021)
-- Bidirectional inference (comprehension and production)
-- Case studies: phonemes, words, constructions
+- The cluster: what properties co-occur? (macrophage → nouns)
+- Stabilisers at multiple scales (cognitive, acquisition, discourse, social, transmission)
+- Variation as activation states: same kind, different state under different signals
+- One case in depth: **TBD — evidentials (Japanese/Turkish) or cross-linguistic quotatives**
+- Robustness tests: learning transfer, intervention stability, cross-context generalisation
+- Degrees of projectibility: mechanism support → stability gradient
+- Commitments: process ontology, reciprocal realism, variation as signal, cross-level coherence
 - *Scope: Full treatment of mechanisms previewed in Ch 4; applied to basins in Ch 5*
+- *Integrated citations: MacKenzie 2019, Weiner & Labov 1983*
 
 ### Ch 8: Failure modes—thin, fat, negative
 *How to know when you don't have a kind*
