@@ -98,6 +98,15 @@ prose:
       rule: "Prefer should/would over must"
       example_wrong: "The features must cluster reliably"
       example_right: "The features should cluster reliably"
+    repetitive_rhetorical_patterns:
+      rule: "Avoid overusing the same rhetorical construction"
+      examples_to_vary:
+        - "It's not X; it's Y"
+        - "Not X, but Y"
+        - "That's X. That's Y."
+        - "X all the way down"
+      guidance: "Use each distinctive pattern at most 2-3 times per chapter. If a pattern recurs more, vary the syntax."
+      rationale: "Rhetorical figures gain impact from rarity; overuse makes them feel like tics"
 
   prefer:
     direct_style:
