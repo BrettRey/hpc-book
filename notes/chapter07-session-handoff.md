@@ -1,134 +1,125 @@
 # Chapter 7 Restructure: Status and Next Steps
 
-**Last updated:** 2025-12-08T13:30
+**Last updated:** 2025-12-08T22:30
 
 ---
 
 ## Current State
 
-**COMPLETE:** Chapter 7 now uses cross-linguistic quotatives as the main worked case study.
-
-### What was done this session:
-
-1. **Replaced irregular past tense** with **quotatives** as primary case study
-   - *be like* (English), *so* (German), *tte* (Japanese), *diye* (Turkish)
-   - Shows thicker braid of stabilisers: processing economy, expressive fit, acquisition pathways, social indexing, transmission
-   - Cross-linguistic convergence as flagship demonstration of mechanism-maintained kinds
-
-2. **Added ecology subsection** — colloquialisation as selection environment
-   - Weighs Biber/Leech evidence vs counter-evidence
-   - Key move: "It is the weather in which the mechanisms operate"
-   - New citations: biber1989, leech2009, bibergray2016
-
-3. **Retained evidentials as condensed contrast** (subsection 7.X.7)
-   - ~400 words showing "same semantic territory, different architecture"
-   - Turkish (tight grammaticalisation) vs Japanese (loose semi-lexical)
-   - Ecological explanation: areal contact vs pragmatic hedging
-   - Key line: "The ecology is the wind; the mechanisms are the sails"
-
-### Current chapter structure:
-1. The cluster (macrophage → nouns)
-2. Stabilisers at multiple scales (biology → linguistics mapping)
-3. Variation as activation states (*fun*, Polish aspect)
-4. **One case in depth: the emergence of quotatives** ← NEW
-   - The cluster
-   - Stabilisers (5 named)
-   - Why the same profile across languages?
-   - The wider ecology: colloquialisation and register shift
-   - Variation and activation
-   - What if a mechanism were absent?
-   - A contrast: same semantic territory, different architecture (evidentials)
-5. How to test whether a mechanism is real (robustness criteria)
-6. Degrees of projectibility
-7. Commitments
-8. Redemption, not replacement
-9. The most telling facts (bridge to failure modes)
-
-### Removed:
-- `weinerlabov1983` and `mackenzie2019` citations (were in irregular past tense section)
-- Need to re-integrate MacKenzie 2019 elsewhere if desired
+**COMPLETE:** Chapter 7 is a polished worked-case chapter demonstrating the maintenance view through two case studies (quotatives, filler-gap/*whose*). All major structural and clarity fixes have been implemented.
 
 ---
 
-## Draft files retained:
-- `notes/case-study-quotatives.tex` — original standalone draft
-- `notes/case-study-evidentials.tex` — full version if expansion needed later
-
----
-
-## Next session suggestions:
-1. **Re-integrate MacKenzie 2019** — the individual→community divergence point could fit in "Variation and activation" or earlier
-2. **Review prose flow** — the chapter is now longer; check transitions
-3. **Add figure?** — timeline of quotative emergence across languages could be impactful
-4. **Continue to Chapter 8** — failure modes
-
-
-**Integrated citations:**
-- MacKenzie 2019 (individual differences → community divergence)
-- Weiner & Labov 1983 (processing mechanisms for syntactic variation)
-
----
-
-## Next Steps
-
-**PRIORITY: Replace "One case in depth" section**
-
-The English irregular past tense is too familiar/cliché. Draft TWO alternatives:
-
-### Option A: Cross-linguistic Quotative Emergence
-- Japanese *to*, Turkish *diye*, German *so*, English *be like*
-- Same mechanism profile producing similar categories independently
-- Processing (economy), frequency, sociolinguistic spread, age-grading
-- Accessible, comparative, fresh
-
-### Option B: Evidentials in Japanese vs Turkish
-- Turkish: grammaticalised (*-mIş* hearsay/inference vs *-DI* direct)
-- Japanese: lexicalised (*rashii*, *sōda*, *tte*)
-- Same semantic space, different stabilisation paths
-- Why grammaticalised in one, lexicalised in other?
-- Comparative and intellectually rich
-
-**After drafting both:**
-- Choose one for the main worked case
-- Downgrade or remove the other (or move to different chapter)
-
----
-
-## Session Summary (2025-12-08)
+## Session Summary (2025-12-08, evening)
 
 ### Major accomplishments:
-1. Complete rewrite of Ch7 with biological explanatory style
-2. Replaced facile level-selection passage with went/holp + on/nous examples
-3. Added biological template section (later absorbed into chapter style)
-4. Integrated MacKenzie 2019 and Weiner & Labov 1983
-5. Added and scanned four sociolinguistics papers
-6. Renamed literature PDFs to standard format
-7. Fixed BibTeX entries
 
-### Files created:
-- `notes/biological-analogues.md` — biological template for mechanism talk
-- `notes/mackenzie-colloquium.md` — Jan 9 colloquium abstract + relevance
-- `notes/sociolinguistics-papers-scan.md` — scan of four papers
+1. **Margin-note audit (first half)**
+   - Fixed LaTeX double-backslash error (colloquialisation section)
+   - Reduced "categories all the way down" redundancy
+   - Added Aikhenvald 2004 for Eurasian evidentiality zone
+   - Changed Tagliamonte textcite to autocite (redundancy fix)
+   - Fixed "cognitive architecture" → "conditions" (Chater slippage)
+   - Changed "memory retrieval" → "dependency tracking"
 
-### Files modified:
-- `chapters/chapter07.tex` — complete rewrite
-- `references.bib` — added MacKenzie, Lavandera, Weiner+Labov, Levon+Buchstaller
+2. **Scale transitions made explicit**
+   - Line 143: "co-location plus time produces the network density"
+   - Line 145: "distal factors shape network structure, which shapes input frequency, which shapes entrenchment"
+   - Line 215: Explained why cross-linguistic convergence isn't mysterious
+   - Line 295: "mechanisms at different scales — cognitive, interactional, institutional — interact"
+
+3. **Sharpened key definitions**
+   - "Convergent maintenance: independent forms, stabilised by the same mechanisms, producing the same category architecture"
+   - Glossed "shallower basin" = fewer stabilisers
+   - Glossed "exercises" = providing input that keeps processing routine facilitated
+   - Added "fashion cycle = a decade or two"
+
+4. **Immunology analogy threaded through**
+   - Added callback in §5.5: "A cell type maintains the signalling environment that maintains the cell type; a construction maintains the processing mechanism that maintains the construction"
+
+5. **Margin-note audit (second half)**
+   - Added Ide 2005 for Japanese/Korean honorific elaboration
+   - Hedged German/Japanese cross-linguistic claims as "reported"
+   - Trimmed §5.5 reciprocity redundancy
+   - Added "adverb" as concrete wastebasket example
+
+6. **Bridge paragraph for *whose* case**
+   - Explicitly connects filler-gap → constraint profile → cross-ling → reciprocal
+   - Makes "labels aren't mechanisms" point concrete
+
+### Commits this session:
+```
+29a17e5 BRIDGE: Added 'labels aren't mechanisms' paragraph to whose case
+0f1b8ce FIXES: 5 margin-note issues (second half)
+cab59d6 ANALOGY: Immunology callback + basin clarification
+f784bc3 FIXES: Top 5 second-half flaws
+8e1cd0e SHARPEN: Define 'convergent maintenance' explicitly
+39cbde7 BRIDGES: Made scale transitions explicit
+5caec42 FIXES: Top 5 margin-note issues
+7ac509e STRUCTURE: Acknowledge biology parallel is heuristic, not template
+12f2d29 CHATER + EXPANSION: Fix storage language, expand activation states
+de5555c STRUCTURE: Five quick fixes to Chapter 7
+```
 
 ---
 
-## Open Questions
+## Current chapter structure:
 
-1. Should the biological template be explicit (as a named analogy) or implicit (just using the style)?
-2. McCloskey/Goldsmith+Laks on "science envy" — decision: don't mention it; let the work speak
-3. Which worked case to use: quotatives or evidentials?
+1. **Roadmap** (added this session)
+2. The cluster (macrophage → nouns)
+3. Stabilisers at multiple scales (biology → linguistics mapping)
+4. Variation as activation states (*fast* example added this session)
+5. **One case in depth: quotatives**
+   - The cluster
+   - Stabilisers (5 named)
+   - How deep do mechanisms go? (causal depth, mereological structure, mechanisms as categories)
+   - Why the same profile across languages?
+   - The wider ecology: colloquialisation
+   - Variation and activation
+   - What if a mechanism were absent? (ablation test)
+   - A contrast: evidentiality (Turkish vs Japanese)
+6. **A second case: filler-gap and *whose***
+   - The filler-gap mechanism
+   - Independent relative *whose*: a gap that isn't
+   - Stabilisers at multiple scales
+   - Why the same constraints across languages?
+   - **Bridge paragraph** (new this session)
+   - Reciprocal maintenance
+7. How to test whether a mechanism is real
+8. Degrees of projectibility
+9. What this commits us to
+10. Refactoring, not replacing
+11. The most telling facts (bridge to failure modes)
 
 ---
 
-## For Next Session
+## Remaining issues (minor):
 
-1. Research evidentials (Japanese, Turkish) — mechanism profiles, acquisition, grammaticalisation
-2. Research quotatives (cross-linguistic) — Japanese *to*, Turkish *diye*, German *so*, age-grading
-3. Draft Option A (quotatives)
-4. Draft Option B (evidentials)
-5. Compare and choose
-6. Revise chapter accordingly
+1. **Undefined references** to unwritten chapters (ch:word-classes, ch:what-changes, ch:failure-modes, etc.)
+2. **Japanese glyphs** (って) — font doesn't have them; consider romanisation or font switch
+3. **sec:4:payoffs** undefined — needs label in Chapter 4
+
+---
+
+## For next session:
+
+1. **Add missing labels** (sec:2:where-essentialism-works, sec:4:payoffs, ch:kinds-without-essences, ch:failure-modes, ch:word-classes, ch:what-changes)
+2. **Consider figure** for quotatives (S-curve of adoption, or cross-linguistic timeline)
+3. **Continue to Chapter 8** (failure modes)
+4. **Optional**: Fix Japanese glyph issue (romanise as "tte" or use font with CJK support)
+
+---
+
+## Bibliography additions this session:
+
+- `aikhenvald2004` — Evidentiality (Oxford UP)
+- `ide2005` — Japanese honorifics (John Benjamins)
+
+---
+
+## Branch status:
+
+- **Branch:** `restructure-part-1`
+- **Last commit:** `29a17e5`
+- **PDF:** Compiled successfully with xelatex (45 pages)
+- **Remote:** Pushed to origin
