@@ -203,7 +203,70 @@ This fit goes deeper than utility. The form's preference for the present tense r
 
 \textbf{Social indexing.} New quotatives initially index youth, informality, in-group membership. Using \mention{be like} signals that you are a certain kind of speaker, in a certain kind of register, with a certain kind of audience. This social value is not epiphenomenal; it's a stabiliser. Older speakers often react with suppression, finding the forms annoying or inarticulate. But this constraint is generational: speakers who grew up with the forms carry them into adulthood, using them not as rebellious markers but as part of their native repertoire. As \textcite{Eckert2012} argues, social meaning is part of linguistic structure, not a by-product. Speakers maintain the form partly because it does identity work~-- marking solidarity, casualness, narrative immediacy. \textcite{buchstaller2014} found that attitudes toward \mention{be like} track age and gender: listeners perceive its users as younger and more socially attractive, even while rating them lower on status dimensions. The form is maintained partly \emph{because} of this indexical profile.
 
-\textbf{Transmission dynamics.} The apparent-time pattern~-- younger speakers use \mention{be like} more~-- becomes a real-time change as each cohort ages. \textcite{tagliamontedarcy2004} showed that Canadian speakers aged 17--19 in 2003 used \mention{be like} for 63\% of quotative tokens, compared to 13\% for speakers of the same age in 1995. That's not two populations differing in age-graded behaviour; it's the S-curve of language change in progress. Forms that suit the demographic and interactional structure of transmission~-- peer-to-peer in adolescence, parent-to-child thereafter~-- survive and spread.
+\textbf{Transmission dynamics.} The apparent-time pattern~-- younger speakers use \mention{be like} more~-- becomes a real-time change as each cohort ages. \textcite{tagliamontedarcy2004} showed that Canadian speakers aged 17--19 in 2003 used \mention{be like} for 63\% of quotative tokens, compared to 13\% for speakers of the same age in 1995. That's not two populations differing in age-graded behaviour; it's the S-curve of language change in progress. Forms that suit the demographic and interactional structure of transmission~-- peer-to-peer in adolescence, parent-to-child thereafter~-- survive and spread. Figure~\ref{fig:diffusion-meaning} schematises the relationship between frequency diffusion and social-meaning consolidation: the lag between curves reflects the period during which the form carries strong indexical value.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={Time},
+    ylabel={Relative strength (normalised)},
+    xmin=1975, xmax=2025,
+    ymin=0, ymax=1.05,
+    xtick={1980, 1990, 2000, 2010, 2020},
+    ytick={0, 0.25, 0.5, 0.75, 1.0},
+    yticklabels={0, , 0.5, , 1.0},
+    axis lines=left,
+    xlabel style={at={(0.5,-0.08)}, font=\small},
+    ylabel style={font=\small},
+    tick label style={font=\footnotesize},
+    legend style={
+        at={(0.98,0.35)},
+        anchor=east,
+        font=\small,
+        draw=none,
+        fill=none,
+        row sep=3pt
+    },
+    clip=false
+]
+
+% Frequency curve (S-curve, earlier)
+% Logistic: 1 / (1 + exp(-k(x - x0)))
+\addplot[
+    thick,
+    black,
+    domain=1975:2025,
+    samples=100
+] {1 / (1 + exp(-0.15*(x - 1995)))};
+\addlegendentry{Frequency of \textit{be like}}
+
+% Social meaning consolidation curve (S-curve, lagged)
+\addplot[
+    thick,
+    black,
+    dashed,
+    domain=1975:2025,
+    samples=100
+] {1 / (1 + exp(-0.18*(x - 2005)))};
+\addlegendentry{Social meaning consolidation}
+
+% Lag annotation
+\draw[<->, thick, black!60] (1995, 0.5) -- (2005, 0.5);
+\node[font=\scriptsize, above, black!60] at (2000, 0.5) {lag};
+
+% Phase labels
+\node[font=\scriptsize, align=center] at (1985, 0.85) {Innovation\\(youth-marked)};
+\node[font=\scriptsize, align=center] at (2000, 0.15) {Spread};
+\node[font=\scriptsize, align=center] at (2018, 0.85) {Consolidation\\(neutralised)};
+
+\end{axis}
+\end{tikzpicture}
+\caption{Schematic relationship between frequency rise and social-meaning consolidation for quotative \textit{be like}. The lag between curves reflects the period during which the form carries strong indexical value (youth, informality); consolidation marks the attenuation of marked social meaning as the form becomes the community default.}
+\label{fig:diffusion-meaning}
+\end{figure}
 
 The quotatives case is a site where predictive processing and social indexing co-align, each reinforcing the other. The discourse routines of informal narrative make quotative contexts highly predictable~-- you know a quotative is coming before it arrives. That predictability encourages rapid uptake; rapid uptake feeds entrenchment; entrenchment makes the form even more predictable next time. Meanwhile, social indexing adds a parallel reinforcement loop: forms that mark in-group identity get used more in the high-frequency contexts where identity matters, which strengthens both the processing advantage and the social signal. The braid tightens because the strands pull in the same direction.
 
