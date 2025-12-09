@@ -1,19 +1,22 @@
 # Session Handoff: 2025-12-09 (Morning)
 
-**Last updated:** 2025-12-09T10:14
+**Last updated:** 2025-12-09T10:22
 
 ---
 
 ## Current State
 
 ### Chapter 7 (The Stabilisers)
-- **Status:** Substantially complete; Boyd-review additions implemented
-- **Recent additions:**
-  1. Target kind triage paragraph (after "what keeps the cluster clustered?")
-  2. Cross-domain payoff sentence (in biology section)
-  3. Realism pledge paragraph (in Commitments section)
+- **Status:** Substantially complete; Boyd-review and Godfrey-Smith feedback implemented
+- **Recent additions (this session):**
+  1. **Mechanism definition constraint** — "a mechanism posit earns its keep by specifying component processes" (§7.1)
+  2. **Analogy-type clarification** — explicit homology vs. analogy-of-form distinction, placed *before* multi-scale table (§7.2)
+  3. **Explicit niche story** — quotatives occupy "approximate vivid re-enactment" niche, with collapse conditions (§7.4.1)
+  4. **Convergence caution** — "convergent profiles suggest convergent problems; braids may vary" (§7.4.5)
+  5. **Contrast case** — *particle* as failed maintenance audit, proving constraints are real (§7.4.3)
 - **House style:** Dashes fixed (em-dashes → `~--` with NBS)
 - **Case studies:** Quotatives and filler-gap/whose (both complete)
+- **PDF:** 47 pages; compiles cleanly
 
 ### Chapter 4 (Kinds Without Essences)
 - **House style:** Fixed em-dashes on line 252
