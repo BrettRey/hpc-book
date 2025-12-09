@@ -60,6 +60,57 @@ Reciprocal feedback & \textbf{Functional feedback}: what the cell does alters it
 \label{tab:stabiliser-parallel}
 \end{table}
 
+Figure~\ref{fig:mechanism-typology} organises these mechanisms along two axes: timescale (fast processing vs slow acquisition) and locus (individual cognition vs community dynamics). Claims about stabilisers in different quadrants require different kinds of evidence.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    quadrant/.style={minimum width=4.5cm, minimum height=3cm, align=center, font=\small},
+    axislabel/.style={font=\small\bfseries},
+    mechanism/.style={font=\small},
+    sublabel/.style={font=\scriptsize, text=black!70}
+]
+
+% Quadrant backgrounds
+\fill[black!5] (-4.5, 0) rectangle (0, 3);
+\fill[black!12] (0, 0) rectangle (4.5, 3);
+\fill[black!12] (-4.5, -3) rectangle (0, 0);
+\fill[black!5] (0, -3) rectangle (4.5, 0);
+
+% Axes
+\draw[thick, -{Stealth[length=3mm]}] (-4.8, 0) -- (5, 0);
+\draw[thick, -{Stealth[length=3mm]}] (0, -3.3) -- (0, 3.5);
+
+% Axis labels
+\node[axislabel, left] at (-4.8, 0) {Individual};
+\node[axislabel, right] at (5, 0) {Community};
+\node[axislabel, above, align=center] at (0, 3.5) {Fast\\[-2pt]\sublabel{(ms--minutes)}};
+\node[axislabel, below, align=center] at (0, -3.3) {Slow\\[-2pt]\sublabel{(months--generations)}};
+
+% Quadrant contents
+% Top-left: Fast + Individual
+\node[mechanism, align=center] at (-2.25, 1.5) {Processing economy\\[4pt]Predictive facilitation};
+
+% Top-right: Fast + Community
+\node[mechanism, align=center] at (2.25, 1.5) {Accommodation\\[4pt]Alignment in dialogue};
+
+% Bottom-left: Slow + Individual
+\node[mechanism, align=center] at (-2.25, -1.5) {Acquisition\\[4pt]Entrenchment};
+
+% Bottom-right: Slow + Community
+\node[mechanism, align=center] at (2.25, -1.5) {Transmission dynamics\\[4pt]Social indexing};
+
+% Quadrant labels (optional, subtle)
+\node[sublabel] at (-4, 2.6) {I};
+\node[sublabel] at (4, 2.6) {II};
+\node[sublabel] at (-4, -2.6) {III};
+\node[sublabel] at (4, -2.6) {IV};
+
+\end{tikzpicture}
+\caption{Mechanism typology by timescale and locus. Claims about stabilisers in different quadrants require different kinds of evidence: online processing measures for Quadrants I--II, longitudinal and apparent-time data for Quadrants III--IV.}
+\label{fig:mechanism-typology}
+\end{figure}
+
 This is already a richer picture than \enquote{a noun is defined by such-and-such properties}. The definition tells you what the cluster looks like at a moment. The stabilising story tells you why it persists.
 
 
@@ -213,7 +264,62 @@ Quotatives don't just \emph{use} processing economy~-- they \emph{maintain} it. 
 
 Social indexing exhibits the same reciprocity. It isn't just something that quotatives \emph{do}; it is partly \emph{built out of} the patterned circulation of particular quotative variants. The indexical field that makes youth-associated forms socially meaningful persists because forms like \mention{be like} repeatedly occur with those personae and stances. The indexical field is an emergent structure sustained by the form's patterned social distribution. You get \enquote{youth style} the way you get a trail in the woods: by people walking it. Remove a major, high-salience contributor to that pattern and the local indexical alignment would likely attenuate. In that sense, the category and the mechanism co-construct each other.
 
-This is not a vicious circle. It's a self-organising dynamic~-- precisely the homeostatic structure that gives HPC kinds their stability. Categories shape what gets entrenched; entrenchment shapes which categories survive. Each stabilises the other.
+This is not a vicious circle. It's a self-organising dynamic~-- precisely the homeostatic structure that gives HPC kinds their stability. Categories shape what gets entrenched; entrenchment shapes which categories survive. Each stabilises the other. Figure~\ref{fig:causal-loop} visualises this reciprocal structure.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    mechanism/.style={rectangle, draw, thick, minimum width=2.8cm, minimum height=1.2cm, align=center, font=\small},
+    category/.style={ellipse, draw, thick, minimum width=3.2cm, minimum height=1.6cm, align=center, font=\small\bfseries},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick},
+    looparrow/.style={-{Stealth[length=2.5mm]}, thick, color=blue!70!black},
+    plus/.style={font=\scriptsize\color{blue!70!black}},
+    looplabel/.style={font=\tiny, color=blue!70!black}
+]
+
+% Central node
+\node[category] (cat) {QUOTATIVE\\CATEGORY};
+
+% Mechanism nodes
+\node[mechanism, above left=1.8cm and 2.2cm of cat] (proc) {Processing\\economy};
+\node[mechanism, above right=1.8cm and 2.2cm of cat] (soc) {Social\\indexing};
+\node[mechanism, below left=1.8cm and 2.2cm of cat] (acq) {Acquisition \&\\entrenchment};
+\node[mechanism, below right=1.8cm and 2.2cm of cat] (trans) {Transmission\\dynamics};
+
+% Bidirectional arrows: mechanisms <-> category
+% Processing economy
+\draw[arrow] (proc.south east) -- node[plus, above, pos=0.4] {+} (cat.north west);
+\draw[arrow] (cat.north west) ++ (0.15, 0.1) -- node[plus, below, pos=0.6] {+} ([xshift=0.3cm]proc.south east);
+
+% Social indexing
+\draw[arrow] (soc.south west) -- node[plus, above, pos=0.4] {+} (cat.north east);
+\draw[arrow] (cat.north east) ++ (-0.15, 0.1) -- node[plus, below, pos=0.6] {+} ([xshift=-0.3cm]soc.south west);
+
+% Acquisition
+\draw[arrow] (acq.north east) -- node[plus, below, pos=0.4] {+} (cat.south west);
+\draw[arrow] (cat.south west) ++ (0.15, -0.1) -- node[plus, above, pos=0.6] {+} ([xshift=0.3cm]acq.north east);
+
+% Transmission
+\draw[arrow] (trans.north west) -- node[plus, below, pos=0.4] {+} (cat.south east);
+\draw[arrow] (cat.south east) ++ (-0.15, -0.1) -- node[plus, above, pos=0.6] {+} ([xshift=-0.3cm]trans.north west);
+
+% Inter-mechanism arrows
+\draw[looparrow] (proc.south) to[bend right=20] node[plus, left, pos=0.5] {+} (acq.north);
+\draw[looparrow] (soc.south) to[bend left=20] node[plus, right, pos=0.5] {+} (trans.north);
+
+% Reinforcing loop indicators
+\node[looplabel] at ([xshift=-1.1cm, yshift=0.3cm]cat.north) {\footnotesize$\circlearrowright$\tiny R};
+\node[looplabel] at ([xshift=1.1cm, yshift=0.3cm]cat.north) {\footnotesize$\circlearrowright$\tiny R};
+\node[looplabel] at ([xshift=-1.1cm, yshift=-0.3cm]cat.south) {\footnotesize$\circlearrowright$\tiny R};
+\node[looplabel] at ([xshift=1.1cm, yshift=-0.3cm]cat.south) {\footnotesize$\circlearrowright$\tiny R};
+
+% External inputs
+\node[font=\small, below=3.8cm of cat] {External inputs: memory architecture, network structure, developmental ecology};
+
+\end{tikzpicture}
+\caption{Reciprocal maintenance of a grammatical category. Each mechanism both stabilises and is sustained by the category it maintains. Arrows marked + indicate reinforcing relationships; $\circlearrowright$R marks reinforcing feedback loops.}
+\label{fig:causal-loop}
+\end{figure}
 
 A contrast case sharpens the point. Consider the traditional category \term{particle}~-- a wastebasket label for uninflected words that don't fit elsewhere: \mention{up} in \mention{look up}, \mention{to} in infinitives, \mention{not}, sentence-final \mention{eh}. Does this cluster survive a maintenance audit? The properties don't co-occur reliably: \mention{up} takes complements; infinitival \mention{to} doesn't; \mention{not} has scope properties shared by neither. There's no common acquisition pathway: children learn verb-particle constructions, infinitives, and negation at different times, through different input distributions. There's no processing signature: reaction-time studies don't show \enquote{particle} effects that generalise across subtypes. There's no transmission dynamic: speakers don't acquire \enquote{particle-hood} as a generalisable category; they acquire constructions that happen to contain uninflected words. Predictions trained on one subtype (verb-particles) fail to transfer to another (infinitival \mention{to}). The label exists; the mechanism-maintained kind doesn't. Failure of reciprocal maintenance looks exactly like this: the supposed category doesn't exercise a shared mechanism, and no shared mechanism makes the category projectible. Chapter~\ref{ch:failure-modes} develops such failure modes systematically; here, the contrast case shows that the quotative analysis isn't analogy-by-enthusiasm~-- it identifies genuine stabilisation that \term{particle} lacks.
 
