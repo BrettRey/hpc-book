@@ -1,90 +1,100 @@
-# Session Handoff: 2025-12-09 (Morning)
+# Session Handoff: 2025-12-09 (Evening)
 
-**Last updated:** 2025-12-09T10:22
+**Last updated:** 2025-12-09T21:46
 
 ---
 
 ## Current State
 
 ### Chapter 7 (The Stabilisers)
-- **Status:** Substantially complete; Boyd-review and Godfrey-Smith feedback implemented
-- **Recent additions (this session):**
-  1. **Mechanism definition constraint** — "a mechanism posit earns its keep by specifying component processes" (§7.1)
-  2. **Analogy-type clarification** — explicit homology vs. analogy-of-form distinction, placed *before* multi-scale table (§7.2)
-  3. **Explicit niche story** — quotatives occupy "approximate vivid re-enactment" niche, with collapse conditions (§7.4.1)
-  4. **Convergence caution** — "convergent profiles suggest convergent problems; braids may vary" (§7.4.5)
-  5. **Contrast case** — *particle* as failed maintenance audit, proving constraints are real (§7.4.3)
-- **House style:** Dashes fixed (em-dashes → `~--` with NBS)
-- **Case studies:** Quotatives and filler-gap/whose (both complete)
-- **PDF:** 47 pages; compiles cleanly
+- **Status:** Substantially refined; major editorial pass complete
+- **PDF:** Compiles (latexmk reports errors due to commented-out chapters, but main.pdf generates)
+- **Branch:** `restructure-part-1`
+- **Latest commit:** `b0f67cc` — "Ch7: remove remaining throat-clearer 'A clarification about'"
 
-### Chapter 4 (Kinds Without Essences)
-- **House style:** Fixed em-dashes on line 252
-- **Status:** Complete
+### What Was Done This Session
 
-### Chapter 8 (Failure Modes)
-- **Status:** Planning notes created (`notes/chapter08-master.md`)
-- **Not yet written:** Chapter itself
+**1. "What this commits us to" section (§7.5) — major rewrite**
+- Sharper opening: "This framework commits us to a specific kind of realism plus a ranked set of theoretical consequences."
+- Macrophage analogy clarified with explicit "not ontic identity but a shared route to projectibility"
+- Core/derived criteria added: what makes a commitment core vs. derived
+- Commitments now numbered (enumerate environments)
+- Case study anchors added to each core commitment (quotatives, Boguraev, whose)
+- False binary softened: "we risk sliding back toward" not "we're back to"
+- Interventionist realism given concrete examples
+- "Standing waves, not carved statues" (fixed metaphor)
+- **New paragraph:** "What this does NOT commit us to" (acquisition, neural architecture, innateness)
+- Bridge sentence added to Refactoring section
+
+**2. "How to test whether a mechanism is real" section (§7.6) — restructured as Ch8 bridge**
+- Tests reordered by inferential strength (6 tests)
+- "What could mislead us" tags added to each test
+- Ecological rarity test added explicitly
+- Triangulation principle added
+- Operationalising paragraph (psycholinguistic tasks, etc.)
+- Explicit handoff to Chapter 8: "shows how to diagnose when the tests themselves mislead"
+
+**3. Opening "The cluster" section (§7.1) — polished**
+- "Start where cell biologists asking 'what is a macrophage?' start"
+- Macrophage paragraph trimmed
+- Analogy-limits sentence added ("explanatory strategy, not ontic identity")
+- Noun examples fixed: "cattle lacks a singular"; cut "the honesty is rare"
+- "Linguists tried that—across semantic, distributional, and morphosyntactic definitions"
+- Middle-position paragraph broken for air; species claim softened
+- Mechanism paragraph reordered (rule-first)
+- Correlate example added ("orthographic length")
+- Forward pointer added (case studies preview)
+
+**4. House style pass**
+- All `\paragraph{}` headings removed (5 instances)
+- All parenthetical em-dashes (`---`) converted to en-dashes with tildes (`~--`)
+- Meta-comment patterns varied (7 "A clarification/caveat/word" patterns fixed)
+
+**5. Redundancy fix**
+- Merged two paragraphs on "fast" dual-category (essentialist/prototype/maintenance answers were repeated)
 
 ---
 
-## Immediate Issue
+## Throat-Clearer Patterns Fixed
 
-User reports "getting a lot of errors" — likely LaTeX compilation issues. On restart:
-
-1. Run `xelatex main.tex && biber main && xelatex main.tex` to check
-2. Look for undefined references, missing citations
-3. Check if recent edits introduced syntax errors
-
----
-
-## Files Created/Modified This Session
-
-### Created:
-- `notes/boyd-review-chapter7.md` — Boyd advisory board simulation (8 points)
-- `notes/chapter08-master.md` — comprehensive Ch8 planning notes
-
-### Modified:
-- `chapters/chapter04.tex` — house style fixes (dashes)
-- `chapters/chapter07.tex` — house style + Boyd additions
-- `references.bib` — fixed sociolinguistics entries (removed broken URLs)
-
----
-
-## What Was Done This Session
-
-1. **House style audit of Ch4 and Ch7**
-   - Checked: dashes, contractions, citations, paragraph headings, hackneyed adverbs
-   - Fixed: em-dashes → en-dashes with NBS (`~--`)
-
-2. **Boyd review simulation** (saved to notes)
-   - 8 points about what the chapter needs to earn its realism commitments
-   - Addressed: target kind triage, cross-domain payoff, realism pledge
-   - Deferred to Ch8: falsifiability guardrail, inflation problem
-
-3. **Chapter 8 planning**
-   - Created master notes with thin/fat/negative taxonomy
-   - Proposed chapter structure (7 sections)
-   - Identified key sources (O'Connor, Khalidi, Haspelmath)
+| Original | Fixed |
+|----------|-------|
+| "Before answering, a clarification about..." | *(cut)* |
+| "A word on 'mechanism' as this book uses it." | "'Mechanism' in this book means something specific." |
+| "A related term: stabiliser." | "Stabiliser is a related term." |
+| "A clarification about what kind of transfer this is." | "The analogy is not homology." |
+| "A caveat about the analogy." | *(cut, merged)* |
+| "A caveat about evidential asymmetry:" | "The evidential asymmetry matters:" |
+| "A clarification about two kinds of variation." | "Two kinds of variation matter here." |
 
 ---
 
 ## For Next Session
 
-1. **Debug LaTeX errors** — run full compile, check log
-2. **Review Ch7 additions** — ensure target kind triage, payoff sentence, realism pledge flow well
-3. **Continue to Ch8** — or continue refining Ch7 case studies
+### Priority 1: "Degrees of projectibility" section (§7.7, lines 563-575)
+- Short section between mechanism tests and commitments
+- Check if it's doing real work or just filling space
+- May need to integrate into one of the adjacent sections
+
+### Priority 2: Chapter 8 (Failure Modes)
+- Planning notes exist: `notes/chapter08-master.md`
+- Chapter 7 now has explicit bridge to Ch8 with "what could mislead us" tags
+- Ready to begin drafting
+
+### Priority 3: Full read-through of Chapter 7
+- Check flow after all the micro-edits
+- Look for any remaining redundancy or awkward transitions
 
 ---
 
-## Key Files to Review
+## Key Files
 
 ```
-notes/chapter07-session-handoff.md   # Previous session handoff
-notes/boyd-review-chapter7.md        # Boyd simulation (8 points)
-notes/chapter08-master.md            # Ch8 planning
-notes/CHAPTER_OUTLINE.md             # Full book structure
-.agent/workflows/init.md             # How to start a session
+chapters/chapter07.tex              # Main working file (637 lines)
+notes/chapter07-session-handoff.md  # This file
+notes/chapter08-master.md           # Ch8 planning notes
+notes/CHAPTER_OUTLINE.md            # Book structure
+.house-style/style-rules.yaml       # Style rules
 ```
 
 ---
@@ -93,4 +103,12 @@ notes/CHAPTER_OUTLINE.md             # Full book structure
 
 All changes committed and pushed to `restructure-part-1` branch.
 
-Latest commit: `b4b1d34` — "Ch7: add target kind triage, cross-domain payoff, realism pledge; create Ch8 master notes"
+**Session commits (oldest to newest):**
+1. `085ebb9` — "Ch7: polish opening 'The cluster' section per editorial feedback"
+2. `7c37766` — "Ch7: house style pass (remove paragraph{}, em-dash→en-dash, vary meta-comment patterns)"
+3. `4ea5e62` — "Ch7: merge redundant paragraphs on fast dual-category"
+4. `b0f67cc` — "Ch7: remove remaining throat-clearer 'A clarification about'"
+
+Plus earlier commits this session:
+- "Ch7: major rewrite of 'What this commits us to' section per editorial feedback"
+- "Ch7: restructure mechanism tests as bridge to Ch8"
