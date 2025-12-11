@@ -312,6 +312,23 @@ American historical corpus evidence makes the trajectory visible \citep{davies20
 \label{fig:fun-coha}
 \end{figure}
 
+\paragraph{Boundary phenomena: operationalising distance.}
+The \mention{fun} example shows diachronic drift toward a boundary. But how do we study items that sit \emph{at} a boundary synchronically~-- stably intermediate, not in transition but genuinely in between?
+
+English reciprocals~-- \mention{each other}, \mention{one another}~-- offer a fully worked-out case \citep{reynolds2025reciprocals}. Standard reference grammars classify them as compound pronouns, grouping them with \mention{someone}, \mention{anything}, \mention{nobody}. Yet they differ sharply from those items on core pronoun diagnostics: they inflect for genitive (\mention{each other's}), can occur as complement of \mention{of} (\mention{friends of each other}), and take plural antecedents~-- properties that align them with compound determinatives like \mention{each}, \mention{every}, \mention{either}. Morphologically and semantically, reciprocals pull toward determinatives; syntactically and phonologically, they cluster with pronouns.
+
+How stable is this in-betweenness? The methodology in \citet{reynolds2025reciprocals} addresses exactly this question by applying three diagnostics:
+
+\begin{enumerate}
+\item \textbf{Invariance under analytic perturbation.} Does the boundary position shift when you change the distance metric, the comparison set, or the feature weights? Across multiple correspondence analysis ordinations, Jaccard distances, and specification curves, reciprocals sit midway between pronoun and determinative anchors~-- a stable intermediate, not an artefact of a particular operationalisation.
+
+\item \textbf{Cross-dimensional tension.} Do different feature families pull in different directions? Morphology pulls reciprocals toward compound determinatives (they inflect like \mention{each}'s genitive). Semantics pulls them toward pronouns (they denote referents, not quantities). Syntax and phonology are more neutral. The signature of a boundary item is exactly this: opposed pulls from mechanisms that maintain different basins.
+
+\item \textbf{Clear anchors behave cleanly.} Do items unambiguously inside each basin show the expected clustering? \mention{Someone} and \mention{anything} sit deep in the pronoun basin; \mention{every} and \mention{either} sit deep in the determinative basin. The methodology confirms what intuition expects: the anchors cluster where they should. The interesting finding is that reciprocals don't.
+\end{enumerate}
+
+This operationalises the chapter's theoretical picture. \enquote{Distance to boundary} is not metaphorical; it can be measured as $\Delta$-contrasts (the difference between mean distance to pronouns and mean distance to determinatives), as mixture weights in a blend model, or as classifier uncertainty. \enquote{Stability of ambiguity} is not vague intuition; it is invariance under analytic perturbation~-- the in-betweenness persists when you change your measurement instrument. Reciprocals sit in the overlap region of Figure~\ref{fig:disjoint-overlap}, not because the analysis went wrong but because the basin structure itself has overlap.
+
 The same analysis applies to the existential debates about feature systems raised in Chapter~\ref{ch:what-we-havent-been-asking}. Is \textsc{gender} a natural kind, or is it reducible to \textsc{number}? The question becomes: do gender and number occupy distinct basins maintained by distinct mechanisms, or is gender a sub-region of a larger number basin, maintained by the same mechanisms at a finer grain?
 
 If the mechanisms maintaining gender systems~-- agreement patterns, acquisition pathways, functional pressures toward nominal classification~-- are distinct from those maintaining number systems, then gender is a genuine natural kind: a separate basin in the space of grammatical features. If the mechanisms overlap substantially~-- if gender turns out to be number's machinery for individuation, as some theorists have argued~-- then the basins merge, and \textsc{gender} as a cross-linguistic category dissolves into \textsc{number}.
@@ -382,6 +399,8 @@ This follows naturally from the HPC framework. Categories are maintained by mech
 Where the mechanisms align, the basins are disjoint: nouns and verbs occupy separate regions because the mechanisms that maintain them pull in different directions (Figure~\ref{fig:disjoint-overlap}, left). Where the mechanisms cross, the basins overlap: adjectives and prepositions share enough properties~-- predicative function, modification of nominals~-- that some items cluster with both (Figure~\ref{fig:disjoint-overlap}, right).
 
 The regions of overlap are not arbitrary. They're located where the property clusters themselves overlap~-- where an item can satisfy the tolerance criteria for both categories simultaneously. These are exactly the cases that trouble essentialism: items that have \enquote{mixed} status because they satisfy criteria for multiple categories. On the HPC + hyperreal view, mixed status is not indeterminacy but dual location: the item is in two basins at once, stably, because the mechanisms that maintain each basin both apply.
+
+The reciprocals case from §\ref{subsec:5:multi-category} exemplifies this cleanly. Morphology maintains the determinative basin; semantics maintains the pronoun basin. Reciprocals satisfy both. The mixture weights from the blend model~-- roughly 0.5 pronoun, 0.5 determinative~-- are not noise or measurement error. They are the empirical signature of genuine dual location: stable membership in overlapping basins, maintained by partially independent mechanisms.
 
 \begin{figure}[t]
 \centering
