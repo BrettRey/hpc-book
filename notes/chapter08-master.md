@@ -4,6 +4,34 @@
 
 ---
 
+## Drafted Status (December 2025)
+
+**Status:** Initial draft complete (`chapters/chapter08.tex`)
+
+**Sections drafted:**
+- §8.1 The Inflation Problem (O'Connor "payoff vs property" distinction)
+- §8.2 Thin Clustering: The Smoke Ring (*whose*-stranding case study)
+- §8.3 Fat Clustering: The Wastebasket (Adverb case study)
+- §8.4 Negative Diagnosis (*non-finite* case study)
+- §8.5 The Grain of Analysis (Madagascar analogy)
+- §8.6 Principled Criteria: The Two-Diagnostic Test
+- §8.7 Implications
+
+**Key decisions made:**
+- Framing: "Inflation Problem" as central antagonist
+- O'Connor integration: "Payoff vs Property" is the diagnostic
+- Thin = "smoke rings" (pure convention without immune system)
+- Fat = "wastebaskets" (labels for absence of features)
+- Grain solution: Madagascar analogy (constructions = species, grammar = fauna)
+- Two-Diagnostic Test from `stack.tex` manuscript
+
+**Open questions for revision:**
+- O'Connor's *Measuring Conventionality* not yet fully unpacked
+- Intervention operationalisation needs concrete examples
+- Cross-linguistic test cases for negative/fat failures need development
+
+---
+
 ## Purpose in Book Structure
 
 Chapter 8 is the **falsifiability guardrail** for the HPC framework. While Chapters 4–7 build the positive case (what HPC kinds are, how they're maintained, why they project), Chapter 8 provides the discipline: how do we know when a putative category *fails* to earn HPC status?

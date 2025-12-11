@@ -1,83 +1,77 @@
 # HPC Book Project Status
 
-**Date**: November 29, 2025  
-**Current Phase**: Initialization & Planning
+**Date**: December 10, 2025  
+**Current Phase**: Part II Drafting Complete; Part III Outlined
 
 ## Completed
 
-- ✅ Project repository initialized
-- ✅ Directory structure created (`chapters/`, `code/`, `figures/`, `build/`, `notes/`)
-- ✅ Git repository initialized
+- ✅ Project repository initialized with Git
 - ✅ `.gitignore` configured for LaTeX/academic project
 - ✅ README.md with project overview
 - ✅ Synopsis finalized (~880 words)
-- ✅ Core thesis articulated
+- ✅ Core thesis articulated (HPC kinds for grammatical categories)
 - ✅ 14-chapter structure defined (4 parts: Problem, Fix, Categories, Implications)
+- ✅ House style guide established (`.house-style/style-guide.md`)
+- ✅ LaTeX preamble with custom macros (`.house-style/preamble.tex`)
+- ✅ Bibliography system (BibTeX with Biber backend)
+
+### Part I: The Problem (Chapters 1-3)
+- ✅ **Ch 1**: Words That Won't Hold Still - drafted and revised
+- ✅ **Ch 2**: Essentialism and its Discontents - drafted and revised
+- ✅ **Ch 3**: What We Haven't Been Asking - drafted and revised
+
+### Part II: The Fix (Chapters 4-8)
+- ✅ **Ch 4**: Homeostatic Property Clusters - drafted and revised
+- ✅ **Ch 5**: Discrete from Continuous - drafted and revised
+- ✅ **Ch 6**: Projectibility and the Good Bet - drafted and revised
+- ✅ **Ch 7**: The Stabilisers - drafted and revised (quotatives case study)
+- ✅ **Ch 8**: Failure Modes - initial draft complete (thin/fat/negative taxonomy)
 
 ## In Progress
 
-- 🔄 Chapter 1 drafting (Sections 1.1 and 1.2 complete)
-- 🔄 Example identification and development
-- 🔄 Bibliography compilation (Initial batch imported)
+- 🔄 Chapter 8 refinement (O'Connor engagement, intervention operationalisation)
+- 🔄 Part III outlining (Chapters 9-12: case studies)
 
 ## Next Actions
 
-### Immediate (This Week)
-1. **Ch 1-2 Drafts** - The Problem (Part I)
-   - Ch 1: What are grammatical categories?
-   - Ch 2: Essentialism and its discontents (furniture, weak definites)
-
-2. **Example Development**
-   - Expand the */the/* example from synopsis
-   - Develop countability cases (for Ch 9)
-   - Document definiteness puzzles (for Ch 10)
-   - Collect word class boundary cases (for Ch 11)
-
-3. **Research Infrastructure**
-   - Set up bibliography system (BibTeX)
-   - Identify key papers to cite in Ch 5 (HPC in biology)
-   - Create example tracking document
+### Immediate
+1. **Ch 8 Polish** - Refine prose, add missing citations (O'Connor 2019, Reynolds 2025)
+2. **Part III Planning** - Create master notes for Ch 9-12 case studies
 
 ### Short-term (This Month)
-1. Create detailed chapter outlines for Parts I-II
-2. Draft key examples with linguistic data
-3. Begin bibliography (philosophy of science, linguistics, semantics)
-4. Identify figures/diagrams needed
+1. Begin Ch 9 (Countability) drafting
+2. Collect cross-linguistic data for Part III case studies
+3. Review and update bibliography for Part III
 
 ### Medium-term (Next 2-3 Months)
-1. Draft Part I chapters
-2. Draft Part II chapters
-3. Develop case studies for Part III
-4. Create visualizations
+1. Draft Part III chapters (9-12)
+2. Draft Part IV chapters (13-14)
+3. Create visualizations and figures
 
-### Long-term (6 Months)
-1. Complete all chapters
-2. Revise and refine
-3. Prepare for manuscript submission
+## Key Decisions Made
 
-## Key Challenges to Address
+1. **Quotatives case study** selected for Ch 7 (cross-linguistic, recent data)
+2. **O'Connor integration** for Ch 8 (payoff vs property distinction)
+3. **Madagascar analogy** for grain-of-analysis problem
+4. **Two-Diagnostic Test** framework (projectibility + homeostasis)
 
-1. **Balance depth and accessibility**: Philosophy + linguistics audience
-2. **Example selection**: Need compelling, clear cases that show mechanism at work
-3. **Cross-linguistic evidence**: What data is needed to support claims?
-4. **Engagement with existing literature**: What must be cited/addressed?
-5. **Methodology chapter**: Do we need explicit methods discussion?
+## Key Files
 
-## Research Questions to Pursue
+- `chapters/chapter01.tex` through `chapter08.tex` - Main chapter files
+- `notes/CHAPTER_OUTLINE.md` - Authoritative chapter structure
+- `notes/chapter07-master.md` - Consolidated Ch 7 notes (pattern for other chapters)
+- `notes/chapter08-master.md` - Ch 8 failure modes notes
+- `notes/oconnor-and-hpc-levels.md` - O'Connor engagement and grain-of-analysis
+- `literature/stack.tex` - Standalone paper manuscript (HPC stack)
+- `synopsis.md` - Book synopsis
 
-- What are the specific mechanisms for each grammatical category?
-- How do we empirically test for homeostasis in grammar?
-- What are the clearest failure cases (non-HPC categories)?
-- How does this framework interact with formal/computational approaches?
-- What predictions does HPC make that essentialism doesn't?
+## Research Questions Addressed
 
-## Resources Needed
-
-- [ ] Access to linguistic corpora
-- [ ] Bibliography management (BibTeX/Zotero)
-- [ ] LaTeX template for book manuscript
-- [ ] Diagram/figure creation tools
-- [ ] Example tracking system
+- ✅ What are the specific mechanisms for grammatical categories? (Ch 7)
+- ✅ How do we empirically test for homeostasis? (Ch 7 robustness tests)
+- ✅ What are the clearest failure cases? (Ch 8 thin/fat/negative)
+- 🔄 How does this interact with formal/computational approaches? (Ch 8 criteria)
+- ✅ What predictions does HPC make that essentialism doesn't? (Ch 6, 7)
 
 ---
 

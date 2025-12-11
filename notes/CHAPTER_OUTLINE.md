@@ -90,10 +90,14 @@
 *How to know when you don't have a kind*
 
 **Key points:**
-- Thin clustering: insufficient homeostasis
-- Fat clustering: multiple kinds lumped together
-- Negative diagnosis: taxonomic convenience, not natural kind
-- Principled criteria for kind-hood
+- **The Inflation Problem:** Why we see HPCs everywhere (payoff vs property confusion)
+- **O'Connor's Diagnostic:** Payoff similarity ≠ property similarity (sim-max games)
+- **Thin clustering:** Insufficient homeostasis (whose-stranding, nonce coinages)
+- **Fat clustering:** Multiple kinds lumped together (adverb wastebasket)
+- **Negative diagnosis:** Taxonomic convenience, not natural kind (non-finite)
+- **The Grain Question:** Madagascar analogy—individual constructions are HPCs, "grammar" is an ecosystem
+- **Two-Diagnostic Test:** Projectibility (epistemic) + Homeostasis (ontological)
+- **Principled criteria for kind-hood:** Learning transfer, intervention stability, cross-context generalisation
 
 ---
 

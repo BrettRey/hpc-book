@@ -98,12 +98,13 @@ Four parts, 14 chapters:
 4. **Part IV: Implications** (Ch 13-14) - Grammaticality, methodological consequences
 
 ### Current Chapter Status (Dec 2025)
-- **Ch 1-3**: Drafted (Part I: The Problem)
-- **Ch 4**: Outlined (HPC introduction)
+- **Ch 1-3**: Drafted and revised (Part I: The Problem)
+- **Ch 4**: Drafted and revised (HPC introduction)
 - **Ch 5**: Drafted and revised (discreteness problem)
-- **Ch 6**: In progress (projectibility) - currently active in main.tex
-- **Ch 7**: Planning stage - see `notes/chapter07-master.md` for consolidated notes
-- **Ch 8-14**: Outlined only
+- **Ch 6**: Drafted and revised (projectibility)
+- **Ch 7**: Drafted and revised (The Stabilisers) - quotatives case study complete
+- **Ch 8**: Drafted (Failure Modes) - thin/fat/negative taxonomy, O'Connor integration
+- **Ch 9-14**: Outlined only
 
 ## Chapter Development Workflow
 
