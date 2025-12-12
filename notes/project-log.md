@@ -138,14 +138,63 @@ Many citations still lack matching PDFs: `quine1969`, `kornblith1993`, `gardenfo
 - **Chapters 1-5** (Dec 1-5): Commits show polish-level work: "Style fixes," "Small polish," "phrasing, contractions," "humour, rhetoric, figures." The arc is refinement, not reconstruction.
 - **Chapters 6-8** (Dec 6-10): Commits show deep rework: "major rewrite of 'What this commits us to' section," "restructure mechanism tests," "merge redundant paragraphs," "major rewrite of 'Refactoring' section." The arc is repeated surgery.
 
-**Possible factors (hypotheses for future investigation):**
-1. **Cumulative context loss**: Chat transcripts early in the project carried full context; later sessions may have lost crucial framing from truncation.
-2. **Outline specificity**: Chapters 1-5 had more detailed prior planning (`synopsis.md`, `ontology_of_grammar.md`); chapters 6-8 were drafted with less scaffolding.
-3. **Conceptual maturity**: The HPC framework itself was clearer in the author's mind for chapters 1-5; chapters 6-8 required the model to extrapolate further from less crystallized ideas.
-4. **Model/interface changes**: Different models or interfaces (Claude Opus, Antigravity) may have been used in different phases.
-5. **Prompting style drift**: Early sessions may have included more explicit structural prompts; later sessions may have become more conversational.
+**KEY FINDING: Pre-draft planning documents correlate with quality.**
 
-**TODO:** Excavate early chat transcripts (if available) to compare prompting patterns. Check which model versions were used for which chapters.
+| Chapter | Pre-draft Planning Doc | Size | Notes |
+|---------|------------------------|------|-------|
+| Ch 1 | (synopsis.md, ontology_of_grammar.md) | 30KB+ | Core thesis docs |
+| Ch 2 | `handoff_to_opus.md` + `chapter2_planning.md` | 16.9KB + 8.4KB | Full transcript, strategic example allocation, Rapoport's rules |
+| Ch 3 | `chapters_3_and_5_planning.md` | 11.2KB | Material identified, forward pointers |
+| Ch 4 | `chapter04_hpc_intro.md` | 5.3KB | Detailed section outline |
+| Ch 5 | `chapters_3_and_5_planning.md` | 11.2KB | 13 subsections of material, epigraph, revision history |
+| **Ch 6** | `chapter06-feedback.md` **only** | **1.9KB** | **Feedback on draft, not pre-draft planning** |
+| **Ch 7** | `chapter07-master.md` | **29KB** | **Post-draft consolidation** (contains "Packaging Board Feedback (2025-12-07)") |
+| **Ch 8** | `chapter08-master.md` | **9KB** | **States "Initial draft complete"** — planning happened during or after drafting |
+
+**Pattern:**
+- Chapters with detailed PRE-draft planning (~5-17KB of strategic structure, example allocation, and explicit constraints) produced good first drafts.
+- Chapters where planning was done DURING or AFTER drafting required extensive revision.
+
+**The `handoff_to_opus.md` document (Dec 1) is exemplary:**
+- Full conversation transcript with explicit questions and user constraints
+- Rapoport's rules discussion (steel-man before critique)
+- Great science communicators analysis (Gould, Dennett, Dawkins, Sacks)
+- Domain-by-domain structure with explicit example allocation
+- Forward/backward references to other chapters
+
+**Recommendation for Part III development:**
+Create pre-draft planning documents following the `handoff_to_opus.md` template:
+1. Conversation transcript capturing strategic decisions
+2. Explicit example allocation (what goes here vs reserved for later)
+3. User constraints restated clearly
+4. Structure choices with rationale
+5. Forward/backward chapter connections
+
+---
+
+### Process Observations (Meta-reflection)
+
+**Successful patterns in this project:**
+
+1. **Simulated advisory board reviews:** Using named scholars (Boyd, Rosch, Dąbrowska, Fahnestock, Tufte, Goldberg, Croft, Godfrey-Smith, McCloskey) to generate targeted feedback from different perspectives. See `chapter06-feedback.md` and `chapter07-master.md` (Part O: Packaging Board Feedback). This produced discipline-specific critiques rather than generic suggestions.
+
+2. **Science communicators as structural models:** Explicit discussion of how Gould, Dennett, Dawkins, and Sacks structure arguments. Each has a signature move (Concrete→Pattern→Principle, Intuition→Violation→Reconstruction, etc.). This informed chapter architecture. See `handoff_to_opus.md` lines 84-107.
+
+3. **Multi-model workflow:** Gemini 2.0 Flash for planning/brainstorming, Claude Opus for drafting, Antigravity for revision and integration. Different interfaces seem suited to different phases (though this needs more systematic investigation).
+
+4. **House-style enforcement:** `.house-style/style-guide.md` and `.house-style/preamble.tex` establish conventions that multiple sessions can follow. Reduces iteration on surface-level fixes.
+
+5. **Literature PDF integration:** Keeping PDFs named to match BibTeX keys enables systematic citation work. Today's session demonstrated this: `pdftotext` + grep + targeted edits.
+
+6. **Master notes as consolidation:** For chapters 7-8, the master notes became post-hoc consolidations of scattered material. This is useful for handoff but doesn't replace pre-draft planning.
+
+**Patterns to improve:**
+
+1. **Pre-draft planning for every chapter:** The quality correlation is clear enough to make this mandatory.
+
+2. **Citation pass as separate phase:** Today's work (adding page numbers, quotations) is best done after drafting but before final polish. Build this into the workflow.
+
+3. **Transcript preservation:** `handoff_to_opus.md` captured a valuable strategic conversation. Consider doing this more systematically, especially for planning phases.
 
 ### State at end of session
 - All changes committed and pushed to `restructure-part-1` branch
