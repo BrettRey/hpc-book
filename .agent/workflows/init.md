@@ -8,51 +8,83 @@ This workflow orients you to the project. Use it at the start of any new session
 
 ## Quick Start (Returning Session)
 
-1. **Read handoff notes**
+1. **Read project status**
    ```
-   cat notes/chapter07-session-handoff.md
+   cat PROJECT_STATUS.md
    ```
 
-2. **Check current chapter outline**
+2. **Read process log** (especially the Dec 11 reflection on quality patterns)
+   ```
+   cat notes/project-log.md
+   ```
+
+3. **Check current chapter outline**
    ```
    cat notes/CHAPTER_OUTLINE.md
    ```
 
-3. **Check house style**
+4. **Check house style**
    ```
-   cat .house-style/style-rules.yaml
+   cat .house-style/style-guide.md
    ```
 
-4. **Compile to verify state**
-   ```
-   xelatex main.tex && biber main && xelatex main.tex
-   ```
+## Key Retrieval Points
+
+**For chapter planning:** 
+- `notes/handoff_to_opus.md` — EXEMPLARY template for pre-draft planning (full strategic conversation, Rapoport's rules, science communicator structures)
+- `notes/chapter2_planning.md`, `notes/chapters_3_and_5_planning.md`, `notes/chapter04_hpc_intro.md` — Pre-draft planning docs that produced good drafts
+
+**For chapter development:**
+- `notes/chapterNN-master.md` — Consolidated notes for chapter NN
+- `notes/chapterNN-grist.md` — Raw material/excerpts for chapter NN
+
+**For process insights:**
+- `notes/project-log.md` — Session history with meta-reflection on what works
+- Key finding: Pre-draft planning correlates with draft quality
+
+**For literature:**
+- `literature/*.pdf` — Named to match BibTeX keys
+- Use `pdftotext "literature/author2024.pdf" - | grep -i "keyword"` to search
 
 ## Full Initialization (New to Project)
 
-1. **Review project structure**
-   - `chapters/` — LaTeX chapter files
-   - `figures/` — PGF/TikZ figures
-   - `notes/` — working notes, outlines, handoffs
-   - `.house-style/` — preamble and style rules
-   - `literature/` — PDF sources (Author_Year_Title.pdf)
+1. **Read CLAUDE.md** — Project overview, build commands, house style summary
 
-2. **Key files**
-   - `main.tex` — book root
-   - `notes/CHAPTER_OUTLINE.md` — 14-chapter structure
-   - `notes/chapter07-session-handoff.md` — current working state
+2. **Review project structure**
+   - `chapters/` — LaTeX chapter files (chapter01.tex through chapter14.tex)
+   - `figures/` — PNG/PDF figures
+   - `notes/` — planning docs, master notes, handoffs
+   - `.house-style/` — preamble.tex and style-guide.md
+   - `literature/` — PDF sources (author_year.pdf format)
+
+3. **Key files**
+   - `main.tex` — book root (chapters are commented out for fast compilation)
    - `references.bib` — bibliography
+   - `synopsis.md` — 880-word book summary
 
-3. **Current focus: Chapter 7 (The Stabilisers)**
-   - Restructured to embody biological explanatory style
-   - Next step: Draft worked case (evidentials OR quotatives)
-   - See handoff notes for details
+4. **Current state** (as of Dec 11, 2025)
+   - Part I (Ch 1-3): Drafted and revised
+   - Part II (Ch 4-8): Drafted, citations refined
+   - Part III (Ch 9-12): Outlined only
+   - Next: Pre-draft planning for Ch 9 (Countability)
 
-4. **Compile workflow**
-   ```
-   xelatex main.tex && biber main && xelatex main.tex
-   ```
+## Process Reminders
 
-5. **Git workflow**
-   - Currently on branch `restructure-part-1`
-   - Commit and push after significant changes
+**For drafting new chapters:**
+1. Create pre-draft planning doc following `handoff_to_opus.md` template
+2. Include: example allocation, user constraints, structure rationale, cross-chapter refs
+3. Only then begin drafting
+
+**For citation work:**
+1. Check `literature/` for matching PDF
+2. Use `pdftotext` + grep to find page numbers
+3. Add `[page]` or `[Table~N]` to citation
+
+**Build commands:**
+```bash
+xelatex main.tex && biber main && xelatex main.tex
+```
+
+**Git:**
+- Branch: `restructure-part-1`
+- Commit after significant changes, push at session end
