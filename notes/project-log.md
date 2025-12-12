@@ -201,3 +201,5 @@ Create pre-draft planning documents following the `handoff_to_opus.md` template:
 - Citations across all 8 chapters reviewed
 - Ready for Part III development
 
+**Next session (Dec 12):** Flesh out Chapter 8, which is still skeletal.
+
