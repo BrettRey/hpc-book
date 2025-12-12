@@ -130,6 +130,23 @@ Many citations still lack matching PDFs: `quine1969`, `kornblith1993`, `gardenfo
 - Updated `CLAUDE.md` chapter status
 - Updated `project-log.md` (this file)
 
+### Reflection: Draft quality differences (Chs 1-5 vs 6-8)
+
+**Observation:** The first drafts of chapters 1-5 were notably good — often requiring only polish rather than structural rewriting. Chapters 6-8, by contrast, required extensive reworking: multiple "major rewrite" commits, repeated editorial passes, and significant structural changes.
+
+**Evidence from git history:**
+- **Chapters 1-5** (Dec 1-5): Commits show polish-level work: "Style fixes," "Small polish," "phrasing, contractions," "humour, rhetoric, figures." The arc is refinement, not reconstruction.
+- **Chapters 6-8** (Dec 6-10): Commits show deep rework: "major rewrite of 'What this commits us to' section," "restructure mechanism tests," "merge redundant paragraphs," "major rewrite of 'Refactoring' section." The arc is repeated surgery.
+
+**Possible factors (hypotheses for future investigation):**
+1. **Cumulative context loss**: Chat transcripts early in the project carried full context; later sessions may have lost crucial framing from truncation.
+2. **Outline specificity**: Chapters 1-5 had more detailed prior planning (`synopsis.md`, `ontology_of_grammar.md`); chapters 6-8 were drafted with less scaffolding.
+3. **Conceptual maturity**: The HPC framework itself was clearer in the author's mind for chapters 1-5; chapters 6-8 required the model to extrapolate further from less crystallized ideas.
+4. **Model/interface changes**: Different models or interfaces (Claude Opus, Antigravity) may have been used in different phases.
+5. **Prompting style drift**: Early sessions may have included more explicit structural prompts; later sessions may have become more conversational.
+
+**TODO:** Excavate early chat transcripts (if available) to compare prompting patterns. Check which model versions were used for which chapters.
+
 ### State at end of session
 - All changes committed and pushed to `restructure-part-1` branch
 - Citations across all 8 chapters reviewed
