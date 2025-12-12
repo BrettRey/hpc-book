@@ -99,11 +99,11 @@ Four parts, 14 chapters:
 
 ### Current Chapter Status (Dec 2025)
 - **Ch 1-3**: Drafted and revised (Part I: The Problem)
-- **Ch 4**: Drafted and revised (HPC introduction)
-- **Ch 5**: Drafted and revised (discreteness problem)
-- **Ch 6**: Drafted and revised (projectibility)
+- **Ch 4**: Drafted and revised (HPC introduction) - Millikan + Craver quotes added
+- **Ch 5**: Drafted and revised (discreteness problem) - Kirby quote added
+- **Ch 6**: Drafted and revised (projectibility) - Favier citation refined
 - **Ch 7**: Drafted and revised (The Stabilisers) - quotatives case study complete
-- **Ch 8**: Drafted (Failure Modes) - thin/fat/negative taxonomy, O'Connor integration
+- **Ch 8**: Drafted (Failure Modes) - thin/fat/negative taxonomy, Miller citation refined
 - **Ch 9-14**: Outlined only
 
 ## Chapter Development Workflow

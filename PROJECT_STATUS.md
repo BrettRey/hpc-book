@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 10, 2025  
-**Current Phase**: Part II Drafting Complete; Part III Outlined
+**Date**: December 11, 2025  
+**Current Phase**: Part II Drafting Complete; Citation Refinement Session
 
 ## Completed
 
@@ -25,18 +25,23 @@
 - ✅ **Ch 5**: Discrete from Continuous - drafted and revised
 - ✅ **Ch 6**: Projectibility and the Good Bet - drafted and revised
 - ✅ **Ch 7**: The Stabilisers - drafted and revised (quotatives case study)
-- ✅ **Ch 8**: Failure Modes - initial draft complete (thin/fat/negative taxonomy)
+- ✅ **Ch 8**: Failure Modes - drafted (thin/fat/negative taxonomy)
+
+### Citation & Bibliography Work (Dec 11, 2025)
+- ✅ Literature folder reorganized: 9 PDFs moved from `islands/` subfolder
+- ✅ PDFs renamed to match BibTeX keys (standardized naming)
+- ✅ Page references added to 8 citations across chapters 1, 3, 4, 5, 6, 8
+- ✅ 3 verbatim quotations added (Millikan, Craver, Kirby)
 
 ## In Progress
 
-- 🔄 Chapter 8 refinement (O'Connor engagement, intervention operationalisation)
 - 🔄 Part III outlining (Chapters 9-12: case studies)
 
 ## Next Actions
 
 ### Immediate
-1. **Ch 8 Polish** - Refine prose, add missing citations (O'Connor 2019, Reynolds 2025)
-2. **Part III Planning** - Create master notes for Ch 9-12 case studies
+1. **Part III Planning** - Create master notes for Ch 9-12 case studies
+2. **Ch 9 Outline** - Countability as first Part III case study
 
 ### Short-term (This Month)
 1. Begin Ch 9 (Countability) drafting
@@ -54,6 +59,7 @@
 2. **O'Connor integration** for Ch 8 (payoff vs property distinction)
 3. **Madagascar analogy** for grain-of-analysis problem
 4. **Two-Diagnostic Test** framework (projectibility + homeostasis)
+5. **PDF naming convention**: Match BibTeX keys exactly
 
 ## Key Files
 
@@ -65,12 +71,31 @@
 - `literature/stack.tex` - Standalone paper manuscript (HPC stack)
 - `synopsis.md` - Book synopsis
 
+## Recent Session Work (Dec 11, 2025)
+
+### Citation Refinement
+| Chapter | Citation | Added |
+|---------|----------|-------|
+| 1 | `huddleston2002` | `[ch.~1]` |
+| 3 | `spike2020` | `[13--15]` |
+| 3 | `dahl2016` | `[435--436]` |
+| 4 | `millikan1984` | `[ch.~1]` |
+| 4 | `craver2009` | `[575]` |
+| 5 | `kirby2008` | `[10681]` |
+| 6 | `favier2021` | `[Table~2]` |
+| 8 | `miller2021` | `[25--26]` |
+
+### Verbatim Quotations Added
+- **Millikan 2017 p. 17** (Ch 4): Self-maintaining kinds depleting resources
+- **Craver 2009 p. 575** (Ch 4): "Kind concepts cut nature at its joints"
+- **Kirby 2008 p. 10681** (Ch 5): "invisible hand" process
+
 ## Research Questions Addressed
 
 - ✅ What are the specific mechanisms for grammatical categories? (Ch 7)
 - ✅ How do we empirically test for homeostasis? (Ch 7 robustness tests)
 - ✅ What are the clearest failure cases? (Ch 8 thin/fat/negative)
-- 🔄 How does this interact with formal/computational approaches? (Ch 8 criteria)
+- ✅ How does this interact with formal/computational approaches? (Ch 8 criteria)
 - ✅ What predictions does HPC make that essentialism doesn't? (Ch 6, 7)
 
 ---

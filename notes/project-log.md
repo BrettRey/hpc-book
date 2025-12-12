@@ -85,3 +85,53 @@ Created `notes/chapter-feedback-deferred.md` capturing items for:
 - 107 pages compiled
 - Chapters 3, 4, 5 revised
 - Ready to move to a new chapter tomorrow
+
+---
+
+## 11 December 2025 — Citation Refinement & Quotation Integration
+
+### Session summary
+
+Systematic review of all chapters (1-8) to add page numbers and verbatim quotations from source PDFs.
+
+### Literature folder reorganization
+- Moved 9 PDFs from `literature/islands/` subfolder to main `literature/` directory
+- Renamed all PDFs to match BibTeX keys:
+  - `kallini2024.pdf`, `piantadosi2024.pdf`, `cuneogoldberg2023.pdf`, etc.
+  - Corrected: `onishi2021.pdf` → `onishi2022.pdf`, `favierhuettig2021.pdf` → `favier2021.pdf`
+- Deleted empty `islands/` subdirectory
+
+### Page references added
+
+| Chapter | Citation | Reference Added |
+|---------|----------|-----------------|
+| 1 | `huddleston2002` | `[ch.~1]` |
+| 3 | `spike2020` | `[13--15]` |
+| 3 | `dahl2016` | `[435--436]` |
+| 4 | `millikan1984` | `[ch.~1]` |
+| 4 | `craver2009` | `[575]` |
+| 5 | `kirby2008` | `[10681]` |
+| 6 | `favier2021` | `[Table~2]` |
+| 8 | `miller2021` | `[25--26]` |
+
+### Verbatim quotations added
+
+1. **Millikan 2017 p. 17** (Ch 4): *"Anything with a structure that tends actively to maintain or reconstitute itself over time [...] maintains or increases its own kind while depleting materials and resources for constituting other kinds"*
+
+2. **Craver 2009 p. 575** (Ch 4): *"Kind concepts cut nature at its joints, and [...] nature's joints are located at the boundaries of mechanisms"*
+
+3. **Kirby 2008 p. 10681** (Ch 5): *"cultural evolution is an 'invisible hand' process leading to phenomena that are the result of human action but are not intentional artifacts"*
+
+### PDFs without matches (cannot add page numbers)
+Many citations still lack matching PDFs: `quine1969`, `kornblith1993`, `gardenfors2000/2014`, `williamson1994`, `labov2001`, `milroy1987`, `erikson1968`, `pickering2004`, etc.
+
+### Documentation updates
+- Updated `PROJECT_STATUS.md` with session summary
+- Updated `CLAUDE.md` chapter status
+- Updated `project-log.md` (this file)
+
+### State at end of session
+- All changes committed and pushed to `restructure-part-1` branch
+- Citations across all 8 chapters reviewed
+- Ready for Part III development
+
