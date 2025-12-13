@@ -127,3 +127,46 @@ When working on a chapter, check the master notes first to understand the planne
 - **Mechanisms**: Acquisition, entrenchment, interactive alignment, iterated transmission
 - **Projectibility**: Why categories support inductive generalizations
 - **Failure modes**: Thin clustering, fat clustering, negative diagnosis
+
+## Chapter Completion Polish
+
+As each chapter nears completion, do a final pass for:
+
+### Humour
+Look for opportunities to add a little wit—not jokes, but moments of self-awareness, unexpected phrasing, or dry observation that reward close reading. Examples:
+- "which is more than most PhD students manage" (Ch 4, line 95)
+- "Good luck." after noting entrenchment (Ch 4, line 108)
+
+### Structural Rhetorical Figures
+Add figures that do architectural work, not ornament:
+- **Tricolon** — groupings of three for rhythm
+- **Chiasmus** — A-B-B-A reversal for emphasis
+- **Anaphora** — repeated opening phrase across sentences
+- **Antithesis** — balanced contrast (X, not Y)
+- **Antimetabole** — "categories are real because they are maintained"
+
+### Extended Palette (less "speechy," suited to analytic prose)
+
+**Repetition placement:**
+- **Symploce** — same start + same end: "When maintained, it supports induction; when not maintained, it stops."
+- **Mesodiplosis** — repetition in the middle: "The cluster, in practice, drifts; the diagnostic, in practice, misfires."
+- **Conduplicatio** — carry a key term forward: "The issue is projectibility. Projectibility is what mechanisms buy you."
+- **Epanalepsis** — frame a unit with the same word: "Not essences, but mechanisms—mechanisms."
+
+**Linkage and inevitability (causal chains):**
+- **Anadiplosis** — end → start: "Stability produces predictability; predictability licences induction."
+- **Gradatio** — anadiplosis as a ladder: "Acquisition yields convergence; convergence yields alignment; alignment yields discreteness."
+
+**Mapping and bookkeeping:**
+- **Epanodos** — AB, then BA: "Mechanisms stabilise clusters; clusters licence inductions."
+- **Epimetabole** — repeated ending: "It looks like a definition, but it behaves like a mechanism; it sounds like a boundary, but it behaves like a mechanism."
+
+**Compression:**
+- **Gapping/ellipsis** — parallel clauses with deletion: "Some diagnostics track membership; others, merely tradition."
+- **Zeugma** — one governor, two complements: "The account explains the data and the temptation to essentialise."
+
+**Repair and live thinking:**
+- **Epanorthosis** — self-correction: "That looks like an exception—no, it's a different maintenance regime."
+- **Anacoluthon** — intentional syntactic derailment (use sparingly): "If categories were just conveniences—well, conveniences don't usually survive this kind of pressure."
+
+Keep these **subtle and functional**. The goal is prose that rewards re-reading without signalling cleverness.

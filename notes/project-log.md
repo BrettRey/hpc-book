@@ -203,3 +203,32 @@ Create pre-draft planning documents following the `handoff_to_opus.md` template:
 
 **Next session (Dec 12):** Flesh out Chapter 8, which is still skeletal.
 
+---
+
+## 11 December 2025 — Chapter 8 Development + Polish Phase Notes
+
+### Chapter 8 revisions
+
+Chapter 8 expanded from 333 → 358 lines:
+- Heritage attrition example (§8.2) — natural experiment for perturbation testing
+- Table 8.1 — failure-mode summary
+- Figure 8.1 — decluttered quadrant labels
+- §8.6.2 expanded — Haspelmath comparative concepts + evidentiality worked example
+
+### Polish phase: Humour and rhetoric
+
+**As each chapter nears completion**, a final polish pass should look for opportunities to:
+
+1. **Add a little humour** — not jokes, but moments of wit, self-awareness, or unexpected phrasing that reward close reading. Examples from the project:
+   - Ch 4: "which is more than most PhD students manage" (line 95)
+   - Ch 8: "Good luck." after noting how entrenched *thing* is
+
+2. **Add structural rhetorical figures** — not ornament but architecture:
+   - **Tricolon** — groupings of three for rhythm and memorability
+   - **Chiasmus** — A-B-B-A reversal for emphasis
+   - **Anaphora** — repeated opening phrase across sentences or paragraphs
+   - **Antithesis** — balanced contrast (X, not Y)
+   - **Antimetabole** — "categories are real because they are maintained" (near-chiasmus)
+
+These should be **subtle and functional**, not showy. The goal is prose that rewards re-reading without signalling cleverness.
+

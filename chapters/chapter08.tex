@@ -59,9 +59,11 @@ A confound lurks here. Projectibility across corpora can be an artefact of share
 
 If a category is a genuine kind, its stability must be causal, not accidental. We should be able to identify the specific feedback loops maintaining it: acquisition, entrenchment, alignment, transmission, functional pressure.
 
-The test asks: can we trace the causal chain? Can we predict what would happen if a stabiliser were removed? A genuine HPC should exhibit perturbation-sensitivity: weaken a mechanism, and the cluster should drift. A mere label should be perturbation-inert: remove it, and nothing changes in production or acquisition. This operationalises the homeostasis criterion in ways philosophers have demanded: \textcite{craver2009} argued that HPC theory is vague about what counts as a mechanism and where one mechanism ends and another begins. The perturbation test provides a concrete answer~-- the mechanism is whatever, when weakened, causes the cluster to drift.
+The test asks: can we trace the causal chain? Can we predict what would happen if a stabiliser were removed? A genuine HPC should exhibit perturbation-sensitivity: weaken a mechanism, and the cluster should fray. A mere label should be perturbation-inert: remove it, and nothing changes in production or acquisition. This operationalises the homeostasis criterion in ways philosophers have demanded: \textcite{craver2009} argued that HPC theory is vague about what counts as a mechanism and where one mechanism ends and another begins. The perturbation test provides a concrete answer: we recognise a mechanism by countering it~-- whatever process, when weakened, causes the cluster to fray. This is a diagnostic criterion, not a definition; it tells us how to find mechanisms, not what they essentially are.
 
 This diagnostic catches categories that are projectible by accident. A local correlation might predict well within a corpus but lack any causal grounding. The homeostasis diagnostic asks: is there a feedback loop, or just a coincidence?
+
+Heritage language attrition provides a natural experiment. When transmission mechanisms weaken~-- when children receive reduced input because their parents speak the heritage language less, or when community alignment is diluted by a dominant contact language~-- category boundaries become variable in predictable ways. Polinsky's work on American Russian shows exactly this pattern: heritage speakers maintain high-frequency, highly entrenched items (core vocabulary, basic constructions) while low-frequency items drift or are replaced by contact-language calques \autocite{polinsky2018heritage}. The perturbation (reduced transmission) causes the cluster to erode at its margins while the core holds. This is what the homeostasis diagnostic predicts: genuine HPCs show perturbation-sensitivity, with the degree of drift proportional to the strength of the perturbed mechanism.
 
 \subsection{Why both are needed}
 
@@ -71,13 +73,28 @@ A category might be projectible but not homeostatic. Consider a corpus artifact~
 
 A category might be homeostatic but not projectible. Consider a category maintained by a single, weak mechanism that operates inconsistently across speakers. The mechanism is real~-- we can name it, intervene on it~-- but it doesn't produce enough clustering to support reliable prediction. The homeostasis is real but insufficient.
 
-Only categories that pass both diagnostics are HPC kinds. The three failure modes we'll examine each fail in characteristic ways:
+Categories that pass both diagnostics are good candidates for HPC status. Categories that fail one or both are suspect. The three failure modes we'll examine each fail in characteristic ways:
 
 \begin{itemize}
-    \item \textbf{Thin categories} miss the homeostasis diagnostic. The mechanisms are absent or too weak to produce stable clustering.
-    \item \textbf{Fat categories} miss the projectibility diagnostic. The label lumps distinct mechanisms, so learning one subclass doesn't generalise to others.
-    \item \textbf{Negative categories} miss both. They're defined by absence, with no positive property cluster to maintain or project from.
+    \item \textbf{Thin classes} miss the homeostasis diagnostic. The mechanisms are absent or too weak to produce stable clustering.
+    \item \textbf{Fat classes} miss the projectibility diagnostic. The label lumps distinct mechanisms, so learning one subclass doesn't generalise to others.
+    \item \textbf{Negative classes} miss both. They're defined by absence, with no positive property cluster to maintain or project from.
 \end{itemize}
+
+\begin{table}[t]
+\centering
+\caption{Failure modes of putative HPC kinds}
+\label{tab:failure-modes}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Failure mode} & \textbf{Projectibility} & \textbf{Homeostasis} & \textbf{Example} \\
+\midrule
+Thin & Fail (insufficient clustering) & Fail (no stabilisers) & \textit{Whose}-stranding \\
+Fat & Fail (subclass divergence) & Partial (subgroup mechanisms) & Umbrella \term{adverb} \\
+Negative & Fail (no positive cluster) & Fail (defined by absence) & \term{Non-finite} \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[t]
 \centering
@@ -90,11 +107,11 @@ Only categories that pass both diagnostics are HPC kinds. The three failure mode
 \draw[thick] (5,0) -- (5,5);
 \draw[thick] (0,2.5) -- (10,2.5);
 
-% Quadrant labels
-\node[align=center] at (2.5,3.75) {\textbf{Weak mechanism}\\[3pt]Homeostatic but not projectible\\[3pt]\textit{Idiolectal patterns}};
-\node[align=center] at (7.5,3.75) {\textbf{Genuine HPC}\\[3pt]Pass both diagnostics\\[3pt]\textit{Count noun, manner adverb}};
-\node[align=center] at (2.5,1.25) {\textbf{Mere label}\\[3pt]Fail both diagnostics\\[3pt]\textit{Non-finite, \enquote{adverb}}};
-\node[align=center] at (7.5,1.25) {\textbf{Corpus artifact}\\[3pt]Projectible but not homeostatic\\[3pt]\textit{Genre-specific patterns}};
+% Quadrant labels (simplified)
+\node[align=center] at (2.5,3.75) {\textbf{Weak mechanism}\\[3pt]Homeostatic, not projectible};
+\node[align=center] at (7.5,3.75) {\textbf{Genuine HPC}\\[3pt]Pass both diagnostics};
+\node[align=center] at (2.5,1.25) {\textbf{Mere label}\\[3pt]Fail both diagnostics};
+\node[align=center] at (7.5,1.25) {\textbf{Corpus artifact}\\[3pt]Projectible, not homeostatic};
 
 % Axis labels
 \node[rotate=90, anchor=south] at (-0.6,2.5) {Homeostasis diagnostic};
@@ -104,7 +121,7 @@ Only categories that pass both diagnostics are HPC kinds. The three failure mode
 \node at (-0.3,3.75) {\footnotesize Pass};
 \node at (-0.3,1.25) {\footnotesize Fail};
 \end{tikzpicture}
-\caption{The two-diagnostic matrix. Only categories in the upper-right quadrant are genuine HPC kinds. The three failure modes occupy the other quadrants: thin categories (upper-left: mechanism without prediction), fat/negative categories (lower-left: neither mechanism nor prediction), and corpus artifacts (lower-right: prediction without mechanism).}
+\caption{The two-diagnostic matrix. Only categories in the upper-right quadrant are genuine HPC kinds. Examples: \emph{Genuine HPC}~-- count noun, manner adverb; \emph{Weak mechanism}~-- idiolectal patterns; \emph{Mere label}~-- \term{non-finite}, umbrella \term{adverb}; \emph{Corpus artifact}~-- genre-specific patterns.}
 \label{fig:diagnostic-matrix}
 \end{figure}
 
@@ -122,68 +139,68 @@ Language is an ecosystem. The HPCs are the individual form-meaning pairings~-- t
 
 The first pattern is the category that barely exists.
 
-A \term{thin} category is one where the signal exists~-- speakers recognise it, linguists name it~-- but the property cluster is ghostly. There is no robust homeostatic loop maintaining it. It is a \enquote{smoke ring}: it has structure, but that structure is ephemeral, typically generated by a transient convergence of other mechanisms rather than a dedicated feedback loop of its own.
+A \term{thin} class is one where the signal exists~-- speakers recognise it, linguists name it~-- but the property cluster is ghostly. There is no robust homeostatic loop maintaining it. It's a \enquote{smoke ring}: it has structure, but that structure is ephemeral, typically generated by a transient convergence of other mechanisms rather than a dedicated feedback loop of its own.
 
-Thin categories miss the homeostasis diagnostic. We cannot name their stabilisers~-- because there are none, or none sufficient to produce stable clustering.
+Thin classes miss the homeostasis diagnostic. We can't name their stabilisers~-- because there are none, or none sufficient to produce stable clustering.
 
 \subsection{The nonce word test}
 
-\citet[25--26]{miller2021} provides a useful operationalisation. Whether a novel form counts as a \enquote{word-kind} depends on whether stable mechanisms~-- internal (cognitive) and external (social)~-- have emerged to maintain it. Consider \term{cromulent}, coined for a 1996 television episode to mean \enquote{acceptable, fine.}
+\citet[25--26]{miller2021} provides a useful operationalisation. Whether a novel form counts as a \enquote{word-kind} depends on whether stabilising mechanisms~-- internal (cognitive) and external (social)~-- have emerged to maintain it as more than a one-off performance. Consider \term{cromulent}, coined for a 1996 \emph{Simpsons} episode to mean \enquote{acceptable, fine.}
 
-Does \term{cromulent} exist as a word? Miller's answer: ask about the mechanisms. Are there internal cognitive structures ensuring that speakers produce the form consistently? Are there social norms ensuring that speakers use it in stable, predictable ways? For Simpsons fans, yes~-- in certain communities, the form is well-established, with consistent pronunciation and stable meaning. For the general population, no~-- the form remains an in-joke, not a general-purpose word.
+Does \term{cromulent} exist as a word? Miller's answer is to treat this as a mechanistic question, not a metaphysical one. Are there internal routines ensuring that speakers reproduce the form reliably (phonology, meaning, inflectional behaviour)? Are there external norms that support convergent use (shared recognition, uptake, correction, expectation)? Within Simpsons-fan communities, the answer is often yes: the form is used with a consistent meaning and a stable pronunciation, and it is recognisable enough to support coordination. Outside those communities, the mechanisms are weaker or absent: the form surfaces as an in-joke, may be misheard or reanalysed, and is rarely transmitted as a general-purpose lexical item.
 
-The point is not that \term{cromulent} is \enquote{real} or \enquote{fake} but that its status depends on which mechanisms have stabilised where. A form can be an HPC kind in one speech community and a thin pattern in another. The question is always: what maintains it?
+The point is not that \term{cromulent} is \enquote{real} for some speakers and \enquote{fake} for others, but that wordhood is a claim about where stabilisers are doing work. A form can be a bona fide HPC kind in one network and a thin pattern in another. The question is always: what maintains it, and at what scale?
 
-The nonce word test generalises: a category is thin when the mechanisms haven't stabilised. This can happen for new forms (nonce coinages), rare forms (idiolectal oddities), or forms maintained only by accident (spillover from other patterns).
+The nonce word test generalises. A category is thin when the stabilisers that would make it a good bet have not (yet) consolidated. This can happen for genuinely new items (nonce coinages), for rare or enclave-restricted items (idiolectal or micro-community vocabulary), or for patterns that persist only as incidental fallout from other, more robust systems.
 
-\subsection{Case study: \textit{Whose}-stranding}
+\subsection{Case study: Preposition copying and pruning}
 
-English allows preposition stranding in \textit{wh}-questions: \mention{Who did you talk to?} instead of \mention{To whom did you talk?} This is robustly maintained. But stranding extends, at very low frequency, to the possessive determiner \textit{whose}:
+English offers two options for relativising prepositional complements: pied-piping (\mention{the box in which I put it}) and stranding (\mention{the box which I put it in}). Both are robustly maintained. But at very low frequency, speakers produce outputs that either copy the preposition or omit it:
 
 \begin{quote}
-\mention{the guy whose I borrowed car}\\
-\mention{the man whose they took wallet}
+\textbf{Copying:} \mention{from which to choose from}, \mention{from where it came from}\\
+\textbf{Pruning:} \mention{That's the situation that Obama finds himself} (intended: \mention{finds himself in})
 \end{quote}
 
-This pattern exists. It is attested in corpus data and sociolinguistic interviews. It is reproducible: speakers who produce it don't treat it as an error. But it is thin.
+This pattern exists. \citet{radford2012} document it in live broadcast speech: roughly 15 copying tokens and 67 pruning tokens in \textasciitilde300 hours of recording. It is reproducible: such forms often pass without overt repair. But it is thin.
 
-The frequency is vanishing: roughly 1 per 100 million words~-- so rare that no child could acquire it from exposure alone. There is no social indexing: \textit{whose}-stranding signals nothing about the speaker's identity, register, or stance. There is no functional niche: pied-piping (\mention{whose car I borrowed}) or paraphrase (\mention{the guy I borrowed the car from}) serve the same function without the processing complexity.
+The frequency is vanishing~-- too rare to be plausibly acquired as a \emph{target} construction. There is no social indexing: copying/pruning signals nothing about identity, register, or stance. There is no functional niche: either pied-piping or stranding serves the same communicative end without redundancy or omission.
 
 Apply the homeostasis diagnostic: can we name the stabilisers?
 
 \begin{itemize}
-    \item \textbf{Acquisition:} Fails. Insufficient tokens for learners to extract a rule.
-    \item \textbf{Entrenchment:} Fails. No speaker uses it frequently enough for lexeme-level strengthening.
-    \item \textbf{Social indexing:} Fails. Carries no sociolinguistic meaning.
-    \item \textbf{Functional pressure:} Fails. Competitors serve the function equally well.
+    \item \textbf{Acquisition:} Weak. The token rate is too low for learners to extract a dedicated rule.
+    \item \textbf{Entrenchment:} Weak. No speaker uses it frequently enough for strengthening at the constructional level.
+    \item \textbf{Social indexing:} Absent. There is no community norm that rewards or recognises it.
+    \item \textbf{Functional pressure:} Absent. Competitors cover the function without any gap.
 \end{itemize}
 
-What generates \textit{whose}-stranding is not a dedicated mechanism but a \term{spillover effect}. The general stranding parameter in English applies to \textit{wh}-phrases; \textit{whose} is a \textit{wh}-phrase; therefore speakers occasionally strand it. The pattern is a side-effect of more robust mechanisms, not a target of maintenance in its own right.
+What generates copying and pruning is not a dedicated maintenance loop but online production under competition. Radford and Felser analyse these as performance-side phenomena: speakers begin constructing one option and drift toward the other midstream. In copying, the two options leave traces of both routes; in pruning, the preposition is lost under the same competitive pressure plus ordinary omission. Either way, the result is a byproduct of mechanisms that robustly maintain pied-piping and stranding, not a target of maintenance in its own right.
 
-Compare to robust stranding: \mention{Who did you see?} This form is maintained by every mechanism on the list. Acquisition data shows children produce it early. Frequency is high. Social norms reinforce it (formal registers prefer pied-piping, informal registers prefer stranding~-- there's indexicality). Functional load is substantial. Object \textit{wh}-stranding is an HPC; \textit{whose}-stranding is its smoke ring~-- cast off by the same dynamics but lacking the immune system to persist independently.
+Compare to robust stranding: \mention{Who did you talk to?} This form is maintained by every mechanism on the list. Frequency is high. It is acquired early. It participates in register contrasts with pied-piping that create genuine indexical structure. Functional load is substantial. Preposition stranding is an HPC; copying/pruning is its smoke ring~-- cast off by the same dynamics but lacking the immune system to persist independently.
 
-The perturbation test makes this vivid. If English lost \textit{whose}-stranding tomorrow~-- if speakers simply stopped producing it~-- no feedback loop would kick in to restore it. No acquisition pressure, no social correction, no functional gap. It would vanish without a trace. A genuine HPC resists perturbation; a smoke ring dissipates.
+The perturbation test makes this vivid. If English lost preposition copying tomorrow~-- if speakers simply stopped producing it~-- no feedback loop would kick in to restore it. No acquisition pressure, no social correction, no functional gap. It would vanish without a trace. A genuine HPC resists perturbation; a smoke ring dissipates.
 
-Robust HPCs are \emph{attractors}: the mechanisms pull deviant instances back toward the cluster. Thin kinds are \emph{saddle points}: stable only while nothing disturbs them, collapsing under any perturbation. This is what it means to fail the homeostasis diagnostic. The pattern is real~-- it can be observed, described, named~-- but the causal structure that would maintain it is absent. We have a label without a kind.
+Robust HPCs are attractors: the mechanisms pull deviant instances back toward the cluster. Thin patterns are metastable: they persist only so long as the surrounding system continues to generate them as incidental fallout. This is what it means to fail the homeostasis diagnostic. The pattern is real~-- it can be observed, described, named~-- but the causal structure that would maintain it is absent. We have a label without a kind.
 
 \section{Fat clustering: The wastebasket}
 \label{sec:8:fat}
 
 The second pattern is the opposite of thinness: not too little mechanism, but too many pulling in different directions.
 
-A \term{fat} category is a label that lumps distinct causal clusters into a single bin. The analyst treats them as one~-- usually for \enquote{wastebasket} reasons, where the category is defined residually: \enquote{everything that isn't X goes here.} But the mechanisms maintaining the subgroups are radically different. Fat categories miss the projectibility diagnostic: learning one subclass doesn't let you predict others.
+A \term{fat} class is a label that lumps distinct causal clusters into a single bin. The analyst treats them as one~-- usually for \enquote{wastebasket} reasons, where the class is defined residually: \enquote{everything that isn't X goes here.} But the mechanisms maintaining the subgroups are radically different. Fat classes miss the projectibility diagnostic: learning one subclass doesn't let you predict others.
 
-Fat categories create an illusion of understanding. We have a label, so we act as if we have a kind. But the label masks the heterogeneity. Seeing \term{adverb} on the page, we assume there's something that makes all adverbs adverbs~-- some shared mechanism or property cluster. When we look for it, we find only the absence of other features.
+Fat classes create an illusion of understanding. We have a label, so we act as if we have a kind. But the label masks the heterogeneity. Seeing \term{adverb} on the page, we assume there's something that makes all adverbs adverbs~-- some shared mechanism or property cluster. When we look for it, we find only the absence of other features.
 
-Fat categories arise when different causal clusters get lumped under the same label for non-causal reasons. The analyst's goal~-- taxonomic completeness~-- treats manner adverbs and degree words alike because both are \enquote{modifiers that aren't adjectives.} But in causal terms, they occupy different regions with different mechanisms.
+Fat classes arise when different causal clusters get lumped under the same label for non-causal reasons. The analyst's goal~-- taxonomic completeness~-- treats manner adverbs and degree words alike because both are \enquote{modifiers that aren't adjectives.} But in causal terms, they occupy different regions with different mechanisms.
 
 \subsection{Case study: The \term{Adverb}}
 
 Try this: \mention{She ran quickly.} Now try: *\mention{She ran very.} Both \mention{quickly} and \mention{very} are adverbs~-- the same part of speech, according to every grammar textbook. Yet one sentence is grammatical and the other isn't. What went wrong?
 
-The answer reveals everything about fat categories. \term{Adverb} doesn't name a natural kind; it names a filing cabinet where grammarians store everything that modifies but isn't an adjective. The items in the drawer have almost nothing in common~-- and when we try to generalise across them, the predictions collapse.
+The answer reveals everything about fat classes. \term{Adverb} doesn't name a natural kind; it names a filing cabinet where grammarians store everything that modifies but isn't an adjective. The items in the drawer have almost nothing in common~-- and when we try to generalise across them, the predictions collapse.
 
-The traditional category \term{adverb} is the paradigmatic fat category~-- what introductory textbooks call the \enquote{dustbin of the parts of speech.} Look inside and you'll find at least three distinct clusters, each with its own mechanisms.
+The traditional category \term{adverb} is the paradigmatic fat class~-- what introductory textbooks call the \enquote{dustbin of the parts of speech.}\footnote{\textit{CGEL} dramatically improves matters by reassigning many traditional \enquote{adverbs} to prepositions and by separating category from function; but even the residual \textit{CGEL} Adverb still groups multiple mechanistically distinct subfamilies (degree/focusing vs derived manner vs stance/connective), so it too is likely decomposable under the two-diagnostic test.} Look inside and you'll find at least three distinct clusters, each with its own mechanisms.
 
 \textbf{Manner adverbs} (\mention{quickly}, \mention{carefully}, \mention{silently}) form an open class, productively derived from adjectives via \textit{-ly} suffixation. They integrate into the VP, favouring VP-final position: \mention{She ran quickly.} What maintains them? Productive derivational morphology (the \textit{-ly} rule applies to novel adjectives), VP-internal syntactic licensing, and early acquisition of the adjective-to-adverb mapping.
 
@@ -203,22 +220,22 @@ Learning the distribution of \mention{quickly}~-- that it can appear sentence-fi
 
 Conversely, learning that \mention{very} requires an adjective host~-- \mention{very tall}~-- generates a prediction that fails for sentence adverbs: \mention{Unfortunately, she left} has no adjective host at all.
 
-The projectibility test delivers a clear negative. The category \term{adverb} doesn't support cross-subclass generalisation. What you learn about one subtype tells you nothing reliable about another. This is diagnostic of a fat category: the label groups items that were never maintained by shared mechanisms.
+The projectibility test delivers a clear negative. The category \term{adverb} doesn't support cross-subclass generalisation. What you learn about one subtype tells you nothing reliable about another. This is diagnostic of a fat class: the label groups items that were never maintained by shared mechanisms.
 
-Fat categories arise because exhaustive taxonomy requires a home for everything. If you need every word to belong to exactly one part of speech, and you've already defined noun, verb, adjective, preposition, determiner, and conjunction, then \enquote{everything left over} must go somewhere. \term{Adverb} is that somewhere. The label groups items that are \enquote{close} only in the analyst's filing system. In terms of the mechanisms that maintain them, manner adverbs and degree words are far apart. The label is a convenience, not a kind.
+Fat classes arise because exhaustive taxonomy requires a home for everything. If you need every word to belong to exactly one part of speech, and you've already defined noun, verb, adjective, preposition, determiner, and conjunction, then \enquote{everything left over} must go somewhere. \term{Adverb} is that somewhere. The label groups items that are \enquote{close} only in the analyst's filing system. In terms of the mechanisms that maintain them, manner adverbs and degree words are far apart. The label is a convenience, not a kind.
 
-The maintenance view gives clear guidance when you diagnose a fat category: decompose. \term{Adverb} is not an HPC. But \term{Manner Adverb}, \term{Degree Word}, and \term{Sentence Adverb} may be. They're the genuine clusters lurking inside the wastebasket. The lump is a taxonomic fiction; the components are causally real. This doesn't mean abolishing the term~-- \term{adverb} remains useful for some purposes~-- but it means recognising that the term names an epistemic kind, not a natural kind. When you're doing HPC analysis, look below the lump.
+The maintenance view gives clear guidance when you diagnose a fat class: decompose. \term{Adverb} is not an HPC. But \term{Manner Adverb}, \term{Degree Word}, and \term{Sentence Adverb} may be. They're the genuine clusters lurking inside the wastebasket. The lump is a taxonomic fiction; the components are causally real. This doesn't mean abolishing the term~-- \term{adverb} remains useful for some purposes~-- but it means recognising that the term names an epistemic kind, not a natural kind. When you're doing HPC analysis, look below the lump.
 
 A note of sympathy for the original grammarians. They weren't being lazy. Imagine standing in front of the scattered words that aren't nouns or verbs, facing the pedagogical demand to say what they are. Students need labels. Textbooks need categories. The pressure to provide \emph{some} answer~-- any answer~-- is real. Reaching for \term{adverb} was not a failure of intelligence but a response to genuine classificatory pressure. The maintenance view doesn't condemn that move; it just asks what we can learn from it. The answer is that exhaustive taxonomy and natural-kind discovery are not the same enterprise, and sometimes they pull in different directions.
 
-\section{Negative categories: The complement class}
+\section{Negative classes: The complement class}
 \label{sec:8:negative}
 
 The third pattern is the most categorical: the category defined by what it is not.
 
-A \term{negative} category is a complement class: \enquote{everything that isn't X.} In set theory, complements are well-behaved~-- the complement of a set is precisely defined. In causal mechanism terms, they're incoherent. There is no such thing as a \enquote{homeostatic property cluster of absence.} The absence of a property is typically not a property, and certainly not one that mechanisms can stabilise.
+A \term{negative} class is a complement class: \enquote{everything that isn't X.} In set theory, complements are well-behaved~-- the complement of a set is precisely defined. In causal mechanism terms, they're incoherent. There is no such thing as a \enquote{homeostatic property cluster of absence.} The absence of a property is typically not a property, and certainly not one that mechanisms can stabilise.
 
-Negative categories miss both diagnostics. They miss projectibility because members share no positive properties to generalise from. They miss homeostasis because no mechanism can maintain \enquote{lacking X}~-- what would such a mechanism even look like?
+Negative classes miss both diagnostics. They miss projectibility because members share no positive properties to generalise from. They miss homeostasis because no mechanism can maintain \enquote{lacking X}~-- what would such a mechanism even look like?
 
 \subsection{Case study: The \term{Non-finite}}
 
@@ -231,7 +248,7 @@ Consider the category \term{non-finite verb}. In traditional grammar~-- and in m
     \item \textbf{Gerund-participles:} \mention{eating}, \mention{running}
 \end{itemize}
 
-What do they share? The standard answer is negative: they lack tense marking, they lack agreement (mostly), they cannot head a main clause (mostly). They're grouped by absence.
+What do they share? The standard answer is negative: they lack tense marking, they lack agreement (mostly), they can't head a main clause (mostly). They're grouped by absence.
 
 But look at their positive properties~-- their syntactic environments, their maintaining mechanisms~-- and they're radically different animals.
 
@@ -253,9 +270,9 @@ Now apply the tests.
 
 \textbf{Homeostasis:} Can we name a mechanism that maintains infinitives and gerund-participles as similar to each other? No. The perfect auxiliary system has nothing to do with the progressive auxiliary system~-- except that both happen to select forms lacking tense. There's no feedback loop that keeps non-finites together as a kind. They're grouped only by failing to be finite.
 
-Negative categories show this most starkly. The analyst's need for exhaustive taxonomy requires every verb form to belong to a category, and \enquote{everything that's not finite} must go somewhere. But the property structure is empty. There's no positive cluster, only the absence of tense and agreement. This is classification by exclusion, not by mechanism. The label \term{non-finite} organises the analyst's files; it doesn't track causal structure.
+Negative classes show this most starkly. The analyst's need for exhaustive taxonomy requires every verb form to belong to a category, and \enquote{everything that's not finite} must go somewhere. But the property structure is empty. There's no positive cluster, only the absence of tense and agreement. This is classification by exclusion, not by mechanism. The label \term{non-finite} organises the analyst's files; it doesn't track causal structure.
 
-When you diagnose a negative category, the guidance is clear: don't treat it as a kind. This doesn't mean the term is useless~-- \term{non-finite} correctly identifies forms that contrast with finites~-- but it means recognising that the term is a taxonomic convenience, not a natural kind. The genuine HPCs are the sub-constructions: \term{infinitival complement}, \term{perfect construction}, \term{progressive construction}, \term{participial adjunct}. Each has its own cluster, its own mechanisms, its own projectibility. The umbrella term names a residual class, not a causal unity.
+When you diagnose a negative class, the guidance is clear: don't treat it as a kind. This doesn't mean the term is useless~-- \term{non-finite} correctly identifies forms that contrast with finites~-- but it means recognising that the term is a taxonomic convenience, not a natural kind. The genuine HPCs are the sub-constructions: \term{infinitival complement}, \term{perfect construction}, \term{progressive construction}, \term{participial adjunct}. Each has its own cluster, its own mechanisms, its own projectibility. The umbrella term names a residual class, not a causal unity.
 
 \section{The grain of analysis}
 \label{sec:8:grain}
@@ -268,11 +285,11 @@ The HPCs are the \emph{components}, not the whole.
 
 The phoneme /θ/ is an HPC (stabilised by articulatory targets and contrasts). The word \term{\textit{dog}} is an HPC (stabilised by lexical entrenchment). The construction \term{\textit{let alone}} is an HPC (stabilised by a cue bundle of string, syntax, and scalar semantics).
 
-But \enquote{English Grammar} is just the island where they all live. It is the \term{constructicon}~-- the population of constructional species inhabiting a speech community. 
+But \enquote{English Grammar} is just the island where they all live. It's the \term{constructicon}~-- the population of constructional species inhabiting a speech community. 
 
 This gives us the answer to the grain question. The level of analysis where HPC theory applies is the level of the \term{individual form-meaning pairing}. 
 \begin{itemize}
-    \item \term{Noun} is likely a fat category (an umbrella for many specific nominal constructions).
+    \item \term{Noun} is likely a fat class (an umbrella for many specific nominal constructions).
     \item \term{Count Noun} is a plausible HPC (a specific sub-family of constructions with shared maintenance).
     \item \term{The construction \textit{let alone}} is definitely an HPC.
     \item \term{English} is not an HPC; it's the fauna.
@@ -304,6 +321,14 @@ We stop asking whether \term{Subject} is a universal category~-- a question that
 Usually, the answer is no. English subjects are maintained by agreement morphology, fixed word order, and nominative case marking. Tagalog \enquote{subjects} (if that's even the right term) are maintained by voice morphology and discourse-role assignment~-- entirely different mechanisms. They may look alike~-- both occupy some privileged argument position~-- but they're distinct HPCs, convergent solutions to different functional pressures.
 
 This is convergent evolution, not shared identity. The sameness of the label doesn't guarantee sameness of the kind. To test cross-linguistic identity, you need to show shared mechanisms, not just shared features.
+
+\citet{haspelmath2010} makes a related point with his distinction between \term{comparative concepts} and \term{descriptive categories}. Comparative concepts are analyst's tools~-- definitions constructed for cross-linguistic comparison. Descriptive categories are language-specific~-- the actual clusters maintained in particular speech communities. The maintenance view explains \emph{why} these must be kept separate. Comparative concepts are epistemic kinds: useful for organising comparison, but not tracked by mechanisms. Descriptive categories may be HPC kinds~-- but only if they pass the diagnostics in that particular language. Cross-linguistic \enquote{sameness} is a claim about convergent mechanisms, not shared essence.
+
+Consider evidentiality. In Quechua, evidential markers are obligatory on tensed verbs: speakers must encode whether information comes from direct experience, inference, or report. In Turkish, the suffix \textit{-mIş} marks non-first-hand information~-- inference or hearsay~-- but leaves direct evidence unmarked. In English, evidentiality is optional and expressed adverbially: \mention{apparently}, \mention{reportedly}, \mention{obviously}. Are these \enquote{the same category}?
+
+The maintenance view says: apply the diagnostics. In Quechua, the evidential paradigm is maintained by obligatory morphological slot-filling, paradigm pressure, and early acquisition as part of the verbal template~-- robust homeostasis. In Turkish, \textit{-mIş} is maintained by similar mechanisms, but the asymmetry (marking inference but not direct evidence) suggests a different functional niche. In English, the adverbials are maintained by pragmatic conventions and discourse-level alignment~-- weaker mechanisms, scattered across the lexicon rather than concentrated in a morphological paradigm.
+
+These are three different HPCs. Calling them all \enquote{evidentiality} conflates distinct causal structures under a shared label~-- the fat-category problem at the cross-linguistic scale. The label is useful for comparison (\enquote{how do languages mark information source?}), but misleading for mechanism analysis. The genuine kinds are the language-specific clusters, not the typological umbrella.
 
 \subsection{For theory}
 
