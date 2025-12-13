@@ -6,13 +6,13 @@
 
 ## 1. The Puzzle
 
-At 3 AM one night, Rodney Huddleston — one of the world's foremost grammarians — sent an email about the word *otherwise*. "Its classification is quite a puzzle," he wrote.
+At 3 AM one night, Rodney Huddleston — a mentor of mine and one of the world's foremost grammarians — sent me an email about the word *otherwise*. "Its classification is quite a puzzle," he wrote.
 
 The puzzle is easy to see. *Otherwise* fits where you expect an adverb: *I think otherwise*. But it also fits where you don't: *The truth is quite otherwise*. And it fits where almost nothing fits: *the correctness or otherwise of the proposal*. Three uses, three syntactic environments, one common word — and no clean label.
 
 Here was a man who had spent decades cataloguing English grammar in exquisite detail. And yet a common word, one that appears in unremarkable sentences every day, was keeping him up at night. Why?
 
-The honest answer is that we don't have a settled account of what grammatical categories *are* — one that explains both their stability and their edge-cases. We learn in school that *dog* is a noun and *quickly* is an adverb. We imagine that somewhere, in the back rooms of linguistics departments, experts have sorted it all out. They haven't — not in the way we assume.
+The honest answer is that we don't have a settled account of what grammatical categories *are* — one that explains both their stability and their edge-cases. We learn in school that *dog* is a noun and *quickly* is an adverb. We imagine that somewhere, in the back rooms of linguistics departments, experts have sorted it all out. They haven't — not in the way we assume. There is no master filing cabinet. There are only better and worse heuristics, and occasional insomnia.
 
 Two temptations have shaped the field.
 
@@ -26,7 +26,7 @@ Neither answer explains how categories can be *real* without having *essences*.
 
 ## 2. The Fix
 
-Biology faced the same puzzle. Darwin demolished the idea that species have essences — fixed, unchanging forms. Yet species are obviously real. *Canis lupus* is a thing in the world, not just a convenient label.
+Biology faced the same puzzle. Darwin demolished the idea that species have essences — fixed, unchanging forms. Yet species are obviously real. Nobody has ever been mauled by a merely convenient label.
 
 The philosopher Richard Boyd offered a solution: *homeostatic property clusters*. A species isn't defined by a checklist of necessary properties. It's a bundle of features that tend to co-occur — fur patterns, behaviours, genetic markers — held together by causal mechanisms like interbreeding, shared ecology, and gene flow. The boundaries are fuzzy at the edges, but the cluster is real because *something maintains it*.
 
@@ -52,7 +52,7 @@ The shift is fundamental. Instead of asking "What is the definition of *noun*?" 
 
 Once you learn to see maintained clusters, you might start seeing them everywhere. *Noun*? Maintained. *Verb*? Maintained. *Subject*? *Voice*? *Non-finite*? Everything looks like a spinning top.
 
-This is the inflation problem. Not every stable pattern is a genuine kind. Some patterns are just accidents; some labels are just filing conventions. We need diagnostics.
+This is the inflation problem. Not every stable pattern is a genuine kind. Some patterns are just accidents; some labels are just filing conventions. When a framework can explain everything, it stops explaining anything in particular. We need diagnostics.
 
 Two tests separate genuine categories from mere labels:
 
@@ -62,9 +62,9 @@ Two tests separate genuine categories from mere labels:
 
 Categories that fail these tests come in three flavours:
 
-**Thin categories** lack stabilisers. Consider *preposition copying* — sentences like "the box from which I got it from." It exists, but barely. The frequency is vanishing. No child learns it as a target. No social group marks it as identity. If English lost it tomorrow, nothing would restore it. It's a smoke ring — real for a moment, but not maintained.
+**Thin categories** lack stabilisers. Consider *preposition copying* — sentences like \"the box from which I got it from.\" It exists, but barely: frequency vanishing, no child learning it as a target, no social group marking it as identity. If English lost it tomorrow, nothing would restore it. It's a smoke ring — real for a moment, but not maintained.
 
-**Fat categories** lump distinct clusters under one label. *Adverb* is the paradigm case — the "dustbin of the parts of speech." It groups manner adverbs like *quickly* (which follow verbs), degree words like *very* (which never do), and sentence adverbs like *unfortunately* (which float freely). These are different animals. Learning *quickly* tells you nothing about where *very* can appear. The label creates an illusion of unity where there's only a filing decision.
+**Fat categories** lump distinct clusters under one label. *Adverb* is the paradigm case — the "dustbin of the parts of speech," a category with excellent storage capacity and terrible explanatory power. It groups manner adverbs like *quickly* (which follow verbs), degree words like *very* (which never do), and sentence adverbs like *unfortunately* (which float freely). These are different animals. Learning *quickly* tells you nothing about where *very* can appear. The label creates an illusion of unity where there's only a filing decision.
 
 **Negative categories** are defined by absence. *Non-finite clause* groups infinitivals, gerunds, and past participles — not because they share something, but because they all lack tense inflection. This is a family portrait taken in silhouette: the shared trait is what you can't see.
 
