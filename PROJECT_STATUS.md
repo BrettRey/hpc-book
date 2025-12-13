@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
 **Date**: December 13, 2025  
-**Current Phase**: Part II Complete; Cross-Reference Audit Done
+**Current Phase**: Part II Complete; Précis Added; Full 163-page PDF Built
 
 ## Completed
 
@@ -39,6 +39,16 @@
 - ✅ Upgraded 12 chapter refs to section-level (`§\ref{sec:...}`) for precision
 - ✅ Renamed Ch 5 label to `ch:dynamic-discreteness` to fix broken forward ref
 - ✅ Full 8-chapter PDF compiled (143 pages): `main-full-8ch-2025-12-13.pdf`
+
+### Précis and Final Polish (Dec 13, 2025)
+- ✅ General-reader précis drafted (~2,500 words)
+- ✅ Précis converted to LaTeX (`precis.tex`) with house style macros
+- ✅ Added to `main.tex` frontmatter before Part I
+- ✅ Chapter 8 final editorial pass (house style compliance)
+- ✅ Chapter 8 parataxis reduction (coordination and subordination fixes)
+- ✅ Added rhetorical figures to précis (tricolon, anaphora, antithesis, asyndeton)
+- ✅ Added 4 wry lines from packaging board consultation
+- ✅ Full book PDF compiled (163 pages): `main.pdf`
 
 ## In Progress
 

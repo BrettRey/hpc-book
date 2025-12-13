@@ -276,4 +276,57 @@ Systematic audit and refinement of all cross-references across chapters 1-8 to e
 - Committed and pushed
 - Ready for Part III development
 
+---
+
+## 13 December 2025 (afternoon) — Précis + Chapter 8 Final Polish + Full Build
+
+### Précis for general reader
+
+Created a 5-page (~2,500 word) précis targeting a smart, curious general reader:
+
+1. **The Puzzle** — Huddleston's *otherwise* email as framing device
+2. **The Fix** — HPC kinds via spinning-top metaphor
+3. **The Diagnostics** — Projectibility + homeostasis; thin/fat/negative failure modes
+4. **What This Changes** — Universals, gradience, methodology debates dissolved
+5. **The Larger Stakes** — Third way between Platonism and nominalism
+
+**Rhetorical figures added:**
+- Tricolon (three uses, three environments, one word)
+- Anaphora (fits where...fits where...fits where)
+- Antithesis (not because it's fixed...because something is holding it)
+- Asyndeton (frequency vanishing, no child learning it, no social group marking it)
+
+**Wry lines from packaging board:**
+- "There is no master filing cabinet."
+- "Nobody has ever been mauled by a merely convenient label."
+- "When a framework can explain everything, it stops explaining anything in particular."
+- "excellent storage capacity and terrible explanatory power"
+
+**Files created:**
+- `precis/general-reader-precis.md` — Markdown source
+- `precis.tex` — LaTeX version with house style macros
+
+### Chapter 8 final polish
+
+- House style compliance pass (contractions, dashes, citations)
+- Parataxis reduction: 6 fixes adding coordination and subordination
+- Examples: "Here's the trap:" instead of "This is the trap.", asyndeton in thin-category description
+
+### Full book PDF
+
+- Updated `main.tex` to include précis in frontmatter
+- Uncommented all chapters (1-14 + appendix)
+- Built with `latexmk -xelatex`
+- Result: 163 pages (`main.pdf`)
+
+### State at end of session
+
+- All changes committed and pushed to `restructure-part-1`
+- PROJECT_STATUS.md and project-log.md updated
+- Ready for Part III development or handoff
+
+**Next priorities:**
+1. Part III planning (Chapters 9-12 case studies)
+2. Ch 9 outline (Countability as first case study)
+3. Consider PR to merge `restructure-part-1` to main
 
