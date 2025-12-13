@@ -21,7 +21,7 @@ python validate_bib.py
 
 The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL font.
 
-**Compilation workflow:** Most chapters in `main.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on. Currently only `chapter06.tex` is active.
+**Compilation workflow:** Most chapters in `main.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on. Currently `chapter05.tex` and `chapter08.tex` are active. Full 8-chapter build: `main-full-8ch-2025-12-13.pdf`.
 
 ## Repository Structure
 

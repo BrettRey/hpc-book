@@ -4,7 +4,7 @@
 % See notes/book-slogans.md for the slogan strategy.
 
 \chapter{Discrete from continuous}
-\label{ch:discrete-from-continuous}
+\label{ch:dynamic-discreteness}
 
 % Chapter 4 introduces HPC framework; this chapter applies it to the discreteness problem.
 
@@ -67,8 +67,19 @@ The principle is intuitive. When you're dealing with a clear heap~-- thousands o
 
 But \enquote{negligible} and \enquote{appreciable} are themselves vague. To make the principle precise, we need a framework that can handle the distinction rigorously. This is where nonstandard analysis helps.
 
+The next section is therefore not a philosophical aside. If tolerance is genuinely scale-sensitive, then the boundary region should have an identifiable empirical signature: judgments should become unstable as items approach it, and that instability should be selectively amplifiable by repetition and task framing. The formalism that follows is a way of stating those commitments precisely enough to be wrong.
+
 \section{A formal solution}
 \label{sec:5:formal-solution}
+
+\begin{framed}
+\noindent\textbf{Skip path.} The next subsection develops a formal model using hyperreal numbers. Readers who prefer to skip the mathematics can take away three points and rejoin at §\ref{sec:5:geometry-to-mechanism}:
+\begin{enumerate}
+    \item Tolerance is scale-sensitive: small changes are tolerated, but they accumulate.
+    \item Sharp boundaries exist at thresholds we can't precisely locate.
+    \item Discrete categories and gradient intuitions are compatible~-- the discreteness is in the structure, the gradience is in our access to it.
+\end{enumerate}
+\end{framed}
 
 \subsection{The hyperreal formalization}
 \label{subsec:5:hyperreal}
@@ -129,7 +140,7 @@ A different response to the discreteness problem is available. Khalidi, extendin
 
 The answer lies in the structure of tolerance intuitions themselves. The Sorites reasoning pattern~-- one grain doesn't make a difference, so no number of grains makes a difference~-- is compelling precisely because we feel the tolerance premise is true. Khalidi-style fuzzy realism dissolves the puzzle by denying that there's a boundary at all: categories just shade into each other, and the puzzle evaporates. But this misses the explanatory target. Speakers don't behave as if categories shade continuously. They exhibit \emph{scale-dependent} tolerance: small changes are tolerated, large changes flip categorisation, and the transition is experienced as sudden even when the underlying change is gradual. The hyperreal model captures this phenomenology. Fuzzy realism doesn't.
 
-This isn't to say Khalidi's \enquote{fuzzy kinds} are never apt. For weak grammatical categories~-- the thin ones from Chapter~\ref{ch:kinds-without-essences}~-- genuine fuzziness may be the right description. But for robust categories, where speakers make categorical judgments, exhibit abrupt transitions, and show heightened variance specifically near boundaries, the hyperreal model's sharp-but-inaccessible picture fits the data better. The choice between models is empirical, not metaphysical: does the category exhibit gradient shading (Khalidi) or scale-dependent tolerance (hyperreals)?
+This isn't to say Khalidi's \enquote{fuzzy kinds} are never apt. For weak grammatical categories~-- the thin ones from §\ref{sec:4:heterogeneity}~-- genuine fuzziness may be the right description. But for robust categories, where speakers make categorical judgments, exhibit abrupt transitions, and show heightened variance specifically near boundaries, the hyperreal model's sharp-but-inaccessible picture fits the data better. The choice between models is empirical, not metaphysical: does the category exhibit gradient shading (Khalidi) or scale-dependent tolerance (hyperreals)?
 
 \section{From geometry to mechanism}
 \label{sec:5:geometry-to-mechanism}
@@ -338,13 +349,13 @@ A caveat about statistical significance. Whether the boundary position looks \en
 
 This operationalises the chapter's theoretical picture. \enquote{Distance to boundary} is not metaphorical; it can be measured. \enquote{Stability of ambiguity} is not vague intuition; it is invariance under analytic perturbation~-- the in-betweenness persists when you change your measurement instrument. Reciprocals sit in the overlap region of Figure~\ref{fig:disjoint-overlap}, not because the analysis went wrong but because the basin structure itself has overlap.
 
-The same analysis applies to the existential debates about feature systems raised in Chapter~\ref{ch:what-we-havent-been-asking}. Is \textsc{gender} a natural kind, or is it reducible to \textsc{number}? The question becomes: do gender and number occupy distinct basins maintained by distinct mechanisms, or is gender a sub-region of a larger number basin, maintained by the same mechanisms at a finer grain?
+The same analysis applies to the existential debates about feature systems raised in §\ref{sec:3:lexeme-obsession}. Is \textsc{gender} a natural kind, or is it reducible to \textsc{number}? The question becomes: do gender and number occupy distinct basins maintained by distinct mechanisms, or is gender a sub-region of a larger number basin, maintained by the same mechanisms at a finer grain?
 
 If the mechanisms maintaining gender systems~-- agreement patterns, acquisition pathways, functional pressures toward nominal classification~-- are distinct from those maintaining number systems, then gender is a genuine natural kind: a separate basin in the space of grammatical features. If the mechanisms overlap substantially~-- if gender turns out to be number's machinery for individuation, as some theorists have argued~-- then the basins merge, and \textsc{gender} as a cross-linguistic category dissolves into \textsc{number}.
 
 This is an empirical question, not a definitional one. The hyperreal model tells us what to look for: distinct basins with true if irregular boundaries and scale-dependent tolerance. The HPC framework tells us how to investigate: identify the mechanisms, trace their operation, determine whether they cluster distinct properties or the same properties at different scales.
 
-Consider the Shilluk number system introduced in Chapter~\ref{ch:what-we-havent-been-asking}. English marks number with a suffix: \mention{cat}, \mention{cats}. Shilluk marks it through stem-internal changes in tone, vowel length, and voice quality~-- a singular/plural pair might differ only in whether the vowel is short, long, or overlong, or in whether the tone is Low or Fall. The exponence is lexicalised: each pair must be learned; no productive rule derives one from the other.
+Consider the Shilluk number system introduced in §\ref{sec:3:lexeme-obsession}. English marks number with a suffix: \mention{cat}, \mention{cats}. Shilluk marks it through stem-internal changes in tone, vowel length, and voice quality~-- a singular/plural pair might differ only in whether the vowel is short, long, or overlong, or in whether the tone is Low or Fall. The exponence is lexicalised: each pair must be learned; no productive rule derives one from the other.
 
 What does the HPC + hyperreal view say about this? Both English and Shilluk number systems occupy basins in a feature space whose dimensions include obligatoriness (number must be specified), agreement scope (specifier, verb, other constituents), and semantic function (individuation of entities). The exponence dimension~-- where English is affixal and Shilluk is fusional/suprasegmental~-- places them in different regions of morphophonological space but the same region of morphosyntactic and semantic space. They're in overlapping basins, not identical ones~-- independent systems shaped by similar pressures, not one system shared across languages.
 

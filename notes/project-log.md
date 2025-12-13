@@ -232,3 +232,48 @@ Chapter 8 expanded from 333 → 358 lines:
 
 These should be **subtle and functional**, not showy. The goal is prose that rewards re-reading without signalling cleverness.
 
+---
+
+## 13 December 2025 — Cross-Reference Audit
+
+### Session summary
+
+Systematic audit and refinement of all cross-references across chapters 1-8 to ensure dynamic LaTeX linking and section-level precision.
+
+### Issues identified and fixed
+
+**Broken references:**
+- Ch 2:164/174 — References to `ch:what-changes` (stub chapter) changed to hard-coded CGEL chapter numbers ("Chapter 1", "Chapter 15")
+- Ch 5 label — `ch:discrete-from-continuous` renamed to `ch:dynamic-discreteness` to match existing forward reference in Ch 4:306
+
+**Section-level upgrades (12 total):**
+
+| Location | Original | Upgraded to |
+|----------|----------|-------------|
+| Ch 4:31 | `ch:essentialism` | `sec:2:a-parallel` (Smilodon example) |
+| Ch 4:284 | `ch:essentialism` | `sec:2:what-essentialism-built` (Aristotle) |
+| Ch 5:143 | `ch:kinds-without-essences` | `sec:4:heterogeneity` (thin kinds) |
+| Ch 5:352 | `ch:what-we-havent-been-asking` | `sec:3:lexeme-obsession` (feature debates) |
+| Ch 5:358 | `ch:what-we-havent-been-asking` | `sec:3:lexeme-obsession` (Shilluk) |
+| Ch 7:174 | `ch:projectibility` | `sec:6:generalising-lesson` (quotatives) |
+| Ch 7:361 | `ch:kinds-without-essences` | `sec:4:the-mechanisms` (mechanism list) |
+| Ch 7:467 | `ch:projectibility` | `sec:6:mechanistic-alternative` (Boguraev) |
+| Ch 7:525 | `ch:failure-modes` | `sec:8:homeostasis-diagnostic` |
+| Ch 7:527 | `ch:projectibility` | `sec:6:definitional-bet` (Polish aspect) |
+| Ch 7:590 | `ch:projectibility` | `sec:6:degrees-projectibility` (accuracy) |
+| Ch 8:23 | `ch:stabilisers` | `sec:7:stabilisers-at-scales` |
+| Ch 8:47 | `ch:projectibility` | `sec:6:definitional-bet` (good bet) |
+
+### Full build verification
+
+- Compiled full 8-chapter PDF: 143 pages
+- Only undefined references are forward refs to unwritten chapters (9-14)
+- Saved as `main-full-8ch-2025-12-13.pdf`
+- Restored `main.tex` to development state (most chapters commented)
+
+### State at end of session
+- All cross-references audited and refined
+- Committed and pushed
+- Ready for Part III development
+
+

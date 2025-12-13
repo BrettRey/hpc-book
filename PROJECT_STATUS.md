@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 11, 2025  
-**Current Phase**: Part II Drafting Complete; Citation Refinement Session
+**Date**: December 13, 2025  
+**Current Phase**: Part II Complete; Cross-Reference Audit Done
 
 ## Completed
 
@@ -32,6 +32,13 @@
 - ✅ PDFs renamed to match BibTeX keys (standardized naming)
 - ✅ Page references added to 8 citations across chapters 1, 3, 4, 5, 6, 8
 - ✅ 3 verbatim quotations added (Millikan, Craver, Kirby)
+
+### Cross-Reference Audit (Dec 13, 2025)
+- ✅ Audited all chapters for hardcoded refs and chapter-level imprecision
+- ✅ Fixed broken CGEL references in Chapter 2 (now hard-coded "Chapter 1", "Chapter 15")
+- ✅ Upgraded 12 chapter refs to section-level (`§\ref{sec:...}`) for precision
+- ✅ Renamed Ch 5 label to `ch:dynamic-discreteness` to fix broken forward ref
+- ✅ Full 8-chapter PDF compiled (143 pages): `main-full-8ch-2025-12-13.pdf`
 
 ## In Progress
 
