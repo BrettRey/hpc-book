@@ -6,17 +6,19 @@
 
 ## 1. The Puzzle
 
-At 3 AM one night, the late Rodney Huddleston — one of the world's foremost grammarians — sent an email about the word *otherwise*. "Its classification is quite a puzzle," he wrote.
+At 3 AM one night, Rodney Huddleston — one of the world's foremost grammarians — sent an email about the word *otherwise*. "Its classification is quite a puzzle," he wrote.
+
+The puzzle is easy to see. *Otherwise* fits where you expect an adverb: *I think otherwise*. But it also fits where you don't: *The truth is quite otherwise*. And it fits where almost nothing fits: *the correctness or otherwise of the proposal*. Three uses, three syntactic environments, one common word — and no clean label.
 
 Here was a man who had spent decades cataloguing English grammar in exquisite detail. And yet a common word, one that appears in unremarkable sentences every day, was keeping him up at night. Why?
 
-The honest answer is that linguists don't know what grammatical categories *are* — not in the way we assume they do. We learn in school that *dog* is a noun and *quickly* is an adverb. We imagine that somewhere, in the back rooms of linguistics departments, experts have sorted it all out. They haven't.
+The honest answer is that we don't have a settled account of what grammatical categories *are* — one that explains both their stability and their edge-cases. We learn in school that *dog* is a noun and *quickly* is an adverb. We imagine that somewhere, in the back rooms of linguistics departments, experts have sorted it all out. They haven't — not in the way we assume.
 
-Two answers have dominated the field.
+Two temptations have shaped the field.
 
-**The essentialist answer** says that categories have definitions. A noun is a word that names a person, place, or thing. An adjective describes. This works in simple cases. But the definitions leak everywhere. Consider *furniture*: it names a kind of thing, yet we say *much furniture*, not *many furnitures*. Consider *the* in "I took the bus": there's no particular bus being identified. Every rule has exceptions that aren't exceptions — they're revealing.
+**The essentialist temptation** says that categories have definitions. A noun is a word that names a person, place, or thing. An adjective describes. This works in simple cases. But the definitions leak everywhere. Consider *furniture*: it names a kind of thing, yet we say *much furniture*, not *many furnitures*. Consider *the* in "I took the bus": there's no particular bus being identified. Every rule has exceptions that aren't exceptions — they're evidence.
 
-**The nominalist answer** swings the other way. If definitions fail, maybe categories are just convenient labels — filing systems we invented, with no deeper reality. But this can't be right either. The same categories reappear in unrelated languages. Children converge on them without explicit instruction. Something is keeping *noun* and *verb* stable across centuries and continents.
+**The nominalist temptation** swings the other way. If definitions fail, maybe categories are just convenient labels — filing systems we invented, with no deeper reality. But this can't be right either. Some big contrasts recur across unrelated languages, often in altered form, and children converge on them quickly. Something is keeping *noun* and *verb* stable across centuries and continents.
 
 Neither answer explains how categories can be *real* without having *essences*.
 
@@ -54,7 +56,7 @@ This is the inflation problem. Not every stable pattern is a genuine kind. Some 
 
 Two tests separate genuine categories from mere labels:
 
-**The projectibility test:** If a category is real, learning from some instances should let you predict new ones. Train a model on half the data; test on the other half. If the pattern *travels* — if what you learned generalises — the category is doing something. If it doesn't, you've just memorised noise.
+**The projectibility test:** If a category is real, learning from some instances should let you predict new ones. Make risky predictions on new data — train on half, test on the other half. If the pattern *travels*, the category is doing something. If it doesn't, you've just memorised noise.
 
 **The homeostasis test:** Can you name the stabilisers? What would change if you removed them? Genuine categories are *perturbation-sensitive*: weaken a mechanism, and the cluster frays. Mere labels are *perturbation-inert*: remove the label, and nothing in the world changes.
 
@@ -92,11 +94,11 @@ The maintenance framework extends beyond grammar.
 
 Wherever we have categories that feel real but lack essences — personality types, mental disorders, social roles, moral concepts — the same logic applies. The question is never "What is the definition?" but "What keeps it stable?" The answer will always be a mechanism story.
 
-This is a third way between old philosophical extremes. Platonism held that categories are eternal forms, discovered not invented. Nominalism held that they're convenient fictions, invented not discovered. The maintenance view says: categories are *real* in virtue of being *maintained*. They can change, they can blur at the edges, they can be maintained by different mechanisms in different communities — but they are not arbitrary.
+This is a third way between old philosophical extremes. Platonism held that categories are eternal forms, discovered not invented. Nominalism held that they're convenient fictions, invented not discovered. The maintenance view says: categories are *real* in virtue of being *maintained*. They can change; they can blur at the edges; they can be maintained by different mechanisms in different communities — but they are not arbitrary.
 
 The practical payoff is a different way of looking at puzzles. When a word like *otherwise* resists classification, the problem isn't that we lack a definition. It's that multiple maintenance regimes are pulling in different directions. Some uses are stabilised by one set of mechanisms (verbal complementation, manner modification); others are stabilised by a different set (predicative function, scalar semantics). The category is real, contested, and alive.
 
-At 3 AM, Rodney Huddleston wasn't stuck because he lacked scholarship. He was stuck because he had spent a career discovering what the textbook version of grammar can't say: that categories are not definitions to be memorised but processes to be traced. The puzzle wasn't a failure. It was evidence of what he already knew.
+At 3 AM, Rodney Huddleston wasn't stuck because he lacked scholarship. He was stuck because he had spent a career discovering what the textbook version of grammar can't say: that categories are not definitions to be memorised but processes to be traced. The puzzle wasn't a failure — it was evidence of what he already knew.
 
 Grammar doesn't hold still because it's fixed. It holds still because something is holding it.
 
