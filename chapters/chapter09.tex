@@ -5,40 +5,65 @@
 % Target: ~8,000 words
 % Metaphor: Lock-and-key hook → basin integration
 
+\epigraph{\textit{The word LEGO® is a brand name and is very special to all of us in the LEGO Group Companies. We would sincerely like your help in keeping it special. Please always refer to our bricks as `LEGO Bricks or Toys' and not `LEGOS'.}}{LEGO Group consumer catalog, c.~1980s}
+
+The lawyers at the LEGO Group have been fighting this battle for forty years. They have trademark law on their side. They have the Chicago Manual of Style. They have millions of dollars in brand-management budget.
+
+And they are losing.
+
+To a lawyer, \mention{LEGO} is an adjective, a modifier that tracks a brand origin. To a six-year-old, a plastic brick is a discrete, bounded, manipulable object. And the human language faculty has a hard-wired mechanism for dealing with discrete, bounded, manipulable objects: it counts them. It adds an \mention{-s}. It makes them plural. When a child asks for \mention{three Legos}, they aren't making a mistake; they are obeying a grammatical imperative deeper than any trademark. The count cluster is claiming the word.
+
+This chapter is about that mechanism. It is about why \mention{three Legos} sounds natural while \mention{three furnitures} sounds wrong, even though both refer to collections of discrete objects. It is about why the Minnesota House of Representatives once paused a legislative session to vote on whether the word \mention{data} is singular or plural. And it is about how the HPC control loop we built in Part II handles one of the messiest, most debated distinctions in English grammar. It also predicts the future. As new entities enter our reality, the mechanism processes them. \mention{Emoji} is the latest test case. Borrowed from Japanese (where plural marking isn't obligatory), it hit English speakers' brains around 2010. Immediately, the mechanism asked: Is this stuff, or is it a thing?
 \begin{quote}
-\textit{A student learning English writes} \ungram{I bought three furnitures}. \textit{A copy editor debates whether to keep} this data \textit{or change to} these data. \textit{A Texan says} you folks \textit{where a Bostonian says} you guys. \textit{What do these have in common?}
+    \mention{I sent three emoji.} (Preserving the loan syntax / zero-plural)
+    \mention{I sent three emojis.} (Regularizing to the count cluster)
 \end{quote}
+My money is on \mention{emojis}. The individuation is too strong. The little pictures are too discrete. The basin of attraction is waiting.
 
-They're all negotiations at the boundary of English countability~-- a boundary that turns out to be more structured than it first appears. If the count/mass distinction were a simple binary feature, we'd expect either tidy uniformity or random scatter. What we actually see is stranger: a tightly clustered system that frays in an orderly way. The student who writes \mention{three furnitures} isn't making a random error. She's extending a pattern that usually works~-- and discovering, through the teacher's red ink, where the pattern stops.
+The count/mass distinction isn't a static binary. It's a dynamic negotiation. And as we'll see in the next chapter, it's just one example of how the maintenance loop builds the structure of our world. If the count/mass distinction were a simple binary switch, we'd expect words to flip cleanly from one side to the other. What we actually see is \mention{cattle}, \mention{police}, and \mention{vermin} sitting stably in the middle for five centuries. We see \mention{data} tearing itself apart in real time. We see \mention{emoji} entering the language and immediately triggering the same choice: one emoji, two emojis?
 
-This chapter applies the HPC framework to that pattern. Countability, I'll argue, isn't a definition waiting to be discovered or a convenient fiction imposed by grammarians. It's a homeostatic property cluster: a constellation of grammatical properties held together by mechanisms, not essence. The properties cluster because they're inferentially coupled to a common semantic variable~-- individuation~-- and they dissociate in a predictable order when that variable weakens.
-
-If the argument succeeds, it does two things. First, it shows the machinery from Part II actually working on a real grammatical category. Second, it provides a template. By the end of this chapter, you should be able to look at any candidate category and ask: Does it pass the tests? What maintains its clustering? Where does it fray?
+Countability, I'll argue, isn't a definition. It's a homeostatic property cluster. The properties cluster because they are inferentially coupled to a common semantic variable~-- individuation~-- and they dissociate in a predictable order when that variable weakens.
 
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 \section{The cluster}
 \label{sec:9:cluster}
-%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 
-Count nouns in English share a constellation of properties. You can list them:
+The distinction seems intuitive. \mention{Cat}, \mention{chair}, and \mention{idea} differ from \mention{water}, \mention{mud}, and \mention{traffic}. The first group denotes discrete individuals; the second denotes undifferentiated substances or aggregates.
 
+Otto Jespersen first formalized the distinction in 1924, coining the term \term{mass-word} for nouns that resist counting:
+\begin{quote}
+There are a great many words which do not call up the idea of some definite thing with a certain shape or precise limits. I call these `mass-words'; they may be either material, in which case they denote some substance in itself independent of form, such as \term{silver}, \term{water}, \term{butter}, \term{gas}, \term{air}, etc., or else immaterial, such as \term{leisure}, \term{music}, \term{traffic}, \term{success} \citep[198]{jespersen1924}.
+\end{quote}
+But Jespersen's insight goes back further. The chapter was adapted from a lecture he delivered to the Copenhagen Academy of Sciences in 1911~-- thirteen years before publication, and decades before the cognitive revolution. Even then, he saw that the grammar doesn't just mirror the world; it imposes a perspective on it. While we can say \mention{two apples} or \mention{two fruits}, we cannot take a magazine and a stethoscope and call them \ungram{\mention{two objects}}~-- unless we first categorize them under a concept that supplies a unit. The individuation is in the construal, not the furniture of reality.
+
+Standard grammars like \textit{CGEL} \citep{huddleston2002} identify a cluster of morphosyntactic properties that typically align. For a prototypical count noun like \mention{cat}:
 \begin{itemize}
-\item \textbf{Singular--plural contrast:} \mention{book}/\mention{books}, \mention{dog}/\mention{dogs}
-\item \textbf{Indefinite article:} \mention{a book}, \mention{an apple}
-\item \textbf{Low cardinals:} \mention{three books}, \mention{five dogs}
-\item \textbf{Count quantifiers:} \mention{many books}, \mention{few dogs}, \mention{several ideas}
-\item \textbf{Distributives:} \mention{each book}, \mention{every dog}
-\item \textbf{Plural agreement:} \mention{the books are}, not \ungram{\mention{the books is}}
-\item \textbf{Demonstratives tracking number:} \mention{this book}/\mention{these books}
+    \item \textbf{Denotation}: Discrete, bounded entities.
+    \item \textbf{Pluralization}: It inflects for number (\mention{cats}).
+    \item \textbf{Determinatives}: It takes exact cardinals (\mention{one cat}, \mention{two cats}) and fuzzy count quantifiers (\mention{many}, \mention{fewer}).
+    \item \textbf{Agreement}: It triggers singular or plural verb agreement matching its morphology.
 \end{itemize}
 
-Mass nouns reject these frames: \ungram{\mention{a furniture}}, \ungram{\mention{three rices}}, \ungram{\mention{many equipments}}. They take their own quantifiers instead: \mention{much furniture}, \mention{some rice}, \mention{a lot of equipment}.
+For a prototypical mass noun like \mention{water}:
+\begin{itemize}
+    \item \textbf{Denotation}: Undifferentiated substance.
+    \item \textbf{Pluralization}: No plural form (*\mention{waters} is special, meaning `types of' or `bodies of').
+    \item \textbf{Determinatives}: It rejects cardinals (*\mention{two waters}) and takes mass quantifiers (\mention{much}, \mention{less}).
+    \item \textbf{Agreement}: Always singular.
+\end{itemize}
 
-The striking thing isn't the distinction itself~-- that's Linguistics 101~-- but how tightly the count properties cluster. If you know a noun takes \mention{a(n)}, you can confidently predict it takes \mention{three}, \mention{many}, plural agreement, and the rest. The properties travel together. Grammars encode this as a feature: [\textpm count]. But features, as we saw in Chapter~2, are labels, not explanations. The question isn't whether count nouns share properties. The question is: why do these particular properties hang together? What keeps them bundled?
+This is the \term{count cluster}: the set of formal properties that normally travel together. When you hear a word has a plural form, you can predict it will take \mention{many} and reject \mention{much}. You can predict it will refer to something conceptualized as an individual.
 
-An essentialist answer would posit something all count nouns share~-- some property or feature that \textit{makes} them count nouns, from which the clustering follows. The problem is that no such essence has been found. The semantic correlate (individuation, atomicity, boundedness) comes in degrees, varies across contexts, and dissociates from the morphosyntax in systematic ways. \mention{Furniture} denotes discrete objects, yet it's grammatically mass. \mention{Cattle} denotes discrete animals, yet it resists \mention{a} and low cardinals.
+\subsection{The problem: Object-mass nouns}
 
-The HPC view offers a different answer. The properties cluster not because they share an essence but because they're \textit{inferentially coupled} to a common semantic variable~-- and mechanisms at multiple timescales keep them coupled. The clustering is maintained, not given.
+The problem is that the world doesn't always cooperate. \citet{rothstein2010} identified the class of `object-mass nouns'~-- words like \mention{furniture}, \mention{footwear}, \mention{cutlery}, and \mention{jewelry}. Semantically, these refer to discrete, countable artifacts. A chair is as discrete as a cat. Yet \mention{furniture} is grammatically mass:
+\begin{exe}
+    \ex \ungram{three furnitures}
+    \ex \ungram{many furniture}
+    \ex \mention{much furniture}
+\end{exe}
+
+Why? If the grammar just tracked ontological discreteness, \mention{furniture} should be count. The fact that it isn't~-- that English forces us to say \mention{pieces of furniture} while French speakers comfortably say \mention{meubles} (plural)~-- proves that countability is an autonomous grammatical system, not a direct read-out of physics.
 
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 \section{Three levels}
@@ -85,6 +110,11 @@ The bidirectional inference mechanism operates at multiple timescales, each rein
 \paragraph{Processing (milliseconds).} Every time a speaker produces or comprehends a count frame, the form--meaning link is activated. \mention{Three dogs} primes the expectation of individuation; individuation primes the expectation of count morphosyntax. Mismatches~-- \ungram{\mention{three furnitures}}, say~-- incur processing costs. They feel wrong because they violate entrenched expectations.
 
 \paragraph{Acquisition (years).} Children don't learn count properties one by one. They learn that count morphosyntax correlates with individuation. Classic acquisition work shows that children overgeneralise: encountering a noun in one count frame, they extend it to others \citep{bloom1994a,gordon1985}. A child who hears \mention{many police} may try \ungram{\mention{three police}}, treating the loose property as evidence for the tight ones. This is exactly what you'd expect if the cluster is acquired as a unit~-- if learners are tracking construal, not memorising property lists.
+
+\paragraph{Semantic to Morphosyntactic (S $\to$ M)}
+When a speaker conceptualizes a referent as individuated (bounded, atomic), they reach for the tool that signals individuation: the count syntax.
+
+This is why children say \mention{I saw three sheeps}. The child perceives discrete animals. The grammar provides a slot for discrete animals (the regular plural). The child fills the slot, ignoring the lexical exception. The semantic variable (Individuation) is driving the morphosyntax. The error proves the mechanism works: the child is running the algorithm perfectly, just on the wrong input.
 
 \paragraph{Transmission (decades).} Institutional forces~-- style guides, copy editors, teachers, grammar checkers~-- enforce canonical patterns and resist drift. The \mention{data}/\mention{datum} debate lives here. As \mention{datum} recedes from editorial practice, the normative anchor weakens and \mention{data} drifts toward mass status. The institutional layer doesn't \textit{create} the cluster, but it stabilises it at the community level.
 
@@ -161,11 +191,11 @@ A noun that loses \mention{several} will already have lost \mention{a(n)} and lo
 They occupy exactly the position the hierarchy predicts: loose properties accepted, tight properties rejected.
 
 \begin{itemize}
-\item \mention{Many cattle} — \cmark
-\item \mention{The cattle are grazing} — \cmark
+\item \mention{Many cattle} — \checkmark
+\item \mention{The cattle are grazing} — \checkmark
 \item \mention{Several cattle} — marginal for some speakers
-\item \mention{Three cattle} — \xmark
-\item \mention{A cattle} — \xmark
+\item \mention{Three cattle} — $\times$
+\item \mention{A cattle} — $\times$
 \end{itemize}
 
 The same pattern holds for \mention{police}: \mention{many police}, \mention{the police are investigating}, but \ungram{\mention{three police}}, \ungram{\mention{a police}}.
@@ -213,9 +243,15 @@ Once \mention{pease} was heard as a plural, the bidirectional inference mechanis
 
 The mechanism is visible here: cluster pressure creates gaps; gaps get filled. If the bidirectional inference story is right, we'd expect the historical record to show loose properties established before tight ones~-- the cluster building from the outside in. The evidence is suggestive though incomplete; what's clear is that the reanalysis triggered a cascade of count-property adoption.
 
-\subsection{How the cluster erodes: \mention{data}}
+\subsection{The unstable hybrids: Data}
 
-The reverse trajectory is visible in \mention{data}. Historically the plural of \mention{datum}, it's shifting toward mass status: \mention{this data is}, \mention{much data} are now common, especially in informal and spoken registers. Corpus studies confirm that singular agreement with \mention{data} now predominates in most registers \citep{garner2016}.
+Then there is \mention{data}.
+
+On March 11, 2015, the Minnesota House of Representatives Judiciary Finance and Policy Committee halted its work on a license-plate reader bill. Representative John Lesch had spotted a grammatical error. The bill text read \mention{the data are private}. Lesch, a stickler, insisted that \mention{data} is singular. \mention{Unless we want to start saying `The water in this building are safe',} he argued, \mention{we should be consistent.}
+
+The committee debated. They voted. The motion passed unanimously. Representative Lesch pumped his fist in the air. The law was amended: \mention{data is}.
+
+Lesch won the vote, but he entered what usage expert Bryan Garner calls a \mention{skunked} term argument \citep{garner2016}. \mention{Data} is currently moving from the count basin (Latin plural of \textit{datum}) to the mass basin (synonym for \textit{information}). In the transition, it exhibits the chaotic behavior of a system seeking a new equilibrium. Scientists say \mention{data are}. Tech CEOS say \mention{data is}. The cluster is unraveling, property by property. Historically the plural of \mention{datum}, it's shifting toward mass status: \mention{this data is}, \mention{much data} are now common, especially in informal and spoken registers. Corpus studies confirm that singular agreement with \mention{data} now predominates in most registers \citep{garner2016}.
 
 Why is \mention{data} drifting? Because its functional anchor is disappearing. \mention{Datum}~-- the singulative~-- has become archaic, confined to philosophy-of-science contexts and pedantic style guides. Without a robust singulative in active use, the tight-linkage properties have nothing to attach to. Speakers who need to refer to a single piece of information say \mention{data point}, not \mention{datum}. But \mention{data point} is a compound, not a singulative of \mention{data}. It doesn't anchor the count cluster the way \mention{officer} anchors \mention{police}.
 
