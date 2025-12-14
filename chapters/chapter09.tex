@@ -15,11 +15,62 @@ To a lawyer, \mention{LEGO} is an adjective, a modifier that tracks a brand orig
 
 This chapter is about that mechanism~-- the control loop that decides what gets counted. The count/mass distinction isn't a static binary. It's a dynamic negotiation. And as we'll see, the HPC framework we built in Part II handles this messy distinction cleanly.
 
-Countability, I'll argue, isn't a definition. It's a homeostatic property cluster. The properties cluster because they are inferentially coupled to a common semantic variable~-- individuation~-- and they dissociate in a predictable order when that variable weakens.
+Countability, I'll argue, isn't a definition. It's a homeostatic property cluster~-- but a peculiar one. Unlike the categories we've examined so far, countability isn't maintained by a single braid of mechanisms. It's a coupling between two distinct clusters~-- one semantic, one morphosyntactic~-- each maintained by its own mechanisms, each an HPC in its own right.
 
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
-\section{The cluster}
-\label{sec:9:cluster}
+\section{One word, two categories}
+\label{sec:9:two-categories}
+
+The word \textit{countability} hides a structural fact. It names not a single category but a coupling between two: the \textbf{individuation cluster} (semantic) and the \textbf{count cluster} (morphosyntactic). Each is maintained by its own mechanisms. Countability is what emerges when they meet.
+
+This matters because it explains something puzzling. Chapter~\ref{ch:failure-modes} argued that lexical semantics alone rarely produces HPC kinds: categories like \term{furniture} (conceptual similarity) or \term{animacy} (referent property) don't generate the tight clustering that projectibility requires. But countability does. English speakers reliably extend count morphosyntax to novel words, predict quantifier compatibility from plural marking, and judge intermediate cases with surprising consistency. Why?
+
+The answer is that countability isn't just lexical semantics. It's an \textit{interface system}~-- a place where a semantic distinction receives repeated grammatical reinforcement. When constructions select for individuation, when morphology marks it, when processing routines exploit it, when acquisition converges on it~-- then the semantic distinction starts to behave like a kind. This is what makes countability different from \term{furniture}.
+
+The next two sections unpack the two clusters. First, the semantic side: what is individuation, and what maintains it as a cluster of properties? Then, the morphosyntactic side: what is the count cluster, and what keeps its properties together? Only after both are on the table can we ask how they couple.
+
+%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
+\section{The individuation cluster}
+\label{sec:9:individuation-cluster}
+%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
+
+Individuation isn't a single property. It's a cluster of semantic properties that typically travel together:
+
+\begin{itemize}
+    \item \textbf{Boundedness}: The referent has discrete edges~-- a spatial or conceptual boundary that separates it from its environment.
+    \item \textbf{Atomicity}: The referent is accessible as a unit~-- something that can be singled out, pointed to, tracked.
+    \item \textbf{Enumerability}: The referent is compatible with exact counting~-- three of them, not just much of it.
+    \item \textbf{Homogeneity resistance}: Parts of the referent are not the same kind as the whole. Half a cat is not a cat; half of water is still water.
+\end{itemize}
+
+These properties cluster. When a referent is bounded, it's usually atomic; when it's atomic, it's usually enumerable; when it's enumerable, it usually resists homogeneous subdivision. The clustering isn't accidental.
+
+\subsection{What maintains the cluster}
+
+The individuation cluster is maintained by perceptual and cognitive mechanisms that operate across modalities~-- and, strikingly, across species.
+
+\paragraph{Edge detection.} Visual object perception depends on detecting boundaries. The visual cortex uses orientation-selective cells, Gabor-like filters, and mid-level grouping principles to extract edges from the visual field. These edges are then grouped into coherent object representations~-- what \citet{kahneman1992} called \term{object files}: temporary episodic representations that bind features to locations and track objects across time.
+
+But edge detection isn't vision-specific. Blind echolocators produce tongue clicks and interpret the returning echoes to perceive objects. Research shows that they can identify object shape, size, and location with remarkable precision~-- and fMRI studies reveal that they activate visual cortex when doing so. The perceptual system has found a different input modality but the same computational goal: bounded individuals.
+
+The pattern extends across species. Bats use sonar for prey localization; dolphins use echolocation for object recognition. Edge detection~-- the computational problem of finding where one thing ends and another begins~-- has evolved independently in multiple lineages, via multiple sensory modalities. This is the signature of strong functional pressure. The problem of individuating objects is so fundamental that perceptual systems converge on solutions to it.
+
+\paragraph{Infant core knowledge.} \citet{spelke2007} argues that human infants are equipped with core knowledge systems for objects~-- systems that operate from the first months of life. Infants as young as four months perceive objects as cohesive (parts move together), bounded (edges mark identity), and continuous (objects persist through occlusion). These are the same properties that define the individuation cluster in adult conceptual systems. The mechanisms that maintain individuation are not learned from scratch; they're built on an early foundation.
+
+\paragraph{Cross-modal integration.} Object individuation isn't locked to a single sensory channel. When you see a cup and hear it being set down, you don't perceive two entities~-- one visual, one auditory. You perceive one object with multimodal properties. The binding is maintained by cross-modal integration mechanisms that enforce coherence: what looks bounded should sound bounded, feel bounded, behave as a unit. This integration reinforces the cluster. The properties travel together because multiple systems expect them to travel together.
+
+\subsection{Individuation is gradient}
+
+Although the properties cluster, they don't cluster perfectly. Some referents are more individuated than others.
+
+A cat is maximally individuated: bounded, atomic, enumerable, homogeneity-resistant. A pile of sand is weakly individuated: no sharp edges, no natural atoms (or too many), compatible with homogeneous division. \mention{Cattle} denotes ontologically discrete animals, but the noun construes them as an aggregate~-- grammatically group-like, not atom-like.
+
+The gradient nature of individuation is crucial for what comes next. The count cluster~-- the morphosyntactic syndrome~-- tracks individuation. When individuation is strong, the full count cluster applies. When it weakens, the cluster frays. But it frays in an orderly way.
+
+%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
+\section{The count cluster}
+\label{sec:9:count-cluster}
+%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 
 The distinction seems intuitive. \mention{Cat}, \mention{chair}, and \mention{idea} differ from \mention{water}, \mention{mud}, and \mention{traffic}. The first group denotes discrete individuals; the second denotes undifferentiated substances or aggregates.
 
@@ -59,35 +110,15 @@ The problem is that the world doesn't always cooperate. \citet{rothstein2010} id
 Why? If the grammar just tracked ontological discreteness, \mention{furniture} should be count. The fact that it isn't~-- that English forces us to say \mention{pieces of furniture} while French speakers comfortably say \mention{meubles} (plural)~-- proves that countability is an autonomous grammatical system, not a direct read-out of physics.
 
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
-\section{Three levels}
-\label{sec:9:three-levels}
+\section{The coupling}
+\label{sec:9:coupling}
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 
-Before we can see the mechanism, we need a distinction. The word \textit{countability} conflates three different things:
+Now we can ask: what connects the two clusters? Why does the individuation cluster (semantic) and the count cluster (morphosyntactic) behave as a unified system?
 
-\paragraph{Ontological discreteness.} Whether the referents exist as bounded units in the world. Rice grains, cattle, furniture items, and books are all physically discrete. But \mention{rice} and \mention{furniture} are grammatically mass. Physical discreteness doesn't determine grammatical behaviour.
-
-\paragraph{Individuation.} Whether speakers \textit{construe} the referents as discrete, atomic units~-- units accessible to enumeration. This is a property of the construal, not the world. \mention{Furniture} denotes discrete objects, but the noun packages them as an unbounded superordinate category. You can point at a table and a chair and say \enquote{That's furniture}~-- but the noun doesn't foreground the table-ness and chair-ness as countable atoms. \mention{Cattle} similarly: the animals are ontologically discrete, but the noun construes them as an aggregate~-- a group, not a collection of enumerable individuals.
-
-\paragraph{The count cluster.} The morphosyntactic syndrome: singular--plural contrast, article selection, numeral compatibility, quantifier choice, agreement. This is what grammars describe when they mark a noun as [+count] or [$-$count]. I'll call this constellation the \textbf{count cluster}~-- the set of formal properties that typically travel together where count morphosyntax is involved.
-
-These three levels dissociate systematically. \mention{Rice}: ontologically discrete (grains are bounded units), low individuation (construed as granular aggregate), outside the count cluster. \mention{Cattle}: ontologically discrete (cows are bounded animals), weak individuation (construed as group rather than atoms), \textit{partially} in the count cluster~-- it accepts \mention{many cattle} but rejects \mention{three cattle}. \mention{Book}: aligned across all three levels~-- ontologically discrete, strongly individuated, fully in the count cluster.
-
-The distinction matters because it locates the mechanism. The homeostasis isn't between world and grammar; it's between \textit{construal} and grammar. Individuation~-- the degree to which a noun packages its referents as accessible atoms~-- is the semantic variable that the count cluster tracks. When individuation is strong, the cluster holds. When it weakens, the cluster frays. But it frays in an orderly way.
-
-A terminological note. I'll use \textbf{individuation} for the semantic variable and \textbf{count cluster} for the morphosyntactic syndrome. \textit{Countability}, then, names what emerges when the two meet~-- the characteristic pattern of English nouns that construe their referents as atomic and select the corresponding grammatical frames. The chapter title isn't a level; it's the phenomenon that arises when individuation and the count cluster are coupled.
-
-
-%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
-\section{The mechanism: Bidirectional inference}
-\label{sec:9:mechanism}
-%~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
-
-Why do count properties cluster? Here's the short answer: because they all point to the same thing.
+The answer is \textbf{bidirectional inference}~-- the mechanism that couples semantic construal to grammatical form.
 
 Each count property is a cue~-- a piece of morphosyntactic evidence that hearers use to infer how the speaker is construing the referent. When you hear \mention{three dogs}, you infer that the speaker has individuated the referents~-- construed them as discrete, enumerable units. When you hear \mention{much water}, you infer a mass construal: stuff, not atoms. The morphosyntax generates expectations about the construal; the construal, in turn, constrains morphosyntactic choice.
-
-This is \textbf{bidirectional inference}:
 
 \begin{itemize}
 \item \textbf{Comprehension direction:} Count morphosyntax $\to$ individuated construal. Hearing \mention{a}, \mention{three}, or \mention{many} with a noun leads the hearer to expect atomic, enumerable referents.
@@ -95,6 +126,16 @@ This is \textbf{bidirectional inference}:
 \end{itemize}
 
 The properties cluster because they're all coupled to the same semantic variable. Knowing that a noun takes \mention{a(n)} tells you it supports individuation~-- and if it supports individuation, it should take \mention{three} and \mention{many} and plural agreement too. The generalisation runs through the construal, not through the morphosyntax directly. That's why the properties are mutually predictive: not because any one \textit{causes} the others, but because they're all symptoms of the same underlying condition.
+
+\subsection{Why the coupling produces an HPC}
+
+This is where the payoff from Chapter~\ref{ch:failure-modes} arrives. Lexical semantics alone rarely produces HPC kinds: categories like \term{furniture} (conceptual similarity) don't generate the tight clustering that projectibility requires. Why should countability be different?
+
+The answer is that countability operates at the syntax-semantics interface. The individuation cluster is reinforced by perceptual mechanisms (edge detection, object files, cross-modal integration). The count cluster is reinforced by morphosyntactic mechanisms (acquisition, entrenchment, transmission). But the coupling between them~-- the bidirectional inference mechanism~-- provides a third layer of reinforcement. Each time construal and form align, both clusters are strengthened. Each time they're transmitted together to a new learner, the coupling tightens.
+
+\term{Furniture} lacks this reinforcement. The conceptual similarity exists~-- chairs and tables share properties~-- but English provides no morphosyntactic system that selects for that similarity and reinforces it with every utterance. There's no grammatical slot that says `furniture-like things go here'. The category exists in the lexicon but not in the grammar.
+
+Countability is the opposite. The grammar provides slots that select for individuation: \mention{a} requires atomic reference; \mention{three} requires enumerable atoms; \mention{many} tolerates weaker individuation. Every time a speaker uses these constructions, they reinforce the link between semantic construal and grammatical form. This is why countability passes the HPC diagnostics: the coupling mechanism provides the homeostasis that lexical semantics alone cannot.
 
 \subsection{Multi-timescale maintenance}
 
