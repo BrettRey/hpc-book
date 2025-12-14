@@ -330,3 +330,36 @@ Created a 5-page (~2,500 word) précis targeting a smart, curious general reader
 2. Ch 9 outline (Countability as first case study)
 3. Consider PR to merge `restructure-part-1` to main
 
+---
+
+## 14 December 2025 — Chapter 9 restructuring
+
+### Session summary
+
+Major restructuring of Chapter 9 (Countability) around the two-HPC architecture: individuation cluster (semantic) + count cluster (morphosyntactic), coupled by bidirectional inference.
+
+Key changes:
+- Fixed category/function error (LEGO as noun modifier, not adjective)
+- Terminology update: count/non-count (morphosyntax), individuated/non-individuated (semantics)
+- Replaced bats with macrophages for cross-scale individuation — callback to Ch7 opening
+- Reframed: the two-cluster structure is *typical* of HPCs at the right grain, not peculiar to countability
+- Softened: categories "often reveal internal structure" (not "always decompose into two")
+
+### Research note: Investigate "twoness"
+
+Is the form-meaning pairing a deep structural principle for grammatical HPCs?
+
+- **Observation**: Countability decomposes into semantic (individuation) + morphosyntactic (count cluster). Definiteness may show the same pattern. Word classes may too.
+- **Connection**: This maps directly onto CxG's central claim that constructions are form-meaning pairings. If HPCs typically have this dual structure, that's a convergence worth exploring.
+- **Question**: Is the form-meaning split a contingent pattern (just happens to be salient in these cases) or a principled structural necessity (interface systems require two poles)?
+- **Potential chapter**: Could become a theoretical chapter in Part IV — "Why two?" connecting HPC architecture to Construction Grammar.
+
+### Commits on restructure-part-1
+
+- `db66ea2` Restructure Ch9: Two HPCs architecture
+- `b365dcc` Fix category/function error (LEGO)
+- `f772390` Terminology: count/non-count, individuated/non-individuated
+- `962eb9d` Macrophages callback to Ch7
+- `153c7db` Reframe: two-cluster structure is typical
+- `6e46b13` Carry framing through chapter
+- `bec00e4` Soften 'sub-clusters' framing
