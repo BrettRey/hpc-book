@@ -147,6 +147,7 @@
 - Grammaticality judgments: gradient, context-sensitive, stable
 - The category "grammatical" as HPC kind
 - Foundations for foundations
+- **Form-meaning pairing as core mechanism**: If grammatical HPCs typically decompose into semantic + morphosyntactic clusters at finer grain (as countability does), this echoes CxG's claim that constructions are form-meaning pairings. Grammaticality itself may be maintained by this dual structure — not a contingent pattern but a principled necessity. Connect HPC architecture to Construction Grammar here.
 
 ### Ch 14: What changes
 *Methodology, theory, typology—concrete consequences*
@@ -156,14 +157,6 @@
 - Theoretical dissolution: gradience vs. discreteness debate
 - Typological rigor: assessing cross-linguistic categories empirically
 - What questions linguists should now ask
-
-### Research question: Why two?
-*Investigate whether form-meaning pairing is a deep structural principle*
-
-If grammatical HPCs typically decompose into semantic + morphosyntactic clusters at finer grain (as countability does), this echoes CxG's claim that constructions are form-meaning pairings. Is this convergence:
-- A contingent pattern (just happens to be salient in these cases)?
-- A principled necessity (interface systems require two poles)?
-Could become a chapter connecting HPC architecture to Construction Grammar.
 
 ---
 
