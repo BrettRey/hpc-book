@@ -363,3 +363,64 @@ Is the form-meaning pairing a deep structural principle for grammatical HPCs?
 - `153c7db` Reframe: two-cluster structure is typical
 - `6e46b13` Carry framing through chapter
 - `bec00e4` Soften 'sub-clusters' framing
+
+---
+
+## 14 December 2025 (afternoon) — Chapter 9 Citation Verification & Calibration
+
+### Session summary
+
+Major calibration pass on Chapter 9's cross-linguistic section to ensure claims are accurate and appropriately hedged.
+
+### Citation verification
+
+1. **Grimm (2018)** — Verified against extracted PDF text:
+   - Welsh collective/singulative system accurately described
+   - Table 3 (semantic classes: insects, vegetation, granular mass) matches chapter text
+   - Added page 532 reference to citation
+
+2. **Wiltschko (2008)** — Verified against extracted PDF text:
+   - Confirms plural marking is optional with "no meaning difference"
+   - Her analysis: plural modifies *roots* (category-neutral), not Nouns
+   - Supports our "less cohesive" prediction (actually zero projectibility syntactically)
+   - Explicitly states "no syntactic rule that is sensitive to such a distinction" (mass/count)
+
+### Calibration changes
+
+- **Removed**: Over-claiming "geometry shifts" table (made claims too strong)
+- **Reframed**: Cross-linguistic variation as "mechanism-sensitive" rather than proving universal patterns
+- **Added**: Triangulation caveat ("No single language comparison is a controlled ablation")
+- **Welsh**: Now framed as conditional ("*if* the count cluster is homeostatically maintained...")
+- **Emoji/AP**: Reframed as diagnostic oscillation (AP endorsed *emojis*, then reversed)
+  - Added LEGO Group callback ("like the LEGO Group's lawyers fighting *Legos*")
+- **Disconfirmation**: Stronger framing — finding a language with no morphosyntactic maintenance but English-like projectibility
+
+### "Looking forward" section rewrite
+
+- **New framing**: "Countability is the clean baseline case" — coupling is unusually tight
+- **New phrase**: "individuation, which languages get 'for free' from domain-general object cognition"
+- **Definiteness preview**: Form cluster and function cluster may not line up as neatly
+- **Lexical categories preview**: Noun/verb contrast stable; adjectives vary; mechanisms not uniform
+
+### Full build
+
+- Reinstated all chapters in `main.tex` (Parts I-III)
+- Compiled full book PDF: 160 pages
+- Created dated copy: `HPC-Book-Full-2025-12-14.pdf`
+
+### Commits on restructure-part-1
+
+- `eb1e6e9` Chapter 9: Refine natural experiments section, move emoji example, fix citations
+- `db7fffd` Chapter 9: Calibrate claims, restore LEGO callback, refine Looking forward
+
+### State at end of session
+
+- Chapter 9 complete and calibrated
+- All changes committed and pushed
+- Full book PDF built and renamed
+- Documentation updated for handoff
+
+**Next priorities:**
+1. Ch 10 (Definiteness) planning and drafting
+2. Ch 11 (Lexical categories) planning and drafting
+3. Consider PR to merge `restructure-part-1` to main

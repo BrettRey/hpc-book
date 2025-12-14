@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 13, 2025  
-**Current Phase**: Part II Complete; Précis Added; Full 163-page PDF Built
+**Date**: December 14, 2025  
+**Current Phase**: Chapter 9 Complete; Full 160-page PDF Built
 
 ## Completed
 
@@ -27,43 +27,36 @@
 - ✅ **Ch 7**: The Stabilisers - drafted and revised (quotatives case study)
 - ✅ **Ch 8**: Failure Modes - drafted (thin/fat/negative taxonomy)
 
-### Citation & Bibliography Work (Dec 11, 2025)
-- ✅ Literature folder reorganized: 9 PDFs moved from `islands/` subfolder
-- ✅ PDFs renamed to match BibTeX keys (standardized naming)
-- ✅ Page references added to 8 citations across chapters 1, 3, 4, 5, 6, 8
-- ✅ 3 verbatim quotations added (Millikan, Craver, Kirby)
+### Part III: Categories Reconsidered (Chapters 9-12)
+- ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
 
-### Cross-Reference Audit (Dec 13, 2025)
-- ✅ Audited all chapters for hardcoded refs and chapter-level imprecision
-- ✅ Fixed broken CGEL references in Chapter 2 (now hard-coded "Chapter 1", "Chapter 15")
-- ✅ Upgraded 12 chapter refs to section-level (`§\ref{sec:...}`) for precision
-- ✅ Renamed Ch 5 label to `ch:dynamic-discreteness` to fix broken forward ref
-- ✅ Full 8-chapter PDF compiled (143 pages): `main-full-8ch-2025-12-13.pdf`
+### Chapter 9 Refinement (Dec 14, 2025)
+- ✅ Verified Grimm (2018) citation accuracy — added page 532 reference
+- ✅ Verified Wiltschko (2008) supports 'less cohesive' prediction
+- ✅ Calibrated cross-linguistic claims (tempered from over-claiming)
+- ✅ Reframed "Natural experiments" conclusion as mechanism-sensitivity diagnostic
+- ✅ Welsh singulatives as worked example with conditional framing
+- ✅ Emoji/AP reframed as diagnostic oscillation with LEGO callback
+- ✅ Added "for free from domain-general object cognition" phrasing
+- ✅ Refined "Looking forward" section for Part III transition
+- ✅ Full book PDF compiled (160 pages): `HPC-Book-Full-2025-12-14.pdf`
 
-### Précis and Final Polish (Dec 13, 2025)
-- ✅ General-reader précis drafted (~2,500 words)
-- ✅ Précis converted to LaTeX (`precis.tex`) with house style macros
-- ✅ Added to `main.tex` frontmatter before Part I
-- ✅ Chapter 8 final editorial pass (house style compliance)
-- ✅ Chapter 8 parataxis reduction (coordination and subordination fixes)
-- ✅ Added rhetorical figures to précis (tricolon, anaphora, antithesis, asyndeton)
-- ✅ Added 4 wry lines from packaging board consultation
-- ✅ Full book PDF compiled (163 pages): `main.pdf`
+### Previous Session Work (Dec 13-14, 2025)
+- ✅ Cross-reference audit completed
+- ✅ Précis added to frontmatter
+- ✅ Chapter 8 final editorial pass
+- ✅ Chapter 9 two-HPC architecture (individuation + count cluster)
+- ✅ LEGO/emoji hooks integrated
 
 ## In Progress
 
-- 🔄 Part III outlining (Chapters 9-12: case studies)
+- 🔄 Part III development (Chapters 10-12: remaining case studies)
 
 ## Next Actions
 
 ### Immediate
-1. **Part III Planning** - Create master notes for Ch 9-12 case studies
-2. **Ch 9 Outline** - Countability as first Part III case study
-
-### Short-term (This Month)
-1. Begin Ch 9 (Countability) drafting
-2. Collect cross-linguistic data for Part III case studies
-3. Review and update bibliography for Part III
+1. **Ch 10 Outline** - Definiteness as second Part III case study
+2. **Ch 11 Outline** - Lexical categories (noun/verb contrast)
 
 ### Medium-term (Next 2-3 Months)
 1. Draft Part III chapters (9-12)
