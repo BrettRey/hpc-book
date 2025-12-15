@@ -1,5 +1,57 @@
 # Project Log
 
+## Progress Tracker
+
+> **Last updated:** 14 December 2025  
+> **Data source:** Git commit history (`git log --date=short`)
+
+### Chapter Timeline
+
+| Chapter | Title | Started | Peak Activity | Status | Lines |
+|---------|-------|---------|---------------|--------|-------|
+| **1** | Words That Won't Hold Still | Nov 29 | Nov 30 (79 commits) | ✅ Complete | 257 |
+| **2** | Essentialism and Its Discontents | Dec 1 | Dec 1–6 | ✅ Complete | 330 |
+| **3** | What We Haven't Been Asking | Dec 3 | Dec 5 (7 commits) | ✅ Complete | 236 |
+| **4** | Kinds Without Essences | Dec 4 | Dec 5 (30 commits) | ✅ Complete | 311 |
+| **5** | Dynamic Discreteness | Dec 4 | Dec 5 (22 commits) | ✅ Complete | 461 |
+| **6** | Projectibility | Dec 4 | Dec 6–7 (70 commits) | ✅ Complete | 255 |
+| **7** | Stabilisers | Nov 30 | Dec 9 (73 commits) | ✅ Complete | 625 |
+| **8** | Failure Modes | Dec 10 | Dec 13 (7 commits) | ✅ Complete | 374 |
+| **9** | Countability | Dec 13 | Dec 14 (23 commits) | ✅ Complete | 415 |
+| **10** | Definiteness | — | — | 📌 Stub | 4 |
+| **11–14** | (Part III–IV) | — | — | 📌 Stub | — |
+
+### Daily Activity Log
+
+| Date | Commits | Key Work |
+|------|---------|----------|
+| **Nov 29** | ~5 | Project folder created; Ch 1 initial draft |
+| **Nov 30** | 80+ | Ch 1 massive polish; Ch 7 stub created |
+| **Dec 1** | ~15 | Ch 2 drafted and refined |
+| **Dec 2** | ~5 | Ch 2 continued polish |
+| **Dec 3** | ~10 | Ch 3 drafted; Part I restructuring |
+| **Dec 4** | ~10 | Ch 4/5/6 initial work; stubs for 8–14 |
+| **Dec 5** | 60+ | Ch 4 (30), Ch 5 (22), figures added |
+| **Dec 6** | 25+ | Ch 6 (21), Ch 7 starts (4) |
+| **Dec 7** | 60+ | Ch 6 (49), Ch 7 (9) intensive work |
+| **Dec 8** | 35+ | Ch 7 (31), transition day |
+| **Dec 9** | 75+ | Ch 7 massive expansion (73 commits) |
+| **Dec 10** | 10+ | Ch 7 final polish; Ch 8 drafted |
+| **Dec 11** | 20+ | Citation pass across all chapters; Ch 8 revisions |
+| **Dec 12** | 5+ | Ch 8 major revisions; cross-reference audit |
+| **Dec 13** | 25+ | Ch 8 final polish; Ch 9 drafted; Précis created |
+| **Dec 14** | 25+ | Ch 9 restructuring and calibration; handoff prep |
+
+### Velocity Observations
+
+- **Fastest drafts:** Ch 1 (1 day), Ch 2 (1 day), Ch 4/5 (same day)
+- **Most intensive:** Ch 7 — 128 total commits over 5 days
+- **Average chapter:** ~2 days drafting + 1–2 days polish
+- **Total project span:** 16 days (Nov 29 – Dec 14)
+- **Total lines (chs 1–9):** ~3,264 lines of LaTeX
+
+---
+
 ## 5 December 2025 — Genesis of Chapter 5
 
 ### Timeline
