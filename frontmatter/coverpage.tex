@@ -1,5 +1,5 @@
 % Cover page for inclusion in main book
-% Requires: graphicx, eso-pic, xcolor packages in preamble
+% Requires: graphicx, eso-pic, xcolor, tikz packages in preamble
 
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
@@ -9,13 +9,13 @@
 
 \thispagestyle{empty}
 
-\vspace*{30mm}
+\vspace*{15mm}  % Reduced from 30mm — title higher
 
 \begin{center}
 {\fontsize{32pt}{38pt}\selectfont\color{white}%
 Words That Won't Hold Still}
 
-\vspace{12pt}
+\vspace{18pt}
 
 {\fontsize{18pt}{22pt}\selectfont\color{white}%
 How Linguistic Categories Work}
@@ -24,8 +24,17 @@ How Linguistic Categories Work}
 \vfill
 
 \begin{center}
-{\fontsize{16pt}{20pt}\selectfont\color{white}%
-Brett Reynolds}
+% Author name with subtle glow
+\begin{tikzpicture}
+  % Glow layers — balanced visibility
+  \foreach \x in {-1.5, 0, 1.5} {
+    \foreach \y in {-1.5, 0, 1.5} {
+      \node[text=black, opacity=0.06] at (\x pt, \y pt) {\fontsize{20pt}{24pt}\selectfont Brett Reynolds};
+    }
+  }
+  % Main white text on top
+  \node[text=white] at (0,0) {\fontsize{20pt}{24pt}\selectfont Brett Reynolds};
+\end{tikzpicture}
 \end{center}
 
 \vspace{25mm}
