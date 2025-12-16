@@ -2,7 +2,7 @@
 
 ## Progress Tracker
 
-> **Last updated:** 15 December 2025  
+> **Last updated:** 16 December 2025  
 > **Data source:** Git commit history (`git log --date=short`)
 
 ### Chapter Timeline
@@ -41,15 +41,45 @@
 | **Dec 12** | 5+ | Ch 8 major revisions; cross-reference audit |
 | **Dec 13** | 25+ | Ch 8 final polish; Ch 9 drafted; Précis created |
 | **Dec 14** | 25+ | Ch 9 restructuring and calibration; handoff prep |
-| **Dec 15** | 1+ | Scope widened to linguistic categories; title + outline updated; planned non-grammar worked cases |
+| **Dec 15** | 5+ | Scope widened to linguistic categories; CxG connection notes |
+| **Dec 16** | 10+ | Ch 13 theory framework (MMMG, CP analysis, info-theory); notes consolidation |
 
 ### Velocity Observations
 
 - **Fastest drafts:** Ch 1 (1 day), Ch 2 (1 day), Ch 4/5 (same day)
 - **Most intensive:** Ch 7 — 128 total commits over 5 days
 - **Average chapter:** ~2 days drafting + 1–2 days polish
-- **Total project span:** 16 days (Nov 29 – Dec 14)
+- **Total project span:** 18 days (Nov 29 – Dec 16)
 - **Total lines (chs 1–9):** ~3,264 lines of LaTeX
+
+---
+
+## 16 December 2025 — Ch 13 theoretical framework
+
+Developed comprehensive theoretical framework for Chapter 13 (Grammaticality itself):
+
+### Core Framework: MMMG
+- **G(u) = C^t(u) · K(u) · map** — only morphosyntax-meaning pairing failures trigger ungrammaticality
+- Phonology and discourse affect F(u) (subjective feeling), not G(u) (grammaticality)
+
+### Information-Theoretic Framing
+- Shannon: Mutual information peaks at constructions (form-meaning bidirectional constraint)
+- Kolmogorov: Morphosyntax is Goldilocks zone (compositional + obligatory)
+- CP is effect-space relative: phonemes have low CP for propositions, high CP for lexical identity
+
+### Key Evidence
+- Turkish vowel harmony (stem vs suffix disharmony)
+- "A orange" as allomorphy, not pure phonotactics
+- Indexical vs semantic meaning distinction
+
+### Notes Consolidation
+- Merged three overlapping files into linked set:
+  - `chapter13-master.md` — quick reference
+  - `chapter13_planning.md` — structural planning
+  - `morphosyntax-systematicity-zone.md` — comprehensive deep-dive
+
+### Terminology Standardization
+- "Grammatical categories" → "linguistic categories" in Chs 2, 3, 5
 
 ---
 

@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 14, 2025  
-**Current Phase**: Chapter 9 Complete; Full 160-page PDF Built
+**Date**: December 16, 2025  
+**Current Phase**: Chapter 9 Complete; Chapter 13 Theory Framework Developed
 
 ## Completed
 
@@ -30,27 +30,25 @@
 ### Part III: Categories Reconsidered (Chapters 9-12)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
 
-### Chapter 9 Refinement (Dec 14, 2025)
-- ✅ Verified Grimm (2018) citation accuracy — added page 532 reference
-- ✅ Verified Wiltschko (2008) supports 'less cohesive' prediction
-- ✅ Calibrated cross-linguistic claims (tempered from over-claiming)
-- ✅ Reframed "Natural experiments" conclusion as mechanism-sensitivity diagnostic
-- ✅ Welsh singulatives as worked example with conditional framing
-- ✅ Emoji/AP reframed as diagnostic oscillation with LEGO callback
-- ✅ Added "for free from domain-general object cognition" phrasing
-- ✅ Refined "Looking forward" section for Part III transition
-- ✅ Full book PDF compiled (160 pages): `HPC-Book-Full-2025-12-14.pdf`
-
-### Previous Session Work (Dec 13-14, 2025)
-- ✅ Cross-reference audit completed
-- ✅ Précis added to frontmatter
-- ✅ Chapter 8 final editorial pass
-- ✅ Chapter 9 two-HPC architecture (individuation + count cluster)
-- ✅ LEGO/emoji hooks integrated
+### Session Work (Dec 15-16, 2025)
+- ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)
+- ✅ Ch 13 theoretical framework developed:
+  - MMMG (Morphosyntactic-Meaning Model of Grammaticality)
+  - CP/effect-space analysis (why phonemes don't carry propositional meaning)
+  - Information-theoretic framing (Shannon mutual information, Kolmogorov complexity)
+  - Turkish vowel harmony as key evidence
+  - "A orange" edge case analysis (allomorphy, not phonotactics)
+- ✅ Notes consolidated:
+  - `chapter13-master.md` — quick-reference theoretical framework
+  - `chapter13_planning.md` — structural planning (double-copula vignette)
+  - `morphosyntax-systematicity-zone.md` — comprehensive deep-dive (~8,700 words)
+- ✅ Ch 5 TODO added: synchronic terrain warping (context shifts basin boundaries)
+- ✅ CxG foundational arguments notes created
 
 ## In Progress
 
 - 🔄 Part III development (Chapters 10-12: remaining case studies)
+- 🔄 Ch 13 theoretical framework → prose draft
 
 ## Next Actions
 
