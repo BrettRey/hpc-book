@@ -88,3 +88,8 @@ xelatex main.tex && biber main && xelatex main.tex
 **Git:**
 - Branch: `restructure-part-1`
 - Commit after significant changes, push at session end
+
+## Other Workflows
+
+- `/git-hygiene` — Reminders for clean commits and branch management
+- `/multi-agent-review` — Spawn independent LLM agents (Codex, Gemini) for parallel advisory board reviews of chapters. Useful for getting diverse, unbiased feedback.
