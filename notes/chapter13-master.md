@@ -1,6 +1,8 @@
 # Chapter 13: Grammaticality Itself — Master Notes
 
-**Last updated:** December 15, 2025
+**Last updated:** December 16, 2025
+
+> **See also:** [`morphosyntax-systematicity-zone.md`](morphosyntax-systematicity-zone.md) — comprehensive deep-dive (~8,700 words) on why morphosyntax is the zone of maximum systematicity, with empirical predictions, cross-linguistic evidence, and Construction Grammar connection.
 
 ## Core Claim
 
