@@ -2,7 +2,9 @@
 
 **Last updated:** December 16, 2025
 
-> **See also:** [`morphosyntax-systematicity-zone.md`](morphosyntax-systematicity-zone.md) — comprehensive deep-dive (~8,700 words) on why morphosyntax is the zone of maximum systematicity, with empirical predictions, cross-linguistic evidence, and Construction Grammar connection.
+> **See also:** 
+> - [`morphosyntax-systematicity-zone.md`](morphosyntax-systematicity-zone.md) — comprehensive deep-dive (~8,700 words) on why morphosyntax is the zone of maximum systematicity
+> - [`chapter13_planning.md`](chapter13_planning.md) — structural planning (double-copula opening vignette, example placement)
 
 ## Core Claim
 
