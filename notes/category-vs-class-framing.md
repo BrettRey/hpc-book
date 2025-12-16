@@ -1,40 +1,40 @@
 # Category vs. Class: Not a Demotion
 
-**Key framing point** — integrate into main prose, not as sidebar.
+**Status:** ✅ Added to Chapter 8 (after line 33)
 
 ---
 
 ## The Point
 
-Distinguishing **category** (HPC kind) from **class** (nominal grouping) is NOT a value hierarchy. Both serve important purposes:
+Diagnosing something as a **class** rather than a **category** is NOT a demotion. Both serve purposes:
 
-| Type | Useful For | Not Useful For |
-|------|-----------|----------------|
-| **Category** (HPC kind) | Prediction, induction, explaining mechanisms, supporting generalizations | — |
-| **Class** (nominal grouping) | Organizing curricula, structuring textbooks, defining research communities, communication | Predicting deficits, explaining development, identifying shared mechanisms |
+| Type | Useful For |
+|------|-----------|
+| **Category** (HPC kind) | Induction, predicting deficits, explaining acquisition |
+| **Class** (nominal grouping) | Organising curricula, structuring textbooks, enabling communication |
 
-**Example:** "Pragmatics" as a class is perfectly useful for organizing coursework; it fails as a category for predicting which phenomena share processing resources.
-
-The HPC framework doesn't say "classes are bad" — it says "don't expect inductive power from a nominal grouping." The confusion arises when we *treat* a class as if it were a category.
+The question is not "Is this term legitimate?" but "What kind of work are we asking it to do?"
 
 ---
 
-## Where to Integrate
+## Insertion Point
 
-### Chapter 2 (kinds vs. classes distinction)
-When first distinguishing natural kinds from constructed classes, add a paragraph:
-> "This is not a value hierarchy. Constructed classes serve essential purposes: organizing curricula, indexing research communities, enabling communication. The diagnostic question is not 'Is this term legitimate?' but 'What kind of work are we asking it to do?'"
+Added to Chapter 8, §8.1 (The inflation problem), after the paragraph ending "...when is it merely a convenient label?"
 
-### Chapter 8 (fat/thin clusters)
-When diagnosing fat clusters, reinforce:
-> "Identifying 'pragmatics' as a fat cluster is not a demotion. It redirects inquiry: ask not 'What is pragmatic competence?' but 'Which of its dissociable components supports the inference I'm studying?'"
+> A word about framing: diagnosing something as a class rather than a category is not a demotion. Both serve purposes. Classes organise curricula, structure textbooks, enable communication. Categories support induction, predict deficits, explain acquisition. The question is not 'Is this term legitimate?' but 'What kind of work are we asking it to do?'
 
-### Chapter 14 (implications/conclusion)
-Meta-point:
-> "The maintenance view doesn't tell us what to care about. It helps us match our analytical tools to our goals — and dissolves some questions by revealing them as artifacts of treating classes as categories."
+---
+
+## Failure Mode Terminology
+
+The three failure modes are all ways a putative **category** turns out to be merely a **class**:
+
+- **Thin class** — insufficient mechanism to maintain clustering
+- **Fat class** — lumps distinct mechanisms under one label
+- **Negative class** — defined by absence, no positive cluster
 
 ---
 
 ## Connection to Floyd et al. 2025
 
-This is exactly what Floyd et al. show: "pragmatics" is a useful class for organizing research, but its three components are the categories with projective force. Neither is "wrong" — they're tools for different purposes.
+"Pragmatics" is a useful class for organizing research; its three components (social conventions, intonation, causal reasoning) are the categories with projective force. Neither is wrong — they're tools for different purposes.
