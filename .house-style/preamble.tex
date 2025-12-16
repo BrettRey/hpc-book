@@ -104,3 +104,58 @@
 \newcommand{\eg}{e.g.,\xspace}
 \newcommand{\ie}{i.e.,\xspace}
 \newcommand{\etc}{etc.\xspace}
+
+% =========================
+% Indices (imakeidx)
+% =========================
+\usepackage{imakeidx}
+
+% Three indices: Subject (concepts), Names (authors), Lexical (mentioned words)
+\makeindex[name=subject, title=Subject Index, columns=2]
+\makeindex[name=names, title=Name Index, columns=2]
+\makeindex[name=lexical, title=Lexical Index, columns=2, intoc]
+
+% Helper macros for consistent indexing
+\newcommand{\ixs}[1]{#1\index[subject]{#1}}         % Subject: inline + tag
+\newcommand{\ixn}[1]{#1\index[names]{#1}}           % Names: inline + tag
+\newcommand{\ixl}[1]{\mention{#1}\index[lexical]{#1}} % Lexical: italicised + tag
+\newcommand{\ixsq}[1]{\index[subject]{#1}}          % Subject: tag only (quiet)
+\newcommand{\ixnq}[1]{\index[names]{#1}}            % Names: tag only (quiet)
+\newcommand{\ixlq}[1]{\index[lexical]{#1}}          % Lexical: tag only (quiet)
+
+% =========================
+% Glossary (glossaries-extra)
+% =========================
+\usepackage[toc, acronym, nopostdot, nonumberlist]{glossaries-extra}
+\setabbreviationstyle[acronym]{long-short}
+
+% --- Glossary entries (defined here; can be moved to separate file) ---
+
+\newglossaryentry{hpc}{
+  name={homeostatic property cluster (HPC)},
+  text={HPC},
+  description={A category whose members share properties not because of a common essence but because causal processes maintain the co-occurrence of those properties. Identified by two diagnostics: \emph{projectibility} (the category supports induction) and \emph{homeostasis} (named mechanisms maintain the cluster under perturbation). See Chs~4, 7, 8}
+}
+
+\newglossaryentry{projectibility}{
+  name={projectibility},
+  description={The property of a category that licenses inductive generalisation: knowing that an item belongs to the category allows prediction of its other properties. The first of two diagnostics for genuine kinds. See Ch~6}
+}
+
+\newglossaryentry{homeostasis}{
+  name={homeostasis},
+  description={The active maintenance of cluster coherence by identifiable causal mechanisms (acquisition, entrenchment, alignment, transmission, functional pressure). The second diagnostic for genuine kinds. See Chs~4, 7}
+}
+
+\newglossaryentry{entrenchment}{
+  name={entrenchment},
+  description={A cognitive mechanism whereby repeated exposure to a linguistic pattern strengthens its mental representation, making it more accessible and resistant to change. One of the stabilizers maintaining grammatical categories. See Ch~7}
+}
+
+\newglossaryentry{essentialism}{
+  name={essentialism},
+  description={The view that categories have definitions: necessary and sufficient conditions that determine membership. Contrasted with the maintenance view developed in this book. See Chs~1--3}
+}
+
+\makeglossaries
+
