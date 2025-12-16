@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a LaTeX academic book project: "Words That Won't Hold Still: How Grammatical Categories Work" (working title also: "Language Without Essences"). The core thesis is that grammatical categories are Homeostatic Property Cluster (HPC) kinds rather than essentialist or nominalist constructs.
+This is a LaTeX academic book project: "Words That Won't Hold Still: How Linguistic Categories Work" (working title also: "Language Without Essences"). The core thesis is that many core linguistic categories (with grammar as the main focus) are Homeostatic Property Cluster (HPC) kinds rather than essentialist or nominalist constructs.
 
 ## Build Commands
 

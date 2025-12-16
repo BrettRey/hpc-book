@@ -1,16 +1,18 @@
-# Language Without Essences: The Metaphysics of Grammatical Categories
+# Language Without Essences: The Metaphysics of Linguistic Categories
 
 ## Project Overview
 
-This repository contains the working materials for a linguistics/philosophy book that argues grammatical categories are **Homeostatic Property Cluster (HPC)** kinds rather than essentialist or purely nominalist constructs.
+This repository contains the working materials for a linguistics/philosophy book that argues many core linguistic categories are **Homeostatic Property Cluster (HPC)** kinds rather than essentialist or purely nominalist constructs.
 
 ### Core Thesis
 
-Grammatical categories (nouns, determiners, constructions, etc.) are:
+Many core linguistic categories are:
 - **Real** and stable, not arbitrary
 - Characterized by **property clusters**, not necessary/sufficient conditions
 - Maintained by **causal mechanisms** (acquisition, entrenchment, transmission, etc.)
 - **Fuzzy at boundaries** but projectible for induction
+
+Not every familiar label will survive this treatment: the book also develops diagnostics for when a proposed category is a mere convenience class (thin, fat, or negative).
 
 This framework, adapted from philosophy of biology, resolves longstanding puzzles about category gradience, boundary cases, and cross-linguistic variation.
 
@@ -32,6 +34,7 @@ The book is organized in four parts:
 - Definiteness
 - Word classes
 - Constructions
+- Phonemes and register (non-grammar worked cases)
 - Long-standing puzzles resolved
 
 ### Part IV: Implications
@@ -90,4 +93,4 @@ The book is organized in four parts:
 
 ---
 
-*Last updated: December 4, 2025*
+*Last updated: December 15, 2025*

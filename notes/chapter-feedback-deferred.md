@@ -38,6 +38,8 @@ Notes from the December 5, 2025 review-panel exercise. Items below were identifi
 
 - **Figures should show process, not just states** (Tufte): Wherever possible, figures should visualise dynamics—trajectories in feature space, before/after perturbation, diachronic movement—rather than static snapshots of stable states.
 
+- **Gricean norm violations as category?** (Dec 14, 2025): Are Gricean norms HPC kinds? Key observation: Gricean violations are *often meaningful* (flouting generates implicatures), whereas grammatical violations are *rarely meaningful* (just errors). This asymmetry suggests different maintenance mechanisms — Gricean norms are maintained partly *because* their violation is interpretable. The system exploits violations rather than filtering them out. Potentially relevant for Part IV (scope extension beyond morphosyntax) or as a contrast case in Ch 8. No obvious home in current structure, but worth revisiting when drafting Part IV.
+
 ---
 
 ## Chapter 5 (Discrete from continuous) — deferred items

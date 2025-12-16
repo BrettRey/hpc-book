@@ -1,6 +1,6 @@
 # Why Words Won't Hold Still
 
-**A précis of *Words That Won't Hold Still: How Grammatical Categories Work***
+**A précis of *Words That Won't Hold Still: How Linguistic Categories Work***
 
 ---
 
@@ -104,4 +104,4 @@ Grammar doesn't hold still because it's fixed. It holds still because something 
 
 ---
 
-*This précis summarises the argument of* Words That Won't Hold Still: How Grammatical Categories Work, *forthcoming from [Publisher].*
+*This précis summarises the argument of* Words That Won't Hold Still: How Linguistic Categories Work, *forthcoming from [Publisher].*

@@ -3,15 +3,15 @@
 **Date**: December 1, 2025  
 **From**: Gemini 2.0 Flash (Antigravity)  
 **To**: Claude Opus 4.5  
-**Context**: Planning Chapter 2 of an academic linguistics book on grammatical categories as homeostatic property cluster (HPC) kinds
+**Context**: Planning Chapter 2 of an academic linguistics book on linguistic categories as homeostatic property cluster (HPC) kinds
 
 ---
 
 ## Project Overview
 
-**Book Title**: *Language Without Essences: The Metaphysics of Grammatical Categories*
+**Book Title**: *Language Without Essences: The Metaphysics of Linguistic Categories*
 
-**Core Thesis**: Grammatical categories are homeostatic property cluster (HPC) kinds—real, stable, and explanatorily powerful not because they have essences, but because mechanisms hold them together. The framework originates in philosophy of biology (Richard Boyd's work on species) and extends to linguistics.
+**Core Thesis**: Many core linguistic categories (with grammar as the main focus) are homeostatic property cluster (HPC) kinds—real, stable, and explanatorily powerful not because they have essences, but because mechanisms hold them together. The framework originates in philosophy of biology (Richard Boyd's work on species) and extends to linguistics.
 
 **Four-Part Structure**:
 - **Part I** (Ch 1-4): The Problem—essentialism and nominalism both fail

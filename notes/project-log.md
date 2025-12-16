@@ -2,7 +2,7 @@
 
 ## Progress Tracker
 
-> **Last updated:** 14 December 2025  
+> **Last updated:** 15 December 2025  
 > **Data source:** Git commit history (`git log --date=short`)
 
 ### Chapter Timeline
@@ -41,6 +41,7 @@
 | **Dec 12** | 5+ | Ch 8 major revisions; cross-reference audit |
 | **Dec 13** | 25+ | Ch 8 final polish; Ch 9 drafted; Précis created |
 | **Dec 14** | 25+ | Ch 9 restructuring and calibration; handoff prep |
+| **Dec 15** | 1+ | Scope widened to linguistic categories; title + outline updated; planned non-grammar worked cases |
 
 ### Velocity Observations
 
@@ -51,6 +52,13 @@
 - **Total lines (chs 1–9):** ~3,264 lines of LaTeX
 
 ---
+
+## 15 December 2025 — Scope broadened beyond grammar
+
+Reframed the book as a sieve for *linguistic* categories rather than only grammatical categories.
+
+- Updated working title to "How Linguistic Categories Work"
+- Revised the outline to add major non-grammar cases (one positive, one negative) and to sprinkle non-grammar examples earlier
 
 ## 5 December 2025 — Genesis of Chapter 5
 
