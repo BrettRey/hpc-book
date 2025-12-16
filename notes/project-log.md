@@ -54,7 +54,26 @@
 
 ---
 
-## 16 December 2025 — Ch 13 theoretical framework
+## 16 December 2025 — Infrastructure & indices (session 2)
+
+### Glossary & Index Infrastructure
+- Added **glossaries-extra** package with 5 mechanism-focused entries (HPC, projectibility, homeostasis, entrenchment, essentialism)
+- Added **triple index** (Subject, Names, Lexical) using imakeidx with helper macros
+- Fixed lexical index to use sort key syntax for proper alphabetization
+- Added sample tags across Chs 1, 2, 4
+
+### Two-Diagnostic Preview
+- Added paragraph to Ch 6 opening previewing projectibility + perturbation-sensitivity diagnostics
+
+### Build Infrastructure Cleanup
+- Renamed `main.tex` → `hpc-book.tex`
+- Created `.latexmkrc` routing artifacts to `build/`
+- Created `snapshots/` for dated PDF versions
+- Root directory: 14 files (was 23)
+
+---
+
+## 16 December 2025 — Ch 13 theoretical framework (session 1)
 
 Developed comprehensive theoretical framework for Chapter 13 (Grammaticality itself):
 
