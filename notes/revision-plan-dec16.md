@@ -54,7 +54,7 @@ All items already addressed in current version:
 
 ### Tier 2: Structural (Next Session)
 
-- [ ] **Preview two diagnostics earlier** — Add 1 paragraph in late Ch 4 or early Ch 6 stating that the framework will be tested by (a) projectibility and (b) perturbation-sensitivity
+- [x] **Preview two diagnostics earlier** — DONE: Added paragraph in Ch 6 opening (lines 22-23) previewing projectibility + perturbation-sensitivity
 - [ ] **Ch 5 accessibility pass** — Add sidebar "Why hyperreals? Why not fuzzy logic?" at start of §5.2; consider moving derivational texture to appendix
 
 ### Tier 3: Chapter Reorganization (Longer-term)
@@ -71,7 +71,8 @@ All items already addressed in current version:
 
 ### Tier 5: Polish (Pre-Publication)
 
-- [ ] Add glossary
+- [x] Add glossary — DONE: Infrastructure added (glossaries-extra), 5 sample entries, glossary prints in backmatter
+- [x] Add triple index — DONE: Subject, Names, Lexical indices with sample tags in Chs 1, 2, 4
 - [ ] Cross-reference audit for forward refs to Part III/IV
 - [ ] Ensure AI appendix addresses all concerns
 

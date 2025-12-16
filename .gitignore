@@ -18,6 +18,7 @@
 *.lof
 *.lot
 build/
+snapshots/
 
 # OS files
 .DS_Store
