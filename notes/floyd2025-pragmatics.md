@@ -1,62 +1,88 @@
 # Floyd et al. 2025: Pragmatic Language Components
 
-**Status:** Need full text — request from author or library  
-**Relevance:** Chapter 8 (Failure Modes) or Part III case study
+**Status:** ✅ PDF received & analyzed (Dec 16)  
+**Location:** `literature/floyd-et-al-2025-three-distinct-components-of-pragmatic-language-use-social-conventions-intonation-and-world-knowledge.pdf`  
+**Relevance:** Chapter 8 (Failure Modes) — exemplar of "fat cluster"
 
 ---
 
 ## Citation
 
-Floyd, S., Jouravlev, O., Poliak, M., et al. (2025). Three distinct components of pragmatic language use: Social conventions, intonation, and world knowledge–based causal reasoning. *PNAS*, 122(50), e2424400122. https://doi.org/10.1073/pnas.2424400122
+Floyd, S., Jouravlev, O., Poliak, M., Mineroff, Z., Gibson, E., & Fedorenko, E. (2025). Three distinct components of pragmatic language use: Social conventions, intonation, and world knowledge–based causal reasoning. *PNAS*, 122(50), e2424400122. https://doi.org/10.1073/pnas.2424400122
 
 ---
 
-## Key Finding
+## Summary
 
-Factor analysis of 776 participants on 20 pragmatic tasks reveals **three dissociable components**:
+Factor analysis of 776 participants on 20+ pragmatic tasks reveals that "pragmatic inference" fractionates into **three dissociable cognitive components**:
 
-1. **Social conventions** — indirect requests, conversational implicatures, irony
-2. **Intonation interpretation** — contrastive and emotional prosody
+1. **Social conventions** — indirect requests, conversational implicatures, irony (+ possibly metaphor, humor, polite deceits)
+2. **Intonation** — contrastive and emotional prosody
 3. **Causal reasoning** — world knowledge-based inference
 
----
-
-## HPC Diagnostic Questions
-
-| Question | Preliminary Assessment |
-|----------|------------------------|
-| Do components cluster *together* or merely share a label? | Discovered via *dissociation* — suggests label problem |
-| Are there maintenance mechanisms between components? | Unknown — need full text |
-| Does "pragmatics" have projective force? | Weak — knowing something is "pragmatic" doesn't predict which component |
-| Are the three components better HPC candidates? | Possibly — each has neural, developmental, genetic coherence |
+Scalar implicatures loaded on their *own* factor, separate even from "Social conventions."
 
 ---
 
-## Potential Book Integration
+## HPC Diagnostic Assessment
+
+### "Pragmatics" = Fat Cluster
+
+The umbrella term "pragmatic inference" fails HPC diagnostics:
+- Components do NOT covary strongly across individuals
+- Components do NOT share neural substrates (by implication)
+- Components may have distinct developmental trajectories
+- **Low projective force**: knowing something is "pragmatic" doesn't predict which component it loads on
+
+### The Three Components as Better HPC Candidates
+
+| Component | Internal Coherence | Maintenance Mechanisms? | Projective Force |
+|-----------|-------------------|------------------------|------------------|
+| **Social conventions** | High — tasks cluster tightly | Theory of Mind (putative) | Strong — predicts processing, neural basis |
+| **Intonation** | High — even after controlling for low-level auditory ability | Acoustic-prosodic processing | Strong — predicts modality dependence |
+| **Causal reasoning** | Moderate — some internal fractionation | World knowledge systems | Weaker — may fractionate further |
+
+### Key Quotes
+
+> "we found that some phenomena consistently group together, but that pragmatic language use encompasses **at least three distinct components**" (p. 6)
+
+> "our results call for **more precision in using such terms** [as 'pragmatic abilities'] given that not all nonliteral comprehension phenomena cluster onto a single factor" (p. 8)
+
+> "phenomena loading on the same factor should emerge together during development, and phenomena that load on different factors may show **distinct trajectories**" (p. 9) — *This is HPC's prediction about homeostasis!*
+
+---
+
+## Methodological Takeaway
+
+**Individual-differences factor analysis as HPC diagnostic tool:**
+- If tasks cluster across individuals → shared maintenance mechanisms → likely HPC kind
+- If tasks fractionate → nominal grouping → "fat cluster" or constructed class
+
+This parallels the diagnostic structure in Chapter 8: ask whether variance in one feature predicts variance in others.
+
+---
+
+## Integration Points
 
 ### Chapter 8 (Failure Modes)
-- Example of **fat clustering** — umbrella term that obscures real joints
-- Demonstrates grain-of-analysis problem
-
-### Part III (Case Study)
-- Could parallel countability chapter: "Is pragmatics a category?"
-- Tests HPC diagnostic: fractionation suggests constructed class
+- "Pragmatics" as textbook fat cluster
+- The three components pass projectibility test better than umbrella term
+- Scalar implicatures may require even finer grain
 
 ### Chapter 13 (Grammaticality)
-- Relevant if discussing where syntax ends and pragmatics begins
-- Components might differentially interact with morphosyntax
+- Where does syntax end and pragmatics begin?
+- "Social conventions" component may interact with morphosyntax differently than "Intonation" or "Causal reasoning"
+
+### Methodological Appendix
+- Factor analysis as empirical test for HPC status
+- Contrast with traditional definitional approaches
 
 ---
 
 ## To Do
 
-- [ ] Request full text from author (Fedorenko: evelina9@mit.edu) or library
-- [ ] Check if components interact (mutual reinforcement = homeostasis)
-- [ ] Look for deficit studies: does impairment in one predict impairment in others?
-- [ ] Consider for Chapter 8 revision or Part III chapter
-
----
-
-## Notes
-
-Fedorenko's lab focuses on dissociating language from domain-general cognition — framing HPC as "diagnostic for natural kinds" might resonate with her research program.
+- [x] Request full text — email sent Dec 16
+- [x] PDF received — same day!
+- [x] Initial HPC analysis complete
+- [ ] Consider adding to Chapter 8 revision as worked example
+- [ ] Check if Fedorenko lab has follow-up neural imaging work
