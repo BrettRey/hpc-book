@@ -324,8 +324,88 @@ The "braided cables" metaphor implies tight uniform intertwining. These alternat
 
 ---
 
-## Sources
+## The Six Candidate Hypotheses (Full Exploration)
 
+### 1. Compositional Parallelism
+Both morphosyntax and semantics are recursively compositional in structurally isomorphic ways. The meaning of a phrase is a function of its parts; the structure of a phrase is a combination of its parts. This parallel architecture creates natural coupling points.
+
+**Key insight:** The morpheme is the "quantum" of form-meaning coupling. Below it (phonology): formal composition without meaning. At and above it: compositional parallelism constrains coupling.
+
+### 2. Timescale Alignment
+Morphosyntax and semantic composition operate at the same temporal grain (~300-1000ms for phrase/clause). Phonotactics is too fast (~50-200ms). Discourse is too slow (seconds to minutes).
+
+**Key insight:** Timescale alignment is a FACILITATOR, not the primary explanation. Turkish evidential -mIş has morpheme-level duration but clause-level semantic scope — yet couples tightly. Obligatoriness trumps timescale.
+
+### 3. Selection Relations
+Morphosyntactic categories SELECT for semantic properties. Verbs select arguments with semantic roles. Quantifiers select count/mass. This selection creates bidirectional inference: hearing X → infer Y; wanting to express Y → choose X.
+
+**Key insight:** Selection is the architectural feature that bidirectional inference exploits. C-selection (morphosyntactic) and s-selection (semantic) are the two clusters in the two-HPC architecture.
+
+### 4. Learnability Bottleneck
+For language to be learnable, form-meaning mappings must be recoverable from input. Morphosyntax is the optimal zone — systematic enough to learn, variable enough to be useful.
+
+**Key insight:** Learnability is necessary but not sufficient. Phonology is highly learnable (acquired by age 2) but doesn't couple to meaning. The FOUR-PROPERTY CONVERGENCE matters: regularity + productivity + obligatoriness + learnability.
+
+### 5. Zone of Maximum Systematicity
+Morphosyntax is where grammar LIVES — the level where systematicity is maximized. Not too fine-grained (phonemes have no meaning), not too coarse-grained (discourse is too variable).
+
+**Key insight:** OBLIGATORINESS is the critical variable. Only semantic distinctions that can be made obligatory at morpheme/phrase/clause level get grammaticalized. This is why tense grammaticalizes but furniture doesn't.
+
+### 6. Prosody as Test Case
+Prosody operates at multiple timescales (segment to discourse) and DOES carry meaning (intonation, focus, emotion). It should show intermediate coupling — and it does.
+
+**Key insight:** Prosody couples to a DIFFERENT semantic domain (pragmatic/informational) than morphosyntax (propositional). Two parallel coupling systems exist. When prosody grammaticalizes (tone, pitch accent), coupling tightens to morphosyntactic levels.
+
+---
+
+## Key Quotes for Integration
+
+### On obligatoriness as the key variable:
+> "Obligatoriness is the critical variable that distinguishes grammatical from lexical/discourse patterns. When a semantic distinction is forced into obligatory morphosyntactic marking, every utterance reinforces the coupling."
+
+### On the morpheme as coupling boundary:
+> "The morpheme is the quantum of form-meaning pairing. Below it, phonological composition without meaning. At and above it, compositional parallelism constrains how form and meaning align."
+
+### On prosody as parallel system:
+> "Prosody couples to a different semantic domain — pragmatic rather than propositional. It's not competing with morphosyntax for the same functional space; it's a parallel interface operating on information structure and stance."
+
+### On why two cables:
+> "The tight coupling isn't arbitrary. Propositional meaning — what you assert about the world — requires obligatory compositional encoding because truth-conditional content must be recoverable. Morphosyntax is where this requirement is met."
+
+---
+
+## Key Revision for Ch 8
+
+Agent B's finding challenges one claim in Chapter 8 (via Ch 9):
+
+> **Current:** Semantic distinctions only "start to behave like kinds" after grammatical reinforcement.
+>
+> **Revised:** Semantic distinctions can be *weak* HPC kinds before grammatical reinforcement (individuation, factives). Grammaticalization *amplifies* and *stabilizes* the clustering; it doesn't create it from scratch.
+
+This is consistent with the volcano metaphor: the semantic distinction is the magma; grammaticalization is the eruption that builds visible, persistent structure.
+
+---
+
+## Sources and Further Reading
+
+### Framework papers:
 - `literature/grammaticality-model.tex` — Full MMMG framework paper
 - `literature/mesocale.tex` — CE 2.0 analysis of constructions
-- `notes/semantic-morphosyntactic-coupling.md` — Multi-agent synthesis on coupling strength
+
+### From the explorations:
+- Grimshaw (1990) on c-selection vs s-selection
+- Bybee (2006, 2010) on entrenchment and morphological complexity
+- Kirby et al. on iterated learning and compositionality emergence
+- Goldberg (1995, 2006) on constructions as form-meaning pairings
+- Haspelmath on comparative concepts and typological methodology
+
+### Neurolinguistic timescales:
+- Delta oscillations (~1 Hz) for clause-level integration
+- Theta oscillations (~4-5 Hz) for phrase-level processing
+- Processing windows ~300-1000ms for morphosyntactic-semantic integration
+
+### Prosody literature:
+- Tone languages: obligatory pitch-meaning coupling
+- Intonational phonology: optional pragmatic coupling
+- Focus marking: variable cross-linguistically (Hungarian syntactic vs English prosodic)
+
