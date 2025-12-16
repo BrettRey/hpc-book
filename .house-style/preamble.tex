@@ -118,10 +118,10 @@
 % Helper macros for consistent indexing
 \newcommand{\ixs}[1]{#1\index[subject]{#1}}         % Subject: inline + tag
 \newcommand{\ixn}[1]{#1\index[names]{#1}}           % Names: inline + tag
-\newcommand{\ixl}[1]{\mention{#1}\index[lexical]{#1}} % Lexical: italicised + tag
+\newcommand{\ixl}[1]{\textit{#1}\index[lexical]{#1@\textit{#1}}} % Lexical: italicised + sorted correctly
 \newcommand{\ixsq}[1]{\index[subject]{#1}}          % Subject: tag only (quiet)
 \newcommand{\ixnq}[1]{\index[names]{#1}}            % Names: tag only (quiet)
-\newcommand{\ixlq}[1]{\index[lexical]{#1}}          % Lexical: tag only (quiet)
+\newcommand{\ixlq}[1]{\index[lexical]{#1@\textit{#1}}} % Lexical: tag only (quiet), sorted correctly
 
 % =========================
 % Glossary (glossaries-extra)
