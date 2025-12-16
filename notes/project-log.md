@@ -69,7 +69,29 @@
 - Renamed `main.tex` → `hpc-book.tex`
 - Created `.latexmkrc` routing artifacts to `build/`
 - Created `snapshots/` for dated PDF versions
-- Root directory: 14 files (was 23)
+- Created `frontmatter/` for cover, precis, dedication
+- Moved Python scripts to `code/`
+- Root directory: 8 files (was 23)
+
+---
+
+## 16 December 2025 — Book cover (session 3)
+
+### Cover Design
+- Created book cover (170mm × 240mm) with braided river delta background
+- Typography: EB Garamond (installed via Homebrew)
+- Title/subtitle positioned in neutral grey sky area
+- Author name with subtle glow effect (TikZ multi-layer technique)
+- Iterative refinement based on feedback (position, shadow intensity, font size)
+
+### Files Created
+- `figures/cover-braided-river.jpg` — background image
+- `frontmatter/cover.tex` — standalone cover (for separate PDF)
+- `frontmatter/coverpage.tex` — includable version for main book
+
+### Additional Fixes
+- Fixed frontmatter page numbering (TOC starts at page i)
+- All three indices now appear in TOC
 
 ---
 
