@@ -82,8 +82,13 @@ This workflow orients you to the project. Use it at the start of any new session
 
 **Build commands:**
 ```bash
-xelatex main.tex && biber main && xelatex main.tex
+# Use latexmk (routes output to build/ per .latexmkrc)
+latexmk hpc-book.tex
+
+# For quick single-pass (output stays in main folder — avoid):
+# xelatex hpc-book.tex
 ```
+⚠️ Always use `latexmk` to keep build artifacts in `build/` folder.
 
 **Git:**
 - Branch: `restructure-part-1`
