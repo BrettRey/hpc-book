@@ -2,7 +2,7 @@
 
 ## Progress Tracker
 
-> **Last updated:** 16 December 2025  
+> **Last updated:** 17 December 2025  
 > **Data source:** Git commit history (`git log --date=short`)
 
 ### Chapter Timeline
@@ -43,14 +43,47 @@
 | **Dec 14** | 25+ | Ch 9 restructuring and calibration; handoff prep |
 | **Dec 15** | 5+ | Scope widened to linguistic categories; CxG connection notes |
 | **Dec 16** | 10+ | Ch 13 theory framework (MMMG, CP analysis, info-theory); notes consolidation |
+| **Dec 17** | 5+ | Scott-Phillips + Fedorenko integration; advisory board consultations; build workflow fix |
 
 ### Velocity Observations
 
 - **Fastest drafts:** Ch 1 (1 day), Ch 2 (1 day), Ch 4/5 (same day)
 - **Most intensive:** Ch 7 — 128 total commits over 5 days
 - **Average chapter:** ~2 days drafting + 1–2 days polish
-- **Total project span:** 18 days (Nov 29 – Dec 16)
+- **Total project span:** 19 days (Nov 29 – Dec 17)
 - **Total lines (chs 1–9):** ~3,264 lines of LaTeX
+
+---
+
+## 17 December 2025 — Literature Integration Session
+
+### Papers Integrated
+
+| Paper | Placement | Type |
+|-------|-----------|------|
+| Scott-Phillips 2025 (byproduct hypothesis) | Ch 7 (table) + Ch 8 (diagnostic) | Methodological |
+| Fedorenko 2024 (language network as natural kind) | Ch 4 | Neural evidence |
+| Fedorenko 2024 (communication not thought) | Ch 7 | Forcing function |
+
+### Advisory Board Consultations
+- Spawned 4-agent boards (Gemini + Codex) for Scott-Phillips and Fedorenko papers
+- Strong consensus: papers highly compatible with HPC framework
+- Both papers strengthen the "communicative pressure as forcing function" argument
+
+### Key Additions
+- **Ch 4**: Neural evidence paragraph — language network exhibits HPC signature (stability without sameness)
+- **Ch 7**: Double dissociation paragraph — language/reasoning separable confirms forcing function is communicative
+- **Ch 7 Table 7.1**: Optimal relevance as selection pressure in functional feedback row
+- **Ch 8**: Methodological caution — acceptability judgments are byproducts of relevance-seeking, not direct grammar reports
+
+### Infrastructure
+- Fixed build workflow: `latexmk` now recommended (routes output to `build/` per `.latexmkrc`)
+- Updated `/init` workflow with build reminder
+- Cleaned up stray build artifacts from main folder
+
+### Created Notes
+- `scottphillips2025-analysis.md`, `fedorenko2024-analysis.md`
+- 8 board feedback files (`board-scottphillips-*.md`, `board-fedorenko-*.md`)
 
 ---
 

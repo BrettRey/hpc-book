@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 16, 2025  
-**Current Phase**: Chapter 9 Complete; Chapter 13 Theory Framework Developed
+**Date**: December 17, 2025  
+**Current Phase**: Literature Integration; Chapter 13 Theory Framework Developed
 
 ## Completed
 
@@ -44,6 +44,17 @@
   - `morphosyntax-systematicity-zone.md` — comprehensive deep-dive (~8,700 words)
 - ✅ Ch 5 TODO added: synchronic terrain warping (context shifts basin boundaries)
 - ✅ CxG foundational arguments notes created
+
+### Session Work (Dec 17, 2025)
+- ✅ Scott-Phillips 2025 (byproduct hypothesis) integrated:
+  - Ch 7 Table 7.1: optimal relevance as forcing function
+  - Ch 8: methodological caution about acceptability judgments
+- ✅ Fedorenko 2024 papers integrated:
+  - "Language network as natural kind" → Ch 4 (neural evidence for HPC)
+  - "Communication rather than thought" → Ch 7 (dissociation confirms communicative forcing function)
+- ✅ Advisory board consultations (4 agents each) for both papers
+- ✅ Build workflow fixed: `latexmk` now recommended for `build/` output
+- ✅ Bib entries updated/added for new citations
 
 ## In Progress
 
