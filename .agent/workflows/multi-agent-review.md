@@ -32,7 +32,10 @@ which claude && claude --version  # Anthropic Claude Code
 
 ### Codex (non-interactive)
 ```bash
-codex exec "You are [ADVISOR NAME], [DESCRIPTION]. Read [FILE] and provide feedback on: (1) [Q1] (2) [Q2] (3) [Q3]. Write your feedback to notes/board-feedback-[chapter]-[advisor].md" > /dev/null 2>&1 &
+# IMPORTANT: Codex does NOT work with piped input.
+# Include "Read the file [PATH] first" in the prompt instead.
+# Codex needs more time than Gemini — allow ~2 minutes per agent.
+codex exec "Read the file [PATH] first. You are [ADVISOR NAME], [DESCRIPTION]. The question is: [Q1] (1) [Q2] (2) [Q3]. Write your advice to notes/board-[topic]-[advisor].md" > /dev/null 2>&1 &
 ```
 
 ### Gemini (MUST pipe content — file reading doesn't work in YOLO mode)
