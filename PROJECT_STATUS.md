@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 17, 2025  
-**Current Phase**: Literature Integration; Chapter 13 Theory Framework Developed
+**Date**: December 20, 2025  
+**Current Phase**: Part III Development; Chapter 11 Grist Established
 
 ## Completed
 
@@ -9,7 +9,7 @@
 - ✅ `.gitignore` configured for LaTeX/academic project
 - ✅ README.md with project overview
 - ✅ Synopsis finalized (~880 words)
-- ✅ Core thesis articulated (HPC kinds for grammatical categories)
+- ✅ Core thesis articulated (HPC kinds for linguistic categories)
 - ✅ 14-chapter structure defined (4 parts: Problem, Fix, Categories, Implications)
 - ✅ House style guide established (`.house-style/style-guide.md`)
 - ✅ LaTeX preamble with custom macros (`.house-style/preamble.tex`)
@@ -55,6 +55,16 @@
 - ✅ Advisory board consultations (4 agents each) for both papers
 - ✅ Build workflow fixed: `latexmk` now recommended for `build/` output
 - ✅ Bib entries updated/added for new citations
+
+### Session Work (Dec 20, 2025)
+- ✅ Chapter 11 grist developed:
+  - Deixis/anaphor/interrogative theoretical discussion
+  - Mechanism-braiding insight: semantic redundancy → syntactic distribution
+  - Focus-modifier squib sparked parallel project
+  - Pro-form as semantic category — cross-reference to `reynolds2025proform`
+- ✅ Pro-form gender paper (`literature/pro-form_gender.tex`) integrated as Ch 11 source
+- ✅ Bib entry added: `reynolds2025proform` (manuscript in preparation)
+- ✅ `notes/chapter11-grist.md` created with clustering tables and mechanism analysis
 
 ## In Progress
 
@@ -111,7 +121,7 @@
 
 ## Research Questions Addressed
 
-- ✅ What are the specific mechanisms for grammatical categories? (Ch 7)
+- ✅ What are the specific mechanisms for linguistic categories? (Ch 7)
 - ✅ How do we empirically test for homeostasis? (Ch 7 robustness tests)
 - ✅ What are the clearest failure cases? (Ch 8 thin/fat/negative)
 - ✅ How does this interact with formal/computational approaches? (Ch 8 criteria)

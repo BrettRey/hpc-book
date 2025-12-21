@@ -20,7 +20,7 @@ Notes from the December 5, 2025 review-panel exercise. Items below were identifi
 
 ## Chapter 10 (Word classes)
 
-- **Cross-linguistic divergence**: The heterogeneity section from Chapter 4 could be extended here with examples of word-class systems maintained differently across languages (e.g., adjective-less languages, languages where property words pattern as nouns or verbs).
+- **Cross-linguistic divergence**: The heterogeneity section from Chapter 4 could be extended here with examples of lexical-category systems maintained differently across languages (e.g., adjective-less languages, languages where property words pattern as nouns or verbs).
 
 ---
 

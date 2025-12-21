@@ -588,3 +588,39 @@ Major calibration pass on Chapter 9's cross-linguistic section to ensure claims 
 1. Ch 10 (Definiteness) planning and drafting
 2. Ch 11 (Lexical categories) planning and drafting
 3. Consider PR to merge `restructure-part-1` to main
+
+---
+
+## 20 December 2025 — Deixis, Anaphor, Interrogatives, and Mechanism Braiding
+
+### Session summary
+
+Theoretical discussion prompted by CGEL's classification of *today/tomorrow/tonight/yesterday* as pronouns. Led to a squib on focus modifiers (*exactly who* vs. *the person exactly who*) and key insight for Chapter 11.
+
+### The intellectual chain
+
+1. **Starting observation**: CGEL classifies *today/tomorrow* as pronouns on semantic/distributional grounds, but morphologically they're unlike typical pronouns. Similar to *Monday* — deictic, resists determiners.
+
+2. **The question**: Is determiner resistance from *deixis* or from *anaphor*?
+
+3. **Key puzzle**: Interrogative *who/what* resist determiners too, but they're *neither* deictic *nor* anaphoric — they're open variables over alternatives.
+
+4. **Resolution**: The resistance comes from **referential saturation at the DP level**, achieved by different routes:
+   - Deixis: contextually saturated
+   - Anaphor: bound variable
+   - Interrogatives: variable over alternatives (the question semantics provides the domain)
+
+5. **The HPC insight** (required explicit prompting): What starts as a **semantic fact** (redundancy — no need for determiners when reference is clear) becomes a **syntactic fact** (distributional resistance) **because the category is maintained by braided mechanisms**. Functional pressure → entrenchment → distributional pattern.
+
+6. **Tangent → squib**: Interrogatives allow focus modifiers (*exactly who*) that integrated relatives don't (*the person exactly who*). Wrote squib applying Cuneo & Goldberg's BCI principle (backgrounded constituents resist foregrounding).
+
+### Files created/updated
+
+- `notes/chapter11-grist.md` — New file with the clustering table and mechanism-braiding insight
+- `/Users/brettreynolds/Documents/LLM-CLI-projects/Focus_modifiers_interrogative_heads/SESSION_LOG.md` — Added intellectual origin section
+
+### Meta-observation on LLM limitations
+
+> The LLM didn't spontaneously see the mechanism-braiding insight (that semantic redundancy becomes syntactic distribution through entrenchment). It organized the data into tables and noted the clustering, but the *theoretical* move — "this is an instance of the book's core argument" — required explicit prompting from the human.
+
+This confirms the pattern noted in the squib project: the human notices the interesting issues and theoretical connections; the LLM can execute once pointed in the right direction but is unlikely to make the conceptual leap unprompted.

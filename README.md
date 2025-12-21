@@ -88,7 +88,7 @@ The book is organized in four parts:
 ## Editorial Notes
 
 - **Chapter 4 restored (Dec 4, 2025)** as HPC introduction chapter. The book now has 14 chapters total across 4 parts.
-- This is a **foundations book** that makes explicit the metaphysics underlying grammatical category theory. The goal is not just to provide a useful analytical tool, but to correctly characterize what grammatical categories *are* and transform what questions linguists ask and what answers they accept.
+- This is a **foundations book** that makes explicit the metaphysics underlying linguistic category theory. The goal is not just to provide a useful analytical tool, but to correctly characterize what linguistic categories *are* and transform what questions linguists ask and what answers they accept.
 - **Chapter 5 revision (Dec 4, 2025)**: Consolidated from draft, implemented advisory board feedback (Boyd, Rosch, Dąbrowska, Jackendoff, Godfrey-Smith, Croft), and addressed Packaging Board concerns (front-loading, defensiveness, paragraph load, syntactic texture). Renamed to "Discrete from continuous" to reflect focus.
 
 ---
