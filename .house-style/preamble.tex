@@ -13,23 +13,32 @@
 \usepackage{tikz}                      % Graphics (for cover shadow)
 \usetikzlibrary{shadows.blur}          % Blur shadows
 \usepackage{fontspec}                  % Xe/LuaLaTeX
-\IfFontExistsTF{Charis SIL}{
-  \setmainfont{Charis SIL}
-}{
-  % Fallback: direct path to local font files (keeps house font)
-  \setmainfont{Charis SIL}[
-    Path=/Users/brettreynolds/Library/Fonts/,
-    UprightFont=CharisSIL-Regular.ttf,
-    BoldFont=CharisSIL-Bold.ttf,
-    ItalicFont=CharisSIL-Italic.ttf,
-    BoldItalicFont=CharisSIL-BoldItalic.ttf
-  ]
-}
+% Rosarivo: Google Fonts serif (Regular + Italic only; AutoFakeBold for bold)
+\setmainfont{Rosarivo}[
+  Path=/Users/brettreynolds/Library/Fonts/,
+  UprightFont=Rosarivo-Regular.ttf,
+  ItalicFont=Rosarivo-Italic.ttf,
+  AutoFakeBold=1.5
+]
+
+% Charis SIL fallback for IPA and extended Latin (linguistics-specific characters)
+\newfontfamily\ipafont{Charis SIL}[
+  Path=/Users/brettreynolds/Library/Fonts/,
+  UprightFont=CharisSIL-Regular.ttf,
+  BoldFont=CharisSIL-Bold.ttf,
+  ItalicFont=CharisSIL-Italic.ttf,
+  BoldItalicFont=CharisSIL-BoldItalic.ttf
+]
+
+% Macro for IPA transcriptions and extended Latin
+% Usage: \ipa{ɪ} or \ipa{pʰɪt} for IPA that Rosarivo can't render
+\newcommand{\ipa}[1]{{\ipafont #1}}
+
 \newfontfamily\japanesefont{Hiragino Sans GB}  % Japanese/CJK fallback
 \usepackage{xeCJK}                             % CJK support
 \setCJKmainfont{Hiragino Sans GB}              % Set CJK font
 \usepackage[final]{microtype}
-\usepackage[normalem]{ulem}            % \uline for underlining (normalem preserves \emph)
+
 \usepackage[normalem]{ulem}            % \uline for underlining (normalem preserves \emph)
 \usepackage{marvosym}                  % \Cross symbol for cross-linguistic subscripts
 \usepackage{graphicx}                  % For including images
@@ -162,4 +171,3 @@
 }
 
 \makeglossaries
-

@@ -42,7 +42,7 @@ The great descriptive grammars~-- \textcite{jespersen1909modern}, \textcite{quir
 
 Generative grammar pushed the essentialist method further and discovered genuine regularities. Binding theory identified conditions on the interpretation of anaphors and pronouns~-- Principle A, Principle B, Principle C~-- that predict grammaticality across constructions and languages \autocite{chomsky1981}. Island constraints revealed that extraction isn't freely available but blocked by specifiable structural configurations \autocite{ross1967}. The c-command relation, once isolated, turned out to govern phenomena from negative polarity licensing to quantifier scope \autocite{reinhart1983,ladusaw1979}.\ixnq{Chomsky, Noam} These are discoveries, not stipulations~-- they make predictions that are often correct, revealing patterns that wouldn't have been visible without assuming that categories like \term{anaphor}, \term{interrogative phrase}, and \term{bounding node} have determinate definitions.
 
-Phonology followed the same logic. The Prague School's distinctive features \autocite{jakobson1956fundamentals} proposed that phonemes are bundles of binary properties: [±voice], [±nasal], [±continuant], and so on. This was explicitly essentialist~-- a phoneme just is its feature bundle~-- and it yielded the concept of natural classes. Segments that share a feature behave uniformly in phonological processes: voiced obstruents trigger voicing assimilation; nasals condition vowel nasalization; continuants pattern together in lenition. The predictive power was undeniable. English plural allomorphy ([s] after voiceless segments, [z] after voiced ones, [ɪz] after sibilants) falls out from natural classes without listing each conditioning environment \autocite{hayes2009introductory}.
+Phonology followed the same logic. The Prague School's distinctive features \autocite{jakobson1956fundamentals} proposed that phonemes are bundles of binary properties: [±voice], [±nasal], [±continuant], and so on. This was explicitly essentialist~-- a phoneme just is its feature bundle~-- and it yielded the concept of natural classes. Segments that share a feature behave uniformly in phonological processes: voiced obstruents trigger voicing assimilation; nasals condition vowel nasalization; continuants pattern together in lenition. The predictive power was undeniable. English plural allomorphy ([s] after voiceless segments, [z] after voiced ones, [\ipa{ɪ}z] after sibilants) falls out from natural classes without listing each conditioning environment \autocite{hayes2009introductory}.
 
 Practical applications followed. Parsers require categories with boundaries; you can't write a phrase-structure rule for NP unless \term{noun} picks out a determinate set. Pedagogical grammars depend on the same architecture: learners need to know what counts as a noun, a verb, a clause. Speech recognition systems, corpus annotation schemes, machine translation models~-- all inherit the essentialist assumption because all require categories to have membership conditions.
 
@@ -113,12 +113,12 @@ When criteria converge, this category error is invisible. Every reasonable defin
         & \makecell{Diachronic\\continuity} 
         & Operationalisability \\
         \midrule
-        \textit{bachelor}, \textit{prime number} & ✓ & ✓ & ✓ & ✓ \\
-        Canonical nouns, phonemes                & ✓ & ✓ & ✓ & ✓ \\
-        \textit{fun}, \textit{near}, \textit{otherwise} & \textasciitilde & \textasciitilde & \textasciitilde & ✗ \\
-        \textit{will}, \textit{going to}         & ✗ & \textasciitilde & ✗ & \textasciitilde \\
-        Verbless clauses                         & ✗ & \textasciitilde & ✓ & ✗ \\
-        \textit{subject} (cross-linguistically)  & ✗ & \textasciitilde & \textasciitilde & ✗ \\
+        \textit{bachelor}, \textit{prime number} & \ipa{✓} & \ipa{✓} & \ipa{✓} & \ipa{✓} \\
+        Canonical nouns, phonemes                & \ipa{✓} & \ipa{✓} & \ipa{✓} & \ipa{✓} \\
+        \textit{fun}, \textit{near}, \textit{otherwise} & \textasciitilde & \textasciitilde & \textasciitilde & \ipa{✗} \\
+        \textit{will}, \textit{going to}         & \ipa{✗} & \textasciitilde & \ipa{✗} & \textasciitilde \\
+        Verbless clauses                         & \ipa{✗} & \textasciitilde & \ipa{✓} & \ipa{✗} \\
+        \textit{subject} (cross-linguistically)  & \ipa{✗} & \textasciitilde & \textasciitilde & \ipa{✗} \\
         \bottomrule
     \end{tabular}
     \caption{Essentialism succeeds when criteria converge. The top rows show 
@@ -150,7 +150,7 @@ Phonology exhibits the same pattern. What's a phoneme?
 
 The Prague School answer: a bundle of distinctive features, defined by oppositions within the system. The distributional answer, characteristic of American structuralism \autocite{harris1951}: a class of sounds in complementary distribution, united by phonetic similarity. The generative answer \autocite{chomsky1968sound}: an underlying segment in lexical representation, related to surface forms by ordered rules.
 
-These aren't notational variants. They produce different category assignments. For English /t/, all three approaches identify a single phoneme, because the criteria converge: [tʰ], [t], [ɾ], [ʔ] are phonetically similar, in complementary distribution, and derived by rule from a single underlying segment. But for cases like the PIN-PEN merger (where /ɪ/ and /ɛ/ neutralize before nasals in some American dialects \autocite{labov2006atlas}), the approaches diverge. Is this one phoneme or two? The phonetic-similarity criterion says two (the vowels remain distinct in other environments). The complementary-distribution criterion says one (before nasals, there's no contrast). The underlying-form criterion depends on your analysis.
+These aren't notational variants. They produce different category assignments. For English /t/, all three approaches identify a single phoneme, because the criteria converge: [\ipa{tʰ}], [t], [\ipa{ɾ}], [\ipa{ʔ}] are phonetically similar, in complementary distribution, and derived by rule from a single underlying segment. But for cases like the PIN-PEN merger (where /\ipa{ɪ}/ and /\ipa{ɛ}/ neutralize before nasals in some American dialects \autocite{labov2006atlas}), the approaches diverge. Is this one phoneme or two? The phonetic-similarity criterion says two (the vowels remain distinct in other environments). The complementary-distribution criterion says one (before nasals, there's no contrast). The underlying-form criterion depends on your analysis.
 
 Again, the debate concerns not facts but which criterion should be definitional: essentialism assumes there's a right answer, but the practice of phonology hasn't found one.
 
