@@ -10,34 +10,38 @@ This is a LaTeX academic book project: "Words That Won't Hold Still: How Linguis
 
 ```bash
 # Full compile (requires XeLaTeX and Biber)
-xelatex main.tex && biber main && xelatex main.tex && xelatex main.tex
+xelatex hpc-book.tex && biber hpc-book && xelatex hpc-book.tex && xelatex hpc-book.tex
 
 # Single pass for quick checks
-xelatex main.tex
+xelatex hpc-book.tex
 
 # Validate bibliography
-python validate_bib.py
+python code/validate_bib.py
 ```
 
 The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL font.
 
-**Compilation workflow:** Most chapters in `main.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on. Currently `chapter05.tex` and `chapter08.tex` are active. Full 8-chapter build: `main-full-8ch-2025-12-13.pdf`.
+**Compilation workflow:** Most chapters in `hpc-book.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on. Currently `chapter09.tex` is active.
 
 ## Repository Structure
 
-- `main.tex` - Main document; chapters are commented out for faster compilation
+- `hpc-book.tex` - Main document; chapters are commented out for faster compilation
 - `chapters/` - Individual chapter files (chapter01.tex through chapter14.tex)
 - `.house-style/preamble.tex` - All LaTeX packages and custom macros
 - `.house-style/style-guide.md` - Writing conventions (MUST READ before editing prose)
 - `references.bib` - Bibliography (BibTeX format, Biber backend)
 - `notes/` - Planning documents and chapter development notes
 - `literature/` - Topic-specific literature review notes
+- `code/` - Utility scripts (e.g., `validate_bib.py`)
 
 ### Key Planning Documents
 
 - `notes/CHAPTER_OUTLINE.md` - Authoritative chapter structure and key points
-- `notes/chapter07-master.md` - Master notes consolidating all Ch 7 material (pattern for other chapters)
-- `notes/chapter07-grist.md` - Raw conceptual material for Ch 7
+- `notes/chapterNN-master.md` - Master notes consolidating chapter material (pattern established with Ch 7, 8, 13)
+- `notes/chapterNN-grist.md` - Raw conceptual material for chapters
+- `notes/field-relative-projectibility.md` - Core theoretical principle (projectibility is field-relative)
+- `notes/*-analysis.md` - Literature analysis files
+- `notes/board-*-*.md` - Advisory board feedback simulations
 - `synopsis.md` - Book synopsis (~880 words)
 
 ## House Style Conventions
