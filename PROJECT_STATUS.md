@@ -76,6 +76,7 @@
 ### Immediate
 1. **Ch 10 Outline** - Definiteness as second Part III case study
 2. **Ch 11 Outline** - Lexical categories (noun/verb contrast)
+3. **Ch 14 Mereology Section** - Typed mereology content from `linguistics-mereology/` project; projectability as field-specificity criterion
 
 ### Medium-term (Next 2-3 Months)
 1. Draft Part III chapters (9-12)

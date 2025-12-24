@@ -121,6 +121,37 @@ The project uses a master-notes pattern for chapter development:
 
 When working on a chapter, check the master notes first to understand the planned structure and accumulated material.
 
+## Intellectual Engagement (Not Just Implementation)
+
+This book develops original theoretical content, not just documentation. When the author introduces ideas:
+
+### Resist Implementation Mode
+- Don't immediately jump to creating notes or editing files
+- Engage with the *substance* of the ideas first
+- Ask probing questions before transcribing
+
+### Go Deeper
+- When you find a connection, ask if there are more
+- The field-relative projectibility insight (Dec 2025) was developed by repeatedly pushing deeper — each layer revealed new connections
+- If going deeper still yields insights, keep going
+
+### Watch for Hidden Architecture
+- Slogans and formulas can import assumptions (see the Tabarok/HPC slogan discussion)
+- Ask: what am I smuggling in with this framing?
+- Keep distinct: (a) metaphysics, (b) epistemology, (c) pragmatics
+
+### The Three-Way Discipline
+For HPC claims, don't collapse:
+- **Metaphysics** — what keeps tokens similar (mechanisms)
+- **Epistemology** — what lets us infer (projectibility)
+- **Pragmatics** — what classification is for (field-relative purposes)
+
+### Field-Relative Projectibility (Core Principle)
+Projectibility is indexed to analytical purpose. Different subfields (semantics, syntax, phonology) may have different right-sized categories for overlapping extensions. "Definiteness" (semantic) ≠ "deitality" (structural). See `notes/field-relative-projectibility.md`.
+
+### The HPC Slogan
+> **"A category is a profile, stabilised by mechanisms, projectible for a purpose."**
+
 ## Key Concepts
 
 - **HPC (Homeostatic Property Cluster) kinds**: Categories defined by property clusters maintained by causal mechanisms
