@@ -45,3 +45,4 @@ env/
 
 # Research PDFs (large files)
 literature/
+correspondence/*.pdf

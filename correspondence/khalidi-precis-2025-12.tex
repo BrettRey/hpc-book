@@ -1,0 +1,188 @@
+% Khalidi Précis: Language Without Essences
+% December 2025
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[british]{babel}
+\usepackage{csquotes}
+
+% Bibliography
+\usepackage[style=authoryear-comp, backend=biber, natbib=true, maxcitenames=2]{biblatex}
+\addbibresource{../references.bib}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+% Tables
+\usepackage{booktabs}
+
+% Custom commands
+\newcommand{\term}[1]{\textit{#1}}
+\newcommand{\mention}[1]{\textit{#1}}
+
+\title{\textbf{Language Without Essences}\\[0.5em]
+\large Applying Natural-Kinds Theory to Linguistic Categories\\[1em]
+\normalsize A Précis for Muhammad Ali Khalidi}
+
+\author{Brett Reynolds\\
+Humber Polytechnic \& University of Toronto}
+
+\date{December 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{quote}
+\small
+\textit{``A natural kind is associated with a set of properties whose co-instantiation causes the instantiation of other properties.''} --- \citet[89]{khalidi2013}
+\end{quote}
+
+\vspace{1em}
+
+\section*{Introduction: A Problem Linguistics Hasn't Named}
+
+Linguistics has a category problem it doesn't know it has.
+
+The discipline has worked with categories---noun, verb, phoneme, definiteness, subject---for millennia, mostly assuming that each category is defined by some set of properties that its members share essentially. This is the natural view. It's where you start if no one has told you there's a problem.
+
+But the essentialist machinery keeps encountering cases where it doesn't fit. \mention{Furniture} is semantically countable (you can count chairs) but morphosyntactically mass (*\mention{three furnitures}). \mention{The} sometimes marks uniqueness, sometimes familiarity, sometimes neither. The adjective/adverb boundary shifts across languages in ways that resist any invariant definition. Each time, the response is the same: add a stipulation, create a subclass, mark the item as exceptional. The exceptions accumulate.
+
+The nominalist reaction is to treat categories as convenient fictions---analyst's constructs with no reality beyond the labels we impose. Martin Haspelmath's ``comparative concepts'' programme exemplifies this move: if definitions fail, perhaps categories are just yardsticks, not discoveries. But this overcorrects. If categories are mere conventions, we lose any explanation for why they cluster as they do, why children converge on them so reliably, why the same rough categories appear across unrelated languages.
+
+Neither tradition asks the question I think is fundamental: \textbf{what maintains linguistic categories?}
+
+The book I'm writing proposes an answer: grammatical categories are \term{homeostatic property clusters} in Richard Boyd's sense---clusters of properties held together not by essential definitions but by causal mechanisms. But where Boyd developed HPC theory for biological species, and where your own work has extended it to social kinds, I'm applying it to a domain that is, so far as I know, unexplored in the natural-kinds literature: the categories that grammars trade in.
+
+This précis outlines the book's argument. It's a work in progress---Part I and Part II are drafted; Part III exists in detailed notes---but the theoretical architecture is complete enough that I'd value your perspective on whether it survives contact with philosophy of natural kinds.
+
+%-----------------------------------------------------------------------
+\section{The Framework: HPC Applied to Language}
+%-----------------------------------------------------------------------
+
+Boyd's original HPC account was designed to explain biological species: clusters of morphological, genetic, and ecological properties that hang together not because of any underlying essence but because causal mechanisms---reproductive isolation, developmental constraints, ecological pressures---keep them clustering. The account dissolves the ancient problem of species essentialism without sliding into nominalism. Species are real; they're just not classical natural kinds.
+
+I'm making the same move for linguistic categories. A grammatical category like \term{noun} isn't defined by a set of necessary and sufficient conditions. It's a cluster of properties---distributional (heads NPs, takes determiners), morphological (inflects for number), semantic (tends toward reference)---held together by mechanisms: acquisition, entrenchment, communicative alignment, iterated transmission.
+
+Why think these mechanisms are the right kind to constitute natural kinds? Here the connection to your work is direct. In your 2015 paper, you argue that natural kinds are ``nodes in causal networks''---ordered hierarchies of properties related as causes and effects. You distinguish \term{etiological kinds} individuated by causal history from kinds individuated by synchronic structure, and you identify \term{copied kinds} as a paradigm case: kinds whose members are produced from each other or a common template.
+
+Linguistic categories are copied kinds \textit{par excellence}. Every token of \mention{dog} a child hears is causally descended from previous tokens; the category \term{noun} is transmitted across generations through iterated learning. Grammatical patterns are, in your phrase, ``produced from each other.'' The stability of linguistic categories is etiological at its core.
+
+This framing addresses a concern about HPC theory that you've raised: that the notion of ``homeostasis'' is sometimes too vague to do theoretical work. In my account, the mechanisms aren't left unspecified. They're the processes that usage-based linguistics has been studying for decades:
+
+\begin{itemize}
+    \item \textbf{Acquisition}: Children track statistical regularities that reflect category structure, converging on adult-like categories without explicit instruction \citep{redington1998,mintz2003}.
+    \item \textbf{Entrenchment}: High-frequency items anchor categories; low-frequency items cluster around them, drawn by analogical pressure \citep{bybee2006}.
+    \item \textbf{Communicative alignment}: Interlocutors coordinate usage in dialogue, reducing variation and reinforcing shared norms \citep{pickering2004}.
+    \item \textbf{Iterated transmission}: Categories are filtered through successive generations of learners, amplifying learnable patterns and eliminating noise \citep{kirby2008}.
+\end{itemize}
+
+What HPC adds is not new mechanisms but a new interpretation of what the mechanisms accomplish: they don't merely \textit{shape} categories; they \textit{constitute} them as real kinds.
+
+%-----------------------------------------------------------------------
+\section{Field-Relative Projectibility}
+%-----------------------------------------------------------------------
+
+The core theoretical contribution of the book is what I'm calling \term{field-relative projectibility}.
+
+``Projectibility'' in Goodman's sense is the capacity of a predicate to support inductive inference. \term{Green} is projectible; \term{grue} isn't. Your own work emphasizes projectibility as a hallmark of natural kinds: ``The main reason why we should be interested in natural categories,'' you write, ``is that they allow us to project from one case to another'' \citep[ch.~1]{khalidi2013}.
+
+I accept this. But I add a refinement: \textbf{projectibility is indexed to the analytical field asking the question}. A category can project well for one purpose and poorly for another---not because the category is fuzzy but because there are genuinely different HPCs that happen to overlap in extension.
+
+Consider the distinction between \term{proper noun} and \term{proper name}. A semanticist works with proper names: expressions that refer directly to individuals, resist descriptive content, and create referential opacity. A syntactician works with proper nouns: words that head nominal projections, resist articles, and trigger agreement. The extensions overlap almost entirely---most proper names are proper nouns---but the properties that cluster for each field are different, maintained by different mechanisms.
+
+A syntactician \textit{knows} that \mention{Brett} is a proper name. But that semantic fact doesn't project for syntactic purposes. What projects is the distributional chain: \mention{Brett} heads an NP, fills an argument slot, triggers singular agreement. The category that supports induction for the syntactician is \term{proper noun}, not \term{proper name}.
+
+This isn't perspectivalism---different views of the same thing. It's an ontological claim: there are distinct HPCs for different fields, each maintained by mechanisms appropriate to that field's explanatory goals.
+
+The example that makes this accessible (my ``tomato hook'') is the botanist versus the chef. Is a tomato a fruit or a vegetable? The question is undecidable only if you think there's one right answer. The botanist's \term{fruit} and the chef's \term{vegetable} are different HPCs, maintained by different mechanisms (reproductive biology vs.\ culinary tradition), each projecting reliably for its own purposes. Neither is wrong. Neither is fundamental. They're two real kinds with overlapping extension.
+
+Field-relative projectibility explains a lot of the definitional confusion in linguistics. The literature on definiteness, for instance, has debated for decades whether the is fundamentally about uniqueness, identifiability, or familiarity. The book argues that this debate rests on a category confusion: \term{definiteness} (the semantic HPC) and what I call \term{deitality} (the morphosyntactic HPC) are distinct kinds with overlapping extension. What look like ``exceptions'' to definiteness (weak definites, generic uses) are items that belong to the morphosyntactic cluster but not the semantic one. The confusion arises from treating one HPC as derivative of the other.
+
+%-----------------------------------------------------------------------
+\section{The Mechanisms in Detail}
+%-----------------------------------------------------------------------
+
+A natural-kinds framework stands or falls on whether the mechanisms are real. Chapter~7 of the book (``The Stabilisers'') develops the mechanisms in detail. Here I'll sketch the empirical case that they're not hand-waving.
+
+The strongest evidence comes from computational modelling. \citet{divjak2025learnability} tested three models of Polish aspect:
+
+\begin{itemize}
+    \item A \textit{lemma-concrete} model that learns cue--outcome associations without assuming aspect exists as a category.
+    \item An \textit{aspect-concrete} model that learns aspect from distributional patterns.
+    \item An \textit{aspect-abstract} model that learns aspect from the semantic definitions proposed in the theoretical literature (boundedness, totality, etc.).
+\end{itemize}
+
+The aspect-abstract model---the textbook essentialist view---performed worst. It predicted imperfective well (98\%) but perfective poorly (77\%). More strikingly, when validated against native-speaker judgments, the aspect-abstract model performed \textit{worse} than the lemma-concrete model. The semantic definitions that aspectologists have proposed for centuries don't project to usage.
+
+But the category isn't a fiction. The distributional patterns are stable; speakers agree on usage; children acquire the system reliably. What the study shows is that the \textit{mechanism} maintaining aspect is lexeme-specific cue structure, not semantic essence. The category projects because the mechanisms project---even though the traditional characterisation doesn't.
+
+This generalises. \citet{ambridge2020} found that the causative alternation (\mention{break the vase} vs.\ *\mention{laugh the man}) is predicted by a continuous semantic dimension (directness of causation) across five unrelated languages. A model trained on five languages predicts native-speaker judgments in a sixth (Balinese) without exposure. The mechanism---sensitivity to causal directness---projects cross-linguistically; the definitional verb classes don't.
+
+The methodological point for natural-kinds theory is this: when a proposed characterisation of a kind fails to project, that's diagnostic. It tells you the characterisation doesn't track the mechanism. The kind may still be real; you just haven't found what maintains it yet.
+
+%-----------------------------------------------------------------------
+\section{Failure Modes: When Categories Aren't Kinds}
+%-----------------------------------------------------------------------
+
+Not every category label picks out a natural kind. The book's framework (Chapter~8, ``Failure Modes'') provides criteria for distinguishing real HPCs from taxonomic conveniences.
+
+\textbf{Thin clustering}: Some proposed categories lack sufficient homeostasis. The label \term{NPI} (negative polarity item) groups expressions like \mention{ever}, \mention{yet}, and \mention{lift a finger} that require licensing in negative contexts. But \citet{hoeksema2012} documents at least twelve distinct licensing patterns across English NPIs. There's no mechanism maintaining them as a unified kind; the label names a distributional class, not an HPC.
+
+\textbf{Fat clustering}: Some categories lump together what are actually distinct HPCs. The traditional category \term{adverb} is the classic case---a wastebasket that includes manner adverbs, sentence adverbs, degree modifiers, focusing adverbs, and connective adverbs. What these share is a negative definition: they're not nouns, verbs, adjectives, or prepositions. The properties don't cluster; the mechanisms don't align; the category doesn't project.
+
+\textbf{Negative diagnosis}: Some categories exist only as taxonomic residue. \term{Non-finite} picks out verb forms that lack tense marking, but the class includes infinitives, gerunds, and participles---forms that share almost nothing else. The category is useful for stating what something isn't, not for predicting what it does.
+
+This connects to your own treatment of ``payoff similarity'' versus ``property similarity.'' A category can seem useful---it groups things that matter for some purpose---without constituting a natural kind. NPIs matter for semantic licensing, but that's payoff similarity. The properties don't cluster homeostatically; the category doesn't support induction beyond the licensing facts that defined it.
+
+%-----------------------------------------------------------------------
+\section{Case Studies: Part III in Preview}
+%-----------------------------------------------------------------------
+
+The book's Part III applies the framework to three case studies. Two are drafted in notes; one is drafted in prose.
+
+\textbf{Countability} (Chapter~9, drafted): A noun's countability behaviour---whether it takes \mention{a}, \mention{three}, \mention{many}, or pluralises---clusters tightly. But the semantic property (individuation) and the morphosyntactic properties (count marking) can dissociate: \mention{furniture} individuates but doesn't count-mark; \mention{cattle} counts morphosyntactically but resists numerals. The chapter argues that semantic individuation and morphosyntactic count-marking are distinct HPCs, coupled at the syntax--semantics interface. The coupling is itself a mechanism, reinforced by bidirectional inference: count morphosyntax cues individuation; individuation cues count morphosyntax. The ``exceptions'' are items where the two HPCs don't fully overlap.
+
+\textbf{Definiteness and deitality} (Chapter~10, notes): The article \mention{the} marks a morphosyntactic property I call \term{deitality}: restriction with \term{there}-insertion, compatibility with partitive \term{of}, incompatibility with \term{one}-substitution. This cluster is distinct from semantic \term{definiteness} (identifiability, uniqueness, familiarity). Weak definites (``the hospital,'' ``the bus'') belong to the morphosyntactic cluster but not the semantic one. The literature's ``exceptions'' dissolve once you recognise that two HPCs are in play.
+
+\textbf{Word classes} (Chapter~11, notes): The noun--verb contrast is crosslinguistically stable because both semantic mechanisms (reference vs.\ predication) and morphosyntactic mechanisms (distribution, morphology) reinforce it. Adjectives vary across languages because the mechanisms don't align as tightly: some languages encode property concepts as nouns, others as verbs, others as a distinct class. The framework predicts that category stability tracks mechanism alignment.
+
+%-----------------------------------------------------------------------
+\section{Implications for Philosophy and Linguistics}
+%-----------------------------------------------------------------------
+
+\textbf{For philosophy of science}: The book argues that linguistics is a special science with its own natural kinds---not reducible to cognition or neuroscience, but not merely stipulative either. This engages directly with your Chapter~3 on special-science kinds. The argument is that grammatical categories are individuated etiologically: they're ``copied kinds'' whose identity conditions are historical, not microphysical. This blocks type reduction and explains why linguistic kinds and neural kinds crosscut rather than map onto each other---precisely the point you develop in your 2017 paper on neural correlates.
+
+\textbf{For linguistics}: The framework offers a methodology. Instead of asking ``what is the definition of X?'', ask ``what maintains X?'' Instead of treating boundary cases as exceptions, ask whether the HPC diagnostics pick out one kind or two. The gradience-vs.-discreteness debate dissolves: categories can be real HPCs while admitting gradient membership at their margins.
+
+More specifically, the framework counsels linguists to \textbf{always specify which field their category projects in}. If your category is syntactic, test it with syntactic diagnostics; don't assume that a semantic characterisation will project to distribution. If your category is semantic, don't be surprised when it fails to align perfectly with a morphosyntactic cluster. The slippage isn't noise; it's evidence of distinct HPCs.
+
+%-----------------------------------------------------------------------
+\section{Current Status and Invitation}
+%-----------------------------------------------------------------------
+
+The book is roughly two-thirds drafted. Part I (The Problem: Chapters 1--3) and Part II (The Fix: Chapters 4--8) are complete in prose. Part III (Categories Reconsidered: Chapters 9--12) has one chapter drafted (Countability) and three in detailed notes (Definiteness, Word Classes, The Stack). Part IV (Implications: Chapters 13--14) exists as a theoretical framework document.
+
+Given your work on natural kinds---and particularly your development of the ``nodes in causal networks'' account and your attention to etiological and copied kinds---I'd especially value your perspective on:
+
+\begin{enumerate}
+    \item Whether ``field-relative projectibility'' is a genuine refinement of natural-kinds theory or whether it's already implicit in something like your causal-networks account.
+    \item Whether the application of HPC (or simple causal theory) to linguistic categories faces objections I haven't anticipated.
+    \item Whether the empirical mechanisms I cite (acquisition, entrenchment, transmission, alignment) are the right kind of causal structure to ground natural-kindhood.
+    \item Any blindspots you see from the perspective of the natural-kinds literature.
+\end{enumerate}
+
+I hope this gives you enough to see whether the project is on the right track. I'm grateful for any feedback you're willing to offer.
+
+\vspace{2em}
+
+\printbibliography
+
+\end{document}
