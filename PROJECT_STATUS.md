@@ -15,9 +15,15 @@
   - Integrated feedback from Boyd, Millikan, Goldberg, Rosch, Khalidi, Tomasello, Bybee, Sperber, Fedorenko, Zimmer.
   - "Tomato Hook" (Botanist vs. Chef) established as opening phenomenological bridge.
   - "Relative to purposes" wording chosen to avoid teleological/voluntarist misreadings.
-- ✅ **Chapter 6 Revision Plan** finalized:
-  - Theoretical framework for introducing field-relativity and slogan.
-  - Cross-references to Ch 9, 10, 13, and 14 articulated.
+- ✅ **Chapter 6 Revision Implemented**:
+  - Added HPC slogan subsection (~200 words) near chapter opening.
+  - Added new "Field-Relative Projectibility" section (~1,000 words) with:
+    - "Tomato Hook" (botanist vs. chef) for lay-accessibility.
+    - Proper noun/name example with table.
+    - Part III preview (Ch 9, 10, 11).
+    - Three-check discipline (cluster, homeostasis, projectibility).
+  - Threaded field-relativity through interest-relativity and degrees sections.
+  - Added closing transition forward-referencing Part III.
 - ✅ **CLAUDE.md Updated**:
   - Added "Intellectual Engagement" section (methodology for deep theoretical work).
   - Added new project structure entries (hpc-book.tex, code/).

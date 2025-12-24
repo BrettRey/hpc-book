@@ -17,7 +17,7 @@ Polish aspect offers a puzzle. Every textbook tells you: perfective aspect marks
 
 When computational models trained on those definitions try to predict which aspect Polish speakers actually use, they project imperfectly~-- 77\% accuracy for perfective, against 98\% for imperfective \citep{divjak2025learnability}. The definitions that have been taught for generations capture only half the system. Something is projectible about aspect; it just isn't what the textbooks say.
 
-This chapter asks what makes a category projectible~-- worth betting on. The previous chapters argued that many linguistic categories are real, maintained by mechanisms rather than defined by essences. Grammatical categories are the central testbed in this book, but the same question arises for phoneme contrasts and for social categories like academic register and politeness systems. This chapter asks what we get in return. The answer is \gls{projectibility}: the ability of a category to support inductive inference. Categories earn their keep by supporting induction. But which categories, and why?
+This chapter asks what makes a category projectible~-- worth betting on, and whether the same category can be projectible for one purpose but not another. The previous chapters argued that many linguistic categories are real, maintained by mechanisms rather than defined by essences. Grammatical categories are the central testbed in this book, but the same question arises for phoneme contrasts and for social categories like academic register and politeness systems. This chapter asks what we get in return. The answer is \gls{projectibility}: the ability of a category to support inductive inference. Categories earn their keep by supporting induction. But which categories, for which purposes, and why?
 
 The next two chapters develop two diagnostics for mechanism-maintained kinds. This chapter addresses \term{projectibility}: does the category support induction? Can you learn about one member and reliably bet on others? Chapter~\ref{ch:stabilisers} addresses \term{perturbation-sensitivity}: what maintains the cluster, and what happens when the maintenance fails? The two diagnostics are complementary. Projectibility tests whether the category earns its keep; perturbation-sensitivity reveals the causal structure that makes it do so. Chapter~\ref{ch:failure-modes} then shows how these diagnostics separate genuine HPCs from thin, fat, and negative classes~-- labels without the causal structure to back them up.
 
@@ -33,6 +33,25 @@ For constructed categories~-- mathematical sets, legal statuses, programming con
 Before looking at a complex success, consider a failure (Figure~\ref{fig:npi-fragmentation}). The label \term{NPI} (negative polarity item) groups expressions like \mention{ever}, \mention{yet}, and \mention{lift a finger} that require licensing in negative contexts~-- but \citet{hoeksema2012} documents at least twelve distinct licensing patterns across English NPIs. Models succeed at NPI prediction only to the extent they learn each item's distribution, not the category. The label names a distributional class; no mechanism maintains it as a kind.
 
 This chapter develops an operational criterion for distinguishing distributional classes from homeostatic kinds~-- and applies it to Polish aspect.
+
+
+\subsection{The slogan}
+\label{sec:6:slogan}
+
+Before turning to Polish aspect, here is the chapter's destination in compact form:
+
+\begin{quote}
+\textbf{A category is a profile, stabilised by mechanisms, projectible relative to purposes.}
+\end{quote}
+
+Three parts, three levels:
+\begin{itemize}
+    \item \textbf{Profile}~-- the observable surface. Properties cluster; members resemble each other. This is what you observe.
+    \item \textbf{Stabilised by mechanisms}~-- the metaphysics. Something keeps the cluster together: acquisition, entrenchment, functional pressure, social enforcement. Without mechanisms, clustering is coincidental.
+    \item \textbf{Projectible relative to purposes}~-- the epistemology and pragmatics. The category supports induction, but only for questions the mechanisms underwrite. A syntactician and a semanticist may have different right-sized categories for overlapping extensions.
+\end{itemize}
+
+The slogan guards against three confusions. First, treating categories as mere conventions (ignoring the mechanisms). Second, treating projectibility as absolute rather than field-relative (ignoring purpose). Third, treating mechanism and projectibility as the same thing (conflating metaphysics with epistemology). The remainder of the chapter unpacks each piece.
 
 
 \section{The definitional bet}
@@ -160,6 +179,83 @@ Polish aspect is a worked example, not an isolated curiosity. The pattern~-- def
 
 These aren't the only examples. Chapter~\ref{ch:lexical-categories} develops the case for word classes in detail. The upshot: projectibility is the empirical test for mechanistic grounding. When a category supports reliable induction, that's evidence that the mechanisms are real. When it doesn't, something about the proposed characterisation is off.
 
+
+\section{Field-relative projectibility}
+\label{sec:6:field-relative}
+
+We've established that projectibility tracks mechanism, not definition. But projectibility for whom? The same category can project well for one analytical purpose and poorly for another. This isn't perspectivalism~-- different views of the same thing. It's a claim about ontology: there are genuinely different HPCs that happen to overlap in extension, each projectible in its own domain.
+
+\subsection{The tomato problem}
+\label{sec:6:tomato}
+
+Is a tomato a fruit or a vegetable? The question is undecidable only if you think there's one right answer.
+
+A botanist classifies tomatoes as fruits~-- they develop from the ovary of a flowering plant and contain seeds. This classification projects: knowing that tomatoes are fruits lets the botanist predict ripening patterns, seed dispersal mechanisms, and responses to plant hormones. The category \term{fruit} supports reliable induction for botanical purposes.
+
+A chef classifies tomatoes as vegetables~-- savoury, used in main courses, paired with salt rather than sugar. This classification also projects: knowing that tomatoes are culinary vegetables lets the chef predict flavour pairings, cooking methods, and menu placement. The category \term{vegetable} supports reliable induction for culinary purposes.
+
+Neither classification is wrong. They're not even in conflict. They're \emph{different HPCs} that happen to have overlapping extensions. The botanist's \term{fruit} and the chef's \term{vegetable} are each maintained by mechanisms appropriate to their domain~-- reproductive biology for one, flavour chemistry and culinary tradition for the other. Each projects reliably within its field.
+
+The tomato problem is a problem only if you assume projectibility is absolute~-- that a category either projects or doesn't, full stop. Once you recognise that projectibility is field-relative, the problem dissolves. What remains is the work of specifying which category projects for which purposes.
+
+\subsection{Proper nouns and proper names}
+\label{sec:6:proper-nouns-names}
+
+Linguistics has its own tomatoes. Consider the distinction between \term{proper noun} and \term{proper name}.
+
+A semanticist works with \term{proper names}: expressions that refer directly to individuals without descriptive content, that are rigid designators (picking out the same individual across possible worlds), and that create referential opacity (\enquote{Lois believes Superman can fly} doesn't entail \enquote{Lois believes Clark can fly}). These properties cluster because of the cognitive and communicative functions names serve: tracking individuals across contexts requires stable reference without shifting descriptive content.
+
+A syntactician works with \term{proper nouns}: words that head nominal projections, resist articles in certain languages, trigger particular agreement patterns, and fill argument slots. These properties cluster because of distributional pressures: words that behave similarly in one syntactic environment tend to behave similarly in others.
+
+The extensions overlap substantially~-- most expressions that are proper names are also proper nouns. But the overlapping extension doesn't mean they're the same category. They're different HPCs, maintained by different mechanisms, projectible for different purposes.
+
+\begin{table}[t]
+\centering
+\caption{Two categories, overlapping extension}
+\label{tab:proper-noun-name}
+\begin{tabular}{lll}
+\toprule
+\textbf{Category} & \textbf{Field} & \textbf{What projects} \\
+\midrule
+Proper name & Semantics & rigid reference, opacity, individual-tracking \\
+Proper noun & Syntax & heads NP, fills argument slot, triggers agreement \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A syntactician \emph{knows} that \mention{Brett} is a proper name. But that semantic fact doesn't project for syntactic purposes. What projects syntactically is the distributional chain: \mention{Brett} heads a nominal phrase $\rightarrow$ fills a subject slot $\rightarrow$ triggers third-person singular agreement. The syntactician can reliably predict that novel proper nouns will behave distributionally like familiar ones. The proper-name status is real but orthogonal to that prediction.
+
+This isn't esoteric. Every introductory syntax course teaches students to distinguish \enquote{what a word means} from \enquote{how it behaves}. What hasn't been articulated is why this distinction exists: because meaning and behaviour are tracked by different mechanisms, and different mechanisms produce different HPCs. The field-relativity of projectibility explains why syntacticians can't just read off predictions from semantics, and vice versa.
+
+\subsection{Preview: Part III as demonstration}
+\label{sec:6:preview-part-iii}
+
+This pattern~-- overlapping extensions, distinct HPCs, field-relative projectibility~-- structures the case studies in Part~III.
+
+Chapter~\ref{ch:countability} shows that \term{countability} decomposes into semantic individuation (boundedness, discrete enumeration) and morphosyntactic count-marking (plural inflection, quantifier selection). \mention{Furniture} individuates semantically~-- you can count chairs~-- but patterns morphosyntactically as mass. The semantic and morphosyntactic clusters are maintained by different mechanisms and project for different analytical purposes.
+
+Chapter~\ref{ch:definiteness-and-deitality} shows that definiteness and deitality are distinct HPCs with overlapping extensions. \term{Definiteness}~-- identifiability, uniqueness, familiarity~-- projects for semantic purposes. \term{Deitality}~-- the morphosyntactic properties that pattern with definite articles~-- projects for syntactic purposes. The literature's confusion about \enquote{weak definites} and \enquote{generic definites} arises from treating these as one category when they're two.
+
+Chapter~\ref{ch:lexical-categories} shows that the noun/verb contrast is crosslinguistically stable because both semantic and morphosyntactic mechanisms reinforce it, while adjective categories vary because the mechanisms don't align as tightly.
+
+The framework doesn't multiply categories recklessly. It asks, for each analytical purpose: what cluster of properties is maintained by what mechanisms, and does that cluster project for the questions you're asking? Sometimes the answer is a familiar category; sometimes it's a refinement of one; sometimes it's a recognition that what looked like one category was two.
+
+\subsection{The discipline: three checks}
+\label{sec:6:three-checks}
+
+The slogan~-- \emph{profile, stabilised by mechanisms, projectible relative to purposes}~-- maps onto three diagnostic checks:
+
+\begin{enumerate}
+    \item \textbf{Cluster check.} Does property covariance hold across samples and contexts? If the properties don't cluster, there's no profile to explain.
+    \item \textbf{Homeostasis check.} Can we identify perturbations where the cluster reconstitutes (or fails)? If we can't, we haven't identified the mechanism.
+    \item \textbf{Projectibility check.} Are there counterfactual-supporting inferences in new contexts? If learning about one member doesn't tell you about others, the category isn't earning its keep.
+\end{enumerate}
+
+Crucially, these checks can yield different answers for different fields. A category might pass all three for syntax and fail the projectibility check for semantics. That's not a defect of the framework~-- it's the framework working. The checks aren't absolute; they're indexed to purpose.
+
+This discipline guards against two temptations. First, the essentialist temptation: treating one field's category as the \enquote{real} one and others as derivative. If proper names are semantically fundamental, proper nouns must be \enquote{just} the syntactic reflection of semantic reality. But the mechanisms are different; neither is derivative. Second, the nominalist temptation: treating categories as arbitrary conventions because different fields carve differently. But the carving isn't arbitrary; each field's categories are maintained by mechanisms appropriate to that field's explanatory goals.
+
+
 \section{The epistemic payoff}
 \label{sec:6:epistemic-payoff}
 
@@ -202,7 +298,7 @@ Conventionalism can't explain why some mechanisms predict and others don't. The 
 
 This gives us a robustness criterion for mechanistic kinds. A genuine mechanistic kind~-- as opposed to a convenient label~-- should exhibit \emph{learning transfer}, \emph{intervention stability}, and \emph{cross-context generalisation}. Train on one subset, test on another: does it transfer? Intervene on the mechanism: does the pattern shift as predicted? Apply to a new context: does the generalisation hold? Labels without mechanisms should fragment under these pressures; mechanisms should persist. The computational evidence in this chapter~-- lemma-concrete models transferring to unseen verbs, cue--outcome associations generalising across tense frames~-- is exactly this kind of robustness test. The realism isn't permissive (``whatever predicts is real''); it's constrained by stability under perturbation.
 
-Once interests are fixed by a task, we can ask how strongly different categories support that task. This is the next implication of mechanistic grounding: projectibility comes in degrees.
+Once interests are fixed by a task, we can ask how strongly different categories support that task. This is the next implication of mechanistic grounding: projectibility comes in degrees. (Recall that field-relative projectibility~-- §\ref{sec:6:field-relative}~-- is a distinct point: the same extension can be carved by different HPCs for different fields. What follows concerns degrees of projectibility \emph{within} a single field.)
 
 \subsection{Degrees of projectibility}
 \label{sec:6:degrees-projectibility}
@@ -255,3 +351,5 @@ Projectibility isn't metaphysically guaranteed. A proposed grouping can fail to 
 
 
 The label names the island, not the volcano. But we've talked about mechanisms as if they were self-explanatory. They aren't. What exactly maintains the island? What processes stabilise the clustering, ensure that new instances resemble old ones, transmit the pattern across speakers and generations? The next chapter opens the black box. We'll trace the mechanisms in detail~-- acquisition, entrenchment, alignment, transmission, functional pressure~-- and ask what each contributes to the stability of linguistic kinds. Only then can we ask: under what conditions do mechanisms fail?
+
+Part~III then returns to field-relative projectibility with three extended case studies. Countability, definiteness, and word classes each demonstrate the pattern developed here: categories that decompose into semantic and morphosyntactic HPCs, maintained by distinct mechanisms, projectible for different analytical purposes. The framework isn't abstract philosophy; it's an operational tool for understanding why familiar categories behave as they do.
