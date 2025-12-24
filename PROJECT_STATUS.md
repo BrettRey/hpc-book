@@ -1,7 +1,32 @@
 # HPC Book Project Status
 
-**Date**: December 20, 2025  
-**Current Phase**: Part III Development; Chapter 11 Grist Established
+**Date**: December 24, 2025  
+**Current Phase**: Part III Development; Field-Relative Projectibility established
+
+### Session Work (Dec 24, 2025: "The Field-Relativity Breakthrough")
+- ✅ **Field-Relative Projectibility** principle established as a core book lens:
+  - Projectibility is indexed to analytical purpose (semantics vs. syntax vs. phonology).
+  - Proper noun (syntax) vs. proper name (semantics) as prime example.
+  - Resolves "fat category" issues by recognizing multiple overlapping HPCs.
+- ✅ **HPC Slogan** finalized through tripartite analysis:
+  - *"A category is a profile, stabilised by mechanisms, projectible relative to purposes."*
+  - Developed through "Tabarok critique" (avoiding market-mechanic framing).
+- ✅ **Advisory Board Consultation** (Round 2: 10 reviewers):
+  - Integrated feedback from Boyd, Millikan, Goldberg, Rosch, Khalidi, Tomasello, Bybee, Sperber, Fedorenko, Zimmer.
+  - "Tomato Hook" (Botanist vs. Chef) established as opening phenomenological bridge.
+  - "Relative to purposes" wording chosen to avoid teleological/voluntarist misreadings.
+- ✅ **Chapter 6 Revision Plan** finalized:
+  - Theoretical framework for introducing field-relativity and slogan.
+  - Cross-references to Ch 9, 10, 13, and 14 articulated.
+- ✅ **CLAUDE.md Updated**:
+  - Added "Intellectual Engagement" section (methodology for deep theoretical work).
+  - Added new project structure entries (hpc-book.tex, code/).
+- ✅ **Session Docs**:
+  - `notes/field-relative-projectibility.md` — Core theory.
+  - `notes/session-2025-12-24-field-relative-projectibility.md` — Log with LLM-writing pedagogy.
+  - `notes/chapter10-grist.md` — Initial material for definiteness/deitality.
+  - `notes/chapter14-grist.md` — Mereology/field-specificity connection.
+  - `notes/advisory-board.md` — Full 10-reviewer feedback transcript.
 
 ## Completed
 

@@ -624,3 +624,39 @@ Theoretical discussion prompted by CGEL's classification of *today/tomorrow/toni
 > The LLM didn't spontaneously see the mechanism-braiding insight (that semantic redundancy becomes syntactic distribution through entrenchment). It organized the data into tables and noted the clustering, but the *theoretical* move — "this is an instance of the book's core argument" — required explicit prompting from the human.
 
 This confirms the pattern noted in the squib project: the human notices the interesting issues and theoretical connections; the LLM can execute once pointed in the right direction but is unlikely to make the conceptual leap unprompted.
+### Session: Field-Relative Projectibility (2025-12-24)
+
+**Objective**: Locate and refine the "projectibility is field-relevant" insight from the English-Constructionary notes.
+
+#### The intellectual chain
+
+1. **Starting Point**: Found the note in `English-Constructionary/data/schemas/construction.json` line 26: projectibility is indexed to a domain (syntactic, semantic, etc.).
+
+2. **The "Epiphany"**: Realized this isn't just a metadata field for a dictionary—it's the answer to the book's core puzzle of why categories dissociate.
+   - **Proper noun/name**: Syntax tracks the distributional slot; Semantics tracks referentiality. They overlap, but their projectibility is indexed to different questions.
+   - **Definiteness/Deitality**: Ch 10's deitality paper is a perfect worked example of this principle.
+
+3. **Developing the Framework**:
+   - Resisted immediate transcription. Pushed deep on implications for every chapter.
+   - **Ch 13 connection**: Form-meaning pairing (CxG) is explains as coupled-but-distinct HPCs.
+   - **Ch 8 "Fat" categories**: A category is "fat" for Field X if it was defined using properties from Field Y.
+
+4. **The Slogan Exercise**:
+   - Critiqued Tabarok's "price = signal + incentive."
+   - Discovered the need to maintain a **three-way distinction**: Metaphysics (mechanisms) vs. Epistemology (inference/projectibility) vs. Pragmatics (purpose/domain).
+   - Final Slogan: *"A category is a profile, stabilised by mechanisms, projectible relative to purposes."*
+
+5. **Advisory Board Pressure Test**:
+   - Ran 10 independent advisor agents (Boyd, Goldberg, Tomasello, etc.).
+   - **The Goldberg Tension**: CxG hates decomposition.
+   - **The Tomasello Rescue**: Developmental data ("the Max") proves semantic function operant before syntactic signature, validating distinct-but-coupled HPCs.
+   - **The Zimmer Hook**: Tomato (botanical fruit vs. culinary vegetable) as the lay-accessible bridge.
+
+#### Files created/updated
+- `notes/field-relative-projectibility.md` — Core theory.
+- `notes/session-2025-12-24-field-relative-projectibility.md` — Session log + pedagogy.
+- `notes/advisory-board.md` — 10-advisor feedback transcript.
+- `CLAUDE.md` — Methodology for theoretical engagement.
+
+#### Meta-observation on LLM collaboration (Dec 24)
+> This session was a breakthrough in "agentic linguistics." By slowing down and refusing to implement, we moved from "organizing notes" to "generating theory." The human's refusal to accept a simple slogan pushed the model into a three-way philosophical analysis that actually improved the core thesis of the book. The "tomato hook" came directly from simulating an outside perspective (Zimmer), proving the value of adversarial LLM agents.
