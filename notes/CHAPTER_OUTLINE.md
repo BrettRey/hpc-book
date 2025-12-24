@@ -70,12 +70,14 @@
 *The epistemic payoff*
 
 **Key points:**
+- **The HPC Slogan:** "A category is a profile, stabilised by mechanisms, projectible relative to purposes."
 - **The definitional bet:** Definitions are predictions about clustering, not constitutive truths.
 - **The mechanistic alternative:** Projectibility tracks mechanism, not definition (Polish aspect & Goodman's grue).
-- **Labels aren't mechanisms:** "Aspect" as a legacy label vs. the actual causal maintenance.
+- **Field-Relative Projectibility:** Projectibility is indexed to analytical purpose. Different subfields may have different right-sized categories for overlapping extensions.
+- **The "Tomato Hook":** Botanist (fruit) vs. Chef (vegetable) as lay-accessibility bridge.
+- **Three-way discipline:** Metaphysics (mechanism) vs. Epistemology (projectibility) vs. Pragmatics (purpose/domain).
 - **Generalising the lesson:** Definitional failure as diagnostic; mechanism-based success.
 - **The epistemic payoff:** Degrees of projectibility; why we are entitled to induce.
-- Cross-domain stress test: what counts as projectibility in phonology and register
 
 ### Ch 7: The Stabilisers (renamed from Homeostasis)
 *The mechanistic story — biological explanatory style*
@@ -109,6 +111,7 @@
 ---
 
 ## Part III: Categories Reconsidered
+*Case studies in field-relative projectibility*
 
 ### Ch 9: Countability
 *A grammatical category done right*
@@ -135,14 +138,14 @@
 - Architectural equilibrium: mechanisms at different scales
 
 ### Ch 12: The stack
-*From phonemes to constructions—same logic, different stabilizers*
+*From phonemes to constructions—variations in coupling*
 
 **Key points:**
-- Phonemes as a positive case: acoustic-articulatory clustering + contrast maintenance
-- Register/style as a negative or grain-sensitive case: real patterns, messy ontology
-- Morphemes: form-meaning pairing
-- Constructions: multi-level property clusters
-- Scale-invariant framework
+- **The Phonology Exception:** Why phonemes don't decompose; acoustic and distributional properties as a single "hard-coupled" HPC.
+- **Morphemes:** Identifying the onset of form-meaning decoupling.
+- **The Stack:** From "hard-coupled" (phonology) to "loose-coupled" (grammatical categories).
+- **Constructions:** Re-uniting the profiles into a single communicative device.
+- **Scale-invariant framework.**
 
 ---
 
@@ -152,10 +155,10 @@
 *The deepest category, also an HPC*
 
 **Key points:**
-- Grammaticality judgments: gradient, context-sensitive, stable
-- The category "grammatical" as HPC kind
-- Foundations for foundations
-- **Form-meaning pairing as core mechanism**: If grammatical HPCs typically decompose into semantic + morphosyntactic clusters at finer grain (as countability does), this echoes CxG's claim that constructions are form-meaning pairings. Grammaticality itself may be maintained by this dual structure — not a contingent pattern but a principled necessity. Connect HPC architecture to Construction Grammar here.
+- Grammaticality judgments: gradient, context-sensitive, stable.
+- The category "grammatical" as HPC kind.
+- **Form-meaning pairing as principled necessity**: If grammatical HPCs typically decompose into semantic + morphosyntactic clusters (the field-relativity principle), this explains CxG's claim that constructions are form-meaning pairings.
+- **Coupled mechanisms**: Acquisition data (Tomasello's "the Max") proves they are distinct-but-braided mechanisms, not a single monolithic whole.
 
 ### Ch 14: What changes
 *Methodology, theory, typology—concrete consequences*
