@@ -39,6 +39,15 @@
   - Generated `notes/ch10-board-report.md` (full multi-perspective critique).
   - Integrated insights into `notes/chapter10-grist.md` (drafting spine established).
   - Created reproducible script `scripts/ch10-board-review.sh`.
+- ✅ **Chapter 10 Drafted and Revised**:
+  - Full 11-section chapter (~6,000 words): Hook → Two Functions → Definiteness Cluster → Form Cluster → Coupling → Five Mechanisms → Slippage → Tests → Deitality → Cross-Linguistic → Looking Forward
+  - **Millikan proper-function framework** integrated (§10.5): proper function, Normal conditions, derived functions, parasitism
+  - **Definiteness acquisition evidence** added (§10.3): familiarity → uniqueness → identifiability sequence (brockmann2018, keysar2000, decat2011)
+  - **Three-agent feedback** addressed: BrE hospital error fixed, 'deitality' introduced earlier, weak-definite productivity acknowledged, Boyd's falsification diagnostic added, Gasparri paragraph expanded with Dupré's 'social-practice-unified collections'
+  - **Funes epigraph** (Borges) integrated with callback in Generic Definites section
+  - **Rhetorical audit** completed (McCloskey 'disciplinary judo' applied to all 10 chapters)
+- ✅ **Citations Verified**:
+  - brockmann2018 (SuB 22), keysar2000 (Psych Sci), decat2011 (J Child Lang), dupre1993 (Harvard UP), gasparri2025 (J Semantics)
 - ✅ **Docs Updated**:
   - `notes/project-log.md` updated.
   - `task.md` reset for Ch 10 drafting phase.
