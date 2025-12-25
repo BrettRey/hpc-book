@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{book}
+\documentclass[11pt]{book}
 
 % Load house style preamble
 \input{.house-style/preamble.tex}
@@ -13,63 +13,63 @@
 \begin{document}
 
 \frontmatter
-%\pagestyle{empty}  % Suppress page numbers initially
+\pagestyle{empty}  % Suppress page numbers initially
 
 % Cover page
-%\input{frontmatter/coverpage.tex}
+\input{frontmatter/coverpage.tex}
 
-%\maketitle
-%\thispagestyle{empty}  % Suppress number on title page verso
+\maketitle
+\thispagestyle{empty}  % Suppress number on title page verso
 
-%\input{frontmatter/colophon.tex}
+\input{frontmatter/colophon.tex}
 
-%\input{frontmatter/dedication.tex}
+\input{frontmatter/dedication.tex}
 
-%\pagestyle{plain}  % Restore page numbers
-%\setcounter{page}{1}  % Reset to page i for TOC
-%\tableofcontents
-%\listoffigures
+\pagestyle{plain}  % Restore page numbers
+\setcounter{page}{1}  % Reset to page i for TOC
+\tableofcontents
+\listoffigures
 
 \mainmatter
 
 % Part I: The Problem
-%\part{The Problem}
-%\input{chapters/chapter01.tex}
-%\input{chapters/chapter02.tex}
-%\input{chapters/chapter03.tex}
+\part{The Problem}
+\input{chapters/chapter01.tex}
+\input{chapters/chapter02.tex}
+\input{chapters/chapter03.tex}
 
 % Part II: The Fix
-%\part{The Fix}
-%\input{chapters/chapter04.tex}
-%\input{chapters/chapter05.tex}
-%\input{chapters/chapter06.tex}
-%\input{chapters/chapter07.tex}
-%\input{chapters/chapter08.tex}
+\part{The Fix}
+\input{chapters/chapter04.tex}
+\input{chapters/chapter05.tex}
+\input{chapters/chapter06.tex}
+\input{chapters/chapter07.tex}
+\input{chapters/chapter08.tex}
 
 % Part III: Categories Reconsidered
-%\part{Categories Reconsidered}
+\part{Categories Reconsidered}
 \input{chapters/chapter09.tex}
 \input{chapters/chapter10.tex}
-%\input{chapters/chapter11.tex}
-%\input{chapters/chapter12.tex}
+\input{chapters/chapter11.tex}
+\input{chapters/chapter12.tex}
 
 % Part IV: Implications
-%\part{Implications}
-%\input{chapters/chapter13.tex}
-%\input{chapters/chapter14.tex}
+\part{Implications}
+\input{chapters/chapter13.tex}
+\input{chapters/chapter14.tex}
 
-%\appendix
-%\input{chapters/appendix_how_written.tex}
+\appendix
+\input{chapters/appendix_how_written.tex}
 
 \backmatter
-%\printbibliography
+\printbibliography
 
 % Glossary
-%\printglossary[title=Glossary]
+\printglossary[title=Glossary]
 
 % Indices
-%\printindex[subject]
-%\printindex[names]
-%\printindex[lexical]
+\printindex[subject]
+\printindex[names]
+\printindex[lexical]
 
 \end{document}

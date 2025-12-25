@@ -8,21 +8,21 @@
 % =========================
 % PRESS-LIKE PAGE (trim + margins)
 % =========================
-% 7×10 trim with classical Van de Graaf/Tschichold proportions
+% 7×10 trim with practical press margins
 \usepackage[
   paperwidth=7in,paperheight=10in,
-  inner=0.778in,     % 1/9 width
-  outer=1.556in,     % 2/9 width
-  top=1.111in,       % 1/9 height
-  bottom=2.222in,    % 2/9 height
-  bindingoffset=0.125in
+  inner=1in,
+  outer=1in,
+  top=1in,
+  bottom=1.25in,
+  bindingoffset=0.25in
 ]{geometry}
 
 \linespread{1.05}
 
 \setlength{\parindent}{1.2em}
 \setlength{\parskip}{0pt}
-\raggedbottom
+\raggedbottom  % practical for drafts; flushbottom requires manual page-break work
 \setlength{\emergencystretch}{1.5em} % smoother justification; fewer ugly breaks
 
 % Widow/orphan control
@@ -57,9 +57,9 @@
 \setCJKmainfont{Hiragino Sans GB}              % Set CJK font
 
 % =========================
-% MICROTYPE (XeLaTeX: protrusion works)
+% MICROTYPE (XeLaTeX: protrusion only; tracking requires pdftex)
 % =========================
-\usepackage[final]{microtype}
+\usepackage[final,protrusion=true,expansion=false]{microtype}
 
 % --- Color and graphics ---
 \usepackage{xcolor}                    % Color support
@@ -76,6 +76,11 @@
 % --- Quotation marks ---
 \usepackage{csquotes}                  % \enquote{…} with locale-aware quoting
 \setquotestyle{english}                % Use double quotes even under british babel
+
+% Block quotations: same size, indented (Bringhurst)
+\usepackage{quoting}
+\quotingsetup{leftmargin=2em, rightmargin=0pt, vskip=0.5\baselineskip}
+
 \usepackage{orcidlink}
 
 % =========================
@@ -128,7 +133,7 @@
 \usepackage{needspace}
 \usepackage{etoolbox}
 
-% Chapter: restrained but unmistakable
+% Chapter: restrained but unmistakable (Bringhurst: same weight, larger size)
 \titleformat{\chapter}[display]
   {\normalfont\huge}
   {}
@@ -136,16 +141,17 @@
   {\Huge}
   [\vspace{1.2ex}]
 
-% Section/subsection: real bold now that the font supports it
+% Section: small caps, number in margin (Bringhurst-style)
 \titleformat{\section}
-  {\normalfont\large\bfseries}
-  {\thesection}
-  {0.8em}
+  {\normalfont\large\scshape}
+  {\llap{\thesection\quad}}
+  {0pt}
   {}
+% Subsection: italic run-in style
 \titleformat{\subsection}
-  {\normalfont\normalsize\bfseries}
-  {\thesubsection}
-  {0.8em}
+  {\normalfont\normalsize\itshape}
+  {\llap{\thesubsection\quad}}
+  {0pt}
   {}
 
 \titlespacing*{\section}{0pt}{2.0ex plus 0.6ex}{0.9ex}
@@ -196,13 +202,17 @@
 % Linguistic mentions (italics, for words as examples)
 \newcommand{\mention}[1]{\textit{#1}}
 
+% Mentions in headings: angle brackets (since headings are small-caps/italic)
+\newcommand{\mentionhead}[1]{$\langle$\textup{#1}$\rangle$}
+
 % Technical terms when introduced (small caps, for key theoretical concepts)
 \newcommand{\term}[1]{\textsc{#1}}
 
 % Use \emph{} for emphasis (sparingly; semantically meaningful emphasis)
 
-% Small-caps abbreviations for glosses
-\newcommand{\abbr}[1]{\textsc{#1}}
+% Small-caps abbreviations for glosses (letterspaced per Bringhurst)
+% Using fontspec's LetterSpace since microtype tracking doesn't work with XeLaTeX
+\newcommand{\abbr}[1]{{\addfontfeatures{LetterSpace=5}\textsc{#1}}}
 
 % Cross-linguistic subscript marker (e.g., \textsc{subject}\crossmark)
 \newcommand{\crossmark}{\textsubscript{\Cross}}
