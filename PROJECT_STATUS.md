@@ -33,6 +33,7 @@
   - `notes/chapter10-grist.md` — Initial material for definiteness/deitality.
   - `notes/chapter14-grist.md` — Mereology/field-specificity connection.
   - `notes/advisory-board.md` — Full 10-reviewer feedback transcript.
+- ✅ **Khalidi précis sent** (Dec 24) — `correspondence/khalidi-precis-2025-12.tex`
 
 ## Completed
 
