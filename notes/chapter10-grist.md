@@ -31,12 +31,38 @@ The coupling is maintained by:
 
 ---
 
-## To Explore
+## Board Review Insights (Action Items)
 
-- [ ] Cross-linguistic variation in definiteness marking
-- [ ] Languages without articles (Russian, Japanese) — how do they mark identifiability?
-- [ ] Hawkins 1978, 1991 on definiteness
-- [ ] Lyons 1999 *Definiteness*
+### 1. Mechanism-Based Explanations
+- **Grounding**: Deitality prototype is **joint attention/pointing** (Lakoff, Tomasello). The syntax is frozen residue of physical interaction.
+- **Entrenchment**: Be specific about **which exemplars** drive the weak clusters (high-frequency frames like *play the piano*, *go to the hospital*). Do not treat frequency as abstract glue; use Bybee's stored itineraries.
+- **Normal Conditions**: Write a section on when *the* works as intended (Millikan). The "definiteness" cluster acts as a coordination device; "deitality" is the trigger mechanism.
+
+### 2. Strategic Framing
+- **Terminology**: *Deitality* is clunky (Zimmer, McCloskey), so scaffold it. Start with *go to the hospital* to create the need for a split, then offer the term as relief.
+- **Falsification**: Explicitly state what kills the account (Boyd). If diagnostics fragment completely rather than clustering into two families, the theory fails.
+- **Cost of Old View**: Show the epicycles required to maintain "definiteness is one thing" (e.g., treating *veil* as a specific kind of "unique").
+
+### 3. Empirical Predictions (Risky Tests)
+- **Comp Ling**: Do contextual embeddings (BERT/LLMs) treat "weak definites" as a coherent family distinct from token-referring definites? (Manning)
+- **Acquisition**: Definiteness acquisition should correlate with **Theory of Mind** (false belief), whereas deitality acquisition might track simpler joint attention/pointing routines (Tomasello).
+- **Prosody**: *?She wears the hat* might be repairable with specific prosody (focus vs neutral). Testing this refines the "neutral prosody" diagnostic.
+
+### 4. Cross-Linguistic Scope
+- Distinguish **Deitality** (language-specific descriptive category, e.g., English *the*-cluster) from **Definiteness** (comparative concept/functional universal) (Croft).
+- Address whether deitality is a universal potential (a basin of attraction) or just an English accident.
+
+## Structural Plan (Drafting Spine)
+
+1.  **The Hook**: *She wears the veil* vs *?She wears the hat*. Implication: *the* doesn't mean "unique/familiar" here. It marks something else.
+2.  **The Slippage**: Introduce the gap. Form cluster (morphosyntax) vs Function cluster (identifiability).
+3.  **The Mechanism**: How they hold together (frequency, inference) and how they slip apart (weak definites as "compression solutions" or "institutional/role" pointers).
+4.  **The Diagnostics**: *There*-insertion, partitive *of*, *one*-substitution. Show they track the Form cluster (Deitality), not the Function.
+5.  **The Payoff**: Why split them?
+    *   Solves the "hospital" problem without epicycles.
+    *   Predicts acquisition splits (learning the form vs learning the function).
+    *   Clarifies cross-linguistic comparison (Japanese has the function cluster but not the form cluster).
+6.  **The Label**: Introduce "Deitality" only here, as the name for the Form cluster when stripped of its semantic assumptions.
 
 ---
 *Created: 2025-12-21*
