@@ -70,7 +70,7 @@
 *The epistemic payoff*
 
 **Key points:**
-- **The HPC Slogan:** "A category is a profile, stabilised by mechanisms, projectible relative to purposes."
+- **The HPC Slogan:** "A category is a profile, stabilized by mechanisms, projectible relative to purposes."
 - **The definitional bet:** Definitions are predictions about clustering, not constitutive truths.
 - **The mechanistic alternative:** Projectibility tracks mechanism, not definition (Polish aspect & Goodman's grue).
 - **Field-Relative Projectibility:** Projectibility is indexed to analytical purpose. Different subfields may have different right-sized categories for overlapping extensions.

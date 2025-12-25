@@ -8,7 +8,7 @@ Chapter 14 is the book's closing statement on **consequences**—what shifts if 
 2. **Theoretical consequences** (gradience/discreteness dissolution)
 3. **Typological consequences** (cross-linguistic rigor, assessing comparative concepts empirically)
 4. **Disciplinary/institutional consequences** ← NEW: from linguistics-mereology project
-5. **Slogan return (transformed)**: The slogan "a category is a profile, stabilised by mechanisms, projectible relative to purposes" returns in Ch 14, but *transformed*—not as formula but as principle that survived contact with reality. Per advisory board: readers should finish able to *derive* the slogan from the material, not just *recall* it.
+5. **Slogan return (transformed)**: The slogan "a category is a profile, stabilized by mechanisms, projectible relative to purposes" returns in Ch 14, but *transformed*—not as formula but as principle that survived contact with reality. Per advisory board: readers should finish able to *derive* the slogan from the material, not just *recall* it.
 
 ---
 

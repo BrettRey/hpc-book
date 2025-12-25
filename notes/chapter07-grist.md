@@ -63,7 +63,7 @@ Reality of category proportional to reliability of inferential work it supports.
 
 ### 5. Social ontology of grammar
 Stabilising substrate = not just brains but coordination among agents, sustained by institutions/norms, mediated by standardisation/schooling.
-- Grammatical kinds = partially social kinds (stabilised by coordination equilibria, not arbitrary)
+- Grammatical kinds = partially social kinds (stabilized by coordination equilibria, not arbitrary)
 - Explains: standard varieties produce sharper category effects; stigma/prestige act like selection pressures
 
 ### 6. Plural groundings of "the same" category

@@ -13,7 +13,7 @@ Most linguists haven't thought about the metaphysics of categories at all. The q
 The book's job is:
 1. **Create the itch** — show them something they've been stepping over
 2. **Name the problem** — give them language for what's been implicit
-3. **Offer a better tool** — so they don't just feel destabilised but equipped
+3. **Offer a better tool** — so they don't just feel destabilized but equipped
 
 ## Tone Implications
 

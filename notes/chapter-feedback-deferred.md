@@ -30,7 +30,7 @@ Notes from the December 5, 2025 review-panel exercise. Items below were identifi
 
 - **Millikan's question**: Which causal-historical facts fix category membership? The "history wins" claim in Chapter 4 is stated but not fully grounded. The answer probably involves: history of acquisition (how the item was learned), history of use (what constructions it appears in), and history of coordination (which interlocutors it was aligned with). This belongs in the chapter on grammaticality itself.
 
-- **Distinguish category reality from category sharpness**: Category reality is stabilised by mechanisms; category sharpness is an emergent effect that can vary by construction, register, and task. These can come apart.
+- **Distinguish category reality from category sharpness**: Category reality is stabilized by mechanisms; category sharpness is an emergent effect that can vary by construction, register, and task. These can come apart.
 
 ---
 

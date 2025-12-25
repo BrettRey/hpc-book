@@ -33,7 +33,7 @@ Individual differences in constraint patterns resemble the parameters on which c
 > "Community-level divergence in constraints on a shared variable has long been recognized, but their actuation has never been addressed. Why does pre-pausal position affect TD in one way in Philadelphia and in a different way in New York City?"
 
 **Connection to Ch7:**
-This connects directly to the multi-level stabilisation story. Constraints are stabilised at community level; individual differences are the raw material; transmission filters what persists.
+This connects directly to the multi-level stabilisation story. Constraints are stabilized at community level; individual differences are the raw material; transmission filters what persists.
 
 ---
 

@@ -644,7 +644,7 @@ This confirms the pattern noted in the squib project: the human notices the inte
 4. **The Slogan Exercise**:
    - Critiqued Tabarok's "price = signal + incentive."
    - Discovered the need to maintain a **three-way distinction**: Metaphysics (mechanisms) vs. Epistemology (inference/projectibility) vs. Pragmatics (purpose/domain).
-   - Final Slogan: *"A category is a profile, stabilised by mechanisms, projectible relative to purposes."*
+   - Final Slogan: *"A category is a profile, stabilized by mechanisms, projectible relative to purposes."*
 
 5. **Advisory Board Pressure Test**:
    - Ran 10 independent advisor agents (Boyd, Goldberg, Tomasello, etc.).

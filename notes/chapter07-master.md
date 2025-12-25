@@ -138,7 +138,7 @@ Category ≠ static object. Category = dynamically sustained attractor in popula
 - Operational teeth: entropy reduction, cross-context generalisation accuracy, inter-speaker agreement
 
 ### 5. Social ontology of grammar
-- Grammatical kinds = partially social kinds (stabilised by coordination equilibria)
+- Grammatical kinds = partially social kinds (stabilized by coordination equilibria)
 - Standard varieties produce sharper category effects; stigma/prestige act like selection pressures
 
 ### 6. Plural groundings of "the same" category
@@ -396,7 +396,7 @@ Pivot: "That question—*what holds it*—is the one essentialism never asks. De
 
 **Option C: The diachronic-puzzle opening (will grammaticalisation)**
 
-> *Will* was a lexical verb meaning "to want." It still is, vestigially, in *willy-nilly* ("will he, nill he") and archaic *what you will*. But over six centuries, it grammaticalised into an auxiliary, acquiring new syntax (subject-auxiliary inversion, *n't* cliticisation) while shedding old semantics (volition faded to futurity). The puzzle isn't that it changed—everything changes. The puzzle is that it *stopped* changing: it reached auxiliary status and stabilised there. What stopped it?
+> *Will* was a lexical verb meaning "to want." It still is, vestigially, in *willy-nilly* ("will he, nill he") and archaic *what you will*. But over six centuries, it grammaticalised into an auxiliary, acquiring new syntax (subject-auxiliary inversion, *n't* cliticisation) while shedding old semantics (volition faded to futurity). The puzzle isn't that it changed—everything changes. The puzzle is that it *stopped* changing: it reached auxiliary status and stabilized there. What stopped it?
 
 Pivot: "The answer isn't a definition. The answer is a bundle of mechanisms—processing pressures, frequency effects, paradigmatic slots, acquisitional biases—that converged on a stable configuration and held."
 

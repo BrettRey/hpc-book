@@ -68,7 +68,7 @@ Field-relative projectibility is about (c): different fields have different prag
 
 ## The HPC Slogan
 
-> **"A category is a profile, stabilised by mechanisms, projectible for a purpose."**
+> **"A category is a profile, stabilized by mechanisms, projectible for a purpose."**
 
 Three-part structure mapping to three levels:
 - **Profile** — the ontological surface (what you observe)
