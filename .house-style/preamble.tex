@@ -8,19 +8,31 @@
 % =========================
 % PRESS-LIKE PAGE (trim + margins)
 % =========================
-% Typical monograph trim. 6×9 with professional margins.
+% 7×10 trim with classical Van de Graaf/Tschichold proportions
 \usepackage[
-  paperwidth=6in,paperheight=9in,
-  inner=1.05in,outer=0.80in,
-  top=0.80in,bottom=0.90in,
-  bindingoffset=0.15in,
-  headsep=16pt,footskip=22pt
+  paperwidth=7in,paperheight=10in,
+  inner=0.778in,     % 1/9 width
+  outer=1.556in,     % 2/9 width
+  top=1.111in,       % 1/9 height
+  bottom=2.222in,    % 2/9 height
+  bindingoffset=0.125in
 ]{geometry}
+
+\linespread{1.05}
 
 \setlength{\parindent}{1.2em}
 \setlength{\parskip}{0pt}
 \raggedbottom
 \setlength{\emergencystretch}{1.5em} % smoother justification; fewer ugly breaks
+
+% Widow/orphan control
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Hyphenation exceptions (protect proper names and technical terms)
+\hyphenation{Huddleston Pullum Langacker Goldberg Chomsky Labov Haspelmath
+  Bybee Croft Givón Millikan Boyd Khalidi Saussure Jakobson Bloomfield
+  homeostatic projectibility entrenchment grammaticalisation}
 
 % --- Language ---
 \usepackage[british]{babel}            % British conventions; use -ize spellings in prose
