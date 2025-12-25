@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
-**Date**: December 24, 2025  
-**Current Phase**: Part III Development; Field-Relative Projectibility established
+**Date**: December 25, 2025
+**Current Phase**: Part III Development; Ch 10 (Definiteness) first draft complete
 
 ### Session Work (Dec 24, 2025: "The Field-Relativity Breakthrough")
 - ✅ **Field-Relative Projectibility** principle established as a core book lens:
@@ -101,6 +101,7 @@
 
 ### Part III: Categories Reconsidered (Chapters 9-12)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
+- ✅ **Ch 10**: Definiteness - first draft complete (Dec 25, 2025)
 
 ### Session Work (Dec 15-16, 2025)
 - ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)
@@ -140,14 +141,14 @@
 
 ## In Progress
 
-- 🔄 Part III development (Chapters 10-12: remaining case studies)
+- 🔄 Part III development (Chapters 11-12: remaining case studies)
 - 🔄 Ch 13 theoretical framework → prose draft
 
 ## Next Actions
 
 ### Immediate
-1. **Ch 10 Outline** - Definiteness as second Part III case study
-2. **Ch 11 Outline** - Lexical categories (noun/verb contrast)
+1. **Ch 11 Draft** - Lexical categories (noun/verb contrast); grist exists
+2. **Ch 12 Outline** - Constructions case study
 3. **Ch 14 Mereology Section** - Typed mereology content from `linguistics-mereology/` project; projectability as field-specificity criterion
 
 ### Medium-term (Next 2-3 Months)
