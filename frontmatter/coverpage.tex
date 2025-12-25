@@ -1,42 +1,49 @@
 % Cover page for inclusion in main book
 % Requires: graphicx, eso-pic, xcolor, tikz packages in preamble
 
+\definecolor{CoverWhite}{HTML}{F6F4EF}
+
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]{figures/cover-braided-river.jpg}%
+  }%
+  % Subtle bottom scrim for author legibility (press-jacket move)
+  \AtPageLowerLeft{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \path[shade,
+        bottom color=black,
+        top color=black!0,
+        opacity=0.30
+      ]
+      (current page.south west) rectangle ([yshift=58mm]current page.south east);
+    \end{tikzpicture}%
   }%
 }
 
 \thispagestyle{empty}
 
-\vspace*{15mm}  % Reduced from 30mm — title higher
+% Absolute placement (no vspace/vfill drift)
+\begin{tikzpicture}[remember picture,overlay]
 
-\begin{center}
-{\fontsize{32pt}{38pt}\selectfont\color{white}%
-Words That Won't Hold Still}
+  % Title block: slightly lower and a touch larger for authority
+  \node[anchor=north, align=center, text width=0.86\paperwidth]
+    at ([yshift=-20mm]current page.north)
+    {{\fontsize{34pt}{40pt}\selectfont\color{CoverWhite}%
+      Words That Won't Hold Still}};
 
-\vspace{18pt}
+  \node[anchor=north, align=center, text width=0.86\paperwidth]
+    at ([yshift=-36mm]current page.north)
+    {{\fontsize{16.5pt}{21pt}\selectfont\color{CoverWhite}%
+      \addfontfeatures{LetterSpace=2.0}\scshape
+      How Linguistic Categories Work}};
 
-{\fontsize{18pt}{22pt}\selectfont\color{white}%
-How Linguistic Categories Work}
-\end{center}
+  % Author: lower, small caps + gentle shadow instead of "glow grid"
+  \node[anchor=south, align=center, text width=0.86\paperwidth]
+    at ([yshift=18mm]current page.south)
+    {{\fontsize{20pt}{24pt}\selectfont\color{CoverWhite}%
+      \addfontfeatures{LetterSpace=1.5}\scshape
+      Brett Reynolds}};
 
-\vfill
-
-\begin{center}
-% Author name with subtle glow
-\begin{tikzpicture}
-  % Glow layers — balanced visibility
-  \foreach \x in {-1.5, 0, 1.5} {
-    \foreach \y in {-1.5, 0, 1.5} {
-      \node[text=black, opacity=0.06] at (\x pt, \y pt) {\fontsize{20pt}{24pt}\selectfont Brett Reynolds};
-    }
-  }
-  % Main white text on top
-  \node[text=white] at (0,0) {\fontsize{20pt}{24pt}\selectfont Brett Reynolds};
 \end{tikzpicture}
-\end{center}
-
-\vspace{25mm}
 
 \clearpage

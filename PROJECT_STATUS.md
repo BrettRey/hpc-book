@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
 **Date**: December 25, 2025
-**Current Phase**: Part III Development; Ch 10 (Definiteness) first draft complete
+**Current Phase**: Part III Development; Ch 10 (Definiteness) complete; Ch 11 (Lexical Categories) planning
 
 ### Session Work (Dec 24, 2025: "The Field-Relativity Breakthrough")
 - ✅ **Field-Relative Projectibility** principle established as a core book lens:
@@ -74,6 +74,15 @@
 - ✅ **Khalidi Looping Effects**: Metalinguistic feedback sentence added to mechanisms interlock
 - ✅ **Definiteness Cluster Consistency Fix**: 3 core properties + anaphoric recoverability as downstream
 - ✅ **New Bib Entries Verified**: heim1991, christophersen1939, roberts2003, decat2013, birnerward1994
+- ✅ **Chapter 10 Final Polish**:
+  - **Conclusion Punched Up**: Tight/loose/scarce coupling arc established (§10.11)
+  - **Rhetorical Audit**: Ticks removed (intensifiers, repetitive openers)
+  - **Historical Precision**: Russell/definiteness conflation paragraph refined (avoiding "the" formalization claim)
+  - **Build**: Verified successful compilation
+- ✅ **Chapter 10 Visualizations**:
+  - **Decoupling Figure (Fig 10.1)**: 2x2 grid in §10.2 showing Core vs. Decoupled items.
+  - **Derived Functions Figure (Fig 10.2)**: TikZ flowchart in §10.5 showing historical path vs. functional parasitism.
+  - **Diagnostics Table (Table 10.1)**: Refined with grouping headers (Core/Mixed/Non-members).
 
 ## Completed
 
@@ -101,7 +110,7 @@
 
 ### Part III: Categories Reconsidered (Chapters 9-12)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
-- ✅ **Ch 10**: Definiteness - first draft complete (Dec 25, 2025)
+- ✅ **Ch 10**: Definiteness - complete and audited (Dec 25, 2025)
 
 ### Session Work (Dec 15-16, 2025)
 - ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)

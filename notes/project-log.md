@@ -12,6 +12,17 @@
     - Generated `notes/ch10-board-report.md` with insights from Khalidi, Latour, Croft, Lakoff, McCloskey, etc.
     - Integrated action items into `notes/chapter10-grist.md`.
     - Created `scripts/ch10-board-review.sh` for reproducible runs.
+- **Chapter 10 Final Polish**:
+    - **Conclusion Punched Up**: Replaced "pushes logic" with "play in the joint" metaphor; tightened arc (tight → loose → scarce).
+    - **Rhetorical Audit**: Removed "critically", "simply", "clearly", "exactly"; checked sentence opener variety.
+    - **Historical Precision**: Refined Russell/definiteness section to avoid overclaiming "formalization of the".
+    - **Theoretical Softening**: Changed "selectional restriction" to "grammaticalized structural constraint".
+    - **Build Verification**: Confirmed clean PDF generation.
+- **Visualizations Implemented**:
+    - **Decoupling Figure**: 2x2 matrix separating +Deital/+Definite (Core) from decoupled quadrants.
+    - **Derived Functions Figure**: TikZ flowchart visualizing the "Stable Side Effects" argument in §10.5.
+    - **Refined (Iter 6)**: Polished parasitic path—dashed lines without arrowheads for fan-in, single arrowhead at destination, label moved to vertical segment for clarity.
+    - **Table 10.1 Refinement**: Added visual grouping to separate core form-cluster members from edge cases.
 
 ---
 

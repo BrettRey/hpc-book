@@ -8,7 +8,7 @@
 \epigraph{\textit{Not only was it difficult for him to comprehend that the generic symbol dog embraces so many unlike individuals of diverse size and form; it bothered him that the dog at three-fourteen (seen from the side) should have the same name as the dog at three-fifteen (seen from the front).}}{— Borges, \textit{Funes the Memorious}}
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
-\section{The puzzle of the definite article}
+\section{The puzzle of \mention{the}}
 \label{sec:10:hook}
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 
@@ -55,11 +55,28 @@ On the semantic side sits the \term{definiteness cluster}: the interpretive prop
 
 On the morphosyntactic side sits what I'll call the \term{form cluster}~-- or, in terminology we'll earn later, the \term{deitality cluster}. These are the grammatical properties that travel together in English determiners: resistance to existential \mention{there} under neutral prosody, eligibility as the complement of partitive \mention{of}, and suitability as hosts for nonrestrictive modification. When a determiner shows all these properties, it's at the centre of the form cluster~-- \mention{the}, \mention{this}, \mention{those}, \mention{my}.
 
-The crucial observation is that these clusters can decouple. Weak definites like \mention{go to the hospital} show the form-cluster properties~-- they resist \mention{*There's the hospital down the street}, they work in \mention{one of the hospitals}~-- but they lack the definiteness-cluster properties: no unique hospital, no familiar referent. Proper names show the reverse pattern: fully definite semantically, but lacking the form-cluster marking entirely.
+The key observation is that these clusters can decouple. Weak definites like \mention{go to the hospital} show the form-cluster properties~-- they resist \mention{*There's the hospital down the street}, they work in \mention{one of the hospitals}~-- but they lack the definiteness-cluster properties: no unique hospital, no familiar referent. Proper names show the reverse pattern: fully definite semantically, but lacking the form-cluster marking entirely.
 
 This decoupling is what we'd expect if the two clusters are distinct HPCs. They overlap substantially because the mechanisms that maintain them are historically and functionally linked. But they're not identical, and the gaps reveal the underlying structure.
 
 The next sections characterize each cluster in turn: first definiteness (semantic), then the form cluster (morphosyntactic). Only then will we ask what couples them and what makes them come apart.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tabular}{r|p{5cm}|p{5cm}|}
+        \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{+ Definiteness}} & \multicolumn{1}{c}{\textbf{-- Definiteness}} \\
+        & \multicolumn{1}{c}{\footnotesize(Identifiability, Uniqueness)} & \multicolumn{1}{c}{\footnotesize(Semantic Indefiniteness)} \\
+        \cline{2-3}
+        \textbf{+ Deitality} & \textbf{Core Coupled Items} \newline \textit{the cat}, demonstratives, genitives & \textbf{Form Without Meaning} \newline Weak definites (\textit{go to the hospital}), Generics (\textit{the tiger}) \\
+        \footnotesize(Form Cluster) & & \\
+        \cline{2-3}
+        \textbf{-- Deitality} & \textbf{Meaning Without Form} \newline Proper names (\textit{Kim}, \textit{London}), definite bare plurals & \textbf{Non-Members} \newline \textit{a cat}, \textit{some cats}, indefinite bare plurals \\
+        \footnotesize(No markings) & & \\
+        \cline{2-3}
+    \end{tabular}
+    \caption{The decoupling of form and function. The diagnostics of the form cluster (deitality) and the semantic properties of the definiteness cluster usually align, but systematic dissociations reveal the underlying dual-cluster architecture.}
+    \label{fig:10:decoupling}
+\end{figure}
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 \section{The definiteness cluster}
@@ -86,7 +103,7 @@ These properties cluster because of how discourse works. Topics are identifiable
 
 The properties don't always co-occur. A cataphoric definite like \mention{The idea that she quit surprised me} achieves uniqueness without prior familiarity~-- the complement clause provides the identifying content. Role definites like \mention{the Pope} are unique by social role, not by discourse history. The cluster has a prototype (all properties present) and a periphery (some properties missing).
 
-This is exactly the HPC signature: a family of properties that statistically co-occur, maintained by causal mechanisms operating at different timescales, with graded membership at the edges, and projectibility across the cluster. The definiteness cluster is a semantic HPC~-- and like the form cluster, it's learned in stages, with the full adult system emerging only when all the binding mechanisms are in place. Children acquiring articleless languages (Japanese, Mandarin) show comparable developmental trajectories for definiteness interpretation~-- familiarity before uniqueness before identifiability~-- despite lacking the morphosyntactic form cluster, suggesting the semantic cluster is cognitively prior.
+This matches the HPC signature: a family of properties that statistically co-occur, maintained by causal mechanisms operating at different timescales, with graded membership at the edges, and projectibility across the cluster. The definiteness cluster is a semantic HPC~-- and like the form cluster, it's learned in stages, with the full adult system emerging only when all the binding mechanisms are in place. Children acquiring articleless languages (Japanese, Mandarin) show comparable developmental trajectories for definiteness interpretation~-- familiarity before uniqueness before identifiability~-- despite lacking the morphosyntactic form cluster, suggesting the semantic cluster is cognitively prior.
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 \section{The form cluster}
@@ -116,7 +133,7 @@ In true partitive constructions with subset semantics, the complement has to com
     \ex \label{ex:part-bad} \ungram{\textit{Two of some students left.}}
 \end{exe}
 
-This selectional restriction doesn't yield to prosodic manipulation.
+This structural constraint doesn't yield to prosodic manipulation.
 
 \subsection{Identificational hosting}
 
@@ -139,10 +156,15 @@ Table~\ref{tab:10:diagnostics} summarizes the diagnostic profile. The prototypic
 \toprule
 & \mention{there} & Partitive & Hosting \\
 \midrule
+\multicolumn{4}{l}{\textit{Core Members}} \\
 \mention{the} & \checkmark & \checkmark & \checkmark \\
 \mention{this/that}\textsuperscript{*} & \checkmark & \checkmark & \checkmark \\
 Genitives & \checkmark & \checkmark & \checkmark \\
+\midrule
+\multicolumn{4}{l}{\textit{Mixed/Peripheral}} \\
 \mention{each/every} & \checkmark &~-- &~-- \\
+\midrule
+\multicolumn{4}{l}{\textit{Non-Members}} \\
 \mention{a/an} &~-- &~-- &~-- \\
 \mention{some} &~-- &~-- &~-- \\
 \bottomrule
@@ -172,6 +194,109 @@ This is where \term{derived proper functions} arise. Derived functions exploit s
 
 The parasitism explains why decoupling is tolerable. The overwhelming majority of \mention{the}-tokens still perform the proper function~-- signalling identifiability. Weak definites and generic definites are minority uses. As long as the Normal function is performed often enough to sustain the convention, the derived functions can persist without undermining the system. The slippage is systematic, not accidental: it occurs precisely where stable side effects offer something to exploit.
 
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+    % Node styles
+    rootbox/.style={
+        rectangle, draw, rounded corners=3pt,
+        minimum width=4.5cm, minimum height=1.2cm,
+        align=center, font=\small, text width=4.3cm
+    },
+    pathbox/.style={
+        rectangle, draw, rounded corners=3pt,
+        minimum width=3cm, minimum height=0.8cm,
+        align=center, font=\small
+    },
+    derivedbox/.style={
+        rectangle, draw, rounded corners=3pt,
+        minimum width=3.4cm, minimum height=0.95cm,
+        align=center, font=\small, text width=3.2cm
+    },
+    sideeffect/.style={
+        rectangle, draw, dashed, rounded corners=2pt,
+        minimum width=2.8cm, minimum height=1.4cm,
+        align=center, font=\footnotesize, text width=2.6cm
+    },
+    % Arrow styles
+    arrow/.style={->, >=stealth, thick},
+    parasitic/.style={->, >=stealth, thick, dashed},
+    % Label style
+    edgelabel/.style={font=\footnotesize, fill=white, inner sep=2pt}
+]
+
+% === ROW 1: Demonstrative and Proper Function ===
+\node[pathbox] (demo) {Demonstrative};
+\node[rootbox, right=3.5cm of demo] (normal) {%
+    \textbf{Proper function}\\[2pt]
+    Signal identifiability\\[-1pt]
+    {\footnotesize (under Normal conditions)}
+};
+
+% === ROW 2: Article ===
+\node[pathbox, below=1.6cm of demo] (article) {Article (\textit{the})};
+
+% === ROW 3: Side effects (below Article, aligned) ===
+\node[sideeffect, below=1.2cm of article] (sideeffects) {%
+    Distributional\\
+    side effects\\[4pt]
+    {\scriptsize \textit{there}-resistance}\\[-1pt]
+    {\scriptsize partitive \textit{of}}\\[-1pt]
+    {\scriptsize NR hosting}
+};
+
+% === Derived functions (to the right of side effects) ===
+\node[derivedbox, right=1.8cm of sideeffects] (generic) {%
+    \textbf{Generic definite}\\[-1pt]
+    {\footnotesize \textit{The tiger is endangered}}\\[-1pt]
+    {\footnotesize kind-level reference}
+};
+\node[derivedbox, above=0.5cm of generic] (weak) {%
+    \textbf{Weak definite}\\[-1pt]
+    {\footnotesize \textit{go to the hospital}}\\[-1pt]
+    {\footnotesize activity-type meaning}
+};
+\node[derivedbox, below=0.5cm of generic] (narrative) {%
+    \textbf{Narrative} \textit{this}\\[-1pt]
+    {\footnotesize \textit{There was this guy...}}\\[-1pt]
+    {\footnotesize file-opening}
+};
+
+% === ARROWS ===
+
+% Grammaticalization (vertical, label on RIGHT)
+\draw[arrow] (demo) -- node[edgelabel, right] {grammaticalization} (article);
+
+% Function inherited (horizontal)
+\draw[arrow] (demo.east) -- node[edgelabel, above=2pt] {function inherited} (normal.west);
+
+% Article to side effects (vertical)
+\draw[arrow] (article) -- node[edgelabel, right] {carries} (sideeffects);
+
+% Side effects to derived functions (symmetric fan)
+\draw[arrow] (sideeffects.east) -- ++(0.6,0) |- (weak.west);
+\draw[arrow] (sideeffects.east) -- (generic.west);
+\draw[arrow] (sideeffects.east) -- ++(0.6,0) |- (narrative.west);
+
+% Parasitic dependency - stubs from each derived function (no arrows)
+\draw[dashed, thick] (weak.east) -- ++(0.6, 0) coordinate (p1);
+\draw[dashed, thick] (generic.east) -- ++(0.6, 0) coordinate (p2);
+\draw[dashed, thick] (narrative.east) -- ++(0.6, 0) coordinate (p3);
+
+% Vertical line connecting the stubs (no arrow)
+\draw[dashed, thick] (p1) -- (p3);
+
+% Line up and into Proper function (single arrow at destination)
+\draw[parasitic] (p1) -| (normal.south);
+
+% Label positioned on the vertical segment
+\path (p1) -- (p1 |- normal.south) node[edgelabel, midway, right] {parasitic dependency};
+
+\end{tikzpicture}
+\caption{Derived proper functions of the English article. The demonstrative's function---signalling identifiability---was inherited by the article through grammaticalization. The process also carried distributional side effects (form-cluster properties) that were not what the article was \emph{for}. Derived functions exploit these stable side effects for purposes other than identifiability. The dashed arrow indicates parasitic dependency: derived functions persist only because the Normal function remains robust.}
+\label{fig:derived-functions}
+\end{figure}
+
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 \section{The machinery of maintenance}
 \label{sec:10:mechanisms}
@@ -179,17 +304,19 @@ The parasitism explains why decoupling is tolerable. The overwhelming majority o
 
 In Chapter~\ref{ch:stabilisers}, we saw the general machinery that maintains linguistic kinds. Here, we can see that machinery applied to the specific idiosyncrasy of the English article. The form cluster (deitality) isn't just a list of properties; it's a dynamic equilibrium maintained by at least five distinct pressures.
 
-The first mechanism is \term{grammaticalization}, which operates over decades to centuries. As demonstratives become articles, they carry their distributional properties along. English \mention{the} descends from a Germanic demonstrative and retains demonstrative-like behaviour: resistance to existential pivots, partitive licensing, preferential hosting. The cluster wasn't stipulated; it was inherited. This provides the cluster's \textbf{inertia}.
+One mechanism is \term{grammaticalization}, which operates over decades to centuries. As demonstratives become articles, they carry their distributional properties along. English \mention{the} descends from a Germanic demonstrative and retains demonstrative-like behaviour: resistance to existential pivots, partitive licensing, preferential hosting. The cluster wasn't stipulated; it was inherited. This provides the cluster's \textbf{inertia}.
 
 The shared ancestry even leaves phonological traces. All /ð/-initial determiners in English~-- \mention{the}, \mention{this}, \mention{that}, \mention{these}, \mention{those}~-- are form-cluster items derived from demonstrative sources. The phonological clustering and the distributional clustering have the same origin.\footnote{The phonological coherence itself likely acts as an additional stabilizing mechanism: a phonestheme that cues category membership and facilitates acquisition.}
 
-The second mechanism is \term{acquisition}, occurring in childhood. Each generation relearns the cluster. Children acquire \mention{the} early and overgeneralize it~-- using it where adults would use \mention{a} \citep{maratsos1976,rozendaalbaker2008}. Crucially, they learn the distributional frame before mastering the full semantic range. They know where \mention{the} appears (determiner slot, partitive complement) before they know exactly when to deploy it. This creates a \textbf{bootstrap}: the form cluster serves as the scaffolding on which the definiteness concept is constructed.
+Another mechanism is \term{acquisition}, which occurs in childhood. Each generation relearns the cluster. Children acquire \mention{the} early and overgeneralize it~-- using it where adults would use \mention{a} \citep{maratsos1976,rozendaalbaker2008}. But what matters most is that they learn the distributional frame before mastering the full semantic range. They know where \mention{the} appears (determiner slot, partitive complement) before they know exactly when to deploy it. This creates a \textbf{bootstrap}: the form cluster serves as the scaffolding on which the definiteness concept is constructed.
 
 Third, \term{alignment} stabilizes the cluster in real time (seconds to minutes). In conversation, speakers converge on syntactic frames through interactive alignment \citep{pickeringgarrod2004}. When someone uses \mention{the} in a weak-definite frame, their interlocutor accommodates. When someone violates a form-cluster constraint~-- producing \mention{*There's the solution} under neutral prosody~-- hearers flag the anomaly through hesitation or repair. This real-time feedback provides \textbf{error-correction}, stabilizing the cluster within conversations.
 
 Fourth, \term{prestige selection} determines survival over years to decades. Some variants spread faster because they're associated with high-status speakers \citep{labov2001}. This shapes which weak-definite frames become conventionalized. British \mention{in hospital} persists as a prestige variant; American \mention{in the hospital} is the local norm. The mechanism provides \textbf{protection} for arbitrary variants, shielding them from regularization.
 
-Finally, \term{transmission} acts as a filter over generations. The multi-generational bottleneck filters for learnability \citep{kirby2014}. Patterns that are too complex or inconsistent don't survive. This explains why structural constraints converge across dialects: all English dialects reject \mention{*Which did you buy car?} because the constraint is simple and stable. Weak-definite frames vary more because they're conventionalized idioms. This mechanism acts as a \textbf{filter}, setting the outer bounds of what the cluster can contain.
+A fifth mechanism is \term{transmission}, which acts as a filter over generations. The multi-generational bottleneck filters for learnability \citep{kirby2014}. Patterns that are too complex or inconsistent don't survive. This explains why structural constraints converge across dialects: all English dialects reject \mention{*Which did you buy car?} because the constraint is simple and stable. Weak-definite frames vary more because they're conventionalized idioms. This mechanism acts as a \textbf{filter}, setting the outer bounds of what the cluster can contain.
+
+The list is not exhaustive. 
 
 These mechanisms interlock. Grammaticalization creates the bundle; acquisition transmits it; alignment maintains it in real time; prestige shapes which variants survive; transmission filters for stability. Metalinguistic feedback adds another layer: grammarians' labels and diagnostics can feed back into pedagogy and prescriptive norms, potentially stabilising or destabilising particular constructions. Perturb any mechanism, and the equilibrium shifts~-- but the cluster persists because the other mechanisms compensate.
 
@@ -199,6 +326,8 @@ These mechanisms interlock. Grammaticalization creates the bundle; acquisition t
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 
 The explanatory power of the HPC framework shows when we examine cases where the two clusters dissociate. These aren't anomalies to be explained away~-- they're instances of derived-function exploitation. Each case follows the same logic: a stable side effect of the article's history gets recruited for a purpose other than its proper function.
+
+The logic parallels Gricean pragmatics. Just as flouting the maxim of Quality (\enquote{You're a genius} said ironically) exploits the norm to generate new meaning, flouting the definiteness norm (using \mention{the} without a specific referent) exploits the form to signal a different kind of content. The convention persists because the violation is systematic.
 
 \subsection{Weak definites}
 
@@ -212,19 +341,19 @@ This is a derived function. The article's distributional behaviour was inherited
 
 Generic definites look like a failure of reference. Sentences like \mention{The tiger is endangered} or \mention{The computer changed the world} pose a different challenge: the definite singular is used for kind reference, not individual reference \citep{carlson1977,krifka2004}.
 
-This is the puzzle that troubled Funes. The \enquote{generic symbol dog} embraces so many unlike individuals~-- the dog at three-fourteen seen from the side, the dog at three-fifteen seen from the front~-- and yet a single word holds them together. What Funes couldn't accept was exactly what generic definites achieve: a label that picks out not an individual but a kind. The mechanisms that maintain \textsc{dog} as a category are the same mechanisms that let \mention{the dog} do its work.
+This is the puzzle that troubled Funes in the epigraph. The \enquote{generic symbol dog} embraces so many unlike individuals~-- the dog at three-fourteen seen from the side, the dog at three-fifteen seen from the front~-- and yet a single word holds them together. What Funes couldn't accept was exactly what generic definites achieve: a label that picks out not an individual but a kind. The mechanisms that maintain \textsc{dog} as a category are the same mechanisms that let \mention{the dog} do its work.
 
 Again, the HPC framework provides clarity. Generic definites are form-cluster items: they resist neutral existential contexts, they pattern distributionally with \mention{the}. But their semantics is kind-denoting, not individual-referring. Individual-level uniqueness doesn't apply; kind-level properties do.
 
-The form cluster is intact. The definiteness cluster is orthogonal~-- neither satisfied nor violated, simply inapplicable at the kind level. The syntax generates a form-cluster phrase; semantics assigns it a generic interpretation that sidesteps the definiteness question.
+The form cluster is intact. The definiteness cluster is orthogonal~-- neither satisfied nor violated, merely inapplicable at the kind level. The syntax generates a form-cluster phrase; semantics assigns it a generic interpretation that sidesteps the definiteness question.
 
 This too is a derived function. Generic definites exploit the article's capacity for domain restriction~-- inherited from demonstrative pointing~-- but shift the domain from individuals to kinds. The proper function (signalling identifiability of an individual) isn't performed; what persists is the form-cluster profile and the slot for domain specification.
 
 \subsection{Proper names}
 
-Proper names look like a failure of marking. \mention{Kim} and \mention{London} are semantically definite~-- they identify unique, familiar referents~-- but they lack form-cluster marking in English.
+Proper names look like a failure of marking in English. \mention{Kim} and \mention{London} are semantically definite~-- they identify unique, familiar referents~-- but they typically lack form-cluster marking. This isn't universal: in Greek (\mention{\textit{o Petros}} `the Peter') or with titles in Spanish (\mention{\textit{el señor Costa}} `the Mr. Costa'), the form and meaning clusters align. But English dissociates them.
 
-This follows from the HPC architecture. Names show definiteness-cluster properties (identifiability, uniqueness, anaphoric recoverability) without the form-cluster properties. They don't resist existential pivots: \mention{There's a Kim here to see you} is natural. They don't license partitives in the standard way.
+This dissociation follows from the HPC architecture. In English, names show definiteness-cluster properties (identifiability, uniqueness, anaphoric recoverability) without the form-cluster properties. They don't resist existential pivots: \mention{There's a Kim here to see you} is natural. They don't license partitives in the standard way.
 
 The clusters have decoupled in the opposite direction from weak definites. Where weak definites have form without function, proper names have function without form.
 
@@ -236,7 +365,7 @@ Why the restriction? Names don't pick out natural kinds; they pick out what \tex
 
 \subsection{Indefinite \mention{this}}
 
-Narrative-presentational \mention{this} (\mention{There was this guy...}) is the mirror image: an indefinite meaning recruiting a form-cluster item \citep{prince1981}. \textcite{prince1981} showed that indefinite \mention{this} introduces referents that will become topics~-- it uses the form cluster's "hosting" potential to signal future prominence. The item is semantically indefinite (new) but morphosyntactically deital (partitive-licensing, nonrestrictive-hosting). The mismatch is the mechanism: using a pointer form for a new referent forces the hearer to open a file that expects updates.
+Narrative-presentational \mention{this} (\mention{There was this guy...}) is the mirror image: an indefinite meaning recruiting a form-cluster item \citep{prince1981}. \textcite{prince1981} showed that indefinite \mention{this} introduces referents that will become topics~-- it uses the form cluster's \enquote{hosting} potential to signal future prominence. The item is semantically indefinite (new) but morphosyntactically deital (partitive-licensing, nonrestrictive-hosting). The mismatch is the mechanism: using a pointer form for a new referent forces the hearer to open a file that expects updates.
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 \section{Passing the tests}
@@ -249,11 +378,11 @@ Chapter~\ref{ch:failure-modes} introduced the Two-Diagnostic Test for genuine HP
 
 The definiteness cluster supports induction. Knowing a referent is semantically definite lets you predict its discourse behaviour: it can be picked up by pronouns, it can be topicalized, it can be presupposed. The form cluster supports induction too: knowing a determiner is form-cluster lets you predict structural behaviour across contexts.
 
-Critically, the predictions are \term{dissociated}. You can know a noun phrase's form-cluster status without knowing its definiteness status~-- and the predictions you make will differ. Weak definites are form-cluster but not definiteness-cluster; proper names are definiteness-cluster but not form-cluster. Each category supports distinct inductions.
+Most importantly, the predictions are \term{dissociated}. You can know a noun phrase's form-cluster status without knowing its definiteness status~-- and the predictions you make will differ. Weak definites are form-cluster but not definiteness-cluster; proper names are definiteness-cluster but not form-cluster. Each category supports distinct inductions.
 
 \subsection{Homeostasis}
 
-Both clusters are maintained by mechanisms. The definiteness cluster is sustained by discourse-pragmatic processes: common ground management creates correlations among identifiability, uniqueness, and anaphoric recoverability. The form cluster is sustained by the five mechanisms detailed in §\ref{sec:10:mechanisms}.
+Both clusters are maintained by mechanisms. The definiteness cluster is sustained by discourse-pragmatic processes: common ground management creates correlations among identifiability, uniqueness, and anaphoric recoverability. The form cluster is sustained by mechanisms such as those detailed in §\ref{sec:10:mechanisms}.
 
 The mechanism difference explains the decoupling. Discourse pressure cannot alter distributional restrictions; grammaticalization pressure doesn't change reference. The clusters drift independently because their maintenance is independent.
 
@@ -261,7 +390,7 @@ The mechanism difference explains the decoupling. Discourse pressure cannot alte
 
 The HPC account generates specific predictions about how the clusters behave under manipulation:
 
-\textbf{Prosodic rescue}: Prosody should selectively rescue existential pivots (a discourse-level constraint) but not partitive complements (a selectional restriction). This is testable and falsifiable.
+\textbf{Prosodic rescue}: Prosody should selectively rescue existential pivots (a discourse-level constraint) but not partitive complements (a more deeply grammaticalized structural constraint). This is testable and falsifiable.
 
 \textbf{Dialectal preservation}: Dialects that drop \mention{the} in institutional frames (British \mention{in hospital}) should preserve form-cluster patterning when definiteness is supplied by demonstratives (\mention{in this hospital}).
 
@@ -278,7 +407,7 @@ What would falsify the account? If the clusters fragment completely rather than 
 
 We need a name for the form cluster. The term \term{definiteness} is already taken~-- it names the semantic cluster. Calling both clusters \enquote{definiteness} would perpetuate exactly the conflation we have been trying to undo.
 
-The conflation has a history. When Russell formalized \mention{the} as a quantifier encoding uniqueness, the article's morphosyntactic behaviour was not the object of analysis~-- the semantic contribution was. Later work refined the semantics but inherited the assumption: \enquote{definiteness} named both the meaning and the marking. The slide was reinforced from other directions too~-- grammatical description, language pedagogy, typological comparison~-- each treating form and function as a single package. The term did double duty, and its equivocation became invisible. Every weak definite that didn't fit the semantic story became an exception to be explained rather than evidence that two categories had been conflated.
+The conflation has a history. When Russell analyzed \mention{the F} descriptions as quantificational (existence plus uniqueness), the article's distributional diagnostics were not the object of analysis~-- the truth-conditional contribution was. Later work refined the semantics, but the conflation persisted, converging with a pre-Russell grammatical tradition that treated \enquote{definiteness} as naming both the meaning and the marking. The slide was reinforced from other directions too~-- grammatical description, language pedagogy, typological comparison~-- often treating form and function as a single package. The term did double duty, and its equivocation became invisible. Weak definites that didn't fit the semantic story typically became exceptions to be explained rather than evidence that two categories had been conflated.
 
 I propose \term{deitality} as a diagnostic remedy. The term derives from the deictic origins of the cluster: demonstratives grammaticalize into articles, and the distributional profile reflects that deictic source. A determiner is \term{deital} if it shows the form-cluster properties; it's \term{definite} if it contributes definiteness-cluster semantics.
 
@@ -306,10 +435,6 @@ The prediction is that wherever demonstratives grammaticalize into articles, the
 \label{sec:10:transition}
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
 
-Countability and definiteness share an architecture: two HPCs~-- one semantic, one morphosyntactic~-- maintained by different mechanisms, coupled by convention and inference, capable of systematic decoupling. The semantic cluster tracks a cognitive or conceptual distinction (individuation, identifiability); the morphosyntactic cluster tracks a distributional profile inherited from historical sources and maintained by social and developmental mechanisms.
+We have now examined two variations on the HPC architecture. With countability, the fit between form and meaning is tight: the count cluster hugs the individuation cluster so closely that they are often mistaken for a single category. With definiteness, we found a fissure. Deitality tracks definiteness, but the coupling is loose enough to permit systematic, productive slippage. The \enquote{exceptions} that have plagued the literature~-- weak definites, generics, proper names~-- are simply the visible evidence of play in the joint.
 
-But countability and definiteness differ in tightness. The count cluster and the individuation cluster are closely coupled~-- most count morphosyntax signals individuation, and the bidirectional inference is strong. The form cluster (deitality) and the definiteness cluster are more loosely coupled~-- weak definites, generic definites, and proper names represent stable, productive dissociations.
-
-The next case study pushes further. Lexical categories~-- noun, verb, adjective~-- show even more complex patterns. The noun/verb contrast is strikingly stable cross-linguistically; adjectives vary dramatically in both inventory and behaviour. If these are HPC kinds, the mechanisms maintaining them have to vary as well. Some may be deep and universal (cognitive, developmental); others may be local and reconfigurable (constructional, sociolinguistic).
-
-The HPC framework accommodates this variation. The question is not \enquote{Is adjective a real category?} but \enquote{What maintains adjective-hood in this language, and how tightly does the cluster cohere?} Chapter~\ref{ch:lexical-categories} takes up that question.
+The final case study pushes this logic to its limit. Lexical categories like \mention{noun} and \mention{verb} look strikingly stable cross-linguistically, while \mention{adjective} and \mention{adverb} vary dramatically, sometimes behaving like different categories in different places. If these are linguistic categories, they are maintained by mechanisms far more variable than the tight couplings we have relied on so far. We have seen how clusters hold together when coupling is strong. Chapter~\ref{ch:lexical-categories} asks how they survive when couplings are local, partial, and scarce.

@@ -1,69 +1,156 @@
 % !TEX TS-program = xelatex
 % File: preamble.tex
-% Purpose: Brett Reynolds house style LaTeX preamble
-% Version: 1.0.0
+% Purpose: Brett Reynolds house style LaTeX preamble (Press edition)
+% Version: 2.0.0
 %
 % Usage: \input{.house-style/preamble.tex} in main document
 
-% --- Layout & language ---
-\usepackage[margin=1in]{geometry}
+% =========================
+% PRESS-LIKE PAGE (trim + margins)
+% =========================
+% Typical monograph trim. 6×9 with professional margins.
+\usepackage[
+  paperwidth=6in,paperheight=9in,
+  inner=1.05in,outer=0.80in,
+  top=0.80in,bottom=0.90in,
+  bindingoffset=0.15in,
+  headsep=16pt,footskip=22pt
+]{geometry}
+
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\setlength{\emergencystretch}{1.5em} % smoother justification; fewer ugly breaks
+
+% --- Language ---
 \usepackage[british]{babel}            % British conventions; use -ize spellings in prose
-\usepackage{xcolor}                    % Color support
-\usepackage{eso-pic}                   % Background images (for cover)
-\usepackage{tikz}                      % Graphics (for cover shadow)
-\usetikzlibrary{shadows.blur}          % Blur shadows
-\usepackage{fontspec}                  % Xe/LuaLaTeX
-% Rosarivo: Google Fonts serif (Regular + Italic only; AutoFakeBold for bold)
-\setmainfont{Rosarivo}[
-  Path=/Users/brettreynolds/Library/Fonts/,
-  UprightFont=Rosarivo-Regular.ttf,
-  ItalicFont=Rosarivo-Italic.ttf,
-  AutoFakeBold=1.5
-]
+
+% =========================
+% FONTS (real bold + real small caps)
+% =========================
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
+
+% EB Garamond: available on system, has true bold + small caps, excellent for long text.
+\setmainfont{EB Garamond}[Numbers=OldStyle]
+\setsansfont{Palatino}
+\setmonofont{Menlo}[Scale=0.85]
 
 % Charis SIL fallback for IPA and extended Latin (linguistics-specific characters)
-\newfontfamily\ipafont{Charis SIL}[
-  Path=/Users/brettreynolds/Library/Fonts/,
-  UprightFont=CharisSIL-Regular.ttf,
-  BoldFont=CharisSIL-Bold.ttf,
-  ItalicFont=CharisSIL-Italic.ttf,
-  BoldItalicFont=CharisSIL-BoldItalic.ttf
-]
-
-% Macro for IPA transcriptions and extended Latin
-% Usage: \ipa{ɪ} or \ipa{pʰɪt} for IPA that Rosarivo can't render
+\newfontfamily\ipafont{Charis SIL}[Scale=MatchLowercase]
 \newcommand{\ipa}[1]{{\ipafont #1}}
 
 \newfontfamily\japanesefont{Hiragino Sans GB}  % Japanese/CJK fallback
 \usepackage{xeCJK}                             % CJK support
 \setCJKmainfont{Hiragino Sans GB}              % Set CJK font
+
+% =========================
+% MICROTYPE (XeLaTeX: protrusion works)
+% =========================
 \usepackage[final]{microtype}
+
+% --- Color and graphics ---
+\usepackage{xcolor}                    % Color support
+\usepackage{eso-pic}                   % Background images (for cover)
+\usepackage{tikz}                      % Graphics (for cover shadow)
+\usetikzlibrary{shadows.blur}          % Blur shadows
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+\usepackage{graphicx}                  % For including images
+\usepackage{framed}                    % For framed boxes (skip paths)
 
 \usepackage[normalem]{ulem}            % \uline for underlining (normalem preserves \emph)
 \usepackage{marvosym}                  % \Cross symbol for cross-linguistic subscripts
-\usepackage{graphicx}                  % For including images
-\usepackage{framed}                    % For framed boxes (skip paths)
 
 % --- Quotation marks ---
 \usepackage{csquotes}                  % \enquote{…} with locale-aware quoting
 \setquotestyle{english}                % Use double quotes even under british babel
 \usepackage{orcidlink}
 
-% --- Hyperlinks ---
+% =========================
+% HYPERREF (keeping current link colours per user preference)
+% =========================
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
   linkcolor=blue,
   citecolor=blue,
   urlcolor=blue,
-  pdfauthor={Brett Reynolds}
-  % pdftitle will be set in main document
+  pdfauthor={Brett Reynolds},
+  pdftitle={Words That Won't Hold Still: How Linguistic Categories Work}
 }
+\urlstyle{same}
+
+% =========================
+% RUNNING HEADS + CONSISTENT FOLIOS
+% =========================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Folios outside, headers inside (classic academic look)
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[RE]{\small\scshape\leftmark}
+\fancyhead[LO]{\small\scshape\rightmark}
+
+% Clean marks (no "CHAPTER 1." shouting)
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% Make chapter-opening pages match (book.css consistency)
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyhead[LE]{\thepage}
+  \fancyhead[RO]{\thepage}
+}
+
+% Suppress headers/folios on inserted blank pages
+\usepackage{emptypage}
+
+% =========================
+% HEADINGS: clearer hierarchy + no orphaned heads
+% =========================
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage{etoolbox}
+
+% Chapter: restrained but unmistakable
+\titleformat{\chapter}[display]
+  {\normalfont\huge}
+  {}
+  {0pt}
+  {\Huge}
+  [\vspace{1.2ex}]
+
+% Section/subsection: real bold now that the font supports it
+\titleformat{\section}
+  {\normalfont\large\bfseries}
+  {\thesection}
+  {0.8em}
+  {}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsection}
+  {0.8em}
+  {}
+
+\titlespacing*{\section}{0pt}{2.0ex plus 0.6ex}{0.9ex}
+\titlespacing*{\subsection}{0pt}{1.6ex plus 0.5ex}{0.7ex}
+
+% Keep heads with text
+\pretocmd{\section}{\needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\needspace{4\baselineskip}}{}{}
+
+% =========================
+% CAPTIONS (apparatus, not body text)
+% =========================
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\captionsetup{skip=6pt}
 
 % --- Maths and symbols ---
 \usepackage{amsmath,amssymb}
-\usepackage{tikz}                      % Required by pgfplots
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
 \usepackage{pgfplots}                  % For data-driven figures
 \pgfplotsset{compat=1.18}
 \usepackage{epigraph}                  % For chapter epigraphs
@@ -142,32 +229,6 @@
 \usepackage[toc, acronym, nopostdot, nonumberlist]{glossaries-extra}
 \setabbreviationstyle[acronym]{long-short}
 
-% --- Glossary entries (defined here; can be moved to separate file) ---
-
-\newglossaryentry{hpc}{
-  name={homeostatic property cluster (HPC)},
-  text={HPC},
-  description={A category whose members share properties not because of a common essence but because causal processes maintain the co-occurrence of those properties. Identified by two diagnostics: \emph{projectibility} (the category supports induction) and \emph{homeostasis} (named mechanisms maintain the cluster under perturbation). See Chs~4, 7, 8}
-}
-
-\newglossaryentry{projectibility}{
-  name={projectibility},
-  description={The property of a category that licenses inductive generalisation: knowing that an item belongs to the category allows prediction of its other properties. The first of two diagnostics for genuine kinds. See Ch~6}
-}
-
-\newglossaryentry{homeostasis}{
-  name={homeostasis},
-  description={The active maintenance of cluster coherence by identifiable causal mechanisms (acquisition, entrenchment, alignment, transmission, functional pressure). The second diagnostic for genuine kinds. See Chs~4, 7}
-}
-
-\newglossaryentry{entrenchment}{
-  name={entrenchment},
-  description={A cognitive mechanism whereby repeated exposure to a linguistic pattern strengthens its mental representation, making it more accessible and resistant to change. One of the stabilizers maintaining grammatical categories. See Ch~7}
-}
-
-\newglossaryentry{essentialism}{
-  name={essentialism},
-  description={The view that categories have definitions: necessary and sufficient conditions that determine membership. Contrasted with the maintenance view developed in this book. See Chs~1--3}
-}
+% Glossary entries are defined in glossary.tex (input from main document)
 
 \makeglossaries
