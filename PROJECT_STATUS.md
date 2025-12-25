@@ -52,6 +52,29 @@
   - `notes/project-log.md` updated.
   - `task.md` reset for Ch 10 drafting phase.
 
+### Session Work (Dec 25, 2025 afternoon: Ch 10 Refinements)
+- ✅ **ChatGPT Feedback Addressed**:
+  - Fixed typos (deictic, \\mention)
+  - Added cross-linguistic developmental evidence sentence
+  - Added Birner & Ward 1994 citation, updated De Cat 2011 → De Cat 2013
+  - Hedged Keysar claim (71% Director Task, not 20-30%)
+  - Added table footnote for narrative-*this* exception
+- ✅ **Structural Rhetorical Figures Deployed**:
+  - Antimetabole: "Definite without the article; the article without definiteness"
+  - Gradatio: developmental sequence as cognitive climb
+  - Isocolon: binding mechanisms parallel structure
+  - Sorites: convergence inferential chain
+  - Anaphoric template: "X looks like a failure of Y" across slippage subsections
+- ✅ **Harris/Joseph Synthesis Implemented**:
+  - Harris: "Positions on the board" typology (4 competing accounts)
+  - Harris: Decision criterion paragraph (forced-choice moment)
+  - Joseph: Historiographic note on definiteness conflation
+  - Joseph: Widened genealogy (grammar/pedagogy/typology)
+  - Joseph: Greek proper-name counterpattern
+- ✅ **Khalidi Looping Effects**: Metalinguistic feedback sentence added to mechanisms interlock
+- ✅ **Definiteness Cluster Consistency Fix**: 3 core properties + anaphoric recoverability as downstream
+- ✅ **New Bib Entries Verified**: heim1991, christophersen1939, roberts2003, decat2013, birnerward1994
+
 ## Completed
 
 - ✅ Project repository initialized with Git
