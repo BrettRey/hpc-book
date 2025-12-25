@@ -1,5 +1,20 @@
 # Project Log
 
+## 2025-12-25: Slogan Deployment & Ch 10 Preparation
+- **Slogan Deployment**: Implemented the "buried payoff" strategy.
+    - **Ch 4**: Added slogan to §4.6 ("What you get in return").
+    - **Ch 6**: Dialed back block quote to inline reference ("Unpacking the framework").
+    - **Ch 7**: Added front-loaded restatement after epigraph.
+    - **Ch 14**: Added note for "transformed return" in grist.
+- **House Style**: Standardised spelling of *stabilized* (z-spelling) across 17 files.
+- **Chapter 10 Planning**:
+    - Ran **Multi-Agent Advisory Board Review** (17 agents).
+    - Generated `notes/ch10-board-report.md` with insights from Khalidi, Latour, Croft, Lakoff, McCloskey, etc.
+    - Integrated action items into `notes/chapter10-grist.md`.
+    - Created `scripts/ch10-board-review.sh` for reproducible runs.
+
+---
+
 ## Progress Tracker
 
 > **Last updated:** 17 December 2025  

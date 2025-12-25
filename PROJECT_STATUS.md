@@ -27,13 +27,21 @@
 - ✅ **CLAUDE.md Updated**:
   - Added "Intellectual Engagement" section (methodology for deep theoretical work).
   - Added new project structure entries (hpc-book.tex, code/).
-- ✅ **Session Docs**:
-  - `notes/field-relative-projectibility.md` — Core theory.
-  - `notes/session-2025-12-24-field-relative-projectibility.md` — Log with LLM-writing pedagogy.
-  - `notes/chapter10-grist.md` — Initial material for definiteness/deitality.
-  - `notes/chapter14-grist.md` — Mereology/field-specificity connection.
-  - `notes/advisory-board.md` — Full 10-reviewer feedback transcript.
-- ✅ **Khalidi précis sent** (Dec 24) — `correspondence/khalidi-precis-2025-12.tex`
+### Session Work (Dec 25, 2025: Slogan Deployment & Ch 10 Planning)
+- ✅ **Slogan Deployment**: Implemented the "buried payoff" slogan arc:
+  - **Ch 4**: First appearance (~lines 197–199) as payoff to HPC explanation.
+  - **Ch 6**: Dialed back to inline reference ("Unpacking the framework").
+  - **Ch 7**: Front-loaded restatement after epigraph.
+  - **Ch 14**: "Transformed return" note added to grist.
+  - **House Style**: Standardized spelling to *stabilized* (z-spelling) across 17 files.
+- ✅ **Chapter 10 Planning**:
+  - Ran 17-agent **Advisory Board Review** (Khalidi, Latour, Croft, etc.).
+  - Generated `notes/ch10-board-report.md` (full multi-perspective critique).
+  - Integrated insights into `notes/chapter10-grist.md` (drafting spine established).
+  - Created reproducible script `scripts/ch10-board-review.sh`.
+- ✅ **Docs Updated**:
+  - `notes/project-log.md` updated.
+  - `task.md` reset for Ch 10 drafting phase.
 
 ## Completed
 
