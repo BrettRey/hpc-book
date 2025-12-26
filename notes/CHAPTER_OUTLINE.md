@@ -139,7 +139,17 @@
 - "Pronouns" as mechanism-braiding: Shark/Dolphin/Ichthyosaur convergent evolution
 - Scope framing: four major classes + pronouns; functional categories deferred
 
-### Ch 12: The stack
+### Ch 12: Gender and the maintenance spectrum
+*From semantically transparent to purely entrenched*
+
+**Key points:**
+- English gender: designatum-driven (hierarchical personhood system)
+- French gender: entrenchment-driven (antecedent controls, semantic link dead)
+- German: hybrid (noun-class + referential overrides)
+- The maintenance spectrum: transparent ↔ entrenched
+- HPC predicts different learning curves, diachronic trajectories
+
+### Ch 13: The stack
 *From phonemes to constructions—variations in coupling*
 
 **Key points:**
@@ -153,7 +163,7 @@
 
 ## Part IV: Implications
 
-### Ch 13: Grammaticality itself
+### Ch 14: Grammaticality itself
 *The deepest category, also an HPC*
 
 **Key points:**
@@ -162,7 +172,7 @@
 - **Form-meaning pairing as principled necessity**: If grammatical HPCs typically decompose into semantic + morphosyntactic clusters (the field-relativity principle), this explains CxG's claim that constructions are form-meaning pairings.
 - **Coupled mechanisms**: Acquisition data (Tomasello's "the Max") proves they are distinct-but-braided mechanisms, not a single monolithic whole.
 
-### Ch 14: What changes
+### Ch 15: What changes
 *Methodology, theory, typology—concrete consequences*
 
 **Key points:**
@@ -180,4 +190,4 @@
 - Part IV synthesizes implications for practice
 - Target: ~15-20 pages per chapter for substantive chapters
 
-**Total: 14 chapters across 4 parts** (Chapter 4 restored as HPC introduction, December 2025)
+**Total: 15 chapters across 4 parts** (Gender chapter added, December 2025)
