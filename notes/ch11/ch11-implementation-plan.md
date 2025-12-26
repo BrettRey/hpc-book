@@ -120,6 +120,7 @@ The parallel: sharks, dolphins, and ichthyosaurs all evolved streamlined bodies 
 - Cuneo & Goldberg's BCI principle: backgrounded constituents resist foregrounding
 - Shows that mechanism-braiding produces *different licensing* for formally similar items
 - Connects to pro-form gender paper (Reynolds)
+- **Potential empirical backing:** Goldberg collaboration (data collection late Jan/Feb 2026) testing BCI predictions on precision modifiers. If results are available before press, incorporate as empirical support. See `/Focus_modifiers_interrogative_heads/GOLDBERG-COLLABORATION.md`.
 
 ### §11.8 — Summary and Connection to Part III Architecture
 - Recap: N/V = tight HPC; Adj = thinner HPC; Adv = no HPC; "Pronoun" = braided HPC
