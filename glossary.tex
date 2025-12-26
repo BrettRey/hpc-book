@@ -1,154 +1,238 @@
 % Glossary entries for the HPC book
 % This file is \input from the main document after the preamble
 
+% Glossary stance: categories are maintained clusters, not essences.
+\renewcommand*{\glossarypreamble}{%
+  \epigraph{The circle of the English language has a well-defined centre but no discernible circumference.}{James Murray, \textit{OED} Vol.~1 (1888), p.~xvii}
+  \noindent \small Many of the entries in this glossary are themselves categories and so are defined in terms of mechanisms and diagnostics where relevant; examples illustrate use, not definitions. For page references, see the Subject Index (p.~\ref{idx:subject}).\par\bigskip}
+
+% Micro-structure helpers (quiet, Bringhurst-style)
+\newcommand{\glsdef}[1]{#1}
+\newcommand{\glsmech}[1]{#1}
+\newcommand{\glsdiag}[1]{#1}
+\newcommand{\glsnote}[1]{#1}
+\newcommand{\glsxsee}[1]{See also: #1}
+
 % ===== Core framework terms =====
 
 \newglossaryentry{hpc}{
   name={homeostatic property cluster (HPC)},
   text={HPC},
-  description={A category whose members share properties not because of a common essence but because causal processes maintain the co-occurrence of those properties. Identified by two diagnostics: \emph{projectibility} (the category supports induction) and \emph{homeostasis} (named mechanisms maintain the cluster under perturbation). See Chs~4, 7, 8}
+  description={\glsdef{A category whose properties cluster because mechanisms maintain their co-occurrence rather than because of a shared essence.} \glsmech{Maintained by acquisition, entrenchment, alignment, transmission, and functional pressure.} \glsdiag{Passes both projectibility and homeostasis (perturbation sensitivity).} \glsnote{Membership can be graded and internally structured.} \glsxsee{projectibility, homeostasis, stabiliser, two-diagnostic test.}}
 }
 
 \newglossaryentry{projectibility}{
   name={projectibility},
   text={projectibility},
-  description={The capacity of a category to support induction: knowing that an item belongs to the category licenses predictions about its other properties. A category is projectible if learning from a finite sample allows you to predict unobserved instances. Projectibility is one of the two diagnostics for genuine HPC status. See Ch~6}
+  description={\glsdef{A category's capacity to support induction from observed cases to unobserved ones.} \glsmech{It relies on stable correlations enforced by stabilisers.} \glsdiag{Predicts held-out data or generalises across contexts better than chance.} \glsnote{Field-relative: projectible for one purpose may fail for another.} \glsxsee{homeostasis, two-diagnostic test, field-relative projectibility.}}
 }
 
 \newglossaryentry{homeostasis}{
   name={homeostasis},
   text={homeostasis},
-  description={Not mere stability but active return: a homeostatic system, when perturbed, tends to return to its prior configuration rather than settling into any stable state. Grammatical categories maintain homeostasis through mechanisms like interactive alignment (speakers correct each other) and entrenchment (high-frequency items anchor the cluster). See Ch~4}
+  description={\glsdef{Active return after perturbation; stability by self-correction rather than mere persistence.} \glsmech{Maintained by alignment, entrenchment, transmission, and other stabilisers across timescales.} \glsdiag{Perturbation sensitivity: weaken a mechanism and the clustering frays.} \glsnote{The ontological anchor for genuine kinds.} \glsxsee{stabiliser, perturbation sensitivity.}}
 }
 
 \newglossaryentry{entrenchment}{
   name={entrenchment},
   text={entrenchment},
-  description={The strengthening of mental representations through repeated use. High-frequency items are processed faster, stored more robustly, and resist analogical pressure. Entrenchment anchors categories by making their most frequent members highly accessible and resistant to change. See Ch~4}
+  description={\glsdef{Strengthening of mental representations through repeated use.} \glsmech{Driven by frequency effects and chunking in memory.} \glsdiag{Resistance to analogical change; faster processing and higher accessibility.} \glsnote{Anchors category cores and stabilises prototypes.} \glsxsee{chunking, prototype.}}
 }
 
 \newglossaryentry{essentialism}{
   name={essentialism},
   text={essentialism},
-  description={The view that categories have definitions: necessary and sufficient conditions that determine membership. Essentialism about grammar claims that categories like \textsc{noun} or \textsc{verb} can be defined by invariant properties. The HPC framework rejects this: categories are maintained by mechanisms, not defined by essences. See Ch~2}
+  description={\glsdef{The view that categories are defined by necessary and sufficient conditions.} \glsmech{It is grounded in definitional criteria rather than stabilisers.} \glsdiag{Breaks down when exceptions proliferate without principled repair.} \glsnote{The maintenance view rejects essentialism in favour of mechanism-based kinds.} \glsxsee{nominalism, prototype.}}
 }
 
 \newglossaryentry{stabiliser}{
   name={stabiliser},
   text={stabiliser},
-  description={A mechanism that maintains a category cluster. Where \enquote{mechanism} emphasises causal structure, \enquote{stabiliser} emphasises the functional role—what keeps the cluster clustered. Something counts as a stabiliser if removing it would change the clustering. Example stabilisers: acquisition, entrenchment, alignment, transmission, functional pressure. See Ch~7}
+  description={\glsdef{A causal process that maintains clustering in a category.} \glsmech{Instances include acquisition, entrenchment, alignment, transmission, and functional pressure.} \glsdiag{Removing it changes the clustering in predictable ways.} \glsnote{Names a role, not a single type of mechanism.} \glsxsee{homeostasis, perturbation sensitivity.}}
 }
 
 \newglossaryentry{alignment}{
   name={interactive alignment},
   text={alignment},
-  description={The tendency of interlocutors to converge on shared linguistic choices during conversation. Alignment maintains categories by enforcing community-wide coherence: when speakers accommodate to each other, they reinforce shared norms; when they resist innovations, they exert corrective pressure. See Ch~4}
+  description={\glsdef{Convergence of interlocutors' linguistic choices during interaction.} \glsmech{Realised through accommodation and repair in real-time conversation.} \glsdiag{Local convergence and resistance to innovations under misalignment.} \glsnote{A fast-timescale stabiliser.} \glsxsee{stabiliser, transmission.}}
 }
 
 \newglossaryentry{prototype}{
   name={prototype},
   text={prototype},
-  description={The central, most typical member of a category—the first example that comes to mind, the item that best exemplifies the category's properties. Prototype theory describes categorical structure but doesn't explain what maintains it. HPC explains why prototypes are prototypes: they're the items maintained most robustly by the braid of mechanisms. See Ch~4}
+  description={\glsdef{The most typical member of a category.} \glsmech{Shaped by entrenchment and frequency effects.} \glsdiag{Typicality effects and graded membership.} \glsnote{Descriptive of structure; requires a mechanism story to explain stability.} \glsxsee{entrenchment, real gradience.}}
 }
 
 \newglossaryentry{maintenanceview}{
   name={maintenance view},
   text={maintenance view},
-  description={The claim that categories are real because they are maintained—that what makes a linguistic category a genuine kind is not an essence but the ongoing operation of stabilising mechanisms. \enquote{Maintenance isn't just preventing breakdown; it's the whole process of keeping something going} (Stewart Brand). See Ch~4}
+  description={\glsdef{The claim that categories are real because they are maintained by stabilising mechanisms.} \glsmech{Supported by a braid of mechanisms across timescales.} \glsdiag{Implies the two-diagnostic test: projectibility plus homeostasis.} \glsnote{Rejects both essentialism and nominalism.} \glsxsee{hpc, two-diagnostic test.}}
+}
+
+\newglossaryentry{class}{
+  name={class},
+  text={class},
+  description={\glsdef{A grouping used for description or convenience without a commitment to shared mechanisms.} \glsmech{No stabiliser story required.} \glsdiag{May be projectible locally but need not pass the two-diagnostic test.} \glsnote{Useful for taxonomy; not necessarily a natural kind.} \glsxsee{category, fat class, thin class, comparative concept.}}
+}
+
+\newglossaryentry{category}{
+  name={category},
+  text={category},
+  description={\glsdef{A cluster of properties used to organise linguistic phenomena.} \glsmech{When genuine, maintained by stabilisers; when merely convenient, it is a class.} \glsdiag{A category earns kind-status only if it passes projectibility and homeostasis.} \glsnote{The book's core question is which categories are kinds.} \glsxsee{kind, two-diagnostic test, projectibility, homeostasis.}}
+}
+
+\newglossaryentry{kind}{
+  name={kind},
+  text={kind},
+  description={\glsdef{A category that supports induction because mechanisms maintain its clustering.} \glsmech{Stabilisers keep the profile coherent across speakers and time.} \glsdiag{Passes the two-diagnostic test.} \glsnote{In this framework, linguistic kinds are HPC kinds rather than definitional essences.} \glsxsee{hpc, copied kind, two-diagnostic test.}}
+}
+
+\newglossaryentry{mechanism}{
+  name={mechanism},
+  text={mechanism},
+  description={\glsdef{A causal process with inputs, operations, and outputs that produces or maintains a pattern.} \glsmech{Mechanisms include acquisition, alignment, entrenchment, and transmission.} \glsdiag{Identified by perturbation: weaken the process and the cluster frays.} \glsnote{The explanatory unit of the maintenance view.} \glsxsee{stabiliser, homeostasis, perturbation sensitivity.}}
+}
+
+\newglossaryentry{acquisition}{
+  name={acquisition},
+  text={acquisition},
+  description={\glsdef{The learning process by which speakers internalise linguistic categories from input.} \glsmech{Distributional learning and cue integration across contexts.} \glsdiag{Convergence on shared categories despite variable input.} \glsnote{A core stabiliser and transmission bottleneck.} \glsxsee{transmission, entrenchment, stabiliser.}}
+}
+
+\newglossaryentry{transmission}{
+  name={transmission},
+  text={transmission},
+  description={\glsdef{Intergenerational passage of linguistic patterns.} \glsmech{Iterated learning filters for stable, learnable variants.} \glsdiag{Convergence toward compressible systems under repeated learning.} \glsnote{A macro-stabiliser of categories and constructions.} \glsxsee{iterated transmission, acquisition.}}
 }
 
 \newglossaryentry{properfunction}{
   name={proper function},
   text={proper function},
-  description={In Ruth Millikan's framework: the function an item has in virtue of its history of selection. A heart's proper function is pumping blood because that's the function that explains its reproductive success. Applied to grammar: the proper function of a construction is the function that explains its transmission across generations. See Ch~10}
+  description={\glsdef{In Millikan's framework, the function an item has in virtue of its history of selection.} \glsmech{Secured by reproductive success of uses that perform the function.} \glsdiag{Explains why the form persists across generations.} \glsnote{Historical, not intentional or definitional.} \glsxsee{derived proper function, Normal conditions.}}
 }
 
 \newglossaryentry{derivedproperfunction}{
   name={derived proper function},
   text={derived proper function},
-  description={A function an item acquires by being recruited to serve a purpose that was not its original selected function. Example: the definite article's proper function may be discourse tracking, but it acquires derived functions (weak definites, generics) when speakers exploit stable side effects. See Ch~10}
+  description={\glsdef{A function acquired by recruitment beyond an item's original selected function.} \glsmech{Arises through exploitation of stable side effects of a form or construction.} \glsdiag{Depends on the proper function remaining intact elsewhere.} \glsnote{Parasitic rather than foundational.} \glsxsee{proper function, Normal conditions.}}
 }
 
 \newglossaryentry{deitality}{
   name={deitality},
   text={deitality},
-  description={The morphosyntactic form cluster associated with determiners like \textit{the}—the bundle of formal properties (definiteness agreement, article drop, anaphoric licensing) that travel together independently of the semantic definiteness cluster. Proposed as a term to distinguish morphosyntactic patterning from semantic definiteness. See Ch~10}
+  description={\glsdef{The morphosyntactic form cluster associated with English determiners, distinct from semantic definiteness.} \glsmech{Formed by grammaticalization of demonstratives plus distributional constraints.} \glsdiag{There-resistance, partitive \textit{of}, and hosting behaviour converge.} \glsnote{Cross-cuts the definiteness cluster.} \glsxsee{definiteness cluster.}}
 }
 
 \newglossaryentry{fatclass}{
   name={fat class},
   text={fat class},
-  description={A label that lumps distinct causal clusters into a single bin—a wastebasket category. Fat classes miss the projectibility diagnostic: learning one subclass doesn't let you predict others. Example: traditional \textsc{adverb} pools manner adverbs, degree words, and sentence adverbs—items maintained by different mechanisms. See Ch~8}
+  description={\glsdef{A label that lumps distinct causal clusters into a single bin.} \glsmech{Produced by multiple unrelated stabilisers with no shared mechanism.} \glsdiag{Fails projectibility across subtypes.} \glsnote{Useful for pedagogy, not a natural kind.} \glsxsee{thin class, comparative concept.}}
+}
+
+\newglossaryentry{adverb}{
+  name={adverb},
+  text={adverb},
+  description={\glsdef{A traditional residual category for modifiers that are not adjectives.} \glsmech{Maintained by multiple unrelated mechanisms across subtypes.} \glsdiag{Fails projectibility across manner, degree, and sentence adverbs.} \glsnote{A paradigmatic fat class; the remedy is decomposition.} \glsxsee{fat class.}}
 }
 
 \newglossaryentry{thinclass}{
   name={thin class},
   text={thin class},
-  description={A pattern that barely exists as a maintained kind. Thin classes miss the homeostasis diagnostic: the mechanisms that would stabilise them are absent or too weak. Example: preposition doubling (\textit{from which to choose from}) is a thin pattern—it exists but is not reproduced as a target construction. See Ch~8}
+  description={\glsdef{A pattern that is weakly maintained or not maintained at all.} \glsmech{Occurs when stabilisers are absent or too weak.} \glsdiag{Fails homeostasis; disappears under perturbation.} \glsnote{Often a byproduct of other mechanisms.} \glsxsee{fat class.}}
 }
 
 \newglossaryentry{comparativeconcept}{
   name={comparative concept},
   text={comparative concept},
-  description={An analyst's tool constructed for cross-linguistic comparison (Haspelmath's term). Comparative concepts are defined by the typologist, not discovered in particular languages. They may be useful without being natural kinds—\textsc{subject} as a comparative concept needn't be maintained by the same mechanisms across languages. See Ch~8}
+  description={\glsdef{An analyst's tool constructed for cross-linguistic comparison.} \glsmech{Not guaranteed to be supported by shared stabilisers across languages.} \glsdiag{Does not imply shared homeostasis or projectibility.} \glsnote{Useful without being a kind.} \glsxsee{field-relative projectibility.}}
+}
+
+\newglossaryentry{epistemickind}{
+  name={epistemic kind},
+  text={epistemic kind},
+  description={\glsdef{A category that serves epistemic purposes without claiming a shared causal mechanism.} \glsmech{May be institutionally reinforced rather than mechanistically maintained.} \glsdiag{Can be stable without passing the two-diagnostic test.} \glsnote{Khalidi’s term for useful but non-kind groupings.} \glsxsee{class, comparative concept.}}
 }
 
 \newglossaryentry{madagascarfallacy}{
   name={Madagascar fallacy},
   text={Madagascar fallacy},
-  description={The mistake of treating an ecosystem as if it were a species—of attributing to a collection the kind-status that belongs only to its components. Applied to language: \textit{English} is an ecosystem of HPCs, not itself a single HPC. See Ch~8}
+  description={\glsdef{The mistake of treating an ecosystem as if it were a single kind.} \glsmech{It bundles mechanisms that maintain components rather than the whole.} \glsdiag{Fails homeostasis at the wrong grain.} \glsnote{A warning about scale in category analysis.} \glsxsee{two-diagnostic test.}}
 }
 
 % ===== Countability (Ch 9) =====
 
+\newglossaryentry{countability}{
+  name={countability},
+  text={countability},
+  description={\glsdef{The coupled system linking semantic individuation and morphosyntactic count marking.} \glsmech{Maintained by bidirectional inference between construal and form.} \glsdiag{Implicational hierarchy of count properties and robust projectibility.} \glsnote{An interface category with two partially distinct clusters.} \glsxsee{individuation cluster, count cluster, bidirectional inference.}}
+}
+
 \newglossaryentry{individuationcluster}{
   name={individuation cluster},
   text={individuation cluster},
-  description={The semantic cluster of properties that make a referent construable as a discrete, countable entity: boundedness, atomicity, enumerability, and homogeneity resistance. Example: a \textit{ball bearing} has all four properties; \textit{water} has none. Maintained by perceptual mechanisms (edge detection, object files) and cognitive processes (cross-modal integration). Coupled with the count cluster to form countability. See Ch~9}
+  description={\glsdef{The semantic profile that enables discrete construal: boundedness, atomicity, enumerability, and homogeneity resistance.} \glsmech{Maintained by perceptual segmentation, object files, and cross-modal integration.} \glsdiag{Supports predictions about count morphosyntax.} \glsnote{Coupled to the count cluster to yield countability.} \glsxsee{count cluster, bidirectional inference.}}
 }
 
 \newglossaryentry{countcluster}{
   name={count cluster},
   text={count cluster},
-  description={The morphosyntactic cluster of properties that travel together in English count nouns: plural inflection, compatibility with cardinals (\textit{three books}), acceptance of \textit{many}/\textit{few}, and plural agreement. Example: knowing \textit{cat} takes a plural lets you predict it takes \textit{a}, \textit{several}, and \textit{many}. Quasi-count nouns like \textit{cattle} accept loose properties (\textit{many cattle}) but reject tight ones (\textit{*three cattle}). See Ch~9}
+  description={\glsdef{The morphosyntactic properties that travel together in English count nouns (plural, cardinals, \textit{many}/\textit{few}, agreement).} \glsmech{Maintained by acquisition and entrenchment in count frames, plus alignment in discourse.} \glsdiag{Implicational hierarchy: tight properties imply loose ones.} \glsnote{Coupled to individuation by bidirectional inference.} \glsxsee{individuation cluster, bidirectional inference, functional anchoring.}}
 }
 
 \newglossaryentry{bidirectionalinference}{
   name={bidirectional inference},
   text={bidirectional inference},
-  description={The mechanism coupling semantic construal to morphosyntactic form. In comprehension, count morphosyntax leads hearers to expect atomic referents; in production, an individuated construal prompts count syntax. Each count property becomes a cue to the same underlying condition. Example: hearing \textit{three dogs} cues individuation; intending individuation prompts \textit{three} over \textit{much}. See Ch~9}
+  description={\glsdef{The mechanism coupling semantic construal to morphosyntactic form in comprehension and production.} \glsmech{Realised by inference from morphosyntax to construal and back.} \glsdiag{Mutual predictability of count properties across constructions.} \glsnote{The core homeostatic link in countability.} \glsxsee{count cluster, individuation cluster.}}
 }
 
 \newglossaryentry{functionalanchoring}{
   name={functional anchoring},
   text={functional anchoring},
-  description={The mechanism by which a lexical alternative bleeds pressure for regularisation. When a singulative lexeme handles the function that analogy would otherwise push a quasi-count noun to fill, the quasi-count noun persists without extending tight-linkage properties. Example: \textit{cattle} remains quasi-count for centuries because \textit{cow}, \textit{bull}, and \textit{head of cattle} handle singulative reference. Contrast \textit{data}, which drifts toward mass status as \textit{datum} dies. See Ch~9}
+  description={\glsdef{Lexical alternatives absorb pressure to regularise a quasi-count noun.} \glsmech{Implemented through division of labour in the lexicon.} \glsdiag{Intermediate classes persist without extending tight properties.} \glsnote{Explains stability of \textit{cattle}/\textit{police} and drift of \textit{data}.} \glsxsee{count cluster.}}
 }
 
 \newglossaryentry{chunking}{
   name={chunking},
   text={chunking},
-  description={The cognitive process whereby high-frequency sequences are stored and retrieved as units, bypassing compositional assembly. Example: \textit{many cattle} is a chunk—retrieved whole—while \textit{three cattle} must be assembled online and fails because the components don't fit. Explains why quasi-count nouns feel natural in loose frames but deviant in tight ones. See Ch~9}
+  description={\glsdef{Storage of high-frequency sequences as units, bypassing compositional assembly.} \glsmech{Driven by frequency-based memory consolidation.} \glsdiag{Fluency and acceptability differences in entrenched frames.} \glsnote{Supports entrenchment and stability at the cluster core.} \glsxsee{entrenchment.}}
 }
 
 \newglossaryentry{basin}{
   name={basin (attractor)},
   text={basin},
-  description={A dynamical-systems metaphor for category structure: a region in parameter space toward which system states are drawn. Think of a spinning top—the basin keeps it upright despite perturbations. Members near the centre satisfy all diagnostics; those at the periphery satisfy only some. Example: \textit{book} spins at the centre of the count basin, clearing all precision locks; \textit{cattle} spins off-centre, clearing only loose ones. See Chs~5, 9}
+  description={\glsdef{A dynamical-systems metaphor: an attractor region toward which category states are drawn.} \glsmech{Created by stabiliser-driven pull toward the cluster centre.} \glsdiag{Stable cores with tolerated peripheries.} \glsnote{Explains graded membership with sharp boundaries.} \glsxsee{dynamic discreteness, real gradience.}}
 }
 
 % ===== Definiteness (Ch 10) =====
 
+\newglossaryentry{definiteness}{
+  name={definiteness},
+  text={definiteness},
+  description={\glsdef{A semantic category of identifiability, familiarity, and uniqueness.} \glsmech{Maintained by discourse tracking, domain restriction, and Theory of Mind.} \glsdiag{Predicts anaphoric recoverability and discourse behaviour.} \glsnote{Distinct from the morphosyntactic form cluster.} \glsxsee{definiteness cluster, deitality, weak definite.}}
+}
+
 \newglossaryentry{definitenesscluster}{
   name={definiteness cluster},
   text={definiteness cluster},
-  description={The semantic cluster of properties that make a referent identifiable: familiarity (discourse-old), uniqueness (one candidate in the domain), identifiability (hearer can pick it out). Maintained by discourse tracking, domain restriction, and Theory of Mind. Children acquire components sequentially: familiarity by age 2--3, uniqueness by 4--5, identifiability by 5--6. Distinct from the morphosyntactic form cluster (deitality). See Ch~10}
+  description={\glsdef{The semantic cluster of familiarity, uniqueness, and identifiability.} \glsmech{Maintained by discourse tracking, domain restriction, and Theory of Mind.} \glsdiag{Anaphoric recoverability and discourse behaviour.} \glsnote{Distinct from the morphosyntactic deitality cluster.} \glsxsee{deitality, Normal conditions.}}
+}
+
+\newglossaryentry{formcluster}{
+  name={form cluster},
+  text={form cluster},
+  description={\glsdef{The morphosyntactic bundle associated with English determiners (there-resistance, partitive \textit{of}, hosting).} \glsmech{Grammaticalization of demonstratives and stabilised distributional constraints.} \glsdiag{Convergence of structural diagnostics across determiners.} \glsnote{Also called the deitality cluster.} \glsxsee{deitality, definiteness.}}
+}
+
+\newglossaryentry{weakdefinite}{
+  name={weak definite},
+  text={weak definite},
+  description={\glsdef{A definite article use that lacks a unique or familiar referent (institutional/role frames).} \glsmech{A derived function exploiting stable form-cluster properties.} \glsdiag{Form-cluster behaviour without definiteness-cluster satisfaction.} \glsnote{Productive in stereotyped activity frames.} \glsxsee{deitality, definiteness, form cluster.}}
 }
 
 \newglossaryentry{normalconditions}{
   name={Normal conditions},
   text={Normal conditions},
-  description={In Millikan's framework: the conditions under which a device (form, construction) performs its proper function—the circumstances that explain its reproductive success. Example: the definite article's Normal conditions include speaker and hearer sharing a discourse model and the referent being uniquely identifiable within it. Derived functions (weak definites, generics) exploit stable side effects while the Normal function remains intact elsewhere. See Ch~10}
+  description={\glsdef{The circumstances under which a device performs its proper function.} \glsmech{Sustained by shared context and recoverable referents.} \glsdiag{Breakdown produces miscoordination; derived uses exploit stable side effects.} \glsnote{Frames proper vs. derived function.} \glsxsee{proper function, derived proper function.}}
 }
 
 % ===== General framework =====
@@ -156,43 +240,61 @@
 \newglossaryentry{fieldrelativeprojectibility}{
   name={field-relative projectibility},
   text={field-relative projectibility},
-  description={The principle that a category's projectibility is indexed to an analytical domain—different subfields may have different right-sized categories for overlapping extensions. Example: for a botanist, \textit{tomato} is a fruit (projectibility indexed to reproductive structure); for a chef, it's a vegetable (projectibility indexed to culinary use). Both are correct for their purposes. Applied to grammar: definiteness (semantic) and deitality (morphosyntactic) project differently because they answer different questions. See Chs~6, 10}
+  description={\glsdef{Projectibility indexed to analytic purpose or domain.} \glsmech{Depends on task-specific stabilisers.} \glsdiag{A category may project for one purpose and fail for another.} \glsnote{Explains cross-cutting categories.} \glsxsee{projectibility, crosscutting kinds.}}
 }
 
 \newglossaryentry{twodiagnostictest}{
   name={two-diagnostic test},
   text={two-diagnostic test},
-  description={The framework for determining whether a putative category is a genuine HPC kind. Two independent diagnostics must be satisfied: (1) \emph{projectibility}—knowing an item belongs to the category supports induction about its other properties; (2) \emph{homeostasis}—identifiable mechanisms maintain the cluster under perturbation. Example: the count cluster passes both (plural marking predicts cardinal compatibility; bidirectional inference maintains the coupling). Thin categories fail homeostasis; fat categories fail projectibility. See Ch~8}
+  description={\glsdef{The criterion for genuine kinds: projectibility plus homeostasis.} \glsmech{Implemented by pairing the projectibility and homeostasis diagnostics.} \glsdiag{Pass both to count as an HPC; fail one to diagnose thin/fat/negative.} \glsnote{Operational rather than definitional.} \glsxsee{projectibility, homeostasis, perturbation sensitivity.}}
+}
+
+\newglossaryentry{noun}{
+  name={noun},
+  text={noun},
+  description={\glsdef{A lexical category associated with nominals and argument structure.} \glsmech{Maintained by distributional cues, morphology, and acquisition biases.} \glsdiag{Cliquish stability across multiple diagnostics (determiners, number, agreement).} \glsnote{Cross-linguistic comparability requires mechanism mapping.} \glsxsee{verb, subject, copied kind.}}
+}
+
+\newglossaryentry{verb}{
+  name={verb},
+  text={verb},
+  description={\glsdef{A lexical category associated with predication and event structure.} \glsmech{Maintained by distributional frames, inflectional paradigms, and acquisition.} \glsdiag{Convergent diagnostics (tense/aspect marking, argument structure).} \glsnote{Stability varies by language and construction.} \glsxsee{noun, aspect.}}
+}
+
+\newglossaryentry{subject}{
+  name={subject},
+  text={subject},
+  description={\glsdef{A syntactic function cluster defined by converging behavioural and coding properties.} \glsmech{Agreement, word order, case marking, and discourse roles.} \glsdiag{Convergence of multiple diagnostics rather than a single definition.} \glsnote{Cross-linguistic identity is not guaranteed.} \glsxsee{comparative concept, category.}}
 }
 
 \newglossaryentry{copiedkind}{
   name={copied kind},
   text={copied kind},
-  description={A category whose members are produced from each other or from a common template—they share properties because they share a lineage, not because they share an essence (Millikan's term). Biological species are copied kinds; artefacts like screwdrivers are copied kinds; grammatical categories are copied kinds par excellence. See Ch~4}
+  description={\glsdef{A category whose members are produced from each other or a common template.} \glsmech{Maintained by a transmission lineage with variation.} \glsdiag{Similarity explained by copying rather than essences.} \glsnote{Grammatical categories are copied kinds par excellence.} \glsxsee{replicator, interactor.}}
 }
 
 \newglossaryentry{unicept}{
   name={unicept},
   text={unicept},
-  description={A concept that tracks sameness through multiple fallible methods—we recognise a friend by face, voice, gait, or handwriting, with none privileged as definitional (Millikan's term). Applied to grammar: we identify nouns through plural morphology, determiner compatibility, argument positions, semantic features, and more. The category is what the diagnostics converge on, not what any single diagnostic defines. See Ch~4}
+  description={\glsdef{A concept that tracks sameness through multiple fallible methods (Millikan).} \glsmech{Sustained by convergent cues with no privileged diagnostic.} \glsdiag{Cliquish stability: some cues reliably indicate the cluster.} \glsnote{Matches multi-diagnostic category tracking.} \glsxsee{cliquish stability, two-diagnostic test.}}
 }
 
 \newglossaryentry{iteratedtransmission}{
   name={iterated transmission},
   text={iterated transmission},
-  description={The process by which language is passed imperfectly across generations, with structure emerging from the transmission dynamics themselves. Easy-to-learn variants survive; hard-to-learn variants are distorted or lost. Kirby's artificial-language experiments show that arbitrary initial languages become compositional through iterated transmission. See Ch~4}
+  description={\glsdef{Structure emerging from multi-generational learning bottlenecks.} \glsmech{Produced by filtering for learnable variants.} \glsdiag{Convergence toward compressible/compositional systems.} \glsnote{A macro-stabiliser of linguistic structure.} \glsxsee{copied kind, entrenchment.}}
 }
 
 \newglossaryentry{perturbationsensitivity}{
   name={perturbation sensitivity},
   text={perturbation sensitivity},
-  description={The diagnostic test for genuine homeostasis: weaken a mechanism and the cluster should fray. A genuine HPC resists perturbation or self-corrects; a mere label is perturbation-inert. Example: heritage language attrition shows perturbation sensitivity—when transmission weakens, category boundaries become variable in predictable ways. See Ch~8}
+  description={\glsdef{The diagnostic that a category frays when a stabiliser is weakened.} \glsmech{Observed when interventions target acquisition, alignment, or transmission.} \glsdiag{Predictable degradation patterns under perturbation.} \glsnote{Operationalises homeostasis.} \glsxsee{homeostasis, stabiliser.}}
 }
 
 \newglossaryentry{cliquishstability}{
   name={cliquish stability},
   text={cliquish stability},
-  description={Slater's term: finding some properties reliably indicates the whole cluster. Cliquish stability can hold even when instance stability is imperfect—even if individual nouns drift, the correlation structure persists. This is what matters for induction: we care whether knowing an item is a noun licenses predictions about its other properties. See Ch~4}
+  description={\glsdef{Property-correlation: some cues reliably indicate the whole cluster.} \glsmech{Maintained by stabilisers that keep correlations intact despite drift.} \glsdiag{Knowing one property predicts others.} \glsnote{Supports induction without perfect instance stability.} \glsxsee{projectibility.}}
 }
 
 % ===== Discreteness and gradience (Ch 5) =====
@@ -200,19 +302,19 @@
 \newglossaryentry{dynamicdiscreteness}{
   name={dynamic discreteness},
   text={dynamic discreteness},
-  description={Discreteness that is achieved by mechanisms rather than given by essences. Category boundaries are sharp—membership is binary—but the sharpness is maintained by stabilising forces (acquisition, entrenchment, alignment, transmission) rather than by definitional content. The view dissolves the apparent contradiction between sharp categories and gradient judgments. See Ch~5}
+  description={\glsdef{Sharp boundaries produced by mechanisms rather than definitions.} \glsmech{Maintained by stabilisers that keep tolerance thresholds over time.} \glsdiag{Sharp judgments within speakers, variance across populations.} \glsnote{Explains discreteness without essences.} \glsxsee{relative tolerance, real gradience.}}
 }
 
 \newglossaryentry{realgradience}{
   name={real gradience},
   text={real gradience},
-  description={Gradient structure that is genuine evidence about category organisation, not noise to be explained away. Typicality judgments, variable acceptability, and boundary instability reflect distance from category cores maintained by mechanisms. Gradience is epistemic (in our access), not ontological (in membership itself). See Ch~5}
+  description={\glsdef{Gradient structure as meaningful distance from category centres.} \glsmech{Shaped by variable stabiliser strength across the basin.} \glsdiag{Typicality and marginality effects.} \glsnote{Gradience is signal, not noise.} \glsxsee{basin, dynamic discreteness.}}
 }
 
 \newglossaryentry{relativetolerance}{
   name={relative tolerance},
   text={relative tolerance},
-  description={The principle that changes negligibly small relative to the current scale preserve category membership, while changes appreciable at that scale may not. One grain doesn't matter when you have a thousand; it may matter when you have fifty. This explains why tolerance intuitions coexist with boundary intuitions—both are correct, just in different regimes. See Ch~5}
+  description={\glsdef{Membership depends on scale-relative tolerance of change.} \glsmech{Determined by decision thresholds indexed to context and magnitude.} \glsdiag{Small changes acceptable at one scale but not another.} \glsnote{Explains tolerance intuitions at category edges.} \glsxsee{dynamic discreteness.}}
 }
 
 % ===== Projectibility mechanisms (Ch 6) =====
@@ -220,19 +322,25 @@
 \newglossaryentry{mechanisticdrift}{
   name={mechanistic drift},
   text={mechanistic drift},
-  description={The phenomenon whereby the mechanisms that currently maintain a category may differ from those that originally produced it. Like a volcanic island now maintained by coral reefs rather than eruptions: the label names the island, not the volcano. Example: aspect labels may persist after the semantic invariants that motivated them have been replaced by lexeme-specific cue structures. See Ch~6}
+  description={\glsdef{Mechanisms that maintain a category can differ from those that originally produced it.} \glsmech{Driven by diachronic reconfiguration of stabilisers.} \glsdiag{Mismatch between current cues and historical rationale.} \glsnote{Explains semantic drift under stable labels.} \glsxsee{grammaticalisation.}}
+}
+
+\newglossaryentry{aspect}{
+  name={aspect},
+  text={aspect},
+  description={\glsdef{A grammatical category describing how events are temporally and structurally construed.} \glsmech{Maintained by distributional cue structures and morphological marking.} \glsdiag{Projectible patterns may diverge from textbook semantic definitions.} \glsnote{A comparative concept whose language-specific mechanisms can drift.} \glsxsee{projectibility, mechanistic drift.}}
 }
 
 \newglossaryentry{grueproblem}{
   name={grue problem},
   text={grue problem},
-  description={Goodman's riddle: why do we project \enquote{green} but not \enquote{grue} (green if examined before time $t$, blue otherwise)? The mechanistic answer: green is projectible because mechanisms produce greenness; no mechanism produces grueness. Applied to language: \textsc{noun} projects because mechanisms cluster nominal properties; pseudo-categories like \enquote{words starting with B} don't. See Ch~6}
+  description={\glsdef{Goodman's riddle: why do we project \enquote{green} but not \enquote{grue}?} \glsmech{Explained by the fact that only mechanism-grounded properties are projectible.} \glsdiag{Gerrymandered predicates fail induction.} \glsnote{Applied to language, pseudo-categories lack mechanisms.} \glsxsee{projectibility.}}
 }
 
 \newglossaryentry{crosscuttingkinds}{
   name={crosscutting kinds},
   text={crosscutting kinds},
-  description={Khalidi's term: overlapping classification schemes where the same entity can be a node in multiple causal networks simultaneously. A tomato is both a fruit (botanical mechanisms) and a vegetable (culinary mechanisms). Applied to grammar: definiteness (semantic) and deitality (morphosyntactic) are crosscutting kinds with overlapping extensions. See Ch~6}
+  description={\glsdef{Overlapping causal networks where the same entity belongs to multiple kinds.} \glsmech{Maintained by distinct stabilisers for each network.} \glsdiag{Different inductions for different purposes.} \glsnote{Cross-cutting is expected under field-relative projectibility.} \glsxsee{field-relative projectibility.}}
 }
 
 % ===== Essentialism and its alternatives (Ch 1–3) =====
@@ -240,36 +348,41 @@
 \newglossaryentry{nominalism}{
   name={nominalism},
   text={nominalism},
-  description={The view that categories are convenient fictions—labels we apply for practical purposes without claiming they correspond to natural kinds. Haspelmath's comparative concepts are nominalist in spirit: useful tools for cross-linguistic comparison, not discoveries about the mind. The HPC framework rejects nominalism: categories are real because maintained. See Ch~3}
+  description={\glsdef{The view that categories are convenient labels without commitment to natural kinds.} \glsmech{Requires no stabiliser story.} \glsdiag{No homeostasis or projectibility demanded.} \glsnote{Rejected by the maintenance view.} \glsxsee{essentialism, comparative concept.}}
 }
 
 \newglossaryentry{grammaticalisation}{
   name={grammaticalisation},
   text={grammaticalisation},
-  description={The diachronic process by which lexical items become grammatical markers. \textit{Will} went from volitional verb to future auxiliary; \textit{while} from noun to subordinator. Grammaticalisation trajectories are gradual, driven by frequency, phonological reduction, semantic bleaching, and reanalysis. The boundary zone is populated because language change populates it. See Ch~2}
+  description={\glsdef{Diachronic shift from lexical item to grammatical marker.} \glsmech{Driven by frequency, reduction, reanalysis, and semantic bleaching.} \glsdiag{Layering and distributional expansion over time.} \glsnote{Creates form–meaning decouplings that later stabilise.} \glsxsee{mechanistic drift.}}
 }
 
 \newglossaryentry{replicator}{
   name={replicator},
   text={replicator},
-  description={In David Hull's framework: an entity that passes copies of itself through time, with variations filtered by transmission. Linguistic variants are replicators—they reproduce across speakers and generations, with easier-to-learn variants out-competing harder ones. The replicator concept links language to evolutionary dynamics without requiring genetic inheritance. See Ch~5}
+  description={\glsdef{An entity that passes copies of itself through time with variation (Hull).} \glsmech{Sustained by transmission with differential survival.} \glsdiag{Selection on variants across generations.} \glsnote{Supports evolutionary framing of language change.} \glsxsee{interactor, copied kind.}}
 }
 
 \newglossaryentry{interactor}{
   name={interactor},
   text={interactor},
-  description={In David Hull's framework: an entity that interacts with its environment in ways that cause differential replication. Communicative episodes are interactors—they're where selection pressure applies to linguistic variants. Successful communication reinforces the forms used; failed communication weakens them. See Ch~5}
+  description={\glsdef{An entity that interacts with its environment in ways that cause differential replication (Hull).} \glsmech{Realised in communicative success and failure.} \glsdiag{Selection pressure visible in usage patterns.} \glsnote{Pairs with replicator in an evolutionary account.} \glsxsee{replicator.}}
 }
 
 \newglossaryentry{verblessclause}{
   name={verbless clause},
   text={verbless clause},
-  description={A construction with subject + predicate structure but no verb in the predicate (e.g., \textit{with their hands above their heads}). \textit{CGEL} calls these clauses despite defining clauses as VP-headed—a telling inconsistency. The HPC view explains why: VP-headedness and predication usually cluster but can come apart where mechanisms compete. See Ch~2}
+  description={\glsdef{A clause-like construction with subject–predicate structure but no verb in the predicate.} \glsmech{Arises under competing diagnostics (predication vs. VP-headedness).} \glsdiag{Shows decoupling of form and function.} \glsnote{Illustrates pressure against essentialist definitions.} \glsxsee{two-diagnostic test.}}
+}
+
+\newglossaryentry{nonfiniteclause}{
+  name={non-finite clause},
+  text={non-finite clause},
+  description={\glsdef{A residual category for clauses lacking primary tense inflection.} \glsmech{No single shared mechanism maintains the set.} \glsdiag{Fails both projectibility and homeostasis across subtypes.} \glsnote{A negative class; best replaced by positive constructions.} \glsxsee{fat class, category.}}
 }
 
 \newglossaryentry{opentexture}{
   name={open texture},
   text={open texture},
-  description={Hart's term: the penumbral region where existing rules don't determine outcomes. Law responds to open texture with institutional repair (litigation, legislation). Natural language has no Supreme Court—grammaticalisation proceeds without appeal. Open texture in grammar is where mechanisms are weak or in competition. See Ch~2}
+  description={\glsdef{Hart's term for the penumbral region where rules underdetermine outcomes.} \glsmech{Emerges when stabilisers are weak or in competition.} \glsdiag{Persistent variability and institutional repair.} \glsnote{Grammar has no Supreme Court; resolution is emergent.} \glsxsee{dynamic discreteness, mechanistic drift.}}
 }
-
