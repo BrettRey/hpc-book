@@ -120,6 +120,28 @@ board-feedback-ch[NN]-[lastname].md      # First wave
 board-feedback-ch[NN]-[lastname]-v2.md   # Second wave with more context
 ```
 
+## Two Boards Required
+
+Every chapter needs BOTH boards:
+
+### Theoretical Board (from notes/advisory-board.md)
+Addresses mechanisms, evidence, cross-linguistic data, acquisition, philosophy
+- Linguists: Haspelmath, Croft, Dixon, Baker, Goldberg, Bybee, Tomasello, Kirby
+- Philosophy: Millikan, Rosch, Boyd, Dupré
+- Acquisition: Ambridge, Tomasello
+- Visualization: Tufte
+
+### Packaging Board (from notes/advisory-board.md)
+Addresses rhetoric, presentation, structure, reader experience
+- **Rhetoric**: McCloskey, Fahnestock, Booth
+- **Editors**: Lesser, Mendelson, McPhee
+- **Science communication**: Zimmer, Pinker
+- **Visual**: Tufte, Holmes
+- **Paradigm shifts**: Becker, Morris, Lakoff, Kuhn, Latour
+
+**Core Packaging (run for every chapter):**
+McCloskey, Lesser, Zimmer, Becker, Morris, Lakoff, Fahnestock, Holmes
+
 ## Chapter-Specific Board Suggestions
 
 ### Ch 9 (Countability)
@@ -129,7 +151,8 @@ Goldberg, Rosch, Bybee, Tomasello, Millikan, Becker, Zimmer, Tufte, Holmes
 Same as Ch 9, plus semanticists
 
 ### Ch 11 (Word Classes)
-Haspelmath, Croft, Dixon, Baker, Goldberg, Bybee, Tomasello, Kirby, Rosch, Millikan, Ambridge, Tufte
+**Theoretical**: Haspelmath, Croft, Dixon, Baker, Goldberg, Bybee, Tomasello, Kirby, Rosch, Millikan, Ambridge, Tufte
+**Packaging**: McCloskey, Lesser, Zimmer, Becker, Morris, Lakoff, Fahnestock, Holmes
 
 ### Ch 12 (The Stack - non-grammar cases)
 **Phonology case**: Labov, Bybee (sound change), Pierrehumbert, Kirby

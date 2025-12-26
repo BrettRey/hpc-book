@@ -1,7 +1,7 @@
 # HPC Book Project Status
 
 **Date**: December 25, 2025
-**Current Phase**: Part III Development; Ch 10 (Definiteness) complete; Ch 11 (Lexical Categories) planning
+**Current Phase**: Part III Development; Ch 10 complete; Ch 11 (Lexical Categories) plan approved, ready for drafting
 
 ### Session Work (Dec 24, 2025: "The Field-Relativity Breakthrough")
 - ✅ **Field-Relative Projectibility** principle established as a core book lens:
@@ -84,6 +84,33 @@
   - **Derived Functions Figure (Fig 10.2)**: TikZ flowchart in §10.5 showing historical path vs. functional parasitism.
   - **Diagnostics Table (Table 10.1)**: Refined with grouping headers (Core/Mixed/Non-members).
 
+### Session Work (Dec 25, 2025 evening: Typography + Ch 11 Planning)
+- ✅ **Bringhurst Typography Refinements**:
+  - Section headings: small-caps with marginal numbers
+  - Subsection headings: italics with marginal numbers
+  - `\mentionhead{}` macro for linguistic mentions in headings (math-mode angle brackets)
+  - `\abbr{}` macro: letterspaced small-caps via fontspec
+  - Block quotations: quoting package (same size, indented)
+  - Microtype protrusion enabled
+  - Document class: removed a4paper (geometry controls size)
+  - All heading mentions updated to use `\mentionhead{}`
+- ✅ **Epigraph Consistency**: All 5 epigraphs standardized (em-dash before attribution, dates added)
+- ✅ **Full Book Build**: 285 pages, 51MB PDF verified
+- ✅ **Chapter 4 Title Fixed**: "Categories without essences" (not "Kinds")
+- ✅ **Colophon Fixed**: Georg Duffner (not Mayr-Duffner) for EB Garamond
+- ✅ **Chapter 11 Implementation Plan Created**:
+  - Read all 32 files in `notes/ch11/` (25+ advisor feedback files)
+  - **Three-act structure approved**: Wastebasket → Skeleton → Mimics
+  - **Shark/Dolphin/Ichthyosaur metaphor approved**: convergent evolution for mechanism-braiding
+  - **Wallace epigraph approved** (1867 mimicry quote)
+  - Title: "Lexical categories and their maintenance"
+  - Scope framing: four major classes + pronouns; functional categories deferred
+  - §11.4 (Adjectives) fully developed with mechanism table
+  - Field-relative projectibility integrated into summary section
+  - Target: ~6200 words, 8 sections
+  - Plan saved to `notes/ch11/ch11-implementation-plan.md`
+- ✅ **CHAPTER_OUTLINE.md Updated**: Ch 11 entry revised with new title and key points
+
 ## Completed
 
 - ✅ Project repository initialized with Git
@@ -156,9 +183,9 @@
 ## Next Actions
 
 ### Immediate
-1. **Ch 11 Draft** - Lexical categories (noun/verb contrast); grist exists
-2. **Ch 12 Outline** - Constructions case study
-3. **Ch 14 Mereology Section** - Typed mereology content from `linguistics-mereology/` project; projectability as field-specificity criterion
+1. **Ch 11 Draft** - Lexical categories; implementation plan approved (`notes/ch11/ch11-implementation-plan.md`)
+2. **Ch 12 Outline** - "The Stack" (phonemes to constructions)
+3. **Ch 14 Mereology Section** - Typed mereology content from `linguistics-mereology/` project
 
 ### Medium-term (Next 2-3 Months)
 1. Draft Part III chapters (9-12)

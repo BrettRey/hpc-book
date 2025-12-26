@@ -129,13 +129,15 @@
 - Form and function as separate HPC kinds
 - Why misalignment is stable
 
-### Ch 11: Word classes
-*The adjective-adverb asymmetry as architectural equilibrium*
+### Ch 11: Lexical categories and their maintenance
+*What holds word classes together — or fails to*
 
 **Key points:**
-- Cross-linguistic stability of nouns/verbs
-- Adjective-adverb variation
-- Architectural equilibrium: mechanisms at different scales
+- Adverbs as failure case (the wastebasket — no unified proper function)
+- Nouns/Verbs as robust HPCs (cross-linguistic stability, convergent mechanisms)
+- Adjectives as thinner HPCs (weaker maintenance regimes)
+- "Pronouns" as mechanism-braiding: Shark/Dolphin/Ichthyosaur convergent evolution
+- Scope framing: four major classes + pronouns; functional categories deferred
 
 ### Ch 12: The stack
 *From phonemes to constructions—variations in coupling*

@@ -58,3 +58,33 @@ Brett's paper "Personhood and pro-forms: A hierarchical analysis of gender in Mo
 This paper is direct evidence for the Chapter 11 argument that "pronoun" and related categories are heterogeneous HPCs with different underlying mechanisms producing overlapping surface distributions.
 
 **TODO**: Update `reynolds2025proform` bib entry when submitted to Folia Linguistica or accepted.
+
+---
+
+## Action Items from Board Review (Dec 25, 2025)
+
+### 1. The Core Narrative: "The Anatomist's Table" (Zimmer/Croft)
+Structure the chapter as a dissection lesson that reveals the "lie" of the dictionary list.
+- **The Wastebasket**: Start with Adverbs. Show the mess. A collection of fossils and functional scraps (Millikan).
+- **The Skeleton**: Move to Nouns/Verbs. The predictable, universal organs required for reference and predication.
+- **The Mimics**: End with "Pronouns/Wh-words." They look like a unified class ("function words"), but they are mimics.
+
+### 2. Key Metaphor: Convergent Evolution (Zimmer)
+- **Determiner Resistance = Hydrodynamic Constraint**.
+- **Deixis = Shark** (ancient, context-dependent).
+- **Anaphor = Dolphin** (relational, complex).
+- **Interrogatives = Ichthyosaur** (alternative-ranging).
+- They all look the same (no *the*) because they solve the same problem (reference saturation), but their internal biology (mechanisms) is totally different.
+
+### 3. Visualization (Tufte)
+- **Three-Panel Convergence**: Show three distinct upstream paths (Deixis, Binding, Alternatives) converging on the exact same downstream output (Blank Determiner Slot).
+- **Labeling**: "Same effect, different cause."
+
+### 4. Theoretical Refinement (Millikan/Baker)
+- **Interrogatives**: Their "saturation" isn't indexical. It's **restriction**. The wh-word *is* the restrictor of the alternative set. Adding 'the' would be double-restriction.
+- **Adjectives (Skeleton vs Plumage)**: N/V are essential organs. Adjectives are evolutionary luxury (plumage). Some languages have none (just verbs).
+
+### 5. Acquisition Check (Tomasello/Ambridge)
+- **The Twist**: Children learn the **strands** first (item-based *today*, *who*).
+- The "Braid" (the unified category of "determiner-less things") is an **adult/transmission illusion** created by compression (Kirby).
+- If children learned the braid first, they would make cross-strand errors (e.g., *the who*). They rarely do.

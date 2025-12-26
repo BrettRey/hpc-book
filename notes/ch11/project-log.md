@@ -12,17 +12,49 @@
     - Generated `notes/ch10-board-report.md` with insights from Khalidi, Latour, Croft, Lakoff, McCloskey, etc.
     - Integrated action items into `notes/chapter10-grist.md`.
     - Created `scripts/ch10-board-review.sh` for reproducible runs.
-- **Chapter 10 Final Polish**:
+    - **Chapter 10 Final Polish**:
     - **Conclusion Punched Up**: Replaced "pushes logic" with "play in the joint" metaphor; tightened arc (tight → loose → scarce).
     - **Rhetorical Audit**: Removed "critically", "simply", "clearly", "exactly"; checked sentence opener variety.
     - **Historical Precision**: Refined Russell/definiteness section to avoid overclaiming "formalization of the".
     - **Theoretical Softening**: Changed "selectional restriction" to "grammaticalized structural constraint".
     - **Build Verification**: Confirmed clean PDF generation.
-- **Visualizations Implemented**:
-    - **Decoupling Figure**: 2x2 matrix separating +Deital/+Definite (Core) from decoupled quadrants.
+- **Chapter 11 Preparation**:
+    - **Simulated Carl Zimmer**: Generated specific feedback on "mechanism-braiding" metaphor (Shark/Dolphin convergent evolution).
+    - **Board Review Synthesis**: Compiled feedback from 13 agents (Haspelmath, Croft, Dixon, Baker, Goldberg, Bybee, Tomasello, Kirby, Rosch, Millikan, Ambridge, Tufte, Zimmer) into `notes/ch11-board-report.md`.
+    - **Key Metaphor Locked**: "The Anatomist's Table" narrative arc (Wastebasket → Skeleton → Mimics).
+- **Visualizations Implemented**:    - **Decoupling Figure**: 2x2 matrix separating +Deital/+Definite (Core) from decoupled quadrants.
     - **Derived Functions Figure**: TikZ flowchart visualizing the "Stable Side Effects" argument in §10.5.
     - **Refined (Iter 6)**: Polished parasitic path—dashed lines without arrowheads for fan-in, single arrowhead at destination, label moved to vertical segment for clarity.
     - **Table 10.1 Refinement**: Added visual grouping to separate core form-cluster members from edge cases.
+
+## 2025-12-25 (evening): Typography + Ch 11 Planning
+
+### Bringhurst Typography Refinements
+- Section headings: small-caps with marginal numbers
+- Subsection headings: italics with marginal numbers
+- `\mentionhead{}` macro for mentions in headings (math-mode angle brackets)
+- `\abbr{}` macro: letterspaced small-caps via fontspec
+- Block quotations: quoting package (same size, indented)
+- Microtype protrusion enabled
+- All 5 epigraphs standardized (em-dash, dates)
+- Full book build: 285 pages, 51MB PDF
+
+### Chapter 11 Implementation Plan
+- **Read all 32 files** in `notes/ch11/` (25+ advisor feedback)
+- **Three-act structure**: Wastebasket → Skeleton → Mimics
+- **Key metaphor**: Shark/Dolphin/Ichthyosaur (convergent evolution)
+- **Epigraph**: Wallace 1867 on mimicry
+- **Title**: "Lexical categories and their maintenance"
+- **Scope framing**: four major classes + pronouns; functional categories deferred
+- §11.4 (Adjectives) fully developed with mechanism table
+- Field-relative projectibility integrated into §11.8
+- Target: ~6200 words, 8 sections
+- Plan saved to `notes/ch11/ch11-implementation-plan.md`
+
+### Fixes
+- Chapter 4 title: "Categories without essences"
+- Colophon: Georg Duffner (not Mayr-Duffner)
+- CHAPTER_OUTLINE.md: Ch 11 entry updated
 
 ---
 
