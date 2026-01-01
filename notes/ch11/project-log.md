@@ -718,3 +718,59 @@ This confirms the pattern noted in the squib project: the human notices the inte
 
 #### Meta-observation on LLM collaboration (Dec 24)
 > This session was a breakthrough in "agentic linguistics." By slowing down and refusing to implement, we moved from "organizing notes" to "generating theory." The human's refusal to accept a simple slogan pushed the model into a three-way philosophical analysis that actually improved the core thesis of the book. The "tomato hook" came directly from simulating an outside perspective (Zimmer), proving the value of adversarial LLM agents.
+
+---
+
+## 31 December 2025 — Chapter 12: Pro-form Gender
+
+### Session summary
+
+Drafted complete Chapter 12 (~4,500 words) reframing English gender as a hierarchical, personhood-based system realized across all pro-forms (not just pronouns). Based on deep reading of `literature/pro-form_gender.tex`.
+
+### The intellectual chain
+
+1. **Starting point**: Paper argues English gender's primary split is PERSONAL vs NON-PERSONAL, with masculine/feminine as subdivision within personal. System extends to wh-words, determinatives, pro-adverbs.
+
+2. **HPC framing**: Proposed two-cluster architecture paralleling Ch 9 (countability) and Ch 10 (definiteness):
+   - **Personhood cluster** (semantic): attributed person-status in discourse
+   - **Pro-form cluster** (morphosyntax): who/which, -body/-thing, he/she/it
+
+3. **Human corrections triggered refinement**:
+   - **"Failure modes? Mechanisms?"** — Pointed out the mechanisms section was generic, not gender-apt. Revised to: cognitive grounding, semantic transparency, error-and-repair.
+   - **"Indexicality tells you who I am"** — Caught misuse of term (indexicality = speaker identity, not attitude toward referent). Replaced with "semantic transparency."
+   - **"Don't be lazy"** — Called out footnote caveat as insufficient. Required proper section arguing pro-forms constitute a semantic category despite morphosyntactic heterogeneity.
+
+4. **Pro-form category argument** (new section): Three arguments for unity:
+   - Substitution function generates shared discourse properties (antecedent resolution)
+   - Gender constraint as positive evidence (same hierarchy applies cross-categorially)
+   - Symmetric violations (personhood-mismatches, not category-mismatches)
+   - Conclusion: pro-form is a **semantic HPC** maintained at discourse–grammar interface
+
+### Key lesson: Human as theory-checker
+
+> The LLM drafted a passable chapter quickly, but the *theoretical* quality came from human intervention:
+> - **Terminological precision**: "indexicality" correction
+> - **Intellectual honesty**: rejecting lazy caveats, demanding proper argumentation
+> - **Genre awareness**: recognizing that mechanisms should be *selected* for aptness, not listed generically
+>
+> Pattern from earlier sessions continues: LLM executes competently but requires human steering on theoretical substance.
+
+### Files created/updated
+
+- `chapters/chapter12.tex` — Complete chapter (~335 lines)
+- `notes/ch12-proform-gender-notes.md` — Planning notes
+- `references.bib` — 9 new entries (siemund2013, audring2009, dolberg2019, wu2025, dennett1976, waytz2010, shirvertesh2012, rispoli1994, etc.)
+
+### Commits on restructure-part-1
+
+- `41b4703` Draft new Chapter 12: Pro-form Gender as HPC
+- `76feece` Expand Ch 12: gender-specific mechanisms, pro-form caveat
+- `4227439` Fix: replace misused 'indexicality' with 'semantic transparency'
+- `777d132` Add proper 'Are pro-forms a category?' section
+
+### State at end of session
+
+- Chapter 12 complete and pushed
+- Full book now ~335 pages (estimated)
+- Ready for verification build
+
