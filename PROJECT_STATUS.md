@@ -1,9 +1,29 @@
 # HPC Book Project Status
 
-**Date**: December 27, 2025
-**Current Phase**: Part III Development; Ch 10 complete; Ch 11 plan approved; Ch 12 rough draft exists; Glossary redone
+**Date**: December 31, 2025
+**Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 rough draft exists; Glossary complete
+
+### Session Work (Dec 31, 2025: Literature Integration & Mechanisms Expansion)
+- ✅ **Three new papers integrated** (Raviv 2019, Wolters 2024, Koriat 2017):
+  - Added to `references.bib` with verified DOIs
+  - Analysis notes filed: `notes/new-literature-2025-12-31.md`
+  - Integrated citations into Chapter 4:
+    - Koriat 2017 (cue-sampling model) → supports HPC view of categorization
+    - Wolters 2024 (Zipfian distributions) → input structure as stabilizer
+    - Raviv 2019 (compositionality without transmission) → alignment as mechanism
+- ✅ **Chapter 7 expanded** with additional mechanisms paragraph:
+  - Analogy, Standardisation, Indexicality, Error-and-repair, Creativity
+  - Aligns book with fuller inventory in Labels_to_Stabilisers paper
+- ✅ **Hoeksema (2012) citation refined** in Chapter 6:
+  - Added page number (p. 30) for "twelve distinct licensing patterns" claim
+  - Changed "at least twelve" → "twelve" for precision
+- ✅ **Chapter 4 wording adjusted**:
+  - "a fuller picture" → "a more detailed treatment" (re: Ch 7 mechanism coverage)
+  - Fixed jarring Koriat→Ambridge transition with bridging sentence
+- ✅ **Root folder tidied**: Build artifacts moved to `build/`
 
 ### Session Work (Dec 27, 2025: Kim Correspondence)
+
 - ✅ **Jong-Bok Kim feedback received** on definiteness/deitality chapter
   - Endorses two-cluster separation (SYN[DEITALITY...] + SEM[DEFINITENESS...])
   - Favors construction-internal constraints over lexical listing
