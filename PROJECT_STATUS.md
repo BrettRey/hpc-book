@@ -1,7 +1,28 @@
 # HPC Book Project Status
 
-**Date**: December 25, 2025
-**Current Phase**: Part III Development; Ch 10 complete; Ch 11 (Lexical Categories) plan approved, ready for drafting
+**Date**: December 27, 2025
+**Current Phase**: Part III Development; Ch 10 complete; Ch 11 plan approved; Ch 12 rough draft exists; Glossary redone
+
+### Session Work (Dec 27, 2025: Kim Correspondence)
+- ✅ **Jong-Bok Kim feedback received** on definiteness/deitality chapter
+  - Endorses two-cluster separation (SYN[DEITALITY...] + SEM[DEFINITENESS...])
+  - Favors construction-internal constraints over lexical listing
+  - Korean evidence: demonstratives don't compete with bare NPs + topic (supports HPC prediction)
+  - On grammaticality: "licensing-based theory has no clear distinction between ? and ??" - useful for Ch 14 MMMG argument
+  - Filed: `correspondence/kim-jongbok-2025-12.md`
+  - Cross-referenced in: `countability/NOTES.md`
+
+### Session Work (Dec 26, 2025: Ch 12 Draft + Glossary)
+- 🔄 **Chapter 12 First Draft** ("Gender and the Maintenance Spectrum"):
+  - Ship/table hook contrasting live vs. dead gender
+  - Three cases: English (tuning fork), French (ID card), German (conflict zone)
+  - Maintenance spectrum table (transparent → entrenched)
+  - Implications: singular *they*, typological distinction, neural architecture prediction
+  - **Status**: Rough draft; may restart from scratch
+- ✅ **Glossary Redone** (`glossary.tex`):
+  - 50+ entries with consistent microstructure (definition → mechanism → diagnostic → note → see-also)
+  - Murray epigraph (OED Vol. 1)
+  - Covers core framework + chapter-specific terms (countability, definiteness, deitality)
 
 ### Session Work (Dec 24, 2025: "The Field-Relativity Breakthrough")
 - ✅ **Field-Relative Projectibility** principle established as a core book lens:
@@ -118,7 +139,7 @@
 - ✅ README.md with project overview
 - ✅ Synopsis finalized (~880 words)
 - ✅ Core thesis articulated (HPC kinds for linguistic categories)
-- ✅ 14-chapter structure defined (4 parts: Problem, Fix, Categories, Implications)
+- ✅ 15-chapter structure (4 parts: Problem, Fix, Categories, Implications) — gender chapter added Dec 26
 - ✅ House style guide established (`.house-style/style-guide.md`)
 - ✅ LaTeX preamble with custom macros (`.house-style/preamble.tex`)
 - ✅ Bibliography system (BibTeX with Biber backend)
@@ -138,6 +159,8 @@
 ### Part III: Categories Reconsidered (Chapters 9-12)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
 - ✅ **Ch 10**: Definiteness - complete and audited (Dec 25, 2025)
+- 🔄 **Ch 11**: Lexical Categories - plan approved; awaiting draft
+- 🔄 **Ch 12**: Gender and the Maintenance Spectrum - rough first draft (Dec 26); may restart (ship/table hook, transparent→entrenched spectrum, English/French/German cases)
 
 ### Session Work (Dec 15-16, 2025)
 - ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)
@@ -177,19 +200,24 @@
 
 ## In Progress
 
-- 🔄 Part III development (Chapters 11-12: remaining case studies)
-- 🔄 Ch 13 theoretical framework → prose draft
+- 🔄 **Ch 11** (Lexical Categories): Plan approved, ready to draft
+- 🔄 **Ch 12** (Gender): Rough draft exists; may restart
+- 🔄 **Ch 13** (The Stack): Bumped from original Ch 12 slot
+- 🔄 Ch 14 (Grammaticality): Theoretical framework developed; needs prose
+- 🔄 Ch 15 (Methodological Consequences): Was Ch 14
+
+**Note:** Book now 15 chapters (gender added Dec 26)
 
 ## Next Actions
 
 ### Immediate
 1. **Ch 11 Draft** - Lexical categories; implementation plan approved (`notes/ch11/ch11-implementation-plan.md`)
-2. **Ch 12 Outline** - "The Stack" (phonemes to constructions)
-3. **Ch 14 Mereology Section** - Typed mereology content from `linguistics-mereology/` project
+2. **Ch 12 Revision** - Gender draft needs work (or restart from scratch)
+3. **Ch 15 Mereology Section** - Typed mereology content from `linguistics-mereology/` project (was Ch 14)
 
 ### Medium-term (Next 2-3 Months)
-1. Draft Part III chapters (9-12)
-2. Draft Part IV chapters (13-14)
+1. Draft Part III chapters (11-12)
+2. Draft Part IV chapters (13-15)
 3. Create visualizations and figures
 
 ## Key Decisions Made

@@ -32,10 +32,14 @@ which claude && claude --version  # Anthropic Claude Code
 
 ### Codex (non-interactive)
 ```bash
-# IMPORTANT: Codex does NOT work with piped input.
-# Include "Read the file [PATH] first" in the prompt instead.
-# Codex needs more time than Gemini — allow ~2 minutes per agent.
-codex exec "Read the file [PATH] first. You are [ADVISOR NAME], [DESCRIPTION]. The question is: [Q1] (1) [Q2] (2) [Q3]. Write your advice to notes/board-[topic]-[advisor].md" > /dev/null 2>&1 &
+# CORRECT PATTERN (Dec 2025):
+# - Use --full-auto for automatic execution without prompts
+# - Use -C to set working directory
+# - Use -o to write final message to output file
+# - Codex will read files via shell commands automatically
+codex exec --full-auto -C /path/to/project -o notes/board-[advisor].md \
+  "Read main.tex and advisory-board.md. You are [ADVISOR NAME], [DESCRIPTION]. \
+   [Questions to address]. Give 4-5 paragraphs of critical, constructive feedback." &
 ```
 
 ### Gemini (MUST pipe content — file reading doesn't work in YOLO mode)
