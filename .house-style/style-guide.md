@@ -252,6 +252,19 @@ Maintain a strict distinction between comparative concepts and language-specific
 
 ---
 
+## Glossary Policy
+
+The glossary collects the book's **core theoretical apparatus**—HPC-specific terms like *projectibility*, *homeostasis*, *stabiliser*, *basin*. Each entry has a structured micro-format: definition, mechanism, diagnostic, cross-references.
+
+**Borrowed terminology** from CGEL or other frameworks (e.g., *predicative complement*, *fused determiner–head*, *macroroles*) should receive **inline parenthetical glosses** where they first appear, not glossary entries. These terms:
+- Clarify a local passage, not build the argument
+- Are encountered once and move on
+- Don't need the full mechanism/diagnostic treatment
+
+**Exception**: If a borrowed term becomes load-bearing in a later chapter, promote it to the glossary with a proper HPC-style entry.
+
+---
+
 ## BibTeX Conventions
 
 Protect capitals in proper nouns and first words after colons using braces:
