@@ -33,6 +33,8 @@ Both definition-based essentialism and \enquote{unreal} exemplarism fail to solv
 
 The answer lies in scale. A change that's negligible when you're far from a boundary becomes appreciable when you're close. That's why tolerance intuitions coexist with boundary intuitions~-- both are correct, just in different regimes. And the mechanisms that maintain categories~-- acquisition, entrenchment, alignment, transmission~-- are what keep the boundary where it is.
 
+A note on what follows: the discreteness is predicate-by-predicate. This framework doesn't force exclusivity~-- an item can be in two basins, as with dual membership in the noun-adjective zone. The worry that \mention{fun} or \mention{near} will be squeezed into one category or the other is addressed rather than suppressed. Overlap is allowed; the question is what maintains it.
+
 \subsection{The phase-transition intuition}
 \label{subsec:5:phase-intuition}
 
@@ -61,7 +63,7 @@ The principle is intuitive. When you're dealing with a clear heap~-- thousands o
 
 But \enquote{negligible} and \enquote{appreciable} are themselves vague. To make the principle precise, we need a framework that can handle the distinction rigorously. This is where nonstandard analysis helps.
 
-The next section is therefore not a philosophical aside. If tolerance is genuinely scale-sensitive, then the boundary region should have an identifiable empirical signature: judgments should become unstable as items approach it, and that instability should be selectively amplifiable by repetition and task framing. The formalism that follows is a way of stating those commitments precisely enough to be wrong.
+The next section is therefore not a philosophical aside. The formalism is designed to derive a concrete empirical prediction: that distance-to-boundary should predict judgment variance, with a characteristic functional form. If the hyperreal story is wrong, that variance signature should not appear. If the story is right, the variance pattern is not just compatible with the framework~-- it falls out of the mathematics.
 
 \section{A formal solution}
 \label{sec:5:formal-solution}
@@ -153,6 +155,8 @@ If $d(\mathbf{x}, \mathbf{x} + \Delta\mathbf{x}) / d(\mathbf{x}, \partial R_i)$ 
 \end{quote}
 
 Here $\mathbf{x}$ is a point in feature space, $\Delta\mathbf{x}$ is a perturbation, $d$ is a metric on the space, and $d(\mathbf{x}, \partial R_i)$ is the distance from $\mathbf{x}$ to the boundary of category $i$'s region. In plain language: perturbations that are infinitesimally small relative to the distance to the nearest boundary preserve categorization.
+
+But where does $\partial R_i$ come from? Not from an essence; that would be circular. The boundaries are estimated empirically~-- from distributional diagnostics, behavioural experiments, classifier decision surfaces~-- and the formalism characterises what tolerance around that surface entails. Alternatively, boundaries can be treated as theoretical objects maintained by mechanisms, their locations inferred from invariances: if a diagnostic holds across contexts and tasks, it is tracking a stable basin, not an artefact of measurement. The reciprocals and specification-curve methods introduced later (§\ref{sec:5:testing-stability}) are exactly this kind of probe.
 
 \paragraph{The metric question.}
 The notation $d(\cdot, \cdot)$ raises an immediate question: what metric? Grammatical features are heterogeneous. Some are ratio-scaled (frequency, duration). Some are ordinal (degree of acceptability). Some are binary (takes plural marking: yes/no). No single off-the-shelf metric applies to all.
