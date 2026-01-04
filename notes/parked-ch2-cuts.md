@@ -5,7 +5,7 @@ This file contains text cut from `chapters/chapter02.tex` during the redundancy 
 
 ## Destination: Chapter 3 (The Mechanistic Turn)
 
-### 1. Islands & Cuneo/Goldberg (Mechanism-first exemplar)
+### 1. Islands & Cuneo/Goldberg (Mechanism-first exemplar) [USED in Ch 3]
 *Context:* Use as an example of what the "mechanism-first reframing" looks like for a specific phenomenon (Islands) when definitions fail.
 *From:* Section 2.7 (A Parallel).
 
@@ -15,7 +15,7 @@ This file contains text cut from `chapters/chapter02.tex` during the redundancy 
 >
 > \textcite{CuneoGoldberg2023Discourse} asked a different question. Not: what structural definition captures islands? But: what mechanism produces extraction resistance? Their answer: long-distance dependencies foreground a constituent~-- the interrogative phrase becomes discourse-prominent~-- while certain constructions background their content. When foregrounding clashes with backgrounding, acceptability degrades. In a preregistered study, two independent measures of backgroundedness predicted acceptability judgments better than structural configuration did. Crucially, judgments were gradient, tracking the severity of the clash. There was no sharp island boundary to define because there was no essence~-- only a mechanism producing variable resistance depending on how severely the functions of the combined constructions conflicted.
 
-### 2. Culicover / Boundary Cases as Evidence (Methodological Maxim)
+### 2. Culicover / Boundary Cases as Evidence (Methodological Maxim) [USED in Ch 3]
 *Context:* Ch 3 is about what traditions *do* with boundary cases.
 *From:* Section 2.6 (The Blocked Question).
 
@@ -31,7 +31,7 @@ This file contains text cut from `chapters/chapter02.tex` during the redundancy 
 
 > Quine's \autocite*{quine1951} critique of Carnap \autocite*{carnap1937} deepens the problem. Carnap thought regimentation was analytically clean: stipulate meanings, derive consequences. Quine denied that any principled line separates stipulated meaning from empirical fact. Definitions carry empirical commitments you didn't intend. The definition of \mention{planet} excluded Pluto~-- a consequence no one anticipated when the criteria were framed. The IAU's definitional agonies were linguistics' own, but with better press coverage.
 
-### 4. Competence/Performance & Biology (Why Biology Doesn't Rescue Essences)
+### 4. Competence/Performance & Biology (Why Biology Doesn't Rescue Essences) [USED in Ch 3]
 *Context:* Anticipating the "innateness = essence" objection.
 *From:* Section 2.2 (Where Essentialism Works).
 
