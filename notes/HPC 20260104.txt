@@ -1,0 +1,33 @@
+PE comments on HPC ch.1 (2026-1-4)
+
+“cattle takes plural agreement”    cattle → Cattle
+
+“But go to the hospital doesn’t pick out a particular hospital.”
+doesn’t → needn’t  (Because in other contexts, the article can express definiteness: go to the hospital can mean “go to the particular hospital we’re talking about”.)
+
+“thought myself through that problem”
+The comment on this either is confused or has confused me. True, one doesn’t *“think a prob­lem”; however, your anomalous construction instead has a person as the object (cf *“I thought Brett through that problem”).
+
+“They are prototype theoryprototypes”    a straightforward typo
+
+“each lexical item assigned to exactly one major class” (Chomsky, Aspects)
+If, like me, they haven’t read Aspects, the reader may wonder what this means. If asked to con­sider both (i) “There it is on the table”, and (ii) “There is a problem here”, should the reader infer that Chomsky-1965 would say (A) that here are two tokens of the same lexical item, or that (B) here are one token each of two lexical items that happen to be homonymous? 
+
+“A noun is whatever satisfies the criteria for nounhood – it inflects for number, it heads noun phrases, it can be modified by adjectives.”
+An attractive observation indeed – for English, and a number of other languages. Of course not so for many other languages.
+
+“the Cambridge Grammar itself (Huddleston & Pullum, 2002, ch. 1)”   Italicize.
+
+“But the very fact of the transition [of fun] shows that the word is moving through a region that essen­tialism’s static picture can’t accommodate – a space between basins where competing mechanisms pull in different directions.”
+Sorry, but this doesn’t convince. I’m willing to be persuaded that the noun (or if you prefer, noun-like word) fun is dropping out of the lexica of those who use the adjective (or adjective-like word) fun – or even that fun is becoming less nouny as it becomes more adjectivey – but I’m not aware that this is happening.
+
+“But if categories are defined by necessary and sufficient conditions, how can a single word satisfy two incompatible definitions?”
+By positing two (or more) homonymous lexemes, each of which is in a single category? This is what CamGEL does, for the most part. (Of course, it’s not a panacea.)
+
+“Dog is a noun; run is a verb; quickly is an adverb.”    True. But dog can be a verb, run a noun.
+
+“If pressed, I would have acknowledged gradience; I would have granted that fun was a marginal noun.”
+“[W]as a marginal adjective” [as well as a firmly established noun]? But even within what’s indisputably English (as opposed to Scots, West Frisian, etc), people’s lects differ; can’t we say that the adjective fun is absent from the lexica of many people but firmly established (although not necessarily for all registers) in the lexica of many others?
+
+“the assumption that fun is either a noun or an adjective”
+Not so fast! Wiktionary has a plausible-sounding sub-entry for an English verb fun (e.g. “I was just funning you”).
