@@ -13,7 +13,7 @@ python code/validate_bib.py  # parse-check references.bib
 For faster iteration, uncomment only the chapter(s) you’re editing in `hpc-book.tex`.
 
 ## Coding Style & Naming Conventions
-Follow the house style in `.house-style/style-guide.md`. Key points: use macros like `\term{}` and `\mention{}` from `.house-style/preamble.tex`, use `langsci-gb4e` examples (no `exe` environment), prefer en-dashes with spaces for parentheticals, and keep contractions. Citations use `biblatex` (`\citep{}`, `\textcite{}`).
+Follow the house style in `.house-style/style-guide.md`. Key points: use macros like `\term{}` and `\mention{}` from `.house-style/preamble.tex`, use `langsci-gb4e` examples (no `exe` environment), prefer en-dashes with spaces for parentheticals, and keep contractions. **CRITICAL:** `\ex[judgement]` commands MUST wrap content in braces (e.g. `\ex[*]{content}`) to prevent build failures. Citations use `biblatex` (`\citep{}`, `\textcite{}`).
 Naming patterns: `chapters/chapterNN.tex`, `notes/chapterNN-master.md`, and `notes/chapterNN-grist.md`. Literature PDFs are named to match BibTeX keys.
 
 ## Testing Guidelines

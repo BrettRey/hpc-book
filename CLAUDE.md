@@ -72,6 +72,15 @@ Uses `langsci-gb4e` package. No `exe` environment:
 \z
 ```
 
+### Syntax Safety (Critical)
+
+- **`gb4e` examples with judgments:** When using `\ex` with an optional argument (like `[*]` or `[?]`), you **MUST** enclose the example content in braces `{...}`. Failure to do this causes `TeX capacity exceeded` errors by creating recursion loops in the `.aux` file via `hyperref`.
+    - **CORRECT:** `\ex[*]{\gll ... \\ ... \\ \glt ...}`
+    - **WRONG:** `\ex[*] \gll ... \\ ... \\ \glt ...`
+- **Bibliography hygiene:**
+    - Keys are case-sensitive in Biber/LaTeX interaction. Ensure `references.bib` case matches citations exactly.
+    - Year fields must be integers (`2024`), not ranges (`2008--2024`) or strings (`forthcoming`). Put extra info in `note={...}`.
+
 ### Citations
 
 Uses `biblatex` with APA style and `natbib=true`:
