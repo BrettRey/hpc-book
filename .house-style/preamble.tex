@@ -205,6 +205,18 @@
 % Mentions in headings: angle brackets (since headings are small-caps/italic)
 \newcommand{\mentionhead}[1]{$\langle$\textup{#1}$\rangle$}
 
+% TOC-specific version: bare italic (angle brackets look odd in roman TOC)
+\newcommand{\tocmention}[1]{\textit{#1}}
+
+% Swap \mentionhead for \tocmention while typesetting TOC
+\pretocmd{\tableofcontents}{%
+  \let\savedmentionhead\mentionhead
+  \let\mentionhead\tocmention
+}{}{}
+\apptocmd{\tableofcontents}{%
+  \let\mentionhead\savedmentionhead
+}{}{}
+
 % Technical terms when introduced (small caps, for key theoretical concepts)
 \newcommand{\term}[1]{\textsc{#1}}
 

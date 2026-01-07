@@ -14,10 +14,10 @@
 
 Consider two sentences about the same dog:
 
-\begin{exe}
-    \ex \label{ex:12:dog-it} \textit{The dog wagged its tail.}
-    \ex \label{ex:12:dog-who} \textit{Who's a good boy? Yes, you are!}
-\end{exe}
+\ea[]{\label{ex:12:dog-it}\mention{The dog wagged its tail.}}
+\z
+\ea[]{\label{ex:12:dog-who}\mention{Who's a good boy? Yes, you are!}}
+\z
 In (\ref{ex:12:dog-it}), the dog takes the non-personal pronoun \mention{it}. In (\ref{ex:12:dog-who}), addressed directly by its owner, the same animal takes the personal pronoun \mention{who} and receives \mention{you}. Nothing about the dog has changed. What changed is how the speaker construed the referent.
 
 This is the puzzle of English gender. Traditional accounts describe a three-way distinction~-- masculine, feminine, neuter~-- realized mainly on pronouns (\mention{he}, \mention{she}, \mention{it}). That description captures something, but it misses the organizing principle. The primary distinction in English gender isn't sex. It's personhood.
@@ -38,23 +38,27 @@ I'll argue that English gender, like countability (Chapter~\ref{ch:countability}
 
 Consider the relative pronouns:
 
-\begin{exe}
-    \ex \label{ex:12:doctor-who} \textit{The doctor who I saw was helpful.}
-    \ex \label{ex:12:doctor-which} \ungram{\textit{The doctor which I saw was helpful.}}
-    \ex \label{ex:12:book-which} \textit{The book which I read was helpful.}
-    \ex \label{ex:12:book-who} \ungram{\textit{The book who I read was helpful.}}
-\end{exe}
+\ea[]{\label{ex:12:doctor-who}\mention{The doctor who I saw was helpful.}}
+\z
+\ea[]{\label{ex:12:doctor-which}\ungram{\mention{The doctor which I saw was helpful.}}}
+\z
+\ea[]{\label{ex:12:book-which}\mention{The book which I read was helpful.}}
+\z
+\ea[]{\label{ex:12:book-who}\ungram{\mention{The book who I read was helpful.}}}
+\z
 
 The constraint is robust in standard written English. \mention{Who} for persons, \mention{which} for non-persons. The violations in (\ref{ex:12:doctor-which}) and (\ref{ex:12:book-who}) aren't merely odd~-- they're ungrammatical, comparable to agreement errors or subcategorization violations. This isn't pragmatic markedness; it's grammar.\footnote{Some constraints in the system are categorical in standard written English (\mention{who}/\mention{which}; core \mention{he}/\mention{she}/\mention{it} uses); others show the graded edge behaviour typical of HPC kinds (compound determinatives under shifted construals; chain-coherence effects). Where I mark examples with an asterisk, the notation indicates failure under the intended construal, not string ill-formedness.}
 
 The same split appears in interrogatives:
 
-\begin{exe}
-    \ex \label{ex:12:int-who} \textit{Who's coming to the party?} \hfill [asking about persons]
-    \ex \label{ex:12:int-what} \textit{What's in your purse?} \hfill [asking about non-persons]
-    \ex \label{ex:12:int-who-bad} \ungram{\textit{Who's in your purse?}} \hfill [under construal: asking about objects]
-    \ex \label{ex:12:int-what-bad} \ungram{\textit{What's coming to the party?}} \hfill [under construal: asking about persons]
-\end{exe}
+\ea[]{\label{ex:12:int-who}\mention{Who's coming to the party?} \hfill [asking about persons]}
+\z
+\ea[]{\label{ex:12:int-what}\mention{What's in your purse?} \hfill [asking about non-persons]}
+\z
+\ea[]{\label{ex:12:int-who-bad}\ungram{\mention{Who's in your purse?}} \hfill [under construal: asking about objects]}
+\z
+\ea[]{\label{ex:12:int-what-bad}\ungram{\mention{What's coming to the party?}} \hfill [under construal: asking about persons]}
+\z
 Examples (\ref{ex:12:int-who-bad}) and (\ref{ex:12:int-what-bad}) are grammatical only under shifted construals~-- if the speaker expects a person in the purse or a non-person attending the party. The choice of interrogative reveals the speaker's conceptualization of the potential referent.
 
 This is the \mention{who}/\mention{which} puzzle. Relative pronouns are not usually discussed under the heading of ``gender,''\footnote{Both \textcite{huddleston2002} and \textcite{quirk1985} treat the personal/non-personal distinction as a separate axis from the \mention{he}/\mention{she}/\mention{it} sex-based contrast. Most grammars fail to recognize the 
@@ -158,23 +162,21 @@ In English, it's the designatum~-- how the referent is conceptualized~-- that co
 
 Consider a case of referential metonymy:
 
-\begin{exe}
-    \ex \label{ex:12:metonymy} \textit{The French fries is waiting. She's upset.} \hfill \autocite{wu2025}
-\end{exe}
+\ea[]{\label{ex:12:metonymy}\mention{The French fries is waiting. She's upset.} \hfill \autocite{wu2025}}
+\z
 An NP with a default non-personal reading (\mention{the French fries}) is used to invoke a customer; subsequent anaphora tracks that metonymic designatum, yielding personal-feminine \mention{she}. The antecedent's form (plural, non-personal) doesn't control the pro-form; the conceptualized source does.
 
 Spanish does not readily permit this kind of pro-form shift while retaining ordinary agreement with the same antecedent NP. (The English number mismatch~-- plural label, singular verb~-- reflects a menu-item construal orthogonal to the pro-form point; in Spanish I keep agreement normal to isolate the controller issue.)
 
-\begin{exe}
-    \ex \label{ex:12:spanish}
-    \ea[*]{\gll \mention{Las} \mention{patatas} \mention{fritas} \mention{esperan}. \mention{Él} \mention{está} \mention{enfadado}.\\
+\ea\label{ex:12:spanish}
+    \ea[{*}]{\gll \mention{Las} \mention{patatas} \mention{fritas} \mention{esperan}. \mention{Él} \mention{está} \mention{enfadado}.\\
     \textsc{def.f.pl} potato.\textsc{f.pl} fried.\textsc{f.pl} wait.\textsc{3pl.pres} \textsc{3sg.m} be.\textsc{3sg.pres} angry.\textsc{m.sg}\\
     \glt Intended: `The French fries are waiting. He's upset.'}
     \ex[]{\gll \mention{Las} \mention{patatas} \mention{fritas} \mention{esperan}. \mention{El} \mention{señor} \mention{está} \mention{enfadado}.\\
     \textsc{def.f.pl} potato.\textsc{f.pl} fried.\textsc{f.pl} wait.\textsc{3pl.pres} \textsc{def.m.sg} gentleman.\textsc{m.sg} be.\textsc{3sg.pres} angry.\textsc{m.sg}\\
     \glt `The French fries are waiting. The gentleman is upset.'}
     \z
-\end{exe}
+\z
 Spanish requires grammatical agreement with the antecedent (\textit{patatas}, feminine plural), not semantic agreement with the metonymic designatum. The speaker typically recasts the controller with a human-denoting NP like \mention{\textit{el señor}} (`the gentleman') to achieve the intended reference. English permits categorical shifts based on conceptualization because it lacks NP-internal gender agreement: the designatum-driven pathway is freer. This is the signature of a designatum-driven system.
 
 
@@ -185,27 +187,29 @@ Spanish requires grammatical agreement with the antecedent (\textit{patatas}, fe
 
 Standard accounts keep gender within personal pronouns. \textcite[486]{huddleston2002} state that English gender is ``based purely on pronoun agreement.'' But the evidence shows the system extends across all pro-forms~-- the semantic class of items that take their meaning from another element in discourse.
 
-What unifies pro-forms is their \term{substitution function}: they designate by standing for something else. A pronoun stands for an NP; a pro-adverb stands for an adverb phrase; a wh-word stands for a constituent in a question or relative clause. This isn't a morphosyntactic category (there's no frame that selects for ``any pro-form''), but a semantic one. The gender constraint doesn't respect lexical-category boundaries: whatever property licenses \mention{who} also licenses \mention{somebody} and blocks \mention{something}.
+What unifies pro-forms is their interpretive dependence: they have minimal 
+descriptive content and take their value from context~-- linguistic, 
+situational, or conceptual. A pronoun stands for an NP; a pro-adverb stands for an adverb phrase; a wh-word stands for a constituent in a question or relative clause. This isn't a morphosyntactic category (there's no frame that selects for ``any pro-form''), but a semantic one. The gender constraint doesn't respect lexical-category boundaries: whatever property licenses \mention{who} also licenses \mention{somebody} and blocks \mention{something}.
 
-Recall the skink in the epigraph, whose \mention{one's} is epicene personal despite referring to a lizard. The speaker has construed the skink as capable of learning~-- an attribution of intentionality that licenses personal gender. The constraint applies across the entire substitution class.
+Recall the skink in the epigraph: first \mention{one's} (epicene personal, attributing the capacity to learn), then \mention{it} (non-personal, the default for a lizard). The chain shifts from personal to non-personal mid-sentence~-- exactly the kind of construal shift that §\ref{sec:12:chain-coherence} will show is possible but marked.
 
 \subsection{Determinatives}
 \label{sec:12:determinatives}
 
 The compound determinatives with \mention{-body} and \mention{-one} are personal:
 
-\begin{exe}
-    \ex \label{ex:12:somebody} \textit{Somebody left their coat.} \hfill [personal]
-    \ex \label{ex:12:somebody-bad} \ungram{\textit{Somebody fell off the table.}} \hfill [under construal: referring to an object]
-\end{exe}
+\ea[]{\label{ex:12:somebody}\mention{Somebody left their coat.} \hfill [personal]}
+\z
+\ea[]{\label{ex:12:somebody-bad}\ungram{\mention{Somebody is in your purse.}} \hfill [under construal: referring to an object]}
+\z
 Example (\ref{ex:12:somebody-bad}) is ungrammatical unless \mention{somebody} refers to a person who fell. These are epicene~-- they don't encode sex~-- but they do encode the personal/non-personal distinction.
 
 The compound determinatives with \mention{-thing} and \mention{-where} are non-personal:
 
-\begin{exe}
-    \ex \label{ex:12:something} \textit{Something is on the table.} \hfill [non-personal]
-    \ex \label{ex:12:something-bad} \ungram{\textit{Everything enjoyed themselves.}} \hfill [under construal: personal referents]
-\end{exe}
+\ea[]{\label{ex:12:something}\mention{Something is on the table.} \hfill [non-personal]}
+\z
+\ea[]{\label{ex:12:something-bad}\ungram{\mention{Everything enjoyed themselves.}} \hfill [under construal: personal referents]}
+\z
 Example (\ref{ex:12:something-bad}) requires personification to be grammatical. The boundary is discourse-driven rather than syntactically hard~-- exactly the HPC-style graded edge we expect.
 
 \subsection{Relative pro-forms}
@@ -213,15 +217,15 @@ Example (\ref{ex:12:something-bad}) requires personification to be grammatical. 
 
 The distinction between \mention{where}/\mention{when} and \mention{which} parallels the distinction between \mention{who} and \mention{which}:
 
-\begin{exe}
-    \ex \label{ex:12:room-where} \textit{the room where the painting was done} \hfill [room as location]
-    \ex \label{ex:12:room-which} \textit{the room which was painted} \hfill [room as patient]
-\end{exe}
+\ea[]{\label{ex:12:room-where}\mention{the room where the painting was done} \hfill [room as location]}
+\z
+\ea[]{\label{ex:12:room-which}\mention{the room which was painted} \hfill [room as patient]}
+\z
 
-\begin{exe}
-    \ex \label{ex:12:2010-when} \textit{2010, when I left} \hfill [as time]
-    \ex \label{ex:12:2010-which} \textit{2010, which has 365 days} \hfill [as entity]
-\end{exe}
+\ea[]{\label{ex:12:2010-when}\mention{2010, when I left} \hfill [as time]}
+\z
+\ea[]{\label{ex:12:2010-which}\mention{2010, which has 365 days} \hfill [as entity]}
+\z
 The same source (\mention{room}, \mention{2010}) takes different pro-forms depending on how it's conceptualized. This is designatum-driven selection applied to locative and temporal subtypes.
 
 
@@ -232,12 +236,14 @@ The same source (\mention{room}, \mention{2010}) takes different pro-forms depen
 
 Once a designatum is construed as personal or non-personal within a reference chain, mixing is disfavoured. Consider:
 
-\begin{exe}
-    \ex \label{ex:12:dog-chain-a} \textit{That's the dog who attacked his owner.} \hfill [personal chain]
-    \ex \label{ex:12:dog-chain-b} \textit{That's the dog which attacked its owner.} \hfill [non-personal chain]
-    \ex[]{\label{ex:12:dog-chain-c} \mmark{\textit{That's the dog which attacked his owner.}} \hfill [mixed]}
-    \ex[]{\label{ex:12:dog-chain-d} \mmark{\textit{That's the dog who attacked its owner.}} \hfill [mixed]}
-\end{exe}
+\ea[]{\label{ex:12:dog-chain-a}\mention{That's the dog who attacked his owner.} \hfill [personal chain]}
+\z
+\ea[]{\label{ex:12:dog-chain-b}\mention{That's the dog which attacked its owner.} \hfill [non-personal chain]}
+\z
+\ea[{}]{\label{ex:12:dog-chain-c}\mmark{\mention{That's the dog which attacked his owner.}} \hfill [mixed]}
+\z
+\ea[{}]{\label{ex:12:dog-chain-d}\mmark{\mention{That's the dog who attacked its owner.}} \hfill [mixed]}
+\z
 Examples (\ref{ex:12:dog-chain-a}) and (\ref{ex:12:dog-chain-b}) are fully acceptable~-- coherent personal and non-personal chains. Examples (\ref{ex:12:dog-chain-c}) and (\ref{ex:12:dog-chain-d}) are degraded~-- the chain starts in one gender and shifts to another mid-sentence.
 
 This is \term{chain-internal coherence}. The constraint isn't absolute~-- discourse can independently reclassify a designatum (personification, stance shift)~-- but absent such cues, speakers prefer consistency within a reference chain. The contrast is strongest when the speaker is not deliberately shifting stance.
@@ -265,11 +271,11 @@ In Chapter~\ref{ch:stabilizers}, we surveyed the general machinery that maintain
 
 \term{Cognitive grounding} provides the anchor. Personhood attribution is cognitively basic~-- grounded in Theory of Mind, face processing, and social cognition \autocite{waytz2010,carey2009}. Infants distinguish agents from non-agents within months of birth; by 12 months they attribute goals to entities that act contingently \autocite{csibra2003}. The person/non-person boundary is among the earliest conceptual distinctions humans make. This gives the personhood cluster a stability that purely grammatical categories lack: it's rooted in pre-linguistic cognition, not just in distributional patterns.
 
-\term{Semantic transparency} reinforces the coupling. The mapping from personhood to pro-form is largely predictable: if you know a referent is construed as a person, you can predict the pro-form inventory it will take. This transparency makes the system easy to learn and stable under transmission. Compare countability, where object-mass nouns like \mention{furniture} create opaque exceptions, or definiteness, where weak definites break the form--meaning correspondence. Gender has fewer such mismatches: the \mention{who}/\mention{which} alternation tracks personhood with high fidelity. The transparency of the mapping may facilitate acquisition: children do not produce the systematic gender-agreement errors characteristic of grammatical-gender languages when learning the \mention{who}/\mention{which} distinction, though direct acquisition studies of this specific contrast remain sparse.
+\term{semantic transparency} reinforces the coupling. The mapping from personhood to pro-form is largely predictable: if you know a referent is construed as a person, you can predict the pro-form inventory it will take. This transparency makes the system easy to learn and stable under transmission. Compare countability, where object-mass nouns like \mention{furniture} create opaque exceptions, or definiteness, where weak definites break the form--meaning correspondence. Gender has fewer such mismatches: the \mention{who}/\mention{which} alternation tracks personhood with high fidelity. The transparency of the mapping may facilitate acquisition: children do not produce the systematic gender-agreement errors characteristic of grammatical-gender languages when learning the \mention{who}/\mention{which} distinction, though direct acquisition studies of this specific contrast remain sparse.
 
-\term{Error and repair} operates through chain coherence and social charge. When a speaker shifts from \mention{who} to \mention{it} mid-chain, hearers notice. The mismatch triggers puzzlement, clarification requests, or mental correction. Crucially, gender mismatches are socially charged in a way that many grammatical errors aren't: calling a person \mention{it} is an insult; misgendering someone with \mention{he} when \mention{she} is appropriate triggers conversational repair \autocite{mcconnell-ginet2014}. This repair pressure keeps the personal/non-personal boundary sharp even as individual items (pets, robots) shift position on the personhood spectrum.
+\term{error and repair} operates through chain coherence and social charge. When a speaker shifts from \mention{who} to \mention{it} mid-chain, hearers notice. The mismatch triggers puzzlement, clarification requests, or mental correction. Crucially, gender mismatches are socially charged in a way that many grammatical errors aren't: calling a person \mention{it} is an insult; misgendering someone with \mention{he} when \mention{she} is appropriate triggers conversational repair \autocite{mcconnell-ginet2014}. This repair pressure keeps the personal/non-personal boundary sharp even as individual items (pets, robots) shift position on the personhood spectrum.
 
-These three mechanisms~-- cognitive grounding, semantic transparency, error-and-repair~-- account for the system's distinctive stability. Standard mechanisms (acquisition, entrenchment, transmission) also apply, but they don't explain why gender is more stable than, say, the count/non-count distinction for \mention{data}. What explains the stability is the convergence: personhood is cognitively basic, the mapping is transparent, and violations are repaired.
+These three mechanisms~-- cognitive grounding, semantic transparency, error and repair~-- account for the system's distinctive stability. Standard mechanisms (acquisition, entrenchment, transmission) also apply, but they don't explain why gender is more stable than, say, the count/non-count distinction for \mention{data}. What explains the stability is the convergence: personhood is cognitively basic, the mapping is transparent, and violations are repaired.
 
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -320,10 +326,10 @@ Like countability and definiteness, the pro-form gender system shows characteris
 
 Pets occupy the boundary. \textcite{shirvertesh2012} demonstrates that pets are often treated as persons, but flexibly~-- the attribution can shift with situation. This flexibility appears in pronoun usage:
 
-\begin{exe}
-    \ex \label{ex:12:cat-it} \textit{The cat licked its paw.} \hfill [non-personal default]
-    \ex \label{ex:12:cat-she} \textit{Poor Whiskers! She's not feeling well.} \hfill [personified]
-\end{exe}
+\ea[]{\label{ex:12:cat-it}\mention{The cat licked its paw.} \hfill [non-personal default]}
+\z
+\ea[]{\label{ex:12:cat-she}\mention{Poor Whiskers! She's not feeling well.} \hfill [personified]}
+\z
 Same referent, different construals. The slippage is systematic: speakers shift between personal and non-personal based on discourse framing, emotional involvement, and naming.
 
 \subsection{Collectives}
@@ -331,15 +337,14 @@ Same referent, different construals. The slippage is systematic: speakers shift 
 
 Collective nouns present a related puzzle:
 
-\begin{exe}
-    \ex \label{ex:12:team-its} \textit{The team has scored its first goal.} \hfill [singular, non-personal]
-    \ex \label{ex:12:team-their} \textit{The team have scored their first goal.} \hfill [plural, personal]
-\end{exe}
+\ea[]{\label{ex:12:team-its}\mention{The team has scored its first goal.} \hfill [singular, non-personal]}
+\z
+\ea[]{\label{ex:12:team-their}\mention{The team have scored their first goal.} \hfill [plural, personal]}
+\z
 The variation tracks construal: team-as-entity versus team-as-members. But combining singular verb with plural personal anaphora is marked:
 
-\begin{exe}
-    \ex \label{ex:12:team-themself} \mmark{\textit{The team has scored on themselves.}}
-\end{exe}
+\ea[]{\label{ex:12:team-themself}\mmark{\mention{The team has scored on themselves.}}}
+\z
 Many speakers accept singular verb + plural anaphora with collectives (\mention{The team has changed their strategy}), so the constraint is not absolute. What is stable is the preference: the combination of singular verb with singular personal reflexive (\mention{*The team has scored on themself}) is strongly disfavoured. Collectives expose a tension between individuation and personhood: singular construals resist person-marking unless the construal shifts to plural.
 
 \subsection{Infants}
@@ -347,9 +352,8 @@ Many speakers accept singular verb + plural anaphora with collectives (\mention{
 
 Human infants, paradigmatic persons, can take non-personal \mention{it}:
 
-\begin{exe}
-    \ex \label{ex:12:baby-it} \textit{The baby was crying because it was hungry.}
-\end{exe}
+\ea[]{\label{ex:12:baby-it}\mention{The baby was crying because it was hungry.}}
+\z
 This isn't a denial of personhood; it reflects temporary withholding of person-status~-- often when sex is unknown or when the discourse foregrounds non-personal properties \autocite{mcconnell-ginet2014}. The slippage reveals that personhood is an attribution, not a biological fact.
 
 \subsection{The \mentionhead{which}/\mentionhead{what}/\mentionhead{something} asymmetry}
@@ -357,15 +361,14 @@ This isn't a denial of personhood; it reflects temporary withholding of person-s
 
 Not all non-personal items behave identically. \textcite[499]{huddleston2002} note that \mention{which} can serve as an antecedent to \mention{he} or \mention{she}:
 
-\begin{exe}
-    \ex[]{\label{ex:12:which-he} \mmark{\textit{That's the dog which attacked his owner.}}}
-\end{exe}
+\ea[{}]{\label{ex:12:which-he}\mmark{\mention{That's the dog which attacked his owner.}}}
+\z
 This parallels the mid-sentence number shift we find with collectives. But the same shift seems degraded with \mention{what} and \mention{something}:
 
-\begin{exe}
-    \ex[]{\label{ex:12:what-he} \mmmark{\textit{What attacked his owner was this dog.}}}
-    \ex[*]{\label{ex:12:something-he} \textit{Something attacked his owner.} \hfill [with coreference]}
-\end{exe}
+\ea[{}]{\label{ex:12:what-he}\mmmark{\mention{What attacked his owner was this dog.}}}
+\z
+\ea[{*}]{\label{ex:12:something-he}\mention{Something attacked his owner.} \hfill [with coreference]}
+\z
 If these judgments are robust, \mention{something} and \mention{what} pattern with \mention{it} in resisting personal anaphora, while \mention{which} is more permissive. This might reflect gradience within the non-personal domain: some items are prototypically non-personal (\mention{something}, \mention{it}), others more marginal (\mention{which}). The asymmetry deserves systematic investigation.
 
 
