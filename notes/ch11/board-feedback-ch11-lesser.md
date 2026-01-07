@@ -5,7 +5,7 @@
 
 ## Where the chapter needs flesh
 
-**The mechanism-braiding narrative needs a full worked example, not a sketch.** You have the pro-form paper and the wh-word clustering work—use them. A reader unfamiliar with your prior work can't visualize how different mechanisms (deixis, anaphoricity, quantification) converge on the same distributional property (determiner resistance). Build it step by step: semantic pressure → entrenchment pattern → learning reinforcement. Show the reader *why* the surface clustering persists even as the underlying causes diverge. One case in depth beats three cases in outline.
+**The mechanism-braiding narrative needs a full worked example, not a sketch.** You have the pro-form paper and the \mention{wh}-word clustering work—use them. A reader unfamiliar with your prior work can't visualize how different mechanisms (deixis, anaphoricity, quantification) converge on the same distributional property (determiner resistance). Build it step by step: semantic pressure → entrenchment pattern → learning reinforcement. Show the reader *why* the surface clustering persists even as the underlying causes diverge. One case in depth beats three cases in outline.
 
 **The contrast with nouns and verbs needs defending on mechanism grounds, not just observational grounds.** You say nouns and verbs are cross-linguistically stable while adjectives and adverbs vary. Why? What mechanisms lock down noun-hood and verb-hood? Is it acquisition robustness? Discourse frequency? Cross-cultural alignment pressure? If you can't say, say that—but don't leave it as brute fact. The reader should feel the difference in *mechanistic depth*, not just taxonomic distribution.
 
@@ -17,7 +17,7 @@
 
 **Open with the paradox, not the premise.** You don't need to announce that word classes are "fundamental to generative grammar." Every linguist knows this. Start with the asymmetry: nouns and verbs are cross-linguistically robust; adjectives and adverbs fracture. Make the reader sit with that tension before you explain it. Urgency first, scaffolding later.
 
-**Avoid the "one more thing" syndrome.** If the chapter is about word classes and mechanism-braiding, don't dilute it with tangential cases. The pro-form work is rich; the wh-word clustering is genuine. But don't also add phonological contrasts, register effects, and pragmatic labels as "related" phenomena. You did that work in earlier chapters to establish the scope of HPC kinds. Here, stay put. Depth over breadth.
+**Avoid the "one more thing" syndrome.** If the chapter is about word classes and mechanism-braiding, don't dilute it with tangential cases. The pro-form work is rich; the \mention{wh}-word clustering is genuine. But don't also add phonological contrasts, register effects, and pragmatic labels as "related" phenomena. You did that work in earlier chapters to establish the scope of HPC kinds. Here, stay put. Depth over breadth.
 
 **Cut any meta-commentary about "previous theories."** Phrases like "unlike generative approaches, we ask not what divides these categories but what holds them together" are editorial scaffolding. They're true, but they slow the reader down. Show the difference through the work itself—what you ask and how you answer it will make the contrast obvious. Trust the argument.
 

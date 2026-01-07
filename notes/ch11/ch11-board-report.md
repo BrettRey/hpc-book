@@ -107,7 +107,7 @@
 
 ## ACTION ITEMS FOR CH 11
 
-1.  **Narrative Structure (The Anatomist's Table)**: Adopt Zimmer's arc. Start with the mess (Adverbs), find the bones (N/V), reveal the mimics (Pronouns/Wh-words).
+1.  **Narrative Structure (The Anatomist's Table)**: Adopt Zimmer's arc. Start with the mess (Adverbs), find the bones (N/V), reveal the mimics (Pronouns/\mention{wh}-words).
 2.  **The Shark/Dolphin Metaphor**: Use Zimmer's convergent evolution image to explain "mechanism-braiding." "Determiner resistance" is the hydrodynamic constraint.
 3.  **Refine the Interrogative Argument**: Use Millikan's "Alternative-ranging" function. It resists determiners because it *is* a restrictor, not because it's context-saturated.
 4.  **Add Acquisition Nuance**: Acknowledge Tomasello/Ambridge's point: children start with strands. The "braid" is the adult/system-level state, or the result of transmission compression (Kirby).

@@ -11,7 +11,7 @@ Draft Chapter 11 ("Lexical Categories") applying the HPC framework to word class
 1. Nouns and Verbs are robust cross-linguistic HPCs maintained by converging mechanisms
 2. Adjectives are thinner HPCs with variable maintenance
 3. Adverbs fail the HPC test entirely ("fat category" / wastebasket)
-4. "Pronoun" and "wh-word" are braided categories where distinct mechanisms converge on identical surface distributions
+4. "Pronoun" and "\mention{wh}-word" are braided categories where distinct mechanisms converge on identical surface distributions
 
 ---
 
@@ -43,7 +43,7 @@ The parallel: sharks, dolphins, and ichthyosaurs all evolved streamlined bodies 
 
 **Developing the Ichthyosaur (Interrogative) Strand:**
 - Interrogatives aren't saturated by context (deixis) or by prior antecedent (anaphor)
-- Their saturation is *restriction*: the wh-word *is* the restrictor of the alternative set
+- Their saturation is *restriction*: the \mention{wh}-word *is* the restrictor of the alternative set
 - Adding "the" would be double-restriction — imposing an external determiner on something that already ranges over alternatives
 - This is why *the who* sounds wrong not because it's redundant, but because you're trying to restrict a restrictor
 - Baker's formalist translation: [wh]/[Q] features occupy the C-system, competing with D-system; head competition excludes overt determiner

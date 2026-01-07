@@ -21,13 +21,13 @@ So: one surface fact (determiner resistance), three proper functions. The catego
 
 This is the thorniest case, and it matters most. Interrogatives aren't deictic—context doesn't do the work. They're not simple anaphors either—there's no prior antecedent. Yet they resist determiners exactly as their cousins do.
 
-In teleosemantics, content is fixed by what the sign was *selected for doing*. So: what was a wh-word in the interrogative position selected for? 
+In teleosemantics, content is fixed by what the sign was *selected for doing*. So: what was a \mention{wh}-word in the interrogative position selected for? 
 
 Not "saturation via context." Rather: **saturation via constraint on the quantifier domain**. The question *"Who did you see?"* uses *who* to ask which individual from the set of contextually available agents. The proper function is to *delineate alternatives*, not to refer to one of them.
 
 This is why *the who* sounds wrong—not because it's redundant (context already pins it down), but because you're trying to impose external restriction on something that's already a functional restrictor. The impropriety is functional, not semantic.
 
-Here's what excites me: this shows that **referential saturation comes in kinds**. The HPC clustering of "pronoun" (or wh-words) isn't unified by a single saturation mechanism; it's unified by *saturation of different types achieving the same grammatical consequence*. 
+Here's what excites me: this shows that **referential saturation comes in kinds**. The HPC clustering of "pronoun" (or \mention{wh}-words) isn't unified by a single saturation mechanism; it's unified by *saturation of different types achieving the same grammatical consequence*. 
 
 That's a genuine insight into why HPC categories can appear unified while their underlying mechanisms diverge.
 

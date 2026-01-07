@@ -31,7 +31,7 @@ PRO-FORM GENDER
 ### Key Claims
 
 1. **Personhood, not animacy**: Dogs take `it` unless personified; pets can take `who`
-2. **Pro-form scope**: System includes pronouns, determinatives (-body/-one/-thing/-where), wh-words, relative pro-forms
+2. **Pro-form scope**: System includes pronouns, determinatives (-body/-one/-thing/-where), \mention{wh}-words, relative pro-forms
 3. **Chain coherence**: Once a designatum is construed as personal/non-personal, mixing within a reference chain is disfavored
 4. **Genitive alignment**: English genitives (`her brother`) align with possessor, not head noun (cf. French `son frère`)
 

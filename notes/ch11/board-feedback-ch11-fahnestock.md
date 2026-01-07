@@ -7,7 +7,7 @@ The mechanism-braiding argument is your strongest move in this chapter, and it *
 
 Your chapter is built on **antimetabole** (terms swapped for conceptual turnover): "semantic fact becomes syntactic fact; syntactic fact entrenches semantic property." This reversal does real work — it dissolves the apparent boundary between levels. You're not just claiming they interact; you're showing *which direction* the entrenchment flows, and the chiastic structure makes that directionality visible.
 
-The **interrogative puzzle** section (wh-words as variables over alternatives) uses **gradatio** — a laddering through "neither deictic nor anaphoric, yet saturated because alternatives-based." Each step up the ladder adds a new constraint, building inevitability. This works. Don't lose it.
+The **interrogative puzzle** section (\mention{wh}-words as variables over alternatives) uses **gradatio** — a laddering through "neither deictic nor anaphoric, yet saturated because alternatives-based." Each step up the ladder adds a new constraint, building inevitability. This works. Don't lose it.
 
 The adverb-as-fat-category example in your outline relies on **contraposition** — showing what *fails* to be an HPC by contrast with what *succeeds*. The negative diagnosis (Chapter 8's principle applied) strengthens the positive claim. This is already implicit; make it explicit.
 

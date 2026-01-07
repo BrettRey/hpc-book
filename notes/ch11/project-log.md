@@ -729,7 +729,7 @@ Drafted complete Chapter 12 (~4,500 words) reframing English gender as a hierarc
 
 ### The intellectual chain
 
-1. **Starting point**: Paper argues English gender's primary split is PERSONAL vs NON-PERSONAL, with masculine/feminine as subdivision within personal. System extends to wh-words, determinatives, pro-adverbs.
+1. **Starting point**: Paper argues English gender's primary split is PERSONAL vs NON-PERSONAL, with masculine/feminine as subdivision within personal. System extends to \mention{wh}-words, determinatives, pro-adverbs.
 
 2. **HPC framing**: Proposed two-cluster architecture paralleling Ch 9 (countability) and Ch 10 (definiteness):
    - **Personhood cluster** (semantic): attributed person-status in discourse
