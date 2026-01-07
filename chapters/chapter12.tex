@@ -59,7 +59,8 @@ The same split appears in interrogatives:
 
 Examples (\ref{ex:12:int-who-bad}) and (\ref{ex:12:int-what-bad}) are grammatical only under shifted construals~-- if the speaker expects a person in the purse or a non-person attending the party. The choice of interrogative reveals the speaker's conceptualization of the potential referent.
 
-This is the \mention{who}/\mention{which} puzzle. Relative pronouns are not usually discussed under the heading of ``gender,''\footnote{Both \textcite{huddleston2002} and \textcite{quirk1985} treat the personal/non-personal distinction as a separate axis from the \mention{he}/\mention{she}/\mention{it} sex-based contrast.} but their distribution obeys exactly the same personhood-based constraint that governs \mention{he}/\mention{she}/\mention{it}. The puzzle dissolves when we recognize that both are manifestations of a single hierarchical system.
+This is the \mention{who}/\mention{which} puzzle. Relative pronouns are not usually discussed under the heading of ``gender,''\footnote{Both \textcite{huddleston2002} and \textcite{quirk1985} treat the personal/non-personal distinction as a separate axis from the \mention{he}/\mention{she}/\mention{it} sex-based contrast. Most grammars fail to recognize the 
+distinction at all.} but their distribution obeys exactly the same personhood-based constraint that governs \mention{he}/\mention{she}/\mention{it}. The puzzle dissolves when we recognize that both are manifestations of a single hierarchical system.
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 \section{The hierarchy}
@@ -70,18 +71,29 @@ The English pro-form gender system is hierarchically organized. At the top level
 
 \begin{figure}[htbp]
 \centering
-\begin{tabular}{l}
-\textsc{pro-form gender}\\
-\quad \textsc{personal}\\
-\qquad \textsc{epicene}\\
-\qquad \textsc{sexual}\\
-\qquad\quad \textsc{masculine}\\
-\qquad\quad \textsc{feminine}\\
-\quad \textsc{non-personal}\\
-\qquad \textsc{general}\\
-\qquad \textsc{locative}\\
-\qquad \textsc{temporal}\\
-\end{tabular}
+\begin{tikzpicture}[
+  level distance=1.2cm,
+  sibling distance=3.5cm,
+  every node/.style={font=\small\scshape},
+  edge from parent/.style={draw, thick},
+  level 1/.style={sibling distance=5cm},
+  level 2/.style={sibling distance=2.2cm},
+  level 3/.style={sibling distance=1.8cm}
+]
+\node {pro-form gender}
+  child {node {non-personal}
+    child {node {general}}
+    child {node {temporal}}
+    child {node {locative}}
+  }
+  child {node {personal}
+    child {node {epicene}}
+    child {node {sexual}
+      child {node {masculine}}
+      child {node {feminine}}
+    }
+  };
+\end{tikzpicture}
 \caption{Hierarchy of gender values for English pro-forms.}
 \label{fig:12:hierarchy}
 \end{figure}
@@ -96,7 +108,7 @@ Table~\ref{tab:12:inventory} shows the inventory. The leftmost column lists gend
 \small
 \setlength{\tabcolsep}{4pt}
 \centering
-\begin{tabular}{@{}p{2.2cm}p{2.0cm}p{1.5cm}p{1.5cm}p{2.0cm}p{1.0cm}p{1.0cm}@{}}
+\begin{tabular}{@{}p{2.2cm}p{2.0cm}p{1.5cm}p{1.5cm}p{2.5cm}p{1.0cm}p{1.0cm}@{}}
 \toprule
 \multicolumn{1}{c}{Gender-neutral} & \multicolumn{6}{c}{Gender-sensitive} \\
 \cmidrule(l){1-1} \cmidrule(l){2-7}
@@ -106,15 +118,16 @@ Table~\ref{tab:12:inventory} shows the inventory. The leftmost column lists gend
 \cmidrule(l){2-2} \cmidrule(l){3-3} \cmidrule(l){4-4} \cmidrule(l){5-5} \cmidrule(l){6-7}
 & & & & & Masc & Fem \\
 \midrule
-\mention{they}\textsubscript{pl} & \mention{it} & \mention{then} & \mention{there} & \mention{I}, \mention{we}, \mention{you}, \mention{they}\textsubscript{sg}, \mention{one}\textsubscript{gen} & \mention{he} & \mention{she} \\
+\mention{they}\textsubscript{pl} & \mention{it} & \mention{then} & \mention{there} & \mention{I}, \mention{we}\textsubscript{pron}, \mention{you}\textsubscript{pron}, \mention{they}\textsubscript{sg}, \mention{one}\textsubscript{gen} & \mention{he} & \mention{she} \\
 \addlinespace
 \mention{whose}\textsubscript{rel} & \mention{what}, \mention{which} & \mention{when} & \mention{where} & \mention{who}, \mention{whom}, \mention{whose}\textsubscript{int} \\
 \addlinespace
-\mention{this}, \mention{that} & & & \mention{here} \\
+\mention{this}, \mention{that} & & & \mention{here} & \mention{we}\textsubscript{det}, \mention{you}\textsubscript{det} \\
 \addlinespace
 & \mention{-thing} & & \mention{-where} & \mention{-body}, \mention{-one} \\
 \bottomrule
 \end{tabular}
+\par\smallskip\noindent\footnotesize\textit{Note.} Subscripts: \textsubscript{pl}~=~plural; \textsubscript{sg}~=~singular; \textsubscript{gen}~=~generic; \textsubscript{rel}~=~relative; \textsubscript{int}~=~interrogative; \textsubscript{pron}~=~pronoun; \textsubscript{det}~=~determinative (as in \mention{we linguists}, \mention{you guys}).
 \end{table}
 
 Several entries require comment. Plural \mention{they} is gender-neutral: it can refer to persons (\mention{There are some people. They are tall}) or non-persons (\mention{There are some trees. They are tall}) without constraint. Singular \mention{they}, however, is personal: \mention{There's a person. They are tall} is grammatical, but \mention{*There's a tree. They are tall} is not \autocite{bjorkman2017,konnellycowper2020}. The difference is that singular \mention{they} presupposes a personal designatum; plural \mention{they} does not.
