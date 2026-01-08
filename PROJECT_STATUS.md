@@ -1,7 +1,23 @@
 # HPC Book Project Status
 
-**Date**: December 31, 2025
-**Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 rough draft exists; Glossary complete
+**Date**: January 8, 2026
+**Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 polished draft; Glossary complete
+
+### Session Work (Jan 8, 2026: Chapter 12 Polish)
+- ✅ **Chapter 12 substantially revised** ("Pro-form Gender"):
+  - Demonstratives (*this*/*that*) reanalyzed as constructionally-conditioned (new §12.6.5)
+  - Table 12.1 footnote added for demonstratives
+  - French/English coherence comparison added
+  - Capstone sentence: "This coupling is the category we recognize as English gender"
+  - Mechanism claims softened (incomplete list acknowledged)
+  - Singular-they alignment example added (generational norm conflict)
+  - Prediction: *it* for infants may wane as singular *they* spreads
+  - *Much* observation added (count/mass interface with personhood)
+  - Terminology fixed for Ch5 consistency ("instability" not "graded membership")
+  - House style enforced (contractions, dashes, `\ungram{}` markers)
+- ✅ **Chapter 5 fixes**: Resolved `sec:5:testing-stability` and `fig:iterated-learning` undefined refs
+- ✅ **Snapshot saved**: `snapshots/hpc-book-2026-01-08-ch12-polish.pdf`
+- **Status**: Chapter 12 stable; ready for next chapter
 
 ### Session Work (Dec 31, 2025: Literature Integration & Mechanisms Expansion)
 - ✅ **Three new papers integrated** (Raviv 2019, Wolters 2024, Koriat 2017):
