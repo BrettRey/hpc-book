@@ -147,10 +147,10 @@
   {\llap{\thesection\quad}}
   {0pt}
   {}
-% Subsection: italic run-in style
+% Subsection: roman, number inline
 \titleformat{\subsection}
-  {\normalfont\normalsize\itshape}
-  {\llap{\thesubsection\quad}}
+  {\normalfont\normalsize}
+  {\thesubsection\quad}
   {0pt}
   {}
 
@@ -203,19 +203,20 @@
 \newcommand{\mention}[1]{\textit{#1}}
 
 % Mentions in headings: angle brackets (since headings are small-caps/italic)
-\newcommand{\mentionhead}[1]{$\langle$\textup{#1}$\rangle$}
+% Protected so it writes unexpanded to .toc/.aux files
+\DeclareRobustCommand{\mentionhead}[1]{$\langle$\textup{#1}$\rangle$}
 
 % TOC-specific version: bare italic (angle brackets look odd in roman TOC)
 \newcommand{\tocmention}[1]{\textit{#1}}
 
-% Swap \mentionhead for \tocmention while typesetting TOC
-\pretocmd{\tableofcontents}{%
+% Redefine \mentionhead to \tocmention while typesetting TOC
+\AddToHook{cmd/tableofcontents/before}{%
   \let\savedmentionhead\mentionhead
   \let\mentionhead\tocmention
-}{}{}
-\apptocmd{\tableofcontents}{%
+}
+\AddToHook{cmd/tableofcontents/after}{%
   \let\mentionhead\savedmentionhead
-}{}{}
+}
 
 % Technical terms when introduced (small caps, for key theoretical concepts)
 \newcommand{\term}[1]{\textsc{#1}}
