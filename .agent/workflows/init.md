@@ -94,6 +94,26 @@ latexmk hpc-book.tex
 - Branch: `restructure-part-1`
 - Commit after significant changes, push at session end
 
+## Quick Status (Zero-Token)
+
+```bash
+./quick-status.sh
+```
+Shows chapter status, active files, last build, git state. No Claude tokens.
+
+## Session Logging
+
+At session end, create/update `.agent/logs/session-YYYY-MM-DD.md` following the template in `SESSION-TEMPLATE.md`. Key sections:
+- **Decisions Made** - What should persist
+- **Context Learned** - Patterns/preferences discovered
+- **Next Session** - Where to pick up
+
+## Project-Level Hooks
+
+`.claude/settings.json` provides:
+- **SessionStart**: Reminder to read PROJECT_STATUS.md
+- **PostToolUse (.tex)**: House style and build reminders
+
 ## Other Workflows
 
 - `/git-hygiene` — Reminders for clean commits and branch management

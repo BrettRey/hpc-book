@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[HPC BOOK] Read PROJECT_STATUS.md for current state. Check notes/ch11/ch11-implementation-plan.md if working on Ch 11.'"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$CLAUDE_TOOL_ARG_file_path\" | grep -q '\\.tex$'; then echo '\\n[BUILD] Run: latexmk hpc-book.tex\\n[STYLE] \\\\term{} concepts | \\\\mention{} forms | \\\\enquote{} quotes | en-dash with spaces\\n'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
