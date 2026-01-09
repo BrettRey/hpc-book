@@ -67,20 +67,30 @@ The book is organized in four parts:
 - [x] Synopsis drafted (~880 words)
 - [x] Part I outline complete
 - [x] Part II outline complete
-- [ ] Part III outline
-- [ ] Part IV outline
+- [x] Part III outline complete
+- [x] Part IV outline complete
 - [x] **Chapter 1** drafted and revised (introduction to HPC framework)
 - [x] **Chapter 2** drafted and revised (essentialism critique, Aristotle rehabilitation)
-- [x] **Chapter 3** drafted (nominalist retreat, Shilluk example)
+- [x] **Chapter 3** drafted and revised (nominalist retreat, Shilluk example)
+- [x] **Chapter 4** drafted and revised (HPC introduction)
 - [x] **Chapter 5** drafted and revised (discreteness problem, hyperreal formalization)
-- [ ] Remaining chapter drafts
+- [x] **Chapter 6** drafted and revised (projectibility)
+- [x] **Chapter 7** drafted and revised (The Stabilisers, quotatives case study)
+- [x] **Chapter 8** drafted (Failure Modes, thin/fat/negative taxonomy)
+- [x] **Chapter 9** drafted and revised (Countability)
+- [x] **Chapter 10** drafted and revised (Definiteness)
+- [x] **Chapter 11** plan approved
+- [x] **Chapter 12** drafted and revised (non-grammar worked cases: phonemes, register)
+- [ ] **Chapter 13** planning ready (Grammaticality itself, double-copula vignette)
+- [ ] **Chapter 14** outlined (Methodological consequences)
 - [x] Figures for Chapters 1, 2, 5
 - [x] Bibliography (~3700 entries)
+- [x] Glossary redone (Dec 26)
 
 ## Next Steps
 
-1. Continue Packaging Board feedback implementation (Chapters 1–3)
-2. Draft remaining chapters (Part III–IV)
+1. Draft Chapter 13 (Grammaticality itself)
+2. Draft Chapter 14 (Methodological consequences)
 3. Integrate cross-chapter forward/back references
 4. Final polish pass on completed chapters
 5. Compile and review complete manuscript
@@ -93,4 +103,4 @@ The book is organized in four parts:
 
 ---
 
-*Last updated: December 15, 2025*
+*Last updated: January 8, 2026*

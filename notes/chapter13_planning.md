@@ -1,91 +1,113 @@
-# Chapter 13: Grammaticality itself — Planning Notes
+# Chapter 12: The Stack — Planning Notes (Non-grammar worked cases)
 
 **Date:** December 15, 2025  
-**Status:** Planning notes (no prose drafted)
+**Status:** Planning notes (no prose drafted)  
+**Related draft:** `literature/stack.tex` (older paper; different empirical choices)
 
 ---
 
-## Why this chapter needs a “double copula” example
+## What Chapter 12 has to do (given the broadened scope)
 
-The double-\mention{be} pattern (e.g. \mention{The thing is is that...}) is a compact way to show why \term{grammaticality} can’t be read straight off any single channel (school norms, edited prose, introspective “correctness” judgments, corpus frequency, or processing fluency).
+Chapter 12 is where the book cashes a promissory note: the HPC framework isn’t a metaphysics of *grammar-only* categories. But it also isn’t a license to call everything a kind.
 
-It’s high payoff because it naturally forces the reader to separate:
+So the chapter needs two non-grammar major cases:
 
-- **A maintained constructional frame** (e.g. \mention{the thing is (that) ...}) from
-- **Online production dynamics** (restart/repair, incremental planning) and from
-- **Institutional policing** (copy-editing norms, classroom correction, stigma).
+1. **A positive case** where the Two-Diagnostic Test is plausibly satisfied outside morphosyntax.  
+   Chosen motif: the /ɪ/–/ɛ/ contrast (the \mention{pin}/\mention{pen} boundary).
 
-That tri-part split is the chapter’s thesis in miniature.
+2. **A negative or grain-sensitive case** where the label names a useful phenomenon but not a single HPC at that grain.  
+   Chosen motif: academic–casual register plus honorifics/politeness (as a bundled social category).
 
----
-
-## The phenomenon (minimal description)
-
-- Common speech pattern: \mention{The thing is is that...}, \mention{What it is is...}, \mention{The problem is is...}
-- Strong register asymmetry: typical in spontaneous speech; rare in edited academic prose; often treated as an “error” in prescriptive contexts.
-- Intuitive acceptability split: many speakers produce it while also disavowing it as “wrong”.
-
-The key is to treat this not as a curiosity but as a diagnostic: it exhibits stability in use alongside instability in metalinguistic evaluation.
+The rhetorical job: show that the framework scales, and that it also tells you when *not* to scale.
 
 ---
 
-## What it should do in Ch 13 (functions)
+## Case A (positive): /ɪ/–/ɛ/ as a phonological HPC target
 
-### 1) Demonstrate “measurement-channel divergence”
+### The phenomenon
 
-Use double-copula to motivate the claim that grammaticality is a cluster accessed by multiple instruments that can disagree:
+- For many English speakers, /ɪ/ vs /ɛ/ anchors lexical contrasts (\mention{pin} vs \mention{pen}).
+- In some varieties, the contrast neutralises in particular environments (before nasals is the familiar story), which makes this a natural place to talk about boundary stability plus conditioned failure.
 
-- **Production evidence:** spontaneous tokens, especially in planning-heavy discourse frames.
-- **Comprehension evidence:** listeners typically parse it without breakdown (often unnoticed).
-- **Judgment evidence:** explicit judgments may be harsher under “school grammar” framing than under “naturalness” framing.
-- **Institutional evidence:** style guides and editors strongly suppress it in print.
+### What the “cluster” is (properties that travel together)
 
-### 2) Make the looping effect concrete
+Not a definition of /ɪ/ or /ɛ/, but a converging bundle:
 
-Tie it to the “Hacking looping effect” note: prescriptive attention doesn’t just report stability/instability; it becomes a feedback loop that changes distributions (especially in literate, standardised varieties).
+- **Acoustic cues:** distributions in F1/F2 space; cue trading; contextual variation from coarticulation.
+- **Production routines:** reliable articulatory targets (with contextual undershoot).
+- **Lexical contrast:** minimal pairs and near-minimal pairs that “pay” for the contrast.
+- **Phonotactic distribution:** where the vowels are licensed and how they pattern in the inventory.
+- **Perceptual categorisation:** the listener’s mapping from continuous cues to discrete classes.
+- **(Optional) orthographic scaffolding:** spelling as an additional stabiliser in literate communities (use cautiously; don’t overclaim).
 
-### 3) Connect to the HPC grain claim
+The HPC claim here is local: a phoneme contrast is a maintained cluster of cue-bundles and behavioural dispositions, not an essence.
 
-Frame grammaticality at the right grain:
+### Stabilisers to emphasise (mechanisms)
 
-- The HPC target is not “English grammaticality” in the abstract.
-- It’s the stability (or instability) of particular \emph{constructional pairings} and their variants under competing mechanisms.
+Map these explicitly onto the book’s stabiliser palette:
 
-Double-copula lets you show an item that’s stable in one ecology (spoken, informal, realtime planning) and actively suppressed in another (edited prose), without treating that as contradiction.
+- **Acquisition:** distributional learning + category formation under noise.
+- **Entrenchment:** high-frequency words give dense, repeated evidence; low-frequency words “ride along”.
+- **Interactive alignment:** phonetic accommodation can reinforce community norms.
+- **Transmission:** iterated learning over generations; the sound change literature as the macro-timescale.
+- **Functional pressure:** contrast maintenance when the contrast has communicative load; drift/merger where the load is low or cues are unreliable.
+- **Social indexing:** the contrast (and its conditioned loss) as dialect identity signal.
 
----
+### Diagnostics and disconfirmers (notes, not prose)
 
-## Mechanism sketch (for later prose, not to write now)
+- **Projectibility (what the good bet looks like):** from finite exposure, speakers can classify new tokens, understand novel minimal pairs, and generalise the contrast to new lexical items in the relevant environments.
+- **Homeostasis (what perturbation should do):** perturb the stabilisers (cue reliability, input mix, alignment ecology) and you should see predictable fraying: conditioned neutralisation, increased variance, near-mergers, reweighting of cues.
+- **Disconfirmation condition (shape):** find a community where /ɪ/–/ɛ/ is highly projectible and stable *without* any stable cue bundle, lexical anchoring, or alignment/transmission support (i.e., no plausible maintenance story). If that existed, the HPC framing would be idle.
 
-Candidate maintenance story to test (don’t overcommit without data):
+### Likely citations already in `references.bib` (for later integration)
 
-- **Entrenchment of a frame:** \mention{The thing is ...} as a high-frequency discourse organiser.
-- **Repair/restart:** speakers launch the frame, then re-enter copular predication before the complement is fully planned, yielding \mention{is is}.
-- **Prosody/punctuation:** speech prosody resolves what print would mark with commas or dashes; in writing, punctuation norms make the doubled copula look “ungrammatical” even when speech parsing is fine.
-- **Institutional suppression:** education and editing reduce overt rate in formal writing without necessarily removing the underlying production pathway.
-
----
-
-## Predictions / disconfirmers (shape only)
-
-Predictions that would support the chapter’s argument:
-
-- Higher rates in spontaneous speech than in edited corpora, with strong sensitivity to task, audience, and self-monitoring.
-- Concentration in a small set of lexicalised frames (\mention{the thing is}, \mention{what it is}, \mention{the problem is}).
-- Judgment variance that is instruction-sensitive (“correctness” vs “naturalness”), consistent with multiple measurement channels.
-
-Disconfirming patterns (would force a rethink of the example’s role):
-
-- No register/task sensitivity (rates stable across speech vs edited writing).
-- No frame concentration (uniform distribution across copular contexts).
-- No instructional effect on judgments.
+- `labov2006atlas`, `labov1972`, `bybee2001`, `Sapir1925`, `chomsky1968sound`
 
 ---
 
-## Where to place it in Ch 13 (structural note)
+## Case B (negative / grain-sensitive): academic–casual register and politeness/honorifics
 
-Best as the opening vignette (parallel to \mention{otherwise} in Ch 1), because it puts all three themes on the table immediately:
+### The target to keep straight
 
-1) stability in use, 2) disagreement in judgments, 3) institutional looping.
+This is a perfect “grain” demonstration if framed carefully:
 
-Keep it as a running thread: return to it after introducing “grammaticality as HPC cluster” to show how each mechanism predicts a different facet of the pattern.
+- **Academic register (English)** is a real phenomenon, but at book-level grain it’s plausibly an *ecosystem label*: a moving bundle of norms, genres, and discipline-specific conventions.
+- **Politeness/honorific systems** mix at least three things that can come apart:
+  1) grammar-coded honorific morphology (language-internal, often quite projectible),  
+  2) register packages (“formal”, “casual”, “deferential”),  
+  3) pragmatic inference (politeness as interactional meaning).
+
+The non-kind claim should target the *umbrella*: “politeness register” (or “academic register”) as a single cluster at coarse grain.
+
+### Why it’s a good failure case (what to show)
+
+- **Projectibility can be high while ontology is messy:** within a community, you can often predict that academic writing avoids \mention{gonna}, tolerates heavy nominal style, etc. But the feature bundle is not stable across genres, disciplines, and time.
+- **Mechanisms are heterogeneous:** schooling, gatekeeping, editorial norms, audience design, identity work, platform constraints. The bundle can be maintained as a *package* in some settings, but it’s rarely a single mechanism-maintained cluster with a stable internal geometry.
+- **Decomposition is the punchline:** at finer grains, you may recover HPC-ish units (specific constructions, formulaic sequences, particular honorific paradigms), while the macro-label remains an ecological convenience.
+
+### Diagnostics and disconfirmers (notes, not prose)
+
+- **Projectibility diagnostic:** “academic vs casual” classification is easy; the hard question is whether what projects is one cluster or many loosely correlated cues.
+- **Homeostasis diagnostic:** ask what happens under perturbation (platform shift, community change, institutional weakening). Prediction: rapid reweighting and partial bundle collapse rather than a single fraying trajectory.
+- **Disconfirmation condition (shape):** if “academic register” (or “politeness register”) exhibited stable, cross-context covariation with a small set of shared stabilisers that reliably rebuilt the same cluster under perturbation, it would look more like a genuine HPC at that grain.
+
+### Likely citations already in `references.bib` (for later integration)
+
+- Register/genre drift and academic style: `biber1989`, `bibergray2016`, `leech2009`
+- Social meaning and indexicality: `eckert2000`, `Eckert2012`, `Silverstein1976`
+- Honorifics/politeness: `ide2005`
+
+---
+
+## Payoff links (where this plugs into the rest of the book)
+
+- **To Ch 5:** phoneme discreteness is the cleanest “continuous substrate → discrete boundary” illustration that isn’t morphosyntax.
+- **To Ch 8:** register/politeness is the cleanest “grain problem” illustration outside grammar (ecosystem label vs kind).
+- **To Ch 9:** the “two clusters + coupling” architecture can reappear (phonology: cues vs social indexing; register: social signals vs grammatical resources).
+
+---
+
+## Open choices (defer until drafting)
+
+- Whether to treat honorific morphology as a *mini* positive case inside the register chapter (to make the decomposition vivid).
+- Whether to include a single schematic figure for each case (phoneme: two clusters in cue space; register: overlapping cue bundles with shifting weights).

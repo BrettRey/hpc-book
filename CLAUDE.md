@@ -110,14 +110,19 @@ Four parts, 14 chapters:
 3. **Part III: Categories Reconsidered** (Ch 9-12) - Countability, definiteness, word classes, constructions
 4. **Part IV: Implications** (Ch 13-14) - Grammaticality, methodological consequences
 
-### Current Chapter Status (Dec 2025)
+### Current Chapter Status (Jan 2026)
 - **Ch 1-3**: Drafted and revised (Part I: The Problem)
 - **Ch 4**: Drafted and revised (HPC introduction) - Millikan + Craver quotes added
 - **Ch 5**: Drafted and revised (discreteness problem) - Kirby quote added
 - **Ch 6**: Drafted and revised (projectibility) - Favier citation refined
 - **Ch 7**: Drafted and revised (The Stabilisers) - quotatives case study complete
 - **Ch 8**: Drafted (Failure Modes) - thin/fat/negative taxonomy, Miller citation refined
-- **Ch 9-14**: Outlined only
+- **Ch 9**: Drafted and revised (Countability)
+- **Ch 10**: Drafted and revised (Definiteness)
+- **Ch 11**: Plan approved
+- **Ch 12**: Drafted and revised (non-grammar worked cases: phonemes, register)
+- **Ch 13**: Planning ready (Grammaticality itself) - double-copula vignette, measurement-channel divergence
+- **Ch 14**: Outlined (Methodological consequences)
 
 ## Chapter Development Workflow
 
