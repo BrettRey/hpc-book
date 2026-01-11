@@ -6,7 +6,7 @@ Source: Advisory board simulation (voice: Edward Tufte)
 ---
 
 ## Summary
-The chapter needs one high-information figure that earns its space. Keep the implicational matrix as the empirical core. Everything else must either (a) show something the prose cannot, or (b) be cut. Avoid redundant schematics and bar charts that restate numbers already given in text.
+The chapter needs one high-information figure that earns its space. Keep the implicational matrix as the empirical core. Everything else must either (a) show something the prose can't, or (b) be cut. Avoid redundant schematics and bar charts that restate numbers already given in text.
 
 ## Keep / Cut
 - Keep: Table 9 matrix (noun x property). It shows the triangular pattern immediately.

@@ -7,7 +7,7 @@ Research compiled 7 December 2025 for Chapter 6 expansion ("Degrees of projectib
 ### Divjak (2017) — Polish that-clauses
 - **Citation**: Divjak, D. (2017). The role of lexical frequency in the acceptability of syntactic variants: Evidence from that-clauses in Polish. *Cognitive Science*, 41(2), 354–382.
 - **Key finding**: Box-and-whisker plots show wider whiskers (more variance) for low-frequency verb quartiles. Acceptability ratings exhibit large variance for rare constructions.
-- **Quote**: "Acceptability judgments are based on configurations of internally structured exemplars, the acceptability of which cannot reliably be assessed until sufficient evidence about the core component has accumulated."
+- **Quote**: "Acceptability judgments are based on configurations of internally structured exemplars, the acceptability of which can't reliably be assessed until sufficient evidence about the core component has accumulated."
 - **Figures**: Box-and-whisker plots of acceptability by frequency quartile.
 - **Caveats**: Focuses on Polish that-clauses; generalization to other languages requires cross-linguistic comparison.
 

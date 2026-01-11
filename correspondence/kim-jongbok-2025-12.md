@@ -26,7 +26,7 @@ SEM[DEFINITENESS [IDENT …
 
 ### On Constructional Constraints vs. Lexical Listing
 
-Kim favors **construction-internal constraints**. Example: nominal + topic marking → definite (identifiable/familiar). The head noun alone cannot determine definiteness. Bare NP definiteness is context-determined.
+Kim favors **construction-internal constraints**. Example: nominal + topic marking → definite (identifiable/familiar). The head noun alone can't determine definiteness. Bare NP definiteness is context-determined.
 
 ### On Korean Evidence (Cross-Linguistic Predictions)
 
@@ -87,7 +87,7 @@ Below are my specific comments to your questions.
 
 **2. Constructional constraints vs. lexical listing.** For article-less languages, what's the best SBCG/HPSG treatment of demonstratives, genitives (-uy), topic marking, and numeral-classifier NPs as deital resources without building in definiteness? Would you favour construction-internal constraints over per-lexeme stipulations?
 
-> I would favor construction-internal constraints. For instance, the combination of a nominal expression with the topic marking would be 'definite' (identifiable/familiar). The head noun or lexeme alone cannot determine its definiteness. The definiteness of a bare NP or nominal (with no article) is determined by context.
+> I would favor construction-internal constraints. For instance, the combination of a nominal expression with the topic marking would be 'definite' (identifiable/familiar). The head noun or lexeme alone can't determine its definiteness. The definiteness of a bare NP or nominal (with no article) is determined by context.
 
 **3. Diagnostics and competition.** How would you encode competition among nearby constructions (demonstratives vs. genitives vs. bare NPs with topic) so that "deital" diagnostics cluster without collapsing distinct causal profiles? Are there clean ways to capture one-blocking and identificational hosting as constructional constraints?
 
@@ -115,7 +115,7 @@ So I'm curious:
 
 **How would you classify things like the a/an alternation? Is that, for you, purely morphological (outside the space of constructions), or a legitimate micro-construction whose non-inherited content is essentially formal (contextual PHON constraints) rather than semantic?**
 
-> I think this is a constructional constraint given on the PHONLOGY string value. It cannot be a syntactic one. On the string a/an X, X could be any category: a good animal vs. an important point.
+> I think this is a constructional constraint given on the PHONLOGY string value. It can't be a syntactic one. On the string a/an X, X could be any category: a good animal vs. an important point.
 
 **More generally, are you comfortable saying that some constructions are "semantically vacuous" in the narrow sense (they just pass up SEM) but still count as constructions because they impose non-trivial formal constraints, or would you analyze those differently?**
 

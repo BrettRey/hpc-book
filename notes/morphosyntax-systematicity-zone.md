@@ -91,12 +91,12 @@ Phonology exhibits high systematicity in **form** but not in **meaning**:
 
 - **No semantic coupling is possible**
 - Phonology is systematic about the **wrong thing** (form distribution, not meaning)
-- The tight regularity exists but cannot couple to semantic categories
+- The tight regularity exists but can't couple to semantic categories
 
 **Example:** The /ɪ/–/ɛ/ contrast in English:
 - Highly systematic at the phonological level (maintained by perceptual magnets, lexical contrast, acquisition)
 - But the contrast doesn't **mean** anything (it distinguishes *pin* from *pen* but doesn't encode individuation, definiteness, tense, aspect, or any grammatical category)
-- Result: Phonology can be an HPC (Chapter 12's positive case) but cannot exhibit semantic-grammatical coupling
+- Result: Phonology can be an HPC (Chapter 12's positive case) but can't exhibit semantic-grammatical coupling
 
 ### 2.3 Why Not Larger Units? (Discourse)
 
