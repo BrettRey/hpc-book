@@ -100,6 +100,15 @@ Following the outline in `CHAPTER_OUTLINE.md`:
   - **Homeostasis:** The bidirectional inference mechanism maintains clustering; functional anchoring stabilizes intermediates
 - Countability is in the upper-right quadrant: genuine HPC kind
 
+**§9.8 Predictions** *(from structural feedback action plan)*  
+*Minimum 3–5 bullets; at least one discriminating prediction*
+
+- **HPC-kind diagnosis predicts** (scoped to contemporary English, Standard register): count morphosyntax-with-modifiers patterns should cluster; quasi-count nouns should occupy stable intermediate positions; diachronic shifts should follow hierarchy order.
+- **Convenience/nominalist diagnosis predicts:** operationalization changes should reshuffle membership freely; *cattle* and *cattle*-like nouns could pattern either way depending on annotation.
+- **Essentialist diagnosis predicts:** sharp boundary between count and mass; quasi-count should be unstable or resolvable.
+- **Stabilizer tie-ins:** Acquisition: quasi-counts harder to learn than full count/mass. Entrenchment: high-frequency quasi-counts more stable. Transmission: Zipfian profile facilitates learning.
+- **Discriminating prediction:** If *cattle*-like nouns were being actively maintained by a mechanism (vs merely persisting via frozen accident), we'd expect (i) acquisition difficulty proportional to distance from prototype, and (ii) diachronic replenishment when functional anchors disappear (cf. *pea*).
+
 **Coda / Transition**  
 - Brief glance forward: Chapter 10 (Definiteness) will show a case where form and meaning may constitute *separate* overlapping HPCs — a more complex configuration
 

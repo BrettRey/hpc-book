@@ -64,5 +64,15 @@ The coupling is maintained by:
     *   Clarifies cross-linguistic comparison (Japanese has the function cluster but not the form cluster).
 6.  **The Label**: Introduce "Deitality" only here, as the name for the Form cluster when stripped of its semantic assumptions.
 
+## §10.7 Predictions *(from structural feedback action plan)*
+
+*Minimum 3–5 bullets; at least one discriminating prediction*
+
+- **HPC-kind diagnosis predicts** (scoped to contemporary English, Standard register): Form cluster (deitality) and function cluster (definiteness) should show distinct diagnostic profiles; weak definites should pattern with form cluster, not function cluster; cross-linguistic comparison should distinguish languages with both clusters vs function-only.
+- **Convenience/nominalist diagnosis predicts:** The form/function split is an artifact of chosen diagnostics; re-operationalizing should collapse the distinction.
+- **Essentialist diagnosis predicts:** One unified definiteness category; weak definites are anomalies requiring epicycles (e.g., covert uniqueness operators).
+- **Stabilizer tie-ins:** Acquisition: Form cluster (joint attention/pointing routines) should emerge before function cluster (Theory of Mind dependency). Entrenchment: Weak definites stabilized by high-frequency frames (*go to the hospital*, *play the piano*).
+- **Discriminating prediction:** LLM contextual embeddings (BERT) should treat weak definites as cohering with deitality signal, not token-referring definites. Acquisition should show form-function decoupling at specific developmental stages.
+
 ---
 *Created: 2025-12-21*
