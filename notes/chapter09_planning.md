@@ -108,6 +108,7 @@ Following the outline in `CHAPTER_OUTLINE.md`:
 - **Essentialist diagnosis predicts:** sharp boundary between count and mass; quasi-count should be unstable or resolvable.
 - **Stabilizer tie-ins:** Acquisition: quasi-counts harder to learn than full count/mass. Entrenchment: high-frequency quasi-counts more stable. Transmission: Zipfian profile facilitates learning.
 - **Discriminating prediction:** If *cattle*-like nouns were being actively maintained by a mechanism (vs merely persisting via frozen accident), we'd expect (i) acquisition difficulty proportional to distance from prototype, and (ii) diachronic replenishment when functional anchors disappear (cf. *pea*).
+- **Reclassification trigger:** If quasi-count nouns show no correlation between functional-anchor presence and diachronic stability (i.e., anchored and unanchored items drift at the same rate), reclassify as frozen accident (thin) rather than actively maintained HPC.
 
 **Coda / Transition**  
 - Brief glance forward: Chapter 10 (Definiteness) will show a case where form and meaning may constitute *separate* overlapping HPCs — a more complex configuration

@@ -73,6 +73,7 @@ The coupling is maintained by:
 - **Essentialist diagnosis predicts:** One unified definiteness category; weak definites are anomalies requiring epicycles (e.g., covert uniqueness operators).
 - **Stabilizer tie-ins:** Acquisition: Form cluster (joint attention/pointing routines) should emerge before function cluster (Theory of Mind dependency). Entrenchment: Weak definites stabilized by high-frequency frames (*go to the hospital*, *play the piano*).
 - **Discriminating prediction:** LLM contextual embeddings (BERT) should treat weak definites as cohering with deitality signal, not token-referring definites. Acquisition should show form-function decoupling at specific developmental stages.
+- **Reclassification trigger:** If weak definites cluster with token-referring definites in embedding space (rather than forming a distinct subcluster), reclassify deitality as a thin pattern within definiteness rather than a separate HPC.
 
 ---
 *Created: 2025-12-21*

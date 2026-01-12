@@ -100,6 +100,23 @@ Terms to track (minimum set):
 
 ---
 
+## Drafting Guidance (Ch 11, 13, 14)
+
+**Draft using the audit as the chapter backbone, not as an appendix.**
+
+- **Ch 11 (Lexical Categories)**: Plan approved; treat audit steps as outline. Structure around: target + scope → profile → stabilizers → boundary behaviour → falsifiers.
+- **Ch 13 (Grammaticality/The Stack)**: Meta-level chapter most likely to lose empirical grip. Use audit aggressively:
+  - Target + scope: what counts as a grammaticality judgement; whose; in what tasks.
+  - Profile: what properties cluster (confidence, reaction time, repair, variability, register-sensitivity).
+  - Stabilizers: alignment/repair norms; acquisition; institutional enforcement.
+  - Falsifiers: what would force reclassification as negative class or fat class.
+- **Ch 14 (Methodological Consequences)**: Write consequence-by-consequence, each linked back to one audit step (so it reads as payoff, not manifesto).
+
+**Reclassification trigger rule**: Each Predictions subsection must include at least one bullet of the form:
+> "If we observe pattern P under perturbation Q, then the diagnosis flips from HPC → fat/thin/negative (or vice versa)."
+
+---
+
 ## Implementation order
 
 1. Create term ledger (scaffolding).
@@ -107,3 +124,4 @@ Terms to track (minimum set):
 3. Create the _HPC-kind audit_ template for Ch 8 (figure/table + abbreviated version).
 4. Add _Predictions_ subsections to Ch 9–10 plans (and keep the format stable through Ch 13).
 5. Add _Running example update_ paragraphs to Chs 4–8 (incremental; one per revision pass).
+
