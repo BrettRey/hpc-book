@@ -346,4 +346,3 @@ title = {Character identity mechanisms: {A} conceptual model...}
 ---
 
 **For AI assistants:** This style guide should be followed when writing or editing LaTeX academic papers. Consult `style-rules.yaml` for machine-readable versions of these conventions.
-
