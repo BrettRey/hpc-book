@@ -322,4 +322,28 @@ title = {Character identity mechanisms: {A} conceptual model...}
 
 ---
 
+## Running Threads
+
+**Purpose:** Recurring mini-sections that track a concept across chapters, building incremental understanding before its full treatment.
+
+**Format:**
+
+```latex
+\textsc{Term thread.} This chapter's [framework/diagnostic/mechanism] predicts... 
+[scoped prediction]. The prediction would be falsified if [falsifier].
+```
+
+**Placement:** End of chapter, after main content, before "Looking forward" transition.
+
+**Content (3 moves):**
+1. What this chapter adds to the eventual diagnosis
+2. A scoped prediction (population/register, time slice, grain)
+3. One falsifier or perturbation that would force reclassification
+
+**Current threads:**
+- **Definiteness thread** (Chs 4–8): Builds toward Ch 10's two-cluster diagnosis
+
+---
+
 **For AI assistants:** This style guide should be followed when writing or editing LaTeX academic papers. Consult `style-rules.yaml` for machine-readable versions of these conventions.
+
