@@ -52,13 +52,14 @@ latex:
     package: "langsci-gb4e"
     no_exe_environment: true
     commands:
-      simple: "\\ea ... \\z"
-      subexamples: "\\ea \\ea ... \\ex ... \\z \\z"
+      simple: "\\ea[]{content} \\z"
+      subexamples: "\\ea[] \\ea[]{...} \\ex[]{...} \\z \\z"
       gloss: "\\gll ... \\\\ ... \\\\ \\glt ..."
+    format_note: "Square brackets hold judgment marker (empty for grammatical); braces hold content including \\label{} and example text"
     judgements:
-      ungrammatical: "\\ungram{*sentence}"
-      marginal: "\\marg{?sentence}"
-      odd: "\\odd{\\#sentence}"
+      ungrammatical: "\\ea[\\ungram{}]{\\mention{sentence}}"
+      marginal: "\\ea[\\marg{}]{\\mention{sentence}}"
+      odd: "\\ea[\\odd{}]{\\mention{sentence}}"
 
 # Writing style
 prose:

@@ -91,18 +91,21 @@ Uses `langsci-gb4e` package. **Note:** No `exe` environment.
 ### Simple Example
 
 ```latex
-\ea\label{ex:simple}
-\textit{The committee have decided to adjourn.}
+\ea[]{\label{ex:simple}\mention{The committee have decided to adjourn.}}
 \z
 ```
+
+Format: `\ea[JUDGMENT]{CONTENT}` where:
+- Square brackets hold optional judgment marker (empty `[]` for grammatical)
+- Braces hold content including `\label{}` and the example (use `\mention{}` for linguistic data)
 
 ### Judgement Markers and Subexamples
 
 ```latex
-\ea\label{ex:sub}
-    \ea \textit{She has already left.}
-    \ex[*]{\ungram{\textit{She have already left.}}}
-    \ex[\#]{\odd{\textit{The square triangle laughed.}}}
+\ea[]{\label{ex:sub}}
+    \ea[]{\mention{She has already left.}}
+    \ex[\ungram{}]{\mention{She have already left.}}
+    \ex[\#]{\odd{\mention{The square triangle laughed.}}}
     \z
 \z
 ```
@@ -114,10 +117,10 @@ Cross-reference: `see (\ref{ex:sub})`
 Abbreviations in small caps using `\abbr{}`:
 
 ```latex
-\ea\label{ex:gloss}
+\ea[]{\label{ex:gloss}
 \gll Ich sehe den Hund. \\
      I see the.\abbr{acc} dog \\
-\glt `I see the dog.'
+\glt `I see the dog.'}
 \z
 ```
 
@@ -315,9 +318,9 @@ title = {Character identity mechanisms: {A} conceptual model...}
 ### Example Commands
 
 ```latex
-\ea ... \z            % Single example
-\ea \ea ... \ex ... \z \z   % Subexamples
-\gll ... \\ ... \\ \glt ... % Interlinear gloss
+\ea[]{...} \z                      % Single example
+\ea[] \ea[]{...} \ex[]{...} \z \z  % Subexamples
+\gll ... \\ ... \\ \glt ...        % Interlinear gloss
 ```
 
 ---
