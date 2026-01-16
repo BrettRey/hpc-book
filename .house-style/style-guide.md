@@ -105,7 +105,7 @@ Format: `\ea[JUDGMENT]{CONTENT}` where:
 \ea[]{\label{ex:sub}}
     \ea[]{\mention{She has already left.}}
     \ex[\ungram{}]{\mention{She have already left.}}
-    \ex[\#]{\odd{\mention{The square triangle laughed.}}}
+    \ex[\odd]{{\mention{The square triangle laughed.}}}
     \z
 \z
 ```
