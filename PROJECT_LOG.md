@@ -794,3 +794,8 @@ Corrected a significant hallucination in the "Mechanism" definition and standard
 - All files updated and compiled clean (`latexmk -xelatex`).
 - Changes committed and pushed to `restructure-part-1`.
 
+### Metaphor Audit
+- **Action**: Saved a comprehensive "Metaphor Audit" to `notes/metaphor-audit.md`.
+- **Findings**: Core dynamic metaphors (basin, wave) are strong; "joints" and "boxes" need retirement/reframing.
+
+
