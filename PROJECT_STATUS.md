@@ -1,7 +1,19 @@
 # HPC Book Project Status
 
-**Date**: January 8, 2026
+**Date**: January 13, 2026
 **Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 polished draft; Glossary complete
+
+### Session Work (Jan 13, 2026: House Style Enforcement)
+- ✅ **langsci-gb4e format corrected** in style documentation:
+  - `.house-style/style-guide.md`: Fixed Numbered Examples section to show correct `\ea[]{}` bracket-brace syntax
+  - `.house-style/style-rules.yaml`: Updated examples commands and judgments
+  - **Correct format**: `\ea[JUDGMENT]{\label{ex:name}\mention{example text}}` with `\z` to close
+  - Judgment markers (`\ungram{}`, `\marg{}`, `\odd{}`) go in square brackets
+- ✅ **Chapter 13 examples converted** from linguex-style `\ex.` to langsci-gb4e:
+  - `\label{ex:letalone}` — let-alone grammatical
+  - `\label{ex:letalone-bad}` — let-alone ungrammatical  
+  - `\label{ex:ditransitive}` — ditransitive subexamples
+- ✅ **Committed and pushed**: `e646867` on `restructure-part-1`
 
 ### Session Work (Jan 8, 2026: Chapter 12 Polish)
 - ✅ **Chapter 12 substantially revised** ("Pro-form Gender"):
