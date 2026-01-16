@@ -798,4 +798,14 @@ Corrected a significant hallucination in the "Mechanism" definition and standard
 - **Action**: Saved a comprehensive "Metaphor Audit" to `notes/metaphor-audit.md`.
 - **Findings**: Core dynamic metaphors (basin, wave) are strong; "joints" and "boxes" need retirement/reframing.
 
+### Metaphor Refinement
+- **Remediation**:
+  - `chapter03.tex`: Flagged irony in "carve at the joints".
+  - `chapter15.tex`: Replaced "boxes" with "territories" (aligned with Federalism metaphor).
+- **Extension**:
+  - `chapter09.tex`: Added "Basin" callback to Part III Intro.
+  - `chapter14.tex`: Added "Standing Wave" metaphor to Intro.
+  - `chapter15.tex`: Extended "Zipper" metaphor to Conclusion.
+- **State**: Build verified. Metaphor system now unified around dynamic-systems imagery.
+
 
