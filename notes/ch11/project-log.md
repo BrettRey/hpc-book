@@ -772,5 +772,25 @@ Drafted complete Chapter 12 (~4,500 words) reframing English gender as a hierarc
 
 - Chapter 12 complete and pushed
 - Full book now ~335 pages (estimated)
-- Ready for verification build
+
+---
+
+## 16 January 2026 — Citation Correction & Glossary Refinement
+
+### Session summary
+
+Corrected a significant hallucination in the "Mechanism" definition and standardized glossary formatting.
+
+### Citation Correction
+- **Original Error**: The text attributed the definition of mechanism to **Ross (2021)**, which was incorrect.
+- **Correction**: Replaced with **Illari & Williamson (2012)** ("What is a Mechanism? Thinking about Mechanisms Across the Sciences"), specifically their consensus definition: *"Entities and activities organized in such a way that they are responsible for a phenomenon."*
+- **Text Updates**: Updated `chapter04.tex`, `chapter07.tex`, `chapter09.tex`, and `glossary.tex` to reflect this source and definition.
+
+### Glossary Refinement
+- **Format**: Standardized `glossary.tex` to match house style.
+- **Change**: Moved citations for `mechanism` and `stabilizer` from the `\glsdef` field (which should be a clean noun phrase) to the `\glsnote` field.
+
+### State at end of session
+- All files updated and compiled clean (`latexmk -xelatex`).
+- Changes committed and pushed to `restructure-part-1`.
 
