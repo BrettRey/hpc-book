@@ -15,7 +15,7 @@ This workflow orients you to the project. Use it at the start of any new session
 
 2. **Read process log** (especially the Dec 11 reflection on quality patterns)
    ```
-   cat notes/project-log.md
+   cat PROJECT_LOG.md
    ```
 
 3. **Check current chapter outline**
@@ -39,7 +39,7 @@ This workflow orients you to the project. Use it at the start of any new session
 - `notes/chapterNN-grist.md` — Raw material/excerpts for chapter NN
 
 **For process insights:**
-- `notes/project-log.md` — Session history with meta-reflection on what works
+- `PROJECT_LOG.md` — Session history with meta-reflection on what works
 - Key finding: Pre-draft planning correlates with draft quality
 
 **For literature:**

@@ -42,6 +42,7 @@ The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL f
 - `notes/field-relative-projectibility.md` - Core theoretical principle (projectibility is field-relative)
 - `notes/*-analysis.md` - Literature analysis files
 - `notes/board-*-*.md` - Advisory board feedback simulations
+- `PROJECT_LOG.md` — Session history with meta-reflection on what works
 - `synopsis.md` - Book synopsis (~880 words)
 
 ## House Style Conventions
@@ -176,6 +177,20 @@ Projectibility is indexed to analytical purpose. Different subfields (semantics,
 - **Mechanisms**: Acquisition, entrenchment, interactive alignment, iterated transmission
 - **Projectibility**: Why categories support inductive generalizations
 - **Failure modes**: Thin clustering, fat clustering, negative diagnosis
+
+## Session Layout (Startup & Shutdown)
+    
+**Startup:**
+1. Read `PROJECT_STATUS.md`
+2. Read `PROJECT_LOG.md` (for recent context and patterns)
+3. Check `notes/CHAPTER_OUTLINE.md`
+
+**Shutdown:**
+1. Update `PROJECT_LOG.md` with:
+   - **Session summary**: What was achieved
+   - **Decisions Made**: What should persist
+   - **Context Learned**: Patterns/preferences discovered
+2. Commit and push
 
 ## Chapter Completion Polish
 
