@@ -30,7 +30,7 @@ At the phoneme level, form and contrastive value are so tightly bound that you c
 
 At higher levels, the coupling loosens. Morphemes pair form with conventional value—grammatical, semantic, or both—and the pairing is arbitrary. The sound /wɛnt/ doesn't resemble pastness; the linkage is maintained by memory, frequency, and use. Constructions pair form templates with interpretive templates, and now the seams are visible: you can see where the tracks join, and perturbation can pull them apart.
 
-From phonemes to constructions to discourse, linguistic categories are homeostatic property clusters maintained by mechanisms. But the mechanisms differ, and so does the tightness of the form--value binding. What's invariant is the \emph{explanatory strategy}: when something behaves category-like, ask what stabilises the covariance and what it projects to. What varies is the \emph{stabiliser weighting}—which mechanisms dominate, and how much slack the coupling permits.
+From phonemes to constructions to discourse, linguistic categories are homeostatic property clusters maintained by mechanisms. But the mechanisms differ, and so does the tightness of the form--value binding. What's invariant is the \emph{explanatory strategy}: when something behaves category-like, ask what stabilizes the covariance and what it projects to. What varies is the \emph{stabilizer weighting}—which mechanisms dominate, and how much slack the coupling permits.
 
 The framework applies two diagnostics at each level. \term{Projectibility} asks whether patterns learned from one dataset can predict another—can we infer properties of new instances from old ones? \term{Homeostasis} asks whether we can name mechanisms that maintain the property cluster and identify their signatures in the data. These tests are independent. A category might project reliably without any identifiable mechanisms (overfitting to spurious patterns), or it might have plausible mechanisms that don't actually produce stable clustering (broken homeostasis). Both tests have to pass for kindhood to be warranted.
 
@@ -46,7 +46,9 @@ If the HPC framework applies at a new level, we expect to find:
 
 These are the diagnostics. The chapter applies them to three positive cases (phonemes, morphemes, constructions) and three negative cases (academic register, ``Indo-European,'' ``polysynthetic''). The positive cases show the framework scaling. The negative cases show it has teeth~-- it can say \emph{no} as well as \emph{yes}.
 
-One caveat before we begin. The tiers I'll discuss~-- phoneme, morpheme, construction, register~-- are convenient labels, not universal strata. They describe how English (and languages of similar type) organises its categories. Other languages draw the boundaries differently. A polysynthetic language blurs the morpheme--word line; an isolating language thins the morpheme tier almost to nothing; a click language reorganises phonetic space. The HPC explanatory strategy is domain-general. The stack is language-specific.
+One caveat before we begin. The tiers I'll discuss~-- phoneme, morpheme, construction, register~-- are convenient labels, not universal strata. They describe how English (and languages of similar type) organizes its categories. Other languages draw the boundaries differently. A polysynthetic language blurs the morpheme--word line; an isolating language thins the morpheme tier almost to nothing; a click language reorganizes phonetic space. The HPC explanatory strategy is domain-general. The coupling regime is language-specific.
+
+These regimes are positions in stabilizer space. Chapter~\ref{ch:stabilizers} introduced the mechanism typology: four quadrants defined by timescale (fast vs.\ slow) and locus (individual vs.\ community). The familiar labels \enquote{phoneme}, \enquote{morpheme}, and \enquote{construction} name common clusters in that space~-- stable configurations of stabilizer weighting. Phonemes bundle articulatory constraints (Quadrant~I) with perceptual learning (Quadrant~III); constructions bundle outcome-based transmission (Quadrant~IV) with processing facilitation (Quadrant~I). The \enquote{zipper} tracks form against value, but the teeth are held in place by these specific mechanism coordinates.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{The limit case: phonemes}
@@ -57,7 +59,7 @@ Say the word \mention{key}. Now say \mention{ski}. You probably think the /k/ so
 
 In \mention{key}, your tongue is further forward, anticipating the front vowel. In \mention{ski}, it's further back. A spectrogram would show you: the burst frequencies differ, the formant transitions differ. They're acoustically distinct.
 
-But you'll never hear the difference, because English doesn't care. Both sounds are filed under /k/. The phoneme is an abstraction over the acoustics~-- a category that groups variant tokens and opposes them to other categories (/g/, /t/, /p/).
+But in ordinary listening, you won't notice the difference, because English doesn't treat it as contrastive. Both sounds are filed under /k/. The phoneme is an abstraction over the acoustics~-- a category that groups variant tokens and opposes them to other categories (/g/, /t/, /p/).
 
 This is what I mean by \term{transparent coupling}. At the phoneme level, form \emph{is} function. The acoustic pattern directly discharges the contrastive job without any intervening representational structure. There's no separable ``meaning'' to decouple from~-- the meaning of /k/ is simply ``not /g/, not /t/, not /p/.''
 
@@ -76,17 +78,17 @@ The contrast is maintained by a cluster of properties that travel together:
 
 This is the cluster. But why does it hold together?
 
-\subsection{The stabilisers}
+\subsection{The stabilizers}
 
-Three families of mechanism stabilise phoneme categories, operating at different scales:
+Three mechanism types stabilize phoneme categories, mapping to the quadrant typology of Chapter~\ref{ch:stabilizers}:
 
-\paragraph{Design-space constraints (physics).} \textcite{stevens1989} showed that the articulatory-to-acoustic mapping is non-linear. Certain vocal-tract configurations produce stable acoustic outputs across a range of articulatory variation; others are sensitive to small perturbations. The stable regions are \term{quantal}~-- they provide natural ``parking spots'' for phonetic targets. This is a constraint on the design space: not all points in phonetic space are equally usable.
+\paragraph{Design-space constraints (Quadrant~III).} \textcite{stevens1989} showed that the articulatory-to-acoustic mapping is non-linear. Certain vocal-tract configurations produce stable acoustic outputs across a range of articulatory variation. The stable regions are \term{quantal}~-- natural ``parking spots''. While grounded in physics, they function as individual constraints on acquisition (Quadrant~III) and processing (Quadrant~I).
 
-\paragraph{System-level pressures (tendency).} \textcite{lindblom1990} argued that vowel inventories are shaped by a trade-off between articulatory ease and perceptual distinctiveness. Vowels tend to disperse in acoustic space to maximise discriminability. This is a pressure, not a law~-- languages violate it in various ways~-- but it biases inventories toward certain configurations.
+\paragraph{System-level pressures (Quadrant~IV).} \textcite{lindblom1990} argued that vowel inventories disperse in acoustic space to maximize discriminability. This is a community-level transmission pressure (Quadrant~IV): inventories that fail to disperse are harder to transmit and drift toward dispersed configurations over time.
 
-\paragraph{Acquisition tuning (process).} \textcite{kuhl1992} demonstrated that infant perception is warped by early exposure. Category prototypes act as \term{perceptual magnets}: stimuli near the prototype are perceptually pulled toward it, shrinking within-category variance and sharpening between-category discrimination. The process is universal; the outcome is language-specific.
+\paragraph{Acquisition tuning (Quadrant~III).} \textcite{kuhl1992} demonstrated that infant perception is warped by early exposure. Category prototypes act as \term{perceptual magnets}: stimuli near the prototype are perceptually pulled toward it. This is the classic Quadrant~III consolidation mechanism, tuning the individual user to the community standard.
 
-Notice that these mechanisms operate at different levels. Quantal regions constrain what phonemes are \emph{possible}. Dispersion shapes which of the possible phonemes a language \emph{selects}. Perceptual magnets tune the \emph{individual speaker} to the ambient inventory. The phoneme that emerges is not a universal category but a language-specific cluster, maintained by this layered mechanism stack.
+Notice that these mechanisms operate at different levels. Quantal regions constrain what phonemes are \emph{possible}. Dispersion shapes which of the possible phonemes a language \emph{selects}. Perceptual magnets tune the \emph{individual speaker} to the ambient inventory. The phoneme that emerges is not a universal category but a language-specific cluster, maintained by this layered mechanism braid.
 
 \subsection{Evidence: the \mention{pin}/\mention{pen} merger}
 
@@ -96,7 +98,7 @@ The \mention{pin}/\mention{pen} merger, documented extensively by \textcite{labo
 
 The conditioning environment is revealing. Before nasals, the vowels are subject to nasalisation, which smears the formant cues. F1 is raised and F2 is altered by the velopharyngeal coupling. In exactly the environment where the acoustic cues are least reliable, the contrast collapses.
 
-This is homeostasis in action~-- or rather, homeostasis failing. The merger is not random noise; it's a predictable consequence of perturbing the stabilising mechanisms. Where cue reliability decreases, the category boundary destabilises.
+This is homeostasis in action~-- or rather, homeostasis failing. The merger is not random noise; it's a predictable consequence of perturbing the stabilising mechanisms. Where cue reliability decreases, the category boundary destabilizes.
 
 Figure~\ref{fig:13:vowel-merger} shows the progression schematically.
 
@@ -106,7 +108,7 @@ Figure~\ref{fig:13:vowel-merger} shows the progression schematically.
 \fbox{\parbox{0.8\textwidth}{\centering
 \textit{[Data figure: Vowel formant plots showing /\ipa{ɪ}/--/\ipa{ɛ}/ separation in non-nasal contexts vs.\ merger in pre-nasal contexts. Source: Labov 2006, Atlas of North American English.]}
 }}
-\caption{The \mention{pin}/\mention{pen} merger as homeostatic failure. In pre-nasal environments, where acoustic cues are degraded by nasalisation, the /\ipa{ɪ}/--/\ipa{ɛ}/ contrast collapses. The mechanism-maintenance view predicts exactly this pattern: weaker stabilisers, weaker clustering.}
+\caption{The \mention{pin}/\mention{pen} merger as homeostatic failure. In pre-nasal environments, where acoustic cues are degraded by nasalisation, the /\ipa{ɪ}/--/\ipa{ɛ}/ contrast collapses. The mechanism-maintenance view predicts exactly this pattern: weaker stabilizers, weaker clustering.}
 \label{fig:13:vowel-merger}
 \end{figure}
 
@@ -180,13 +182,13 @@ If form--function pairings are maintained by frequency and analogy, we should se
 \label{fig:13:regularisation}
 \end{figure}
 
-This is the mechanism signature. Frequency stabilises the arbitrary pairing by ensuring dense memory traces. Analogy extends the regular pattern to underdetermined cases. The two mechanisms interact: frequency protects irregulars from analogy; analogy regularises the unprotected.
+This is the mechanism signature. Frequency stabilizes the arbitrary pairing by ensuring dense memory traces. Analogy extends the regular pattern to underdetermined cases. The two mechanisms interact: frequency protects irregulars from analogy; analogy regularises the unprotected.
 
 \subsection{What the HPC framing reveals}
 
 The classical view treats the morpheme as a sign: an arbitrary pairing of form and meaning. This is Saussure's foundational insight, and it's correct. But it's static. It tells you what morphemes \emph{are} without explaining what keeps them stable or what makes them change.
 
-The HPC framing adds the stabilisation story. Irregular pairings like \mention{go}--\mention{went} survive because frequency protects them. Regular patterns like \mention{walk}--\mention{walked} extend because analogy amplifies them. The ``morpheme level'' is not a fixed stratum but a region in stabiliser-weighting space where storage mechanisms dominate over production constraints.
+The HPC framing adds the stabilization story. Irregular pairings like \mention{go}--\mention{went} survive because frequency protects them. Regular patterns like \mention{walk}--\mention{walked} extend because analogy amplifies them. The ``morpheme level'' is not a fixed stratum but a region in stabilizer-weighting space where storage mechanisms dominate over production constraints.
 
 \subsection{Persistence through drift}
 
@@ -196,7 +198,7 @@ Analysis of the HistWords COHA embeddings \citep{hamilton2016} tests this direct
 
 Yet a prototype classifier trained on early decades (1900--1940) and tested on later decades (1950--2000) still identifies word identity with macro-F1 above 0.80. Some words pass both the cohesion threshold (neighbourhood overlap $\geq$ 0.30) and the held-out prediction test; others don't. The framework predicts exactly this: kindhood is earned differentially, not blanket-applied.
 
-The stabilisers are identifiable: orthographic standardisation (spelling conventions resist variation), frequency entrenchment (high-frequency items are retrieved automatically), editorial norms (copy-editing flags non-standard usage), and register licensing (genre conventions sanction certain words in certain contexts). These aren't just labels for correlation~-- they're social practices with cognitive effects, operating through associative memory, conformity pressure, and error-driven learning.
+The stabilizers are identifiable: orthographic standardisation (spelling conventions resist variation), frequency entrenchment (high-frequency items are retrieved automatically), editorial norms (copy-editing flags non-standard usage), and register licensing (genre conventions sanction certain words in certain contexts). These aren't just labels for correlation~-- they're social practices with cognitive effects, operating through associative memory, conformity pressure, and error-driven learning.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{Architectural coupling: constructions}
@@ -270,7 +272,7 @@ What maintains this schematic coupling?
 
 \subsection{What the HPC framing reveals}
 
-Construction Grammar has long argued that constructions are form--meaning pairings. The HPC framing adds a layer: it asks \emph{what stabilises} the pairing.
+Construction Grammar has long argued that constructions are form--meaning pairings. The HPC framing adds a layer: it asks \emph{what stabilizes} the pairing.
 
 For \mention{let alone}, the answer is entrenchment and cue redundancy. The construction is robustly represented in frequent users and fragile in infrequent users. For the ditransitive, the answer is type frequency and semantic coherence. The construction is robust because it's densely attested and semantically constrained.
 
@@ -282,68 +284,26 @@ The projectibility diagnostic for constructions is cross-corpus transfer: can cu
 
 For the scalar-additive \mention{or even}~-- a cousin of \mention{let alone}~-- this test can be run directly. The cue bundle includes the anchor string, syntactic parallelism between contrasted elements, and scalar or contrast markers in the surrounding context. A classifier trained on one UD English corpus (GUM, with multi-genre coverage) and tested on another (EWT, web genres) should achieve precision-recall AUC above a substantive threshold if the construction is a genuine HPC.
 
-Preliminary results show exactly this: cross-corpus PR-AUC exceeds 0.70, and ablating individual cues degrades performance in predictable ways. Removing parallelism produces the largest drops, consistent with parallelism serving as a dominant stabiliser. The pattern holds for other constructions in the battery~-- \mention{way}-construction, N--P--N (\mention{day by day}), comparative correlatives~-- though at varying strengths.
+Preliminary results show exactly this: cross-corpus PR-AUC exceeds 0.70, and ablating individual cues degrades performance in predictable ways. Removing parallelism produces the largest drops, consistent with parallelism serving as a dominant stabilizer. The pattern holds for other constructions in the battery~-- \mention{way}-construction, N--P--N (\mention{day by day}), comparative correlatives~-- though at varying strengths.
 
 The framework's teeth show in the designed failure cases. Pooling all ``resultative'' patterns into a single category produces exactly what the ``too fat'' diagnosis predicts: weak cross-corpus transfer and washed-out ablation signatures, because the umbrella groups distinct subtypes maintained by heterogeneous mechanisms. Register-local constructions like \mention{X much?} project strongly within informal web text but fail outside that population~-- locality as a positive prediction, not a nuisance.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
-\section{The stabiliser-weighting map}
+\section{The stabilizer-weighting map}
 \label{sec:13:map}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-The three cases above~-- phonemes, morphemes, constructions~-- are not a ladder. They're regions in a two-dimensional space defined by:
+The three cases above~-- phonemes, morphemes, constructions~-- are not a ladder. They are regions in a stabilization space defined by how form couples to function and which mechanism quadrants carry the load.
 
 \begin{itemize}
-    \item \textbf{Coupling tightness}: how directly form discharges function.
-    \item \textbf{Dominant stabiliser family}: which mechanisms carry the load.
+    \item \textbf{Phonemes}: High transparency. Stabilized by physical constraints (Quadrant~III) and perceptual tuning (Quadrant~III).
+    \item \textbf{Morphemes}: Opaque coupling. Stabilized by high-frequency entrenchment (Quadrant~III) and analogical support (Quadrant~I).
+    \item \textbf{Constructions}: Architectural coupling. Stabilized by communicative transmission (Quadrant~IV) and processing facilitation (Quadrant~I).
 \end{itemize}
 
-Figure~\ref{fig:13:map} illustrates one path through this space~-- the path that English takes.
+This arrangement is English-specific. Other languages trace different paths through the space. An isolating language like Vietnamese has a thin morpheme region; a polysynthetic language like Mohawk has a thick one that blurs into syntax. A click language like !Xóõ reorganizes phonetic space in ways that shift the stabilizer weighting even at the sound level. The framework provides the coordinates; languages populate the map.
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[
-    scale=0.9,
-    tier/.style={circle, draw, minimum size=2cm, align=center, font=\small},
-    arrow/.style={->, thick, >=stealth, shorten >=2pt, shorten <=2pt}
-]
-
-% Axes
-\draw[->] (0,0) -- (10,0) node[right] {Coupling tightness};
-\draw[->] (0,0) -- (0,7) node[above, align=center] {Dominant\\stabiliser};
-
-% Axis labels
-\node[below] at (2,0) {Opaque};
-\node[below] at (8,0) {Transparent};
-\node[left, align=right] at (0,1.5) {Institutional};
-\node[left, align=right] at (0,3.5) {Social/\\Interactional};
-\node[left, align=right] at (0,5.5) {Articulatory/\\Perceptual};
-
-% English path (solid)
-\node[tier, fill=blue!15] (phon) at (8,5.5) {Phonemes};
-\node[tier, fill=green!15] (morph) at (4,3.5) {Morphemes};
-\node[tier, fill=orange!15] (cxn) at (6,2.5) {Constructions};
-\node[tier, fill=red!15, dashed] (reg) at (2,1.5) {Register};
-
-\draw[arrow] (phon) -- (morph);
-\draw[arrow] (morph) -- (cxn);
-\draw[arrow, dashed] (cxn) -- (reg);
-
-% Legend
-\node[align=left, font=\footnotesize] at (8,1) {Solid: English path\\Dashed: loose coupling};
-
-\end{tikzpicture}
-\caption{Schematic illustration of the stabiliser-weighting map (not to scale). Different languages trace different paths through this space. An isolating language would compress the morpheme region; a polysynthetic language would expand it. The map is not a universal architecture but a tool for comparing coupling regimes.}
-\label{fig:13:map}
-\end{figure}
-
-Three points about the figure:
-
-\paragraph{It's a schematic, not data.} The positions are approximate. I don't have measures of ``coupling tightness''~-- the concept is qualitative. The figure is an illustration of the framework, not evidence for it.
-
-\paragraph{The path is English-specific.} Other languages trace different paths. An isolating language like Vietnamese has a thin morpheme region; a polysynthetic language like Mohawk has a thick one that blurs into syntax. A click language like !Xóõ reorganises phonetic space in ways that shift the stabiliser weighting even at the sound level.
-
-\paragraph{Register is dashed for a reason.} The connection between constructions and register is empirically weaker. Constructions are tight HPCs; register, as I'll argue in §\ref{sec:13:negative}, is not. The dashed line signals a different kind of relationship~-- institutional maintenance rather than homeostatic coupling.
+Register, notably, sits apart. While constructions are tight HPCs, register is maintained by institutional norms rather than homeostatic coupling~-- a distinction we turn to next.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{Cross-linguistic stress-test}
@@ -351,15 +311,15 @@ Three points about the figure:
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
 \begin{quote}
-The HPC explanatory strategy is domain-general. The stack itself is not universal.
+The HPC explanatory strategy is domain-general. The coupling regime is not universal.
 
-\paragraph{Mohawk (polysynthetic).} A single Mohawk word can express what English requires a full sentence to express. The morpheme-word-clause boundaries that seem natural in English are blurred. Does the ``morpheme tier'' exist in Mohawk? Yes, but it's structured differently~-- incorporated nouns, complex verb templates, and applicative morphology reorganise the form--function couplings.
+\paragraph{Mohawk (polysynthetic).} A single Mohawk word can express what English requires a full sentence to express. The morpheme-word-clause boundaries that seem natural in English are blurred. Does the ``morpheme tier'' exist in Mohawk? Yes, but it's structured differently~-- incorporated nouns, complex verb templates, and applicative morphology reorganize the form--function couplings.
 
-\paragraph{Vietnamese (isolating).} Vietnamese has minimal bound morphology. Tense, aspect, and mood are marked by particles or inferred from context. Is there a ``morpheme tier'' in the English sense? Barely. The stabiliser weighting shifts: storage mechanisms operate on particles and constructions rather than on bound affixes.
+\paragraph{Vietnamese (isolating).} Vietnamese has minimal bound morphology. Tense, aspect, and mood are marked by particles or inferred from context. Is there a ``morpheme tier'' in the English sense? Barely. The stabilizer weighting shifts: storage mechanisms operate on particles and constructions rather than on bound affixes.
 
-\paragraph{!Xóõ (click-heavy).} With over 100 phonemes including multiple click types, !Xóõ's phoneme inventory is stabilised by a different mechanism mix. Click production requires distinct articulatory coordination; click perception involves different cue weighting. The quantal-regions story from English doesn't transfer directly.
+\paragraph{!Xóõ (click-heavy).} With over 100 phonemes including multiple click types, !Xóõ's phoneme inventory is stabilized by a different mechanism mix. Click production requires distinct articulatory coordination; click perception involves different cue weighting. The quantal-regions story from English doesn't transfer directly.
 
-\textbf{Lesson:} Where the English cuts won't line up, the method still applies. Each language has its own stabiliser-weighting profile. The framework tells you what to look for; it doesn't prescribe what you'll find.
+\textbf{Lesson:} Where the English cuts won't line up, the method still applies. Each language has its own stabilizer-weighting profile. The framework tells you what to look for; it doesn't prescribe what you'll find.
 \end{quote}
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
@@ -377,9 +337,9 @@ But watch what happens when you stress-test it.
 
 Put the same researcher in front of a grant panel, a blog audience, and a conference poster. The passives evaporate. The hedges reweight. The nominalisations drop by half. The bundle doesn't resist perturbation; it dissolves and reconstitutes in a new configuration.
 
-That's not homeostasis. The cluster doesn't cohere because there's no internal mechanism binding these features together. What holds them together is \emph{external}~-- genre conventions, disciplinary gatekeeping, editorial norms. Remove the external pressure, and the features scatter.
+The issue isn't a lack of mechanisms. The cluster is maintained by robust Quadrant~IV forces: genre conventions, disciplinary gatekeeping, editorial norms. The problem is the \emph{geometry} of the stabilization. It has high \term{looping intensity}: the category changes because it is classified. Peer reviewers enforce the ``academic'' sound; writers simulate it; the target shifts with the social winds.
 
-\paragraph{Diagnosis:} Academic register is a successful social institution, not a homeostatic property cluster. It's maintained by normative policing, not by cognitive binding. The HPC framework can describe this maintenance mode (I called it ``institutional'' in the stabiliser map), but it predicts exactly what we observe: rapid reweighting under perturbation, heterogeneous mechanisms, no stable internal geometry.
+\paragraph{Diagnosis:} Academic register is a social institution maintained by Quadrant~IV mechanisms. It fails the HPC test not because it lacks stabilizers, but because the stabilization doesn't produce a robustly projectible natural kind. The bundle is reflexive (maintained by being named) and heterogeneous (rewiring completely under minor perturbations).
 
 \subsection{``Indo-European''}
 
@@ -387,7 +347,7 @@ Indo-European is a language family~-- a genealogical grouping defined by histori
 
 Is Indo-European an HPC?
 
-The cluster properties are real: cognate vocabulary, shared sound correspondences, similar grammatical patterns. But the mechanisms are historical (common origin), not homeostatic (ongoing maintenance). Modern English doesn't stay Indo-European because of stabilisers pushing it back toward the prototype. It's Indo-European because of where it came from.
+The cluster properties are real: cognate vocabulary, shared sound correspondences, similar grammatical patterns. But the mechanisms are historical (common origin), not homeostatic (ongoing maintenance). Modern English doesn't stay Indo-European because of stabilizers pushing it back toward the prototype. It's Indo-European because of where it came from.
 
 \paragraph{Diagnosis:} Indo-European is a historical kind, not a homeostatic kind. The HPC framework doesn't apply~-- not because the category is illegitimate, but because the maintenance mode is different. Historical kinds are defined by causal continuity with an origin; homeostatic kinds are defined by mechanisms that maintain covariance.
 
@@ -403,7 +363,7 @@ The properties cluster~-- kind of. Polysynthetic languages do tend to have noun 
 
 More importantly, the mechanisms are heterogeneous. Why does Mohawk have noun incorporation? Historical and structural reasons specific to Iroquoian. Why does Ainu have complex verb templates? Different reasons specific to Ainu's history and structure. There's no single mechanism maintaining ``polysynthesis'' across the family.
 
-\paragraph{Diagnosis:} Polysynthetic is a typological label, not a natural kind. It names a region in morphological space without implying that the region is carved by mechanisms. Different languages arrive at polysynthetic-like profiles by different routes; there's no convergent stabilisation.
+\paragraph{Diagnosis:} Polysynthetic is a typological label, not a natural kind. It names a region in morphological space without implying that the region is carved by mechanisms. Different languages arrive at polysynthetic-like profiles by different routes; there's no convergent stabilization.
 
 \subsection{What the negative cases show}
 
@@ -426,6 +386,6 @@ This chapter has argued that the HPC explanatory strategy scales across linguist
 
 But one level has special status.
 
-Throughout the case studies in Part III~-- countability, definiteness, gender, lexical categories~-- the categories clustered at the morphosyntactic level. That's where form--function coupling is both \emph{tight} and \emph{obligatory}. You can speak without using \mention{let alone}. You can't speak without committing to count, tense, and definiteness.
+Throughout the case studies in Part III~-- countability, definiteness, gender, lexical categories~-- the categories clustered at the morphosyntactic level. That's where form--function coupling is both \emph{tight} and \emph{obligatory}. You can speak without using \mention{let alone}. In English, you can't speak without committing to count, tense, and definiteness.
 
-Morphosyntax is the zone of maximum systematicity: the region of grammar where coupling is enforced, not optional. Chapter~\ref{ch:grammaticality-itself} asks what happens when we take this observation seriously. If grammaticality is what emerges when form--meaning coupling is obligatory, compositional, and learnable~-- then grammaticality itself is a kind. The deepest category in the stack.
+Morphosyntax is the zone of maximum systematicity: the region of grammar where coupling is enforced, not optional. Chapter~\ref{ch:grammaticality-itself} asks what happens when we take this observation seriously. If grammaticality is what emerges when form--meaning coupling is obligatory, compositional, and learnable~-- then grammaticality itself is a kind.
