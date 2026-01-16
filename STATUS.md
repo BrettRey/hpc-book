@@ -1,9 +1,9 @@
 # Words That Won't Hold Still (HPC Book)
 
-**Status:** Part III complete; Part IV in progress
-**Type:** Academic book (14 chapters, 4 parts)
+**Status:** Part III in progress; Part IV outlined
+**Type:** Academic book (15 chapters, 4 parts)
 **Working title:** "Language Without Essences: The Metaphysics of Linguistic Categories"
-**Last updated:** 2026-01-08
+**Last updated:** 2026-01-16
 
 ---
 
@@ -24,12 +24,13 @@
 ### Part III: Categories Reconsidered (Ch 9-12)
 - [x] Chapter 9 - drafted and revised (Countability)
 - [x] Chapter 10 - drafted and revised (Definiteness)
-- [x] Chapter 11 - plan approved
-- [x] Chapter 12 - drafted and revised (non-grammar worked cases)
+- [ ] Chapter 11 - plan approved (Lexical Categories); awaiting draft
+- [x] Chapter 12 - polished draft (Gender and the Maintenance Spectrum)
 
-### Part IV: Implications (Ch 13-14)
-- [ ] Chapter 13 - planning ready (Grammaticality itself)
-- [ ] Chapter 14 - outlined (Methodological consequences)
+### Part IV: Implications (Ch 13-15)
+- [x] Chapter 13 - empirically integrated (Stack material: phonemes, words, constructions)
+- [ ] Chapter 14 - planning ready (Grammaticality itself); double-copula vignette, MMMG framework
+- [ ] Chapter 15 - outlined (Methodological consequences)
 
 ### Other
 - [x] Synopsis (~880 words)
@@ -41,14 +42,18 @@
 
 ## Next Actions
 
-1. Draft Chapter 13 (Grammaticality itself)
+1. Draft Chapter 11 (Lexical Categories)
+   - Implementation plan: `notes/ch11/ch11-implementation-plan.md`
+   - Three-act structure: Wastebasket → Skeleton → Mimics
+   - Shark/Dolphin/Ichthyosaur convergent evolution metaphor
+2. Draft Chapter 14 (Grammaticality itself)
    - Double-copula vignette ready as opening
    - Measurement-channel divergence theme
-   - Looping effects (Hacking)
-2. Draft Chapter 14 (Methodological consequences)
-3. Cross-chapter forward/back reference pass
-4. Final polish pass
-5. Ask Peter Evans to proofread when polished
+   - MMMG framework in `notes/chapter13-master.md`
+3. Draft Chapter 15 (Methodological consequences)
+4. Cross-chapter forward/back reference pass
+5. Final polish pass
+6. Ask Peter Evans to proofread when polished
 
 ---
 
@@ -64,11 +69,15 @@ None currently.
 - `linguistics-metrology/` - measurement science application
 - `linguistics-mereology/` - parthood relations
 - `Definiteness_and_deitality/` - Ch 10 spin-off (Kim collaboration)
+- `Language_as_a_Stack.../` - Ch 13 empirical material (phonemes, words, constructions)
 
 ---
 
 ## Session Log
 
-- **2026-01-08**: Chapter 12 in good shape; STATUS.md created; README.md and CLAUDE.md chapter status updated
+- **2026-01-16**: Chapter 13 empirically integrated (Stack paper content added); citations updated
+- **2026-01-15**: STATUS.md updated to reflect 15-chapter structure; Ch 12 = Gender, Ch 13 = Stack material
+- **2026-01-13**: House style enforcement; Ch 13 examples converted to langsci-gb4e
+- **2026-01-08**: Chapter 12 (Gender) polished; STATUS.md created
 - **2026-01-03**: Chapter 1 tightened based on Peter Evans feedback
-- **2025-12-26**: Glossary redone
+- **2025-12-26**: Glossary redone; Gender chapter added (book now 15 chapters)

@@ -1,7 +1,20 @@
 # HPC Book Project Status
 
-**Date**: January 13, 2026
-**Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 polished draft; Glossary complete
+**Date**: January 16, 2026
+**Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 polished draft; Ch 13 empirically enhanced
+
+### Session Work (Jan 16, 2026: Chapter 13 Empirical Integration)
+- ✅ **Chapter 13 Enhanced ("The Stack")**: Integrated empirical content from new stack paper (`literature/main.pdf`)
+  - **Hook**: Explicit two-diagnostic framework (projectibility + homeostasis as independent tests) added to §13.1
+  - **Phonemes**: Added PHOIBLE cross-linguistic signatures (inventory clustering, /y/ scaling) to §13.2
+  - **Morphemes**: Added HistWords persistence analysis (high-drift adjectives) to §13.3
+  - **Constructions**: Added *or even* cross-corpus transfer evidence & ablation signatures to §13.4
+  - **Negative Cases**: Refined academic register/polysynthetic failure modes
+  - **Citations**: Added `ekstrom2025` (Phoneme as Cognitive Tool) & `hamilton2016` (Diachronic Word Embeddings)
+- ✅ **Verification**: 
+  - Compilation successful (357 pages)
+  - Pre-existing missing citations identified (`stevens1989`, `lindblom1990` etc.) - to be fixed
+- **Status**: Chapter 13 now empirically grounded; narrative structure intact.
 
 ### Session Work (Jan 13, 2026: House Style Enforcement)
 - ✅ **langsci-gb4e format corrected** in style documentation:
@@ -250,7 +263,7 @@
 
 - 🔄 **Ch 11** (Lexical Categories): Plan approved, ready to draft
 - 🔄 **Ch 12** (Gender): Rough draft exists; may restart
-- 🔄 **Ch 13** (The Stack): Bumped from original Ch 12 slot
+- 🔄 **Ch 13** (The Stack): Empirically integrated (Jan 16); pending final citations and polish
 - 🔄 Ch 14 (Grammaticality): Theoretical framework developed; needs prose
 - 🔄 Ch 15 (Methodological Consequences): Was Ch 14
 

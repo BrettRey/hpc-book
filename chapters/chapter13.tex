@@ -18,6 +18,8 @@ The answer, this chapter argues, is that the \term{coupling regime} changes. At 
 
 This is the insight behind the ``stack'' metaphor. From phonemes to constructions to discourse, linguistic categories are homeostatic property clusters maintained by mechanisms. But the mechanisms differ, and so does the tightness of the form--function binding. What's invariant is the \emph{explanatory strategy}: when something behaves category-like, ask what stabilises the covariance and what it projects to. What varies is the \emph{stabiliser weighting}---which mechanisms dominate, and how transparent the coupling is.
 
+The framework applies two diagnostics at each level. \term{Projectibility} asks whether patterns learned from one dataset can predict another---can we infer properties of new instances from old ones? \term{Homeostasis} asks whether we can name mechanisms that maintain the property cluster and identify their signatures in the data. These tests are independent. A category might project reliably without any identifiable mechanisms (overfitting to spurious patterns), or it might have plausible mechanisms that don't actually produce stable clustering (broken homeostasis). Both tests have to pass for kindhood to be warranted.
+
 \subsection{What this chapter will show}
 
 If the HPC framework applies at a new level, we expect to find:
@@ -100,6 +102,14 @@ The classical view treats phonemes as bundles of distinctive features, defined b
 
 The HPC framing adds the maintenance story. Phonemes are stable because mechanisms---quantal regions, dispersion pressure, perceptual magnets, community transmission---keep the cluster coherent. They change when mechanisms weaken or conflict. Mergers happen where cue reliability is low. Splits happen where social pressures amplify small differences.
 
+\subsection{Cross-linguistic signatures}
+
+The \mention{pin}/\mention{pen} case shows homeostatic failure within a single language. What about cross-linguistic patterns? If phonemes are HPCs maintained by universal mechanisms, we should see signatures in typological data.
+
+Recent analysis of PHOIBLE~2.0 \citep{ekstrom2025}---a database of segmental inventories for roughly 2,700 languages---reveals two such signatures. First, inventory sizes cluster between 20 and 50 segments across unrelated language families. This isn't random scatter; it's the signature of shared constraints (articulatory, perceptual, memory-based) producing convergent outcomes. Second, the probability that a language includes /y/---a front rounded vowel requiring precise articulatory coordination---rises with vowel-inventory size. By contrast, /i/ is common even in small systems. Marked segments scale with system size because they require the redundancy that larger systems can afford.
+
+These patterns pass both diagnostics. Projectibility: knowing a language's family predicts its inventory size with cross-validated accuracy above chance. Homeostasis: the quantal-regions and dispersion-pressure mechanisms predict exactly the convergence on the 20--50 band and the scaling curve for marked vowels. The patterns aren't artefacts of genealogical non-independence; they survive robustness checks that prune to one language per subfamily.
+
 This is the payoff: the framework doesn't just describe phoneme categories; it explains their dynamics.
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -163,6 +173,16 @@ This is the mechanism signature. Frequency stabilises the arbitrary pairing by e
 The classical view treats the morpheme as a sign: an arbitrary pairing of form and meaning. This is Saussure's foundational insight, and it's correct. But it's static. It tells you what morphemes \emph{are} without explaining what keeps them stable or what makes them change.
 
 The HPC framing adds the stabilisation story. Irregular pairings like \mention{go}--\mention{went} survive because frequency protects them. Regular patterns like \mention{walk}--\mention{walked} extend because analogy amplifies them. The ``morpheme level'' is not a fixed stratum but a region in stabiliser-weighting space where storage mechanisms dominate over production constraints.
+
+\subsection{Persistence through drift}
+
+Morphemes can change meaning and still remain identifiable. The question is whether enough properties stay bundled for the category to project.
+
+Analysis of the HistWords COHA embeddings \citep{hamilton2016} tests this directly. High-drift adjectives---\mention{nice}, \mention{sick}, \mention{gay}, \mention{awful}---show substantial cosine displacement across decades. Their distributional neighbourhoods shift: for \mention{nice}, nearest neighbours move from \emph{pretty, lovely, pleasant} (1900s) to \emph{cute, wonderful, really} (2000s). For \mention{sick}, from \emph{ill, tired, hungry} to \emph{hurt, drunk, upset}.
+
+Yet a prototype classifier trained on early decades (1900--1940) and tested on later decades (1950--2000) still identifies word identity with macro-F1 above 0.80. Some words pass both the cohesion threshold (neighbourhood overlap $\geq$ 0.30) and the held-out prediction test; others don't. The framework predicts exactly this: kindhood is earned differentially, not blanket-applied.
+
+The stabilisers are identifiable: orthographic standardisation (spelling conventions resist variation), frequency entrenchment (high-frequency items are retrieved automatically), editorial norms (copy-editing flags non-standard usage), and register licensing (genre conventions sanction certain words in certain contexts). These aren't just labels for correlation---they're social practices with cognitive effects, operating through associative memory, conformity pressure, and error-driven learning.
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 \section{Architectural coupling: constructions}
@@ -241,6 +261,16 @@ Construction Grammar has long argued that constructions are form--meaning pairin
 For \mention{let alone}, the answer is entrenchment and cue redundancy. The construction is robustly represented in frequent users and fragile in infrequent users. For the ditransitive, the answer is type frequency and semantic coherence. The construction is robust because it's densely attested and semantically constrained.
 
 This explains the differential stability. The ditransitive is nearly universal among English speakers; \mention{let alone} varies. The mechanisms predict the pattern.
+
+\subsection{Cross-corpus transfer}
+
+The projectibility diagnostic for constructions is cross-corpus transfer: can cue patterns learned from one corpus identify the construction in another?
+
+For the scalar-additive \mention{or even}---a cousin of \mention{let alone}---this test can be run directly. The cue bundle includes the anchor string, syntactic parallelism between contrasted elements, and scalar or contrast markers in the surrounding context. A classifier trained on one UD English corpus (GUM, with multi-genre coverage) and tested on another (EWT, web genres) should achieve precision-recall AUC above a substantive threshold if the construction is a genuine HPC.
+
+Preliminary results show exactly this: cross-corpus PR-AUC exceeds 0.70, and ablating individual cues degrades performance in predictable ways. Removing parallelism produces the largest drops, consistent with parallelism serving as a dominant stabiliser. The pattern holds for other constructions in the battery---\mention{way}-construction, N--P--N (\mention{day by day}), comparative correlatives---though at varying strengths.
+
+The framework's teeth show in the designed failure cases. Pooling all ``resultative'' patterns into a single category produces exactly what the ``too fat'' diagnosis predicts: weak cross-corpus transfer and washed-out ablation signatures, because the umbrella groups distinct subtypes maintained by heterogeneous mechanisms. Register-local constructions like \mention{X much?} project strongly within informal web text but fail outside that population---locality as a positive prediction, not a nuisance.
 
 %--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 \section{The stabiliser-weighting map}
