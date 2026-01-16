@@ -231,12 +231,11 @@
 % Cross-linguistic subscript marker (e.g., \textsc{subject}\crossmark)
 \newcommand{\crossmark}{\textsubscript{\Cross}}
 
-% Judgement markers
-\newcommand{\ungram}[1]{*\!#1}
-\newcommand{\marg}[1]{\textsuperscript{?}\!#1}
-\newcommand{\mmark}[1]{\textsuperscript{?}\!#1}  % alias for \marg
-\newcommand{\mmmark}[1]{\textsuperscript{??}\!#1}  % double question mark
-\newcommand{\odd}[1]{\#\!#1}
+% Judgement markers (zero-argument, for judgment slots: \ea[*]{\mention{text}})
+\newcommand{\ungram}{*}
+\newcommand{\marg}{?}
+\newcommand{\mmarg}{??}
+\newcommand{\odd}{\#}
 
 % e.g., i.e., etc., with sensible spacing
 \newcommand{\eg}{e.g.,\xspace}
