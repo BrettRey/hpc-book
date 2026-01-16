@@ -28,9 +28,9 @@
 - [x] Chapter 12 - polished draft (Gender and the Maintenance Spectrum)
 
 ### Part IV: Implications (Ch 13-15)
-- [x] Chapter 13 - empirically integrated (Stack material: phonemes, words, constructions)
+- [x] Chapter 13 - reframed (Zipper metaphor) & empirically integrated
 - [ ] Chapter 14 - planning ready (Grammaticality itself); double-copula vignette, MMMG framework
-- [ ] Chapter 15 - outlined (Methodological consequences)
+- [/] Chapter 15 - Meta-theory section drafted; ABM notes pending
 
 ### Other
 - [x] Synopsis (~880 words)
@@ -75,7 +75,7 @@ None currently.
 
 ## Session Log
 
-- **2026-01-16**: Chapter 13 empirically integrated (Stack paper content added); citations updated
+- **2026-01-16**: Chapter 13 reframed (Zipper/Coupling) + Register diagnosis fixed; Chapter 15 Meta-theory section added.
 - **2026-01-15**: STATUS.md updated to reflect 15-chapter structure; Ch 12 = Gender, Ch 13 = Stack material
 - **2026-01-13**: House style enforcement; Ch 13 examples converted to langsci-gb4e
 - **2026-01-08**: Chapter 12 (Gender) polished; STATUS.md created
