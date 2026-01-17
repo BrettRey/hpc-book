@@ -42,202 +42,201 @@ To say what's being coupled, we need a term that works across grains. We've alre
 
 The zipper, then, has form on one track and value on the other. What changes across grains is what kind of value, and how tightly form is coupled to it.
 
-\subsection{The chapter's claims}
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+\section{Two diagnostics, asymmetrically applied}
+\label{sec:13:diagnostics}
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-This chapter argues that error-shape diagnoses coupling regime; coupling regime reflects stabilizer weighting; and two diagnostics~-- projectibility and homeostasis~-- test whether a purported category earns kindhood.
+Boyd's homeostatic property-cluster (HPC) framework treats projectibility as following from homeostatic maintenance: if mechanisms hold a cluster together, the cluster will support induction. For methodological clarity, I revise this relationship, treating projectibility and homeostasis as independent criteria that must both be satisfied.
 
-\term{Projectibility} asks whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? \term{Homeostasis} asks whether we can identify stabilizers that maintain the property cluster and find their signatures in the data. These tests are independent:
+The two criteria are not operationalized symmetrically.
 
-\begin{itemize}
-    \item A category might project reliably without identifiable stabilizers. This is the \emph{black-box success} case: a classifier achieves cross-sample accuracy, but we can't say what maintains the clustering. The projectibility is real but unexplained~-- possibly spurious, possibly tracking a genuine kind whose stabilizers we haven't identified. Example: a neural network trained on part-of-speech tags might achieve high accuracy without any interpretable feature weights. The projection is real; the mechanism story is missing.
+\paragraph{Projectibility is tested directly.} The question is whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? This is tested via out-of-sample prediction: cross-validated classification accuracy, held-out F1 scores, cross-corpus transfer. Concrete thresholds can be declared in advance: ROC-AUC $\geq 0.70$, PR-AUC $\geq 0.70$, macro-F1 $\geq 0.35$, held-out cohesion $\geq 0.30$. These thresholds are somewhat arbitrary conventions, but that's the point: declaring them in advance disciplines the inference.
+
+\paragraph{Homeostasis is inferred.} The question is whether we can identify stabilizers that maintain the property cluster and find their predicted signatures in the data. We name candidate mechanisms (articulatory constraints, frequency entrenchment, normative enforcement), derive their predicted signatures (scaling curves, perturbation sensitivity, cue covariance), and check whether the data are consistent with those predictions. The inference is defeasible~-- the signatures could arise from other sources~-- but it's grounded in mechanism--signature pairings rather than asserted by narrative alone.
+
+The relationship between mechanism and projection is asymmetric. Figure~\ref{fig:13:asymmetry} shows the structure: mechanisms causally support covariance, which enables projection; projection provides evidence for kindhood only when accompanied by a credible mechanism story.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm,
+    box/.style={rectangle, draw, minimum width=2.5cm, minimum height=1cm, align=center},
+    arrow/.style={->, >=stealth, thick}
+]
+\node[box] (mech) {Mechanisms};
+\node[box, right=of mech] (cov) {Covariance};
+\node[box, right=of cov] (proj) {Projection};
+
+\draw[arrow] (mech) -- node[above] {maintain} (cov);
+\draw[arrow] (cov) -- node[above] {supports} (proj);
+
+\draw[arrow, dashed] (proj.south) -- ++(0,-0.8) -| node[below, pos=0.25] {Test projection} (cov.south);
+\draw[arrow, dashed] (cov.south) -- ++(0,-0.5) -| node[below, pos=0.25] {Check mechanisms} (mech.south);
+\end{tikzpicture}
+\caption{The causal arrow runs from mechanisms to projection; the evidential arrows run in reverse. Both diagnostics must succeed independently for kindhood to be warranted.}
+\label{fig:13:asymmetry}
+\end{figure}
+
+\subsection{Failure modes}
+
+A category might project without identifiable stabilizers (possibly spurious overfitting). A category might have plausible stabilizers that don't produce stable clustering (broken homeostasis). Both diagnostics have to pass for kindhood to be warranted. The independence matters: it means the framework can fail in two directions.
+
+Three failure types recur across linguistic levels:
+
+\begin{description}
+    \item[Too thin.] Nonce coinages, campaign-season blends, idiolectal \enquote{style phonemes}, and child-only overregularizations within adult Standard English don't pass the projectibility test in the relevant population--time slice. Held-out prediction collapses; the stabilizers one would expect to bind properties (frequency, entrenchment, community norms) are absent or act in the opposite direction. These cases are explananda for learning or diffusion, but not kinds.
     
-    \item A category might have plausible stabilizers that don't produce stable clustering. This is the \emph{broken homeostasis} case: we can tell a story about what should maintain the cluster, but the predictions don't hold across samples or perturbations. Example: one might propose that \enquote{long words} form a natural class stabilized by processing difficulty, but the class doesn't project~-- knowing a word is long doesn't predict its syntactic behaviour, its semantic type, or its distributional neighbourhood. The mechanism story is decorative.
-\end{itemize}
+    \item[Too fat.] Cross-linguistic umbrellas such as \enquote{resultative} or \enquote{ditransitive} pool patterns maintained by different morphosyntactic resources, cue reliabilities, and norming regimes. The pooled set can look impressive descriptively, but the mechanism story is disjunctive: dispersion in one language, selectional licensing in another, constructional analogy in a third \parencite{croft2001,haspelmath2010}. Cross-corpus prediction drifts toward family- or area-specific quirks, ablations fail to show stable redundancy, and effects wash out under lineage-pruning. The right move is to localize the ontology: retain language-internal equilibria as kinds and treat the global umbrella as an interest-relative taxonomy.
+    
+    \item[Merely negative.] Complement classes~-- \enquote{ungrammatical strings}, \enquote{all exceptions to rule R}~-- are defined by what they're not rather than what they are. They don't project (there's no stable covariance to learn) and they don't admit a non-accidental mechanism story. A caveat: structured subsets within a complement class can be HPC candidates in their own right. L2 transfer clusters (e.g., persistent article-drop errors among speakers of articleless L1s) may show stable covariance, predictable error profiles, and mechanism--signature pairings that the grab-bag \enquote{all L2 errors} lacks.
+\end{description}
 
-Both tests have to pass for kindhood to be warranted. The independence matters: it means the framework can fail in two directions, not just one.
+\subsection{What would falsify these claims?}
 
-\paragraph{What would falsify this chapter's claims?}
-
-Three failure conditions, tied to the three positive cases:
+The diagnostics generate clear disconfirmers at each level:
 
 \begin{enumerate}
-    \item \textbf{Phonemes}: If mergers showed no relationship to cue reliability~-- if vowel mergers occurred in environments where acoustic cues are robust rather than degraded~-- the homeostasis story would be wrong.
+    \item \textbf{Phonemes}: If the /y/ scaling effect collapses under lineage-pruning (one language per subfamily), the claim that marked segments scale with inventory size fails. If mergers showed no relationship to cue reliability~-- occurring where acoustic cues are robust rather than degraded~-- the homeostasis story would be wrong.
     
-    \item \textbf{Morphemes}: If regularization probability showed no relationship to frequency~-- if high-frequency irregulars like \mention{went} were just as vulnerable as low-frequency ones like \mention{clove}~-- the entrenchment stabilizer would be decorative.
+    \item \textbf{Words}: If semantic drift produced no cohesion loss~-- if high-drift adjectives retained the same distributional neighbourhoods as low-drift controls~-- the framework would have nothing to explain. If regularization probability showed no relationship to frequency~-- if high-frequency irregulars like \mention{went} were just as vulnerable as low-frequency ones like \mention{clove}~-- the entrenchment stabilizer would be decorative.
     
-    \item \textbf{Constructions}: If cross-corpus transfer for constructions like \mention{let alone} performed at chance, or if ablating formal cues (parallelism, licensing context) produced no interpretable degradation pattern, the claim that constructions are HPCs would lack evidential support.
+    \item \textbf{Constructions}: If cross-corpus transfer performed at chance, or if ablating formal cues (parallelism, licensing context) produced no interpretable degradation pattern, the claim that constructions are HPCs would lack evidential support.
 \end{enumerate}
-
-\subsection{What this chapter will show}
-
-If the HPC framework applies at a different grain, we expect to find:
-\begin{enumerate}
-    \item Properties that cluster without being definitionally linked.
-    \item Stabilizers that maintain the clustering.
-    \item Graded category membership at the boundaries.
-    \item Historical mutability: perturbation degrades the cluster.
-\end{enumerate}
-
-The chapter applies these expectations to three positive cases (phonemes, morphemes, constructions) and three negative cases (academic register, Indo-European, polysynthetic). The positive cases show the framework scaling. The negative cases show it has teeth~-- it can say \emph{no} as well as \emph{yes}.
-
-One caveat before we begin. The tiers I'll discuss~-- phoneme, morpheme, construction~-- are convenient labels, not universal strata. They describe how English (and languages of similar type) organizes its categories. Other languages draw the boundaries differently: §\ref{sec:13:crossling} stress-tests the framework against typological variation. The HPC explanatory strategy is domain-general. The coupling regime is language-specific.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{Transparent coupling: phonemes}
 \label{sec:13:phonemes}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-Say the word \mention{key}. Now say \mention{ski}. You probably think the /\ipa{k}/ sound is the same in both. It isn't.
-
-In \mention{key}, your tongue is further forward, anticipating the front vowel. In \mention{ski}, it's further back. A spectrogram would show you: the burst frequencies differ, the formant transitions differ. They're acoustically distinct.
-
-But in ordinary listening, you won't notice the difference, because English doesn't treat it as contrastive. Both sounds are filed under /\ipa{k}/. The phoneme is an abstraction over the acoustics~-- a category that groups variant tokens and opposes them to other categories (/\ipa{g}/, /\ipa{t}/, /\ipa{p}/).
-
-This is transparent coupling. At the phoneme level, form directly realizes contrastive value. The acoustic pattern discharges the contrastive job without any intervening representational structure. There's no separable \enquote{meaning} to decouple from~-- the value of /\ipa{k}/ is simply `not /\ipa{g}/, not /\ipa{t}/, not /\ipa{p}/'.
+The phoneme tier is the cleanest place to test the claim that linguistic categories are HPC kinds. Inventories are comparable across languages, there's independent theory about plausible stabilizers, and open resources allow fully reproducible analysis.
 
 \subsection{The cluster}
 
-For a worked case, consider the vowels /\ipa{ɪ}/ (as in \mention{bit}) and /\ipa{ɛ}/ (as in \mention{bet}). For most English speakers, these anchor a lexical contrast: \mention{pin} versus \mention{pen}, \mention{tin} versus \mention{ten}, \mention{bit} versus \mention{bet}.
-
-The contrast is maintained by a cluster of properties that travel together:
+For phonemes, the cluster properties include:
 
 \begin{itemize}
-    \item \textbf{Acoustic cues.} Distributions in F1/F2 formant space. For /\ipa{ɪ}/, typical values are F1 $\approx$ 400 Hz, F2 $\approx$ 2000 Hz; for /\ipa{ɛ}/, F1 $\approx$ 550 Hz, F2 $\approx$ 1800 Hz. These are statistical tendencies, not fixed targets~-- speakers vary, contexts vary, and cue trading allows one dimension to compensate for another.
-    \item \textbf{Production routines.} Tongue height and advancement differ. The articulatory gesture is reliable enough to produce consistent acoustic output, but flexible enough to accommodate coarticulation.
-    \item \textbf{Lexical contrast.} Minimal pairs (\mention{pin}/\mention{pen}, \mention{bit}/\mention{bet}) make the contrast communicatively consequential. Misproduction yields a different word.
+    \item \textbf{Acoustic cues.} Distributions in formant space, voice-onset time, spectral moments. These are statistical tendencies, not fixed targets~-- speakers vary, contexts vary, and cue trading allows one dimension to compensate for another.
+    \item \textbf{Production routines.} Articulatory gestures reliable enough to produce consistent acoustic output, but flexible enough to accommodate coarticulation.
+    \item \textbf{Lexical contrast.} Minimal pairs that make the contrast communicatively consequential.
     \item \textbf{Perceptual categorisation.} Listeners map continuous acoustic input onto discrete categories, with sharper boundaries in high-contrast regions.
 \end{itemize}
 
 \subsection{The stabilizers}
 
-Three stabilizer types maintain phoneme categories:
+Four stabilizer types maintain phoneme categories:
 
-\paragraph{Design-space constraints.} \textcite{stevens1989} showed that the articulatory-to-acoustic mapping is non-linear. Certain vocal-tract configurations produce stable acoustic outputs across a range of articulatory variation. The stable regions are \term{quantal}~-- natural \enquote{parking spots} where small articulatory changes produce minimal acoustic change, but crossing a threshold produces a jump. These constrain what phoneme contrasts are \emph{possible}.
+\paragraph{Quantal regions.} \textcite{stevens1989} showed that the articulatory-to-acoustic mapping is non-linear. Certain vocal-tract configurations produce stable acoustic outputs across a range of articulatory variation~-- natural \enquote{parking spots} where small articulatory changes produce minimal acoustic change. These constrain what phoneme contrasts are \emph{possible}.
 
-\paragraph{Dispersion pressure.} \textcite{lindblom1990} argued that vowel inventories disperse in acoustic space to maximize discriminability. This is a community-level transmission pressure: inventories that fail to disperse are harder to transmit and drift toward dispersed configurations over time. Dispersion shapes which of the possible phonemes a language \emph{selects}.
+\paragraph{Dispersion pressure.} \textcite{lindblom1990} argued that vowel inventories disperse in acoustic space to maximize discriminability. This community-level transmission pressure shapes which of the possible phonemes a language \emph{selects}.
 
-\paragraph{Perceptual tuning.} \textcite{kuhl1992} demonstrated that infant perception is warped by early exposure. Category prototypes act as \term{perceptual magnets}: stimuli near the prototype are perceptually pulled toward it. This tunes the \emph{individual speaker} to the community standard.
+\paragraph{Perceptual tuning.} \textcite{kuhl1992} demonstrated that infant perception is warped by early exposure. Category prototypes act as perceptual magnets: stimuli near the prototype are perceptually pulled toward it. This tunes the \emph{individual speaker} to the community standard.
 
-The phoneme that emerges is not a universal category but a language-specific cluster, maintained by this layered stabilizer braid.
+\paragraph{Community norms.} Social transmission across generations stabilizes inventories. These are the mechanisms that cultural-tool accounts emphasize \parencite{ekstrom2025}.
 
-\subsection{Stress test: the \mention{pin}/\mention{pen} merger}
+\subsection{Evidence: PHOIBLE inventory patterns}
+
+PHOIBLE 2.0 \parencite{moran2019phoible} provides cross-linguistic phoneme inventories for roughly 2,700 languages. Two patterns satisfy the diagnostics.
+
+\paragraph{Stability band.} Plotting kernel-density ridgelines of total inventory sizes by family reveals a striking regularity: medians cluster in a narrow band roughly between 20 and 50 segments, with thin tails beyond that range. Because densities are estimated independently by family, the shared band isn't an artifact of pooling; it's a cross-family regularity that enables inventory-level projection (from sampled languages in a family to unseen relatives within that family).
+
+\paragraph{/y/ scaling.} The vowel /y/~-- a front rounded vowel requiring precise coordination of lip rounding with forward tongue position~-- is articulatorily \enquote{marked} relative to cardinal vowels like /i/ that sit in quantal regions. A logistic model predicting /y/-presence from vowel-inventory size (excluding /y/ to avoid circularity), with fixed effects for language family and macro-area and 10-fold cross-validation grouped by family, shows a monotonically rising curve. The /y/ curve rises with system size; the /i/ control is common across the range and essentially flat. Discrimination is above chance (ROC-AUC $\approx 0.70$), so the relation has predictive force rather than being a descriptive accident.
+
+\paragraph{Diagnostic punchline.} \emph{Projectibility}: The ridgelines constrain where inventories fall by family; the /y/ model supports a scaling inference about specific segments as systems expand. \emph{Homeostasis}: The stabilizers~-- quantal regions, dispersion pressure, perceptual magnets, community norms~-- are independently motivated. The scaling pattern for /y/ is exactly what the stabilizer story predicts: marked segments lacking quantal robustness appear mainly in larger systems where there's room in the acoustic space.
+
+\subsection{Stress test: the \mentionhead{pin}/\mentionhead{pen} merger}
 
 If phonemes are HPCs maintained by stabilizers, what happens when the stabilizers weaken?
 
-The \mention{pin}/\mention{pen} merger, documented extensively by \textcite{labov2006}, provides the evidence. In much of the American South and parts of the Midland, /\ipa{ɪ}/ and /\ipa{ɛ}/ have merged before nasal consonants. Speakers produce the same vowel in \mention{pin} and \mention{pen}; they can't reliably distinguish the two words by ear.
+The \mention{pin}/\mention{pen} merger, documented by \textcite{labov2006}, provides evidence. In much of the American South and parts of the Midland, /\ipa{ɪ}/ and /\ipa{ɛ}/ have merged before nasal consonants. Speakers produce the same vowel in \mention{pin} and \mention{pen}; they can't reliably distinguish the two words by ear.
 
 The conditioning environment is revealing. Before nasals, the vowels are subject to nasalization, which smears the formant cues. F1 is raised and F2 is altered by velopharyngeal coupling. In exactly the environment where the acoustic cues are least reliable, the contrast collapses.
 
-This is homeostasis failing in a predictable way. The merger is not random noise; it's a consequence of perturbing the stabilizers. Where cue reliability decreases, the category boundary destabilizes. In non-nasal contexts, the two vowel distributions remain separated in F1/F2 space; in pre-nasal contexts, they overlap substantially or merge completely. A listener confusion matrix in the merged dialect shows near-chance performance on \mention{pin}/\mention{pen} discrimination, while \mention{bit}/\mention{bet} discrimination remains intact.
-
-\subsection{Diagnostic punchline}
-
-\paragraph{Projectibility.} The /\ipa{ɪ}/--/\ipa{ɛ}/ contrast projects reliably across English dialects that maintain it. Knowing the contrast exists predicts minimal-pair discrimination, lexical organisation, and phonotactic patterns. The merger also projects: knowing a speaker has the merger predicts confusion on the relevant pairs.
-
-\paragraph{Homeostasis.} The stabilizers~-- quantal regions, dispersion pressure, perceptual magnets~-- are independently motivated and make testable predictions. The \mention{pin}/\mention{pen} merger confirms them: where stabilizers weaken (pre-nasal cue degradation), clustering degrades.
+This is homeostasis failing in a predictable way. The merger is not random noise; it's a consequence of perturbing the stabilizers. Where cue reliability decreases, the category boundary destabilizes. In non-nasal contexts, the two vowel distributions remain separated in F1/F2 space; in pre-nasal contexts, they overlap substantially or merge completely.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
-\section{Opaque coupling: morphemes}
-\label{sec:13:morphemes}
+\section{Opaque coupling: words}
+\label{sec:13:words}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-At the phoneme level, form directly realizes contrastive value. At the next level up, form and value come apart.
+At the phoneme level, form directly realizes contrastive value. At the word level, form and value come apart. The form \mention{went} encodes pastness, but you can't read the value off the form~-- the connection is brute memory. This is \term{opaque coupling}.
 
-Consider \mention{went}. It's the past tense of \mention{go}. Why?
-
-There's no phonological connection. No suffix, no ablaut pattern you could generalize, no rule that predicts \mention{went} from \mention{go}. The connection is brute memory: English speakers learn this pairing as a fact.
-
-This is \term{opaque coupling}. The form carries information about the value~-- \mention{went} encodes pastness~-- but you can't read the value off the form. The acoustic shape [\ipa{wɛnt}] doesn't \emph{mean} past; it's \emph{associated with} past by convention.
-
-\subsection{The cluster}
-
-For a case with richer stabilizer signature, consider regular past-tense marking. The suffix \mention{-ed} has three phonologically conditioned allomorphs: [\ipa{t}] after voiceless consonants (\mention{walked}), [\ipa{d}] after voiced sounds (\mention{played}), [\ipa{ɪd}] after alveolar stops (\mention{wanted}).
-
-The form cluster is maintained by phonological naturalness~-- the allomorphy follows from assimilation and syllable structure. The value cluster is maintained by temporal cognition~-- pastness is a coherent semantic category cross-linguistically.
-
-What maintains the \emph{pairing}?
+\textcite{miller2021} develops an HPC stance at the level of particular lexemes~-- \mention{dog}, \mention{run}, \mention{egregious}~-- rejecting essence-based individuation in favour of mechanism-indexed clusters that are historically delimited and population-relative. The lexeme \mention{dog} maintains its identity not through a platonic essence but because spelling conventions, pronunciation norms, semantic associations, and syntactic patterns travel together, stabilized by frequency of use, register licensing, literacy education, and community norms.
 
 \subsection{The stabilizers}
 
-\paragraph{Frequency entrenchment.} High-frequency verbs are heard and produced often enough that the pairing is densely attested. Speakers don't have to generalize; they retrieve.
+\paragraph{Orthographic standardization.} Spelling conventions constrain written form through educational institutions and publishing practices, implemented cognitively via explicit instruction and error correction.
 
-\paragraph{Paradigm pressure.} The regular pattern (\mention{walk}--\mention{walked}, \mention{play}--\mention{played}) provides a template that extends to novel verbs (\mention{to google}~$\rightarrow$~\mention{googled}).
+\paragraph{Frequency entrenchment.} High-frequency items are resistant to perturbation through sheer repetition in memory: each token strengthens the form--value link and automates retrieval \parencite{bybee2001}.
 
-\paragraph{Analogical extension.} When speakers encounter unfamiliar verbs, they produce past tenses by analogy to similar forms. Wug-test results confirm the pattern: children and adults extend \mention{-ed} to nonce verbs.
+\paragraph{Editorial norms.} Copy-editing workflows flag nonstandard usage, implemented via conformity bias and reputation monitoring.
+
+\paragraph{Register licensing.} Genre conventions sanction certain words in certain contexts, implemented via associative learning linking words to situational contexts.
+
+\subsection{Evidence: semantic drift in HistWords}
+
+The question is whether words can change semantically and still remain HPC kinds. The HistWords COHA lemma embeddings \parencite{hamilton2016} provide decade-binned distributional representations for English words over the 20th century.
+
+\paragraph{Target selection.} High-drift adjectives (top decile of average cosine displacement among non-stop, non-proper adjectives, with documented drift terms like \mention{nice}, \mention{sick}, \mention{gay}, \mention{awful} forced in when available) are compared to 16 POS- and frequency-matched controls with minimal drift.
+
+\paragraph{Cohesion check.} By \enquote{distributional neighbourhood} I mean the set of words that typically appear within a fixed window (here, five tokens) of the target. Some drift adjectives retain organized neighbourhoods even as their centres move. For \mention{nice}, nearest neighbours shift from \{pretty, lovely, pleasant\} in the 1900s to \{cute, wonderful, really\} by the 2000s; for \mention{sick}, from \{ill, tired, hungry\} to \{hurt, drunk, upset\}. These trajectories meet the overlap threshold (top-50 overlap $\geq 0.30$), but the broader high-drift set averages lower cohesion (mean overlap 0.20 vs.\ controls 0.64), consistent with the framework's expectation that not all drifted words remain kind-like.
+
+\paragraph{Held-out prediction.} A prototype classifier trained on early decades (1900--1940) and tested on later decades (1950--2000) recovers word identity well above a shuffled-label baseline (macro-F1 = 0.84 vs.\ 0.03). Mean per-lexeme accuracy is 0.71 for targets (95\% CI [0.58, 0.83]) and 1.00 for controls. Temporal locality, measured by the nearest-decade mean absolute error, averages 1.71 decades for targets and 1.03 for controls; only \mention{nice} and \mention{sick} fall at or below the one-decade threshold.
+
+\paragraph{Diagnostic punchline.} Combined with the cohesion cutoff, only a subset of high-drift adjectives satisfies both per-lexeme criteria. The framework tells us to withhold kindhood for those lexeme--time slices rather than forcing a positive verdict. For the subset that passes, past usage fixes expectations that carry forward~-- exactly what the HPC picture predicts when stabilizers preserve enough shared properties as a word moves.
 
 \subsection{Stress test: regularisation and frequency}
 
-If form--value pairings are maintained by frequency and analogy, we should see a specific pattern: high-frequency irregulars should resist regularization; low-frequency irregulars should be vulnerable.
+If form--value pairings are maintained by frequency and analogy, high-frequency irregulars should resist regularization; low-frequency irregulars should be vulnerable.
 
-\textcite{bybee2001} documents exactly this. High-frequency irregulars (\mention{go}--\mention{went}, \mention{have}--\mention{had}, \mention{be}--\mention{was}) show no regularization pressure. Mid-frequency irregulars (\mention{weave}--\mention{wove}, \mention{strive}--\mention{strove}, \mention{dive}--\mention{dove}) show variable forms, with regularized variants emerging. Low-frequency irregulars (\mention{cleave}--\mention{clove}, \mention{chide}--\mention{chid}, \mention{gird}--\mention{girt}) have largely regularized.
+\textcite{bybee2001} documents exactly this. High-frequency irregulars (\mention{go}--\mention{went}, \mention{have}--\mention{had}) show no regularization pressure. Mid-frequency irregulars (\mention{weave}--\mention{wove}, \mention{strive}--\mention{strove}) show variable forms. Low-frequency irregulars (\mention{cleave}--\mention{clove}, \mention{chide}--\mention{chid}) have largely regularized.
 
 This is the stabilizer signature. Frequency protects the arbitrary pairing by ensuring dense memory traces. Analogy extends the regular pattern to underdetermined cases. The two stabilizers interact: frequency protects irregulars from analogy; analogy regularizes the unprotected.
-
-\subsection{Diagnostic punchline}
-
-\paragraph{Projectibility.} Knowing a verb's frequency predicts its regularization vulnerability. The pattern holds across verbs, across time (historical regularization follows the same curve), and across speakers (children regularize low-frequency irregulars earlier).
-
-\paragraph{Homeostasis.} Frequency entrenchment and analogical pressure are independently motivated. The prediction~-- inverse relationship between frequency and regularization~-- is confirmed. The stabilizers are doing the work the framework claims.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{Architectural coupling: constructions}
 \label{sec:13:constructions}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-At the construction level, form and value are re-unified~-- but now with visible seams.
-
-A construction is a conventional pairing of form and value, stored as a unit and deployed as a whole. Unlike morphemes, constructions can be internally complex: they can contain slots, span clauses, and impose constraints on their fillers. The form--value coupling is \emph{architectural}~-- built up from components, maintained by use, transmitted through interaction.
-
-\subsection{The cluster: \mention{let alone}}
-
-Consider:
-
-\ea[]{\mention{I wouldn't live in Cleveland, let alone Detroit.}}\label{ex:letalone}
-\z
-
-The speaker is saying: if Cleveland is already below my threshold, Detroit is even further below. There's an implicit scale, and the second element is more extreme than the first.
-
-Now try to break it:
-
-\ea[*]{\mention{I would live in Cleveland, let alone Detroit.}}\label{ex:letalone-bad}
-\z
-
-The positive sentence is odd. \mention{Let alone} requires a negative or downward-entailing context.
-
-The form cluster: fixed anchor phrase \mention{let alone} (not *\mention{leave alone}); syntactic parallelism between the two contrasted elements; licensing context requiring negation, doubt, or other downward-entailing operators.
-
-The value cluster: scalar semantics (the second element ranks higher on an implied scale); presupposition (if the first is rejected, the second is a fortiori rejected); rhetorical force (emphasis through implicit comparison).
-
-The coupling is tight. Speakers who encounter the phrase infer the scalar value; speakers who want to express a scalar comparison reach for the phrase.
+Constructions~-- conventionalized pairings of form and meaning that go beyond compositional rules~-- rely on multiple converging cues that speakers recognize as a gestalt. The form--value coupling is \emph{architectural}: built up from components, maintained by use, transmitted through interaction.
 
 \subsection{The stabilizers}
 
-\paragraph{Entrenchment.} Repeated exposure strengthens the form--value pairing. High-frequency users have robust representations; low-frequency users may be uncertain about the licensing conditions.
+\paragraph{Frequency and entrenchment.} Each token use strengthens memory traces, increasing production probability, which generates more tokens in a self-reinforcing loop \parencite{bybee2001}.
 
-\paragraph{Cue redundancy.} Multiple formal features converge on the same interpretation. The fixed phrase, the parallelism, the licensing context all point to scalar semantics. Redundancy makes the construction recognisable even when individual cues are noisy.
+\paragraph{Cue redundancy.} Multiple formal features converge on the same interpretation. If parallelism fails in a rushed email, the anchor string and licensing context still signal the construction.
 
-\paragraph{Interactional alignment.} Speakers coordinate their usage in interaction. If I use \mention{let alone} and you understand it, our representations converge. Miscommunication triggers repair.
+\paragraph{Normative pressure.} Editorial practices and style guides reinforce the canonical pattern, especially in formal registers. Odd, unlicensed uses would likely be corrected in editing.
 
-\subsection{Stress test: licensing errors and cross-corpus transfer}
+These mechanisms operate at different timescales. Frequency and entrenchment work rapidly (milliseconds to weeks). Editorial norms operate slowly (years to decades). The fast loop generates patterns; the slow loop crystallizes and transmits them.
 
-If \mention{let alone} is an HPC maintained by entrenchment and cue redundancy, we predict specific failure modes. Low-frequency users should show uncertainty about licensing~-- using \mention{let alone} in upward-entailing contexts where it doesn't belong, or avoiding it entirely. \textcite{fillmore1988} documents exactly these patterns: speakers who lack robust exposure produce errors like \mention{?I can speak French, let alone Spanish} (scalar direction reversed) or avoid the construction in favour of paraphrase.
+\subsection{Evidence: construction battery across UD corpora}
 
-The projectibility diagnostic is cross-corpus transfer: can cue patterns learned from one corpus identify the construction in another? For \mention{let alone} and the related scalar-additive \mention{or even}, a classifier trained on one UD English corpus (GUM) and tested on another (EWT) achieves PR-AUC of 0.73, substantially above the 0.31 baseline for anchor-string matching alone. Ablating individual cues degrades performance in predictable ways: removing parallelism produces the largest drop (PR-AUC falls to 0.58), consistent with parallelism serving as a dominant stabilizer. Full methodology and results appear in Appendix~\ref{app:construction-classifier}.
+A single construction is too easy to tailor the analysis to. If the construction tier is to do more than demonstrate feasibility, the diagnostics have to survive contact with heterogeneous constructions: different cue geometries, different decoy spaces, and different plausible stabilizers.
 
-The framework's teeth show in the designed failure cases. Pooling all \enquote{resultative} patterns into a single category produces weak cross-corpus transfer (PR-AUC near baseline) and washed-out ablation signatures~-- exactly what the \enquote{too fat} diagnosis predicts when an umbrella groups distinct subtypes maintained by heterogeneous stabilizers.
+\paragraph{Battery design.} The confirmatory analysis uses a battery of ten constructions spanning four cue regimes, tested across a fixed palette of UD English corpora (GUM, EWT, GUMReddit, plus additional treebanks). Eight are treated as positive candidates; two are included as \emph{designed brakes cases} to force the framework to say no when it should:
 
-\subsection{Diagnostic punchline}
+\begin{itemize}
+    \item \textbf{Resultative (pooled)}: Predicted \enquote{too fat}. Pooling distinct subtypes (AP-resultatives, PP-path, verb-class specific patterns) should weaken projection and blur ablation signatures.
+    \item \textbf{X much?}: Predicted register-local. Strong projectibility within informal dialogue/web-like text, weak or absent elsewhere.
+\end{itemize}
 
-\paragraph{Projectibility.} Cross-corpus transfer succeeds. Cue ablation produces interpretable degradation. The pattern learned from one sample predicts another.
+\paragraph{Positive candidates.} Semi-schematic argument-structure patterns with lexical hooks (way-construction, time-away); paired-marker templates (comparative correlatives); clausal operators with a lexical spine (just because \dots{} doesn't mean \dots; all-clefts); N--P--N (day by day); or even; binominal N of a N.
 
-\paragraph{Homeostasis.} Entrenchment, cue redundancy, and interactional alignment are independently motivated. The predicted error patterns (licensing violations in low-frequency users, comprehension failure under cue degradation) are attested.
+\paragraph{Projectibility test.} Cross-corpus transfer: can cue patterns learned from one corpus identify the construction in another? For the or even construction, a classifier trained on GUM and tested on EWT achieves PR-AUC of 0.886 (full bundle); dropping parallelism reduces PR-AUC to 0.612 ($\Delta = -0.274$). The pattern reverses direction with similar results (EWT$\rightarrow$GUM: full bundle 0.829, drop parallelism 0.527).
+
+\paragraph{Ablation signatures.} Removing individual cues degrades performance in predictable ways. Parallelism ablation produces the largest drops consistently, confirming it as a dominant stabilizer for scalar-additive constructions. All-clefts show moderate sensitivity to anchor cues; the way construction shows strong sensitivity to possessor framing.
+
+\paragraph{Designed brakes results.} The pooled resultative shows weak cross-corpus transfer and washed-out ablation signatures~-- exactly what the \enquote{too fat} diagnosis predicts when an umbrella groups distinct subtypes maintained by heterogeneous stabilizers. Stratifying into AP-resultative subtypes vs.\ PP-path subtypes restores some projectibility for the AP subtype, confirming the diagnosis while identifying the local kinds it concealed. The X much? construction falls below prevalence thresholds outside informal registers, confirming the register-locality prediction.
+
+\paragraph{Diagnostic punchline.} By preregistered decision rules, N--P--N and the way construction count as provisional positives. All-clefts are borderline. The resultative outcomes are brakes: both the pooled set and the AP subtype depend almost entirely on a single cue, consistent with weak redundancy. The implication is deliberately narrow: the construction tier does not license a blanket HPC claim. Kindhood is earned case-by-case.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{The stabilizer-weighting map}
 \label{sec:13:map}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-The three cases above~-- phonemes, morphemes, constructions~-- are not a ladder. They are regions in a stabilization space defined by how form couples to value and which stabilizers carry the load. Table~\ref{tab:13:stabilizer-map} summarizes the mapping.
+The three cases above~-- phonemes, words, constructions~-- are not a ladder. They are regions in a stabilization space defined by how form couples to value and which stabilizers carry the load. Table~\ref{tab:13:stabilizer-map} summarizes the mapping.
 
 \begin{table}[htbp]
 \centering
@@ -248,90 +247,92 @@ The three cases above~-- phonemes, morphemes, constructions~-- are not a ladder.
 \textbf{Level} & \textbf{Coupling} & \textbf{Error type} & \textbf{Dominant stabilizers} \\
 \midrule
 Phoneme & Transparent & Slip & Quantal regions, dispersion, perceptual magnets \\
-Morpheme & Opaque & — & Frequency entrenchment, paradigm pressure, analogy \\
-Construction & Architectural & Jam & Entrenchment, cue redundancy, alignment, type frequency \\
+Word & Opaque & — & Frequency entrenchment, editorial norms, analogy \\
+Construction & Architectural & Jam & Entrenchment, cue redundancy, normative pressure \\
 Discourse & Loose & Mis-tracking & Pragmatic inference, common ground, accommodation \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-This arrangement is English-specific. Other languages trace different paths through the space~-- a point the next section stress-tests.
-
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
-\section{Cross-linguistic stress-test}
-\label{sec:13:crossling}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
-
-The HPC explanatory strategy is domain-general. The coupling regime is not universal. Three typologically distinct languages show how the tier labels are conveniences while the diagnostic method remains constant.
-
-\paragraph{Mohawk (polysynthetic).} A single Mohawk verb can encode what English requires a sentence to express. The word \mention{Washakotya'tawitsherahetkvhta'se'} means \enquote{he made the thing that one puts on one's body ugly for her} \citep{mithun1984}~-- a proposition English distributes across multiple words, Mohawk packs into one. The morpheme--word--clause boundaries that seem natural in English are blurred. The \enquote{morpheme tier} exists, but it's structured differently: incorporated nouns, complex verb templates, and applicative morphology reorganize the form--value couplings. What this means for stabilizer weighting: the entrenchment mechanisms that maintain English constructions operate in Mohawk at the level of verb-template positions. The \emph{diagnostic} (does frequency entrenchment predict resistance to change?) still applies; the \emph{locus} shifts.
-
-\paragraph{Vietnamese (isolating).} Vietnamese has minimal bound morphology. The particle \mention{đã} marks past/perfective; \mention{sẽ} marks future; \mention{đang} marks progressive~-- but none is obligatory, and all are free-standing words. Tense, aspect, and mood are often inferred from context rather than marked overtly. Is there a \enquote{morpheme tier} in the English sense? Barely. The stabilizer weighting shifts: storage mechanisms operate on particles and constructions rather than on bound affixes. The \emph{diagnostic} (does cue redundancy predict construction identification?) still applies; the \emph{inventory of cues} changes.
-
-\paragraph{!Xóõ (click-heavy).} With over 100 phonemes including multiple click types, !Xóõ's phoneme inventory is stabilized by a different mechanism mix. Click production requires distinct articulatory coordination~-- tongue-tip, tongue-blade, and back-of-tongue contacts with independent timing. Click perception involves different cue weighting: the release burst matters more than formant transitions. The quantal-regions story from English doesn't transfer directly; the \emph{diagnostic} (do mergers occur where cues degrade?) still applies, but the relevant cue dimensions are language-specific.
-
-The lesson is methodological: where the English tier labels don't fit, the diagnostic method still applies. Each language has its own stabilizer-weighting profile. The framework tells you what to look for (clustering, stabilizers, perturbation signatures); it doesn't prescribe what you'll find.
+The stabilizers form a stack, not a single cause. At the phoneme tier, biophysical constraints carve the design space, developmental learning binds cues, sociocultural norms transmit inventories. At the word tier, frequency entrenches forms, editorial standards enforce conventions, usage communities police extensions. At the construction tier, cue redundancy protects against noise, normative pressure corrects deviations, genre licensing regulates distribution. The mechanisms shift in their balance: articulatory constraints weigh heavily for phonemes, frequency and norms for words, cue redundancy and editorial pressure for constructions. But at every tier, multiple forces interact: body, cognition, and society always contribute.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{Negative cases: when the framework says no}
 \label{sec:13:negative}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-The HPC framework would be toothless if it said yes to everything. Here are three cases where it says no~-- each for a different reason.
+The HPC framework would be toothless if it said yes to everything. Here are three cases where it says no~-- each for a different reason, mapping onto the failure taxonomy.
 
-\subsection{Academic register}
+\subsection{Academic register: reflexive stabilizers}
 
-\paragraph{Temptation.} Academic writing has a recognizable flavour. Passive constructions. Nominalizations. Hedges like \mention{it has been argued} and \mention{the data suggest}. Author-effacing expressions. The features cluster; experienced readers identify academic prose instantly. Surely this is a natural category~-- a register, a style, maybe even a construction family.
+\paragraph{Temptation.} Academic writing has a recognizable flavour. Passive constructions, nominalizations, hedges like \mention{it has been argued}. The features cluster; experienced readers identify academic prose instantly. Surely this is a natural category.
 
-\paragraph{Stress test.} Put the same researcher in front of a grant panel, a blog audience, and a conference poster. The passives evaporate. The hedges reweight. The nominalizations drop by half. Now hold the institutional context fixed but change the discipline: compare physics and literary criticism. The bundles differ substantially while both count as \enquote{academic.}
+\paragraph{Stress test.} Put the same researcher in front of a grant panel, a blog audience, and a conference poster. The passives evaporate. The hedges reweight. Now hold the institutional context fixed but change the discipline: compare physics and literary criticism. The bundles differ substantially while both count as \enquote{academic.}
 
-\paragraph{Failure signature.} The bundle doesn't resist perturbation; it dissolves and reconstitutes in a new configuration. The stabilizers are there~-- genre conventions, disciplinary gatekeeping, editorial norms~-- but they have high \term{looping intensity}: the category changes because it is classified. Peer reviewers enforce the \enquote{academic} sound; writers simulate it; the classification itself shifts the target. This reflexivity is the diagnostic signature: perturbations that leave institutional incentives intact produce different bundles; perturbations that change incentives rewire the category entirely.
+\paragraph{Failure signature.} The bundle doesn't resist perturbation; it dissolves and reconstitutes in a new configuration. The stabilizers are there~-- genre conventions, disciplinary gatekeeping, editorial norms~-- but they have high \term{looping intensity}: the category changes because it is classified. Peer reviewers enforce the \enquote{academic} sound; writers simulate it; the classification itself shifts the target.
 
-\paragraph{What kind instead.} Academic register is a \emph{social institution} maintained by institutional policing, not a natural kind maintained by cognitive binding. It belongs in the same ontological category as \enquote{formal attire} or \enquote{professional demeanour}~-- real, consequential, but not projectible in the way phonemes and constructions are. The HPC framework correctly says no.
+\paragraph{Failure type: too thin for the grain.} At the coarse grain of \enquote{academic register}, the category is maintained by institutional policing, not by cognitive binding. It belongs in the same ontological category as \enquote{formal attire}~-- real, consequential, but not projectible in the way phonemes and constructions are.
 
-\subsection{Indo-European}
+\subsection{Indo-European: historical kind, not homeostatic kind}
 
-\paragraph{Temptation.} Indo-European is a language family~-- a genealogical grouping defined by historical descent. The cluster properties are real: cognate vocabulary (\mention{mother}/\mention{Mutter}/\mention{mater}/\mention{mātr}), shared sound correspondences (Grimm's Law), similar grammatical patterns. Languages are Indo-European because they share a common ancestor. Isn't common ancestry a kind of mechanism?
+\paragraph{Temptation.} Indo-European is a language family defined by historical descent. The cluster properties are real: cognate vocabulary, shared sound correspondences, similar grammatical patterns. Languages are Indo-European because they share a common ancestor. Isn't common ancestry a kind of mechanism?
 
 \paragraph{Stress test.} Ask what would push English \emph{back toward} Proto-Indo-European. Nothing. There's no homeostatic pressure maintaining Indo-European-ness. English drifts away from PIE continuously; contact with non-IE languages accelerates the drift.
 
-\paragraph{Failure signature.} The mechanisms are historical (common origin), not homeostatic (ongoing maintenance). Modern English doesn't stay Indo-European because of stabilizers pushing it back toward the prototype. It's Indo-European because of where it came from~-- and it's becoming less Indo-European-like over time. The diagnostic that fails is homeostasis: there's no perturbation-resistance, no error-correction, no convergent pressure.
+\paragraph{Failure signature.} The mechanisms are historical (common origin), not homeostatic (ongoing maintenance). Modern English doesn't stay Indo-European because of stabilizers pushing it back toward the prototype. It's Indo-European because of where it came from~-- and it's becoming less Indo-European-like over time.
 
-\paragraph{What kind instead.} Indo-European is a \emph{historical kind}, not a homeostatic kind. Historical kinds are defined by causal continuity with an origin; homeostatic kinds are defined by stabilizers that maintain covariance. Confusing them invites explanatory error: treating historical residue as if it required ongoing maintenance, or expecting convergent evolution where only descent explains the pattern.
+\paragraph{Failure type: wrong kind of kind.} Historical kinds are defined by causal continuity with an origin; homeostatic kinds are defined by stabilizers that maintain covariance. Confusing them invites explanatory error: treating historical residue as if it required ongoing maintenance, or expecting convergent evolution where only descent explains the pattern.
 
-\subsection{Polysynthetic}
+\subsection{Polysynthetic: too fat}
 
-\paragraph{Temptation.} Polysynthetic languages are characterized by high morpheme-to-word ratios, incorporating structures, and complex verb templates. Mohawk, Chukchi, Ainu, and various others across multiple families are standard examples. The properties seem to cluster: if a language has noun incorporation, it probably also has applicatives and head-marking. Isn't this an HPC?
+\paragraph{Temptation.} Polysynthetic languages are characterized by high morpheme-to-word ratios, incorporating structures, and complex verb templates. Mohawk, Chukchi, Ainu are standard examples. The properties seem to cluster: if a language has noun incorporation, it probably also has applicatives and head-marking. Isn't this an HPC?
 
-\paragraph{Stress test.} Ask whether the same stabilizers maintain polysynthesis across families. Mohawk (Iroquoian) has noun incorporation for discourse-pragmatic reasons~-- incorporated nouns are non-referential, allowing the verb to function as a kind of lexical compound. Chukchi (Chukotko-Kamchatkan) has incorporation with different constraints and different discourse functions. The surface similarity~-- complex words~-- masks heterogeneous routes.
+\paragraph{Stress test.} Ask whether the same stabilizers maintain polysynthesis across families. Mohawk (Iroquoian) has noun incorporation for discourse-pragmatic reasons~-- incorporated nouns are non-referential, allowing the verb to function as a kind of lexical compound \parencite{mithun1984}. A single Mohawk word like \textit{Washakotya'tawitsherahetkvhta'se} can encode what English requires a full clause for: `he made the thing that one puts on one's body ugly for her'---i.e., `he ruined her dress' \parencite[40]{baker1996}. Chukchi (Chukotko-Kamchatkan) has incorporation with different constraints and different discourse functions. The surface similarity~-- complex words~-- masks heterogeneous routes.
 
-\paragraph{Failure signature.} The clustering is loose: languages are called polysynthetic if they score high on several dimensions, but the dimensions don't cohere tightly~-- a language can have noun incorporation without applicatives, or complex verb templates without head-marking. More importantly, there's no convergent stabilizer profile. Why Mohawk has noun incorporation is a different story from why Chukchi does. The diagnostic that fails is projectibility across the class: knowing a language is \enquote{polysynthetic} doesn't let you predict which specific features it will have or how they'll behave under change.
+\paragraph{Failure signature.} The clustering is loose: languages are called polysynthetic if they score high on several dimensions, but the dimensions don't cohere tightly~-- a language can have noun incorporation without applicatives. More importantly, there's no convergent stabilizer profile. Why Mohawk has noun incorporation is a different story from why Chukchi does.
 
-\paragraph{What kind instead.} \enquote{Polysynthetic} is a \emph{typological region label}~-- a region in morphological space that different languages arrive at by different routes. It's useful for descriptive purposes (it picks out languages with certain surface properties) but not for explanatory purposes (it doesn't name a mechanism-maintained kind). The HPC framework correctly says no: the heterogeneity of routes is exactly what distinguishes a typological region from a natural kind.
+\paragraph{Failure type: too fat.} \enquote{Polysynthetic} is a typological region label~-- a region in morphological space that different languages arrive at by different routes. It's useful for descriptive purposes but not for explanatory purposes: it doesn't name a mechanism-maintained kind. The heterogeneity of routes is exactly what distinguishes a typological region from a natural kind.
 
 \subsection{What the negative cases show}
 
-These three cases fail the HPC diagnostics for different reasons:
+The three cases fail for different reasons:
 
 \begin{itemize}
-    \item \textbf{Academic register}: Stabilizers present but reflexive. High looping intensity (the category changes because it's classified). Fails projectibility under perturbation.
+    \item \textbf{Academic register}: Stabilizers present but reflexive. High looping intensity. Fails projectibility under perturbation~-- roughly \enquote{too thin} for the grain.
     \item \textbf{Indo-European}: Maintained by historical continuity, not ongoing stabilizers. A different kind of kind. Fails homeostasis.
-    \item \textbf{Polysynthetic}: A gradient label over heterogeneous structures. No convergent stabilizer profile. Fails projectibility across the class.
+    \item \textbf{Polysynthetic}: A gradient label over heterogeneous structures. No convergent stabilizer profile. Fails projectibility across the class~-- \enquote{too fat}.
 \end{itemize}
 
 The HPC framework distinguishes these failure modes. That's the payoff of having explicit diagnostics: you can say \emph{why} something doesn't qualify, not just that it doesn't.
+
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+\section{Predictions and disconfirmers}
+\label{sec:13:predictions}
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+
+The diagnostics and thresholds generate falsifiable predictions beyond the immediate case studies.
+
+\paragraph{Perturbation prediction.} Weakening a stabilizer should reduce cluster covariance before norms re-stabilize. For constructions, reducing frequency while maintaining editorial standards should degrade PR-AUC by $\geq 0.10$ or reduce cue rates by $\geq 20\%$. Downsampling training data to 25\% operationalizes this: if the cue bundle is robustly stabilized, performance should degrade only modestly; if it depends critically on frequency, degradation should be substantial.
+
+\paragraph{Scaling prediction.} Just as /y/ appears preferentially in larger vowel inventories, rare constructional variants should concentrate in corpora with larger constructicon repertoires. The prediction: monotonic increase across quartiles with non-overlapping CIs at extremes.
+
+\paragraph{Stratification prediction.} If a pooled category like \enquote{resultative} is genuinely \enquote{too fat}, stratifying into subtypes should restore projectibility for well-maintained local kinds. If stratification fails to restore projectibility, the subtypes are themselves too thin or the pooling was appropriate.
+
+These tests operationalize the core claim: linguistic categories qualify as HPCs when they project via identifiable mechanisms. Where thresholds are met, kindhood is warranted; where not, we should prefer thinner or more local accounts.
 
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 \section{Looking forward}
 \label{sec:13:forward}
 %~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
 
-This chapter has argued that the HPC explanatory strategy scales across linguistic levels. Phonemes, morphemes, and constructions are all homeostatic property clusters maintained by stabilizers. What differs is the coupling regime~-- transparent at the sound level, opaque at the morpheme level, architectural at the construction level~-- and the stabilizer weighting that maintains each regime.
+This chapter has argued that the HPC explanatory strategy scales across linguistic levels. Phonemes, words, and constructions can all be homeostatic property clusters maintained by stabilizers. What differs is the coupling regime~-- transparent at the sound level, opaque at the word level, architectural at the construction level~-- and the stabilizer weighting that maintains each regime.
+
+The payoff is twofold. First, predictive grip: the diagnostics force us to say in advance what counts as success and what would change our minds. Success isn't a rhetorical gloss (\enquote{striking regularity}) but concrete measures~-- slopes with uncertainty intervals, mass within bands, cross-corpus areas under curve, ablation deltas.
+
+Second, an ontology with brakes: kinds are discovered through evidence rather than declared by fiat, and they are local equilibria (maintained by specific mechanisms in specific populations) rather than universal essences. That stance blocks overreach. Cross-linguistic umbrellas fail as single kinds because they pool heterogeneous mechanisms. Thin proposals and complement classes lack the stabilizer base that projectibility requires. In between lie the categories that travel: their properties cohere because mechanisms keep them together.
 
 The zipper metaphor returns for the final turn. Error shape diagnoses coupling: slips reveal transparent coupling; jams reveal architectural coupling; mis-tracking reveals loose coupling. Each error type tells you where the teeth failed to seat and, therefore, where to look for the stabilizers that normally keep them seating.
 
-But one level has special status.
-
-Throughout the case studies in Part III~-- countability, definiteness, lexical categories~-- the categories clustered at the morphosyntactic level. That's where form--value coupling is both \emph{tight} and \emph{obligatory}. You can speak without using \mention{let alone}. In English, you can't speak without committing to number, tense, and definiteness.
+But one level has special status. Throughout the case studies in Part III~-- countability, definiteness, lexical categories~-- the categories clustered at the morphosyntactic level. That's where form--value coupling is both \emph{tight} and \emph{obligatory}. You can speak without using \mention{let alone}. In English, you can't speak without committing to number, tense, and definiteness.
 
 Morphosyntax is the zone of maximum systematicity: the region of grammar where coupling is enforced, not optional. Chapter~\ref{ch:grammaticality-itself} asks what happens when we take this observation seriously. If grammaticality is what emerges when form--value coupling is obligatory, compositional, and learnable~-- then grammaticality itself is a kind.
