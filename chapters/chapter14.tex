@@ -43,7 +43,7 @@ But the feeling is not a direct readout of the underlying structure. It is a \em
 \begin{enumerate}
     \item \textbf{Entrenchment}: Frequent structures feel normal; rare ones feel marked, even when perfectly grammatical. The garden-variety English VP (\mention{ate the cake}) feels more grammatical than the rarer but equally well-formed double-object construction (\mention{baked her a cake}).
     \item \textbf{Processing ease}: Sentences that parse smoothly feel grammatical; sentences that induce garden-paths or reanalysis feel suspect. Processing difficulty is not the same as ungrammaticality, but the detector often conflates them.
-    \item \textbf{Analogy to attested forms}: Speakers compare novel sentences to stored exemplars. If the novel form is distant from everything stored, it feels wrong~-- even if the grammar licenses it.
+    \item \textbf{Probability given the distribution}: The detector is Bayesian. A novel sentence is weighted by its likelihood under the distribution of attested forms~-- not just its distance from the nearest exemplar, but its probability given the entire pattern. Low-probability forms feel suspect even when grammatically licensed; high-probability forms feel natural even when they stretch the system.
 \end{enumerate}
 
 This is why acceptability and grammaticality come apart. Acceptability is what the detector reports. Grammaticality is the underlying form--value coupling. The two usually align, but not always.
