@@ -1,0 +1,62 @@
+\chapter{Diagnostic methodology}
+\label{app:diagnostics}
+
+% This appendix contains methodological details for the projectibility and homeostasis diagnostics
+% discussed in Chapter~\ref{ch:the-category-zipper}.
+
+\section{Operationalizing the diagnostics}
+
+The two criteria are not operationalized symmetrically.
+
+\paragraph{Projectibility is tested directly.} The question is whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? This is tested via out-of-sample prediction: cross-validated classification accuracy, held-out F1 scores, cross-corpus transfer. Concrete thresholds can be declared in advance: ROC-AUC $\geq 0.70$, PR-AUC $\geq 0.70$, macro-F1 $\geq 0.35$, held-out cohesion $\geq 0.30$. These thresholds are somewhat arbitrary conventions, but that's the point: declaring them in advance disciplines the inference.
+
+\paragraph{Homeostasis is inferred.} The question is whether we can identify stabilizers that maintain the property cluster and find their predicted signatures in the data. We name candidate mechanisms (articulatory constraints, frequency entrenchment, normative enforcement), derive their predicted signatures (scaling curves, perturbation sensitivity, cue covariance), and check whether the data are consistent with those predictions. The inference is defeasible~-- the signatures could arise from other sources~-- but it's grounded in mechanism--signature pairings rather than asserted by narrative alone.
+
+The relationship between mechanism and projection is asymmetric. Figure~\ref{fig:app:asymmetry} shows the structure: mechanisms causally support covariance, which enables projection; projection provides evidence for kindhood only when accompanied by a credible mechanism story.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm,
+    box/.style={rectangle, draw, minimum width=2.5cm, minimum height=1cm, align=center},
+    arrow/.style={->, >=stealth, thick}
+]
+\node[box] (mech) {Mechanisms};
+\node[box, right=of mech] (cov) {Covariance};
+\node[box, right=of cov] (proj) {Projection};
+
+\draw[arrow] (mech) -- node[above] {maintain} (cov);
+\draw[arrow] (cov) -- node[above] {supports} (proj);
+
+\draw[arrow, dashed] (proj.south) -- ++(0,-0.8) -| node[below, pos=0.25] {Test projection} (cov.south);
+\draw[arrow, dashed] (cov.south) -- ++(0,-0.5) -| node[below, pos=0.25] {Check mechanisms} (mech.south);
+\end{tikzpicture}
+\caption{The causal arrow runs from mechanisms to projection; the evidential arrows run in reverse. Both diagnostics must succeed independently for kindhood to be warranted.}
+\label{fig:app:asymmetry}
+\end{figure}
+
+\section{Failure modes}
+
+A category might project without identifiable stabilizers (possibly spurious overfitting). A category might have plausible stabilizers that don't produce stable clustering (broken homeostasis). Both diagnostics have to pass for kindhood to be warranted. The independence matters: it means the framework can fail in two directions.
+
+Three failure types recur across linguistic levels:
+
+\begin{description}
+    \item[Too thin.] Nonce coinages, campaign-season blends, idiolectal \enquote{style phonemes}, and child-only overregularizations within adult Standard English don't pass the projectibility test in the relevant population--time slice. Held-out prediction collapses; the stabilizers one would expect to bind properties (frequency, entrenchment, community norms) are absent or act in the opposite direction. These cases are explananda for learning or diffusion, but not kinds.
+    
+    \item[Too fat.] Cross-linguistic umbrellas such as \enquote{resultative} or \enquote{ditransitive} pool patterns maintained by different morphosyntactic resources, cue reliabilities, and norming regimes. The pooled set can look impressive descriptively, but the mechanism story is disjunctive: dispersion in one language, selectional licensing in another, constructional analogy in a third \parencite{croft2001,haspelmath2010}. Cross-corpus prediction drifts toward family- or area-specific quirks, ablations fail to show stable redundancy, and effects wash out under lineage-pruning. The right move is to localize the ontology: retain language-internal equilibria as kinds and treat the global umbrella as an interest-relative taxonomy.
+    
+    \item[Merely negative.] Complement classes~-- \enquote{ungrammatical strings}, \enquote{all exceptions to rule R}~-- are defined by what they're not rather than what they are. They don't project (there's no stable covariance to learn) and they don't admit a non-accidental mechanism story. A caveat: structured subsets within a complement class can be HPC candidates in their own right. L2 transfer clusters (e.g., persistent article-drop errors among speakers of articleless L1s) may show stable covariance, predictable error profiles, and mechanism--signature pairings that the grab-bag \enquote{all L2 errors} lacks.
+\end{description}
+
+\section{Falsification conditions}
+
+The diagnostics generate clear disconfirmers at each level:
+
+\begin{enumerate}
+    \item \textbf{Phonemes}: If the /y/ scaling effect collapses under lineage-pruning (one language per subfamily), the claim that marked segments scale with inventory size fails. If mergers showed no relationship to cue reliability~-- occurring where acoustic cues are robust rather than degraded~-- the homeostasis story would be wrong.
+    
+    \item \textbf{Words}: If semantic drift produced no cohesion loss~-- if high-drift adjectives retained the same distributional neighbourhoods as low-drift controls~-- the framework would have nothing to explain. If regularization probability showed no relationship to frequency~-- if high-frequency irregulars like \mention{went} were just as vulnerable as low-frequency ones like \mention{clove}~-- the entrenchment stabilizer would be decorative.
+    
+    \item \textbf{Constructions}: If cross-corpus transfer performed at chance, or if ablating formal cues (parallelism, licensing context) produced no interpretable degradation pattern, the claim that constructions are HPCs would lack evidential support.
+\end{enumerate}
