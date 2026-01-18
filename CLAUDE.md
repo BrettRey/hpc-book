@@ -32,7 +32,26 @@ The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL f
 - `references.bib` - Bibliography (BibTeX format, Biber backend)
 - `notes/` - Planning documents and chapter development notes
 - `literature/` - Topic-specific literature review notes
-- `code/` - Utility scripts (e.g., `validate_bib.py`)
+- `code/` - Utility scripts (e.g., `validate_bib.py`, `countability_abm.py`)
+
+## Modeling Guidelines
+
+**ABMs in this book are didactic mechanism sketches, not evidence.**
+
+When building agent-based models or simulations for the book:
+
+1. **Explicit epistemic status**: State clearly in docstrings that the model is an "intuition pump" that makes mechanisms visible, NOT a calibrated simulation or empirical support for the theory.
+
+2. **No outcome-assumptive nudges**: Don't manually force outcomes (e.g., `individuation *= 0.97` to make drift happen). Let dynamics emerge from the mechanisms.
+
+3. **Stress tests required**: Add mechanism ablation experiments that show the predicted pattern *breaks* when key mechanisms are removed. This proves results aren't tautological. Examples:
+   - Disable entrenchment → pattern changes
+   - Remove functional anchors → stability degrades
+   - Freeze learning → system becomes static
+
+4. **Multi-timescale fidelity**: If claiming multi-timescale maintenance, actually implement generational turnover, not just interaction + incremental learning.
+
+See `code/countability_abm.py` for the reference implementation (Chapter 9).
 
 ### Key Planning Documents
 

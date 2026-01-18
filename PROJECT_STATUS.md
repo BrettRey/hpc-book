@@ -109,6 +109,41 @@
 - ✅ **CLAUDE.md Updated**:
   - Added "Intellectual Engagement" section (methodology for deep theoretical work).
   - Added new project structure entries (hpc-book.tex, code/).
+## Status Update (2026-01-17)
+
+### Session Work (Jan 17 evening): Chapter 9 ABM Implementation
+- ✅ **Countability ABM Created** (`code/countability_abm.py`, ~1300 lines):
+  - Didactic mechanism sketch (explicit: intuition pump, not evidence)
+  - Agents with individuation confidence per noun
+  - Constructions as "locks" with tolerance thresholds (tight to loose)
+  - Bidirectional inference, entrenchment, functional anchoring, generational turnover
+  - Mass construction (MUCH) with proper licensing
+- ✅ **Five Experiments Implemented**:
+  - Baseline hierarchy (implicational matrix matches Table 9.1)
+  - Data drift (tight-before-loose erosion, emergent not forced)
+  - Functional anchoring (cattle stable with cow available)
+  - Prescriptivism (LEGO campaign dynamics)
+  - Folks instability (inter-speaker variation)
+- ✅ **Stress Test Added** (mechanism ablation):
+  - Proves results aren't tautological
+  - Disabling entrenchment/anchoring/learning changes outcomes
+- ✅ **Visualizations Generated**:
+  - `data_drift_experiment.png`, `prescriptivism_experiment.png`, `count_basin_visualization.png`
+- **Status**: ABM complete; ready for optional integration into Ch 9 prose
+
+### Completed (earlier Jan 17)
+- **Cover Page Fixed**: Reinstated absolute positioning by reverting conflicting `gb4e` move and adding `\null` shipout fix. Verified clean PDF build.
+- **Chapter 13 Empirical Depth**: Integrated PHOIBLE 2.0 (**moran2019phoible**) and Mark Baker (**baker1996**) evidence into §13.4.
+- **Infrastructure Stability**: Resolved `headheight` warnings in `preamble.tex`.
+- **BibTeX Audit**: Verified `stevens1989` and `lindblom1990` are correctly cited and present in `references.bib`.
+
+### In Progress
+- **Index Analysis**: `analyze_index.py` is ready for implementation/execution for Chapters 13 & 15.
+
+### Next Actions
+- [ ] Run `analyze_index.py` to reconcile indexing between Ch 13 and Ch 15.
+- [ ] Final polish of Chapter 13 narrative flow.
+- [ ] Review Chapter 14 stubs.
 ### Session Work (Dec 25, 2025: Slogan Deployment & Ch 10 Planning)
 - ✅ **Slogan Deployment**: Implemented the "buried payoff" slogan arc:
   - **Ch 4**: First appearance (~lines 197–199) as payoff to HPC explanation.
