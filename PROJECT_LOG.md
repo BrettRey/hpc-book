@@ -809,3 +809,43 @@ Corrected a significant hallucination in the "Mechanism" definition and standard
 - **State**: Build verified. Metaphor system now unified around dynamic-systems imagery.
 
 
+
+---
+
+## 17 January 2026 — Cover Restoration & Chapter 13 Empirical Depth
+
+### Session Summary
+- **Restored Broken Cover**: Repeatedly verified the cover page rendering. Reapplied `\null` shipout fix and reverted a conflicting `gb4e` package move that had broken absolute positioning.
+- **Chapter 13 Empirical Integration**: Added missing BibTeX entries (**moran2019phoible**, **baker1996**) and integrated empirical evidence into §13.4 ("Convergent morphology without shared essence").
+- **Infrastructure**: Increased `headheight` to 13.6pt in `preamble.tex` to resolve persistent layout warnings and ensure build stability.
+- **Reference Check**: Verified presence of `stevens1989` and `lindblom1990` in `references.bib` and confirmed correct citations in `chapter13.tex`.
+
+### Decisions Made
+- **Package Ordering**: Confirmed that `langsci-gb4e` must remain in its original position (near line 180) to avoid breaking the `eso-pic`/`tikz` absolute positioning used for the cover.
+- **Build Protocol**: Enforced `latexmk` usage with the `build/` directory to prevent artifact spill in the root directory.
+
+### Context Learned
+- **Shipout Behavior**: XeLaTeX requires explicit content (like `\null`) on pages that only contain `tikzpicture` overlays to trigger correct shipout.
+- **GB4E Conflict**: Moving `gb4e` to the end of the preamble (a common LaTeX tip) interferes with the specific absolute positioning logic used in this project's house style.
+
+---
+
+## 18 January 2026 — Ch 15 idea menu (no prose edits)
+
+### Session summary
+- Generated a range of ideas for Chapter 15: methodological consequences (fieldwork, typology, corpus annotation, computational modeling), mereology integration, and a peroration returning to Huddleston’s 
+\enquote{otherwise} email.
+- No LaTeX content drafted or inserted; this was a brainstorming-only pass.
+
+### Decisions made
+- Keep the Ch 15 response space broad: offer multiple angles per sub-audience rather than a single definitive prescription.
+- Mereology integration should stay tied to typed parthood and intensional mereology (homeostatic stabilization of overlaps).
+- Peroration should explicitly echo the Ch 1 
+\enquote{otherwise} thread as the closing loop.
+
+### Context learned
+- User wanted a menu of options, not a single best answer.
+
+### State changes
+- PROJECT_LOG.md updated (this entry)
+- .agent/logs/session-2026-01-18.md created
