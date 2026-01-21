@@ -871,5 +871,9 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 - Corrected `gb4e` example syntax in Ch 15 (resolved "Lonely item" error).
 - Integrated references for Floyd, Bach, Pullum, Khalidi.
 
+### User Polish (Post-Integration)
+- Refined Chapter 15 for house style: switched quotes to `\mention` where appropriate, fixed dash spacing, and tightened phrasing in the "Signal in the Noise" section.
+- **Syntax Correction**: Converted user-supplied `\ea` (linguex) example syntax back to `gb4e` (`exe` environment) to ensure compilation.
+
 ### State at end of session
 - Chapter 15 complete and integrated.
