@@ -1,9 +1,9 @@
 # Words That Won't Hold Still (HPC Book)
 
 **Status:** Part III in progress; Part IV outlined
-**Type:** Academic book (15 chapters, 4 parts)
+**Type:** Academic book (16 chapters, 4 parts)
 **Working title:** "Language Without Essences: The Metaphysics of Linguistic Categories"
-**Last updated:** 2026-01-16
+**Last updated:** 2026-01-20
 
 ---
 
@@ -19,7 +19,7 @@
 - [x] Chapter 5 - drafted and revised (discreteness problem)
 - [x] Chapter 6 - drafted and revised (projectibility)
 - [x] Chapter 7 - drafted and revised (The Stabilisers)
-- [x] Chapter 8 - drafted (Failure Modes)
+- [x] Chapter 8 - drafted (Failure Modes) + LBE integrated
 
 ### Part III: Categories Reconsidered (Ch 9-12)
 - [x] Chapter 9 - drafted and revised (Countability)
@@ -27,10 +27,12 @@
 - [ ] Chapter 11 - plan approved (Lexical Categories); awaiting draft
 - [x] Chapter 12 - polished draft (Gender and the Maintenance Spectrum)
 
-### Part IV: Implications (Ch 13-15)
-- [x] Chapter 13 - reframed (Zipper metaphor) & empirically integrated
-- [ ] Chapter 14 - planning ready (Grammaticality itself); double-copula vignette, MMMG framework
-- [/] Chapter 15 - Meta-theory section drafted; ABM notes pending
+### Part IV: Implications (Ch 13-16)
+- [x] Chapter 13 - reframed (Zipper metaphor) + LBE integrated
+- [ ] Chapter 14 - planning ready (Grammaticality itself) + LBE integrated (needs full prose)
+- [x] Chapter 15 - drafted skeleton (Social Stabilization) - **NEW**
+- [ ] Chapter 16 - (was Ch 15) Nominalist Challenge Conclusion
+
 
 ### Other
 - [x] Synopsis (~880 words)

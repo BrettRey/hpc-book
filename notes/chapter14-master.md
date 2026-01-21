@@ -45,7 +45,16 @@ The coupling peaks at morphosyntax because of the convergence of:
 | Phonotactics | None | No semantic content |
 | **Morphosyntax** | **Tight** | Obligatory + propositional |
 | Prosody | Intermediate | Systematic but optional; pragmatic semantics |
+| Prosody | Intermediate | Systematic but optional; pragmatic semantics |
 | Discourse | Weak | Meaningful but defeasible |
+
+### The Role of Entrenchment ($C^t(u)$)
+The MMMG model includes a community entrenchment term $C^t(u)$.
+- **Function:** Modulates the "sharpness" of ungrammaticality sensation.
+- **Evidence (LBE):** Left Branch Extraction is "sharply unacceptable" despite being a statistical gap (Reynolds 2026).
+- **Why it feels sharp:** Massive opportunity set + zero positive evidence = Near-zero prior.
+- **Satiation Resistance:** Unlike other island constraints, LBE violations don't satiate in the lab because the lifetime statistical void outweighs local exposure.
+- **Implication:** "Ungrammaticality" isn't just structural failure ($K(u)=0$); it's also extreme statistical violation ($C^t(u) \approx 0$).
 
 ### Core Claim
 

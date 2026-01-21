@@ -24,6 +24,8 @@
 - Fat = "wastebaskets" (labels for absence of features)
 - Grain solution: Madagascar analogy (constructions = species, grammar = fauna)
 - Two-Diagnostic Test from `stack.tex` manuscript
+- **LBE Case Study Selection:** Left Branch Extraction selected as primary "Negative Diagnosis" example.
+- **Hypothesis:** LBE ban is not a rule but a "gap of abstinence" maintained by workarounds.
 
 **Open questions for revision:**
 - O'Connor's *Measuring Conventionality* not yet fully unpacked
@@ -97,7 +99,12 @@ This answers Boyd's worry about the "inflation problem" — the tendency to hear
 - "Non-finite" (defined by absence of tense/agreement marking)
 - "Minor word classes" (defined by not being major classes)
 - "Peripheral" constructions (defined by not being core)
+- "Peripheral" constructions (defined by not being core)
 - Cross-linguistic "topic" if defined only by not being subject/object
+- **Left Branch Extraction (LBE):** The "Left Branch Condition" is a reified gap. English speakers don't *prohibit* LBE; they just never *reach* for it because headed/fused alternatives cover the space (Reynolds 2026).
+
+**Diagnostic test:** Is there a positive property cluster, or only a negative definition? If the latter, it's not an HPC kind.
+**Metaphor:** "The dog that didn't bark" — abstinence, not impossibility.
 
 **Diagnostic test:** Is there a positive property cluster, or only a negative definition? If the latter, it's not an HPC kind.
 
@@ -143,7 +150,13 @@ A category fails HPC status if:
 
 ### §8.4 Negative Diagnosis
 - Definition and characteristics
-- Worked example: "non-finite"
+- Definition and characteristics
+- **Worked example: Left Branch Extraction (LBE)**
+  - Traditionally: The Left Branch Condition (structural constraint)
+  - HPC view: A "statistical void" maintained by competitor density (pied-piping, fused-head)
+  - "Abstinence" vs "Impossibility"
+  - Why it doesn't satiate (absence of evidence in massive opportunity set > lab exposure)
+- Worked example: "non-finite" (secondary example)
 - Why negative definitions don't ground induction
 - Diagnostic: positive clustering test
 

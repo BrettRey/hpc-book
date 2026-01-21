@@ -3,6 +3,20 @@
 **Date**: January 16, 2026
 **Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 polished draft; Ch 13 empirically enhanced
 
+### Session Work (Jan 20, 2026: Chapter 15 Creation & LBE Integration)
+- ✅ **New Chapter 15 Created** ("The Social Stabilization of Kinds"):
+  - Split from Part IV to give "Varieties as Conditioning" its own chapter.
+  - Core argument: Variation is a latent mixture; varieties are the stabilizers.
+  - Old Chapter 15 ("Nominalist Challenge") moved to Chapter 16.
+  - `hpc-book.tex` updated to include `chapter15.tex` and `chapter16.tex`.
+- ✅ **LBE Integrated** (Reynolds 2026):
+  - **Ch 8**: "Left Branch Gap" added as Negative Diagnosis case study.
+  - **Ch 13**: $k=4$ packaging tightness added as evidence for coupling strength.
+  - **Ch 14**: Satiation resistance added to Entrenchment section.
+- ✅ **Infrastructure**:
+  - `STATUS.md` updated to reflect 16-chapter structure.
+  - `task.md` maintained.
+
 ### Session Work (Jan 16, 2026: Chapter 13 Empirical Integration)
 - ✅ **Chapter 13 Enhanced ("The Stack")**: Integrated empirical content from new stack paper (`literature/main.pdf`)
   - **Hook**: Explicit two-diagnostic framework (projectibility + homeostasis as independent tests) added to §13.1
@@ -141,7 +155,7 @@
 - **Index Analysis**: `analyze_index.py` is ready for implementation/execution for Chapters 13 & 15.
 
 ### Next Actions
-- [ ] Run `analyze_index.py` to reconcile indexing between Ch 13 and Ch 15.
+- [ ] Integrate LBE paper into Chapters 8, 13, and 14.
 - [ ] Final polish of Chapter 13 narrative flow.
 - [ ] Review Chapter 14 stubs.
 ### Session Work (Dec 25, 2025: Slogan Deployment & Ch 10 Planning)

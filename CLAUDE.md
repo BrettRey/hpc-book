@@ -21,12 +21,14 @@ python code/validate_bib.py
 
 The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL font.
 
-**Compilation workflow:** Most chapters in `hpc-book.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on. Currently `chapter09.tex` is active.
+**Compilation workflow:** Most chapters in `hpc-book.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on.
+
+**Build artifacts:** The `.latexmkrc` routes output to `build/`. Use `latexmk -xelatex hpc-book.tex` for the recommended workflow. Snapshots are saved to `snapshots/` with date stamps.
 
 ## Repository Structure
 
 - `hpc-book.tex` - Main document; chapters are commented out for faster compilation
-- `chapters/` - Individual chapter files (chapter01.tex through chapter14.tex)
+- `chapters/` - Individual chapter files (chapter01.tex through chapter15.tex)
 - `.house-style/preamble.tex` - All LaTeX packages and custom macros
 - `.house-style/style-guide.md` - Writing conventions (MUST READ before editing prose)
 - `references.bib` - Bibliography (BibTeX format, Biber backend)
@@ -51,13 +53,19 @@ When building agent-based models or simulations for the book:
 
 4. **Multi-timescale fidelity**: If claiming multi-timescale maintenance, actually implement generational turnover, not just interaction + incremental learning.
 
-See `code/countability_abm.py` for the reference implementation (Chapter 9).
+### Reference Implementation
+
+`code/countability_abm.py` (~1300 lines) is the reference implementation for Chapter 9:
+- Five experiments: baseline hierarchy, data drift, functional anchoring, prescriptivism, folks instability
+- Mechanism ablation stress tests (proves results aren't tautological)
+- Visualizations generated to `figures/`
 
 ### Key Planning Documents
 
 - `notes/CHAPTER_OUTLINE.md` - Authoritative chapter structure and key points
 - `notes/chapterNN-master.md` - Master notes consolidating chapter material (pattern established with Ch 7, 8, 13)
 - `notes/chapterNN-grist.md` - Raw conceptual material for chapters
+- `notes/ch11/ch11-implementation-plan.md` - Approved implementation plan for Ch 11
 - `notes/field-relative-projectibility.md` - Core theoretical principle (projectibility is field-relative)
 - `notes/*-analysis.md` - Literature analysis files
 - `notes/board-*-*.md` - Advisory board feedback simulations
@@ -124,25 +132,26 @@ Uses `biblatex` with APA style and `natbib=true`:
 
 ## Book Structure
 
-Four parts, 14 chapters:
+Four parts, 15 chapters:
 1. **Part I: The Problem** (Ch 1-3) - Essentialism's failures, nominalism's limits
 2. **Part II: The Fix** (Ch 4-8) - HPC kinds, discreteness, projectibility, homeostasis, failure modes
-3. **Part III: Categories Reconsidered** (Ch 9-12) - Countability, definiteness, word classes, constructions
-4. **Part IV: Implications** (Ch 13-14) - Grammaticality, methodological consequences
+3. **Part III: Categories Reconsidered** (Ch 9-13) - Countability, definiteness, lexical categories, gender, the stack
+4. **Part IV: Implications** (Ch 14-15) - Grammaticality, methodological consequences
 
 ### Current Chapter Status (Jan 2026)
 - **Ch 1-3**: Drafted and revised (Part I: The Problem)
-- **Ch 4**: Drafted and revised (HPC introduction) - Millikan + Craver quotes added
-- **Ch 5**: Drafted and revised (discreteness problem) - Kirby quote added
-- **Ch 6**: Drafted and revised (projectibility) - Favier citation refined
-- **Ch 7**: Drafted and revised (The Stabilisers) - quotatives case study complete
-- **Ch 8**: Drafted (Failure Modes) - thin/fat/negative taxonomy, Miller citation refined
-- **Ch 9**: Drafted and revised (Countability)
+- **Ch 4**: Drafted and revised (HPC introduction)
+- **Ch 5**: Drafted and revised (discreteness problem)
+- **Ch 6**: Drafted and revised (projectibility)
+- **Ch 7**: Drafted and revised (The Stabilisers)
+- **Ch 8**: Drafted and revised (Failure Modes)
+- **Ch 9**: Drafted and revised (Countability) - ABM complete
 - **Ch 10**: Drafted and revised (Definiteness)
-- **Ch 11**: Plan approved
-- **Ch 12**: Drafted and revised (non-grammar worked cases: phonemes, register)
-- **Ch 13**: Planning ready (Grammaticality itself) - double-copula vignette, measurement-channel divergence
-- **Ch 14**: Outlined (Methodological consequences)
+- **Ch 11**: Plan approved, awaiting draft (Lexical Categories)
+- **Ch 12**: Drafted and revised (Pro-form Gender)
+- **Ch 13**: Empirically enhanced (The Stack)
+- **Ch 14**: Outlined (Grammaticality itself)
+- **Ch 15**: Outlined (Methodological consequences)
 
 ## Chapter Development Workflow
 

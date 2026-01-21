@@ -71,6 +71,7 @@ What exactly are the mechanisms, and what kind of thing is a mechanism?
 **Intermediate (years): Acquisition and Entrenchment**
 - Schema extension (learners generalize from partial patterns)
 - Frequency-based entrenchment (Bybee 2010)
+- **Pre-emption:** Entrenchment is competitive; a deep rut doesn't just guide traffic, it drains traffic from alternative paths. (See the Left Branch Extraction case in §8.4 for how this creates "impossible" gaps.)
 - Paradigmatic pressure (regularisation toward dominant patterns)
 
 **Slowest (decades): Institutional Norms**

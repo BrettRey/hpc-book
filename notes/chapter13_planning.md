@@ -104,6 +104,7 @@ The non-kind claim should target the *umbrella*: “politeness register” (or �
 - **To Ch 5:** phoneme discreteness is the cleanest “continuous substrate → discrete boundary” illustration that isn’t morphosyntax.
 - **To Ch 8:** register/politeness is the cleanest “grain problem” illustration outside grammar (ecosystem label vs kind).
 - **To Ch 9:** the “two clusters + coupling” architecture can reappear (phonology: cues vs social indexing; register: social signals vs grammatical resources).
+- **To Ch 14 (Grammaticality):** The packaging tightness of these bundles matters. Reynolds (2026) shows how *determiner--head* packaging ($k=4$) is so tight it creates a "statistical void" (LBE) that feels like a hard rule. This previews the Entrenchment argument.
 
 ---
 

@@ -8,9 +8,9 @@
 
 The two criteria are not operationalized symmetrically.
 
-\paragraph{Projectibility is tested directly.} The question is whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? This is tested via out-of-sample prediction: cross-validated classification accuracy, held-out F1 scores, cross-corpus transfer. Concrete thresholds can be declared in advance: ROC-AUC $\geq 0.70$, PR-AUC $\geq 0.70$, macro-F1 $\geq 0.35$, held-out cohesion $\geq 0.30$. These thresholds are somewhat arbitrary conventions, but that's the point: declaring them in advance disciplines the inference.
+Projectibility is tested directly: the question is whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? This is tested via out-of-sample prediction: cross-validated classification accuracy, held-out F1 scores, cross-corpus transfer. Concrete thresholds can be declared in advance: ROC-AUC $\geq 0.70$, PR-AUC $\geq 0.70$, macro-F1 $\geq 0.35$, held-out cohesion $\geq 0.30$. These thresholds are somewhat arbitrary conventions, but that's the point: declaring them in advance disciplines the inference.
 
-\paragraph{Homeostasis is inferred.} The question is whether we can identify stabilizers that maintain the property cluster and find their predicted signatures in the data. We name candidate mechanisms (articulatory constraints, frequency entrenchment, normative enforcement), derive their predicted signatures (scaling curves, perturbation sensitivity, cue covariance), and check whether the data are consistent with those predictions. The inference is defeasible~-- the signatures could arise from other sources~-- but it's grounded in mechanism--signature pairings rather than asserted by narrative alone.
+Homeostasis is inferred: the question is whether we can identify stabilizers that maintain the property cluster and find their predicted signatures in the data. We name candidate mechanisms (articulatory constraints, frequency entrenchment, normative enforcement), derive their predicted signatures (scaling curves, perturbation sensitivity, cue covariance), and check whether the data are consistent with those predictions. The inference is defeasible~-- the signatures could arise from other sources~-- but it's grounded in mechanism--signature pairings rather than asserted by narrative alone.
 
 The relationship between mechanism and projection is asymmetric. Figure~\ref{fig:app:asymmetry} shows the structure: mechanisms causally support covariance, which enables projection; projection provides evidence for kindhood only when accompanied by a credible mechanism story.
 
@@ -54,9 +54,9 @@ Three failure types recur across linguistic levels:
 The diagnostics generate clear disconfirmers at each level:
 
 \begin{enumerate}
-    \item \textbf{Phonemes}: If the /y/ scaling effect collapses under lineage-pruning (one language per subfamily), the claim that marked segments scale with inventory size fails. If mergers showed no relationship to cue reliability~-- occurring where acoustic cues are robust rather than degraded~-- the homeostasis story would be wrong.
-    
-    \item \textbf{Words}: If semantic drift produced no cohesion loss~-- if high-drift adjectives retained the same distributional neighbourhoods as low-drift controls~-- the framework would have nothing to explain. If regularization probability showed no relationship to frequency~-- if high-frequency irregulars like \mention{went} were just as vulnerable as low-frequency ones like \mention{clove}~-- the entrenchment stabilizer would be decorative.
-    
-    \item \textbf{Constructions}: If cross-corpus transfer performed at chance, or if ablating formal cues (parallelism, licensing context) produced no interpretable degradation pattern, the claim that constructions are HPCs would lack evidential support.
+    \item Phonemes: If the /y/ scaling effect collapses under lineage-pruning (one language per subfamily), the claim that marked segments scale with inventory size fails. If mergers showed no relationship to cue reliability~-- occurring where acoustic cues are robust rather than degraded~-- the homeostasis story would be wrong.
+
+    \item Words: If semantic drift produced no cohesion loss~-- if high-drift adjectives retained the same distributional neighbourhoods as low-drift controls~-- the framework would have nothing to explain. If regularization probability showed no relationship to frequency~-- if high-frequency irregulars like \mention{went} were just as vulnerable as low-frequency ones like \mention{clove}~-- the entrenchment stabilizer would be decorative.
+
+    \item Constructions: If cross-corpus transfer performed at chance, or if ablating formal cues (parallelism, licensing context) produced no interpretable degradation pattern, the claim that constructions are HPCs would lack evidential support.
 \end{enumerate}
