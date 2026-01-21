@@ -849,3 +849,27 @@ Corrected a significant hallucination in the "Mechanism" definition and standard
 ### State changes
 - PROJECT_LOG.md updated (this entry)
 - .agent/logs/session-2026-01-18.md created
+
+---
+
+## 20 January 2026 — Chapter 15 & Wiese Integration
+
+### Session Summary
+
+Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15. The core argument now features a developmental grounding (com-sits) and a scale-relativity synthesis.
+
+### Key Additions
+- **Wiese (2023)**: Added §15.4.1 "Developmental grounding" arguing that acquisition targets communicative situations, not languages. This solves the "unit of conditioning" problem.
+- **Scale Relativity**: Added argument to §15.6 linking HPC to O'Connor's payoff-space similarity: "Realism is about finding the level where the coordination game is played."
+- **Sociolinguistic Stabilizers**:
+    - **Dialect**: Reframed as "Conditioned Source" (Halliday/Labov).
+    - **Register**: Reframed as "Conditioned Use" (Biber/Agha).
+    - **Discourse Community**: Reframed as "Latent Mixture" (Swales/Nunberg).
+- **Bolt Factory Metaphor**: Expanded to include "Mixed Bins" problem (signal in the noise).
+
+### Fixes
+- Corrected `gb4e` example syntax in Ch 15 (resolved "Lonely item" error).
+- Integrated references for Floyd, Bach, Pullum, Khalidi.
+
+### State at end of session
+- Chapter 15 complete and integrated.
