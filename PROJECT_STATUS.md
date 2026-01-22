@@ -1,7 +1,20 @@
 # HPC Book Project Status
 
-**Date**: January 16, 2026
-**Current Phase**: Part III Development; Ch 10 complete; Ch 11 drafted; Ch 12 polished draft; Ch 13 empirically enhanced
+**Date**: January 21, 2026
+**Current Phase**: Part IV Development; Ch 15 expanded for sociolinguists
+
+### Session Work (Jan 21, 2026: Chapter 15 Sociolinguistic Expansion)
+- ✅ **Chapter 15 Substantially Expanded** ("The Social Stabilization of Kinds"):
+  - **Dialect subsection**: Added Halliday 1978 "variety according to user", Labov's "orderly heterogeneity" with AAVE example, HPC resolution (boundaries ontologically sharp but epistemically inaccessible per Ch 5)
+  - **Register subsection**: Added Halliday's field/tenor/mode, Biber 1988 multidimensional analysis, HPC resolution (registers as attractor basins maintained by gatekeeping)
+  - **Discourse Community subsection**: Added Swales 1990 definition and six criteria, HPC resolution (communities as latent mixture components, coordination equilibria)
+  - **New "Conditioning Structure" subsection**: Synthesizes three mechanisms as unified conditioning structure (dialect=persistent parameterization, register=situational conditioning, community=mixture component)
+- ✅ **Bibliography entries added** (all verified via web search):
+  - `halliday1978` – *Language as Social Semiotic*, Edward Arnold
+  - `biber1988` – *Variation across Speech and Writing*, CUP
+  - `swales1990` – *Genre Analysis*, CUP
+- ✅ **Build verified**: 379 pages, compiles cleanly
+- **Key decision**: Gradience is within categories; boundaries are ontologically sharp but epistemically inaccessible
 
 ### Session Work (Jan 20, 2026: Chapter 15 Creation & LBE Integration)
 - ✅ **New Chapter 15 Created** ("The Social Stabilization of Kinds"):
