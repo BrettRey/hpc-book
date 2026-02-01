@@ -1,51 +1,92 @@
 \chapter{The category zipper}
 \label{ch:the-category-zipper}
 
-\epigraph{If you have two complementary strands of DNA, they zip up. That's what they do.}{— Sri Kosuri, quoted in \textit{Harvard Gazette} (2019)}
+\epigraph{If you have two complementary strands of DNA, they zip up. That's what they do.}{--- Sri Kosuri, quoted in \textit{Harvard Gazette} (2019)}
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{When errors go wrong differently}
 \label{sec:13:hook}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
-You know the moment a zipper catches. The slider finds the teeth, they interlock, and the two sides move as one. You don't think about it. That's the point~-- when the coupling is tight, the mechanism disappears.
+You know the moment a zipper catches. The teeth interlock, the two sides move as one. You don't think about it. That's the point~-- when the coupling is tight, the mechanism disappears.
 
-You also know the moment it doesn't catch. The slider moves but the teeth won't seat. Or it catches partway and then jams, leaving a gap where the fabric bulges through. The fix depends on where the failure is: at the bottom, you have to reseat the whole thing; in the middle, you can sometimes work it free; at the top, you're just short of done and the last few teeth won't close.
+You also know the moment it doesn't catch. The teeth won't seat. Or it catches partway and jams, leaving a gap where the fabric bulges through. Or it closes all the way but something's wrong underneath~-- the lining is bunched, the fit is off, and you only discover the problem when you try to move.
 
-Language comprehension has all of these failure modes.
+Language has all three failure modes. But here's the puzzle: they don't reduce to each other. A mishearing isn't a misparsing isn't a misunderstanding. The errors go wrong \emph{differently}~-- and that difference is diagnostic.
 
 When you mishear a word, the error is a clean \term{slip}. You hear \mention{grape} as \mention{great}, not as a smear of sound. The perceptual system delivers discrete candidates even when the input is degraded. The mistake stays inside the system: one phoneme for another, one word for another. The zipper caught; it just caught on the wrong tooth.
 
-When you misparse a sentence, the failure is a \term{jam}. You can get every word right and still get the structure wrong. \mention{The horse raced past the barn fell} is acoustically clear; the problem is that your parser zipped up the wrong configuration and only discovered the problem at \mention{fell}. The teeth were seating fine until they weren't.
+When you misparse a sentence, the failure is a \term{jam}. You can get every word right and still get the structure wrong. \mention{The horse raced past the barn fell} is acoustically clear; the problem is that your parser committed early and only discovered the conflict at \mention{fell}. The teeth were seating fine until they weren't.
 
-And when you miss an implicature, the zipper looks closed but the fabric is \term{mis-tracked} underneath. \mention{Some students passed} registers as good news when the speaker meant it as bad. Every tooth is in place. The tracking is off.
+And when you miss an implicature, the zipper looks closed but the fabric is \term{mis-tracked} underneath. \mention{Some students passed} registers as good news when the speaker meant it as bad. Every tooth is in place. Something else has gone wrong.
 
-\subsection{From failure modes to coupling regimes}
+Three failure types. Three different shapes of error. The natural thought is that they diagnose different \emph{coupling regimes}~-- different ways form and meaning bind together. Slips where the coupling is tight, jams where it's compositional, mis-tracking where it's loose.
 
-These three failure types diagnose three coupling regimes~-- and each regime licenses different diagnostic evidence.
+That's almost right. But it's missing something.
+
+\subsection{The puzzle}
+
+The dyadic picture~-- form on one track, meaning on the other~-- explains slips well enough. If form and meaning are tightly coupled, errors stay within the contrast system. Perturbations shift category boundaries; they don't produce gibberish.
+
+But jams and mis-tracking don't fit as cleanly. In a jam, you got the forms right and the local meanings right. The failure is somewhere else~-- in how the pieces were supposed to combine. In mis-tracking, even the combination was fine. The failure is in what the hearer \emph{did} with it.
+
+If coupling is just form-to-meaning, what's failing in these cases?
+
+The answer requires a third term~-- one the dyadic picture has been hiding. The next section makes it explicit.
+
+
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
+\section{The third track}
+\label{sec:13:third-track}
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
+
+The zipper metaphor has been hiding a component.
+
+A zipper doesn't have two parts; it has three. There are the teeth on each side~-- but without the slider, they're just parallel rows. The slider is what makes them engage. Pull it, and the teeth interlock; the two sides become one.
+
+Language works the same way. \term{Form} is one track~-- the perceivable signal, the sounds or marks. \term{Object} is the other~-- what the form is about, its contrastive identity, its semantic contribution. But form and object don't couple by themselves. What pulls them together is the \term{interpretant}: the habit of inference that the sign produces in its user.
+
+The term is Peirce's. For him, the meaning of a sign isn't a thing the sign \enquote{has}~-- it's what the sign \emph{does}. The interpretant is the downstream effect: the expectations it generates, the inferences it licenses, the processing it enables. A category that produces no interpretant isn't a category at all; it's a label with nothing behind it.
+
+This connects to Chapter~\ref{ch:projectibility}'s central claim. Projectibility \emph{is} reliable interpretant generation. A category projects when its tokens reliably produce the same inferential habits across users and contexts. The mechanisms traced in Chapter~\ref{ch:stabilizers} are what keep the interpretants stable. Form--object coupling is what gets maintained; the interpretant is the payoff.
+
+Now the three failure modes make sense:
+
+\begin{itemize}
+    \item \textbf{Slip} is a form--object failure. You perceive a form and assign it to the wrong contrastive category. The interpretant follows faithfully from the misidentified object~-- you just started from the wrong tooth.
+
+    \item \textbf{Jam} is an object--interpretant failure. You get the forms right, you get the local objects right, but the interpretants don't compose into a coherent whole. Each tooth seats, but the tracks diverge.
+
+    \item \textbf{Mis-tracking} is an interpretant failure pure and simple. Form and object are aligned; the hearer's inferential habit leads somewhere the speaker didn't intend. The zipper looks closed but the fabric underneath has shifted.
+\end{itemize}
+
+The slider that pulls the teeth together is the habit. Without it, you have two parallel tracks that never engage.
+
+\subsection{Coupling regimes, reconsidered}
+
+With the triadic structure in place, the coupling regimes can be stated precisely.
 
 \begin{enumerate}
-    \item \textbf{Slip} (clean substitution) signals \term{transparent coupling}. Form and value are so tightly bound that errors stay within the contrast system. Perturbations shift category boundaries predictably where cues degrade; they don't produce extragrammatical gibberish. \emph{Diagnostic evidence}: perceptual confusion matrices cluster by featural similarity; mergers occur where acoustic cues weaken.
+    \item \textbf{Transparent coupling} (slips): Form, object, and interpretant are so tightly bound that errors stay within the contrast system. Mishear /k/ as /g/, and the interpretant shifts accordingly~-- you access a different lexical entry, draw different inferences. The failure is upstream, at form--object; everything downstream follows.
 
-    \item \textbf{Jam} (late crash after locally coherent assembly) signals \term{architectural coupling}. Form templates pair with interpretive templates, but hidden commitments accumulate as parsing proceeds. The zipper catches partway, then fails when downstream requirements conflict. \emph{Diagnostic evidence}: garden-path signatures, revision points, cue-competition effects that show up in reading times or eye movements.
+    \emph{Diagnostic evidence}: Perceptual confusion matrices cluster by featural similarity; mergers occur where acoustic cues weaken; errors are substitutions, not inventions.
 
-    \item \textbf{Mis-tracking} (surface OK, downstream mismatch) signals \term{loose coupling}. Multiple sources~-- lexical, constructional, pragmatic~-- contribute to interpretation, and they can align or misalign without local ill-formedness. \emph{Diagnostic evidence}: implicature failures, pragmatic infelicity in discourse, mismatches between what was said and what was understood that emerge only in interaction.
+    \item \textbf{Architectural coupling} (jams): Form--object links are locally correct, but interpretants must compose. The failure is at object--interpretant: you've built the right pieces but assembled them wrong. Garden paths are the paradigm~-- each word was identified correctly, each local meaning was right, but the global interpretant crashed.
+
+    \emph{Diagnostic evidence}: Garden-path signatures, revision points, reading-time spikes at disambiguation, cue-competition effects.
+
+    \item \textbf{Loose coupling} (mis-tracking): Form--object--interpretant chains are intact, but interpretants underdetermine uptake. Multiple inferential paths are available; speaker and hearer take different ones. The failure isn't in the mechanism but in the coordination.
+
+    \emph{Diagnostic evidence}: Implicature failures, pragmatic infelicity, discourse mismatches that emerge only in interaction.
 \end{enumerate}
 
-The coupling regime reflects stabilizer weighting. Transparent coupling dominates where physical and perceptual constraints lock form to contrastive identity (phonemes). Architectural coupling dominates where conventional form--value pairings are compositionally assembled (constructions). Loose coupling dominates where contextual inference supplements or overrides encoded content (discourse). The zipper metaphor is a diagnostic instrument, not just an illustration: error shape tells you where to look for the stabilizers.
+The coupling regime reflects where the stabilizers bear the load. Transparent coupling dominates where physical and perceptual constraints lock form to object (phonemes). Architectural coupling dominates where conventional form--object pairings must compose (constructions). Loose coupling dominates where context-dependent inference supplements encoded content (discourse). The triadic structure lets us say exactly where the failure is~-- and therefore where to look for the stabilizers that normally prevent it.
 
-\subsection{What \enquote{value} means}
 
-To say what's being coupled, we need a term that works across grains. We've already met the term \term{value}~-- what a unit counts as in the system when deployed, its contrastive role, recoverable by competent users. Here it does heavy lifting.
-
-\term{Value} in this book isn't evaluative worth, not teleological purpose, not \enquote{meaning} in the undifferentiated everyday sense. it's relational rather than intrinsic: a unit's value is constituted by what it contrasts with and what inferences it licenses. For phonemes, value is contrastive identity: /\ipa{k}/ counts as not-/\ipa{g}/, not-/\ipa{t}/, not-/\ipa{p}/, and that exhausts its contribution. For morphemes, value is conventional pairing: the form \mention{-ed} is associated with pastness by agreement, not resemblance. For constructions, value is interpretive template: a form configuration paired with a meaning configuration, compositionally and holistically.
-
-The zipper, then, has form on one track and value on the other. What changes across grains is what kind of value, and how tightly form is coupled to it. This is why linguistic categories so often appear as \term{crosscutting kinds}: form clusters and value clusters may be maintained by different mechanisms, and the zipper can slip at any level.
-
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Two diagnostics, asymmetrically applied}
 \label{sec:13:diagnostics}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
 How do we tell whether a category is a genuine kind~-- something that will repay induction~-- or just a convenient label? This chapter applies two diagnostics. Does the category \emph{project}: can patterns learned from one sample predict another? And is it \emph{maintained}: can we identify mechanisms that stabilize the cluster?
 
@@ -55,74 +96,100 @@ Projectibility is tested directly via out-of-sample prediction: can patterns lea
 
 The case studies that follow apply these diagnostics to three positive cases~-- phonemes, morphemes, constructions~-- and three negative cases~-- academic register, Indo-European, polysynthetic. The positive cases show the framework scaling. The negative cases show it has teeth.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Transparent coupling: phonemes}
 \label{sec:13:phonemes}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
-The phoneme tier is the cleanest place to test the claim that linguistic categories are HPC kinds. Inventories are comparable across languages, there's independent theory about plausible stabilizers, and open resources allow fully reproducible analysis.
+The phoneme tier is the cleanest place to test the triadic claim. The three terms are distinct and independently measurable:
 
-The cluster properties are familiar: acoustic cues (formant distributions, voice-onset time), production routines (reliable articulatory gestures), lexical contrast (minimal pairs making the distinction communicatively consequential), and perceptual categorization (listeners mapping continuous input onto discrete categories). These travel together without being definitionally linked.
+\begin{itemize}
+    \item \textbf{Form}: acoustic signal~-- formant distributions, voice-onset time, spectral shape.
+    \item \textbf{Object}: contrastive identity~-- /\ipa{k}/ as not-/\ipa{g}/, not-/\ipa{t}/, not-/\ipa{p}/. This is what the form \emph{is about} in the system.
+    \item \textbf{Interpretant}: lexical access and downstream processing~-- hearing /\ipa{k}/ triggers retrieval of \mention{cat}, not \mention{gat}; inferences follow.
+\end{itemize}
 
-What maintains the clustering? Four stabilizer types. First, quantal regions: \textcite{stevens1989} showed that the articulatory-to-acoustic mapping is non-linear, with certain configurations producing stable outputs across a range of variation~-- natural \enquote{parking spots} that constrain what phoneme contrasts are \emph{possible}. Second, dispersion pressure: \textcite{lindblom1990} argued that vowel inventories disperse in acoustic space to maximize discriminability, shaping which of the possible phonemes a language \emph{selects}. Third, perceptual tuning: \textcite{kuhl1992} demonstrated that infant perception is warped by early exposure, with category prototypes acting as perceptual magnets that tune the individual speaker to the community standard. Fourth, community norms: social transmission across generations stabilizes inventories through the mechanisms that cultural-tool accounts emphasize \parencite{ekstrom2025}.
+The coupling is transparent: form determines object determines interpretant, with minimal slippage. Errors stay inside the system~-- one phoneme for another~-- because the interpretant follows the object without further computation.
+
+What maintains this tight coupling? Four stabilizer types. First, quantal regions: \textcite{stevens1989} showed that the articulatory-to-acoustic mapping is non-linear, with certain configurations producing stable outputs across a range of variation~-- natural \enquote{parking spots} that constrain what phoneme contrasts are \emph{possible}. Second, dispersion pressure: \textcite{lindblom1990} argued that vowel inventories disperse in acoustic space to maximize discriminability, shaping which of the possible phonemes a language \emph{selects}. Third, perceptual tuning: \textcite{kuhl1992} demonstrated that infant perception is warped by early exposure, with category prototypes acting as perceptual magnets that tune the individual speaker to the community standard. Fourth, community norms: social transmission across generations stabilizes inventories through the mechanisms that cultural-tool accounts emphasize \parencite{ekstrom2025}.
 
 Evidence comes from PHOIBLE 2.0 \parencite{moran2019phoible}, a database of phoneme inventories for roughly 2,700 languages. Two patterns satisfy the diagnostics. Plotting kernel-density ridgelines of total inventory sizes by family reveals a \emph{stability band}: medians cluster between 20 and 50 segments across unrelated families, with thin tails beyond. This isn't an artifact of pooling; it's cross-family regularity enabling inventory-level projection. Meanwhile, the vowel /y/~-- a front rounded vowel requiring precise articulatory coordination~-- shows a \emph{scaling curve}: a logistic model predicting /y/-presence from vowel-inventory size (cross-validated, grouped by family) achieves ROC-AUC $\approx 0.70$. Marked segments lacking quantal robustness appear mainly in larger systems where there's acoustic room. This is exactly what the stabilizer story predicts.
 
-The \mention{pin}/\mention{pen} merger provides a stress test. In much of the American South and parts of the Midland, /\ipa{ɪ}/ and /\ipa{ɛ}/ have merged before nasal consonants \parencite{labov2006}. Speakers produce the same vowel in \mention{pin} and \mention{pen}; they can't reliably distinguish the two words by ear. The conditioning environment is revealing: before nasals, the vowels are subject to nasalization, which smears the formant cues. In exactly the environment where acoustic cues are least reliable, the contrast collapses. This is homeostasis failing in a predictable way~-- not random noise, but a consequence of perturbing the stabilizers.
+The \mention{pin}/\mention{pen} merger provides a stress test. In much of the American South and parts of the Midland, /\ipa{ɪ}/ and /\ipa{ɛ}/ have merged before nasal consonants \parencite{labov2006}. Speakers produce the same vowel in \mention{pin} and \mention{pen}; they can't reliably distinguish the two words by ear. The conditioning environment is revealing: before nasals, the vowels are subject to nasalization, which smears the formant cues. In exactly the environment where acoustic cues are least reliable, the contrast collapses. This is form--object coupling failing in a predictable way. The interpretant follows~-- speakers can't distinguish the words~-- because two forms now map to the same object. The triadic structure makes the failure legible.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Opaque coupling: words}
 \label{sec:13:words}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
-At the phoneme level, form directly realizes contrastive value. At the word level, form and value come apart. The form \mention{went} encodes pastness, but you can't read the value off the form~-- the connection is brute memory. This is \term{opaque coupling}.
+At the phoneme level, form directly realizes contrastive value. At the word level, form and object come apart. The form \mention{went} encodes pastness, but you can't read the object off the form~-- the connection is brute memory. This is \term{opaque coupling}.
+
+The triadic structure at the word level:
+
+\begin{itemize}
+    \item \textbf{Form}: orthographic/phonological shape~-- \mention{went}, \mention{go}, \mention{dog}.
+    \item \textbf{Object}: conventional pairing~-- pastness, motion, canine-kind. The connection is arbitrary; you can't read the object off the form.
+    \item \textbf{Interpretant}: the inferences the word enables~-- temporal location, argument-structure expectations, encyclopedic knowledge activation.
+\end{itemize}
+
+The coupling is opaque at form--object (brute memory) but stable at object--interpretant (once you've accessed the object, the interpretant follows). Errors at this level are typically retrieval failures, not composition failures.
 
 \textcite{miller2021} develops an HPC stance at the level of particular lexemes~-- \mention{dog}, \mention{run}, \mention{egregious}~-- rejecting essence-based individuation in favour of mechanism-indexed clusters that are historically delimited and population-relative. The lexeme \mention{dog} maintains its identity not through a platonic essence but because spelling conventions, pronunciation norms, semantic associations, and syntactic patterns travel together, stabilized by orthographic standardization (educational institutions, publishing practices), frequency entrenchment (repetition in memory automating retrieval; \citealt{bybee2001}), editorial norms (copy-editing workflows flagging nonstandard usage), and register licensing (genre conventions sanctioning certain words in certain contexts).
 
 The question is whether words can change semantically and still remain HPC kinds. The HistWords COHA embeddings \parencite{hamilton2016} provide decade-binned distributional representations for English words over the 20th century. High-drift adjectives (top decile of average cosine displacement, with documented drift terms like \mention{nice}, \mention{sick}, \mention{gay}, \mention{awful} forced in) are compared to frequency-matched controls with minimal drift. Some drift adjectives retain organized neighbourhoods even as their centres move: for \mention{nice}, nearest neighbours shift from \{pretty, lovely, pleasant\} in the 1900s to \{cute, wonderful, really\} by the 2000s; for \mention{sick}, from \{ill, tired, hungry\} to \{hurt, drunk, upset\}. A prototype classifier trained on early decades (1900--1940) and tested on later decades (1950--2000) recovers word identity well above baseline (macro-F1 = 0.84 vs.\ 0.03). Combined with a cohesion cutoff, only a subset of high-drift adjectives satisfies both criteria. The framework tells us to withhold kindhood for those lexeme--time slices rather than forcing a positive verdict. For the subset that passes, past usage fixes expectations that carry forward~-- exactly what the HPC picture predicts.
 
-The \mention{go}--\mention{went} pattern provides a stress test. If form--value pairings are maintained by frequency and analogy, high-frequency irregulars should resist regularization; low-frequency irregulars should be vulnerable. \textcite{bybee2001} documents exactly this. High-frequency irregulars (\mention{go}--\mention{went}, \mention{have}--\mention{had}) show no regularization pressure. Mid-frequency irregulars (\mention{weave}--\mention{wove}) show variable forms. Low-frequency irregulars (\mention{cleave}--\mention{clove}) have largely regularized. Frequency protects the arbitrary pairing; analogy regularizes the unprotected. The two stabilizers interact in predictable ways.
+The \mention{go}--\mention{went} pattern provides a stress test. If form--object pairings are maintained by frequency and analogy, high-frequency irregulars should resist regularization; low-frequency irregulars should be vulnerable. \textcite{bybee2001} documents exactly this. High-frequency irregulars (\mention{go}--\mention{went}, \mention{have}--\mention{had}) show no regularization pressure. Mid-frequency irregulars (\mention{weave}--\mention{wove}) show variable forms. Low-frequency irregulars (\mention{cleave}--\mention{clove}) have largely regularized. Frequency protects the arbitrary pairing; analogy regularizes the unprotected. The two stabilizers interact in predictable ways.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Architectural coupling: constructions}
 \label{sec:13:constructions}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
-Constructions~-- conventionalized pairings of form and meaning that go beyond compositional rules~-- rely on multiple converging cues that speakers recognize as a gestalt. The form--value coupling is \emph{architectural}: built up from components, maintained by use, transmitted through interaction.
+Constructions~-- conventionalized pairings of form and meaning that go beyond compositional rules~-- rely on multiple converging cues that speakers recognize as a gestalt. The form--object coupling is \emph{architectural}: built up from components, maintained by use, transmitted through interaction.
+
+The triadic structure at the construction level:
+
+\begin{itemize}
+    \item \textbf{Form}: the formal template~-- word order, morphological marking, prosodic contour.
+    \item \textbf{Object}: the semantic/pragmatic template~-- what the construction \emph{means} as a conventional pairing.
+    \item \textbf{Interpretant}: the discourse expectations it sets up~-- what the hearer is licensed to infer, what follow-up is appropriate.
+\end{itemize}
+
+The coupling is architectural: form--object links are conventional but compositional; interpretants must be computed from assembled pieces. This is where jams occur~-- local form--object links are fine, but the global interpretant fails to cohere.
 
 Three stabilizer types maintain constructions. Frequency and entrenchment work on millisecond-to-week timescales: each token use strengthens memory traces, increasing production probability, generating more tokens in a self-reinforcing loop \parencite{bybee2001}. Cue redundancy provides robustness: multiple formal features converge on the same interpretation, so if parallelism fails in a rushed email, the anchor string and licensing context still signal the construction. Normative pressure operates on year-to-decade timescales: editorial practices and style guides reinforce the canonical pattern, especially in formal registers.
 
 If the construction tier is to do more than demonstrate feasibility, the diagnostics have to survive contact with heterogeneous constructions. The confirmatory analysis uses a battery of ten constructions spanning four cue regimes, tested across UD English corpora (GUM, EWT, GUMReddit). Eight are treated as positive candidates; two are included as designed brakes cases~-- pooled resultatives (predicted \enquote{too fat}) and \mention{X much?} (predicted register-local)~-- to force the framework to say no when it should. For the \mention{or even} construction, a classifier trained on GUM and tested on EWT achieves PR-AUC of 0.886 (full bundle); dropping parallelism reduces PR-AUC to 0.612. Ablation signatures show parallelism as a dominant stabilizer for scalar-additive constructions. The pooled resultative shows weak cross-corpus transfer and washed-out ablation signatures~-- exactly what the \enquote{too fat} diagnosis predicts. The \mention{X much?} construction falls below prevalence thresholds outside informal registers, confirming register-locality. The implication is deliberately narrow: the construction tier doesn't license a blanket HPC claim. Kindhood is earned case-by-case.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{The stabilizer-weighting map}
 \label{sec:13:map}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
-The three cases above~-- phonemes, words, constructions~-- aren't a ladder. They are regions in a stabilization space defined by how form couples to value and which stabilizers carry the load. Table~\ref{tab:13:stabilizer-map} summarizes the mapping.
+The three cases above~-- phonemes, words, constructions~-- aren't a ladder. They are regions in a stabilization space defined by how form couples to object to interpretant, and which links bear the load. Table~\ref{tab:13:stabilizer-map} summarizes the mapping.
 
 \begin{table}[htbp]
 \centering
-\caption{Stabilizer-weighting profiles across levels. Each level shows a characteristic coupling regime, error type, and dominant stabilizers.}
+\caption{Triadic coupling across levels. Each level shows the vulnerable link, the characteristic error type, what the interpretant does, and the dominant stabilizers.}
 \label{tab:13:stabilizer-map}
-\begin{tabular}{@{}llll@{}}
+\begin{tabular}{@{}lllll@{}}
 \toprule
-\textbf{Level} & \textbf{Coupling} & \textbf{Error type} & \textbf{Dominant stabilizers} \\
+\textbf{Level} & \textbf{Vulnerable link} & \textbf{Error type} & \textbf{Interpretant} & \textbf{Dominant stabilizers} \\
 \midrule
-Phoneme & Transparent & Slip & Quantal regions, dispersion, perceptual magnets \\
-Word & Opaque & — & Frequency entrenchment, editorial norms, analogy \\
-Construction & Architectural & Jam & Entrenchment, cue redundancy, normative pressure \\
-Discourse & Loose & Mis-tracking & Pragmatic inference, common ground, accommodation \\
+Phoneme & Form--Object & Slip & Lexical access & Quantal regions, dispersion, perceptual magnets \\
+Word & Form--Object & Retrieval failure & Conceptual activation & Frequency, editorial norms, analogy \\
+Construction & Object--Interpretant & Jam & Compositional inference & Entrenchment, cue redundancy, normative pressure \\
+Discourse & Interpretant & Mis-tracking & Pragmatic uptake & Common ground, accommodation, repair \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 The stabilizers form a braid, not a single cause. At the phoneme tier, biophysical constraints carve the design space, developmental learning binds cues, sociocultural norms transmit inventories. At the word tier, frequency entrenches forms, editorial standards enforce conventions, usage communities police extensions. At the construction tier, cue redundancy protects against noise, normative pressure corrects deviations, genre licensing regulates distribution. The mechanisms shift in their balance: articulatory constraints weigh heavily for phonemes, frequency and norms for words, cue redundancy and editorial pressure for constructions. But at every tier, multiple forces interact: body, cognition, and society always contribute.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Negative cases: when the framework says no}
 \label{sec:13:negative}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
 The HPC framework would be toothless if it said yes to everything. Here are three cases where it says no~-- each for a different reason.
 
@@ -134,32 +201,26 @@ The HPC framework would be toothless if it said yes to everything. Here are thre
 
 The three cases fail for different reasons~-- conditioning effect rather than stable kind (academic register), historical rather than homeostatic maintenance (Indo-European), heterogeneous routes to surface similarity (polysynthetic). The HPC framework distinguishes these failure modes. That's the payoff of explicit diagnostics: you can say \emph{why} something doesn't qualify, not just that it doesn't.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Predictions and disconfirmers}
 \label{sec:13:predictions}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
 The diagnostics generate falsifiable predictions beyond the case studies. Weakening a stabilizer should reduce cluster covariance before norms re-stabilize; for constructions, downsampling training data to 25\% should degrade PR-AUC substantially if the bundle depends critically on frequency. Just as /y/ appears preferentially in larger vowel inventories, rare constructional variants should concentrate in corpora with larger constructicon repertoires. If a pooled category like \enquote{resultative} is genuinely \enquote{too fat}, stratifying into subtypes should restore projectibility for well-maintained local kinds. These tests operationalize the core claim: linguistic categories qualify as HPCs when they project via identifiable mechanisms.
 
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 \section{Looking forward}
 \label{sec:13:forward}
-%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~-- 
+%~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--  ~--
 
-This chapter has argued that the HPC explanatory strategy scales across linguistic levels. Phonemes, words, and constructions can all be homeostatic property clusters maintained by stabilizers. What differs is the coupling regime~-- transparent at the sound level, opaque at the word level, architectural at the construction level~-- and the stabilizer weighting that maintains each regime.
+This chapter has argued that linguistic categories are triadic: form couples to object couples to interpretant, with the slide~-- the inferential habit~-- pulling the teeth together. What differs across levels is where the coupling is tight, where it's loose, and where slippage is possible.
 
-The payoff is twofold. First, predictive grip: the diagnostics force us to say in advance what counts as success and what would change our minds. Success isn't a rhetorical gloss (\enquote{striking regularity}) but concrete measures~-- slopes with uncertainty intervals, mass within bands, cross-corpus areas under curve, ablation deltas.
+The payoff is diagnostic precision. Slips, jams, and mis-tracking aren't just different failure modes; they're different \emph{locations} of failure in the triadic chain. Knowing where the error occurred tells you where to look for the stabilizers that normally prevent it.
 
-Second, an ontology with brakes: kinds are discovered through evidence rather than declared by fiat, and they are local equilibria (maintained by specific mechanisms in specific populations) rather than universal essences. That stance blocks overreach. Cross-linguistic umbrellas fail as single kinds because they pool heterogeneous mechanisms, bundling components that don't belong to the same causal whole. Thin proposals and complement classes lack the stabilizer base that projectibility requires. Many historical categories are united merely by descent rather than by active maintenance. And the zipper permits \term{mechanistic drift}: a category can remain historically continuous while its stabilizers shift. In between lie the categories that travel: their properties cohere because mechanisms keep them together. These show a cliquish stability~-- robust enough to support induction, even if perfect instance stability remains elusive.
+But one location has special status. Throughout the case studies in Part III~-- countability, definiteness, lexical categories~-- the categories clustered at the morphosyntactic level. That's where form--object--interpretant coupling is both \emph{tight} and \emph{obligatory}. You can speak without using \mention{let alone}. In English, you can't speak without committing to number, tense, and definiteness.
 
-The zipper metaphor returns for the final turn. Error shape diagnoses coupling: slips reveal transparent coupling; jams reveal architectural coupling; mis-tracking reveals loose coupling. Each error type tells you where the teeth failed to seat and, therefore, where to look for the stabilizers that normally keep them seating.
+Morphosyntax is the zone of maximum systematicity: the region of grammar where interpretant generation is enforced, not optional.
 
-But one level has special status. Throughout the case studies in Part III~-- countability, definiteness, lexical categories~-- the categories clustered at the morphosyntactic level. That's where form--value coupling is both \emph{tight} and \emph{obligatory}. You can speak without using \mention{let alone}. In English, you can't speak without committing to number, tense, and definiteness.
+We can measure this tightness. \textcite{Reynolds2026} quantifies the \term{packaging tightness} of the determiner--head relationship in English~-- the link that LBE fails to break. Using a dependency locality metric, he finds that determiners and their heads exhibit a packaging score of $k=4$ (extremely tight). The system treats $D+N$ not as neighbors but as a rigid transmission unit. This is what obligatory interpretant generation looks like in the data: a coupling so strong that the elements refuse to be separated.
 
-
-Morphosyntax is the zone of maximum systematicity: the region of grammar where coupling is enforced, not optional.
-
-We can actually measure this tightness. \textcite{Reynolds2026} quantifies the \term{packaging tightness} of the determiner--head relationship in English~-- the link that LBE fails to break. Using a dependency locality metric, he finds that determiners and their heads ($D \to N$) exhibit a packaging score of $k=4$ (extremely tight). They are resistant to interruption by parentheticals, adverbs, or hesitation markers to a degree that statistical independence cannot explain. The system treats $D+N$ not just as neighbors, but as a rigid transmission unit. This is what obligatory composition looks like in the data: a coupling so strong that the elements refuse to be separated.
-
-Chapter~\ref{ch:grammaticality-itself} asks what happens when we take this observation seriously. If grammaticality is what emerges when form--value coupling is obligatory, compositional, and learnable~-- then grammaticality itself is a kind.
-
+Chapter~\ref{ch:grammaticality-itself} asks what happens when we take this observation seriously. If grammaticality is what emerges when form--object--interpretant coupling is obligatory, compositional, and learnable~-- then grammaticality itself is a kind. The interpretant isn't just what you get; it's what you \emph{must} get. The slide doesn't just pull the teeth together; it locks them.
