@@ -1,396 +1,628 @@
-\chapter{Projectibility and the good bet}
-\label{ch:projectibility}
+% Chapter 6: The Stabilizers (swapped from Ch 7 in projectibility-pivot branch)
+% Complete rewrite 2025-12-08: biological explanatory style throughout
 
-% SLOGAN: Categories earn their keep by supporting induction.
-% Sticky sentence: "The mechanism projects even though the category, as traditionally defined, doesn't."
-% See notes/book-slogans.md for the book-wide slogan strategy.
-% LEVELS CHECK (2025-12-07): Verified no conflation of diachronic/synchronic, population/individual, emergent/constituent. The volcano metaphor is explicitly flagged as diachronic (see developmental asymmetry note). Interest-relativity section distinguishes explanatory levels from ontological ones.
+\chapter{The Stabilizers}
+\label{ch:stabilizers}
 
-% Epigraph from p. 206 of the edition cited in references.bib
-\epigraph{If there aren't [pedicabs], Mr Tagomi thought, I would be well advised to retire to secluded place and kill myself.}{— Philip K. Dick, \textit{The Man in the High Castle} (1962)}
+\epigraph{The general rule would establish itself insensibly, and by slow degrees, in consequence of that love of analogy and similarity of sound, which is the foundation of by far the greater part of the rules of grammar.}{— Adam Smith, \textit{Considerations Concerning the First Formation of Languages} (1761)}
 
-Mr.~Tagomi has slipped between worlds, and he needs to know which one he's in. Pedicabs exist in his home world but not in the other. He's betting his life on the projectibility of a single feature.
+When a biologist asks what a macrophage is, they don't look for a definition~-- they look for properties that co-occur: typical functions (phagocytosis, antigen presentation), marker profiles, developmental origins. None is strictly necessary~-- some macrophages don't phagocytose; some share markers with dendritic cells~-- but because the properties cluster reliably, the category supports prediction and experimental design. The parallel is methodological, not ontological: I'm borrowing an explanatory style, not claiming that grammars are organisms.
 
-In your world, the stakes are lower but the logic is the same. You encounter \mention{car}. It takes determinatives, pluralizes, functions as an argument. You've never seen \mention{pedicab}~-- but you bet it behaves likewise. You're usually right. The category \term{noun} lets you project from instances you've seen to instances you haven't. That's the bet, and it usually pays off.
+Adam Smith saw something similar in grammar two and a half centuries ago. Rules \enquote{establish themselves insensibly, and by slow degrees}~-- not by fiat, but through the accumulated pressure of analogy and pattern-matching. This chapter adds the causal machinery that makes that slow consolidation intelligible. Recall the framework: \emph{profile, stabilized by mechanisms, projectible relative to purposes}. What follows is an inventory of the stabilizers~-- the mechanisms that do the maintaining.
 
-Polish aspect offers a puzzle. Every textbook tells you: perfective aspect marks bounded events~-- completed, delimited, whole. Imperfective marks unbounded events~-- ongoing, habitual, incomplete. The definitions are centuries old, drilled into every language learner, refined in journal articles. They should work.
 
-When computational models trained on those definitions try to predict which aspect Polish speakers actually use, they project imperfectly~-- 77\% accuracy for perfective, against 98\% for imperfective \citep{divjak2025learnability}. The definitions that have been taught for generations capture only half the system. Something is projectible about aspect; it just isn't what the textbooks say.
+\section{The cluster}
+\label{sec:6:the-cluster}
 
-This chapter asks what makes a category projectible~-- worth betting on, and whether the same category can be projectible for one purpose but not another. The previous chapters argued that many linguistic categories are real, maintained by mechanisms rather than defined by essences. Grammatical categories are the central testbed in this book, but the same question arises for phoneme contrasts and for social categories like academic register and politeness systems. This chapter asks what we get in return. The answer is projectibility: the ability of a category to support inductive inference. Categories earn their keep by supporting induction. But which categories, for which purposes, and why?
+Stability, for grammatical categories, is achieved rather than given. The cluster-first strategy applies to grammar directly. The same approach that lets immunologists sidestep definitional impasses can do the same for linguists.
 
-The next two chapters develop two diagnostics for mechanism-maintained kinds. This chapter addresses \term{projectibility}: does the category support induction? Can you learn about one member and reliably bet on others? Chapter~\ref{ch:stabilizers} addresses \term{perturbation sensitivity}: what maintains the cluster, and what happens when the maintenance fails? The two diagnostics are complementary. Projectibility tests whether the category earns its keep; perturbation sensitivity reveals the causal structure that makes it do so. Chapter~\ref{ch:failure-modes} then shows how these diagnostics separate genuine HPCs from thin, fat, and negative classes~-- labels without the causal structure to back them up.
+Take nouns. In English, items we call nouns typically take determiners (\mention{the dog}, \mention{a problem}), inflect for number (\mention{dogs}, \mention{problems}), function as heads of noun phrases in subject and object positions, refer to entities or entity-like abstractions, and are commonly modified by adjectives. None of these is strictly necessary: \mention{cattle} lacks a singular; names resist determiners; \mention{information} doesn't pluralize. Cross-linguistically, the picture is messier still: Mandarin nouns don't inflect for number at all. And yet typologists recognize something noun-like across systems.
 
-For constructed categories~-- mathematical sets, legal statuses, programming constructs~-- the essentialist answer works: definitions support induction (§\ref{sec:2:where-essentialism-works}). Most linguistic categories aren't constructed, so definitions aren't there to do the work. What, then, grounds the bet? The maintenance view answer: mechanisms. Categories support induction not because they're defined but because they're mechanistically grounded. The mechanisms that maintain the category also explain why its members resemble each other. Learning about one member tells you about others because the same mechanisms shaped both.
+This is the position the chapter defends: grammatical categories are mechanism-maintained kinds whose reality is indexed to inductive utility, not definitional necessity~-- stabilized by a braid of cognitive, social, and physical processes. The clustering they produce is stable enough across time, robust enough across contexts, predictive enough across novel instances, that category membership reliably supports inference.
 
-\begin{figure}[t]
+The question is no longer: what is the essence of noun-ness? Although linguists tried that approach~-- across semantic, distributional, and morphosyntactic definitions~-- it generated boundary disputes and competing proposals but no stable resolution. The mechanism-first question is different: what keeps the cluster clustered~-- what does the stabilizing work?
+
+Grammatical categories are neither fully mind-independent natural kinds~-- like chemical elements~-- nor purely conventional human kinds that exist only because we agree they do, like money or traffic laws. They are a third thing: real enough to support induction, socially embedded enough to change under pressure. They lack the essences that define elements, but they resist the arbitrary revision that conventions permit.
+
+\enquote{Mechanism} in this book means something specific: a mechanism posit earns its keep by specifying component processes whose interactions produce the target phenomenon. If you can't say what sub-processes combine to yield the clustering and what would happen if one were disrupted, you don't yet have a mechanism~-- you have a label with causal ambitions. Labelling a pile of bricks \enquote{Wall} doesn't make it load-bearing; only stabilizing processes do. In molecular biology, mechanisms are crisply bounded: the ribosome, the spliceosome, the gene regulatory network. For grammatical categories, the stabilizers are less crisply bounded~-- they include processing biases, acquisition pathways, social indexing, transmission dynamics~-- but the constraint is the same: the term is elastic enough to span cognitive and social scales, yet not so elastic that any correlation gets to call itself mechanistic.
+
+\term{Stabilizer} is a related term. Where \enquote{mechanism} emphasizes causal structure, \enquote{stabilizer} emphasizes the functional role \parencite{illari2012}~-- what keeps the cluster clustered. A stabilizer is a mechanism insofar as it has causal depth, but the term foregrounds maintenance rather than mere causation. Something counts as a stabilizer if removing it would change the clustering~-- if the category would fragment, drift, or dissolve. What stabilizers maintain isn't just clustering of form properties, but the coupling between form and value~-- between a unit's distributional signature and its contribution when deployed. A mere correlate~-- something that co-occurs with the category but doesn't contribute to its maintenance, like the orthographic length of a word that happens to be a noun~-- isn't a stabilizer. This is where the \term{meta-Occam} payoff from Chapter~\ref{ch:kinds-without-essences} becomes concrete: the inventory of stabilizers is small; the categories they maintain are many.
+
+\section{Stabilizers at multiple scales}
+\label{sec:6:stabilizers-at-scales}
+
+What the biological template provides is visibility: it lets us see variation as activation rather than noise, boundaries as dynamic rather than definitional, and stability as achieved rather than given. Without this framing, gradient membership looks like failed classification; with it, gradient membership becomes evidence about which mechanisms are operating and where.
+
+The analogy isn't homology. Cell biologists ask what mechanisms maintain the macrophage phenotype; we ask what mechanisms maintain the noun category. The question structure is the same; the mechanisms themselves are domain-specific. The parallel earns its keep by making linguistic phenomena more visible and testable.
+
+\begin{table}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/6.npi-fragmentation.png}
-\caption{Uniform label, jagged reality. The category \term{NPI} (negative polarity item) groups expressions that share sensitivity to negative contexts, but \citet[30]{hoeksema2012} documents twelve distinct licensing patterns. No single mechanism maintains them as a kind; the label names a distributional class, not an HPC cluster.}
-\label{fig:npi-fragmentation}
-\end{figure}
-
-Before looking at a complex success, consider a failure (Figure~\ref{fig:npi-fragmentation}). The label \term{NPI} (negative polarity item) groups expressions like \mention{ever}, \mention{yet}, and \mention{lift a finger} that require licensing in negative contexts~-- but \citet[30]{hoeksema2012} documents twelve distinct licensing patterns across English NPIs. Models succeed at NPI prediction only to the extent they learn each item's distribution, not the category. The label names a distributional class; no mechanism maintains it as a kind.
-
-This chapter develops an operational criterion for distinguishing distributional classes from homeostatic kinds~-- and applies it to Polish aspect.
-
-
-\subsection{Unpacking the framework}
-\label{sec:6:slogan}
-
-Chapter~\ref{ch:kinds-without-essences} compressed the maintenance view into a slogan: \emph{profile, stabilized by mechanisms, projectible relative to purposes}. This chapter unpacks each component and tests them against Polish aspect.
-
-The three parts track three levels of analysis:
-\begin{itemize}
-    \item \textbf{Profile}~-- the observable surface. Properties cluster; members resemble each other. This is what you observe.
-    \item \textbf{Stabilized by mechanisms}~-- the metaphysics. Something keeps the cluster together: acquisition, entrenchment, functional pressure, social enforcement. Without mechanisms, clustering is coincidental.
-    \item \textbf{Projectible relative to purposes}~-- the epistemology and pragmatics. The category supports induction, but only for questions the mechanisms underwrite. A syntactician and a semanticist may have different right-sized categories for overlapping extensions.
-\end{itemize}
-
-The framework guards against three confusions. First, treating categories as mere conventions (ignoring the mechanisms). Second, treating projectibility as absolute rather than field-relative (ignoring purpose). Third, treating mechanism and projectibility as the same thing (conflating metaphysics with epistemology). The remainder of the chapter applies each piece to a test case.
-
-
-\section{The definitional bet}
-\label{sec:6:definitional-bet}
-
-Slavic verbal aspect looks like a paradigm case of a grammaticalized binary. Every Polish verb bears aspectual marking: imperfective or perfective. The opposition is obligatory, pervasive, and ancient~-- codified in grammars for centuries, taught in every language classroom.
-
-The textbooks offer crisp definitions. Imperfective presents an event as unbounded~-- ongoing, habitual, incomplete. Perfective presents it as bounded~-- a completed whole with temporal limits (Figure~\ref{fig:aspect-viewpoint}). The terminology varies (totality, resultativeness, telicity), but the core claim is the same: there's an invariant semantic content distinguishing the two aspects, and knowing that content should let you predict which aspect a speaker will choose.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/6.aspect-viewpoint.png}
-\caption{The textbook account of Slavic aspect. Imperfective presents the event from inside, as ongoing; perfective presents it from outside, as a completed whole. This is the \enquote{viewpoint} metaphor that has dominated aspectual theory for a century.}
-\label{fig:aspect-viewpoint}
-\end{figure}
-
-This is essentialism applied to morphology. The definitions are the essence; the essence determines behaviour. Learn the essence, and you can project: knowing what perfective \emph{means} should tell you when to use it.
-
-But the prediction fails. If aspect has invariant semantic content, then a model that knows that content should predict aspectual usage. \citet{divjak2025learnability} tested exactly this.
-
-They built three computational models of Polish verb usage:
-\begin{itemize}
-    \item A \emph{lemma-concrete} model that learns cue--outcome associations without assuming aspect exists as a category at all.
-    \item An \emph{aspect-concrete} model that learns aspect from usage cues~-- distributional patterns in the input.
-    \item An \emph{aspect-abstract} model that learns aspect from the semantic labels proposed in the theoretical literature~-- boundedness, totality, resultativeness.
-\end{itemize}
-
-The aspect-abstract model is the textbook view formalised. If the invariant meanings are real, this model should win.
-
-It doesn't.
-
-On corpus data, the aspect-abstract model performs reasonably~-- 87\% accuracy \citep{divjak2025learnability}. But accuracy hides an asymmetry. The model predicts imperfective well: 98\% correct. It predicts perfective poorly: only 77\%~-- you lose the bet nearly one time in four. The semantic invariants that aspectologists have proposed for a century~-- the definitions on which projectibility supposedly depends~-- capture only half the system. Why this direction? Likely because perfective is more lexically heterogeneous: perfective verbs are marked by a variety of prefixes, each with its own distributional profile, and they appear in a narrower range of tense frames. Imperfective is closer to a default, less marked, more uniform. The asymmetry isn't random; it tracks where the semantic definition aligns with distributional reality (imperfective) and where it doesn't (perfective).
-
-More damaging: when validated against native-speaker judgments in a gap-filling task, the aspect-abstract model performs \emph{worse} than the simpler models. Native speakers' preferences align better with a model that doesn't even use the aspect category than with one that does. The lemma-concrete model~-- the one that treats each verb individually, without abstracting to aspect~-- best predicts which forms humans prefer.
-
-This is a failure of definitional projectibility. The category exists; the usage is systematic; but the definitions don't project to behaviour. Knowing what \enquote{perfective} supposedly \emph{means} doesn't reliably tell you when Polish speakers will \emph{use} it. (A moderate reader might object that the textbook definitions are simplistic models, not metaphysical essences~-- that their failure is a failure of \emph{that} model, not of semantic-level explanation generally. Fair enough. But even treating definitions as models rather than essences, the projective power lies in distributional cue structure and lexeme-level entrenchment. Semantic paraphrase plays at best a partial, uneven role.)
-
-
-\section{The mechanistic alternative}
-\label{sec:6:mechanistic-alternative}
-
-Why does the textbook view fail? \citet{divjak2024aspect} provide the answer.
-
-Their corpus study of Polish aspect reveals a usage landscape strikingly different from the textbook picture.
-
-First, lexical bias is the norm. About 90\% of Polish verbs strongly prefer one aspect~-- greater than 90\% of their tokens appear in the preferred form. Only 11\% of aspectual pairs are genuinely equiprobable. The textbook suggestion that speakers \enquote{choose} aspect based on how they view the event applies to a small minority of cases.
-
-Second, tense carries most of the signal. A simple model using just the superlemma (verb identity) and three-way tense distinction (past, present, future) achieves F1 scores of 0.95 for imperfective and 0.90 for perfective~-- the perfective asymmetry persists, just smaller. Aspect is largely predictable from tense, not from semantic viewpoint.
-
-Third, context cues appear where needed. Temporal adverbs and other contextual markers show up reliably only with the 11\% of verbs that lack lexical bias. The system is informationally efficient: redundant cues don't clutter unambiguous cases.
-
-Finally, the landscape is already shaped~-- like a riverbed cut by the water that flows through it. For most verbs, learning the verb means entering a channel that use keeps cutting deeper. The category isn't applied at utterance; the same flow that carved it maintains it.
-
-This reframes the question worth asking. Instead of \enquote{what does aspect mean?}~-- a question that invites ever more refined invariant definitions~-- we ask \enquote{what maintains the aspectual patterns speakers produce?} That question is open, investigable, and already yielding answers: distributional signatures, acquisition dynamics, lexical entrenchment. The textbook view isn't wrong; it's asking a question whose answer can't be found by the methods it uses. The mechanism view doesn't replace it~-- it explains why it worked as well as it did, and what it was missing.
-
-
-Now the maintenance view snaps into focus. Why can a Polish speaker project aspectual behaviour to unfamiliar verbs? Not by applying a definition. The definitions~-- boundedness, totality~-- predict only imperfective, and even then imperfectly. What projects is something different: the cue--outcome structure that learners extract from the input.
-
-Consider: you've learned \mention{\ipa{robić}} (impf) / \mention{\ipa{zrobić}} (pf)~-- `do', `accomplish'. You encounter an unfamiliar verb \mention{\ipa{pływać}}~-- `swim'. How do you know that \mention{\ipa{przepływać}} will be perfective?
-
-The textbook answer: you apply the semantic definition of perfectivity~-- the event is bounded, complete, telic~-- and infer that \mention{\ipa{przepływać}} (`swim across', `complete the crossing') satisfies those criteria.
-
-But as we've seen, the semantic definition predicts poorly. Worse, it predicts perfective worse than imperfective~-- exactly wrong for the case at hand.
-
-The mechanism-based answer: You've learned that certain prefixes, in certain tense contexts, pattern with perfective. You've learned that verbs of motion typically have strong aspectual biases carried by morphological material. You project not from a definition but from a web of cue--outcome associations maintained across your linguistic experience.
-
-This is projectibility grounded in mechanism rather than definition (Figure~\ref{fig:aspect-mechanism}). The category \term{perfective} exists~-- you can introspect about it, metalinguistic discourse depends on it~-- but its psycholinguistic reality needn't rest on invariant semantic content. The good bet is on the consistency of the distributional patterns that maintain it.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.85\textwidth]{figures/6.aspect-mechanism.png}
-\caption{The mechanism-based view of aspectual projectibility. Instead of applying semantic definitions, learners extract cue--outcome associations~-- morphological patterns, tense contexts, lexical biases~-- that allow prediction of novel forms. The question this answers isn't \enquote{what does aspect mean?} but \enquote{what maintains aspectual patterns?} (Percentages are schematic; actual weights vary by verb and context.)}
-\label{fig:aspect-mechanism}
-\end{figure}
-
-
-\section{Labels aren't mechanisms}
-\label{sec:6:labels-mechanisms}
-
-Here's where the story takes a surprising turn. \citet{divjak2025learnability} found that the best model~-- the one that most closely matches native-speaker preferences~-- is the one that doesn't use the category \term{aspect} at all.
-
-The lemma-concrete model~-- the one that treats each verb individually, without abstracting to aspect~-- predicts human behaviour better than the aspect-aware models. The statistical evidence is overwhelming: the probability that the aspect-aware models are actually better is effectively zero.\footnote{AIC 3,891 for lemma-concrete versus 3,954 for aspect-concrete and 4,037 for aspect-abstract; evidence ratios in the $10^{13}$ to $10^{17}$ range~-- numbers so large that the conclusion is statistically compelling.}
-
-What does this mean for the ontological status of aspect? Here we need to separate three things:
-
-\begin{enumerate}
-    \item \emph{Is there a stable pattern that linguists call ``aspect''?} Yes. The corpus regularities, speaker agreement, and reliable acquisition all point to a real, socially shared, historically stable clustering.
-    \item \emph{Do the traditional semantic definitions project to usage?} Not reliably~-- especially for perfective. That's a failure of \emph{definitional} projectibility, not automatically a failure of aspect as such.
-    \item \emph{Is the abstract binary label psychologically intermediate in the production system?} The lemma-concrete result suggests: maybe not. The best causal story may live at a finer grain.
-\end{enumerate}
-
-The apparent contradiction~-- ``aspect looks real'' versus ``aspect doesn't project''~-- dissolves once we see what exactly failed. What failed is the textbook essence. What may also have failed is the assumption that speakers need an explicit aspect representation as a mediating variable. What did \emph{not} fail is the existence of stable, learnable, intersubjectively shared aspectual patterning.
-
-This is almost the cleanest possible maintenance-view demonstration. The category label tracks a real cluster. But that cluster is maintained by a bundle of finer-grained mechanisms: lexeme-specific entrenchment, tense-conditioned expectations, prefixal cueing. Projectibility belongs to that bundle, not to the invariant semantic paraphrases. Polish aspect is real as a stable pattern, but the projectible unit is smaller than the label. The mechanism projects; the label names the emergent alignment of those mechanisms without explaining it.
-
-Put differently: \term{aspect} names the pattern; it doesn't do the work. You can project aspectual behaviour \emph{without} representing \enquote{aspect} as such~-- because what you're really projecting are cue--outcome associations that happen to have an aspectual signature. The lemma-specific patterns don't preclude aspect as a generalisation; they ground it. What speakers know isn't \emph{either} verbs \emph{or} aspect but a multi-level network where both coexist~-- the general emergent from the particular. This answers the objection that a lemma-level model leaves no room for the category: the category exists as an emergent alignment, even if processing happens at a finer grain. The island is real even though the coral does the maintaining.
-
-This resolves the puzzle of naming. We call it \term{aspect} because of its history; Polish aspect is the genealogical descendant of a system that may once have fit the definitions better. But mechanistic drift happens. A category can remain historically continuous while its causal underpinnings shift. A label can remain genealogically appropriate but be synchronically misleading about what projects. Think of a volcanic island. The volcano builds the island over millennia, but eventually goes dormant. Coral colonises the flanks; soil accumulates; vegetation takes root. The island persists~-- not because the volcano is still active, but because new mechanisms have taken over: reef-building, soil formation, root networks. Calling it a \enquote{volcanic island} is genealogically correct; the volcano did the initial work. But it's synchronically misleading: what maintains the island now is coral and roots, not magma. Polish aspect is like this. The opposition was carved by semantic-temporal distinctions that may once have been the primary mechanism. But the volcano has gone dormant. Now what maintains the pattern~-- what makes it projectible~-- is lexeme-specific cue structure, not semantic essence. The label names the island, not the volcano. (Note the developmental asymmetry: for a child acquiring Polish, the volcano was never active. Learners don't experience the historical shift; they experience only the coral reef~-- the current distributional cues. The ``mechanism drift'' is a diachronic observation about the collective system, not a stage in individual acquisition.)
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.85\textwidth]{figures/6.island-volcano.png}
-\caption{Mechanistic drift: a volcanic island. The volcano built the island but is now dormant. What maintains the island today~-- coral reefs, root networks, soil formation~-- differs from what created it. Polish aspect is analogous: the semantic-temporal distinctions that may once have been the primary mechanism have gone dormant. What maintains aspectual patterns now is lexeme-specific cue structure. The label names the island, not the volcano.}
-\label{fig:island-volcano}
-\end{figure}
-
-The cross-linguistic term \term{aspect} functions as a \term{comparative concept}; within Polish, it names a historically inherited pattern whose contemporary projectibility is anchored in lexeme-specific cue structures rather than the textbook semantic essence. Labels aren't definitions, and labels aren't mechanisms. Calling this opposition \term{aspect} risks reifying a historically entrenched label whose textbook semantics no longer track the mechanisms that actually maintain usage. it's best treated as the name of an emergent clustering, not the explanatory unit that makes it project. But here's a constraint: genealogical continuity alone doesn't justify continued use of a label. The label is appropriate only if it still picks out a stable emergent pattern at some explanatory level. An island that has fully eroded, with no coral keeping it together, is no longer an island~-- and deserves no name.
-
-
-\section{Generalising the lesson}
-\label{sec:6:generalising-lesson}
-
-Polish aspect illustrates a general lesson of the maintenance view. Polish has a grammatical opposition traditionally called aspect; what these results challenge is the assumption that the textbook characterization of that opposition is the mechanism that makes it projectible. Aspect has been defined for centuries, but those definitions fail to predict usage. By contrast, mechanism-based accounts succeed where definitions fail: the same system becomes predictable once you attend to the distributional structure~-- lexical bias, tense context, morphological cues~-- rather than the semantic essence.
-
-This separation reveals that the category and the mechanism need not coincide. \term{Aspect} is a useful label picking out a real pattern, but the psychological reality of that pattern may be a network of cue--outcome associations, not a represented binary. The mechanism lives below the category; the projectibility comes from the mechanism. When a proposed characterization fails to project, that's diagnostic: it tells you the characterization doesn't track the mechanisms. This is HPC without category reification: clusters maintained by mechanisms, labels applied by analysts.
-
-
-Polish aspect is a worked example, not an isolated curiosity. The pattern~-- definitional characterizations that fail to project, mechanism-based descriptions that succeed~-- appears across grammatical domains.
-
-\citet{ambridge2020} found that the causative alternation (\mention{break the vase} vs *\mention{laugh the man}) is predicted by a continuous semantic dimension (directness of causation) across five typologically unrelated languages. The semantic definitions of verb classes don't work; the mechanism (sensitivity to causal directness) does. Strikingly, a model trained on five languages predicts native-speaker judgments in a sixth (Balinese) without exposure. The mechanism projects cross-linguistically; the definitional verb classes don't.
-
-\citet{saldana2022} showed that morphological syncretism patterns are learned better when syncretic cells share semantic similarity~-- not when they share features in a definitional sense. The learnability gradient tracks similarity, not category membership. What projects is the similarity structure, not the feature system.
-
-\citet{chi2020} demonstrated that grammatical relations (subject, object) emerge spontaneously in multilingual BERT~-- trained without any symbolic grammar~-- and transfer across languages. A probe trained only on English successfully identifies grammatical relations in French. The categories exist, but defining grammatical roles isn't what produces them; distributed learning over functional pressures is. The mechanism projects cross-linguistically; the formal definitions are epiphenomenal.
-
-These aren't the only examples. Chapter~\ref{ch:lexical-categories} develops the case for word classes in detail. The upshot: projectibility is the empirical test for mechanistic grounding. When a category supports reliable induction, that's evidence that the mechanisms are real. When it doesn't, something about the proposed characterization is off.
-
-
-\section{Field-relative projectibility}
-\label{sec:6:field-relative}
-
-We've established that projectibility tracks mechanism, not definition. But projectibility for whom? The same category can project well for one analytical purpose and poorly for another. This isn't perspectivalism~-- different views of the same thing. It's a claim about ontology: there are genuinely different HPCs that happen to overlap in extension, each projectible in its own domain.
-
-\subsection{The tomato problem}
-\label{sec:6:tomato}
-
-Is a tomato a fruit or a vegetable? The question is undecidable only if you think there's one right answer.
-
-A botanist classifies tomatoes as fruits~-- they develop from the ovary of a flowering plant and contain seeds. This classification projects: knowing that tomatoes are fruits lets the botanist predict ripening patterns, seed dispersal mechanisms, and responses to plant hormones. The category \mention{fruit} supports reliable induction for botanical purposes.
-
-A chef classifies tomatoes as vegetables~-- savoury, used in main courses, paired with salt rather than sugar. This classification also projects: knowing that tomatoes are culinary vegetables lets the chef predict flavour pairings, cooking methods, and menu placement. The category \mention{vegetable} supports reliable induction for culinary purposes.
-
-Neither classification is wrong. They're not even in conflict. They're \emph{different HPCs} that happen to have overlapping extensions. The botanist's \mention{fruit} and the chef's \mention{vegetable} are each maintained by mechanisms appropriate to their domain~-- reproductive biology for one, flavour chemistry and culinary tradition for the other. Each projects reliably within its field.
-
-The tomato problem is a problem only if you assume projectibility is absolute~-- that a category either projects or doesn't, full stop. Once you recognize that projectibility is field-relative, the problem dissolves. What remains is the work of specifying which category projects for which purposes.
-
-\subsection{Proper nouns and proper names}
-\label{sec:6:proper-nouns-names}
-
-Linguistics has its own tomatoes. Consider the distinction between \term{proper noun} and \term{proper name}.
-
-A semanticist works with \term{proper names}: expressions that refer directly to individuals without descriptive content, that are rigid designators (picking out the same individual across possible worlds), and that create referential opacity (\enquote{Lois believes Superman can fly} doesn't entail \enquote{Lois believes Clark can fly}). These properties cluster because of the cognitive and communicative functions names serve: tracking individuals across contexts requires stable reference without shifting descriptive content.
-
-A syntactician works with \term{proper nouns}: words that head nominal projections, resist articles in certain languages, trigger particular agreement patterns, and fill argument slots. These properties cluster because of distributional pressures: words that behave similarly in one syntactic environment tend to behave similarly in others.
-
-The extensions overlap substantially~-- most expressions that are proper names are also proper nouns. But the overlapping extension doesn't mean they're the same category. They're different HPCs, maintained by different mechanisms, projectible for different purposes.
-
-\begin{table}[t]
-\centering
-\caption{Two categories, overlapping extension}
-\label{tab:proper-noun-name}
-\begin{tabular}{lll}
+\small
+\begin{tabular}{@{}p{2.8cm}p{5.5cm}p{5.5cm}@{}}
 \toprule
-\textbf{Category} & \textbf{Field} & \textbf{What projects} \\
+\textbf{Scale} & \textbf{Biology} & \textbf{Linguistics} \\
 \midrule
-Proper name & Semantics & rigid reference, opacity, individual-tracking \\
-Proper noun & Syntax & heads NP, fills argument slot, triggers agreement \\
+Dynamical basins & \textbf{Gene regulatory networks} produce attractor states~-- stable configurations the cell tends to settle into and return to when perturbed. The basins are emergent from ongoing interaction and exist only as long as stabilizing processes continue. & \textbf{Cognitive architectures and processing biases} produce attractor states. A construction frequent enough becomes entrenched~-- produced as a unit rather than assembled. This is dynamical, not definitional. \\
+\addlinespace
+Developmental trajectory & \textbf{Developmental lineage} constrains which basins are reachable. A cell's history matters: what precursors it passed through, what signals it received at critical windows. & \textbf{Acquisition pathways and learning biases} constrain what a speaker can learn. Order of acquisition matters. Early-learned patterns anchor later ones. Sensitive phases exist where input has disproportionate effect. \\
+\addlinespace
+Microenvironmental modulation & \textbf{Microenvironmental signalling}~-- local cytokines, tissue context~-- pushes cells into different regions of the same basin, producing variation within the type. & \textbf{Discourse context and pragmatic ecology} push tokens into different regions of the distributional space. Same category, different activation state. Variation is expected, not noise. \\
+\addlinespace
+Reciprocal feedback & \textbf{Functional feedback}: what the cell does alters its microenvironment, which sustains or shifts its state. The stabilization isn't one-way. & \textbf{Functional feedback}: what speakers do with categories alters input to the next generation, which alters what categories stabilize. Usage facilitates reconstruction; facilitated patterns shape usage. The forcing function is communicative: forms that fail to optimise relevance~-- incurring processing costs without compensating benefits~-- are selected against \autocite{scott-phillips2024intuitions}. \\
 \bottomrule
 \end{tabular}
+\caption{Multi-level stabilization: biology and linguistics in parallel.}
+\label{tab:stabilizer-parallel}
 \end{table}
 
-A syntactician \emph{knows} that \mention{Brett} is a proper name. But that semantic fact doesn't project for syntactic purposes. What projects syntactically is the distributional chain: \mention{Brett} heads a nominal phrase $\rightarrow$ fills a subject slot $\rightarrow$ triggers third-person singular agreement. The syntactician can reliably predict that novel proper nouns will behave distributionally like familiar ones. The proper-name status is real but orthogonal to that prediction.
+Table~\ref{tab:stabilizer-parallel} traces kinds of stabilizing stories; Figure~\ref{fig:mechanism-typology} reorganizes the same mechanisms by timescale and locus, which determines what evidence is relevant. Claims about fast mechanisms (Quadrants I--II) require online processing measures; claims about slow mechanisms (Quadrants III--IV) require longitudinal and apparent-time data.
 
-This isn't esoteric. Every introductory syntax course teaches students to distinguish \enquote{what a word means} from \enquote{how it behaves}. What hasn't been articulated is why this distinction exists: because meaning and behaviour are tracked by different mechanisms, and different mechanisms produce different HPCs. The field-relativity of projectibility explains why syntacticians can't just read off predictions from semantics, and vice versa.
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    quadrant/.style={minimum width=4.5cm, minimum height=3cm, align=center, font=\small},
+    axislabel/.style={font=\small\bfseries},
+    mechanism/.style={font=\small},
+    sublabel/.style={font=\scriptsize, text=black!70}
+]
 
-\subsection{Constituency and dependency}
-\label{sec:6:constituency-dependency}
+% Quadrant backgrounds
+\fill[black!5] (-4.5, 0) rectangle (0, 3);
+\fill[black!12] (0, 0) rectangle (4.5, 3);
+\fill[black!12] (-4.5, -3) rectangle (0, 0);
+\fill[black!5] (0, -3) rectangle (4.5, 0);
 
-The same logic applies to rival syntactic formalisms. Phrase-structure grammars, like CGEL's, represent sentences as hierarchies of \term{constituent}s~-- noun phrases, verb phrases, clauses nested inside each other. Dependency grammars, like \citeauthor{gibson2025}'s (\citeyear{gibson2025}), represent sentences as networks of \term{dependency relation}s~-- subject-of, object-of, modifier-of~-- linking words directly without intermediate phrasal nodes.
+% Axes
+\draw[thick, -{Stealth[length=3mm]}] (-4.8, 0) -- (5, 0);
+\draw[thick, -{Stealth[length=3mm]}] (0, -3.3) -- (0, 3.5);
 
-The rivalry is old, but the maintenance view dissolves the \enquote{which is \emph{real}?} framing. Both formalisms track genuine structure, maintained by mechanisms, projectible for different purposes.
+% Axis labels
+\node[axislabel, left] at (-4.8, 0) {Individual};
+\node[axislabel, right] at (5, 0) {Community};
+\node[axislabel, above, align=center] at (0, 3.5) {Fast\\[-2pt]{\scriptsize\color{black!70}(ms--minutes)}};
+\node[axislabel, below, align=center] at (0, -3.3) {Slow\\[-2pt]{\scriptsize\color{black!70}(months--generations)}};
 
-Constituency is maintained by substitution, movement, and coordination: expressions that can be pronominalized together, fronted together, or conjoined are grouped as constituents. Knowing that \mention{the cat} is a noun phrase lets you predict it can be replaced by \mention{it}, moved to topic position, or coordinated with \mention{the dog}. The category projects for questions about \emph{what groups with what}.
+% Quadrant contents
+% Top-left: Fast + Individual
+\node[mechanism, align=center] at (-2.25, 1.5) {Processing economy\\[4pt]Predictive facilitation};
 
-Dependency is maintained by processing constraints: working memory tracks which words await completion, and dependency length predicts reading time and comprehension difficulty \citep{gibson2000,futrell2020}. Knowing that a verb governs a distant subject lets you predict processing slowdown. The category projects for questions about \emph{what costs what}.
+% Top-right: Fast + Community
+\node[mechanism, align=center] at (2.25, 1.5) {Accommodation\\[4pt]Alignment in dialogue};
 
-The extensions overlap~-- every sentence can be described both ways~-- but the HPCs are distinct. A syntactician asking \enquote{what can move together?} needs constituency. A psycholinguist asking \enquote{why is this sentence hard?} needs dependency. Neither formalism is epiphenomenal; each tracks mechanisms relevant to its questions. The debate is dissolved, not decided.
+% Bottom-left: Slow + Individual
+\node[mechanism, align=center] at (-2.25, -1.5) {Acquisition\\[4pt]Entrenchment};
 
-This fits naturally with what \textcite{carroll2016} calls \term{poetic naturalism}: a sparse naturalistic metaphysics paired with a permission structure for higher-level vocabularies. Poetic naturalism tells you when it's licit to treat a vocabulary as tracking something real~-- when the description captures a pattern that admits information-compressing, predictively useful summary, and when it coheres with descriptions at other grains \citep{dennett1991}. The HPC framework tells you one way those patterns stay put: by specifying the mechanisms that maintain the clustering. Constituency is real because substitution, movement, and coordination actively cluster the relevant properties; dependency is real because memory constraints actively shape the cluster. The poetry has plumbing.
+% Bottom-right: Slow + Community
+\node[mechanism, align=center] at (2.25, -1.5) {Transmission dynamics\\[4pt]Social indexing};
 
-\subsection{Why colour doesn't grammaticalise}
-\label{sec:6:colour}
+% Quadrant labels (optional, subtle)
+\node[sublabel] at (-4, 2.6) {I};
+\node[sublabel] at (4, 2.6) {II};
+\node[sublabel] at (-4, -2.6) {III};
+\node[sublabel] at (4, -2.6) {IV};
 
-The constituency/dependency case and the proper-name case both stay within linguistics~-- different subfields or formalisms carving the same extensions differently. A starker example crosses domains entirely: colour.
+\end{tikzpicture}
+\caption{Mechanism typology by timescale and locus.}
+\label{fig:mechanism-typology}
+\end{figure}
 
-Colour is maximally salient. Trichromatic vision evolved because colour predicts things that matter for survival: fruit ripeness, toxicity signals, mate health, camouflage. The warm/cool boundary shows categorical perception~-- adults distinguish warm from cool colours faster than they distinguish within either category \citep{holmes2017}. Colour terms partition efficiently across languages, with the warm/cool split emerging early in colour-vocabulary evolution \citep{kay1978}. If any perceptual domain should grammaticalise, colour should.
+The definition tells you what the cluster looks like at a moment. The stabilizing story tells you why it persists.
 
-It doesn't. Noun-classification systems regularly encode animacy, shape, and size~-- but never colour. No documented language has verb agreement triggered by whether the subject is warm- or cool-coloured. The warm/cool distinction is robust, salient, and cross-linguistically stable in the lexicon. Yet it's entirely absent from closed-class morphology \citep{seifart2010}.
+The neural evidence reinforces this picture. \textcite{Fedorenko2024} show that the brain's language network is dissociable from the Multiple Demand network that supports reasoning and problem-solving: linguistic ability can be devastated while logical reasoning remains intact, and vice versa. This double dissociation matters for the maintenance view. If the forcing function maintaining linguistic categories were general cognitive pressure~-- efficiency of thought, logical organization~-- we would expect language and reasoning to share neural resources. They don't. The forcing function is specifically communicative: what stabilizes linguistic structure is its success in coordination between speakers, not its utility for internal cognition.
 
-\citet{prasertsom2026} tested whether this gap reflects domain-specific constraints on grammar~-- a hard-wired filter excluding colour from the set of possible grammatical features~-- or something more general. Their experiments compared animacy-based and colour-based noun-class learning in an artificial language. Participants learned both, but animacy-based classes were learned better. More strikingly, when the input was ambiguous between animacy and colour as the classification basis, participants overwhelmingly inferred animacy~-- 77.5\% generalised to animacy, nearly half of them categorically.
+The four-level story is a heuristic, not a template. Different categories are maintained by different braids of mechanisms; the exact mapping varies. Quotatives, as we'll see, involve processing economy, social indexing, and transmission dynamics~-- mechanisms that cross-cut the four levels rather than mapping onto them one-to-one. The point is multi-level stabilization, not exact correspondence. What the biological parallel provides is a style of explanation~-- look for mechanisms at multiple timescales, expect reciprocal feedback~-- not a fixed inventory. The case studies that follow apply this style to two deliberately different phenomena: quotatives (socially vivid, spreading through youth networks) and filler-gap constructions (more syntactic, depending on information structure). If the framework earns explanatory traction for both, it's not just sociolinguistics with a new label.
 
-This bias isn't grammar-specific. In a non-linguistic sorting task, the same preference appeared: participants sorted images by animacy rather than colour, even when the experimenters manipulated within-category similarity to favour colour. The bias persisted across three stimulus sets designed to progressively disadvantage animacy.
-
-What drives the asymmetry? Not salience~-- colour is as perceptually salient as animacy. The answer lies in predictive structure. Knowing something is animate predicts a cluster of other properties: self-initiated motion, goal-directedness, organic composition, susceptibility to certain event roles. These predictions hold regardless of what specific entity you're considering. Knowing something is red predicts little beyond its surface appearance~-- and what it does predict (ripeness, toxicity) is object-relative. Red means different things for apples, frogs, and traffic lights.
-
-\citet{prasertsom2026} confirmed this computationally. They extracted word embeddings for 472 frequent physical nouns from child-directed speech and clustered them by animacy versus colour. Animacy-based clusters were more compact and more distinct; logistic classifiers learned animacy categories faster and generalised better to unseen nouns~-- without any built-in knowledge of animacy. The distributional structure of language itself encodes the asymmetry.
-
-This is purpose-relative projectibility across domains. Colour is projectible \emph{for ecological purposes}: predicting edibility, danger, health. The mechanisms stabilizing colour categories are perceptual and action-guiding~-- they evolved to support decisions about what to eat, avoid, or approach. But grammar serves different purposes: argument realisation, reference tracking, event-structure encoding. Animacy predicts properties relevant to those purposes; colour doesn't.
-
-The upshot isn't that colour categories are fake or that grammatical categories are special. Both are HPCs, maintained by mechanisms appropriate to their domains. What differs is the domain of projectibility. Evolution gave us colour vision because colour projects for survival-relevant inferences. It didn't give us colour-based agreement because colour doesn't project for grammatical inferences. The same extension~-- red things, warm-coloured things~-- supports robust categorisation in one domain and fails to support it in another.
-
-This extends the proper-name pattern. \term{Proper name} projects for semantic purposes; \term{proper noun} projects for syntactic purposes. \term{Warm-coloured} projects for ecological purposes; nothing projects it for grammatical purposes~-- so nothing grammaticalises. The framework doesn't multiply categories recklessly; it asks what cluster of properties is maintained by what mechanisms, and whether that cluster projects for the questions you're asking. Chapter~\ref{ch:lexical-categories} returns to animacy in its analysis of noun/verb stability.
-
-
-\subsection{Preview: Part III as demonstration}
-\label{sec:6:preview-part-iii}
-
-This pattern~-- overlapping extensions, distinct HPCs, field-relative projectibility~-- structures the case studies in Part~III.
-
-Chapter~\ref{ch:countability} shows that \term{countability} decomposes into semantic individuation (boundedness, discrete enumeration) and morphosyntactic count-marking (plural inflection, quantifier selection). \mention{Furniture} individuates semantically~-- you can count chairs~-- but patterns morphosyntactically as mass. The semantic and morphosyntactic clusters are maintained by different mechanisms and project for different analytical purposes.
-
-Chapter~\ref{ch:definiteness-and-deitality} shows that definiteness and deitality are distinct HPCs with overlapping extensions. \term{Definiteness}~-- identifiability, uniqueness, familiarity~-- projects for semantic purposes. \term{Deitality}~-- the morphosyntactic properties that pattern with definite articles~-- projects for syntactic purposes. The literature's confusion about \enquote{weak definites} and \enquote{generic definites} arises from treating these as one category when they're two.
-
-Chapter~\ref{ch:lexical-categories} shows that the noun/verb contrast is crosslinguistically stable because both semantic and morphosyntactic mechanisms reinforce it, while adjective categories vary because the mechanisms don't align as tightly.
-
-Chapter~\ref{ch:proform-gender} traces the maintenance spectrum from semantically transparent to purely entrenched. English gender is designatum-driven~-- pronouns track perceived personhood. French gender is entrenchment-driven~-- antecedent form controls the pronoun with no semantic grounding. The same category label names different HPCs with different mechanisms.
-
-Chapter~\ref{ch:the-category-zipper} then zooms out, showing how coupling tightness varies across the linguistic hierarchy~-- from the hard-coupled acoustic-distributional bundle of phonemes to the loose-coupled semantic-morphosyntactic profiles of grammatical categories.
-
-The framework doesn't multiply categories recklessly. It asks, for each analytical purpose: what cluster of properties is maintained by what mechanisms, and does that cluster project for the questions you're asking? Sometimes the answer is a familiar category; sometimes it's a refinement of one; sometimes it's a recognition that what looked like one category was two.
-
-\subsection{The discipline: three checks}
-\label{sec:6:three-checks}
-
-The slogan~-- \emph{profile, stabilized by mechanisms, projectible relative to purposes}~-- maps onto three diagnostic checks:
-
-\begin{enumerate}
-    \item \textbf{Cluster check.} Does property covariance hold across samples and contexts? If the properties don't cluster, there's no profile to explain.
-    \item \textbf{Homeostasis check.} Can we identify perturbations where the cluster reconstitutes (or fails)? If we can't, we haven't identified the mechanism.
-    \item \textbf{Projectibility check.} Are there counterfactual-supporting inferences in new contexts? If learning about one member doesn't tell you about others, the category isn't earning its keep.
-\end{enumerate}
-
-Crucially, these checks can yield different answers for different fields. A category might pass all three for syntax and fail the projectibility check for semantics. That's not a defect of the framework~-- it's the framework working. The checks aren't absolute; they're indexed to purpose.
-
-This discipline guards against two temptations. First, the essentialist temptation: treating one field's category as the \enquote{real} one and others as derivative. If proper names are semantically fundamental, proper nouns must be \enquote{just} the syntactic reflection of semantic reality. But the mechanisms are different; neither is derivative. Second, the nominalist temptation: treating categories as arbitrary conventions because different fields carve differently. But the carving isn't arbitrary; each field's categories are maintained by mechanisms appropriate to that field's explanatory goals.
+Several mechanisms deserve mention even if they don't receive full case studies here. \term{Analogy} extends established patterns to new cases by perceived similarity~-- it's how children produce \mention{goed} and how adults accept novel compounds. \term{Standardization} operates through institutions: schools, style guides, dictionaries, corpus-annotation schemes. These codify and enforce norms, creating explicit feedback loops that natural transmission lacks. \term{Indexicality} links linguistic forms to social meaning: a choice of variant signals group membership, registers attitude, or marks formality. The social stakes make the choice salient and its patterning consequential, reinforcing category boundaries beyond what communicative function alone would produce. \term{Error and repair} maintains structure through on-line correction~-- speakers monitor output, catch deviations, and adjust mid-utterance. This creates real-time negative feedback that keeps production within the category's basin. Finally, \term{creativity} probes boundaries: novel forms test what the system will tolerate, and their acceptance or rejection reshapes what counts as the category. These mechanisms interact with the four-level typology rather than mapping neatly onto it; a full constructive account would need to integrate them all.
 
 
-\section{The epistemic payoff}
-\label{sec:6:epistemic-payoff}
+\section{Variation as activation states}
+\label{sec:6:variation-activation-states}
 
-The aspect case shows that even a descriptively real category can fail to project if its definition misaligns with its maintaining mechanisms. This misalignment clarifies a classic problem in the philosophy of science.
+The immunologist's key move: variation within a category isn't embarrassing fuzziness to be explained away. It's the expected signature of a kind that's maintained by context-sensitive mechanisms.
 
-Liu Cixin's turkey parable captures the problem of induction with dark precision:
+A macrophage in inflamed tissue shows different markers than a macrophage in healthy tissue, but both are macrophages. The difference is activation state~-- which signals the cell has received, which region of the phenotypic space it currently occupies. The category is real, and so is the variation; both are explained by the stabilizing dynamics. The same logic applies to linguistic categories.
+
+Two kinds of variation matter, and the distinction is stabilizer-relevant. Some apparent boundary cases are \emph{within-speaker} shifts~-- the same person producing different patterns in different contexts. These are activation-state differences: one grammar, multiple accessible patterns. Others are \emph{between-speaker} differences~-- not everyone has entrenched the same patterns to the same depth. Speakers with different input histories, different literacy experiences, different interactional ecologies end up with different category boundaries. Within-speaker variation shows that categories are context-sensitive; between-speaker variation shows that they are experience-dependent. Both are part of the data that a theory of category maintenance needs to explain.
+
+That in turn distinguishes \emph{exposure-dependent stabilization} from \emph{population-wide stabilization}. A category that stabilizes only in speakers with particular exposure profiles is a different kind from one that stabilizes across the population. The former is maintained by mechanisms that not everyone encounters; the latter is maintained by mechanisms that operate across the population.
+
+Consider \mention{fast}. Traditional grammars call it an adjective in \mention{a fast car} (attributive modifier position) and an adverb in \mention{she ran fast} (post-verbal modifier, no \mention{-ly} suffix). Same lexeme, different syntactic behaviour. The question ``is \mention{fast} an adjective or an adverb?'' assumes a forced choice. Three frameworks give different answers.
+
+The essentialist answer: it must be one or the other, or else homonymous (two lexemes, same form). The prototype answer: it's a gradient case, partly adjective, partly adverb, with no fact of the matter about which it ``really'' is.
+
+The maintenance answer is different. \mention{Fast} sits on a plateau linked to both the adjectival and adverbial basins~-- a region where both diagnostic profiles remain accessible (see Figure~\ref{fig:basin-visualization}). The lexeme is stable; what varies is the token's route, determined by syntactic frame. Attributive position takes the adjectival pass (comparison, agreement in languages that have it); post-verbal position takes the adverbial one. That's stability at the type level with choice at the token level~-- not a new essence, but terrain that permits dual access.
+
+The same framing applies to aspect in Polish. As §\ref{sec:6:mechanistic-alternative} showed, 90\% of verbs strongly prefer one aspect~-- they're deep in a single basin. The remaining verbs occupy shallower regions where contextual signals matter more. The verbs that require explicit contextual cues to disambiguate are the ones where entrenchment is weaker, where the tense-frame signal has more work to do. That's the activation-state picture applied to grammatical aspect. Section~\ref{sec:6:filler-gap-whose} applies the same idea to a construction rather than a lexeme: independent relative \mention{whose}, which succeeds under specific licensing conditions and fails without them.
+
+The activation-state logic has neural consequences. If categories are maintained by interacting cues rather than definitions, then processing should track graded predictive fit, not all-or-none membership. Event-related potentials offer a window here, though the picture is messier than textbook summaries suggest. Components like the N400 and P600 don't map cleanly onto `semantic' versus `syntactic' violations; their amplitude and timing reflect prediction error and retrieval difficulty in ways that cut across traditional module boundaries. What matters for the present argument is the pattern: HPC predicts continuous sensitivity to cue convergence~-- the more cues align, the stronger the facilitation; the more they conflict, the larger the processing cost. Classical definitional categories predict bimodal profiles~-- clear members and clear non-members~-- with borderline cases showing high variance rather than intermediate values. Under HPC, borderline items should show systematic intermediate values: graded neural profiles that track cue-weighting, not random scatter around a binary threshold. That's a testable contrast.
+
+
+
+\section{One case in depth: the emergence of new quotatives}
+\label{sec:6:one-case}
+
+Rather than enumerate mechanisms abstractly, I'll trace the stabilizing story for one category: the quotative marker.
+
+Quotatives introduce reported speech, thought, gesture, or sound. The functional need to distinguish the narrator's voice from the character's is presumably as old as narrative itself. But when we look across typologically unrelated languages, we find a striking convergence in recent history: in the late twentieth century, new quotative forms emerged or expanded~-- forms with a distinctive profile that spread through similar populations and stabilized through similar mechanisms.
+
+The English case is well documented, and the chronology reveals the dynamical logic: what emerges first, what locks in later, and which contexts serve as incubators.
+
+\textcite{butters1982} first noted \mention{be like} in American English in 1982, observing its use to report unuttered thoughts: \mention{I was like, `Let me live, Lord'}. \textcite{ferrarabell1995} hypothesised that the form originated with first-person subjects and internal dialogue before expanding to third-person subjects and direct speech. The incubator was informal peer narrative~-- storytelling among friends, where enactment matters more than accuracy. By the mid-1990s, the form had spread beyond that niche. \textcite{tagliamontedarcy2004} tracked apparent-time data from Canadian English: in 1995, speakers aged 18--27 used \mention{be like} for 13\% of quotative tokens; by 2003, speakers aged 17--19 used it for 63\%~-- a fivefold increase in under a decade. The same cohort, re-sampled seven years later, showed \mention{be like} rising from 13\% to 31\% as they aged into their thirties \autocite{tagliamontedarcy2007}. This isn't age-grading; it's real-time change, with each generation carrying its quotative inventory into adulthood. A micro-regularity becomes meso-level entrenchment; entrenchment becomes macro-level expectation; expectation shapes input to the next generation.
+
+German shows a parallel trajectory. \textcite{golato2000} analysed \mention{und ich so} (`and I'm like') in video-recorded conversations, documenting its function in storytelling: introducing punchlines, sound effects, gestures, and verbal enactments~-- the same profile as English \mention{be like}. The form was attested in youth speech by the late 1990s \autocite{androutsopoulos1998} and has since become established among younger German speakers, though it remains more register-restricted than its English counterpart.
+
+Japanese \mention{tte} (reduced from \mention{to itte}, `saying that') functions similarly: a phonologically light form that introduces reported speech, thought, or stance in informal narrative. The pattern extends to Turkish \mention{diye} (converb of \mention{demek}, `to say'), which has expanded from its older quotative functions into increasingly colloquial discourse contexts.
+
+\textcite{buchstaller2014} synthesises the cross-linguistic evidence: the emergence of these innovative quotatives reflects independent development under similar functional pressures, rather than media-driven borrowing. Different sources, different structures, same functional niche, same stabilizing dynamics.
+
+This is convergent maintenance, not coincidence. Independent forms. Same mechanisms. Same architecture.
+
+\subsection{The quotative cluster}
+
+What properties co-occur in these new quotatives? The best-documented case is English, so I begin there before asking how far the pattern generalises.
+
+\textbf{Non-lexical content.} \mention{Be like} introduces material that goes beyond words: gesture, facial expression, tone of voice, inner monologue. \mention{And I was like} doesn't just report what someone said; it enacts the experience~-- recruiting prosody, embodied performance, and affective display as part of the quotation. \textcite{ferrarabell1995} noted that early \mention{be like} tokens disproportionately introduced internal states and non-lexicalised sounds~-- groans, sighs, exclamations~-- before expanding to verbatim-style direct speech. This enactment function isn't English-specific: \textcite{golato2000} documented the same pattern for German \mention{so}, showing that it turns reported speech into performance.
+
+\textbf{First-person and present-tense preference.} In English, the forms attach preferentially to first-person subjects and historical-present tense. \textcite{tagliamontedarcy2004} found that in their Toronto data, first-person contexts strongly favoured \mention{be like} over \mention{say}. When speakers narrate, they use these forms to bring the audience into the moment of the original event~-- the vivid first person, the historical present. Whether this first-person preference holds for German \mention{so}, Japanese \mention{tte}, or Turkish \mention{diye} isn't yet quantified; the functional logic (narrator entering the scene) suggests it should, but that remains a prediction rather than an established finding.
+
+\textbf{Youth association.} Younger speakers lead adoption. For English, the apparent-time data are robust: the highest rates of \mention{be like} appear among speakers under 30; rates decline sharply for speakers over 50 \autocite{tagliamontedarcy2004,tagliamontedarcy2007}. Young women, in particular, tend to be innovative adopters~-- a pattern consistent with the broader sociolinguistic finding that women often lead linguistic change from below \autocite{labov2001} and predictably attracting editorial complaint. German shows the same pattern: \textcite{androutsopoulos1998} identified \mention{so} as a youth-speech marker. For Japanese and Turkish, youth association is widely assumed but lacks the same quantitative backing.
+
+\textbf{Register restriction.} The forms are discourse-conditioned: common in storytelling, informal speech, peer conversation; rare in formal registers~-- exactly where we find the so-called \enquote{historical present}. Even as \mention{be like} has spread across age cohorts, it remains suppressed in academic prose, institutional speech, and written genres. German \mention{so} is still more restricted~-- marked as adolescent, rarely encountered in broadcast media. The register pattern is documented for both languages; for Japanese and Turkish, the functional parallel is likely but awaits corpus confirmation.
+
+These properties cluster. A quotative that introduces vivid re-enactment, prefers first person and present tense, spreads through young speakers in informal contexts~-- this is a recognizable type. The English evidence is quantitatively richest; the German evidence confirms key features; the Japanese and Turkish cases show the same functional niche but with less distributional detail. What we can say with confidence is that the cluster exists in multiple unrelated languages. What remains open is how tightly the specific features correlate outside English.
+
+To make the ecological logic overt: these innovative quotatives occupy a functional niche that older forms leave empty. The niche is \emph{approximate vivid re-enactment in informal narrative}~-- conveying gist, stance, and affect without committing to verbatim accuracy. \mention{Say} implies exact report; the new quotatives disclaim it. This functional specialisation illustrates the projectibility discussed in §\ref{sec:6:generalising-lesson}: within this niche, predictions about content type, register, and speaker characteristics are remarkably reliable. The niche opened because narrative speech needs enactment as much as report, and older quotatives didn't serve that function well. The stabilizing pressures are the ones that keep any niche occupied: processing economy (light forms win under production pressure), functional fit (forms that serve communicative needs spread), social indexing (forms that mark in-group identity persist), and transmission dynamics (forms acquired in dense peer networks survive into the next generation). What would count as niche collapse? If another form arose that served approximate re-enactment better~-- lighter, more expressive, better indexed~-- the current quotatives would cede territory. We see hints of this already: in some varieties, \mention{be all} briefly competed with \mention{be like} before losing ground. The niche is stable, but the occupants aren't guaranteed tenure.
+
+The question is: why does this cluster cluster?
+
+\subsection{Quotative stabilizers}
+
+At least five mechanisms braid together to maintain quotatives. Some are cognitive (processing economy), some functional (expressive fit), some developmental (acquisition and cohort effects), some social (indexing and transmission). Each contributes, but none is sufficient alone.
+
+\textbf{Processing economy.} Quotatives of this type are structurally light. Japanese \mention{tte} (as an informal, reduced quotative with comparable discourse advantages) is a phonologically reduced form of \mention{to itte} (`saying that'); the reduction removes syllables while preserving function. German \mention{so} is a single syllable. English \mention{be like} is syntactically minimal: copula plus predicative, no subordinator, no overt speech verb. Forms that reduce production cost in informal narrative routines are used more frequently, entrenched more deeply, and survive transmission. Frequency here acts as a causal pathway, not just a descriptive statistic: repeated processing of a form makes future processing easier, reduces articulatory effort, and creates expectations that bias subsequent production. The result is a feedback loop: light forms spread because they're easy; spreading makes them easier still. The specific frames \mention{and I'm like}, \mention{I was like}, \mention{she's like} become retrieval units, further lowering production cost. The mechanism is familiar from irregular morphology \autocite{bybee2006}: \mention{went} resists levelling to \mention{goed} because high frequency keeps the specific form accessible. As with irregular morphology, the effect is item- and frame-specific, not a rewrite of the general processing architecture.
+
+\textbf{Expressive fit.} These quotatives fill a functional niche that older forms leave empty: introducing inner monologue, gesture, and attitude without committing the speaker to verbatim accuracy. \mention{She said} implies exact report; \mention{she was like} implies approximation, enactment, stance. One provides the court transcript; the other provides the biopic. \textcite{ferrarabell1995} documented this as the form's original semantic territory~-- internal states, non-lexicalised sounds~-- before it expanded to canonical direct speech. The looseness is functionally adaptive. Speakers need to convey gist, stance, affect~-- not transcript. Forms that serve communicative needs better than alternatives spread. The form's preference for the present tense also recruits a basic cognitive bias (the mapping of \enquote{present} to \enquote{close}), making it robust against loss. A form that fits the narrative niche is precisely the one that becomes frequent enough to be acquired as routine in peer storytelling.
+
+\textbf{Acquisition and cohort effects.} This mechanism operates within speakers and cohorts: children and adolescents acquire these forms in dense peer networks where the input is frequent, contextually salient, and socially marked. Panel data provide the critical evidence: the same Toronto speakers, tracked over seven years, showed \mention{be like} rising from 13\% to 31\% of quotative tokens as they aged from their twenties into their thirties \autocite{tagliamontedarcy2007}. This isn't age-grading (using youth forms only when young); it's lifespan change. Speakers carry their adolescent inventory into adulthood, and their children hear it as ambient input. The result is a cohort effect: each generation's linguistic inventory reflects what was frequent in their formative years.
+
+\textbf{Social indexing.} As \textcite{Eckert2012} argues, social meaning is part of linguistic structure, not a by-product. New quotatives initially index youth, informality, in-group membership. Using \mention{be like} signals that you are a certain kind of speaker, in a certain kind of register, with a certain kind of audience. This social value isn't epiphenomenal; it's a stabilizer. Older speakers often react with suppression, finding the forms annoying or inarticulate. But this constraint is generational: speakers who grew up with the forms carry them into adulthood, using them not as rebellious markers but as part of their native repertoire. Speakers maintain the form partly because it does identity work~-- marking solidarity, casualness, narrative immediacy. \textcite{buchstaller2014} found that attitudes toward \mention{be like} track age and gender: listeners perceive its users as younger and more socially attractive, even while rating them lower on status dimensions. The form is maintained partly \emph{because} of this indexical profile. Social indexing explains why individuals adopt the form.
+
+\textbf{Transmission dynamics.} Transmission dynamics explain how the population changes. The apparent-time pattern~-- younger speakers use \mention{be like} more~-- becomes a real-time change as each cohort ages. \textcite{tagliamontedarcy2004} showed that Canadian speakers aged 17--19 in 2003 used \mention{be like} for 63\% of quotative tokens, compared to 13\% for speakers of the same age in 1995. That's not two populations differing in age-graded behaviour; it's the S-curve of language change in progress~-- slow uptake, rapid spread, eventual saturation. Forms that suit the demographic and interactional structure of transmission~-- peer-to-peer in adolescence, parent-to-child thereafter~-- survive and spread. The trajectory has three phases: innovation (youth-marked), spread, and consolidation (neutralised). Figure~\ref{fig:diffusion-meaning} schematises the relationship between frequency diffusion and social-meaning consolidation: the lag between curves reflects the expected period during which the form carries strong indexical value.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={Time},
+    ylabel={Relative strength (normalised)},
+    xmin=1975, xmax=2025,
+    ymin=0, ymax=1.05,
+    xtick={1980, 1990, 2000, 2010, 2020},
+    x tick label style={/pgf/number format/1000 sep={}},
+    ytick={0, 0.25, 0.5, 0.75, 1.0},
+    yticklabels={0, , 0.5, , 1.0},
+    axis lines=left,
+    xlabel style={at={(0.5,-0.08)}, font=\small},
+    ylabel style={font=\small},
+    tick label style={font=\footnotesize},
+    legend style={
+        at={(0.98,0.35)},
+        anchor=east,
+        font=\small,
+        draw=none,
+        fill=none,
+        row sep=3pt
+    },
+    clip=false
+]
+
+% Frequency curve (S-curve, earlier)
+% Logistic: 1 / (1 + exp(-k(x - x0)))
+\addplot[
+    thick,
+    black,
+    domain=1975:2025,
+    samples=100
+] {1 / (1 + exp(-0.15*(x - 1995)))};
+\addlegendentry{Frequency of \textit{be like}}
+
+% Social meaning consolidation curve (S-curve, lagged)
+\addplot[
+    thick,
+    black,
+    dashed,
+    domain=1975:2025,
+    samples=100
+] {1 / (1 + exp(-0.18*(x - 2005)))};
+\addlegendentry{Social meaning consolidation}
+
+% Lag annotation
+\draw[<->, thick, black!60] (1995, 0.5) -- (2005, 0.5);
+\node[font=\scriptsize, above, black!60] at (2000, 0.5) {lag};
+
+% Phase labels
+\node[font=\scriptsize, align=center] at (1985, 0.85) {Innovation\\(youth-marked)};
+\node[font=\scriptsize, align=center] at (2000, 0.15) {Spread};
+\node[font=\scriptsize, align=center] at (2018, 0.85) {Consolidation\\(neutralised)};
+
+\end{axis}
+\end{tikzpicture}
+\caption{Schematic relationship between frequency rise and social-meaning consolidation for quotative \textit{be like}. Both curves represent relative trajectories rather than measured values; the frequency curve abstracts over attested data patterns, the consolidation curve reflects the qualitative pattern. The lag between curves reflects the expected period during which the form carries strong indexical value (youth, informality); consolidation marks the attenuation of marked social meaning as the form becomes the community default.}
+\label{fig:diffusion-meaning}
+\end{figure}
+
+The quotatives case is a site where predictive processing and social indexing co-reinforce. Predictability encourages uptake; uptake feeds entrenchment; entrenchment makes the form more predictable. Meanwhile, social indexing strengthens both the processing advantage and the identity signal.
+
+Online processing pressures~-- prediction, retrieval ease, reduced production cost under repetition~-- preferentially reinforce some cluster features over others. The features that are easy to predict, easy to produce, and easy to retrieve are the ones that survive and spread. That selective reinforcement keeps the category coherent across time and speakers. Processing isn't just something that happens to categories; it's one of the mechanisms that maintains them.
+
+
+
+\subsection{What if a mechanism were absent?}
+
+A stress test: what if we removed each stabilizer in turn? If the braid is genuinely explanatory, no single strand should suffice.
+
+If processing economy were the only stabilizer, the shortest form would win~-- but \mention{say} is shorter than \mention{be like}, and it doesn't dominate.
+
+If expressive fit were the only stabilizer, any vivid quotative would spread equally~-- but forms with pejorative associations don't spread even when they fit the discourse need.
+
+If social indexing were the only stabilizer, quotatives would cycle with generational fashion~-- but \mention{be like} has been stable for four decades, long past a typical lexical-fashion cycle.
+
+If transmission were the only stabilizer, all childhood forms would persist~-- but archaic quotatives like \mention{quoth} don't survive.
+
+If acquisition were the only stabilizer, forms entrenched early would persist within individuals but fail to generalise~-- but quotatives that never achieve narrative or indexical value don't survive beyond the cohorts that first encountered them.
+
+The observed pattern~-- cross-linguistic convergence on light, expressive, youth-indexed, narratively deployed quotatives~-- requires the full mechanism package.
+
+These counterfactuals generate testable predictions. Table~\ref{tab:perturbation-grid} summarizes the expected empirical signatures if each stabilizer were selectively attenuated while others remained intact.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\begin{tabular}{@{}p{3cm}ccccc@{}}
+\toprule
+\makecell[l]{\textbf{Mechanism}\\\textbf{attenuated}} & \makecell{\textbf{Freq.}} & \makecell{\textbf{Judgment}\\\textbf{variance}} & \makecell{\textbf{Social}\\\textbf{meaning}} & \makecell{\textbf{Cross-context}\\\textbf{transfer}} & \makecell{\textbf{Historical}\\\textbf{trajectory}} \\
+\midrule
+Processing economy $\downarrow$ & gradual $\downarrow$ & slight $\uparrow$ & retained & reduced & slowed spread \\
+\addlinespace
+Expressive fit $\downarrow$ & stable $\rightarrow$ gradual $\downarrow$ & moderate $\uparrow$ & weakened & reduced & stalled expansion \\
+\addlinespace
+Social indexing lost & stable & stable & neutralised & stable & age-grading only \\
+\addlinespace
+Acquisition disrupted & cohort $\downarrow$ & high $\uparrow$ & fragmented & patchy & generational gaps \\
+\addlinespace
+Transmission blocked & rapid $\downarrow$ & low within cohort & fossilised & retained & arrested \\
+\bottomrule
+\end{tabular}
+\caption{Predicted empirical signatures of mechanism attenuation. Each row specifies observable consequences if a single stabilizer were weakened while others remained intact.}
+\label{tab:perturbation-grid}
+\end{table}
+
+
+\subsection{Cross-linguistic convergence}
+
+Similarity across languages can arise by two routes: diffusion of a particular form across related varieties, or convergent development under shared stabilizing pressures. Both are relevant here.
+
+Japanese, Turkish, German, and English share almost nothing: different word orders, different morphological profiles, different sociolinguistic ecologies. Yet they converge on similar quotative innovations. Within English varieties, the global spread of \mention{be like} suggests diffusion with local adaptation. Across unrelated languages, innovative quotatives arise from different lexical sources but converge on a similar functional territory. The maintenance view predicts this dual pattern: a form may travel, but even when it doesn't, similar stabilizers recruit new material into the same niche.
+
+The temporal pattern is striking. English \mention{be like} was first attested in 1982 \autocite{butters1982} and spread globally within two decades: UK by 1994, New Zealand, Canada, and Australia by the late 1990s, then outer-circle Englishes through the 2000s \autocite{buchstaller2014}.
+
+One obvious hypothesis is media transmission. The `Valley Girl' stereotype, propelled into popular culture by Frank Zappa's 1982 song and subsequent Hollywood films, made \mention{be like} audible to millions. But \textcite{buchstaller2014} finds little evidence for straightforward media-driven borrowing. Speakers rarely associate \mention{be like} with media stereotypes; the form's linguistic conditioning varies across localities in ways inconsistent with uniform transmission; and the development pattern shows `transformation under transfer'~-- local adaptation of a form that arrived from elsewhere~-- rather than passive copying.
+
+The stronger hypothesis is convergent development under similar functional pressures. The evidence for this is suggestive rather than conclusive, but the pattern is striking: the semantic-pragmatic sources for innovative quotatives~-- deictic markers, movement verbs, approximation expressions, taxonomic nouns~-- recur across typologically unrelated languages \autocite{guldemann2008}. German recruits \mention{so} (a deictic), Japanese recruits \mention{tte} (a reduced quotative verb), Turkish recruits \mention{diye} (a converb), Russian recruits \mention{tipa} (a taxonomic noun meaning `type'; see \citealt{kolyaseva2018tipa}), and English recruits \mention{like} (a preposition). The sources differ, but the functional territory is the same: introducing vivid, non-verbatim re-enactment in informal narrative.
+
+The convergence isn't lexical; it's structural. The stabilizing mechanisms are the same:
+
+\begin{itemize}
+   \item Processing economy favours light forms.
+   \item Expressive fit favours vague-reference quotatives.
+   \item Social indexing favours youth-marked forms.
+   \item Transmission dynamics favour high-frequency, contextually salient forms.
+\end{itemize}
+
+Wherever these mechanisms operate~-- and they operate everywhere humans tell stories to each other~-- the same type of quotative emerges. The category isn't defined by a shared etymon or a universal grammar rule. It's stabilized by a convergent mechanism profile. (The claim is established for English, well-supported for German, and a prediction for Japanese and Turkish.)
+
+A caution about what convergence shows. Similar surface profiles suggest convergent \emph{problems}~-- similar functional pressures, similar communicative needs. They don't automatically demonstrate the same underlying stabilizers at the same relative weights. In one ecology, processing economy may dominate; in another, social indexing may do more work. German \mention{so} remains more register-restricted than English \mention{be like}, even though both serve the same niche~-- which suggests that the social-indexing pressures differ, even as the processing pressures align. Convergent profiles are evidence that the \emph{type} of mechanism is similar; the specific braid may still vary across ecologies.
+
+This is what \enquote{same category across languages} means in the maintenance view: convergent stabilization, the clustering that emerges when similar mechanisms operate under similar pressures. The convergence is predictable: if processing economy and expressive fit are universal~-- all humans favour light forms under production pressure, all humans need vague-reference quotatives for storytelling~-- then similar sociolinguistic dynamics will produce similar outcomes wherever they operate. But \enquote{similar outcomes} needn't mean identical mechanisms. The framework predicts family resemblance in the stabilizing story, not clones.
+
+
+\subsection{How deep do mechanisms go?}
+
+The stress test confirms necessity: no single strand suffices. A deeper question: what \emph{are} these mechanisms? The stabilizers just described~-- processing economy, expressive fit, social indexing, transmission dynamics~-- might look like endpoint explanations. But mechanisms have mechanisms. Each stabilizer can be decomposed causally (what underlies it?) and mereologically (what are its parts?). The decomposition reveals the multi-level architecture of category maintenance.
+
+\subsubsection{Causal depth}
+
+Take the robust finding that young women lead quotative innovation \autocite{labov2001,tagliamontedarcy2004}. This isn't a brute fact. It plausibly traces back to social-psychological and network structure.
+
+Young women's peer networks are often reported to be denser and more multiplex than young men's, especially in adolescence \autocite{milroy1987}. Dense networks mean more linguistic input, more accommodation pressure, faster entrenchment of shared forms. Multiplex ties~-- relationships serving multiple social functions~-- mean higher interactional stakes and stronger motivation to coordinate. When your interlocutor is also your classmate, neighbour, and confidante, alignment is more consequential than with a stranger.
+
+But why dense networks in adolescence at all? Developmental psychology provides the next level down. Adolescence is the period of separation-individuation, when peer orientation overtakes parent orientation \autocite{erikson1968}. The social structure of schooling concentrates age-cohorts in prolonged daily contact~-- co-location plus time produces the network density that shapes linguistic input. Identity construction becomes primary: you need to differentiate from your parents while affiliating with your peers. Linguistic innovation serves both goals simultaneously~-- it marks in-group solidarity and out-group distinction.
+
+This is a \emph{possible} depth path, not a confirmed one. The sociolinguistic pattern (young women leading) is robust; the network-density explanation is well-supported; the developmental and evolutionary claims become progressively more speculative. The framework permits depth without requiring it~-- readers who find the deeper levels overreaching can stop at network density without losing the main argument.
+
+How far down should linguistic explanation go? Far enough to explain the clustering at the level we care about. For the quotative case, the clustering is grammatical: first-person preference, youth association, non-verbatim content. The mechanisms are social and cognitive: network density, identity work, processing pressure, entrenchment dynamics. We \emph{could} trace further~-- to neuroscience, to evolutionary biology~-- but the grammatical clustering is already explained. The framework is level-agnostic: it says look for mechanisms that produce clustering, without dictating which level to bottom out at.
+
+\subsubsection{Mereological structure}
+
+The same decomposition applies to parts, not just causes. \enquote{Transmission} sounds like a single mechanism, but it's a composite.
+
+Production processes come first: lexical selection (choosing \mention{be like} over \mention{say}), which involves activating competitors, weighting by frequency, and filtering by context~-- register, addressee, narrative function. Then syntactic planning: slotting the copula and predicative into a quotative frame. Then phonetic realization: the actual articulation of \mention{like}.
+
+The signal bridges production and perception: acoustic properties, prosodic packaging (the characteristic intonation contour that marks enactment).
+
+Perception processes follow: segmenting the stream, recognizing words, parsing the construction, assigning category membership. Each is a sub-mechanism with its own structure~-- word recognition draws on frequency-weighted access, construction parsing draws on facilitated patterns, category assignment draws on distributional learning.
+
+Each encounter updates the conditions for future production: encoding this token in context (acoustic trace, syntactic frame, pragmatic function, social co-occurrence~-- who said it, to whom, with what stance), facilitating future reconstruction of similar forms, strengthening form-function associations. The listener becomes a speaker whose lexical selection is now shifted slightly toward the form just heard.
+
+Social processes interleave throughout: accommodation (matching the interlocutor), identity projection (signaling youth and informality), stance-taking (performing enactment rather than merely reporting). \textcite{pickering2004} model alignment as automatic priming; \textcite{Eckert2012} situates it in identity construction. Both are part of what \enquote{transmission} means.
+
+The mereological lesson is that even the mechanisms introduced in §\ref{sec:4:the-mechanisms}~-- acquisition, entrenchment, alignment, functional pressure~-- aren't atoms. They're composites with internal structure. When we say \enquote{transmission maintains the category}, we're compressing a multi-part process into a single term. The term is still explanatory~-- it picks out a real causal structure~-- but the structure is articulated, not monolithic. The point here is the compositionality of transmission, not adjudication between competing models of priming versus identity-driven alignment.
+
+\subsubsection{What this means for explanation}
+
+The depth and structure of mechanisms matter for two reasons.
+
+First, they reveal where intervention is possible. If transmission depends on particular memory processes, then anything that disrupts those processes~-- reduced input frequency, competing forms, register restriction~-- will weaken the mechanism. Knowing the parts tells you where the leverage points are. This is why Chapter~\ref{ch:failure-modes} on failure modes will matter: category dissolution happens when sub-mechanisms fail, and understanding which sub-mechanisms are failing requires knowing what they are.
+
+Second, they connect linguistic explanation to the broader sciences. The causal depth that runs from \enquote{young women lead change} through network density to developmental psychology to evolutionary pressures is where linguistics fits into the larger picture. The maintenance view doesn't require every linguist to become a psychologist or evolutionary biologist. But it does make explicit that linguistic categories are maintained by mechanisms that ultimately ground in facts about human cognition, social structure, and history. The framework is continuous with the rest of science, not sealed off from it.
+
+\subsubsection{Mechanisms as categories, categories as mechanisms}
+
+A deeper point emerges from this decomposition.
+
+If categories are projectible clusters stabilized by mechanisms, and if the mechanisms themselves are projectible clusters stabilized by further mechanisms, then mechanisms are categories. This claim is a theoretical consequence of the framework rather than an independent empirical finding~-- but it has testable implications. \term{Processing economy} is a category~-- it bundles properties (reduced forms, high frequency, resistance to analogical pressure) that cluster reliably because of underlying neural and memory constraints. \term{Social indexing} is a category~-- it bundles properties (youth association, in-group marking, register restriction) maintained by identity construction and network dynamics. The mechanisms we invoke to explain quotative stability are themselves HPC kinds.
+
+The stabilization is reciprocal.
+
+Quotatives don't just \emph{use} processing economy~-- they \emph{maintain} it. Every time a speaker produces \mention{be like}, that token is input to the conditions that ground processing economy. The form's high frequency reinforces the facilitation that makes high-frequency forms easier to produce~-- not by rewriting the rules of activation, but by keeping the relevant usage ecology dense. The mechanism depends on the category for its continued operation just as the category depends on the mechanism, which, like a sourdough starter, goes mouldy if neglected.
+
+Social indexing exhibits the same reciprocity. It isn't just something that quotatives \emph{do}; it's partly \emph{built out of} the patterned circulation of particular quotative variants. The indexical field that makes youth-associated forms socially meaningful persists because forms like \mention{be like} repeatedly occur with those personae and stances. The indexical field is an emergent structure sustained by the form's patterned social distribution. You get \enquote{youth style} the way you get a trail in the woods: by people walking it. Remove a major, high-salience contributor to that pattern and the local indexical alignment would likely attenuate. In that sense, the category and the mechanism co-construct each other.
+
+This isn't a vicious circle; it's a self-organizing dynamic~-- precisely the homeostatic structure that gives HPC kinds their stability. Categories shape what gets entrenched, and entrenchment shapes which categories survive, so each stabilizes the other. Figure~\ref{fig:causal-loop} visualizes this reciprocal structure.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    mechanism/.style={rectangle, draw, thick, minimum width=2.8cm, minimum height=1.2cm, align=center, font=\small},
+    category/.style={ellipse, draw, thick, minimum width=3.2cm, minimum height=1.6cm, align=center, font=\small\bfseries},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick},
+    looparrow/.style={-{Stealth[length=2.5mm]}, thick, color=blue!70!black},
+    plus/.style={font=\scriptsize\color{blue!70!black}},
+    looplabel/.style={font=\tiny, color=blue!70!black}
+]
+
+% Central node
+\node[category] (cat) {QUOTATIVE\\CATEGORY};
+
+% Mechanism nodes
+\node[mechanism, above left=1.8cm and 2.2cm of cat] (proc) {Processing\\economy};
+\node[mechanism, above right=1.8cm and 2.2cm of cat] (soc) {Social\\indexing};
+\node[mechanism, below left=1.8cm and 2.2cm of cat] (acq) {Acquisition \&\\entrenchment};
+\node[mechanism, below right=1.8cm and 2.2cm of cat] (trans) {Transmission\\dynamics};
+
+% Bidirectional arrows: mechanisms <-> category
+% Processing economy
+\draw[arrow] (proc.south east) -- node[plus, above, pos=0.4] {+} (cat.north west);
+\draw[arrow] (cat.north west) ++ (0.15, 0.1) -- node[plus, below, pos=0.6] {+} ([xshift=0.3cm]proc.south east);
+
+% Social indexing
+\draw[arrow] (soc.south west) -- node[plus, above, pos=0.4] {+} (cat.north east);
+\draw[arrow] (cat.north east) ++ (-0.15, 0.1) -- node[plus, below, pos=0.6] {+} ([xshift=-0.3cm]soc.south west);
+
+% Acquisition
+\draw[arrow] (acq.north east) -- node[plus, below, pos=0.4] {+} (cat.south west);
+\draw[arrow] (cat.south west) ++ (0.15, -0.1) -- node[plus, above, pos=0.6] {+} ([xshift=0.3cm]acq.north east);
+
+% Transmission
+\draw[arrow] (trans.north west) -- node[plus, below, pos=0.4] {+} (cat.south east);
+\draw[arrow] (cat.south east) ++ (-0.15, -0.1) -- node[plus, above, pos=0.6] {+} ([xshift=-0.3cm]trans.north west);
+
+% Inter-mechanism arrows
+\draw[looparrow] (proc.south) to[bend right=20] node[plus, left, pos=0.5] {+} (acq.north);
+\draw[looparrow] (soc.south) to[bend left=20] node[plus, right, pos=0.5] {+} (trans.north);
+
+% Reinforcing loop indicators
+\node[looplabel] at ([xshift=-1.1cm, yshift=0.3cm]cat.north) {\footnotesize$\circlearrowright$\tiny R};
+\node[looplabel] at ([xshift=1.1cm, yshift=0.3cm]cat.north) {\footnotesize$\circlearrowright$\tiny R};
+\node[looplabel] at ([xshift=-1.1cm, yshift=-0.3cm]cat.south) {\footnotesize$\circlearrowright$\tiny R};
+\node[looplabel] at ([xshift=1.1cm, yshift=-0.3cm]cat.south) {\footnotesize$\circlearrowright$\tiny R};
+
+% External inputs
+\node[font=\small, below=3.8cm of cat] {External inputs: memory architecture, network structure, developmental ecology};
+
+\end{tikzpicture}
+\caption{Reciprocal maintenance of a grammatical category. Each mechanism both stabilizes and is sustained by the category it maintains. Arrows marked + indicate reinforcing relationships; $\circlearrowright$R marks reinforcing feedback loops.}
+\label{fig:causal-loop}
+\end{figure}
+
+A contrast case sharpens the point. Consider the label \term{particle}~-- used in much typological and pedagogical work as a wastebasket for uninflected words that don't fit elsewhere: \mention{up} in \mention{look up}, \mention{to} in infinitives, \mention{not}, sentence-final \mention{eh}. \term{Particle} is the \enquote{Other} box on a survey: it records leftovers; it doesn't identify a kind. Does this cluster survive a maintenance audit? The properties don't co-occur reliably: \mention{up} takes complements; infinitival \mention{to} doesn't; \mention{not} has scope properties shared by neither. There's no common acquisition pathway: children learn verb-particle constructions, infinitives, and negation at different times, through different input distributions. There's no processing signature: reaction-time studies don't show \enquote{particle} effects that generalise across subtypes. There's no transmission dynamic: speakers don't acquire \enquote{particle-hood} as a generalisable category; they acquire constructions that happen to contain uninflected words. Predictions trained on one subtype (verb-particles) fail to transfer to another (infinitival \mention{to}). The label exists; the mechanism-maintained kind doesn't. Failure of reciprocal maintenance looks exactly like this: the supposed category doesn't exercise a shared mechanism, and no shared mechanism makes the category projectible. Chapter~\ref{ch:failure-modes} develops such failure modes systematically; here, the contrast case shows that the quotative analysis isn't analogy-by-enthusiasm~-- it identifies genuine stabilization that \term{particle} lacks.
+
+The quotative category is also a mechanism in the larger kinds that contain it. Quotatives are part of what maintains \term{narrative discourse structure}~-- they enable the vivid re-enactment that makes storytelling work. They are part of what maintains \term{youth register}~-- the forms that index adolescent identity and solidarity. They are part of what maintains \term{informal speech} as a recognizable variety~-- the cluster of features that signals casualness, immediacy, peer context. And again, the stabilization is reciprocal: narrative structure provides the discourse ecology in which quotatives function; youth register provides the social meaning that quotatives carry; informal speech provides the register niche that quotatives occupy.
+
+So the hierarchy runs both ways. Downward: quotatives are maintained by mechanisms (processing, acquisition, social indexing, transmission), which are themselves maintained by deeper mechanisms (memory architecture, developmental psychology, network structure). Upward: quotatives are mechanisms in larger categories (narrative structure, youth register, informal speech), which are themselves mechanisms in still larger kinds (discourse genres, sociolinguistic repertoires, speech communities). And at every level, the stabilization is bidirectional: each element both depends on and sustains the elements above and below it.
+
+
+A sceptic might ask: if every mechanism is itself a category maintained by further mechanisms, what grounds the explanatory chain? Two responses are available.
+
+The interventionist answer: we stop when we reach mechanisms whose disruption would change the clustering in predictable ways. This is already implicit in the robustness tests above (\enquote{What if a mechanism were absent?}). A mechanism earns its keep by specifying where intervention would bite. If we can say \enquote{reduce input frequency and the category weakens}, we have a mechanism. The grounding isn't metaphysical bedrock; it's causal tractability.
+
+The anti-foundationalist answer: explanatory chains don't need bedrock. The regress objection assumes that justification must terminate in self-evident foundations~-- but coherentist epistemologies reject this. What matters is that the explanatory network is mutually supporting and empirically fruitful. Each mechanism explains the categories above it and is explained by the mechanisms below it; the network as a whole is tested by whether it generates accurate predictions. The demand for a single ultimate ground is a legacy of foundationalist philosophy that the sciences have largely abandoned.
+
+Both responses are compatible. The framework is interventionist in practice and anti-foundationalist in principle. For any given explanatory purpose, we stop where the causal leverage is~-- but we don't pretend that stopping point is metaphysically privileged.
+
+
+\section{A second case: filler-gap and independent relative \mentionhead{whose}}
+\label{sec:6:filler-gap-whose}
+
+The quotative case shows mechanisms maintaining a category primarily from above~-- from the functional and social pressures that keep the clustering clustered. But a sceptic might wonder: is this just sociolinguistics dressed in HPC clothing? A second case answers that challenge by showing mechanisms maintaining a construction from below~-- from incremental parsing, recoverability constraints, and genre ecology rather than from social indexing or cohort transmission.
+
+The evidential asymmetry matters: the quotative case rests on decades of variationist data; the \mention{whose} case that follows rests on attestation data. The framework predicts high inter-speaker variation and sensitivity to discourse context, but this remains to be tested. For now, the \mention{whose} case should be read as a \emph{prediction} of the framework rather than a confirmation on par with quotatives.
+
+\subsection{The filler-gap mechanism}
+
+When you hear \mention{Which book did Mary say that John read \_\_?}, you track a displaced constituent: \mention{which book} is the filler, and the gap after \mention{read} is where it's interpreted. This filler-gap dependency spans clause boundaries, requires memory, and operates across surface variation~-- open interrogatives, relative clauses, clefts.
+
+As mentioned in §\ref{sec:6:mechanistic-alternative}, \citet{boguraev2025} used causal interventions to test whether language models learn a shared mechanism across these construction types. They do: a mechanism learned on embedded open interrogatives transfers to produce filler-gap behaviour in clefts. The result is a proof of concept~-- showing how mechanistic generalisation could work in principle~-- rather than direct evidence about human parsing (see also \citealt{pistotti2025gaps} on robust filler-gap generalisation in parasitic gap environments). But the structural dependency projects even when the surface constructions differ, which is what mechanistic kindhood predicts.
+
+\subsection{Independent relative \mentionhead{whose}: a gap that isn't}
+
+\textcite{hankamer1973whose} claimed that English lacks independent relative \mention{whose}~-- forms like \mention{a woman whose was straight} where the possessum is elided. Their constructed examples are indeed ungrammatical: \mention{*The guy whose you saw banging at the window...} fails. For fifty years, the construction was treated as a paradigm gap~-- a systematic lacuna in the grammar.
+
+But the gap may be illusory. \textcite{reynolds2024whose} documents attestations spanning seven centuries, from Middle English manuscripts to contemporary academic prose: \mention{a friend of whose had told us of the accident}; \mention{those whose aren't}. The construction is vanishingly rare~-- on the order of once per hundred million words in large corpora~-- but attested in edited sources, particularly academic and journalistic prose.\footnote{The grammaticality judgments remain disputed. \textcite{reynolds2024whose} is a preprint, and native-speaker intuitions vary. The epistemic status is accordingly tentative: suggestive evidence that the mechanism is there, not conclusive proof.} The point isn't that the earlier judgment was irrational; the point is that a mechanism-first view predicts that apparent gaps can be ecological artefacts of licensing contexts.
+
+What maintains this construction despite its extreme rarity? The same mechanisms that maintain other filler-gap constructions~-- but operating under unusually stringent conditions.
+
+\subsection{Filler-gap stabilizers}
+
+\textbf{Filler-gap processing.} Independent relative \mention{whose} is a filler-gap construction. \mention{Whose} fills a gap in subject or complement position: \mention{a woman whose \_\_ was straight}. The displaced constituent must be tracked across clause structure and resolved at the gap site. This is the same cognitive operation that underlies relative clauses, open interrogatives, and clefts~-- the mechanism that \textcite{boguraev2025} showed transfers across construction types. Here, as with quotatives, mechanisms at different scales~-- cognitive, interactional, institutional~-- interact to maintain the construction.
+
+The filler-gap mechanism is maintained by processing pressures. Incremental parsing requires tracking dependencies as they unfold; memory constraints favour local resolution; prediction mechanisms anticipate gap sites. These pressures apply every time a speaker processes a relative clause or an interrogative. The mechanism is exercised constantly, even if independent \mention{whose} is exercised rarely.
+
+\textbf{Information structure.} But filler-gap processing alone isn't sufficient. Independent \mention{whose} faces an additional burden: the elided possessum must be recoverable. This is what \citet{reynolds2024whose} calls the \enquote{double anaphora} requirement~-- the hearer must simultaneously recover the possessor (from the relative clause antecedent) and the possessum (from discourse context).
+
+Three information-structural configurations license this recovery. Under \emph{contrastive parallelism}, the possessum is established in a preceding clause and the \mention{whose} clause contrasts with it: \mention{I knew someone whose greatest love affair was with objects, another whose was with books, and a third whose was with ideas.} Under \emph{deictic anchoring}, a demonstrative directly points to the possessum: \mention{The man whose these are hath gotten me with child.} Under \emph{structural integration}, the possessum appears as head of the phrase containing \mention{whose}: \mention{a friend of whose had told us of the accident.}
+
+These aren't arbitrary conditions. They're the configurations that satisfy the recoverability constraint~-- the same constraint that governs ellipsis generally. The information-structural mechanism is independent of the filler-gap mechanism, but both must be satisfied for the construction to succeed~-- only when both mechanisms clear their thresholds does the construction clear the grammaticality threshold. The pattern generalises: \textcite{winckel2025ldds} show that extraction acceptability in clefts and relative clauses tracks information structure (specifically, Focus-Background Conflict), not just syntactic configuration. Extraction from subjects is harder in clefts than in relatives because subjects are more backgrounded~-- and backgroundedness conflicts with the focus status that extraction confers. The constraint is gradient, construction-sensitive, and cross-linguistically robust (English and French show the same pattern). This is exactly what a mechanism-first view predicts: the label \enquote{island} masks a constellation of interacting pressures rather than naming a single syntactic primitive.
+
+\textbf{Discourse ecology.} Why did identity-of-sense stranding (where the elided possessum shares only sense with an antecedent) emerge only in the 1990s, when identity-of-reference stranding (where it shares reference) has existed since Middle English? Plausibly not because the grammar changed, but because the discourse ecology changed.
+
+Academic and journalistic prose favours list-like enumerations and explicit contrast sets: \mention{patients whose symptoms improved versus those whose didn't}. These registers build the contrastive parallelism that licenses possessum recovery. The construction plausibly became more available when the discourse patterns that license it became conventionalised in particular genres. The mechanism was always there; the licensing environment wasn't.
+
+A brief stress test: if filler-gap processing were absent, independent \mention{whose} would be impossible~-- but so would all relative clauses, interrogatives, and clefts. If information-structural licensing were absent, the construction would fail even in contrastive contexts. The construction's rarity isn't mechanism weakness; it's licensing scarcity. Both cognitive mechanism and pragmatic licensing are necessary; neither alone suffices.
+
+The full mechanism package for independent \mention{whose} thus includes: filler-gap processing (shared with relatives, interrogatives, clefts), information-structural licensing (specific to ellipsis constructions), and discourse ecology (genre-specific patterns that provide licensing contexts). Unlike quotatives, where social indexing plays a major role, whose-stranding is maintained primarily by cognitive and discourse-structural mechanisms, with little obvious social indexing. What keeps it available is the exercise of filler-gap processing in everyday language use plus the periodic occurrence of licensing contexts in particular registers.
+
+I treat independent relative \mention{whose} as one English instantiation of a broader independent possessive-relative profile, so cross-linguistic parallels are predictions about the mechanism package rather than claims of identical surface syntax.
+
+\textbf{Cross-linguistic convergence.} German and Japanese~-- despite radically different syntactic structures~-- appear to show similar information-structural constraints on independent possessive relatives:
 
 \begin{quote}
-Every morning on a turkey farm, the farmer comes to feed the turkeys. A scientist turkey, having observed this pattern to hold without change for almost a year, makes the following discovery: \enquote{Every morning at eleven, food arrives.} On the morning of Thanksgiving, the scientist announces this law to the other turkeys. \citep[ch.~6]{liu2008}
+\textbf{German:} \mention{Meins funktionierte, aber ich kenne jemanden, dessen nicht funktionierte.} (`Mine was working, but I know someone whose wasn't.')~-- licensed by contrastive parallelism.\\
+\textbf{German:} *\mention{Die Person, dessen du vergessen hast, ist mein Cousin.} (`The person whose you forgot is my cousin.')~-- fails without parallelism.\\
+\textbf{Japanese:} \mention{Watashi-no-wa ugoite-ita ga, ugoite-ina-katta hito-mo shitte-iru.} (`Mine was working, but I also know someone whose wasn't.')~-- licensed by contrastive parallelism.\footnote{The Japanese example is the author's judgment, confirmed with native-speaker consultants. Systematic corpus study of Japanese possessive stranding remains to be done.}
 \end{quote}
 
-The turkey's law is perfectly confirmed by all available evidence. The problem isn't the evidence; it's that the law isn't grounded in mechanism. The farmer's purpose~-- invisible to the turkey~-- determines when the correlation breaks. Had the turkey understood \emph{why} food arrives (fattening for slaughter), it would've predicted its own demise rather than its next meal.
+The pattern may mirror English, though systematic study is needed: stranding succeeds under contrastive parallelism and fails without it. If the parallel holds, the constraints aren't language-specific accidents but consequences of how filler-gap processing interacts with discourse accessibility.
 
-Nelson Goodman's \mention{grue} problem makes the same point in philosophical dress. Goodman's riddle: emeralds examined before time $t$ are green; emeralds examined after $t$ are blue. Define \mention{grue} as \enquote{green if examined before $t$, blue otherwise}. Every emerald we've ever observed is grue. So why don't we project \mention{grue} to unexamined emeralds?
+The surface structures differ~-- German has rich case marking, Japanese is head-final, English has relatively impoverished case and is head-initial~-- but the underlying mechanisms (incremental parsing, memory constraints, communicative pressure for recoverability) are constants, and the constraints on independent possessive relatives track those constants, not the surface variation.
 
-Goodman's own answer invoked entrenchment: \mention{green} is projectible because it's been projected successfully in the past. \mention{grue} isn't because it hasn't. The circularity is deliberate~-- projectibility is bootstrapped from track record.
+The contrast with quotatives sharpens the framework's explanatory structure. For quotatives, social indexing and processing economy operate at comparable strengths, mutually reinforcing each other across cohorts and registers. For independent \mention{whose}, cognitive mechanisms dominate: filler-gap processing does the heavy lifting, with information-structural licensing providing the gate. The mechanism package is simpler but the licensing ecology is narrower~-- which explains why quotatives spread rapidly while whose-stranding remains a niche construction.
 
-This observation shaped a tradition. \citet{quine1969} argued that the success of induction presupposes natural kinds: we project properties because we assume the instances we've observed are \enquote{of a kind} with those we haven't. \citet{kornblith1993} went further, arguing that induction works precisely because natural kinds exist in the world~-- the clustering of properties in those kinds underwrites our ability to learn from experience. On this view, projectibility isn't just a pragmatic feature of our language; it's evidence that we've latched onto something real.
+The \mention{whose} case illustrates the chapter's central argument: a shared cognitive mechanism (filler-gap processing) operates under a specific constraint profile (information-structural licensing), and that profile recurs across typologically unrelated languages because the constraints track universal processing pressures, not language-specific syntax. The maintenance is reciprocal: filler-gap constructions exercise the processing mechanism that makes them possible, while the mechanism makes the constructions processable in turn. \enquote{Labels aren't mechanisms} means exactly this in practice: the label \enquote{ungrammatical} predicted nothing; the mechanism story predicts exactly when the construction succeeds and when it fails.
 
-The maintenance view offers an elaboration. \term{Green} is projectible because emeralds share a mechanism that produces greenness: chromium traces interact with light in stable ways. There's no mechanism that produces grueness; there's nothing about emeralds that makes them switch from green to blue at time $t$. Projectibility tracks mechanism, not just predicational habit.
+We should also expect the constraints to pattern with experience, because the construction depends on licensing conditions that are themselves unevenly distributed. Speakers with greater exposure to the contrastive-parallelism registers~-- academic prose, formal journalism~-- may find independent \mention{whose} more accessible than speakers without such exposure. Differential mastery isn't a defect of the grammar; it's a prediction of the maintenance view.
 
-For linguistic categories, the same logic applies. \term{Noun} is projectible because mechanisms like acquisition, entrenchment, and functional pressure keep nominal properties clustering together. A pseudo-category like \mention{nerboun} (noun if acquired before age 5, verb otherwise) isn't projectible because no mechanism produces that pattern~-- there's nothing about language acquisition that would cause a switch at age 5.
+The filler-gap case shows the same reciprocal structure as quotatives. Every relative clause, every interrogative, every cleft is input to the conditions that sustain filler-gap processing. The mechanism is real because it's kept alive by the constructions it serves.
 
-A category can look like a good bet~-- its definition correlates with usage, its label is entrenched~-- and still turn out to be a turkey.
 
-\subsection{Is projectibility interest-relative?}
-\label{sec:6:interest-relativity}
+\section{How to test whether a mechanism is real}
+\label{sec:6:robustness-tests}
 
-\citet{craver2009} and \citet{onishi2022} argue that any mechanism-based account inherits context-dependence. Which mechanism you attend to, at what level of abstraction, with what boundaries~-- all depend on your explanatory goals. If so, the maintenance view answer to Goodman looks circular: a category is projectible relative to the mechanism you're interested in, and the mechanism you're interested in is whichever one makes the category projectible.
+Mechanism claims need teeth. Not hand-waving that \enquote{entrenchment maintains the category}, but operational tests that distinguish genuine causal structure from convenient labels. The tests below are ordered by directness of causal leverage~-- from interventions that most directly force reality-commitments to distributional patterns that support but don't compel them. The ordering is heuristic, not sacrosanct: some tests collapse into each other depending on the target phenomenon, and different research traditions weight the tests differently.
 
-The key distinction is between choosing a level because it answers your question, and choosing a level because it privileges your category. A pedicab can be explained by engineering (frame geometry, gear ratios) or by physics (forces, friction, momentum). Both levels are real; both describe genuine causal structure. Your question selects the level. But the causal structure at that level determines whether your answer is correct. Interest picks the question; it doesn't fabricate the mechanism that answers it.
+\textbf{1. Intervention and ablation.} The strongest evidence for a mechanism is that disrupting it changes the outcome. In linguistics, this means: perturbing input distributions (acquisition perturbation), shifting register ecologies (contact situations, code-switching), or computationally lesioning (selectively disabling) a processing component. \textcite{boguraev2025} did this for filler-gap dependencies; the result is model-analytic evidence for mechanistic plausibility, not direct proof that humans instantiate the same component, but suggestive nonetheless. If the clustering reshapes in predictable ways when the hypothesised stabilizer is weakened, we have strong grounds to treat the mechanism as real. \emph{What could mislead us:} interventions may have unintended side effects; apparent reshaping may reflect compensation by other mechanisms rather than loss of the target stabilizer. Section~\ref{sec:8:homeostasis-diagnostic} addresses how to distinguish genuine mechanism loss from compensatory masking.
 
-This is precisely what went wrong with the turkey. Its interest was survival, but it coarse-grained at the wrong level: time of day rather than time of year. The correlation was real at one level (11 AM $\rightarrow$ food) but collapsed at another (Thanksgiving $\rightarrow$ slaughter). The turkey's interest didn't invent the mechanisms; it just selected the wrong one to track.
+\textbf{2. Cross-construction transfer.} If a mechanism is real, competence in one construction should predict performance in another that shares the mechanism. As §\ref{sec:6:definitional-bet} showed, the Polish aspect models demonstrate this: training on one verb subset, testing on another, predictions transfer. \textcite{boguraev2025} showed it for filler-gap: a mechanism learned on interrogatives transfers to clefts. Transfer is evidence that category boundaries track causal structure, not just filing conventions. \emph{What could mislead us:} transfer may reflect surface similarity rather than shared mechanism; conversely, lack of transfer may reflect task demands rather than mechanism absence.
 
-For linguistic categories, the same logic applies. If your question is ``what triggers perfective here?'' the answer lives at the cue-structure level, not the semantic-definition level. Both levels exist; the semantic level just doesn't answer the production question. The aspect case shows the stakes: if your goal is to predict corpus distributions, or even to teach people to speak Polish, the textbook mechanism (semantic boundedness) is the wrong one~-- it predicts imperfective well and perfective poorly. If your goal is to predict native-speaker gap-filling, the lemma-concrete mechanism is the right one~-- it outperforms aspect-aware models. The prediction either succeeds or fails. That's the empirical constraint on which mechanism matters.
+\textbf{3. Predictive constraints under licensing conditions.} If a construction depends on specific licensing conditions, success should spike when those conditions are met and fail when they're not. The \mention{whose} case exemplifies this (§\ref{sec:6:filler-gap-whose}): stranding succeeds under contrastive parallelism and fails without it. If we can predict exactly when the construction will be licensed, the mechanism story is doing real work. \emph{What could mislead us:} licensing conditions may be more complex than hypothesised; apparent success may reflect memorised exemplars rather than productive use of the mechanism.
 
-Conventionalism can't explain why some mechanisms predict and others don't. The maintenance view can: the mechanisms that predict are the ones that actually maintain the cluster. Interest selects among real causal structures; it doesn't invent them. This is what \citet{carrollparola2024} mean by emergence: coarse-grained descriptions that support accurate predictions despite discarding micro-level information. The key is coarse-graining \emph{in the right way}~-- throwing away arbitrary information destroys predictability, but discarding the right information preserves it.
+But this raises a base-rate problem: what if the licensing contexts themselves are rare?
 
-\citet{lemeire2018} argues that no purely epistemic theory~-- one that defines natural kinds solely by their inductive usefulness~-- can account for naturalness. If all we require is that a category support successful predictions, what distinguishes a natural kind from a merely convenient grouping? The objection is serious, and it's what the maintenance view is designed to answer. Projectibility alone is too permissive; what's needed is the right \emph{kind} of projectibility~-- the kind that comes from genuine homeostatic mechanisms rather than accidental correlations. The turkey's law was projectible until Thanksgiving; a mechanism-grounded law would've predicted the farmer's purpose. The maintenance view doesn't abandon epistemic criteria; it requires that they be grounded in causal structure. Projectibility is evidence of mechanism, not a replacement for it.\footnote{\citeauthor{khalidi2013}'s (\citeyear{khalidi2013}) ``nodes in causal networks'' account illustrates the difference. NPIs, for instance, are causally grounded in one sense~-- they share semantic sensitivity to negative contexts. What they lack is the homeostatic mechanism that would make them an HPC kind. They're stable at equilibrium rather than dynamically maintained: balls sitting at the bottom of a trough, not tops that must be spun to stay upright.}
+\textbf{4. Base-rate check.} Rarity isn't disconfirming if the licensing ecology is rare. As §\ref{sec:6:filler-gap-whose} showed, \mention{whose}-stranding appears on the order of once per hundred million words~-- but the information-structural configurations that license it are themselves rare in most corpora. The positive test: does the construction appear reliably when licensing conditions are met, even if those conditions are rare? Rarity becomes disconfirming only when predicted licensing contexts are common yet the construction still doesn't appear. This test requires distinguishing \emph{mechanism absence} from \emph{licensing scarcity}~-- a distinction the \mention{whose} case makes vivid. \emph{What could mislead us:} corpus sampling may miss the relevant registers; rarity may reflect stigmatisation rather than mechanism weakness.
 
-This gives us a robustness criterion for mechanistic kinds. A genuine mechanistic kind~-- as opposed to a convenient label~-- should exhibit \emph{learning transfer}, \emph{intervention stability}, and \emph{cross-context generalisation}. Train on one subset, test on another: does it transfer? Intervene on the mechanism: does the pattern shift as predicted? Apply to a new context: does the generalisation hold? Labels without mechanisms should fragment under these pressures; mechanisms should persist. The computational evidence in this chapter~-- lemma-concrete models transferring to unseen verbs, cue--outcome associations generalising across tense frames~-- is exactly this kind of robustness test. The realism isn't permissive (``whatever predicts is real''); it's constrained by stability under perturbation.
+\textbf{5. Reciprocal maintenance signatures.} If mechanisms and categories co-construct each other, we should observe bidirectional effects: categories shaping what gets entrenched, entrenchment shaping what categories survive. The Toronto panel data on quotatives show this: apparent-time change in one direction (younger speakers use \mention{be like} more) co-occurs with cohort effects in the other (speakers carry their adolescent inventory into adulthood). The signature is mutual shaping, not unidirectional causation. \emph{What could mislead us:} correlation may mimic reciprocity; what looks like bidirectional causation may be two effects of a common cause.
 
-Once interests are fixed by a task, we can ask how strongly different categories support that task. This is the next implication of mechanistic grounding: projectibility comes in degrees. (Recall that field-relative projectibility~-- §\ref{sec:6:field-relative}~-- is a distinct point: the same extension can be carved by different HPCs for different fields. What follows concerns degrees of projectibility \emph{within} a single field.)
+\textbf{6. Distributional and attestation coherence.} The weakest test, but still probative: if a category is maintained by stable mechanisms, the distributional cues for category membership should be mutually predictive across registers, time periods, and populations. Cue bundles that fragment under replication are evidence against mechanism; cue bundles that remain coherent are evidence for it. \emph{What could mislead us:} distributional coherence may reflect historical accident rather than ongoing maintenance; attestation may be artefact of corpus composition.
 
-\subsection{Degrees of projectibility}
+No single test is decisive. Mechanism claims earn credibility when two or more tests converge~-- when intervention effects, transfer patterns, and licensing predictions all point to the same underlying causal structure. Single-test reasoning invites overclaim; triangulation constrains it.
+
+In practice, these tests translate into specific research designs: psycholinguistic tasks (reaction time, eye-tracking, ERPs) for processing facilitation; sampling across register ecologies for distributional coherence; controlled acceptability work designed to manipulate licensing contexts; panel and real-time designs for reciprocal maintenance; historical corpus comparison for diachronic change; computational causal interventions for mechanism isolation. The tests aren't philosophical abstractions; they are guides to experimental and corpus-analytic practice.
+
+A practical recipe, in prose: (1) Identify the cluster~-- what properties co-occur? (2) Propose stabilizers at two or three levels~-- cognitive, social, and transmission-level. (3) Derive at least one intervention or natural-experiment prediction~-- if we weaken this stabilizer, how should the clustering change?~-- and at least one disconfirmatory prediction~-- a context where the stabilizer should \emph{not} help. (4) Check whether the predicted reshaping is observed~-- in acquisition data, contact situations, or experimental manipulations. (5) Triangulate~-- does independent evidence from transfer, licensing, or distribution converge on the same mechanism? If the predictions hold across tests, the stabilizer is load-bearing. If they fail, revise or discard.
+
+These tests certify mechanisms~-- but they can also mislead. When tests diverge~-- when intervention effects point one way but transfer patterns point another~-- treat the mechanism as underspecified or mislocated in scale. Chapter~\ref{ch:failure-modes} diagnoses false positives, compensation effects, and ecological confounds that create the appearance of mechanism where none exists, or mask genuine mechanisms that the tests fail to detect.
+
+
+\section{Degrees of projectibility}
 \label{sec:6:degrees-projectibility}
 
-Not all categories are equally projectible. The framework expects a gradient, and the evidence supports it.
+The stabilizing story explains why projectibility comes in degrees.
 
-At one extreme: high-frequency, highly entrenched categories where the mechanisms are strong and consistent. English determinatives are a case: a closed class, stable across speakers, predictable in distribution. Learn \mention{each} and you can project to \mention{every} with high confidence. The mechanisms (entrenchment, functional specificity) are tight enough that the category approaches definitional coherence~-- the mechanisms are so strong that they produce uniform clustering.
+A category deep in a single basin~-- that is, supported by multiple aligned stabilizers (entrenchment, transmission, functional pressure, social reinforcement), all pulling in the same direction~-- is strongly projectible. You can learn about nouns from a few exemplars and generalise reliably to new nouns. The mechanisms reinforce each other across timescales.
 
-At the other extreme: low-frequency, loosely maintained categories where the mechanisms are variable or in flux. Nonce formations, idiolectal forms, constructions undergoing change~-- these are less projectible because the mechanisms haven't stabilized. Knowing about one instance tells you less about others.
+A category in an overlap region~-- where mechanisms pull in different directions, or where entrenchment is weak~-- is weakly projectible. Predictions work for typical cases but fail for edge cases. The degree of projectibility tracks the degree of mechanistic support.
 
-The middle ground is where the action is. Within a language, synchronically, major open classes~-- nouns, verbs, adjectives~-- are projectible on average but variable at the margins. You can project from typical nouns to novel nouns with high confidence; you can project from \mention{fun} to other adjective-noun boundary cases with less. The mechanisms are strong enough to produce robust clustering at the core but not strong enough to determine the periphery.
+A label with no mechanisms behind it isn't projectible at all. A wastebasket class defined by what it's not should fragment under the robustness tests: predictions trained on one subtype don't generalise to others.
 
-The prediction is testable: core category members~-- high-frequency, prototypical, functionally central~-- should elicit consistent judgments; peripheral members~-- low-frequency, boundary-straddling, functionally ambiguous~-- should elicit variable ones. The variance isn't noise; it's the signature of weak entrenchment.
-
-Recent experimental work confirms the pattern. In grammaticality judgments for Dutch syntax, peripheral structures are correctly identified only 57\% of the time (SD $\approx$ 0.27), while core structures are correctly identified 90\% of the time (SD $\approx$ 0.09)~-- the variance triples at the periphery \citep[Table~2]{favier2021}. Similarly for syntactic variants indexed to verb frequency: low-frequency verbs elicit higher acceptance of violations (a fourfold increase in error rates: 6.58\% vs.\ 1.58\%), because weak entrenchment permits wider variation in what speakers treat as grammatical \citep{sassenhagen2018}. In morphology, the pattern is starker still: high-frequency English adjectives elicit near-unanimous agreement on comparative form, while low-frequency and nonce adjectives split speakers \citep{grazianoking2005}.
-
-This is what the maintenance view predicts. Where mechanisms are strong and consistent, judgments converge; where mechanisms are weak or variable, judgments diverge. The variance tracks the strength of the causal structure. Projectibility isn't all-or-nothing; it's graded by entrenchment. Crucially, the variance isn't just about the items; it's about the speakers. Low-frequency forms are ``weakly entrenched'' only in aggregate~-- for any given form, some speakers have encountered it often, others rarely, others never. What looks like category fuzziness at the population level is actually speaker-by-speaker variation in experience \citep{dabrowska2012}. This reinforces the maintenance account: categories fail to project uniformly because the maintaining mechanisms haven't operated uniformly across the population.
+This is the operational content of \enquote{mechanism-maintained kinds}. Not a metaphor. A measurable property: how strongly do predictions transfer across novel instances, contexts, and populations?
 
 
-\subsection{What the framework offers}
-\label{sec:6:what-framework-offers}
+\section{What this commits us to}
+\label{sec:6:commitments}
 
-The argument so far has been negative: traditional definitions don't ground projectibility; mechanisms do. But this raises a question for researchers who already study mechanisms. If you're already tracking entrenchment, distributional learning, alignment, or functional pressure, what does the maintenance view add? Isn't this just new terminology for what you were doing anyway?
+This framework commits us to a specific kind of realism plus a ranked set of theoretical consequences. Both warrant explicit statement.
 
-The answer is that the framework offers something beyond the mechanisms themselves: an account of what the mechanisms are \emph{for}. Most mechanistic research is descriptive in a specific sense~-- it shows how patterns emerge, stabilize, and change. What it often lacks is an explicit ontology. Are the categories that emerge from these mechanisms \emph{real}, or are they convenient fictions? Are they features of speakers' minds, of the speech community, or merely of the analyst's framework? The maintenance view provides an answer: categories are real to the extent that they're maintained by consistent mechanisms. The mechanisms don't just produce the patterns; they \emph{constitute} the categories as natural kinds.
+The overarching commitment is mechanism-grounded realism. I'm not claiming that linguistic categories are mind-independent features of the universe, waiting to be discovered like chemical elements. I'm claiming that they are stably discoverable because mechanisms make them reliable targets of inquiry. The category \term{noun} is real in the same sense that the category \term{macrophage} is real: not because there is an essence that defines it, but because mechanisms of production and transmission~-- genetic, developmental, and functional for macrophages; cognitive, social, and transmission-level for nouns~-- keep properties clustering in ways that support induction. The parallel isn't ontic identity but a shared route to projectibility: in both cases, tracking the category licenses predictions because mechanisms hold the cluster together. This realism is compatible with the categories changing over time, varying across languages, and having fuzzy boundaries. What it isn't compatible with is treating categories as arbitrary conventions that could've been otherwise with no cost to explanation.
 
-This matters for several reasons.
+Not all the following commitments are equally central. Three are load-bearing: give them up and the framework collapses. Four are derived: they follow naturally from the core but could in principle be revised without abandoning the project. What makes a commitment \emph{core} is that denying it would sever the link between mechanisms and category stability. What makes a commitment \emph{derived} is that it could be refined by new evidence without forcing a revision of the core.
 
-First, it legitimises mechanistic work as theory, not just description. A sceptic might object that studying entrenchment or alignment is interesting but atheoretical~-- mere data-gathering that falls short of explanation. The maintenance view says: no. The mechanisms \emph{are} the theory. Understanding how categories are maintained is understanding what makes them real. This is analogous to recognizing that natural selection isn't ``just'' a description of breeding patterns but the actual explanation of adaptation.
+Three commitments are core.
 
-Second, it provides cross-camp coherence. Researchers studying entrenchment, alignment, distributional learning, and iterated transmission are often working in different sub-fields with different terminologies. The maintenance view offers a unifying frame: all are studying maintenance mechanisms for the same kind of category. This isn't eclecticism~-- it's convergence. Different instruments trained on the same phenomenon. The framework doesn't adjudicate between mechanisms; it says that \emph{whichever} mechanisms actually maintain the cluster are the ones that matter. The question becomes empirical: which mechanisms predict? Chapter~\ref{ch:what-changes} shows how agent-based modelling provides one way to test such predictions computationally.
+\begin{enumerate}
+\item \textbf{Process ontology.} Categories aren't static objects. They're dynamically sustained patterns~-- standing waves, not carved statues. What exists is the stabilizing process; the category is what the process makes legible. The quotative cluster is sustained by ongoing usage and transmission rather than simply ``being there''; remove the maintaining processes and the cluster dissolves. This is non-negotiable: without it, we risk sliding back toward essences or conventions.
 
-Third, it reorients methodology. The maintenance view makes prediction the success criterion: does the mechanism predict behaviour? This changes what counts as evidence. Individual variation stops being noise to be averaged away and becomes signal: if different speakers show different patterns, that tells you something about how tightly the mechanisms are operating. The gradient nature of projectibility~-- strong at the core, weak at the periphery~-- is a feature of maintenance, not a defect of the category.
+\item \textbf{Interventionist realism.} Kinds are real to the extent that tracking or manipulating them changes expectations. This is stronger than description: it says that category distinctions track causal structure, not just impose order on data. ``Intervention'' here means disrupting input patterns, shifting register ecology, testing acquisition trajectories, or modelling counterfactual distributions~-- as when \textcite{boguraev2025} lesioned a filler-gap mechanism and observed downstream effects. Give this up and the framework loses its empirical teeth.
 
-Fourth, it offers category realism without essentialism. Many researchers working with mechanisms are implicitly anti-realist about categories~-- they treat category labels as convenient shorthand, not as picking out real kinds. The worry is understandable: if there are no essences, what makes categories real? The maintenance view provides the missing piece. Categories are real \emph{because} of mechanisms, not despite lacking essences. The mechanisms do for categories what essences were supposed to do: explain why members resemble each other, why learning about one tells you about others, why the category is projectible. You don't need to choose between realism and mechanism; mechanism \emph{underwrites} realism.
+\item \textbf{Reciprocal maintenance.} Mechanisms and categories co-construct each other. Categories shape what gets entrenched; entrenchment shapes what categories survive. The quotatives maintain the processing and social-indexing mechanisms by providing input; the mechanisms maintain the quotatives by making them easy to produce and socially salient. This reciprocity is the engine of the framework~-- it explains both stability and directional change. Remove it and the account becomes one-directional and static.
+\end{enumerate}
 
-Fifth, it clarifies the relationship between historical origin and synchronic maintenance. The volcanic island metaphor applies here: what built a category may not be what maintains it. Researchers studying grammaticalization, semantic drift, or language change often face a puzzle: if categories evolved for one reason, but now function differently, what's their current status? The framework says: study the current mechanisms. Whether or not the historical origin matches the current maintenance, it's the current mechanisms that determine projectibility. You can trace the genealogy without claiming that genealogy is destiny.
+Four further commitments are derived from the core.
 
-None of this requires abandoning existing research programmes. The mechanistic work continues; what changes is its framing. The maintenance view shows how categories can be both analyst-labelled and grounded in real causal structure. The work you're doing isn't preliminary; it's the payoff.
+\begin{enumerate}\setcounter{enumi}{3}
+\item \textbf{Population-distributed competence.} The target of explanation isn't an ideal speaker's uniform grammar but a population-distributed competence profile. Different speakers, with different input histories, stabilize categories to different depths~-- as we saw with differential access to \mention{whose} across register ecologies. This follows from process ontology (different processes yield different outcomes) but someone could accept the core framework while retaining idealized-speaker models for some purposes.
 
-\bigskip
+\item \textbf{Variation as signal.} Differences across contexts, speakers, and registers aren't noise. They're diagnostic~-- evidence about which region of the state space a token occupies, which activation state is active. This follows from interventionist realism (if tracking matters, variation tracks something) but the specific diagnostics remain open to empirical refinement.
 
-We can now answer the question that opened the chapter. Mr.~Tagomi needed to know which world he was in; learners of Polish need to know which verb form to use. Both rely on projectibility. Why should learning about one instance tell us anything about others?
+\item \textbf{Cross-level coherence.} A category theory should deliver compatible predictions whether we analyse a phenomenon at the level of subpatterns, the construction, the category, or the wider system. This is a methodological constraint implied by reciprocal maintenance. Violations might indicate interesting heterogeneity rather than framework failure~-- though distinguishing productive heterogeneity from genuine failure requires independent criteria.
 
-Because the same mechanisms that shaped the instance you learned are shaping the instances you haven't. Categories maintained by consistent mechanisms produce consistent members. The consistency underwrites induction.
+\item \textbf{Operational testability.} These claims have operational teeth. Entropy reduction, cross-context generalisation accuracy, inter-speaker agreement as a function of frequency and entrenchment~-- these are illustrative operationalizations of what ``stable category'' means in practice. Section~\ref{sec:6:degrees-projectibility} develops the generalisation-accuracy measures; the others remain programmatic but not promissory. This operationalizes the core commitments, but the specific metrics can evolve as measurement improves.
+\end{enumerate}
 
-This is the epistemic payoff~-- what the good bet wins. HPC kinds are categories you can learn from, categories with causal structure. The mechanism that makes a word a noun also makes other nouns. The mechanism that biases a verb toward perfective also biases similar verbs. The mechanism that entrains a speaker to one usage pattern entrains the same speaker to related patterns.
+What the framework does \emph{not} commit us to is also worth stating. The framework is silent on acquisition theory: it's compatible with nativist, constructivist, or hybrid accounts of how the underlying mechanisms are implemented. it's silent on neural architecture: the mechanisms could be realized in distributed representations, localist circuits, or something else entirely. And it's silent on the question of whether grammatical categories are ``innate'' in any interesting sense~-- what matters is whether they are stably maintained, not whether they were pre-specified. These are open empirical questions, not framework commitments.
 
-Projectibility isn't metaphysically guaranteed. A proposed grouping can fail to project if its characterization doesn't match the maintaining mechanisms~-- as aspect-abstract fails. A proposed grouping can fail to project if the mechanisms are too weak or too variable~-- as nonce formations fail. In either case, the grouping isn't a category but a \term{class}~-- a label without the causal structure to back it up. But where the mechanisms are real and consistent, projectibility follows. That's the test: does learning about instances let you project to the kind? If yes, the mechanisms are real. If no, look elsewhere for the causal structure.
+These commitments explain why the framework is an ontological reorganization of existing work rather than a bid to displace it.
 
 
-The label names the island, not the volcano. But we've talked about mechanisms as if they were self-explanatory. They aren't. What exactly maintains the island? What processes stabilize the clustering, ensure that new instances resemble old ones, transmit the pattern across speakers and generations? The next chapter opens the black box. We'll trace the mechanisms in detail~-- acquisition, entrenchment, alignment, transmission, functional pressure~-- and ask what each contributes to the stability of linguistic kinds. Only then can we ask: under what conditions do mechanisms fail?
+\section{Refactoring, not replacing}
+\label{sec:6:refactoring}
 
-Part~III then returns to field-relative projectibility with three extended case studies. Countability, definiteness, and word classes each demonstrate the pattern developed here: categories that decompose into semantic and morphosyntactic HPCs, maintained by distinct mechanisms, projectible for different analytical purposes. The framework isn't abstract philosophy; it's an operational tool for understanding why familiar categories behave as they do.
+This chapter doesn't compete with existing explanations; it reorganizes them around what they already presuppose but rarely foreground: stabilizing mechanisms. That's the pluralist posture from §\ref{sec:4:payoffs} applied to a specific case.
 
-\textsc{Definiteness thread.} This chapter's field-relative projectibility principle predicts that definiteness generalizations should be projectible for semanticists studying identifiability and uniqueness, while deitality generalizations should be projectible for syntacticians studying \mention{there}-resistance and partitive licensing~-- but only where the stabilizer stories match. Register shift (e.g., legal versus colloquial) may reveal where the clusters decouple: weak definites and generic definites are predicted sites. The prediction would be falsified if a single unified projectibility claim held across all analytical purposes without stabilizer-specific scoping.
+The descriptive, variationist, and functional work that this chapter draws on~-- Ferrara and Bell on quotative function, Bybee on entrenchment, Tagliamonte on apparent-time change, Buchstaller on cross-variety patterns~-- provides the data and often identifies the mechanisms.\footnote{The list could extend: Huddleston and Pullum's distributional analysis, Labov's foundational variationism, the typological work on evidentiality that grounds the cross-linguistic parallels. The point is the \emph{kind} of work, not an exhaustive enumeration.} What the maintenance view adds isn't more data but a different question: not \emph{what} properties cluster, but \emph{why} they hold together and persist.
+
+For quotatives, this means reinterpreting frequency, social indexing, and processing alignment as mutually sustaining rather than as independent explanations. The maintenance view explains why these mechanisms cluster rather than scattering, why the cluster is stable across generations rather than dissolving into noise.
+
+The sociolinguists already had the patterns. The cognitivists already had the mechanisms. The typologists already had the parallels. What was missing wasn't more data but a framework for why the data hold together~-- an account of what linguistic categories actually \emph{are}. That's what the maintenance view offers. Not replacement. Refactoring. Same codebase, better architecture.
+
+For readers familiar with grammaticalization theory: yes, diachrony remains essential. Grammaticalization tells you \emph{how} a form like \mention{be like} developed~-- how meanings bleach, how forms reduce, how pragmatic inferences harden into grammatical meaning. The maintenance view answers a different question: what keeps the resulting cluster coherent \emph{now}? The pathways are historical; the stability is mechanistic. Both are needed. Diachrony without synchronic maintenance leaves present-day coherence unexplained; maintenance without diachrony leaves the trajectory unexplained.
+
+For readers familiar with prototype theory: yes, gradedness is real. Categories do have cores and fringes, and typicality judgments are graded. But the interesting explanation isn't \emph{that} they're graded; it's \emph{why} the cores tighten and the fringes wander across different input histories. A mechanism-first account isn't relabelling gradience~-- it predicts where stability should be robust (deep in the basin, multiple mechanisms aligned) and where it should fray (near boundaries, mechanisms pulling in different directions). Prototype theory describes the shape; the maintenance view explains why the shape is stable and why it varies where it does.
+
+
+
+\section{What mechanisms buy you}
+\label{sec:6:what-mechanisms-buy}
+
+To recap: this chapter traced the stabilizing mechanisms for two deliberately different cases. Quotatives showed social indexing and processing economy co-reinforcing through transmission and acquisition, with robust variationist evidence for English and well-supported parallels in German. Independent relative \mention{whose} showed cognitive mechanisms (filler-gap processing) operating under stringent information-structural licensing, with the framework predicting where the construction should succeed and fail. Both cases illustrated multi-scale stabilization, reciprocal maintenance between categories and mechanisms, and projectibility that comes in degrees. The robustness tests (§\ref{sec:6:robustness-tests}) give operational teeth to mechanism claims; the theoretical commitments (§\ref{sec:6:commitments}) spell out what the framework is and isn't claiming.
+
+A linguistic category isn't a thing you find; it's a regime you maintain. Arguments over definitions are, at bottom, arguments over stabilizers.
+
+But why does any of this matter? Mechanisms explain persistence~-- they tell you how categories stay clustered. Yet persistence alone doesn't make a category real. A stable fiction is still a fiction; a well-maintained convention is still a convention. What distinguishes a genuine kind from a persistent label?
+
+The next chapter answers: projectibility. A category is real when it supports reliable inference across novel instances. The mechanisms traced here aren't just keeping clusters clustered~-- they're producing something epistemically valuable. What you learn about one noun tells you about other nouns. What you learn about one quotative predicts how other quotatives behave. The bet pays off.
+
+That's the payoff of maintenance: not just stability, but inferential traction. Mechanisms don't just preserve categories; they constitute them. A category \emph{is} what it lets you infer. The next chapter makes that claim precise.
+
+\textsc{Definiteness thread.} This chapter's mechanism inventory predicts that definiteness should show multi-scale stabilization: acquisition establishes the distributional frame (deitality); alignment repairs discourse failures (definiteness-as-identifiability); transmission filters out unsystematic variants. Chapter~\ref{ch:definiteness-and-deitality} will show how these mechanisms can pull different properties, creating two coupled HPCs rather than one. The prediction would be falsified if the semantic and formal properties showed no mechanism-specific sensitivities~-- if they behaved as a single bundle under all perturbation types.
