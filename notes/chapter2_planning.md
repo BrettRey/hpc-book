@@ -60,7 +60,7 @@ Per outline:
 **Rapoport's rules in action**
 
 What essentialism got right AND what it enabled:
-- The great descriptive grammars (Jespersen, Quirk, CGEL) used essentialist architecture to organize massive amounts of data
+- The great descriptive grammars (Jespersen, Quirk, \textit{CGEL}) used essentialist architecture to organize massive amounts of data
 - Cross-linguistic comparison became possible (structural linguistics)
 - Parsers, pedagogy, systematic description all depend on treating categories as if they have sharp boundaries
 - Generative grammar's productivity: discovering deep syntactic regularities (island constraints, c-command, binding principles)

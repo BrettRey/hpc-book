@@ -70,7 +70,7 @@ The field's honest self-assessment might be Goldberg's implicit stance: "These f
 
 ## Conclusion: justified but not derived
 
-For someone working in the CGEL framework with a functionalist orientation, the critical question is whether CxG's arguments should be persuasive. The answer depends on what counts as justification. CxG provides **substantive empirical and methodological arguments** that go well beyond mere stipulation. The "let alone" paper, Croft's typological arguments, and the cognitive science grounding constitute genuine theoretical work.
+For someone working in the \textit{CGEL} framework with a functionalist orientation, the critical question is whether CxG's arguments should be persuasive. The answer depends on what counts as justification. CxG provides **substantive empirical and methodological arguments** that go well beyond mere stipulation. The "let alone" paper, Croft's typological arguments, and the cognitive science grounding constitute genuine theoretical work.
 
 However, **philosophical derivation is largely absent**. The form-meaning pairing thesis is taken as axiomatic from semiotic tradition; the uniformity thesis is argued via parsimony and empirical fit rather than necessity. Critics legitimately note that falsifiability criteria remain underspecified and that the constraint problem persists.
 

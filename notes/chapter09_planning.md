@@ -80,7 +80,7 @@ Following the outline in `CHAPTER_OUTLINE.md`:
 **§9.5 Quasi-Count Nouns**  
 *The stable intermediates*
 
-- *Cattle*, *police*, *clergy*, *poultry*, *vermin* — CGEL's quasi-count class
+- *Cattle*, *police*, *clergy*, *poultry*, *vermin* — \textit{CGEL}'s quasi-count class
 - They accept loose properties, reject tight ones — exactly the predicted intermediate position
 - Why stable? Functional anchoring: *officer* handles singulative for *police*; *cow* for *cattle*
 - Contrast with *folks*: no functional anchor, therefore unstable (variability in *three folks*)

@@ -43,7 +43,8 @@ This workflow orients you to the project. Use it at the start of any new session
 - Key finding: Pre-draft planning correlates with draft quality
 
 **For literature:**
-- `literature/*.pdf` — Named to match BibTeX keys
+- `literature/` — Symlink to centralized `../../literature/` (shared across projects)
+- PDFs named to match BibTeX keys
 - Use `pdftotext "literature/author2024.pdf" - | grep -i "keyword"` to search
 
 ## Full Initialization (New to Project)
@@ -55,7 +56,7 @@ This workflow orients you to the project. Use it at the start of any new session
    - `figures/` — PNG/PDF figures
    - `notes/` — planning docs, master notes, handoffs
    - `.house-style/` — preamble.tex and style-guide.md
-   - `literature/` — PDF sources (author_year.pdf format)
+   - `literature/` — Symlink to centralized literature folder
 
 3. **Key files**
    - `main.tex` — book root (chapters are commented out for fast compilation)
