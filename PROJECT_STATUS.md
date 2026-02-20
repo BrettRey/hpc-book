@@ -1,7 +1,13 @@
 # HPC Book Project Status
 
 **Date**: February 20, 2026
-**Current Phase**: Ch 11 drafting (§11.5 complete); Ch 13 restructuring decided
+**Current Phase**: Chs 1–12 drafted; Ch 13 rewrite next
+
+### Session Work (Feb 20, 2026: Ch 11 Review Board + Polish)
+- ✅ **Six-reviewer board** (Bybee, Tomasello, Croft, McCloskey, Chater, Zimmer): 24 edits from convergent criticisms (type/token frequency, structural analogy qualification, Baker grant-before-take, constructional thickness, IRE cross-linguistic caveat, lyrebird mapping, HPC-vs-definitional disconfirmation)
+- ✅ **Structural rhetorical figures** (9): epistrophe, gradatio, anadiplosis, inclusio, isocolon, diacope, anadiplosis cycle, antithesis, ring composition (Wallace callback)
+- ✅ **Selective humor** (10 of 26 evaluated): "wrong enough to be interesting" opener, "embarrassingly practical" deflation, "nobody will be harmed", "drawer not theory", "doing no work whatsoever", "English declines to issue a ruling", "family colours", lyrebird caption, table caveat
+- ✅ **Ch 11 complete**: 6 sections (Intro, Skeleton, Thin, Wastebasket, Braid, Looking Forward). Not final-final, but put to bed.
 
 ### Session Work (Feb 19–20, 2026: Ch 11 §11.4–§11.5 + Ch 13 Architecture)
 - ✅ **§11.4 (Adverbs) polished**: reynolds2024 integrated, grammar-teaching sociology, Penn Treebank claim fixed, meta-HPC typological grounding (Rijkhoff 2007)
@@ -9,7 +15,6 @@
 - ✅ **Terminology hardened**: category vs. class vs. label; no "kind"; wh- = phonology not morphology; "participates in the system of case"
 - ✅ **Anti-essentialist discipline**: Multiple essentialist gatekeepers caught and fixed
 - ✅ **Ch 13 restructuring decided**: Coupling concept as Ch 8 coda, Ch 13 as synthesis chapter. Analysis in `notes/ch13-restructuring-analysis.md`. Status: "try"
-- 🔄 **Next**: §11.6 (Acquisition), §11.7 (Worked example), §11.8 (Summary). Then Ch 8 coupling coda.
 
 ### Session Work (Feb 19, 2026: Sync Conflict Resolution)
 - ✅ **Major Sync Conflict Resolved**: 
@@ -320,8 +325,8 @@
 ### Part III: Categories Reconsidered (Chapters 9-12)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
 - ✅ **Ch 10**: Definiteness - complete and audited (Dec 25, 2025)
-- 🔄 **Ch 11**: Lexical Categories - plan approved; awaiting draft
-- 🔄 **Ch 12**: Gender and the Maintenance Spectrum - rough first draft (Dec 26); may restart (ship/table hook, transparent→entrenched spectrum, English/French/German cases)
+- ✅ **Ch 11**: Lexical Categories - complete (Feb 20, 2026). Six sections, review board, rhetorical polish.
+- ✅ **Ch 12**: Gender and the Maintenance Spectrum - drafted (Dec 26), polished (Jan 8). Ship/table hook, transparent→entrenched spectrum, English/French/German cases.
 
 ### Session Work (Dec 15-16, 2025)
 - ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)
@@ -361,25 +366,23 @@
 
 ## In Progress
 
-- 🔄 **Ch 11** (Lexical Categories): Plan approved, ready to draft
-- 🔄 **Ch 12** (Gender): Rough draft exists; may restart
-- 🔄 **Ch 13** (The Stack): Empirically integrated (Jan 16); pending final citations and polish
-- 🔄 Ch 14 (Grammaticality): Theoretical framework developed; needs prose
-- 🔄 Ch 15 (Methodological Consequences): Was Ch 14
+- 🔄 **Ch 13** (The Stack): Restructuring decided (synthesis chapter). Has empirical content (PHOIBLE, HistWords); narrative needs rewriting. Ch 8 coupling coda already written (§8.x).
+- 🔄 **Ch 14** (Grammaticality): Theoretical framework developed; needs prose
+- 🔄 **Ch 15** (What Changes): Outlined only
 
-**Note:** Book now 15 chapters (gender added Dec 26)
+**Note:** Book is 15 chapters (gender added Dec 26). Chs 1–12 all drafted.
 
 ## Next Actions
 
 ### Immediate
-1. **Ch 11 Draft** - Lexical categories; implementation plan approved (`notes/ch11/ch11-implementation-plan.md`)
-2. **Ch 12 Revision** - Gender draft needs work (or restart from scratch)
-3. **Ch 15 Mereology Section** - Typed mereology content from `linguistics-mereology/` project (was Ch 14)
+1. **Ch 13 Rewrite** - Synthesis chapter; coupling coda already in Ch 8. Narrative needs rebuilding around new architecture.
+2. **Ch 12 Review** - Draft exists and was polished Jan 8; needs review-board pass like Ch 11 got.
+3. **Ch 14 Draft** - Grammaticality itself; framework ready, prose needed.
 
-### Medium-term (Next 2-3 Months)
-1. Draft Part III chapters (11-12)
-2. Draft Part IV chapters (13-15)
-3. Create visualizations and figures
+### Medium-term
+1. Draft Ch 14–15 (Part IV)
+2. Create remaining visualizations and figures
+3. Peirce integration on `projectibility-pivot` branch (Chs 7, 9–14 touched; not yet merged)
 
 ## Key Decisions Made
 
