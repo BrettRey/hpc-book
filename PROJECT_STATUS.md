@@ -3,6 +3,13 @@
 **Date**: February 20, 2026
 **Current Phase**: Chs 1–12 drafted; Ch 13 rewrite next
 
+### Session Work (Feb 20, 2026 evening: Ch 11 + Ch 8 + Ch 9 polish with Brett)
+- ✅ **Ch 11 HPC-consistency pass**: Fixed "semantics comes along for the ride" (essentialist smuggling → coupling framing); rewrote compressed Reynolds 2024 paragraph for accessibility; /w/ → /hw/ (Brett's dialect); "wh-in-situ" → "languages where IRE words remain in situ"; maintenance-only paragraph → maintenance + projection profiles; Ch 12 transition rewritten (morphological gender absence → pro-form diffusion); "adjective" carving: epistemologically and ontologically distinct, terminologically identical; "at least three" categories for *who*; dropped redundant Ch 12 forward reference
+- ✅ **Ch 8 structural fix**: Moved curtain line ("Categories generate habits; classes are merely named") from §8.7 to actual chapter end after §8.9 coupling coda. Added "Two tools make them operational" transition.
+- ✅ **Ch 9 tricolon**: LEGO opening reordered (law, money, style guide) for bathetic punchline
+- ✅ **Bib cleanup**: Deleted duplicate `reynolds2024` entry; citation now uses `reynolds2024why`
+- ✅ **Coupling vs braiding**: Confirmed as distinct concepts (form-meaning poles vs mechanism convergence). Both terms stay.
+
 ### Session Work (Feb 20, 2026: Ch 11 Review Board + Polish)
 - ✅ **Six-reviewer board** (Bybee, Tomasello, Croft, McCloskey, Chater, Zimmer): 24 edits from convergent criticisms (type/token frequency, structural analogy qualification, Baker grant-before-take, constructional thickness, IRE cross-linguistic caveat, lyrebird mapping, HPC-vs-definitional disconfirmation)
 - ✅ **Structural rhetorical figures** (9): epistrophe, gradatio, anadiplosis, inclusio, isocolon, diacope, anadiplosis cycle, antithesis, ring composition (Wallace callback)
