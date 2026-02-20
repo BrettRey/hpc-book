@@ -1,7 +1,15 @@
 # HPC Book Project Status
 
-**Date**: February 19, 2026
-**Current Phase**: Part IV Development; Ch 15 restored; Peer review synthesis
+**Date**: February 20, 2026
+**Current Phase**: Ch 11 drafting (§11.5 complete); Ch 13 restructuring decided
+
+### Session Work (Feb 19–20, 2026: Ch 11 §11.4–§11.5 + Ch 13 Architecture)
+- ✅ **§11.4 (Adverbs) polished**: reynolds2024 integrated, grammar-teaching sociology, Penn Treebank claim fixed, meta-HPC typological grounding (Rijkhoff 2007)
+- ✅ **§11.5 (Pronouns/Mimics) drafted**: Two-faced cluster (syntactic + semantic), core personal pronouns + Ch 12 gender connection, three saturation routes, IRE words coined, braiding conclusion
+- ✅ **Terminology hardened**: category vs. class vs. label; no "kind"; wh- = phonology not morphology; "participates in the system of case"
+- ✅ **Anti-essentialist discipline**: Multiple essentialist gatekeepers caught and fixed
+- ✅ **Ch 13 restructuring decided**: Coupling concept as Ch 8 coda, Ch 13 as synthesis chapter. Analysis in `notes/ch13-restructuring-analysis.md`. Status: "try"
+- 🔄 **Next**: §11.6 (Acquisition), §11.7 (Worked example), §11.8 (Summary). Then Ch 8 coupling coda.
 
 ### Session Work (Feb 19, 2026: Sync Conflict Resolution)
 - ✅ **Major Sync Conflict Resolved**: 
@@ -13,6 +21,7 @@
   - Deleted stale/partial `literature2` folder.
   - `git status` now clean; "U" markers removed from explorer.
 - ✅ **Documentation Update**: `PROJECT_STATUS.md` and session logs back-filled for Feb 15-17 gap.
+- 🔄 **Chapter 11 Reset**: Archived old draft and starting fresh to better align with HPC maintenance framing.
 
 ### Session Work (Feb 17, 2026: Nefdt Response Analysis)
 - ✅ **Nefdt (2025) Analysis**: Conducted deep-dive into "real patterns" and linguistic communities.

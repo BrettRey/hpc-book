@@ -33,7 +33,7 @@ The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL f
 - `.house-style/style-guide.md` - Writing conventions (MUST READ before editing prose)
 - `references.bib` - Bibliography (BibTeX format, Biber backend)
 - `notes/` - Planning documents and chapter development notes
-- `literature/` - Topic-specific literature review notes
+- `literature/` - Symlink to centralized `../../literature/` (shared across all projects)
 - `code/` - Utility scripts (e.g., `validate_bib.py`, `countability_abm.py`)
 
 ## Modeling Guidelines
@@ -147,9 +147,9 @@ Four parts, 15 chapters:
 - **Ch 8**: Drafted and revised (Failure Modes)
 - **Ch 9**: Drafted and revised (Countability) - ABM complete
 - **Ch 10**: Drafted and revised (Definiteness)
-- **Ch 11**: Plan approved, awaiting draft (Lexical Categories)
+- **Ch 11**: §11.1–§11.5 drafted; §11.6–§11.8 remaining (Lexical Categories)
 - **Ch 12**: Drafted and revised (Pro-form Gender)
-- **Ch 13**: Empirically enhanced (The Stack)
+- **Ch 13**: Restructuring decided — synthesis chapter; coupling coda goes in Ch 8 (see `notes/ch13-restructuring-analysis.md`)
 - **Ch 14**: Outlined (Grammaticality itself)
 - **Ch 15**: Outlined (Methodological consequences)
 
@@ -199,12 +199,23 @@ Projectibility is indexed to analytical purpose. Different subfields (semantics,
 ### The HPC Slogan
 > **"A category is a profile, stabilised by mechanisms, projectible for a purpose."**
 
+### Anti-Essentialist Discipline
+When describing categories, do NOT use single-property gatekeeping tests for membership. No "X is a pronoun because it resists determiners" or "X isn't a category because it doesn't project phrases." These are essentialist moves — defining by necessary conditions. Instead, describe clusters of properties that co-occur because mechanisms hold them together. Items at the edges share some properties but not others. That's HPC, not failure.
+
 ## Key Concepts
 
 - **HPC (Homeostatic Property Cluster) kinds**: Categories defined by property clusters maintained by causal mechanisms
 - **Mechanisms**: Acquisition, entrenchment, interactive alignment, iterated transmission
 - **Projectibility**: Why categories support inductive generalizations
 - **Failure modes**: Thin clustering, fat clustering, negative diagnosis
+
+### Terminology (load-bearing distinctions)
+- **Category** = genuine HPC (passes the projectibility + homeostasis tests). Use for nouns, verbs, adjectives-in-English, the IRE family.
+- **Class** = any grouping, may or may not be a category. Use for adverbs, traditional "pronoun."
+- **Do NOT use "kind"** — the book uses "category" throughout.
+- **Fat/thin/negative** diagnose CLASSES, not categories. A fat class is not a category. A thin class may be a category in some languages but not others (adjective).
+- **IRE words** = interrogative, relative, exclamative. The cross-linguistic functional family. Distinct from *wh*-words (English phonology, includes *how* which lacks *wh*-) and *question words* (too narrow — relative *who* isn't interrogative).
+- **Coupling** (Ch 8 coda, Ch 13 synthesis): hard-coupled (phonemes) → loose-coupled (grammatical categories) → re-unified (constructions).
 
 ## Session Layout (Startup & Shutdown)
     
