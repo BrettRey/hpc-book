@@ -274,20 +274,38 @@ Then there is \mention{data}.
 
 On March 11, 2015, Minnesota legislators halted work on a license-plate reader bill to debate grammar. The bill text read \mention{the data are private}; Representative John Lesch insisted \mention{data} is singular. The committee voted; the motion passed unanimously; Lesch pumped his fist. The law was amended: \mention{data is}. Grammar rarely gets a roll-call vote, so it took the opportunity.
 
-Lesch won the vote, but he entered what usage expert Bryan Garner calls a \mention{skunked} term argument \citep{garner2016}. \mention{Data} is currently moving from the count basin (Latin plural of \mention{datum}) to the mass basin (synonym for \mention{information}). In the transition, it exhibits the chaotic behavior of a system seeking a new equilibrium. Scientists say \mention{data are}. Tech CEOS say \mention{data is}. The cluster is unraveling, property by property. Historically the plural of \mention{datum}, it's shifting toward mass status: \mention{this data is}, \mention{much data} are now common, especially in informal and spoken registers. Corpus studies confirm that singular agreement with \mention{data} now predominates in most registers \citep{garner2016}.
+Lesch won the vote, but he entered what usage expert Bryan Garner calls a \mention{skunked} term argument \citep{garner2016}. \mention{Data} is currently moving from the count basin (Latin plural of \mention{datum}) toward looser count packaging and, in some registers, toward mass construal (synonym for \mention{information}). In the transition, it exhibits the behavior of a system seeking a new equilibrium. Scientists say \mention{data are}. Tech CEOs say \mention{data is}. The cluster is reweighted, property by property. Historically the plural of \mention{datum}, it's shifting in everyday usage: \mention{this data is} and other singular-agreement patterns are now common, especially in informal and spoken registers. Corpus studies confirm that singular agreement with \mention{data} now predominates in most registers \citep{garner2016}.
 
 Why is \mention{data} drifting? Because its functional anchor is disappearing. \mention{Datum}~-- the singulative~-- has become archaic, confined to philosophy-of-science contexts and pedantic style guides. Without a robust singulative in active use, the tight-linkage properties have nothing to attach to. Speakers who need to refer to a single piece of information say \mention{data point}, not \mention{datum}. But \mention{data point} is a compound, not a singulative of \mention{data}. It doesn't anchor the count cluster the way \mention{officer} anchors \mention{police}.
 
-Result: \mention{data} drifts toward the loose end of the scale. Plural agreement weakens (\mention{this data is} becomes standard). Tight properties erode (\mention{three data} was always rare). Eventually, if the drift continues, \mention{data} will be fully mass~-- \mention{much data}, \mention{this data is}, \mention{some data}~-- with \mention{data point} handling any count function.
+Result: \mention{data} drifts toward the loose end of the scale. Tight properties erode (\mention{three data} was always rare), while loose ones can remain robust for long periods. If the drift continues and further mechanisms align with it, fully mass packaging becomes possible~-- with expressions like \mention{data point} carrying precision where needed.
 
 This is the quasi-count pattern run in reverse. \mention{Cattle} is stable because \mention{cow} exists. \mention{Data} is drifting because \mention{datum} is dying.
+
+We can model this dynamic computationally to expose the expected drift signature (Figure~\ref{fig:data_drift}).\footnote{The Python scripts for the simulations in this book are available at \url{https://github.com/BrettRey/hpc-book/tree/main/code}.} Again, this is illustrative rather than probative: a didactic mechanism sketch, not calibrated empirical proof.
+
+For readers new to ABM, the assumptions are deliberately simple. Each agent stores one latent individuation score per noun. English constructions are modelled as thresholds on that score: \mention{a(n)} and low cardinals are tight thresholds, \mention{many} and agreement are looser thresholds. On each interaction, a speaker chooses a communicative intent, produces a packaging choice, and a hearer updates its score from what it observes. For transmission, a small share of adults is periodically replaced by new learners with weak priors who bootstrap from finite tutor exposure. The current chapter plots use 100 agents, including 5 institutional agents. This is a computational shortcut for maintenance dynamics, not a full developmental model of child acquisition bottlenecks. When scaling $N$, we scale interaction budget with it; otherwise per-agent exposure collapses and the apparent dynamics become a sparse-update artifact.
+
+The model operationalizes a comparative concept (individuation) and maps it to English packaging frames. So the claim is conditional and language-scoped: in this English-targeted toy system, when the singulative anchor (\mention{datum}) erodes, tight properties should weaken earlier than loose ones.
+
+In representative runs under this parameterization, acceptance for \mention{a(n)} and \mention{three} falls substantially as anchor strength declines, while \mention{many} and agreement remain near ceiling over the same window. The model therefore captures asymmetric fraying rather than immediate category collapse.
+
+\begin{figure}[htpb]
+\centering
+\includegraphics[width=1\textwidth]{figures/data_drift_experiment.png}
+\caption{Simulated \mention{data} drift in an English-specific toy model. Panel A tracks anchor erosion over phases: declining \mention{datum} availability, declining \mention{datum} individuation, and the associated shift in \mention{data} individuation. Panel B shows the corresponding constructional profile. Tight properties (\mention{a(n)}, low cardinals) weaken first because they require reliable singular anchoring; looser properties (\mention{many}, agreement) remain comparatively robust over the same interval.}
+\label{fig:data_drift}
+\end{figure}
+
+Read this figure as a mechanism sketch for English maintenance dynamics. The broader cross-linguistic claim depends on independent typological and diachronic evidence, not on this simulation alone.
+The plotted line is one seeded trajectory; run manifests and multi-seed sensitivity summaries in the code are there to keep the interpretation distributional rather than anecdotal.
 
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 \section{Cross-linguistic parallels}
 \label{sec:9:cross-linguistic}
 %~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- ~-- --
 
-If bidirectional inference is a general mechanism~-- not an English quirk~-- languages with different morphological resources should show analogous patterns.
+If bidirectional inference is a broader mechanism~-- and not only an English pattern~-- languages with different morphological resources should show analogous signatures.
 
 Welsh and Arabic mark singulatives morphologically. In Welsh, the base form of \mention{adar} (\enquote{birds}) is collective~-- grammatically singular, semantically aggregate. A suffix derives the singulative: \mention{aderyn} (\enquote{a bird}). \textcite{grimm2018} documents exactly the predicted pattern: bare collectives accept loose quantifiers but resist low numerals and distributives, while singulative-marked forms accept the full count cluster. The parallel to English quasi-count nouns is striking: Welsh collectives occupy the same position in the hierarchy that \mention{cattle} and \mention{police} occupy in English.
 

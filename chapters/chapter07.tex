@@ -167,7 +167,34 @@ This resolves the puzzle of naming. We call it \term{aspect} because of its hist
 \label{fig:island-volcano}
 \end{figure}
 
-The cross-linguistic term \term{aspect} functions as a \term{comparative concept}; within Polish, it names a historically inherited pattern whose contemporary projectibility is anchored in lexeme-specific cue structures rather than the textbook semantic essence. Labels aren't definitions, and labels aren't mechanisms. Calling this opposition \term{aspect} risks reifying a historically entrenched label whose textbook semantics no longer track the mechanisms that actually maintain usage. it's best treated as the name of an emergent clustering, not the explanatory unit that makes it project. But here's a constraint: genealogical continuity alone doesn't justify continued use of a label. The label is appropriate only if it still picks out a stable emergent pattern at some explanatory level. An island that has fully eroded, with no coral keeping it together, is no longer an island~-- and deserves no name.
+The cross-linguistic term \term{aspect} functions as a \term{comparative concept}; within Polish, it names a historically inherited pattern whose contemporary projectibility is anchored in lexeme-specific cue structures rather than the textbook semantic essence. Labels aren't definitions, and labels aren't mechanisms. Calling this opposition \term{aspect} risks reifying a historically entrenched label whose textbook semantics no longer track the mechanisms that actually maintain usage. It's best treated as the name of an emergent clustering, not the explanatory unit that makes it project. But here's a constraint: genealogical continuity alone doesn't justify continued use of a label. The label is appropriate only if it still picks out a stable emergent pattern at some explanatory level. An island that has fully eroded, with no coral keeping it together, is no longer an island~-- and deserves no name.
+
+
+\subsection{Simulation interlude: The Volcanic Island}
+\label{sec:7:simulation-interlude}
+
+To make the mechanism/projectibility distinction concrete, we can use an \term{agent-based model} (ABM).\footnote{The Python scripts for the simulations in this book are available at \url{https://github.com/BrettRey/hpc-book/tree/main/code}.} If ABMs are unfamiliar: read this as a controlled cartoon. We specify a few local learning rules, let many interactions run, and ask what population-level pattern those rules can sustain.
+
+The role of the ABM here is illustrative rather than probative. It doesn't test Polish corpus frequencies, recover diachronic pathways, or adjudicate between full psycholinguistic theories. It asks a conditional question: if the mechanism story is on the right track, can a minimal toy system produce the qualitative signature we claim?
+
+The toy world has two moving parts. First, each agent tracks a global semantic-cue weight $w$~-- how much a broad semantic signal helps predict form. Second, each agent tracks lexeme-specific boundaries $\theta$~-- item-level decision points for category packaging. Agents repeatedly predict, observe, and update both parameters from prediction error. In the current figure-generating run, the population size is 200 agents. We intentionally avoid arbitrarily massive populations in this script because, at fixed interaction horizon, updates per agent scale as $T/N$: inflating $N$ without inflating $T$ mostly under-trains individuals rather than adding inferential strength.
+
+In Phase~1 (active volcano), the semantic cue is informative. Agents can use both $w$ and $\theta$ successfully, so both are reinforced. In Phase~2 (dormant volcano), that cue is randomized and carries no predictive information. Agents can still preserve successful behaviour by relying on entrenched item-level boundaries.
+
+Figure~\ref{fig:volcano_drift} therefore tracks four quantities. Panel A reports the observable semantic-cue effect in output and the population mean of learned $w$. Panel B reports category persistence: boundary similarity to the pre-switch state and population consensus (sharpness).
+
+\begin{figure}[htpb]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/volcano_drift_experiment.pdf}
+\caption{Volcanic-island ABM (didactic sketch, not calibration). In Phase~1, the semantic cue is informative; in Phase~2, it becomes noise. Panel~A reports two measured quantities: semantic-cue effect in produced behaviour and mean learned semantic weight ($w$). Panel~B reports persistence of the category: similarity to the pre-switch boundary and consensus across agents. The qualitative signature is asymmetric: the semantic mechanism weakens while extensional category stability remains high.}
+\label{fig:volcano_drift}
+\end{figure}
+
+The measured pattern is straightforward. Once the semantic cue is randomized, its behavioural effect drops sharply. Mean $w$ declines, but doesn't snap to zero; a residual trace remains. At the same time, boundary similarity and consensus remain high.
+
+The interpretation is one step removed from the measurements. What we infer from this pattern is a shift in predictive load: from global semantic cueing to entrenched item-specific boundaries. That is precisely the volcanic-island claim~-- the volcano can go dormant while the island persists.
+
+Because the model is deliberately minimal, the warrant is limited. The ABM supports mechanism plausibility and clarifies expected signatures under perturbation. It doesn't by itself establish the Polish facts, estimate real historical trajectories, or calibrate effect sizes; those still come from corpus and behavioural evidence. The plotted curve is one seeded realization, and the code now ships run manifests so the signature can be audited across seeds rather than read as a single privileged trajectory. In practice this means favouring moderate population sizes with multi-seed summaries over extreme population sizes with thin per-agent learning.
 
 
 \section{Generalising the lesson}
@@ -409,7 +436,7 @@ This matters for several reasons.
 
 First, it legitimises mechanistic work as theory, not just description. A sceptic might object that studying entrenchment or alignment is interesting but atheoretical~-- mere data-gathering that falls short of explanation. The maintenance view says: no. The mechanisms \emph{are} the theory. Understanding how categories are maintained is understanding what makes them real. This is analogous to recognizing that natural selection isn't ``just'' a description of breeding patterns but the actual explanation of adaptation.
 
-Second, it provides cross-camp coherence. Researchers studying entrenchment, alignment, distributional learning, and iterated transmission are often working in different sub-fields with different terminologies. The maintenance view offers a unifying frame: all are studying maintenance mechanisms for the same kind of category. This isn't eclecticism~-- it's convergence. Different instruments trained on the same phenomenon. The framework doesn't adjudicate between mechanisms; it says that \emph{whichever} mechanisms actually maintain the cluster are the ones that matter. The question becomes empirical: which mechanisms predict? Chapter~\ref{ch:what-changes} shows how agent-based modelling provides one way to test such predictions computationally.
+Second, it provides cross-camp coherence. Researchers studying entrenchment, alignment, distributional learning, and iterated transmission are often working in different sub-fields with different terminologies. The maintenance view offers a unifying frame: all are studying maintenance mechanisms for the same kind of category. This isn't eclecticism~-- it's convergence. Different instruments trained on the same phenomenon. The framework doesn't adjudicate between mechanisms; it says that \emph{whichever} mechanisms actually maintain the cluster are the ones that matter. The question becomes empirical: which mechanisms predict? Section~\ref{sec:7:simulation-interlude} showed one agent-based route for testing such predictions computationally, and Chapter~\ref{ch:what-changes} turns that logic into explicit defeat conditions.
 
 Third, it reorients methodology. The maintenance view makes prediction the success criterion: does the mechanism predict behaviour? This changes what counts as evidence. Individual variation stops being noise to be averaged away and becomes signal: if different speakers show different patterns, that tells you something about how tightly the mechanisms are operating. The gradient nature of projectibility~-- strong at the core, weak at the periphery~-- is a feature of maintenance, not a defect of the category.
 

@@ -1,0 +1,93 @@
+{
+  "T": 240000,
+  "aggregate": {
+    "boundary_similarity_post_mean_mean": 0.9894469348042851,
+    "boundary_similarity_post_mean_sd": 0.000605097185498353,
+    "consensus_post_mean_mean": 0.8468877248096205,
+    "consensus_post_mean_sd": 0.001071900516044364,
+    "semantic_effect_post_mean_mean": 0.0011451420274512826,
+    "semantic_effect_post_mean_sd": 0.002417473790841327
+  },
+  "experiment": "volcano_seed_sensitivity",
+  "generated_utc": "2026-02-22T01:19:26.526139+00:00",
+  "n_agents": 2000,
+  "rows": [
+    {
+      "boundary_similarity_post_mean": 0.989018036230007,
+      "consensus_post_mean": 0.8467238138724601,
+      "seed": 1.0,
+      "semantic_effect_post_mean": 0.002295648825898407,
+      "semantic_effect_pre_mean": 0.3033748642578659,
+      "w_post_mean": 0.0946125143618126,
+      "w_pre_mean": 0.05590320732275067
+    },
+    {
+      "boundary_similarity_post_mean": 0.9905521975725248,
+      "consensus_post_mean": 0.8468716920111665,
+      "seed": 2.0,
+      "semantic_effect_post_mean": 0.0011255561746906996,
+      "semantic_effect_pre_mean": 0.2993725609686453,
+      "w_post_mean": 0.092952950875063,
+      "w_pre_mean": 0.05433950717817293
+    },
+    {
+      "boundary_similarity_post_mean": 0.9901580176248447,
+      "consensus_post_mean": 0.8485708769772956,
+      "seed": 3.0,
+      "semantic_effect_post_mean": -0.0007380268850973812,
+      "semantic_effect_pre_mean": 0.301539906977348,
+      "w_post_mean": 0.09380971587245095,
+      "w_pre_mean": 0.05547362932219232
+    },
+    {
+      "boundary_similarity_post_mean": 0.989395030232692,
+      "consensus_post_mean": 0.8486531206866175,
+      "seed": 4.0,
+      "semantic_effect_post_mean": -0.0014924221135467466,
+      "semantic_effect_pre_mean": 0.3007088229604148,
+      "w_post_mean": 0.09293375307750512,
+      "w_pre_mean": 0.05468597688094941
+    },
+    {
+      "boundary_similarity_post_mean": 0.989445906602608,
+      "consensus_post_mean": 0.8462530517450664,
+      "seed": 5.0,
+      "semantic_effect_post_mean": 0.0055845022734431335,
+      "semantic_effect_pre_mean": 0.3029829132917005,
+      "w_post_mean": 0.09286667334531057,
+      "w_pre_mean": 0.05345548482537123
+    },
+    {
+      "boundary_similarity_post_mean": 0.989303022566732,
+      "consensus_post_mean": 0.8464285839778268,
+      "seed": 6.0,
+      "semantic_effect_post_mean": 0.003790968020804458,
+      "semantic_effect_pre_mean": 0.3034297978108212,
+      "w_post_mean": 0.09400390180939325,
+      "w_pre_mean": 0.054606237319684676
+    },
+    {
+      "boundary_similarity_post_mean": 0.9892296350194597,
+      "consensus_post_mean": 0.8461442345250502,
+      "seed": 7.0,
+      "semantic_effect_post_mean": -0.0015362438504074238,
+      "semantic_effect_pre_mean": 0.3005966726775043,
+      "w_post_mean": 0.0926658712181794,
+      "w_pre_mean": 0.05446739667714664
+    },
+    {
+      "boundary_similarity_post_mean": 0.9884736325854132,
+      "consensus_post_mean": 0.8454564246814804,
+      "seed": 8.0,
+      "semantic_effect_post_mean": 0.00013115377382511378,
+      "semantic_effect_pre_mean": 0.30500573735805575,
+      "w_post_mean": 0.09429239593453818,
+      "w_pre_mean": 0.05490166955366245
+    }
+  ],
+  "seed_end": 8,
+  "seed_start": 1,
+  "t_switch": 120000,
+  "updates_per_agent": 120.0,
+  "window": 250
+}

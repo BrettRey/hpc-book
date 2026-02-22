@@ -1,0 +1,28 @@
+{
+  "assumptions": {
+    "anchor_decay_mode": "exogenous_schedule",
+    "individuation_scalar": true,
+    "threshold_licensing": true,
+    "turnover_mode": "tutor_bootstrap_finite_observation"
+  },
+  "experiment": "drift",
+  "final_phase": {
+    "a(n)": 0.18,
+    "agreement": 1.0,
+    "datum_frequency": 0.00013292279957849188,
+    "many": 1.0,
+    "three": 0.47
+  },
+  "generated_utc": "2026-02-22T01:24:03.600295+00:00",
+  "n_phases": 10,
+  "runtime": {
+    "expected_participations_per_agent": 420.0,
+    "interactions_per_step": 60,
+    "n_agents": 100,
+    "n_institutional": 5,
+    "n_phases": 10,
+    "steps_per_phase": 35,
+    "turnover_rate": 0.04
+  },
+  "seed": 42
+}

@@ -23,13 +23,23 @@ The model demonstrates:
 2. Functional anchoring as stabilizer (cattle stable with cow available)
 3. Why prescriptivism struggles (LEGO -> Legos despite corporate campaigns)
 
-STRESS TEST: The ablation experiment removes mechanisms and shows the pattern
-breaks, proving the results aren't automatic/tautological.
+Deliberate simplifications (important for interpretation):
+- Individuation is a single latent scalar per noun per agent.
+- Construction licensing is threshold-based (hard-coded tight-to-loose ordering).
+- Turnover uses tutor-sampled bootstrap learning, not a full child-style acquisition pipeline.
+- Anchor decay is an exogenous perturbation schedule, not inferred from corpus.
+- Large populations still need proportionally scaled interaction budgets; otherwise
+  agents are under-exposed and trajectories become artifacts of sparse updates.
+
+STRESS TEST: Ablation compares targeted mechanism removals to a baseline run.
+Use it as a sensitivity probe, not as proof.
 
 Usage:
     python countability_abm.py              # Run all experiments
     python countability_abm.py --exp=drift  # Run specific experiment
     python countability_abm.py --exp=ablation  # Run stress test
+    python countability_abm.py --exp=sensitivity --seed-start=1 --seed-end=50
+    python countability_abm.py --exp=drift --n-agents=2000 --interactions-scale=0.6
     python countability_abm.py --interactive  # Interactive exploration
 
 Author: Brett Reynolds / Claude Code
@@ -38,6 +48,9 @@ Date: January 2026
 
 import random
 import math
+import json
+from datetime import datetime, timezone
+from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple, Set
 from collections import defaultdict
@@ -53,6 +66,71 @@ except ImportError:
     HAS_MATPLOTLIB = False
     print("Note: matplotlib not available; text-based output only")
 
+try:
+    from plot_style import PALETTE, set_plot_style
+except ImportError:
+    # Fallback if plot_style isn't local
+    PALETTE = {
+        "blue": "#0072B2", "orange": "#E69F00", "green": "#009E73",
+        "vermillion": "#D55E00", "purple": "#CC79A7", "sky": "#56B4E9",
+        "yellow": "#F0E442", "gray": "#4D4D4D", "black": "#000000"
+    }
+    def set_plot_style():
+        if HAS_MATPLOTLIB:
+            plt.rcParams.update({
+                'font.family': 'serif',
+                'mathtext.fontset': 'cm',
+                'axes.labelsize': 10,
+                'axes.titlesize': 11,
+                'xtick.labelsize': 9,
+                'ytick.labelsize': 9,
+                'legend.fontsize': 9,
+                'figure.dpi': 300,
+                'lines.linewidth': 1.5,
+                'axes.grid': True,
+                'grid.linestyle': ':',
+                'grid.alpha': 0.6,
+                'axes.spines.top': False,
+                'axes.spines.right': False
+            })
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+CODE_DIR = Path(__file__).resolve().parent
+FIGURES_DIR = ROOT_DIR / 'figures'
+
+
+def _save_figure(fig, filename: str, dpi: int = 150):
+    """
+    Save figures to both `figures/` (used by LaTeX) and `code/` (local diagnostics).
+    """
+    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+
+    targets = [
+        FIGURES_DIR / filename,
+        CODE_DIR / filename,
+    ]
+    for path in targets:
+        fig.savefig(path, dpi=dpi)
+
+    print(f"\nPlot saved to: {FIGURES_DIR / filename}")
+
+
+def _save_manifest(filename: str, payload: Dict):
+    """
+    Save a lightweight run manifest alongside plots for reproducibility.
+    """
+    payload = dict(payload)
+    payload["generated_utc"] = datetime.now(timezone.utc).isoformat()
+
+    targets = [
+        FIGURES_DIR / filename,
+        CODE_DIR / filename,
+    ]
+    for path in targets:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, sort_keys=True)
+    print(f"Manifest saved to: {FIGURES_DIR / filename}")
 
 # =============================================================================
 # CORE DATA STRUCTURES
@@ -214,7 +292,8 @@ class Agent:
 
         Args:
             noun: The noun to use
-            communicative_intent: 'singleton', 'exact_small', 'vague_many', or 'existence'
+            communicative_intent: 'singleton', 'exact_small', 'vague_many',
+                                 'existence', or 'mass_quantity'
             world: The simulation world (for accessing singulatives)
 
         Returns:
@@ -246,10 +325,19 @@ class Agent:
         if noun_spec and noun_spec.has_singulative:
             sing = noun_spec.singulative_name
             if sing and sing in self.lexicon:
-                for construction in preferred:
-                    if self.can_use_construction(sing, construction):
-                        self.production_history.append((sing, construction))
-                        return (sing, construction)
+                # Retrieval of the singulative weakens as that form drops out of usage.
+                sing_available = True
+                if world.use_anchor_retrieval:
+                    sing_spec = world.get_noun_spec(sing)
+                    availability = sing_spec.frequency_weight if sing_spec else 1.0
+                    availability = max(0.0, min(1.0, availability))
+                    sing_available = random.random() < availability
+
+                if sing_available:
+                    for construction in preferred:
+                        if self.can_use_construction(sing, construction):
+                            self.production_history.append((sing, construction))
+                            return (sing, construction)
 
         # Second fallback: try mass construction if count failed
         if communicative_intent != 'mass_quantity':
@@ -355,7 +443,8 @@ class World:
         self,
         n_agents: int = 100,
         n_institutional: int = 5,
-        random_seed: Optional[int] = None
+        random_seed: Optional[int] = None,
+        use_anchor_retrieval: bool = True
     ):
         if random_seed is not None:
             random.seed(random_seed)
@@ -363,6 +452,7 @@ class World:
         self.noun_specs: Dict[str, NounSpec] = {}
         self.agents: List[Agent] = []
         self.n_institutional = n_institutional
+        self.use_anchor_retrieval = use_anchor_retrieval
         self.time_step = 0
 
         # Statistics tracking
@@ -387,14 +477,14 @@ class World:
             NounSpec('poultry', 0.50, has_singulative=True, singulative_name='chicken'),
 
             # Unstable intermediate (no anchor)
-            NounSpec('folks', 0.60, has_singulative=False),
+            NounSpec('folks', 0.82, has_singulative=False),
 
             # Drifting (dying anchor) - starts high because historically count
             NounSpec('data', 0.88, has_singulative=True, singulative_name='datum',
                     is_institutional_target=True, institutional_preference='count'),
 
             # Corporate target
-            NounSpec('lego', 0.85, has_singulative=False,
+            NounSpec('lego', 0.93, has_singulative=False,
                     is_institutional_target=True, institutional_preference='mass'),
 
             # Fully mass
@@ -420,7 +510,8 @@ class World:
             lexicon = {}
             for name, spec in self.noun_specs.items():
                 # Add some individual variation
-                ind = spec.initial_individuation + random.gauss(0, 0.05)
+                sigma = 0.10 if name == 'folks' else 0.05
+                ind = spec.initial_individuation + random.gauss(0, sigma)
                 ind = max(0.0, min(1.0, ind))
                 lexicon[name] = NounProfile(individuation=ind)
 
@@ -458,6 +549,31 @@ class World:
                 return noun
         return nouns[-1]  # Fallback
 
+    def _sample_intent(self, noun: str, speaker: Agent) -> str:
+        """
+        Sample communicative intent conditioned on the noun's current profile.
+
+        High-individuation nouns are usually discussed in count-like contexts.
+        Lower-individuation nouns are more likely to occur in mass-quantity uses.
+        This coupling is a deliberate modeling assumption (not learned).
+        """
+        intents = ['singleton', 'exact_small', 'vague_many', 'existence', 'mass_quantity']
+
+        if noun not in speaker.lexicon:
+            return random.choice(intents)
+
+        ind = speaker.lexicon[noun].individuation
+        if ind >= 0.85:
+            weights = [0.38, 0.25, 0.22, 0.13, 0.02]
+        elif ind >= 0.65:
+            weights = [0.24, 0.20, 0.28, 0.18, 0.10]
+        elif ind >= 0.45:
+            weights = [0.12, 0.12, 0.30, 0.26, 0.20]
+        else:
+            weights = [0.05, 0.05, 0.20, 0.30, 0.40]
+
+        return random.choices(intents, weights=weights, k=1)[0]
+
     def step(self, interactions_per_step: int = 50):
         """
         Run one time step of the simulation.
@@ -476,8 +592,8 @@ class World:
             # Pick a noun to talk about (weighted by frequency)
             noun = self._sample_noun_by_frequency()
 
-            # Pick a communicative intent (includes mass path)
-            intent = random.choice(['singleton', 'exact_small', 'vague_many', 'existence', 'mass_quantity'])
+            # Pick a communicative intent conditioned by current noun profile.
+            intent = self._sample_intent(noun, speaker)
 
             # Speaker produces
             result = speaker.produce(noun, intent, self)
@@ -568,25 +684,24 @@ class World:
         """
         Replace some agents with new learners (simulates acquisition/transmission).
 
-        New learners initialize their lexicons based on the current community
-        distribution, with some noise. This implements multi-timescale
-        maintenance: the slow loop of acquisition transmits patterns to
-        new learners who then participate in the fast loop.
+        New learners begin with weak priors and then bootstrap from finite tutor
+        exposure. This implements multi-timescale maintenance: the slow loop of
+        transmission introduces fresh learners who then participate in the fast
+        interaction loop.
+
+        Important caveat:
+        This is still a simplification. Learners observe tutor productions in a
+        compressed synthetic stream; this is not a full developmental model.
 
         Args:
             turnover_rate: Proportion of agents replaced per call (default 5%)
         """
-        n_replace = max(1, int(len(self.agents) * turnover_rate))
+        if turnover_rate <= 0:
+            return
 
-        # Compute current community means for each noun
-        community_means = {}
-        for noun in self.noun_specs.keys():
-            ind_values = [a.lexicon[noun].individuation for a in self.agents
-                         if noun in a.lexicon]
-            if ind_values:
-                community_means[noun] = sum(ind_values) / len(ind_values)
-            else:
-                community_means[noun] = self.noun_specs[noun].initial_individuation
+        n_replace = int(len(self.agents) * turnover_rate)
+        if n_replace < 1:
+            n_replace = 1
 
         # Replace random (non-institutional) agents
         replaceable = [i for i, a in enumerate(self.agents) if not a.is_institutional]
@@ -596,11 +711,12 @@ class World:
         to_replace = random.sample(replaceable, n_replace)
 
         for idx in to_replace:
-            # Create new agent with lexicon based on community means + noise
+            # Weak-prior learner (not initialized to adult means)
             lexicon = {}
-            for name in self.noun_specs.keys():
-                # New learner acquires from community with acquisition noise
-                ind = community_means[name] + random.gauss(0, 0.08)
+            for name, spec in self.noun_specs.items():
+                # Broad prior around type-level starting profile.
+                # This is intentionally noisier and less informed than adults.
+                ind = spec.initial_individuation + random.gauss(0, 0.18)
                 ind = max(0.0, min(1.0, ind))
                 lexicon[name] = NounProfile(individuation=ind)
 
@@ -608,8 +724,30 @@ class World:
                 agent_id=self.agents[idx].id,
                 lexicon=lexicon,
                 is_institutional=False,
-                learning_rate=0.05  # New learners learn faster initially
+                learning_rate=0.06
             )
+
+            # Bootstrap from a finite sample of tutor speech events.
+            candidate_tutors = [
+                i for i, a in enumerate(self.agents)
+                if i != idx and not a.is_institutional
+            ]
+            if len(candidate_tutors) < 4:
+                candidate_tutors = [i for i in range(len(self.agents)) if i != idx]
+
+            tutor_k = min(8, len(candidate_tutors))
+            tutors = random.sample(candidate_tutors, tutor_k)
+
+            observations = 120
+            for _ in range(observations):
+                tutor = self.agents[random.choice(tutors)]
+                noun = self._sample_noun_by_frequency()
+                intent = self._sample_intent(noun, tutor)
+                produced = tutor.produce(noun, intent, self)
+                if produced:
+                    produced_noun, construction = produced
+                    new_agent.observe(produced_noun, construction)
+
             self.agents[idx] = new_agent
 
     def get_community_profile(self, noun: str) -> Dict[str, float]:
@@ -664,6 +802,80 @@ class World:
 # EXPERIMENTS
 # =============================================================================
 
+def _resolve_institutional_count(n_agents: int, n_institutional: Optional[int]) -> int:
+    """Default institutional share is 5%, with a floor of 5."""
+    if n_agents <= 0:
+        raise ValueError("n_agents must be > 0")
+    if n_institutional is None:
+        return max(5, int(round(0.05 * n_agents)))
+    if n_institutional < 0:
+        raise ValueError("n_institutional must be >= 0")
+    if n_institutional > n_agents:
+        raise ValueError("n_institutional cannot exceed n_agents")
+    return n_institutional
+
+
+def _resolve_interactions_per_step(
+    n_agents: int,
+    interactions_per_step: Optional[int],
+    interactions_scale: float
+) -> int:
+    """
+    Keep interaction budget proportional to population size by default.
+    With default scale 0.6 and n_agents=100, this recovers the original 60.
+    """
+    if n_agents <= 0:
+        raise ValueError("n_agents must be > 0")
+    if interactions_per_step is not None:
+        if interactions_per_step <= 0:
+            raise ValueError("interactions_per_step must be > 0")
+        return interactions_per_step
+    if interactions_scale <= 0:
+        raise ValueError("interactions_scale must be > 0")
+    return max(1, int(round(interactions_scale * n_agents)))
+
+
+def _run_data_drift_protocol(
+    world: World,
+    n_phases: int = 10,
+    steps_per_phase: int = 35,
+    interactions_per_step: int = 60,
+    turnover_rate: float = 0.04,
+    apply_datum_decay: bool = True
+) -> List[Dict[str, float]]:
+    """
+    Shared protocol for the data-drift experiment and its ablations.
+    """
+    phase_data: List[Dict[str, float]] = []
+
+    for phase in range(n_phases):
+        if apply_datum_decay:
+            for _ in range(4):
+                world.perturb_singulative_availability('datum', decay_rate=0.20)
+
+        world.run(n_steps=steps_per_phase, interactions_per_step=interactions_per_step)
+        if turnover_rate > 0:
+            world.generational_turnover(turnover_rate=turnover_rate)
+
+        data_profile = world.get_community_profile('data')
+        data_ind_mean = sum(a.lexicon['data'].individuation for a in world.agents) / len(world.agents)
+        datum_ind_mean = sum(a.lexicon['datum'].individuation for a in world.agents) / len(world.agents)
+        datum_frequency = world.noun_specs['datum'].frequency_weight
+
+        phase_data.append({
+            'phase': phase + 1,
+            'a(n)': data_profile['a(n)'],
+            'three': data_profile['three'],
+            'many': data_profile['many'],
+            'agreement': data_profile['agreement'],
+            'much': data_profile['much'],
+            'data_ind_mean': data_ind_mean,
+            'datum_ind_mean': datum_ind_mean,
+            'datum_frequency': datum_frequency,
+        })
+
+    return phase_data
+
 def experiment_baseline(seed: int = 42) -> World:
     """
     Baseline: Verify the initial hierarchy matches Chapter 9's predictions.
@@ -686,7 +898,17 @@ def experiment_baseline(seed: int = 42) -> World:
     return world
 
 
-def experiment_data_drift(seed: int = 42, visualize: bool = True) -> World:
+def experiment_data_drift(
+    seed: int = 42,
+    visualize: bool = True,
+    n_agents: int = 100,
+    n_institutional: Optional[int] = None,
+    n_phases: int = 10,
+    steps_per_phase: int = 35,
+    interactions_per_step: Optional[int] = None,
+    interactions_scale: float = 0.6,
+    turnover_rate: float = 0.04,
+) -> World:
     """
     Experiment 1: Data drift as datum dies.
 
@@ -696,47 +918,60 @@ def experiment_data_drift(seed: int = 42, visualize: bool = True) -> World:
     print("\n" + "="*70)
     print("EXPERIMENT: Data Drift (Tight-Before-Loose Erosion)")
     print("="*70)
-    print("\nSimulating the death of 'datum' and observing 'data' drift toward mass.")
-    print("Prediction: tight properties (a(n), cardinals) erode before loose (agreement).")
+    print("\nSimulating the death of 'datum' and tracking how 'data' rebalances.")
+    print("Prediction: tight properties (a(n), cardinals) erode earlier than loose ones.")
 
-    world = World(n_agents=100, random_seed=seed)
+    n_institutional_eff = _resolve_institutional_count(n_agents, n_institutional)
+    interactions_per_step_eff = _resolve_interactions_per_step(
+        n_agents=n_agents,
+        interactions_per_step=interactions_per_step,
+        interactions_scale=interactions_scale,
+    )
+    expected_participations = (
+        2.0 * n_phases * steps_per_phase * interactions_per_step_eff / float(n_agents)
+    )
+
+    print(
+        f"\nRuntime config: N={n_agents}, institutional={n_institutional_eff}, "
+        f"phases={n_phases}, steps/phase={steps_per_phase}, interactions/step={interactions_per_step_eff}, "
+        f"expected participations/agent={expected_participations:.1f}"
+    )
+
+    world = World(
+        n_agents=n_agents,
+        n_institutional=n_institutional_eff,
+        random_seed=seed,
+        use_anchor_retrieval=True
+    )
 
     # Initial state
     print("\nInitial state of 'data':")
     print(world.get_community_profile('data'))
 
-    # Run with progressive datum decay
-    n_phases = 8
-    steps_per_phase = 25
+    phase_data = _run_data_drift_protocol(
+        world,
+        n_phases=n_phases,
+        steps_per_phase=steps_per_phase,
+        interactions_per_step=interactions_per_step_eff,
+        turnover_rate=turnover_rate,
+    )
 
-    phase_data = []
-
-    for phase in range(n_phases):
-        print(f"\n--- Phase {phase + 1}: datum availability declining ---")
-
-        # Decay datum availability (frequency-based, no manual outcome nudge)
-        for _ in range(4):
-            world.perturb_singulative_availability('datum', decay_rate=0.20)
-
-        # Run interactions + generational turnover (transmission mechanism)
-        world.run(n_steps=steps_per_phase, interactions_per_step=50)
-        world.generational_turnover(turnover_rate=0.03)  # 3% per phase
-
-        datum_mean_ind = sum(a.lexicon['datum'].individuation for a in world.agents) / len(world.agents)
-        profile = world.get_community_profile('data')
-        phase_data.append(profile)
-
-        print(f"  a(n): {profile['a(n)']:.2%}")
-        print(f"  three: {profile['three']:.2%}")
-        print(f"  many: {profile['many']:.2%}")
-        print(f"  agreement: {profile['agreement']:.2%}")
-        print(f"  much: {profile['much']:.2%}")
-        print(f"  (datum frequency: {world.noun_specs['datum'].frequency_weight:.3f})")
+    for phase in phase_data:
+        print(f"\n--- Phase {phase['phase']}: datum availability declining ---")
+        print(f"  data individuation mean: {phase['data_ind_mean']:.3f}")
+        print(f"  datum individuation mean: {phase['datum_ind_mean']:.3f}")
+        print(f"  a(n): {phase['a(n)']:.2%}")
+        print(f"  three: {phase['three']:.2%}")
+        print(f"  many: {phase['many']:.2%}")
+        print(f"  agreement: {phase['agreement']:.2%}")
+        print(f"  much: {phase['much']:.2%}")
+        print(f"  (datum frequency: {phase['datum_frequency']:.3f})")
 
     print("\n" + "-"*50)
-    print("RESULT: Tight-before-loose erosion pattern:")
-    print("  - a(n) and cardinals should decline first")
-    print("  - agreement should be last to decline")
+    print("RESULT (single-seed diagnostic):")
+    print("  - a(n) and cardinals typically fall earlier and faster in this setup")
+    print("  - many/agreement remain comparatively robust in this run window")
+    print("  - Use --exp=sensitivity for multi-seed uncertainty summaries")
     print("-"*50)
 
     # Final matrix
@@ -746,6 +981,39 @@ def experiment_data_drift(seed: int = 42, visualize: bool = True) -> World:
     # Visualization
     if visualize and HAS_MATPLOTLIB:
         _plot_drift_experiment(phase_data)
+
+    if phase_data:
+        final = phase_data[-1]
+        _save_manifest(
+            "data_drift_experiment_manifest.json",
+            {
+                "experiment": "drift",
+                "seed": seed,
+                "n_phases": len(phase_data),
+                "assumptions": {
+                    "individuation_scalar": True,
+                    "threshold_licensing": True,
+                    "turnover_mode": "tutor_bootstrap_finite_observation",
+                    "anchor_decay_mode": "exogenous_schedule",
+                },
+                "runtime": {
+                    "n_agents": n_agents,
+                    "n_institutional": n_institutional_eff,
+                    "n_phases": n_phases,
+                    "steps_per_phase": steps_per_phase,
+                    "interactions_per_step": interactions_per_step_eff,
+                    "turnover_rate": turnover_rate,
+                    "expected_participations_per_agent": expected_participations,
+                },
+                "final_phase": {
+                    "a(n)": final["a(n)"],
+                    "three": final["three"],
+                    "many": final["many"],
+                    "agreement": final["agreement"],
+                    "datum_frequency": final["datum_frequency"],
+                },
+            },
+        )
 
     return world
 
@@ -797,8 +1065,14 @@ def experiment_functional_anchoring(seed: int = 42) -> Tuple[World, World]:
 
     print("\n" + "-"*50)
     print("RESULT: Without functional anchor:")
-    print("  - Expect pressure toward regularization (tight properties emerging)")
-    print("  - Or increased avoidance/measure strategies")
+    delta_three = profile_b['three'] - profile_a['three']
+    delta_many = profile_b['many'] - profile_a['many']
+    print(f"  - Delta three(cattle): {delta_three:+.2%}")
+    print(f"  - Delta many(cattle):  {delta_many:+.2%}")
+    if abs(delta_three) < 0.05 and abs(delta_many) < 0.05:
+        print("  - In this run, anchor removal has only a mild short-horizon effect")
+    else:
+        print("  - Anchor removal shifts the quasi-count profile within this horizon")
     print("-"*50)
 
     return world_a, world_b
@@ -815,8 +1089,8 @@ def experiment_prescriptivism(seed: int = 42, visualize: bool = True) -> World:
     print("EXPERIMENT: Prescriptivism vs. Cognitive Pressure (LEGO)")
     print("="*70)
     print("\nSimulating 40 years of LEGO Group's campaign against 'Legos'.")
-    print("Prediction: Unless institutional feedback is unrealistically strong,")
-    print("           count construal wins because objects are discrete.")
+    print("Prediction: institutional pressure and discrete-object construal pull in")
+    print("            opposite directions, with tight vs. loose properties separating.")
 
     world = World(n_agents=100, n_institutional=10, random_seed=seed)
 
@@ -846,9 +1120,15 @@ def experiment_prescriptivism(seed: int = 42, visualize: bool = True) -> World:
 
     print("\n" + "-"*50)
     print("RESULT:")
-    print("  - Discrete objects exert strong pressure toward count construal")
-    print("  - Institutional feedback slows but rarely reverses this")
-    print("  - This is why 'Legos' persists despite corporate campaigns")
+    start = phase_data[0]
+    end = phase_data[-1]
+    if end['a(n)'] < start['a(n)'] or end['three'] < start['three']:
+        print("  - Institutional pressure suppresses tight count packaging over time")
+        print("  - Even so, loose count behavior (many/agreement) remains highly stable")
+    else:
+        print("  - Discrete-object pressure keeps count packaging resilient")
+        print("  - Institutional pressure can slow, but not eliminate, count usage")
+    print("  - The model captures tension, not categorical victory by either side")
     print("-"*50)
 
     if visualize and HAS_MATPLOTLIB:
@@ -906,98 +1186,121 @@ def experiment_folks_instability(seed: int = 42) -> World:
 
     print("\n" + "-"*50)
     print("RESULT:")
-    print("  - 'folks' shows higher inter-speaker variation")
-    print("  - 'three folks' acceptance is split (some accept, some reject)")
-    print("  - This matches the corpus data: 'three folks' is suppressed 8.6x")
+    print("  - 'folks' shows higher inter-speaker variation than canonical count nouns")
+    if 0.1 < (three_folks / n_agents) < 0.9:
+        print("  - 'three folks' is genuinely split across speakers")
+    else:
+        print("  - In this run, 'three folks' is mostly one-sided; seed effects remain")
+    print("  - The model still predicts weaker tight-lock behavior for 'folks'")
     print("-"*50)
 
     return world
 
 
-def experiment_mechanism_ablation(seed: int = 42) -> Dict[str, World]:
+def experiment_mechanism_ablation(
+    seed: int = 42,
+    n_agents: int = 100,
+    n_institutional: Optional[int] = None,
+    n_phases: int = 10,
+    steps_per_phase: int = 35,
+    interactions_per_step: Optional[int] = None,
+    interactions_scale: float = 0.6,
+    turnover_rate: float = 0.04,
+) -> Dict[str, World]:
     """
-    STRESS TEST: Mechanism ablation to prove results aren't automatic.
+    STRESS TEST: Mechanism ablation as a sensitivity check.
 
-    This experiment removes key mechanisms and shows the predicted pattern breaks:
-    1. Remove entrenchment → tight-before-loose ordering degrades
-    2. Remove anchoring → quasi-count nouns destabilize
-
-    This is the "control" that shows the model isn't tautological.
+    This compares drift trajectories under targeted mechanism removals.
+    Interpretation should remain cautious for single-seed runs.
     """
     print("\n" + "="*70)
     print("STRESS TEST: Mechanism Ablation")
     print("="*70)
-    print("\nRemoving mechanisms to show the pattern isn't automatic.")
-    print("If the model were tautological, ablation wouldn't change outcomes.")
+    print("\nComparing drift trajectories under targeted ablations.")
+    print("Read this as a sensitivity check, not a proof.")
 
     results = {}
+    n_institutional_eff = _resolve_institutional_count(n_agents, n_institutional)
+    interactions_per_step_eff = _resolve_interactions_per_step(
+        n_agents=n_agents,
+        interactions_per_step=interactions_per_step,
+        interactions_scale=interactions_scale,
+    )
 
-    # --- Ablation 1: Remove entrenchment ---
+    # --- Baseline (all mechanisms on) ---
     print("\n" + "-"*50)
-    print("ABLATION 1: Disable entrenchment (chunking)")
+    print("BASELINE: Drift with anchor decay + learning + retrieval constraints")
     print("-"*50)
-    print("Without entrenchment, high-frequency patterns shouldn't resist change.")
+    world_baseline = World(
+        n_agents=n_agents,
+        n_institutional=n_institutional_eff,
+        random_seed=seed,
+        use_anchor_retrieval=True
+    )
+    _run_data_drift_protocol(
+        world_baseline,
+        n_phases=n_phases,
+        steps_per_phase=steps_per_phase,
+        interactions_per_step=interactions_per_step_eff,
+        turnover_rate=turnover_rate,
+    )
+    baseline = world_baseline.get_community_profile('data')
+    print(f"  data a(n): {baseline['a(n)']:.2%}, three: {baseline['three']:.2%}")
+    print(f"  data many: {baseline['many']:.2%}, agreement: {baseline['agreement']:.2%}")
+    results['baseline'] = world_baseline
 
-    world_no_ent = World(n_agents=100, random_seed=seed)
-
-    # Disable entrenchment by setting rate to 0 for all agents
-    for agent in world_no_ent.agents:
-        agent.entrenchment_rate = 0.0
-
-    # Run the data drift scenario
-    for phase in range(6):
-        for _ in range(4):
-            world_no_ent.perturb_singulative_availability('datum', decay_rate=0.20)
-        world_no_ent.run(n_steps=25, interactions_per_step=50)
-        world_no_ent.generational_turnover(turnover_rate=0.03)
-
-    profile = world_no_ent.get_community_profile('data')
-    print(f"\n'data' after drift (NO entrenchment):")
-    print(f"  a(n): {profile['a(n)']:.2%}, three: {profile['three']:.2%}")
-    print(f"  many: {profile['many']:.2%}, agreement: {profile['agreement']:.2%}")
-
-    # Check if cattle destabilized without entrenchment protecting 'many cattle'
-    cattle_profile = world_no_ent.get_community_profile('cattle')
-    print(f"\n'cattle' stability (NO entrenchment):")
-    print(f"  many: {cattle_profile['many']:.2%} (should be lower without chunking protection)")
-
-    results['no_entrenchment'] = world_no_ent
-
-    # --- Ablation 2: Remove functional anchoring ---
+    # --- Ablation 1: Remove anchor-retrieval gating ---
     print("\n" + "-"*50)
-    print("ABLATION 2: Remove functional anchors")
+    print("ABLATION 1: Disable anchor-retrieval constraints")
     print("-"*50)
-    print("Without anchors, quasi-count nouns should face regularization pressure.")
+    print("Singulative fallback remains available even as token frequency decays.")
+    world_no_anchor_retrieval = World(
+        n_agents=n_agents,
+        n_institutional=n_institutional_eff,
+        random_seed=seed,
+        use_anchor_retrieval=False
+    )
+    _run_data_drift_protocol(
+        world_no_anchor_retrieval,
+        n_phases=n_phases,
+        steps_per_phase=steps_per_phase,
+        interactions_per_step=interactions_per_step_eff,
+        turnover_rate=turnover_rate,
+    )
+    no_anchor_retrieval = world_no_anchor_retrieval.get_community_profile('data')
+    print(f"  data a(n): {no_anchor_retrieval['a(n)']:.2%}, three: {no_anchor_retrieval['three']:.2%}")
+    print(f"  data many: {no_anchor_retrieval['many']:.2%}, agreement: {no_anchor_retrieval['agreement']:.2%}")
+    print("  Delta vs baseline:")
+    print(f"    a(n): {no_anchor_retrieval['a(n)'] - baseline['a(n)']:+.2%}")
+    print(f"    three: {no_anchor_retrieval['three'] - baseline['three']:+.2%}")
+    results['no_anchor_retrieval'] = world_no_anchor_retrieval
 
-    world_no_anchor = World(n_agents=100, random_seed=seed)
-
-    # Remove all singulative anchors
-    for spec in world_no_anchor.noun_specs.values():
-        spec.has_singulative = False
-        spec.singulative_name = None
-
-    # Also make singulatives unavailable in agent lexicons
-    for agent in world_no_anchor.agents:
-        for sing in ['cow', 'officer', 'chicken', 'datum']:
-            if sing in agent.lexicon:
-                agent.lexicon[sing].individuation = 0.0
-
-    # Run for a while to see if cattle/police regularize
-    for _ in range(8):
-        world_no_anchor.run(n_steps=30, interactions_per_step=50)
-        world_no_anchor.generational_turnover(turnover_rate=0.05)
-
-    cattle_no_anchor = world_no_anchor.get_community_profile('cattle')
-    police_no_anchor = world_no_anchor.get_community_profile('police')
-
-    print(f"\n'cattle' without anchor 'cow':")
-    print(f"  a(n): {cattle_no_anchor['a(n)']:.2%}, three: {cattle_no_anchor['three']:.2%}")
-    print(f"  many: {cattle_no_anchor['many']:.2%}")
-    print(f"\n'police' without anchor 'officer':")
-    print(f"  a(n): {police_no_anchor['a(n)']:.2%}, three: {police_no_anchor['three']:.2%}")
-    print(f"  many: {police_no_anchor['many']:.2%}")
-
-    results['no_anchoring'] = world_no_anchor
+    # --- Ablation 2: Remove the anchor perturbation itself ---
+    print("\n" + "-"*50)
+    print("ABLATION 2: No datum decay")
+    print("-"*50)
+    print("The anchor remains available; drift should attenuate.")
+    world_no_decay = World(
+        n_agents=n_agents,
+        n_institutional=n_institutional_eff,
+        random_seed=seed,
+        use_anchor_retrieval=True
+    )
+    _run_data_drift_protocol(
+        world_no_decay,
+        n_phases=n_phases,
+        steps_per_phase=steps_per_phase,
+        interactions_per_step=interactions_per_step_eff,
+        turnover_rate=turnover_rate,
+        apply_datum_decay=False,
+    )
+    no_decay = world_no_decay.get_community_profile('data')
+    print(f"  data a(n): {no_decay['a(n)']:.2%}, three: {no_decay['three']:.2%}")
+    print(f"  data many: {no_decay['many']:.2%}, agreement: {no_decay['agreement']:.2%}")
+    print("  Delta vs baseline:")
+    print(f"    a(n): {no_decay['a(n)'] - baseline['a(n)']:+.2%}")
+    print(f"    three: {no_decay['three'] - baseline['three']:+.2%}")
+    results['no_decay'] = world_no_decay
 
     # --- Ablation 3: Remove bidirectional inference ---
     print("\n" + "-"*50)
@@ -1005,37 +1308,254 @@ def experiment_mechanism_ablation(seed: int = 42) -> Dict[str, World]:
     print("-"*50)
     print("Without bidirectional inference, the system should be static.")
 
-    world_frozen = World(n_agents=100, random_seed=seed)
+    world_frozen = World(
+        n_agents=n_agents,
+        n_institutional=n_institutional_eff,
+        random_seed=seed,
+        use_anchor_retrieval=True
+    )
 
     # Freeze learning by setting rate to 0
     for agent in world_frozen.agents:
         agent.learning_rate = 0.0
 
-    initial_cattle = world_frozen.get_community_profile('cattle')
+    initial_data = world_frozen.get_community_profile('data')
+    _run_data_drift_protocol(
+        world_frozen,
+        n_phases=n_phases,
+        steps_per_phase=steps_per_phase,
+        interactions_per_step=interactions_per_step_eff,
+        turnover_rate=0.0,
+    )
+    final_data = world_frozen.get_community_profile('data')
 
-    # Run interactions (should have no effect)
-    world_frozen.run(n_steps=100, interactions_per_step=50)
-
-    final_cattle = world_frozen.get_community_profile('cattle')
-
-    print(f"\n'cattle' before interactions: many={initial_cattle['many']:.2%}")
-    print(f"'cattle' after 100 steps:     many={final_cattle['many']:.2%}")
-    print(f"Change: {abs(final_cattle['many'] - initial_cattle['many']):.2%}")
-    print("(Should be ~0% if learning is truly disabled)")
+    print(f"  data a(n): start={initial_data['a(n)']:.2%}, end={final_data['a(n)']:.2%}")
+    print(f"  data three: start={initial_data['three']:.2%}, end={final_data['three']:.2%}")
+    print(f"  Delta a(n): {final_data['a(n)'] - initial_data['a(n)']:+.2%}")
+    print(f"  Delta three: {final_data['three'] - initial_data['three']:+.2%}")
 
     results['frozen'] = world_frozen
 
     print("\n" + "-"*50)
-    print("ABLATION SUMMARY")
+    print("ABLATION SUMMARY (single-seed)")
     print("-"*50)
-    print("The ablations show that specific mechanisms produce specific effects:")
-    print("  - Entrenchment protects high-frequency patterns")
-    print("  - Functional anchors stabilize quasi-count equilibria")
-    print("  - Bidirectional inference drives the dynamics")
-    print("Without these mechanisms, the HPC pattern degrades or disappears.")
+    print("These contrasts are informative but seed-sensitive:")
+    print("  - Anchor retrieval constraints can amplify tight-lock erosion")
+    print("  - Without anchor decay, erosion often attenuates")
+    print("  - Without learning, drift is strongly reduced")
+    print("Run --exp=sensitivity for cross-seed sign consistency.")
     print("-"*50)
 
+    _save_manifest(
+        "data_drift_ablation_manifest.json",
+        {
+            "experiment": "ablation",
+            "seed": seed,
+            "runtime": {
+                "n_agents": n_agents,
+                "n_institutional": n_institutional_eff,
+                "n_phases": n_phases,
+                "steps_per_phase": steps_per_phase,
+                "interactions_per_step": interactions_per_step_eff,
+                "turnover_rate": turnover_rate,
+                "expected_participations_per_agent": (
+                    2.0 * n_phases * steps_per_phase * interactions_per_step_eff / float(n_agents)
+                ),
+            },
+            "baseline": baseline,
+            "no_anchor_retrieval": no_anchor_retrieval,
+            "no_decay": no_decay,
+            "frozen_initial": initial_data,
+            "frozen_final": final_data,
+        },
+    )
+
     return results
+
+
+def experiment_seed_sensitivity(
+    seed_start: int = 1,
+    seed_end: int = 20,
+    n_agents: int = 100,
+    n_institutional: Optional[int] = None,
+    n_phases: int = 10,
+    steps_per_phase: int = 35,
+    interactions_per_step: Optional[int] = None,
+    interactions_scale: float = 0.6,
+    turnover_rate: float = 0.04,
+) -> List[Dict[str, float]]:
+    """
+    Multi-seed sensitivity summary for drift + ablations.
+
+    Reports effect-size ranges and sign consistency so chapter claims are not
+    anchored to a single random seed.
+    """
+    if seed_end < seed_start:
+        raise ValueError("seed_end must be >= seed_start")
+
+    n_institutional_eff = _resolve_institutional_count(n_agents, n_institutional)
+    interactions_per_step_eff = _resolve_interactions_per_step(
+        n_agents=n_agents,
+        interactions_per_step=interactions_per_step,
+        interactions_scale=interactions_scale,
+    )
+    expected_participations = (
+        2.0 * n_phases * steps_per_phase * interactions_per_step_eff / float(n_agents)
+    )
+
+    rows: List[Dict[str, float]] = []
+    seeds = list(range(seed_start, seed_end + 1))
+
+    print("\n" + "=" * 70)
+    print("SENSITIVITY: Multi-Seed Drift + Ablation Summary")
+    print("=" * 70)
+    print(f"Running seeds {seed_start}..{seed_end} ({len(seeds)} runs)")
+    print(
+        f"Runtime config: N={n_agents}, institutional={n_institutional_eff}, "
+        f"phases={n_phases}, steps/phase={steps_per_phase}, interactions/step={interactions_per_step_eff}, "
+        f"expected participations/agent={expected_participations:.1f}"
+    )
+
+    for seed in seeds:
+        # Baseline drift
+        w_base = World(
+            n_agents=n_agents,
+            n_institutional=n_institutional_eff,
+            random_seed=seed,
+            use_anchor_retrieval=True
+        )
+        _run_data_drift_protocol(
+            w_base,
+            n_phases=n_phases,
+            steps_per_phase=steps_per_phase,
+            interactions_per_step=interactions_per_step_eff,
+            turnover_rate=turnover_rate,
+        )
+        base = w_base.get_community_profile("data")
+
+        # No anchor retrieval
+        w_no_anchor = World(
+            n_agents=n_agents,
+            n_institutional=n_institutional_eff,
+            random_seed=seed,
+            use_anchor_retrieval=False
+        )
+        _run_data_drift_protocol(
+            w_no_anchor,
+            n_phases=n_phases,
+            steps_per_phase=steps_per_phase,
+            interactions_per_step=interactions_per_step_eff,
+            turnover_rate=turnover_rate,
+        )
+        no_anchor = w_no_anchor.get_community_profile("data")
+
+        # No anchor decay
+        w_no_decay = World(
+            n_agents=n_agents,
+            n_institutional=n_institutional_eff,
+            random_seed=seed,
+            use_anchor_retrieval=True
+        )
+        _run_data_drift_protocol(
+            w_no_decay,
+            n_phases=n_phases,
+            steps_per_phase=steps_per_phase,
+            interactions_per_step=interactions_per_step_eff,
+            turnover_rate=turnover_rate,
+            apply_datum_decay=False,
+        )
+        no_decay = w_no_decay.get_community_profile("data")
+
+        # Frozen learning
+        w_frozen = World(
+            n_agents=n_agents,
+            n_institutional=n_institutional_eff,
+            random_seed=seed,
+            use_anchor_retrieval=True
+        )
+        for agent in w_frozen.agents:
+            agent.learning_rate = 0.0
+        frozen_start = w_frozen.get_community_profile("data")
+        _run_data_drift_protocol(
+            w_frozen,
+            n_phases=n_phases,
+            steps_per_phase=steps_per_phase,
+            interactions_per_step=interactions_per_step_eff,
+            turnover_rate=0.0,
+        )
+        frozen_end = w_frozen.get_community_profile("data")
+
+        rows.append(
+            {
+                "seed": float(seed),
+                "baseline_a(n)": base["a(n)"],
+                "baseline_three": base["three"],
+                "baseline_many": base["many"],
+                "baseline_agreement": base["agreement"],
+                "delta_no_anchor_a(n)": no_anchor["a(n)"] - base["a(n)"],
+                "delta_no_anchor_three": no_anchor["three"] - base["three"],
+                "delta_no_decay_a(n)": no_decay["a(n)"] - base["a(n)"],
+                "delta_no_decay_three": no_decay["three"] - base["three"],
+                "delta_frozen_a(n)": frozen_end["a(n)"] - frozen_start["a(n)"],
+                "delta_frozen_three": frozen_end["three"] - frozen_start["three"],
+            }
+        )
+
+    def _summarize(key: str) -> Dict[str, float]:
+        vals = [row[key] for row in rows]
+        return {
+            "mean": sum(vals) / len(vals),
+            "min": min(vals),
+            "max": max(vals),
+            "positive": sum(1 for v in vals if v > 0),
+            "negative": sum(1 for v in vals if v < 0),
+            "zero": sum(1 for v in vals if v == 0),
+        }
+
+    metrics = [
+        "baseline_a(n)",
+        "baseline_three",
+        "baseline_many",
+        "baseline_agreement",
+        "delta_no_anchor_a(n)",
+        "delta_no_anchor_three",
+        "delta_no_decay_a(n)",
+        "delta_no_decay_three",
+        "delta_frozen_a(n)",
+        "delta_frozen_three",
+    ]
+    summary = {m: _summarize(m) for m in metrics}
+
+    print("\nSummary (mean / min / max | + / - / 0):")
+    for metric in metrics:
+        s = summary[metric]
+        print(
+            f"  {metric:>24}: "
+            f"{s['mean']:+.3f} / {s['min']:+.3f} / {s['max']:+.3f} | "
+            f"{int(s['positive'])}/{int(s['negative'])}/{int(s['zero'])}"
+        )
+
+    _save_manifest(
+        "data_drift_seed_sensitivity_manifest.json",
+        {
+            "experiment": "sensitivity",
+            "seed_start": seed_start,
+            "seed_end": seed_end,
+            "n_runs": len(rows),
+            "runtime": {
+                "n_agents": n_agents,
+                "n_institutional": n_institutional_eff,
+                "n_phases": n_phases,
+                "steps_per_phase": steps_per_phase,
+                "interactions_per_step": interactions_per_step_eff,
+                "turnover_rate": turnover_rate,
+                "expected_participations_per_agent": expected_participations,
+            },
+            "summary": summary,
+        },
+    )
+
+    return rows
 
 
 # =============================================================================
@@ -1043,35 +1563,46 @@ def experiment_mechanism_ablation(seed: int = 42) -> Dict[str, World]:
 # =============================================================================
 
 def _plot_drift_experiment(phase_data: List[Dict[str, float]]):
-    """Plot the tight-before-loose erosion pattern."""
-    fig, ax = plt.subplots(figsize=(10, 6))
+    """Plot data drift as two aligned panels."""
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5), dpi=150)
 
-    phases = list(range(1, len(phase_data) + 1))
+    phases = [row['phase'] for row in phase_data]
 
+    # Panel A: anchor decline and individuation movement
+    axes[0].plot(phases, [row['data_ind_mean'] for row in phase_data],
+                 color='#1f77b4', marker='o', linewidth=2, label='data individuation')
+    axes[0].plot(phases, [row['datum_ind_mean'] for row in phase_data],
+                 color='#9467bd', marker='s', linewidth=2, label='datum individuation')
+    axes[0].plot(phases, [row['datum_frequency'] for row in phase_data],
+                 color='#7f7f7f', marker='D', linewidth=2, linestyle='--', label='datum frequency')
+    axes[0].set_xlabel(r'Phase ($\it{datum}$ availability declining)', fontsize=11)
+    axes[0].set_ylabel('Mean / Relative availability', fontsize=11)
+    axes[0].set_title('A. Anchor erosion', loc='left', fontsize=12)
+    axes[0].set_ylim(0, 1.05)
+    axes[0].grid(True, alpha=0.3)
+    axes[0].legend(loc='upper right', frameon=False)
+
+    # Panel B: constructional acceptance
     constructions = ['a(n)', 'three', 'many', 'agreement']
     colors = ['#d62728', '#ff7f0e', '#2ca02c', '#1f77b4']
     markers = ['o', 's', '^', 'D']
-
     for i, c in enumerate(constructions):
-        values = [phase[c] for phase in phase_data]
-        ax.plot(phases, values, color=colors[i], marker=markers[i],
-                linewidth=2, markersize=8, label=c)
+        values = [row[c] for row in phase_data]
+        axes[1].plot(phases, values, color=colors[i], marker=markers[i],
+                     linewidth=2, markersize=6, label=c)
 
-    ax.set_xlabel(r'Phase ($\it{datum}$ availability declining)', fontsize=12)
-    ax.set_ylabel('Community acceptance rate', fontsize=12)
-    ax.set_title(r"$\it{Data}$ Drift: Tight-Before-Loose Erosion" + "\n"
-                 r"(As $\it{datum}$ dies, count properties peel in order)", fontsize=14)
-    ax.legend(loc='upper right')
-    ax.set_ylim(0, 1.05)
-    ax.grid(True, alpha=0.3)
+    axes[1].set_xlabel(r'Phase ($\it{datum}$ availability declining)', fontsize=11)
+    axes[1].set_ylabel('Community acceptance rate', fontsize=11)
+    axes[1].set_title('B. Tight-before-loose erosion', loc='left', fontsize=12)
+    axes[1].set_ylim(0, 1.05)
+    axes[1].grid(True, alpha=0.3)
+    axes[1].legend(loc='upper right', frameon=False)
 
-    # Add annotation
-    ax.annotate('Tight properties\nerode first', xy=(3, 0.3), fontsize=10,
-                ha='center', style='italic', color='gray')
+    axes[1].annotate('Tight properties\nerode first', xy=(3, 0.3), fontsize=9,
+                     ha='center', style='italic', color='gray')
 
     plt.tight_layout()
-    plt.savefig('data_drift_experiment.png', dpi=150)
-    print("\nPlot saved to: data_drift_experiment.png")
+    _save_figure(fig, 'data_drift_experiment.png')
     plt.close()
 
 
@@ -1103,8 +1634,7 @@ def _plot_prescriptivism_experiment(phase_data: List[Dict[str, float]]):
                 ha='center', style='italic', color='gray')
 
     plt.tight_layout()
-    plt.savefig('prescriptivism_experiment.png', dpi=150)
-    print("\nPlot saved to: prescriptivism_experiment.png")
+    _save_figure(fig, 'prescriptivism_experiment.png')
     plt.close()
 
 
@@ -1204,8 +1734,7 @@ def plot_basin_visualization():
     ax.axis('off')
 
     plt.tight_layout()
-    plt.savefig('count_basin_visualization.png', dpi=150)
-    print("\nBasin visualization saved to: count_basin_visualization.png")
+    _save_figure(fig, 'count_basin_visualization.png')
     plt.close()
 
 
@@ -1224,7 +1753,8 @@ Experiments:
   anchor       Functional anchoring (cattle with/without cow)
   prescriptive LEGO prescriptivism vs cognitive pressure
   folks        Folks instability demonstration
-  ablation     STRESS TEST: remove mechanisms, show pattern breaks
+  ablation     STRESS TEST: remove mechanisms, inspect single-seed contrasts
+  sensitivity  Multi-seed summary of drift/ablation effect ranges
   all          Run all experiments (default)
   basin        Generate basin visualization only
 
@@ -1235,10 +1765,28 @@ NOTE: This is an intuition pump, not calibrated evidence.
                        help='Experiment to run (see list below)')
     parser.add_argument('--seed', type=int, default=42,
                        help='Random seed for reproducibility')
+    parser.add_argument('--seed-start', type=int, default=1,
+                       help='Start seed for --exp=sensitivity')
+    parser.add_argument('--seed-end', type=int, default=20,
+                       help='End seed for --exp=sensitivity')
     parser.add_argument('--no-viz', action='store_true',
                        help='Disable visualization (text output only)')
     parser.add_argument('--interactive', action='store_true',
                        help='Enter interactive exploration mode')
+    parser.add_argument('--n-agents', type=int, default=100,
+                       help='Population size for drift/ablation/sensitivity experiments')
+    parser.add_argument('--n-institutional', type=int, default=-1,
+                       help='Institutional agents count; default is auto 5%% (min 5)')
+    parser.add_argument('--interactions-per-step', type=int, default=None,
+                       help='Override interactions per simulation step')
+    parser.add_argument('--interactions-scale', type=float, default=0.6,
+                       help='Used when --interactions-per-step is omitted; default keeps legacy 60 when N=100')
+    parser.add_argument('--n-phases', type=int, default=10,
+                       help='Number of data-drift phases')
+    parser.add_argument('--steps-per-phase', type=int, default=35,
+                       help='Simulation steps per phase in data-drift protocols')
+    parser.add_argument('--turnover-rate', type=float, default=0.04,
+                       help='Learner replacement rate per phase in data-drift protocols')
 
     args = parser.parse_args()
 
@@ -1253,19 +1801,64 @@ NOTE: This is an intuition pump, not calibrated evidence.
         interactive_mode(args.seed)
         return
 
+    n_institutional_cfg: Optional[int] = None if args.n_institutional < 0 else args.n_institutional
+    n_institutional_eff = _resolve_institutional_count(args.n_agents, n_institutional_cfg)
+    interactions_per_step_eff = _resolve_interactions_per_step(
+        n_agents=args.n_agents,
+        interactions_per_step=args.interactions_per_step,
+        interactions_scale=args.interactions_scale,
+    )
+    expected_participations = (
+        2.0 * args.n_phases * args.steps_per_phase * interactions_per_step_eff / float(args.n_agents)
+    )
+    print(
+        f"Runtime config (drift-family): N={args.n_agents}, institutional={n_institutional_eff}, "
+        f"phases={args.n_phases}, steps/phase={args.steps_per_phase}, interactions/step={interactions_per_step_eff}, "
+        f"expected participations/agent={expected_participations:.1f}"
+    )
+
     if args.exp == 'all':
         experiment_baseline(args.seed)
-        experiment_data_drift(args.seed, visualize)
+        experiment_data_drift(
+            args.seed,
+            visualize,
+            n_agents=args.n_agents,
+            n_institutional=n_institutional_cfg,
+            n_phases=args.n_phases,
+            steps_per_phase=args.steps_per_phase,
+            interactions_per_step=args.interactions_per_step,
+            interactions_scale=args.interactions_scale,
+            turnover_rate=args.turnover_rate,
+        )
         experiment_functional_anchoring(args.seed)
         experiment_prescriptivism(args.seed, visualize)
         experiment_folks_instability(args.seed)
-        experiment_mechanism_ablation(args.seed)  # Stress test
+        experiment_mechanism_ablation(
+            args.seed,
+            n_agents=args.n_agents,
+            n_institutional=n_institutional_cfg,
+            n_phases=args.n_phases,
+            steps_per_phase=args.steps_per_phase,
+            interactions_per_step=args.interactions_per_step,
+            interactions_scale=args.interactions_scale,
+            turnover_rate=args.turnover_rate,
+        )  # Stress test
         if visualize:
             plot_basin_visualization()
     elif args.exp == 'baseline':
         experiment_baseline(args.seed)
     elif args.exp == 'drift':
-        experiment_data_drift(args.seed, visualize)
+        experiment_data_drift(
+            args.seed,
+            visualize,
+            n_agents=args.n_agents,
+            n_institutional=n_institutional_cfg,
+            n_phases=args.n_phases,
+            steps_per_phase=args.steps_per_phase,
+            interactions_per_step=args.interactions_per_step,
+            interactions_scale=args.interactions_scale,
+            turnover_rate=args.turnover_rate,
+        )
     elif args.exp == 'anchor':
         experiment_functional_anchoring(args.seed)
     elif args.exp == 'prescriptive':
@@ -1273,7 +1866,28 @@ NOTE: This is an intuition pump, not calibrated evidence.
     elif args.exp == 'folks':
         experiment_folks_instability(args.seed)
     elif args.exp == 'ablation':
-        experiment_mechanism_ablation(args.seed)
+        experiment_mechanism_ablation(
+            args.seed,
+            n_agents=args.n_agents,
+            n_institutional=n_institutional_cfg,
+            n_phases=args.n_phases,
+            steps_per_phase=args.steps_per_phase,
+            interactions_per_step=args.interactions_per_step,
+            interactions_scale=args.interactions_scale,
+            turnover_rate=args.turnover_rate,
+        )
+    elif args.exp == 'sensitivity':
+        experiment_seed_sensitivity(
+            args.seed_start,
+            args.seed_end,
+            n_agents=args.n_agents,
+            n_institutional=n_institutional_cfg,
+            n_phases=args.n_phases,
+            steps_per_phase=args.steps_per_phase,
+            interactions_per_step=args.interactions_per_step,
+            interactions_scale=args.interactions_scale,
+            turnover_rate=args.turnover_rate,
+        )
     elif args.exp == 'basin':
         if visualize:
             plot_basin_visualization()
