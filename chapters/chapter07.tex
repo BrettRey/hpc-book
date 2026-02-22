@@ -196,6 +196,8 @@ The interpretation is one step removed from the measurements. What we infer from
 
 Because the model is deliberately minimal, the warrant is limited. The ABM supports mechanism plausibility and clarifies expected signatures under perturbation. It doesn't by itself establish the Polish facts, estimate real historical trajectories, or calibrate effect sizes; those still come from corpus and behavioural evidence. The plotted curve is one seeded realization, and the code now ships run manifests so the signature can be audited across seeds rather than read as a single privileged trajectory. In practice this means favouring moderate population sizes with multi-seed summaries over extreme population sizes with thin per-agent learning.
 
+At default settings, a 20-seed sensitivity run preserves the same qualitative asymmetry: post-switch semantic effect is near zero on average ($0.011 \pm 0.008$), while boundary similarity and consensus remain high ($0.989 \pm 0.003$, $0.845 \pm 0.005$). Mechanism controls behave as expected: if we remove the switch entirely, post-switch semantic effect stays high (about $0.308$ instead of about $0.015$ in the switched baseline).
+
 
 \section{Generalising the lesson}
 \label{sec:7:generalising-lesson}

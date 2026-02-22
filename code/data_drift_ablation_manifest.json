@@ -1,51 +1,51 @@
 {
   "baseline": {
-    "a(n)": 0.2,
+    "a(n)": 0.18,
     "agreement": 1.0,
     "many": 1.0,
     "much": 0.0,
-    "several": 0.95,
-    "three": 0.5
+    "several": 0.89,
+    "three": 0.47
   },
   "experiment": "ablation",
   "frozen_final": {
-    "a(n)": 0.38666666666666666,
+    "a(n)": 0.39,
     "agreement": 1.0,
     "many": 1.0,
     "much": 0.0,
     "several": 1.0,
-    "three": 0.74
+    "three": 0.69
   },
   "frozen_initial": {
-    "a(n)": 0.38666666666666666,
+    "a(n)": 0.39,
     "agreement": 1.0,
     "many": 1.0,
     "much": 0.0,
     "several": 1.0,
-    "three": 0.74
+    "three": 0.68
   },
-  "generated_utc": "2026-02-22T01:21:23.998812+00:00",
+  "generated_utc": "2026-02-22T01:38:48.944461+00:00",
   "no_anchor_retrieval": {
     "a(n)": 0.14,
     "agreement": 1.0,
-    "many": 0.9966666666666667,
+    "many": 1.0,
     "much": 0.0,
-    "several": 0.94,
-    "three": 0.4533333333333333
+    "several": 0.88,
+    "three": 0.48
   },
   "no_decay": {
-    "a(n)": 0.17,
+    "a(n)": 0.09,
     "agreement": 1.0,
     "many": 1.0,
     "much": 0.0,
-    "several": 0.9266666666666666,
-    "three": 0.4633333333333333
+    "several": 0.93,
+    "three": 0.42
   },
   "runtime": {
     "expected_participations_per_agent": 420.0,
-    "interactions_per_step": 180,
-    "n_agents": 300,
-    "n_institutional": 15,
+    "interactions_per_step": 60,
+    "n_agents": 100,
+    "n_institutional": 5,
     "n_phases": 10,
     "steps_per_phase": 35,
     "turnover_rate": 0.04
