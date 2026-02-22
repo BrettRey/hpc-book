@@ -50,6 +50,7 @@
 
 ## Recent Milestones
 
+- Full shared-bib audit tooling added (`code/audit_full_bib.py`) with markdown/JSON reports and autofix suggestions
 - Cited-only BibTeX audit completed and cleaned (`293/293` cited keys resolved; `0` field warnings; report in `notes/cited-bib-audit-2026-02-22.md`)
 - `f7eff65` — Ch 16 gauntlet revisions and board follow-up integrated
 - `6b626da` — Ch 16 ABM evidence criteria aligned with Ch 7/9 updates

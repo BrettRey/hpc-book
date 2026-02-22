@@ -962,3 +962,10 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 ### State at end of session
 - Citation resolution is complete for the current full-book build.
 - Next bib step is optional normalization of remaining Biber case-mismatch key pairs in shared `references.bib`.
+
+### Full-shared-bib audit addition
+- Added `code/audit_full_bib.py` for full-source bibliography integrity checks (not limited to cited keys).
+- Generated baseline reports:
+  - `notes/full-bib-audit-2026-02-22.md`
+  - `notes/full-bib-audit-2026-02-22.json`
+- Baseline findings on shared `references.bib`: 811 entries, 69 issues (13 case-collision key groups, 12 DOI duplicate groups, 1 invalid year format, 4 required-field gaps, plus style-consistency signals).

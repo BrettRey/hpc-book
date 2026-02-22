@@ -3,6 +3,19 @@
 **Date**: February 22, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
 
+### Session Work (Feb 22, 2026: full shared-bib audit workflow)
+- ✅ **Implemented full-bib audit tool**: `code/audit_full_bib.py` (full source integrity checks with suggestions).
+- ✅ **Produced baseline reports**:
+  - `notes/full-bib-audit-2026-02-22.md`
+  - `notes/full-bib-audit-2026-02-22.json`
+- ✅ **Current full-bib baseline** (shared `references.bib`):
+  - 811 entries, 69 issues total
+  - 13 case-collision key groups
+  - 12 DOI-level duplicate-record groups
+  - 1 non-standard year format (`2008--2025`)
+  - 4 missing required fields
+  - style-mix signals (`journal`/`journaltitle`, `year`/`date`, `address`/`location`)
+
 ### Session Work (Feb 22, 2026: cited-only BibTeX audit + citation resolution)
 - ✅ **Resolved all currently missing cited keys** in full-book build:
   - Loaded local source in preamble (`\addbibresource{references-local.bib}`).
@@ -39,9 +52,9 @@
 - ✅ **Chapter 9 ABM refinement**: scaling-control clarification, 20-seed distributional summaries, and freeze-learning control added to reinforce mechanism-claim discipline.
 
 ### Immediate
-1. Normalize remaining case-mismatch key pairs in shared `references.bib` to reduce Biber warnings.
-2. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
-3. Decide whether to keep all generated ABM diagnostic figures in-repo or archive non-book artifacts.
+1. Execute shared-bib cleanup tranche A: 13 case-collision key groups (Biber-warning elimination).
+2. Execute shared-bib cleanup tranche B: 12 DOI-duplicate groups + 1 invalid year + 4 required-field gaps.
+3. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
 
 ### Session Work (Feb 20, 2026 evening: Ch 11 + Ch 8 + Ch 9 polish with Brett)
 - ✅ **Ch 11 HPC-consistency pass**: Fixed "semantics comes along for the ride" (essentialist smuggling → coupling framing); rewrote compressed Reynolds 2024 paragraph for accessibility; /w/ → /hw/ (Brett's dialect); "wh-in-situ" → "languages where IRE words remain in situ"; maintenance-only paragraph → maintenance + projection profiles; Ch 12 transition rewritten (morphological gender absence → pro-form diffusion); "adjective" carving: epistemologically and ontologically distinct, terminologically identical; "at least three" categories for *who*; dropped redundant Ch 12 forward reference
