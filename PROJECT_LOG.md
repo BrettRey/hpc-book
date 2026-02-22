@@ -1,5 +1,19 @@
 # Project Log
 
+## 2026-02-22: Ch 16 gauntlet finalization + ABM evidence alignment
+- **Chapter 16 Revamp Completed**:
+  - Reworked finale into an explicit empirical gauntlet with risky predictions, defeat conditions, and downgrade criteria.
+  - Tightened running-case handrail around `\mention{data}` using Ch 9's tight-vs-loose packaging logic and anchoring drift.
+  - Added operational decision rule (5% held-out gain threshold across 3 independent datasets) for no-lift diagnosis.
+- **Board Process Closed**:
+  - Created `notes/board-report-ch16-2026-02-22.md` (selection + convergent critiques + revision mapping).
+  - Created `notes/board-report-ch16-post-revision-2026-02-22.md` (readiness verdict, non-blocker residuals).
+- **ABM Discipline Sync with Ch 7/9**:
+  - Updated Ch 16 to reflect current ABM stance: didactic mechanism sketches, multi-seed sensitivity + ablation controls as internal checks, defeat claims grounded in replicated corpus/behavioural evidence.
+- **Build + Release**:
+  - Verified via repeated `latexmk hpc-book.tex` runs (existing repo warnings persisted; no new fatal issues introduced by Ch 16 changes).
+  - Pushed `f7eff65` and `6b626da` to `origin/master`.
+
 ## 2025-12-25: Slogan Deployment & Ch 10 Preparation
 - **Slogan Deployment**: Implemented the "buried payoff" strategy.
     - **Ch 4**: Added slogan to §4.6 ("What you get in return").

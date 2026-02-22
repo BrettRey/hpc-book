@@ -1,85 +1,70 @@
 # Words That Won't Hold Still (HPC Book)
 
-**Status:** Part III in progress; Part IV outlined
-**Type:** Academic book (16 chapters, 4 parts)
-**Working title:** "Language Without Essences: The Metaphysics of Linguistic Categories"
-**Last updated:** 2026-01-20
+**Status:** Full 16-chapter draft in repository; implication-phase refinement ongoing  
+**Type:** Academic book (16 chapters, 4 parts)  
+**Working title:** "Language Without Essences: The Metaphysics of Linguistic Categories"  
+**Last updated:** 2026-02-22
 
 ---
 
 ## Progress
 
 ### Part I: The Problem (Ch 1-3)
-- [x] Chapter 1 - drafted and revised
-- [x] Chapter 2 - drafted and revised (essentialism critique)
-- [x] Chapter 3 - drafted and revised (nominalist retreat)
+- [x] Chapter 1 - draft in place
+- [x] Chapter 2 - draft in place
+- [x] Chapter 3 - draft in place
 
 ### Part II: The Fix (Ch 4-8)
-- [x] Chapter 4 - drafted and revised (HPC introduction)
-- [x] Chapter 5 - drafted and revised (discreteness problem)
-- [x] Chapter 6 - drafted and revised (projectibility)
-- [x] Chapter 7 - drafted and revised (The Stabilisers)
-- [x] Chapter 8 - drafted (Failure Modes) + LBE integrated
+- [x] Chapter 4 - draft in place
+- [x] Chapter 5 - draft in place
+- [x] Chapter 6 - draft in place
+- [x] Chapter 7 - revised with ABM robustness notes
+- [x] Chapter 8 - draft in place
 
-### Part III: Categories Reconsidered (Ch 9-12)
-- [x] Chapter 9 - drafted and revised (Countability)
-- [x] Chapter 10 - drafted and revised (Definiteness)
-- [ ] Chapter 11 - plan approved (Lexical Categories); awaiting draft
-- [x] Chapter 12 - polished draft (Gender and the Maintenance Spectrum)
+### Part III: Categories Reconsidered (Ch 9-13)
+- [x] Chapter 9 - revised with ABM scaling/seed-control notes
+- [x] Chapter 10 - draft in place
+- [x] Chapter 11 - revised draft in place
+- [x] Chapter 12 - draft in place
+- [x] Chapter 13 - synthesis draft in place
 
-### Part IV: Implications (Ch 13-16)
-- [x] Chapter 13 - reframed (Zipper metaphor) + LBE integrated
-- [ ] Chapter 14 - planning ready (Grammaticality itself) + LBE integrated (needs full prose)
-- [x] Chapter 15 - drafted skeleton (Social Stabilization) - **NEW**
-- [ ] Chapter 16 - (was Ch 15) Nominalist Challenge Conclusion
+### Part IV: Implications (Ch 14-16)
+- [x] Chapter 14 - draft in place
+- [x] Chapter 15 - draft in place
+- [x] Chapter 16 - gauntlet revamp completed and board-reviewed
 
-
-### Other
-- [x] Synopsis (~880 words)
-- [x] Glossary redone (Dec 26)
-- [x] Bibliography (~3700 entries)
-- [x] Ch 1 tightened (Jan 3, Evans feedback)
+### Supporting Material
+- [x] Front matter and appendices integrated
+- [x] Glossary integrated
+- [x] Bibliography pipeline active (`biblatex` + `biber`)
 
 ---
 
-## Next Actions
+## Current Focus
 
-1. Draft Chapter 11 (Lexical Categories)
-   - Implementation plan: `notes/ch11/ch11-implementation-plan.md`
-   - Three-act structure: Wastebasket → Skeleton → Mimics
-   - Shark/Dolphin/Ichthyosaur convergent evolution metaphor
-2. Draft Chapter 14 (Grammaticality itself)
-   - Double-copula vignette ready as opening
-   - Measurement-channel divergence theme
-   - MMMG framework in `notes/chapter13-master.md`
-3. Draft Chapter 15 (Methodological consequences)
-4. Cross-chapter forward/back reference pass
-5. Final polish pass
-6. Ask Peter Evans to proofread when polished
+1. Final implication-phase tightening (Chs 14-16 coherence and transitions)
+2. Citation-key cleanup for currently unresolved bibliography references
+3. Table/figure line-break hygiene in high-visibility chapters
+
+---
+
+## Recent Milestones
+
+- `f7eff65` — Ch 16 gauntlet revisions and board follow-up integrated
+- `6b626da` — Ch 16 ABM evidence criteria aligned with Ch 7/9 updates
+- `e3795d9` — Ch 7/9 compact 20-seed ABM robustness summaries
+- `fc1210c` — Ch 7/9 ABM scaling controls and multi-seed outputs
 
 ---
 
 ## Blockers
 
-None currently.
+None blocking drafting. Remaining work is refinement and evidence-hygiene cleanup.
 
 ---
 
-## Related Projects
+## Related Tracking Files
 
-- `Labels_to_Stabilisers/` - foundation paper
-- `linguistics-metrology/` - measurement science application
-- `linguistics-mereology/` - parthood relations
-- `Definiteness_and_deitality/` - Ch 10 spin-off (Kim collaboration)
-- `Language_as_a_Stack.../` - Ch 13 empirical material (phonemes, words, constructions)
-
----
-
-## Session Log
-
-- **2026-01-16**: Chapter 13 reframed (Zipper/Coupling) + Register diagnosis fixed; Chapter 15 Meta-theory section added.
-- **2026-01-15**: STATUS.md updated to reflect 15-chapter structure; Ch 12 = Gender, Ch 13 = Stack material
-- **2026-01-13**: House style enforcement; Ch 13 examples converted to langsci-gb4e
-- **2026-01-08**: Chapter 12 (Gender) polished; STATUS.md created
-- **2026-01-03**: Chapter 1 tightened based on Peter Evans feedback
-- **2025-12-26**: Glossary redone; Gender chapter added (book now 15 chapters)
+- `PROJECT_STATUS.md` — detailed session-by-session status
+- `PROJECT_LOG.md` — long-form chronology
+- `.agent/logs/` — per-session process logs

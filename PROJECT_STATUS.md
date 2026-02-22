@@ -1,7 +1,28 @@
 # HPC Book Project Status
 
-**Date**: February 20, 2026
-**Current Phase**: Chs 1–12 drafted; Ch 13 rewrite next
+**Date**: February 22, 2026
+**Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
+
+### Session Work (Feb 22, 2026: Ch 16 gauntlet finalization + board loop)
+- ✅ **Ch 16 rebuilt as a true gauntlet**: risky predictions, explicit falsifiers, serious-downgrade criterion, and operational thresholds consolidated in `chapters/chapter16.tex`.
+- ✅ **Running case hardened** (`\mention{data}`): diagnostics now aligned to Ch 9 framing (agreement + tight/loose packaging + anchoring recession) rather than generic variation talk.
+- ✅ **ABM evidentiary discipline aligned to Ch 7/9 updates**: Ch 16 now states that didactic ABMs are mechanism sketches; defeat claims must rely on replicated corpus/behavioural data, with seed distributions and ablation controls treated as internal checks.
+- ✅ **Review-board cycle completed**:
+  - `notes/board-report-ch16-2026-02-22.md` (revamp board synthesis)
+  - `notes/board-report-ch16-post-revision-2026-02-22.md` (post-revision readiness verdict)
+- ✅ **Build verification**: repeated `latexmk hpc-book.tex` runs successful; pre-existing repo warnings remain (multiply-defined label, missing glyph).
+- ✅ **Pushed commits**:
+  - `f7eff65` Ch 16 gauntlet revisions + board follow-up
+  - `6b626da` Ch 16 ABM criteria alignment with Ch 7/9
+
+### Session Work (Feb 22, 2026: Ch 7/9 ABM robustness pass)
+- ✅ **Chapter 7 ABM refinement**: explicit 20-seed robustness summary and clearer calibration limits for the volcanic-island toy model.
+- ✅ **Chapter 9 ABM refinement**: scaling-control clarification, 20-seed distributional summaries, and freeze-learning control added to reinforce mechanism-claim discipline.
+
+### Immediate
+1. Run final bibliography pass for currently unresolved citation keys.
+2. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
+3. Decide whether to keep all generated ABM diagnostic figures in-repo or archive non-book artifacts.
 
 ### Session Work (Feb 20, 2026 evening: Ch 11 + Ch 8 + Ch 9 polish with Brett)
 - ✅ **Ch 11 HPC-consistency pass**: Fixed "semantics comes along for the ride" (essentialist smuggling → coupling framing); rewrote compressed Reynolds 2024 paragraph for accessibility; /w/ → /hw/ (Brett's dialect); "wh-in-situ" → "languages where IRE words remain in situ"; maintenance-only paragraph → maintenance + projection profiles; Ch 12 transition rewritten (morphological gender absence → pro-form diffusion); "adjective" carving: epistemologically and ontologically distinct, terminologically identical; "at least three" categories for *who*; dropped redundant Ch 12 forward reference
