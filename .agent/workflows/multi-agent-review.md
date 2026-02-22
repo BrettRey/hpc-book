@@ -1,119 +1,49 @@
 ---
-description: Spawn independent LLM agents for parallel advisory board reviews
+description: Spawn independent Codex agents for parallel advisory board reviews
 ---
 
-# Multi-Agent Advisory Board Review
+# Multi-Agent Advisory Board Review (Codex-Only)
 
-Use this workflow when the user wants diverse, independent feedback on a chapter or document. This leverages external LLM CLIs (`codex`, `gemini`, `claude`) to spawn truly independent agents that don't share my context.
+Use this workflow when the user wants multiple independent reviews on the same chapter or document.
+
+## Project Policy
+
+Board generation in this repo is Codex-only by default.
 
 ## When to use
 
-- User asks for "advisory board" or "board feedback" on a chapter
-- User wants multiple independent perspectives on the same content
-- User explicitly requests parallel agent reviews
-- Task benefits from genuine variance (not my simulation of multiple voices)
+- User asks for advisory board feedback
+- User requests independent parallel critiques
+- You need reviewer convergence/divergence before major edits
 
-## Available CLIs
-
-Check availability:
-```bash
-which codex && codex --version  # OpenAI Codex CLI
-which gemini && gemini --version  # Google Gemini CLI  
-which claude && claude --version  # Anthropic Claude Code
-```
-
-## Token considerations
-
-- **claude**: Most token-constrained; user often hits limits before 5-hour window
-- **codex**: More generous limits
-- **gemini**: Most generous limits; prefer for multiple agents
-
-## Spawning agents
-
-### Codex (non-interactive)
-```bash
-# CORRECT PATTERN (Dec 2025):
-# - Use --full-auto for automatic execution without prompts
-# - Use -C to set working directory
-# - Use -o to write final message to output file
-# - Codex will read files via shell commands automatically
-codex exec --full-auto -C /path/to/project -o notes/board-[advisor].md \
-  "Read main.tex and advisory-board.md. You are [ADVISOR NAME], [DESCRIPTION]. \
-   [Questions to address]. Give 4-5 paragraphs of critical, constructive feedback." &
-```
-
-### Gemini (MUST pipe content — file reading doesn't work in YOLO mode)
-```bash
-# IMPORTANT: Gemini CLI in --yolo mode does NOT read files from prompts.
-# You MUST pipe the content in. Use -o text for cleaner output.
-# Use 2>/dev/null to suppress startup log noise.
-cat [FILE] | gemini --yolo -o text "You are [ADVISOR NAME], [DESCRIPTION]. This is [CHAPTER NAME]. Provide feedback on: (1) [Q1] (2) [Q2] (3) [Q3]. Give 3-4 paragraphs." > notes/board-feedback-[chapter]-[advisor].md 2>/dev/null &
-```
-
-**Model diversity:** Using BOTH Codex and Gemini gives genuine variance — different training data, different biases, different strengths. Prefer a mix (e.g., 3 Codex + 3 Gemini) over all from one model.
-
-### Claude (if using despite token limits)
-```bash
-claude -p "You are [ADVISOR NAME]..." [FILE] > notes/board-feedback-[chapter]-[advisor].md &
-```
-
-## Standard advisors (from notes/advisory-board.md)
-
-### Theoretical Board
-- **Ruth Millikan** — teleosemantics, proper function
-- **Adele Goldberg** — construction grammar
-- **Eleanor Rosch** — prototype theory
-- **Michael Tomasello** — usage-based acquisition
-
-### Packaging Board
-- **Howard Becker** — writing, rhetoric, "don't attack the tribe"
-- **Carl Zimmer** — science communication, accessibility
-- **Errol Morris** — how to present opposing views
-
-## Checking status
+## Check CLI
 
 ```bash
-# List completed feedback files
-ls -la notes/board-feedback-*.md
-
-# Check running agents
-ps aux | grep -E "codex|gemini|claude" | grep -v grep
-
-# Count remaining
-ps aux | grep -E "codex|gemini" | grep -v grep | wc -l
+which codex && codex --version
 ```
 
-## Cleanup (kill stalled agents)
-
-Gemini agents in particular can stall. If agents haven't completed after ~10 minutes:
+## Spawn pattern
 
 ```bash
-# Kill all gemini processes (runs as node)
-pkill -f "gemini" 
-
-# If that doesn't work, force kill
-killall -9 gemini 2>/dev/null
-
-# Verify
-ps aux | grep -E "codex|gemini" | grep -v grep || echo "All clear"
+codex exec --full-auto -C /path/to/project -o notes/board-feedback-[chapter]-[advisor]-codex.md \
+  "Read [target files]. You are [ADVISOR NAME], [DESCRIPTION]. \
+   Address: (1) [Q1] (2) [Q2] (3) [Q3]. \
+   Output 3-5 short sections with concrete fixes and file references." &
 ```
 
-**Note:** `killall node` will kill ALL node processes, not just Gemini. Use `pkill -f "gemini"` first.
+## Status checks
 
-## Important context caveat
+```bash
+ls -la notes/board-feedback-*-codex.md
+ps aux | grep -E "codex" | grep -v grep
+```
 
-Independent agents review the file in isolation. They don't have:
-- Context from earlier chapters
-- Knowledge of book-level framing already established
-- My accumulated conversation context
+## Caveat
 
-Filter their feedback for:
-- **Chapter-level issues** — local prose, argument flow, missing evidence
-- **Not book-level issues** — things already addressed upstream
+Independent agents don't share context from earlier chapters unless you provide that context in the prompt.
 
 ## After collection
 
-1. Read all feedback files
-2. Synthesize across perspectives
-3. Filter for chapter-specific vs. already-addressed criticism
-4. Propose targeted revisions
+1. Synthesize convergent criticisms.
+2. Separate chapter-local issues from already-resolved book-level framing.
+3. Apply highest-confidence edits first.

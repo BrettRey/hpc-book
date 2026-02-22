@@ -1,153 +1,108 @@
 #!/bin/bash
-# Ch 11 Advisory Board - Parallel Execution Script
+# Ch 11 Advisory Board - Codex-only Parallel Execution
 # Word classes: The adjective-adverb asymmetry as architectural equilibrium
 
-cd "/Users/brettreynolds/Documents/LLM-CLI-projects/HPC book"
+set -euo pipefail
 
-# Base context for all board members
+cd "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book"
+
 read -r -d '' BASE_CONTEXT << 'CONTEXT'
-You are providing advisory board feedback for Chapter 11 of "Words That Won't Hold Still: How Linguistic Categories Work" by Brett Reynolds.
+You are providing advisory board feedback for Chapter 11 of
+"Words That Won't Hold Still: How Linguistic Categories Work" by Brett Reynolds.
 
-THE BOOK'S THESIS: Linguistic categories are Homeostatic Property Cluster (HPC) kinds—property clusters maintained by causal mechanisms, not essences. The HPC slogan: "A category is a profile, stabilised by mechanisms, projectible for a purpose."
+THE BOOK'S THESIS: Linguistic categories are Homeostatic Property Cluster (HPC) kinds.
+Core slogan: "A category is a profile, stabilised by mechanisms, projectible for a purpose."
 
-CHAPTER 11: Word classes
-Subtitle: The adjective-adverb asymmetry as architectural equilibrium
-
-Key points from the outline:
+CHAPTER 11 focus:
 - Cross-linguistic stability of nouns/verbs
-- Adjective-adverb variation across languages
-- Architectural equilibrium: mechanisms at different scales
+- Adjective/adverb variation
+- Mechanism asymmetries across scales
 
-The chapter must explain:
-1. Why noun/verb is so stable cross-linguistically (strong HPC)
-2. Why adjective classes vary dramatically (sometimes merged with nouns, sometimes with verbs)
-3. Why adverb is often a "wastebasket" category (weak/no HPC?)
-4. How mechanisms at different scales (cognitive, discourse, transmission) produce this asymmetry
-
-Read notes/CHAPTER_OUTLINE.md for full context on the book's structure.
-
+Read notes/CHAPTER_OUTLINE.md for full context.
 CONTEXT
 
-# Function to run board member on codex
 run_codex() {
     local scholar="$1"
     local specialty="$2"
     local questions="$3"
-    local output_file="notes/board-feedback-ch11-$(echo "$scholar" | tr '[:upper:]' '[:lower:]' | tr ' ' '-').md"
+    local slug
+    slug=$(echo "$scholar" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+    local output_file="notes/board-feedback-ch11-${slug}-codex.md"
 
-    codex exec --full-auto "You are simulating the voice of $scholar, known for $specialty.
+    codex exec --full-auto -C "$(pwd)" -o "$output_file" \
+        "You are simulating the voice of ${scholar}, known for ${specialty}.
 
-$BASE_CONTEXT
+${BASE_CONTEXT}
 
-Write a 400-word advisory board review to $output_file addressing:
-$questions
+Write a 400-word advisory board review addressing:
+${questions}
 
-Format with markdown headers. Include the scholar's characteristic concerns and methodological commitments." 2>&1 &
+Use sections: Strengths, Major Concerns, Priority Fixes." &
 }
 
-# Function to run board member on gemini
-run_gemini() {
-    local scholar="$1"
-    local specialty="$2"
-    local questions="$3"
-    local output_file="notes/board-feedback-ch11-$(echo "$scholar" | tr '[:upper:]' '[:lower:]' | tr ' ' '-').md"
+echo "Starting Ch 11 advisory board (Codex-only, 12 reviewers)..."
+echo "==========================================================="
 
-    gemini --yolo "You are simulating the voice of $scholar, known for $specialty.
-
-$BASE_CONTEXT
-
-Write a 400-word advisory board review and save it to $output_file addressing:
-$questions
-
-Format with markdown headers. Include the scholar's characteristic concerns and methodological commitments." 2>&1 &
-}
-
-# Function to run board member on copilot
-run_copilot() {
-    local scholar="$1"
-    local specialty="$2"
-    local questions="$3"
-    local output_file="notes/board-feedback-ch11-$(echo "$scholar" | tr '[:upper:]' '[:lower:]' | tr ' ' '-').md"
-
-    copilot -p "You are simulating the voice of $scholar, known for $specialty.
-
-$BASE_CONTEXT
-
-Write a 400-word advisory board review and save it to $output_file addressing:
-$questions
-
-Format with markdown headers. Include the scholar's characteristic concerns and methodological commitments." --allow-all-tools 2>&1 &
-}
-
-echo "Starting Ch 11 Advisory Board (12 members across 3 CLIs)..."
-echo "============================================================"
-
-# CODEX (4 members) - typology focus
-run_codex "Martin Haspelmath" "typology, comparative concepts, and cross-linguistic methodology" \
-"1. How does HPC relate to comparative concepts methodology?
-2. What cross-linguistic evidence on word classes should be included?
-3. How to handle the noun/verb vs adjective asymmetry typologically?"
+run_codex "Martin Haspelmath" "typology, comparative concepts, cross-linguistic methodology" \
+"1. How does HPC relate to comparative concepts?
+2. What typological evidence on word classes is essential?
+3. How should noun/verb vs adjective asymmetry be framed?"
 
 run_codex "William Croft" "Radical Construction Grammar and cross-linguistic word class analysis" \
-"1. How does the HPC framing relate to RCG's treatment of word classes?
-2. What role do constructions play in stabilizing word class distinctions?
-3. How should the chapter handle the form/function distinction for word classes?"
+"1. How does HPC relate to RCG treatment of word classes?
+2. What role do constructions play in stabilization?
+3. How should form/function distinctions be handled?"
 
-run_codex "R.M.W. Dixon" "adjective classes, basic linguistic theory, and typological fieldwork" \
-"1. What does the cross-linguistic variation in adjective classes tell us about mechanisms?
-2. How should the chapter use Dixon's typology of adjective-like words?
-3. What pitfalls should the chapter avoid when generalizing about word classes?"
+run_codex "R.M.W. Dixon" "adjective classes, BLT, typological fieldwork" \
+"1. What does adjective-class variation imply for mechanisms?
+2. How should Dixon's typology be used?
+3. What generalization pitfalls should be avoided?"
 
-run_codex "Mark Baker" "Chomskyan universals and the lexical category problem" \
-"1. What would a generativist want to see acknowledged about word class universals?
-2. Where does HPC diverge from formal approaches to lexical categories?
-3. What shared ground exists between mechanistic and parametric accounts?"
+run_codex "Mark Baker" "formal universals and lexical category theory" \
+"1. What formalist concerns should be acknowledged?
+2. Where does HPC diverge from parametric accounts?
+3. What shared ground is strongest?"
 
-# GEMINI (4 members) - usage-based focus
-run_gemini "Adele Goldberg" "construction grammar, argument structure, and usage-based learning" \
+run_codex "Adele Goldberg" "construction grammar and usage-based learning" \
 "1. How do constructions stabilize word class membership?
-2. What does HPC add beyond standard construction grammar accounts?
-3. How should acquisition evidence be integrated?"
+2. What does HPC add beyond standard CxG?
+3. Which acquisition evidence matters most?"
 
-run_gemini "Joan Bybee" "frequency effects, grammaticalization, and phonological reduction" \
-"1. How do frequency and entrenchment maintain word class boundaries?
-2. What diachronic evidence on word class change should be included?
-3. How does grammaticalization relate to HPC failure modes?"
+run_codex "Joan Bybee" "frequency, entrenchment, grammaticalization" \
+"1. How do frequency/entrenchment maintain boundaries?
+2. What diachronic evidence should be included?
+3. How does grammaticalization map to failure modes?"
 
-run_gemini "Michael Tomasello" "usage-based acquisition and social-cognitive mechanisms" \
+run_codex "Michael Tomasello" "usage-based acquisition and social cognition" \
 "1. What acquisition evidence supports word class as HPC?
-2. How do children learn word class membership without explicit instruction?
-3. What role does intention-reading play in word class learning?"
+2. How do children learn membership without explicit rules?
+3. What social-cognitive mechanisms should be foregrounded?"
 
-run_gemini "Simon Kirby" "language evolution, iterated learning, and cultural transmission" \
-"1. How does cultural transmission shape word class stability?
-2. What does iterated learning predict about noun/verb vs adjective?
-3. How should the chapter frame cross-generational mechanisms?"
+run_codex "Simon Kirby" "language evolution and iterated learning" \
+"1. How does transmission shape word class stability?
+2. What does iterated learning predict for noun/verb vs adjective?
+3. What cross-generational framing is most defensible?"
 
-# COPILOT (4 members) - categorization/philosophy focus
-run_copilot "Eleanor Rosch" "prototype theory and categorization research" \
-"1. How does HPC relate to prototype structure for word classes?
-2. Is word class membership graded or discrete?
-3. What categorization evidence should be included?"
+run_codex "Eleanor Rosch" "prototype theory and categorization" \
+"1. How does HPC relate to prototype structure?
+2. Where should gradience vs discreteness be clarified?
+3. What categorization evidence would strengthen the chapter?"
 
-run_copilot "Ruth Millikan" "teleosemantics, proper functions, and biological categories" \
-"1. What is the proper function of word class categories?
-2. How do word classes reproduce themselves across speakers?
-3. What would 'malfunction' look like for a word class?"
+run_codex "Ruth Millikan" "teleosemantics and proper function" \
+"1. What is the proper function of word-class categories?
+2. How do they reproduce across speakers?
+3. What would malfunction look like?"
 
-run_copilot "Ben Ambridge" "acquisition, entrenchment, and psycholinguistic evidence" \
-"1. What experimental evidence supports word class as learned category?
-2. How does entrenchment differ across word classes?
-3. What production/comprehension asymmetries are relevant?"
+run_codex "Ben Ambridge" "acquisition, entrenchment, psycholinguistics" \
+"1. What experimental evidence best supports learned categories?
+2. How does entrenchment differ across classes?
+3. Which production/comprehension asymmetries matter?"
 
-run_copilot "Edward Tufte" "data visualization and information design" \
-"1. What figures would best illustrate the noun/verb vs adjective asymmetry?
-2. How should cross-linguistic data be displayed?
-3. What visual pitfalls should the chapter avoid?"
+run_codex "Edward Tufte" "data visualization and information design" \
+"1. What figures best show noun/verb vs adjective asymmetry?
+2. How should cross-linguistic variation be displayed?
+3. What visual pitfalls should be avoided?"
 
-echo ""
-echo "All 12 advisory board agents launched. Waiting for completion..."
+echo "All agents launched. Waiting..."
 wait
-echo ""
-echo "============================================================"
-echo "All agents complete. Check notes/board-feedback-ch11-*.md"
+echo "Done. Check notes/board-feedback-ch11-*-codex.md"

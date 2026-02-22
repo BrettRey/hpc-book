@@ -1,17 +1,21 @@
 #!/bin/bash
+# Chapter 13 quick board review (Codex-only)
 
-# Multi-Agent Review for Chapter 13
-# Advisors: Adele Goldberg, William Croft, Carl Zimmer
+set -euo pipefail
 
-mkdir -p notes
+cd "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book"
 
-echo "Spawning Adele Goldberg agent..."
-cat chapters/chapter13.tex | gemini --yolo -o text "You are Adele Goldberg, a construction grammarian who emphasizes usage-based learning. This is Chapter 13 of a book on the metaphysics of linguistic categories (HPC theory). The chapter ('The Stack') argues that phonemes, morphemes, and constructions are all HPC kinds but with different 'stabiliser weightings'. Review this chapter. Does the 'stabiliser weighting' map make sense from a CxG perspective? Is the distinction between 'opaque' morphemes and 'architectural' constructions sound? Do the empirical cases (pin/pen, go/went, let alone) support the argument? Provide 3-4 paragraphs of critical feedback." > notes/board-feedback-ch13-goldberg.md 2>/dev/null &
+echo "Spawning Codex Goldberg..."
+codex exec --full-auto -C "$(pwd)" -o notes/board-feedback-ch13-goldberg-codex.md \
+  "Read chapters/chapter13.tex. You are Adele Goldberg (construction grammar). Review the chapter's stack argument. Do stabiliser weightings make sense? Are opaque-vs-architectural distinctions defensible? What are top fixes?" &
 
-echo "Spawning William Croft agent..."
-cat chapters/chapter13.tex | gemini --yolo -o text "You are William Croft, author of Radical Construction Grammar. You argue that universal cross-linguistic categories don't exist. This is Chapter 13 of a book arguing that categories are Homeostatic Property Clusters (HPC) kinds. This chapter applies this to 'The Stack' (phonemes, morphemes, constructions). Review this. Does the 'stack' metaphor dangerously reify layers you reject? Does the 'negative cases' section (polysynthetic, Indo-European) satisfy your skepticism? Is 'field-relative projectibility' sufficient to save 'phoneme' as a category? Provide 3-4 paragraphs of critical feedback." > notes/board-feedback-ch13-croft.md 2>/dev/null &
+echo "Spawning Codex Croft..."
+codex exec --full-auto -C "$(pwd)" -o notes/board-feedback-ch13-croft-codex.md \
+  "Read chapters/chapter13.tex. You are William Croft (Radical Construction Grammar). Does the stack metaphor over-reify layers? Are negative cases convincing? What would strengthen comparative-concept discipline?" &
 
-echo "Spawning Carl Zimmer agent..."
-cat chapters/chapter13.tex | gemini --yolo -o text "You are Carl Zimmer, a science writer known for making complex concepts vivid. This is Chapter 13 of a book on linguistics and metaphysics. It introduces a 'Stack' metaphor and 'stabiliser weighting'. Review this. Is the 'Stack' metaphor working? Is 'stabiliser-weighting' visualizable? Does the empirical data (formants, corpus stats) feel grounded? How would you make the central insight---that different levels are maintained by different mechanisms---clearer to a lay science audience? Provide 3-4 paragraphs of critical feedback." > notes/board-feedback-ch13-zimmer.md 2>/dev/null &
+echo "Spawning Codex Zimmer..."
+codex exec --full-auto -C "$(pwd)" -o notes/board-feedback-ch13-zimmer-codex.md \
+  "Read chapters/chapter13.tex. You are Carl Zimmer (science writer). Is the chapter vivid and accessible? Where does jargon block comprehension? Propose concrete prose and figure improvements." &
 
-echo "Agents spawned. Check notes/board-feedback-ch13-*.md for results."
+wait
+echo "Done. Check notes/board-feedback-ch13-*-codex.md"

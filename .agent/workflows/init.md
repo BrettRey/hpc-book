@@ -118,4 +118,4 @@ At session end, create/update `.agent/logs/session-YYYY-MM-DD.md` following the 
 ## Other Workflows
 
 - `/git-hygiene` — Reminders for clean commits and branch management
-- `/multi-agent-review` — Spawn independent LLM agents (Codex, Gemini) for parallel advisory board reviews of chapters. Useful for getting diverse, unbiased feedback.
+- `/multi-agent-review` — Spawn independent Codex agents for parallel advisory board reviews of chapters.
