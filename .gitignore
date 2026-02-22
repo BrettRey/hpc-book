@@ -47,3 +47,54 @@ env/
 # Research PDFs (large files)
 literature/
 correspondence/*.pdf
+
+# Local symlink/workspace mounts
+literature
+
+# Local session logs
+.agent/logs/session-*.md
+
+# Local scratch scripts/notes
+fix_*.py
+drafts/
+notes/ignore this/
+archive/chapter11-old-draft.tex
+notes/ch11/ch11-grist-question-words.md
+notes/chapter16-gauntlet-plan.md
+
+# Non-Codex board artifacts kept local
+notes/board-*-gemini.md
+notes/board-*-copilot.md
+notes/board-*-kimi.md
+notes/board-report-ch07-ch09-2026-02-22.md
+notes/board-report-ch13-2026-02-20.md
+
+# ABM scratch experiments
+code/test_*.py
+code/find_params.py
+code/inspect_plot.py
+code/ch7_volcanic_island-GPT.py
+
+# Generated local diagnostics (code-side)
+code/ch7_volcanic_island*.png
+code/volcano_*.png
+
+# Generated/extra figure assets not currently chapter-facing
+figures/volcano_control_experiments.png
+figures/volcano_reliability_sweep.png
+figures/volcano_seed_sensitivity.png
+figures/prescriptivism_experiment.png
+figures/count_basin_visualization.png
+figures/cape_presentation*.jpg
+figures/lophorina.jpg
+figures/lyrebird.jpg
+
+# Local archive zips
+chapters.zip
+chapters 2.zip
+
+# Additional LaTeX sidecars
+hpc-book.acr
+hpc-book.alg
+hpc-book.glg
+hpc-book.gls
