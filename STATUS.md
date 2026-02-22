@@ -43,15 +43,16 @@
 ## Current Focus
 
 1. Final implication-phase tightening (Chs 14-16 coherence and transitions)
-2. Shared-bib case-normalization pass (remaining Biber case-mismatch warnings)
+2. Shared-bib tranche B cleanup (DOI-duplicate groups + field-level metadata repairs)
 3. Table/figure line-break hygiene in high-visibility chapters
 
 ---
 
 ## Recent Milestones
 
+- Shared-bib tranche A completed (case-collision cleanup): full-bib audit moved from `811/69` to `799/41` (entries/issues), and case-collision groups dropped from `13` to `0`
 - Full shared-bib audit tooling added (`code/audit_full_bib.py`) with markdown/JSON reports and autofix suggestions
-- Cited-only BibTeX audit completed and cleaned (`293/293` cited keys resolved; `0` field warnings; report in `notes/cited-bib-audit-2026-02-22.md`)
+- Cited-only BibTeX audit completed and cleaned (`292/292` cited keys resolved; `0` field warnings; report in `notes/cited-bib-audit-2026-02-22.md`)
 - `f7eff65` — Ch 16 gauntlet revisions and board follow-up integrated
 - `6b626da` — Ch 16 ABM evidence criteria aligned with Ch 7/9 updates
 - `e3795d9` — Ch 7/9 compact 20-seed ABM robustness summaries

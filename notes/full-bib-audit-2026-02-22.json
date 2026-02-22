@@ -4,145 +4,19 @@
     "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib"
   ],
   "date": "2026-02-22",
-  "entry_count": 811,
+  "entry_count": 799,
   "issue_counts": {
     "error": 0,
-    "info": 39,
-    "total": 69,
-    "warning": 30
+    "info": 28,
+    "total": 41,
+    "warning": 13
   },
   "issues": [
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `carlson1977`: Carlson1977, carlson1977.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `corbett1991`: Corbett1991, corbett1991.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `downing1996`: Downing1996, downing1996.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `haspelmath1997`: Haspelmath1997, haspelmath1997.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `haspelmath2010`: Haspelmath2010, haspelmath2010.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `huddleston2002`: Huddleston2002, huddleston2002.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `lakoff1987`: Lakoff1987, lakoff1987.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `lyons1999`: Lyons1999, lyons1999.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `millikan1984`: Millikan1984, millikan1984.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `quirk1985`: Quirk1985, quirk1985.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `rosch1973`: Rosch1973, rosch1973.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `rosch1975`: Rosch1975, rosch1975.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
-    {
-      "code": "case_collision_key",
-      "field": "",
-      "key": "",
-      "message": "Case-colliding keys share lowercase form `sperber1996`: Sperber1996, sperber1996.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Choose one canonical key casing and update citations/references accordingly."
-    },
     {
       "code": "duplicate_doi_record",
       "field": "doi",
       "key": "Boyd1991HPC;boyd1991;boyd1991realism",
       "message": "DOI `10.1007/bf00385837` is shared by multiple keys: Boyd1991HPC, boyd1991, boyd1991realism.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Corbett1991;corbett1991",
-      "message": "DOI `10.1017/cbo9781139166119` is shared by multiple keys: Corbett1991, corbett1991.",
       "severity": "warning",
       "source": "",
       "suggestion": "Merge duplicate records under one key and update citation usage."
@@ -168,35 +42,8 @@
     {
       "code": "duplicate_doi_record",
       "field": "doi",
-      "key": "Haspelmath2010;haspelmath2010",
-      "message": "DOI `10.1353/lan.2010.0021` is shared by multiple keys: Haspelmath2010, haspelmath2010.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
       "key": "Huddleston2021;HuddlestonPullumReynolds2022",
       "message": "DOI `10.1017/9781009085748` is shared by multiple keys: Huddleston2021, HuddlestonPullumReynolds2022.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Rosch1973;rosch1973",
-      "message": "DOI `10.1016/0010-0285(73)90017-0` is shared by multiple keys: Rosch1973, rosch1973.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Rosch1975;rosch1975",
-      "message": "DOI `10.1037/0096-3445.104.3.192` is shared by multiple keys: Rosch1975, rosch1975.",
       "severity": "warning",
       "source": "",
       "suggestion": "Merge duplicate records under one key and update citation usage."
@@ -286,7 +133,7 @@
       "code": "mixed_address_location_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `address` (349) and `location` (9).",
+      "message": "Mixed use of `address` (341) and `location` (9).",
       "severity": "info",
       "source": "",
       "suggestion": "Choose one location field style and normalize."
@@ -295,7 +142,7 @@
       "code": "mixed_journal_field_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `journal` (362) and `journaltitle` (5).",
+      "message": "Mixed use of `journal` (359) and `journaltitle` (5).",
       "severity": "info",
       "source": "",
       "suggestion": "Choose one field style for articles and normalize across the bibliography."
@@ -304,7 +151,7 @@
       "code": "mixed_year_date_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `year` (806) and `date` (1).",
+      "message": "Mixed use of `year` (794) and `date` (1).",
       "severity": "info",
       "source": "",
       "suggestion": "Normalize to house style (typically keep `year`, optionally also `date` when needed)."
@@ -314,24 +161,6 @@
       "field": "",
       "key": "Boyd1991HPC;boyd1991;boyd1991realism",
       "message": "Same title+first-author+year signature appears under multiple keys: Boyd1991HPC, boyd1991, boyd1991realism.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Carlson1977;carlson1977",
-      "message": "Same title+first-author+year signature appears under multiple keys: Carlson1977, carlson1977.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Corbett1991;corbett1991",
-      "message": "Same title+first-author+year signature appears under multiple keys: Corbett1991, corbett1991.",
       "severity": "info",
       "source": "",
       "suggestion": "Manually inspect and merge if records are the same work."
@@ -357,26 +186,8 @@
     {
       "code": "possible_duplicate_record",
       "field": "",
-      "key": "Haspelmath1997;haspelmath1997",
-      "message": "Same title+first-author+year signature appears under multiple keys: Haspelmath1997, haspelmath1997.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Haspelmath2010;haspelmath2010",
-      "message": "Same title+first-author+year signature appears under multiple keys: Haspelmath2010, haspelmath2010.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Huddleston2002;HuddlestonPullum2002;huddleston2002",
-      "message": "Same title+first-author+year signature appears under multiple keys: Huddleston2002, HuddlestonPullum2002, huddleston2002.",
+      "key": "HuddlestonPullum2002;huddleston2002",
+      "message": "Same title+first-author+year signature appears under multiple keys: HuddlestonPullum2002, huddleston2002.",
       "severity": "info",
       "source": "",
       "suggestion": "Manually inspect and merge if records are the same work."
@@ -386,69 +197,6 @@
       "field": "",
       "key": "Kutas2011;kutas2011thirty",
       "message": "Same title+first-author+year signature appears under multiple keys: Kutas2011, kutas2011thirty.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Lakoff1987;lakoff1987",
-      "message": "Same title+first-author+year signature appears under multiple keys: Lakoff1987, lakoff1987.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Lyons1999;lyons1999",
-      "message": "Same title+first-author+year signature appears under multiple keys: Lyons1999, lyons1999.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Millikan1984;millikan1984",
-      "message": "Same title+first-author+year signature appears under multiple keys: Millikan1984, millikan1984.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Quirk1985;quirk1985",
-      "message": "Same title+first-author+year signature appears under multiple keys: Quirk1985, quirk1985.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Rosch1973;rosch1973",
-      "message": "Same title+first-author+year signature appears under multiple keys: Rosch1973, rosch1973.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Rosch1975;rosch1975",
-      "message": "Same title+first-author+year signature appears under multiple keys: Rosch1975, rosch1975.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Sperber1996;sperber1996",
-      "message": "Same title+first-author+year signature appears under multiple keys: Sperber1996, sperber1996.",
       "severity": "info",
       "source": "",
       "suggestion": "Manually inspect and merge if records are the same work."
@@ -635,26 +383,25 @@
     }
   ],
   "issues_by_code": {
-    "case_collision_key": 13,
-    "duplicate_doi_record": 12,
+    "duplicate_doi_record": 8,
     "invalid_year_format": 1,
     "missing_required_field": 4,
     "mixed_address_location_style": 1,
     "mixed_journal_field_style": 1,
     "mixed_year_date_style": 1,
-    "possible_duplicate_record": 36
+    "possible_duplicate_record": 25
   },
   "load_error_issues": [],
   "style_counts": {
-    "address_only": 349,
+    "address_only": 341,
     "both_address_location": 0,
     "both_journal_fields": 0,
     "both_year_date": 4,
     "date_only": 1,
-    "journal_only": 362,
+    "journal_only": 359,
     "journaltitle_only": 5,
     "location_only": 9,
-    "year_only": 806
+    "year_only": 794
   },
-  "unique_key_count": 811
+  "unique_key_count": 799
 }

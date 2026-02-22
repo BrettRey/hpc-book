@@ -956,7 +956,7 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 - Hardened `code/audit_cited_bib.py`:
   - fallback parser now ignores `%` comments and non-entry declarations,
   - audit recognizes `journaltitle` as `journal` and `date` as a `year` source.
-- Updated cited-only audit result: `293/293` cited keys resolved; `0` missing; `0` cited-entry warnings; `0` duplicate keys.
+- Updated cited-only audit result: `292/292` cited keys resolved; `0` missing; `0` cited-entry warnings; `0` duplicate keys.
 - Remaining upstream bibliography noise is now limited to 13 Biber case-mismatch key pairs (not cited-only failures).
 
 ### State at end of session
@@ -969,3 +969,30 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
   - `notes/full-bib-audit-2026-02-22.md`
   - `notes/full-bib-audit-2026-02-22.json`
 - Baseline findings on shared `references.bib`: 811 entries, 69 issues (13 case-collision key groups, 12 DOI duplicate groups, 1 invalid year format, 4 required-field gaps, plus style-consistency signals).
+
+---
+
+## 22 February 2026 — Shared-bib cleanup tranche A (case-collision keys)
+
+### Session summary
+- Completed tranche A of full-shared-bib cleanup by eliminating key-space case collisions in shared `references.bib` (symlink target: `../../.house-style/references.bib`).
+- Updated in-repo citations to canonical lowercase keys where needed:
+  - `chapters/chapter11.tex`: `Haspelmath2010` → `haspelmath2010`
+  - `chapters/chapter15.tex`: `Sperber1996` → `sperber1996`
+- Resolved the one true non-duplicate collision pair by renaming:
+  - `Downing1996` → `downing1996propernames` (distinct work from `downing1996`)
+
+### Verification
+- Full build run: `latexmk hpc-book.tex`
+  - No undefined-citation warnings.
+  - Pre-existing non-bib warnings persist (multiply-defined label; missing glyph `ɪ` in EB Garamond Italic).
+- Cited-only audit:
+  - `python3 code/audit_cited_bib.py --bcf build/hpc-book.bcf --date 2026-02-22 --strict`
+  - Result: `292` cited keys, `292` resolved, `0` missing, `0` cited-entry warnings, `0` duplicate keys in loaded sources.
+- Full-bib audit refresh:
+  - `notes/full-bib-audit-2026-02-22.md`
+  - `notes/full-bib-audit-2026-02-22.json`
+  - New state: `799` entries, `41` issues, `0` case-collision key groups (down from `811` entries / `69` issues / `13` case-collision groups).
+
+### Remaining bib work
+- Tranche B remains: DOI-duplicate groups, one invalid year format (`2008--2025`), and required-field gaps.

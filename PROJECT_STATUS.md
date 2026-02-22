@@ -3,6 +3,20 @@
 **Date**: February 22, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
 
+### Session Work (Feb 22, 2026: shared-bib cleanup tranche A completed)
+- ✅ **Case-collision normalization completed** in shared `references.bib`:
+  - Removed duplicate case-variant keys for the same works (e.g., `Huddleston2002`, `Sperber1996`, `Haspelmath2010`, `Rosch1973`, `Rosch1975`).
+  - Renamed the true non-duplicate collision pair key `Downing1996` to `downing1996propernames` to avoid key-space collision with `downing1996`.
+- ✅ **In-repo citation updates** applied:
+  - `chapters/chapter11.tex`: `Haspelmath2010` → `haspelmath2010`
+  - `chapters/chapter15.tex`: `Sperber1996` → `sperber1996`
+- ✅ **Verification pass completed**:
+  - `latexmk hpc-book.tex` successful; no undefined-citation warnings.
+  - `python3 code/audit_cited_bib.py --bcf build/hpc-book.bcf --date 2026-02-22 --strict`: `292/292` cited keys resolved, `0` missing, `0` cited-entry warnings.
+  - Updated full-bib reports: `notes/full-bib-audit-2026-02-22.md` and `notes/full-bib-audit-2026-02-22.json`.
+  - Full-bib state now: **799 entries, 41 issues, 0 case-collision groups** (down from 811 entries / 69 issues / 13 case-collision groups).
+- ⚠️ **Scope note**: shared bib edits were made in the symlink target (`../../.house-style/references.bib`), not as tracked changes in this repo.
+
 ### Session Work (Feb 22, 2026: full shared-bib audit workflow)
 - ✅ **Implemented full-bib audit tool**: `code/audit_full_bib.py` (full source integrity checks with suggestions).
 - ✅ **Produced baseline reports**:
@@ -27,11 +41,11 @@
 - ✅ **Verification complete**:
   - `latexmk hpc-book.tex` completed successfully.
   - `build/hpc-book.log` no longer reports undefined citations.
-  - Audit result: `293/293` cited keys resolved, `0` missing.
+  - Audit result: `292/292` cited keys resolved, `0` missing.
 - ✅ **Bibliography hygiene follow-through completed**:
   - Cited-entry metadata warnings resolved (date-only entries normalized with explicit `year`; `forthcoming` year fields converted to integer year plus `note`).
   - Audit parser hardened to ignore commented-out BibTeX stubs and accept `date`/`journaltitle` when auditing cited records.
-  - Updated audit result: `293/293` cited keys resolved, `0` missing, `0` cited-entry warnings, `0` duplicate keys in loaded sources.
+  - Updated audit result: `292/292` cited keys resolved, `0` missing, `0` cited-entry warnings, `0` duplicate keys in loaded sources.
 - ⚠️ **Remaining upstream bib noise (outside cited-only scope)**:
   - Biber still reports 13 case-mismatch key pairs in shared `references.bib` (e.g., `huddleston2002`/`Huddleston2002`).
 
@@ -52,8 +66,8 @@
 - ✅ **Chapter 9 ABM refinement**: scaling-control clarification, 20-seed distributional summaries, and freeze-learning control added to reinforce mechanism-claim discipline.
 
 ### Immediate
-1. Execute shared-bib cleanup tranche A: 13 case-collision key groups (Biber-warning elimination).
-2. Execute shared-bib cleanup tranche B: 12 DOI-duplicate groups + 1 invalid year + 4 required-field gaps.
+1. Execute shared-bib cleanup tranche B: remaining DOI-duplicate groups + invalid year + required-field gaps.
+2. Decide canonical key policy for duplicate-record groups and stage chapter citation remaps where needed.
 3. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
 
 ### Session Work (Feb 20, 2026 evening: Ch 11 + Ch 8 + Ch 9 polish with Brett)
