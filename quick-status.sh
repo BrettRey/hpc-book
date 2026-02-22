@@ -1,8 +1,17 @@
 #!/bin/bash
 # HPC Book Quick Status - Zero-token overview
-# Run from HPC book directory
+# Run from anywhere; resolves repo root from script location
 
-cd "/Users/brettreynolds/Documents/LLM-CLI-projects/HPC book"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "${SCRIPT_DIR}" || {
+    echo "Failed to locate repository root from script directory."
+    exit 1
+}
+
+if [ ! -f "hpc-book.tex" ]; then
+    echo "hpc-book.tex not found in ${PWD}."
+    exit 1
+fi
 
 # Colors
 BOLD='\033[1m'
@@ -40,11 +49,16 @@ echo ""
 echo -e "${GREEN}▶ ACTIVE CHAPTERS (uncommented in hpc-book.tex)${NC}"
 echo "─────────────────────────────────────────────────────────────────"
 
-grep -E "^\\\\include\{chapters/chapter" hpc-book.tex 2>/dev/null | sed 's/\\include{chapters\//  /' | sed 's/}//' || echo "  None uncommented"
+grep -E "^\\\\(include|input)\{chapters/chapter" hpc-book.tex 2>/dev/null \
+    | sed -E 's/^\\(include|input)\{chapters\//  /' \
+    | sed 's/}//' \
+    || echo "  None uncommented"
 
 echo ""
 echo -e "${YELLOW}  Commented out:${NC}"
-grep -E "^%.*\\\\include\{chapters/chapter" hpc-book.tex 2>/dev/null | wc -l | xargs -I {} echo "  {} chapters"
+grep -E "^%.*\\\\(include|input)\{chapters/chapter" hpc-book.tex 2>/dev/null \
+    | wc -l \
+    | xargs -I {} echo "  {} chapters"
 
 # ─────────────────────────────────────────────────────────────────
 # NEXT ACTIONS (from PROJECT_STATUS.md)
