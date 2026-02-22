@@ -4,136 +4,19 @@
     "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib"
   ],
   "date": "2026-02-22",
-  "entry_count": 799,
+  "entry_count": 790,
   "issue_counts": {
     "error": 0,
-    "info": 28,
-    "total": 41,
-    "warning": 13
+    "info": 22,
+    "total": 22,
+    "warning": 0
   },
   "issues": [
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Boyd1991HPC;boyd1991;boyd1991realism",
-      "message": "DOI `10.1007/bf00385837` is shared by multiple keys: Boyd1991HPC, boyd1991, boyd1991realism.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Fedorenko2024a;Fedorenko2024naturalkind",
-      "message": "DOI `10.1038/s41583-024-00802-4` is shared by multiple keys: Fedorenko2024a, Fedorenko2024naturalkind.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Goldberg2011;goldberg2011preemption",
-      "message": "DOI `10.1515/cogl.2011.006` is shared by multiple keys: Goldberg2011, goldberg2011preemption.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "Huddleston2021;HuddlestonPullumReynolds2022",
-      "message": "DOI `10.1017/9781009085748` is shared by multiple keys: Huddleston2021, HuddlestonPullumReynolds2022.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "ambridge2019;ambridge2020radical",
-      "message": "DOI `10.1177/0142723719869731` is shared by multiple keys: ambridge2019, ambridge2020radical.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "kirby2015;kirby2015compression",
-      "message": "DOI `10.1016/j.cognition.2015.03.016` is shared by multiple keys: kirby2015, kirby2015compression.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "link1983;link1983plurals",
-      "message": "DOI `10.1515/9783110852820.302` is shared by multiple keys: link1983, link1983plurals.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "duplicate_doi_record",
-      "field": "doi",
-      "key": "pullum2001;pullum_scholz2001mtsges",
-      "message": "DOI `10.1007/3-540-48199-0_2` is shared by multiple keys: pullum2001, pullum_scholz2001mtsges.",
-      "severity": "warning",
-      "source": "",
-      "suggestion": "Merge duplicate records under one key and update citation usage."
-    },
-    {
-      "code": "invalid_year_format",
-      "field": "year",
-      "key": "Davies2008COCA",
-      "message": "Year has non-standard format `2008--2025`.",
-      "severity": "warning",
-      "source": "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib",
-      "suggestion": "Use `year={YYYY}` (or `YYYYa`, `YYYYb`) and put extra text in `note`."
-    },
-    {
-      "code": "missing_required_field",
-      "field": "journal",
-      "key": "GelmanLoken2013",
-      "message": "Required field `journal` is missing.",
-      "severity": "warning",
-      "source": "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib",
-      "suggestion": "Add `journal={...}` (or standardize to `journaltitle`, then normalize style)."
-    },
-    {
-      "code": "missing_required_field",
-      "field": "school",
-      "key": "baird2001",
-      "message": "Required field `school` is missing.",
-      "severity": "warning",
-      "source": "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib",
-      "suggestion": "Add `school={...}`."
-    },
-    {
-      "code": "missing_required_field",
-      "field": "publisher",
-      "key": "bechtel2005explanation",
-      "message": "Required field `publisher` is missing.",
-      "severity": "warning",
-      "source": "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib",
-      "suggestion": "Add `publisher={...}`."
-    },
-    {
-      "code": "missing_required_field",
-      "field": "school",
-      "key": "winter2002",
-      "message": "Required field `school` is missing.",
-      "severity": "warning",
-      "source": "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib",
-      "suggestion": "Add `school={...}`."
-    },
     {
       "code": "mixed_address_location_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `address` (341) and `location` (9).",
+      "message": "Mixed use of `address` (339) and `location` (8).",
       "severity": "info",
       "source": "",
       "suggestion": "Choose one location field style and normalize."
@@ -142,7 +25,7 @@
       "code": "mixed_journal_field_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `journal` (359) and `journaltitle` (5).",
+      "message": "Mixed use of `journal` (354) and `journaltitle` (5).",
       "severity": "info",
       "source": "",
       "suggestion": "Choose one field style for articles and normalize across the bibliography."
@@ -151,7 +34,7 @@
       "code": "mixed_year_date_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `year` (794) and `date` (1).",
+      "message": "Mixed use of `year` (785) and `date` (1).",
       "severity": "info",
       "source": "",
       "suggestion": "Normalize to house style (typically keep `year`, optionally also `date` when needed)."
@@ -159,26 +42,8 @@
     {
       "code": "possible_duplicate_record",
       "field": "",
-      "key": "Boyd1991HPC;boyd1991;boyd1991realism",
-      "message": "Same title+first-author+year signature appears under multiple keys: Boyd1991HPC, boyd1991, boyd1991realism.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Fedorenko2024a;Fedorenko2024naturalkind",
-      "message": "Same title+first-author+year signature appears under multiple keys: Fedorenko2024a, Fedorenko2024naturalkind.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Goldberg2011;goldberg2011preemption",
-      "message": "Same title+first-author+year signature appears under multiple keys: Goldberg2011, goldberg2011preemption.",
+      "key": "Davies2008COCA;davies2008",
+      "message": "Same title+first-author+year signature appears under multiple keys: Davies2008COCA, davies2008.",
       "severity": "info",
       "source": "",
       "suggestion": "Manually inspect and merge if records are the same work."
@@ -206,15 +71,6 @@
       "field": "",
       "key": "Traugott1993;hopper1993",
       "message": "Same title+first-author+year signature appears under multiple keys: Traugott1993, hopper1993.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "ambridge2019;ambridge2020radical",
-      "message": "Same title+first-author+year signature appears under multiple keys: ambridge2019, ambridge2020radical.",
       "severity": "info",
       "source": "",
       "suggestion": "Manually inspect and merge if records are the same work."
@@ -294,15 +150,6 @@
     {
       "code": "possible_duplicate_record",
       "field": "",
-      "key": "kirby2015;kirby2015compression",
-      "message": "Same title+first-author+year signature appears under multiple keys: kirby2015, kirby2015compression.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
       "key": "labov2006;labov2006atlas",
       "message": "Same title+first-author+year signature appears under multiple keys: labov2006, labov2006atlas.",
       "severity": "info",
@@ -314,15 +161,6 @@
       "field": "",
       "key": "lewis1969;lewis1969convention",
       "message": "Same title+first-author+year signature appears under multiple keys: lewis1969, lewis1969convention.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "link1983;link1983plurals",
-      "message": "Same title+first-author+year signature appears under multiple keys: link1983, link1983plurals.",
       "severity": "info",
       "source": "",
       "suggestion": "Manually inspect and merge if records are the same work."
@@ -366,15 +204,6 @@
     {
       "code": "possible_duplicate_record",
       "field": "",
-      "key": "pullum2001;pullum_scholz2001mtsges",
-      "message": "Same title+first-author+year signature appears under multiple keys: pullum2001, pullum_scholz2001mtsges.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
       "key": "slater2015;slater2015natural",
       "message": "Same title+first-author+year signature appears under multiple keys: slater2015, slater2015natural.",
       "severity": "info",
@@ -383,25 +212,22 @@
     }
   ],
   "issues_by_code": {
-    "duplicate_doi_record": 8,
-    "invalid_year_format": 1,
-    "missing_required_field": 4,
     "mixed_address_location_style": 1,
     "mixed_journal_field_style": 1,
     "mixed_year_date_style": 1,
-    "possible_duplicate_record": 25
+    "possible_duplicate_record": 19
   },
   "load_error_issues": [],
   "style_counts": {
-    "address_only": 341,
+    "address_only": 339,
     "both_address_location": 0,
     "both_journal_fields": 0,
     "both_year_date": 4,
     "date_only": 1,
-    "journal_only": 359,
+    "journal_only": 354,
     "journaltitle_only": 5,
-    "location_only": 9,
-    "year_only": 794
+    "location_only": 8,
+    "year_only": 785
   },
-  "unique_key_count": 799
+  "unique_key_count": 790
 }

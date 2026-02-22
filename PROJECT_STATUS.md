@@ -3,6 +3,26 @@
 **Date**: February 22, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
 
+### Session Work (Feb 22, 2026: shared-bib cleanup tranche B completed)
+- ✅ **All tranche-B warnings resolved** in shared `references.bib`:
+  - Merged DOI-duplicate record groups using canonical keys plus alias preservation via `ids={...}`.
+  - Normalized invalid year format (`Davies2008COCA`: `year={2008}` with status/access details moved to `note`).
+  - Repaired required-field gaps by correcting entry types/fields:
+    - `GelmanLoken2013` → `@unpublished`
+    - `bechtel2005explanation` → `@article` with `journal`, `number`, `doi`
+    - `baird2001` → `@mastersthesis` + `school`
+    - `winter2002` → `@phdthesis` + `school`
+- ✅ **Metadata sanity checks run** against Crossref for high-uncertainty items:
+  - `10.1016/j.shpsc.2005.03.010`
+  - `10.1177/0142723719869731`
+  - `10.1017/9781009085748`
+- ✅ **Verification pass completed**:
+  - `latexmk hpc-book.tex` successful.
+  - `python3 code/audit_cited_bib.py --bcf build/hpc-book.bcf --date 2026-02-22 --strict`: `292/292` cited keys resolved, `0` missing.
+  - Biber case-mismatch warnings eliminated.
+  - Updated full-bib state: **790 entries, 22 issues, 0 warnings** (down from 799/41/13 warnings after tranche A).
+- ⚠️ **Scope note**: tranche-B bib edits were made in the symlink target (`../../.house-style/references.bib`), not as tracked changes in this repo.
+
 ### Session Work (Feb 22, 2026: shared-bib cleanup tranche A completed)
 - ✅ **Case-collision normalization completed** in shared `references.bib`:
   - Removed duplicate case-variant keys for the same works (e.g., `Huddleston2002`, `Sperber1996`, `Haspelmath2010`, `Rosch1973`, `Rosch1975`).
@@ -66,8 +86,8 @@
 - ✅ **Chapter 9 ABM refinement**: scaling-control clarification, 20-seed distributional summaries, and freeze-learning control added to reinforce mechanism-claim discipline.
 
 ### Immediate
-1. Execute shared-bib cleanup tranche B: remaining DOI-duplicate groups + invalid year + required-field gaps.
-2. Decide canonical key policy for duplicate-record groups and stage chapter citation remaps where needed.
+1. Resolve remaining `possible_duplicate_record` groups (19) with canonical-key + alias policy.
+2. Normalize style-mix fields (`journal`/`journaltitle`, `address`/`location`, `year`/`date`) in shared `references.bib`.
 3. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
 
 ### Session Work (Feb 20, 2026 evening: Ch 11 + Ch 8 + Ch 9 polish with Brett)

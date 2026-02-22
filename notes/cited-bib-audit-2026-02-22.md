@@ -1,9 +1,9 @@
 # Cited Bib Audit (2026-02-22)
 
 ## Summary
-- Cited keys: 293
+- Cited keys: 292
 - Bib sources loaded: 2
-- Resolved cited keys: 293
+- Resolved cited keys: 292
 - Missing cited keys: 0
 - Cited entries with field warnings: 0
 - Duplicate keys in loaded bib sources: 0

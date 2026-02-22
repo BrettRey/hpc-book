@@ -946,7 +946,7 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 ### Verification
 - Full build run: `latexmk hpc-book.tex`.
 - No undefined-citation warnings remained in `build/hpc-book.log`.
-- Audit result: `293` cited keys, `293` resolved, `0` missing.
+- Audit result: `292` cited keys, `292` resolved, `0` missing.
 
 ### Follow-through and remaining issues
 - Completed upstream metadata cleanup for cited entries:
@@ -996,3 +996,34 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 
 ### Remaining bib work
 - Tranche B remains: DOI-duplicate groups, one invalid year format (`2008--2025`), and required-field gaps.
+
+---
+
+## 22 February 2026 — Shared-bib cleanup tranche B (warnings to zero)
+
+### Session summary
+- Completed tranche B in shared `references.bib` by resolving all remaining warning-class issues from the full-bib audit.
+- Merged DOI-duplicate groups into canonical entries and preserved backward compatibility with alias keys via `ids={...}`.
+- Repaired structural metadata problems:
+  - `GelmanLoken2013` retyped to `@unpublished`
+  - `bechtel2005explanation` retyped to `@article` with validated journal metadata and DOI
+  - `baird2001` retyped to `@mastersthesis` with `school`
+  - `winter2002` retyped to `@phdthesis` with `school`
+  - `Davies2008COCA` year normalized from range format to `year={2008}`; update/access detail moved to `note`
+- Removed redundant duplicate records after aliasing (including DOI-duplicate pairs/triples such as Boyd, Fedorenko, Goldberg, Ambridge, Kirby, Link, Pullum, and Student's Introduction key variants).
+
+### Verification
+- Full build run: `latexmk hpc-book.tex`
+  - No undefined-citation warnings.
+  - No Biber case-mismatch warnings.
+  - Pre-existing non-bib warnings unchanged (multiply-defined label; missing glyph `ɪ`).
+- Cited-only audit:
+  - `python3 code/audit_cited_bib.py --bcf build/hpc-book.bcf --date 2026-02-22 --strict`
+  - Result: `292/292` cited keys resolved; `0` missing; `0` cited-entry warnings.
+- Full-bib audit refresh:
+  - `notes/full-bib-audit-2026-02-22.md`
+  - `notes/full-bib-audit-2026-02-22.json`
+  - New state: `790` entries, `22` issues, `0` warnings (all remaining issues are informational style-mix / possible-duplicate signals).
+
+### Remaining bib work
+- Tranche C (optional): resolve remaining 19 `possible_duplicate_record` groups and normalize field-style mixes (`journal`/`journaltitle`, `address`/`location`, `year`/`date`).

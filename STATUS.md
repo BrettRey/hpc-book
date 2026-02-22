@@ -43,13 +43,14 @@
 ## Current Focus
 
 1. Final implication-phase tightening (Chs 14-16 coherence and transitions)
-2. Shared-bib tranche B cleanup (DOI-duplicate groups + field-level metadata repairs)
+2. Shared-bib tranche C cleanup (remaining duplicate-signature groups + style-field normalization)
 3. Table/figure line-break hygiene in high-visibility chapters
 
 ---
 
 ## Recent Milestones
 
+- Shared-bib tranche B completed (DOI duplicates + field repairs): full-bib audit moved from `799/41` to `790/22` (entries/issues), with warnings reduced from `13` to `0`
 - Shared-bib tranche A completed (case-collision cleanup): full-bib audit moved from `811/69` to `799/41` (entries/issues), and case-collision groups dropped from `13` to `0`
 - Full shared-bib audit tooling added (`code/audit_full_bib.py`) with markdown/JSON reports and autofix suggestions
 - Cited-only BibTeX audit completed and cleaned (`292/292` cited keys resolved; `0` field warnings; report in `notes/cited-bib-audit-2026-02-22.md`)
