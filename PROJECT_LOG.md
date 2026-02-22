@@ -891,3 +891,41 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 
 ### State at end of session
 - Chapter 15 complete and integrated.
+
+---
+
+## 21 February 2026 — Ch 7/9 ABM hardening, scaling policy, and cleanup
+
+### Session summary
+- Re-audited Chapter 7 and Chapter 9 ABM sections for epistemic status, assumptions, and readability for non-ABM readers.
+- Made agent-count declarations explicit in chapter prose and kept framing as illustrative/non-probative.
+- Implemented robust scaling controls in both ABM scripts:
+  - `code/volcano_abm.py`: new CLI experiment modes (`main`, `controls`, `sweep`, `sensitivity`, `all`), schedule resolver, exposure-aware defaults, and seed-sensitivity outputs.
+  - `code/countability_abm.py`: runtime controls for `n_agents`, institutional share, interactions scaling, drift-family parameterization, and sensitivity/ablation manifests with runtime metadata.
+- Added a benchmark-backed scaling policy memo: `notes/abm-scaling-decision-2026-02-22.md`.
+- Added compact robustness paragraphs (Gelman-style uncertainty without reader overload):
+  - Ch 7: 20-seed means/sd + one control contrast.
+  - Ch 9: 20-seed ranges for key endpoints + freeze-learning control note.
+- Regenerated manifests for default chapter settings and moderate-N robustness runs.
+- Ran full build via `latexmk hpc-book.tex` and verified no new ABM-section build breaks.
+
+### Decisions made
+- Do **not** scale ABMs to extreme population sizes by default (e.g., 500k) without scaling interaction budgets.
+- Prefer **moderate N + multi-seed summaries** over single huge-N trajectories.
+- Keep chapter text concise on uncertainty (one compact paragraph/model), with full diagnostics in manifests/repo.
+- Keep board workflow infrastructure Codex-only in this repo unless user explicitly requests other models.
+
+### Context learned
+- Fast runtime at fixed `T` can be misleading: for the Volcano model, effective learning scales with updates-per-agent (`T/N`), so large `N` can silently under-train.
+- For the countability model, scaling interactions with `N` preserves comparable exposure and interpretation across runs.
+- Reader-facing ABM prose can absorb uncertainty by reporting only a few calibrated quantities (means/ranges) plus one mechanism check.
+
+### Commits produced
+- `fc1210c` — Ch 7/9 ABM scaling controls + multi-seed outputs
+- `cab54d1` — Codex-only board workflow/docs + chapter asset cleanup
+- `64d209c` — `.gitignore` hygiene for local scratch artifacts
+- `e3795d9` — Compact 20-seed robustness summaries in Ch 7/9
+
+### State at end of session
+- `master` pushed to `origin` with ABM hardening + chapter robustness prose.
+- Working tree clean (with local scratch artifacts now ignored via `.gitignore`).
