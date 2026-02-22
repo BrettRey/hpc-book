@@ -3,6 +3,25 @@
 **Date**: February 22, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
 
+### Session Work (Feb 22, 2026: cited-only BibTeX audit + citation resolution)
+- ✅ **Resolved all currently missing cited keys** in full-book build:
+  - Loaded local source in preamble (`\addbibresource{references-local.bib}`).
+  - Added `eckert2008indexical` to `references-local.bib`.
+  - Corrected key mismatches in chapter prose (`wiese2023grammatical` → `wiese2023`; `Reynolds2026` remapped to specific existing keys).
+- ✅ **Implemented cited-only audit tooling**:
+  - Added `code/audit_cited_bib.py` (reads citekeys from `build/hpc-book.bcf`, audits only cited entries).
+  - Generated report: `notes/cited-bib-audit-2026-02-22.md`.
+- ✅ **Verification complete**:
+  - `latexmk hpc-book.tex` completed successfully.
+  - `build/hpc-book.log` no longer reports undefined citations.
+  - Audit result: `293/293` cited keys resolved, `0` missing.
+- ✅ **Bibliography hygiene follow-through completed**:
+  - Cited-entry metadata warnings resolved (date-only entries normalized with explicit `year`; `forthcoming` year fields converted to integer year plus `note`).
+  - Audit parser hardened to ignore commented-out BibTeX stubs and accept `date`/`journaltitle` when auditing cited records.
+  - Updated audit result: `293/293` cited keys resolved, `0` missing, `0` cited-entry warnings, `0` duplicate keys in loaded sources.
+- ⚠️ **Remaining upstream bib noise (outside cited-only scope)**:
+  - Biber still reports 13 case-mismatch key pairs in shared `references.bib` (e.g., `huddleston2002`/`Huddleston2002`).
+
 ### Session Work (Feb 22, 2026: Ch 16 gauntlet finalization + board loop)
 - ✅ **Ch 16 rebuilt as a true gauntlet**: risky predictions, explicit falsifiers, serious-downgrade criterion, and operational thresholds consolidated in `chapters/chapter16.tex`.
 - ✅ **Running case hardened** (`\mention{data}`): diagnostics now aligned to Ch 9 framing (agreement + tight/loose packaging + anchoring recession) rather than generic variation talk.
@@ -20,7 +39,7 @@
 - ✅ **Chapter 9 ABM refinement**: scaling-control clarification, 20-seed distributional summaries, and freeze-learning control added to reinforce mechanism-claim discipline.
 
 ### Immediate
-1. Run final bibliography pass for currently unresolved citation keys.
+1. Normalize remaining case-mismatch key pairs in shared `references.bib` to reduce Biber warnings.
 2. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
 3. Decide whether to keep all generated ABM diagnostic figures in-repo or archive non-book artifacts.
 

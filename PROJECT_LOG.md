@@ -929,3 +929,36 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 ### State at end of session
 - `master` pushed to `origin` with ABM hardening + chapter robustness prose.
 - Working tree clean (with local scratch artifacts now ignored via `.gitignore`).
+
+---
+
+## 22 February 2026 — Cited-only BibTeX audit and citation-key resolution
+
+### Session summary
+- Completed a cited-only bibliography pass for the full compiled book, using `build/hpc-book.bcf` as the source of truth for what is actually cited.
+- Resolved all previously undefined citation keys by:
+  - loading `references-local.bib` in `.house-style/preamble.tex`,
+  - adding `eckert2008indexical` to `references-local.bib`,
+  - fixing key mismatches in chapter files (`wiese2023grammatical` → `wiese2023`; `Reynolds2026` remapped to specific existing sources).
+- Added a reusable audit script: `code/audit_cited_bib.py`.
+- Produced dated audit output: `notes/cited-bib-audit-2026-02-22.md`.
+
+### Verification
+- Full build run: `latexmk hpc-book.tex`.
+- No undefined-citation warnings remained in `build/hpc-book.log`.
+- Audit result: `293` cited keys, `293` resolved, `0` missing.
+
+### Follow-through and remaining issues
+- Completed upstream metadata cleanup for cited entries:
+  - Added explicit integer `year` fields to cited date-only entries.
+  - Converted cited `year={forthcoming}` entries to integer year + `note={Forthcoming}`.
+  - Removed one redundant case-duplicate entry (`Tomasello2003`) in shared `references.bib`.
+- Hardened `code/audit_cited_bib.py`:
+  - fallback parser now ignores `%` comments and non-entry declarations,
+  - audit recognizes `journaltitle` as `journal` and `date` as a `year` source.
+- Updated cited-only audit result: `293/293` cited keys resolved; `0` missing; `0` cited-entry warnings; `0` duplicate keys.
+- Remaining upstream bibliography noise is now limited to 13 Biber case-mismatch key pairs (not cited-only failures).
+
+### State at end of session
+- Citation resolution is complete for the current full-book build.
+- Next bib step is optional normalization of remaining Biber case-mismatch key pairs in shared `references.bib`.

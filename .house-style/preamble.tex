@@ -196,6 +196,7 @@
 % Default portable setup:
 \usepackage[backend=biber,style=apa,natbib=true,doi=true,isbn=false,url=true]{biblatex}
 \addbibresource{references.bib}
+\addbibresource{references-local.bib}
 
 % If working in LangSci projects, you can switch to their unified style:
 % \usepackage[backend=biber,style=unified,natbib=true,doi=true,isbn=false,url=false]{biblatex}
@@ -283,5 +284,4 @@
 \AtBeginDocument{%
   \renewcommand*{\glossentryname}[1]{{\mdseries\textsc{\glsentryname{#1}}}}%
 }
-
 
