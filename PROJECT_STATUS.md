@@ -3,6 +3,23 @@
 **Date**: February 22, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
 
+### Session Work (Feb 22, 2026: shared-bib cleanup tranche C completed)
+- ✅ **All remaining duplicate-signature groups resolved** in shared `references.bib`:
+  - Closed all 19 `possible_duplicate_record` groups with canonical-record consolidation.
+  - Removed duplicate records and kept canonical metadata (including validated DOI/title fixes for high-ambiguity items).
+  - Updated in-text cites to canonical keys where needed (`bybee2015`→`bybee1994`, `croft2001radical`→`croft2001`, `pickeringgarrod2004`→`pickering2004`).
+- ✅ **Audit tooling improved**:
+  - `code/audit_cited_bib.py` now resolves BibLaTeX `ids={...}` aliases, so cited-audit output reflects true Biber resolution behavior.
+- ✅ **Verification pass completed**:
+  - `latexmk -g hpc-book.tex` successful (existing non-fatal warnings unchanged).
+  - `python3 code/audit_full_bib.py --bib references.bib --date 2026-02-22`: **770 entries, 2 info issues, 0 warnings, 0 duplicate-record groups**.
+  - `python3 code/audit_cited_bib.py --bcf build/hpc-book.bcf --date 2026-02-22`: **292/292 cited keys resolved, 0 missing, 0 cited-entry warnings** (3 keys resolved via aliases).
+  - Refreshed reports:
+    - `notes/full-bib-audit-2026-02-22.md`
+    - `notes/full-bib-audit-2026-02-22.json`
+    - `notes/cited-bib-audit-2026-02-22.md`
+- ⚠️ **Scope note**: tranche-C bib edits were made in the symlink target (`../../.house-style/references.bib`), not as tracked changes in this repo.
+
 ### Session Work (Feb 22, 2026: shared-bib cleanup tranche B completed)
 - ✅ **All tranche-B warnings resolved** in shared `references.bib`:
   - Merged DOI-duplicate record groups using canonical keys plus alias preservation via `ids={...}`.
@@ -86,9 +103,9 @@
 - ✅ **Chapter 9 ABM refinement**: scaling-control clarification, 20-seed distributional summaries, and freeze-learning control added to reinforce mechanism-claim discipline.
 
 ### Immediate
-1. Resolve remaining `possible_duplicate_record` groups (19) with canonical-key + alias policy.
-2. Normalize style-mix fields (`journal`/`journaltitle`, `address`/`location`, `year`/`date`) in shared `references.bib`.
-3. Do a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
+1. Normalize remaining style-mix fields (`journal`/`journaltitle`, `address`/`location`) in shared `references.bib`.
+2. Run a targeted overfull/underfull pass on high-visibility tables/figures in Chs 9, 13, and 16.
+3. Optional tooling follow-up: add `bibtexparser` to local env or make `code/validate_bib.py` fallback-compatible.
 
 ### Session Work (Feb 20, 2026 evening: Ch 11 + Ch 8 + Ch 9 polish with Brett)
 - ✅ **Ch 11 HPC-consistency pass**: Fixed "semantics comes along for the ride" (essentialist smuggling → coupling framing); rewrote compressed Reynolds 2024 paragraph for accessibility; /w/ → /hw/ (Brett's dialect); "wh-in-situ" → "languages where IRE words remain in situ"; maintenance-only paragraph → maintenance + projection profiles; Ch 12 transition rewritten (morphological gender absence → pro-form diffusion); "adjective" carving: epistemologically and ontologically distinct, terminologically identical; "at least three" categories for *who*; dropped redundant Ch 12 forward reference

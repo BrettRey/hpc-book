@@ -1,5 +1,26 @@
 # Project Log
 
+## 2026-02-22: Shared-bib tranche C completion + cited-audit alias support
+- **Duplicate-group closure completed**:
+  - Resolved all 19 remaining `possible_duplicate_record` groups in shared `references.bib`.
+  - Consolidated to canonical records with alias-preserving metadata where appropriate.
+  - Corrected three chapter citations to canonical keys:
+    - `chapter02.tex`: `bybee2015` -> `bybee1994`
+    - `chapter03.tex`: `croft2001radical` -> `croft2001`
+    - `chapter10.tex`: `pickeringgarrod2004` -> `pickering2004`
+- **Ambiguity checks (metadata hygiene)**:
+  - Retained Crossref-valid records for ambiguous same-title collisions (notably `cuneogoldberg2023Discourse`, `miller2021`, `slater2015`).
+- **Tooling fix**:
+  - Updated `code/audit_cited_bib.py` to resolve BibLaTeX `ids={...}` aliases so cited-key audits match Biber behavior.
+- **Verification**:
+  - `latexmk -g hpc-book.tex` successful (existing non-fatal warnings unchanged).
+  - Full-bib audit: `770` entries, `2` info issues, `0` warnings, `0` duplicate-record groups.
+  - Cited-bib audit: `292/292` resolved, `0` missing, `0` cited-entry warnings; alias resolutions reported.
+- **Reports refreshed**:
+  - `notes/full-bib-audit-2026-02-22.md`
+  - `notes/full-bib-audit-2026-02-22.json`
+  - `notes/cited-bib-audit-2026-02-22.md`
+
 ## 2026-02-22: Ch 16 gauntlet finalization + ABM evidence alignment
 - **Chapter 16 Revamp Completed**:
   - Reworked finale into an explicit empirical gauntlet with risky predictions, defeat conditions, and downgrade criteria.

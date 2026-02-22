@@ -4,11 +4,11 @@
     "/Users/brettreynolds/Documents/LLM-CLI-projects/.house-style/references.bib"
   ],
   "date": "2026-02-22",
-  "entry_count": 790,
+  "entry_count": 770,
   "issue_counts": {
     "error": 0,
-    "info": 22,
-    "total": 22,
+    "info": 2,
+    "total": 2,
     "warning": 0
   },
   "issues": [
@@ -16,7 +16,7 @@
       "code": "mixed_address_location_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `address` (339) and `location` (8).",
+      "message": "Mixed use of `address` (329) and `location` (7).",
       "severity": "info",
       "source": "",
       "suggestion": "Choose one location field style and normalize."
@@ -25,209 +25,27 @@
       "code": "mixed_journal_field_style",
       "field": "",
       "key": "",
-      "message": "Mixed use of `journal` (354) and `journaltitle` (5).",
+      "message": "Mixed use of `journal` (348) and `journaltitle` (4).",
       "severity": "info",
       "source": "",
       "suggestion": "Choose one field style for articles and normalize across the bibliography."
-    },
-    {
-      "code": "mixed_year_date_style",
-      "field": "",
-      "key": "",
-      "message": "Mixed use of `year` (785) and `date` (1).",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Normalize to house style (typically keep `year`, optionally also `date` when needed)."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Davies2008COCA;davies2008",
-      "message": "Same title+first-author+year signature appears under multiple keys: Davies2008COCA, davies2008.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "HuddlestonPullum2002;huddleston2002",
-      "message": "Same title+first-author+year signature appears under multiple keys: HuddlestonPullum2002, huddleston2002.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Kutas2011;kutas2011thirty",
-      "message": "Same title+first-author+year signature appears under multiple keys: Kutas2011, kutas2011thirty.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "Traugott1993;hopper1993",
-      "message": "Same title+first-author+year signature appears under multiple keys: Traugott1993, hopper1993.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "bybee1994;bybee2015",
-      "message": "Same title+first-author+year signature appears under multiple keys: bybee1994, bybee2015.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "bybee2010;bybee2010usage",
-      "message": "Same title+first-author+year signature appears under multiple keys: bybee2010, bybee2010usage.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "chomsky1957;chomsky1957syntactic",
-      "message": "Same title+first-author+year signature appears under multiple keys: chomsky1957, chomsky1957syntactic.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "craver2007;craver2007explaining",
-      "message": "Same title+first-author+year signature appears under multiple keys: craver2007, craver2007explaining.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "croft2001;croft2001radical",
-      "message": "Same title+first-author+year signature appears under multiple keys: croft2001, croft2001radical.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "cuneogoldberg2023;cuneogoldberg2023Discourse",
-      "message": "Same title+first-author+year signature appears under multiple keys: cuneogoldberg2023, cuneogoldberg2023Discourse.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "goldberg2006;goldberg2006constructions",
-      "message": "Same title+first-author+year signature appears under multiple keys: goldberg2006, goldberg2006constructions.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "jackendoff2002;jackendoff2002foundations;jackendoff2002parallel",
-      "message": "Same title+first-author+year signature appears under multiple keys: jackendoff2002, jackendoff2002foundations, jackendoff2002parallel.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "labov2006;labov2006atlas",
-      "message": "Same title+first-author+year signature appears under multiple keys: labov2006, labov2006atlas.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "lewis1969;lewis1969convention",
-      "message": "Same title+first-author+year signature appears under multiple keys: lewis1969, lewis1969convention.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "machamer2000;machamer2000thinking",
-      "message": "Same title+first-author+year signature appears under multiple keys: machamer2000, machamer2000thinking.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "miller2021;miller2021words",
-      "message": "Same title+first-author+year signature appears under multiple keys: miller2021, miller2021words.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "pickering2004;pickeringgarrod2004",
-      "message": "Same title+first-author+year signature appears under multiple keys: pickering2004, pickeringgarrod2004.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "post1943;post1943formal",
-      "message": "Same title+first-author+year signature appears under multiple keys: post1943, post1943formal.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
-    },
-    {
-      "code": "possible_duplicate_record",
-      "field": "",
-      "key": "slater2015;slater2015natural",
-      "message": "Same title+first-author+year signature appears under multiple keys: slater2015, slater2015natural.",
-      "severity": "info",
-      "source": "",
-      "suggestion": "Manually inspect and merge if records are the same work."
     }
   ],
   "issues_by_code": {
     "mixed_address_location_style": 1,
-    "mixed_journal_field_style": 1,
-    "mixed_year_date_style": 1,
-    "possible_duplicate_record": 19
+    "mixed_journal_field_style": 1
   },
   "load_error_issues": [],
   "style_counts": {
-    "address_only": 339,
+    "address_only": 329,
     "both_address_location": 0,
     "both_journal_fields": 0,
     "both_year_date": 4,
-    "date_only": 1,
-    "journal_only": 354,
-    "journaltitle_only": 5,
-    "location_only": 8,
-    "year_only": 785
+    "date_only": 0,
+    "journal_only": 348,
+    "journaltitle_only": 4,
+    "location_only": 7,
+    "year_only": 766
   },
-  "unique_key_count": 790
+  "unique_key_count": 770
 }

@@ -308,6 +308,31 @@ def make_case_suggestions(missing_keys: Sequence[str], known_keys: Iterable[str]
     return suggestions
 
 
+def _split_ids(raw_ids: str) -> List[str]:
+    """Split BibLaTeX `ids` into individual alias keys."""
+    cleaned = _strip_braces(raw_ids).strip()
+    if not cleaned:
+        return []
+    return [part.strip() for part in cleaned.split(",") if part.strip()]
+
+
+def build_alias_map(entries: Dict[str, dict]) -> Dict[str, str]:
+    """Map alias key -> canonical key from BibLaTeX `ids` fields."""
+    alias_to_key: Dict[str, str] = {}
+    for key, entry in entries.items():
+        raw_ids = str(entry.get("ids", "")).strip()
+        if not raw_ids:
+            continue
+        for alias in _split_ids(raw_ids):
+            if alias == key:
+                continue
+            # Real entry keys always take precedence over aliases.
+            if alias in entries:
+                continue
+            alias_to_key.setdefault(alias, key)
+    return alias_to_key
+
+
 def as_markdown(report: dict) -> str:
     lines: List[str] = []
     lines.append(f"# Cited Bib Audit ({report['date']})")
@@ -316,6 +341,7 @@ def as_markdown(report: dict) -> str:
     lines.append(f"- Cited keys: {report['cited_key_count']}")
     lines.append(f"- Bib sources loaded: {report['bib_source_count']}")
     lines.append(f"- Resolved cited keys: {report['resolved_key_count']}")
+    lines.append(f"- Alias-resolved cited keys: {report.get('alias_resolved_key_count', 0)}")
     lines.append(f"- Missing cited keys: {report['missing_key_count']}")
     lines.append(f"- Cited entries with field warnings: {report['entries_with_warnings_count']}")
     lines.append(f"- Duplicate keys in loaded bib sources: {report['duplicate_key_count']}")
@@ -341,6 +367,14 @@ def as_markdown(report: dict) -> str:
             suggestions = report["missing_key_case_suggestions"].get(key, [])
             if suggestions:
                 lines.append(f"  - case-similar keys: {', '.join(f'`{s}`' for s in suggestions)}")
+    lines.append("")
+
+    lines.append("## Alias Resolutions")
+    if not report.get("alias_resolutions"):
+        lines.append("- None")
+    else:
+        for alias, canonical in sorted(report["alias_resolutions"].items()):
+            lines.append(f"- `{alias}` -> `{canonical}`")
     lines.append("")
 
     lines.append("## Duplicate Keys In Loaded Sources")
@@ -373,11 +407,29 @@ def build_report(
 ) -> dict:
     cited_keys, _ = parse_bcf(bcf_path)
     entries, key_to_paths, load_errors = load_bib_entries(bib_sources)
+    alias_to_key = build_alias_map(entries)
 
-    missing_keys = sorted([key for key in cited_keys if key not in entries])
-    resolved_keys = [key for key in cited_keys if key in entries]
+    resolved_map: Dict[str, str] = {}
+    missing_keys: List[str] = []
+    for key in cited_keys:
+        if key in entries:
+            resolved_map[key] = key
+            continue
+        alias_target = alias_to_key.get(key)
+        if alias_target:
+            resolved_map[key] = alias_target
+            continue
+        missing_keys.append(key)
 
-    case_suggestions = make_case_suggestions(missing_keys, entries.keys())
+    resolved_keys = list(resolved_map.keys())
+    alias_resolutions = {
+        citekey: canonical for citekey, canonical in resolved_map.items() if citekey != canonical
+    }
+
+    case_suggestions = make_case_suggestions(
+        sorted(missing_keys),
+        list(entries.keys()) + list(alias_to_key.keys()),
+    )
 
     duplicate_keys = {}
     for key, paths in key_to_paths.items():
@@ -386,10 +438,10 @@ def build_report(
             duplicate_keys[key] = {"count": len(paths), "files": unique_files}
 
     entry_warnings: Dict[str, List[str]] = {}
-    for key in resolved_keys:
-        warnings = audit_entry_fields(key, entries[key])
+    for cited_key, canonical_key in resolved_map.items():
+        warnings = audit_entry_fields(cited_key, entries[canonical_key])
         if warnings:
-            entry_warnings[key] = warnings
+            entry_warnings[cited_key] = warnings
 
     report = {
         "date": report_date,
@@ -398,8 +450,10 @@ def build_report(
         "bib_source_count": len(bib_sources),
         "cited_key_count": len(cited_keys),
         "resolved_key_count": len(resolved_keys),
+        "alias_resolved_key_count": len(alias_resolutions),
+        "alias_resolutions": dict(sorted(alias_resolutions.items())),
         "missing_key_count": len(missing_keys),
-        "missing_keys": missing_keys,
+        "missing_keys": sorted(missing_keys),
         "missing_key_case_suggestions": case_suggestions,
         "duplicate_key_count": len(duplicate_keys),
         "duplicate_keys": duplicate_keys,
