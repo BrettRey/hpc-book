@@ -24,13 +24,14 @@
 \linespread{1.05}
 
 \setlength{\parindent}{1.2em}
-\setlength{\parskip}{0pt}
+\setlength{\parskip}{0pt plus 1pt}  % 1pt stretch lets TeX pull an extra line onto pages
 \raggedbottom  % practical for drafts; flushbottom requires manual page-break work
 \setlength{\emergencystretch}{1.5em} % smoother justification; fewer ugly breaks
 
-% Widow/orphan control
-\widowpenalty=10000
-\clubpenalty=10000
+% Widow/orphan control (150 = strong discouragement, not absolute prohibition;
+% 10000 was causing large white gaps at page bottoms)
+\widowpenalty=150
+\clubpenalty=150
 
 % Hyphenation exceptions (protect proper names and technical terms)
 \hyphenation{Huddleston Pullum Langacker Goldberg Chomsky Labov Haspelmath
@@ -162,8 +163,8 @@
 \titlespacing*{\subsection}{0pt}{1.6ex plus 0.5ex}{0.7ex}
 
 % Keep heads with text
-\pretocmd{\section}{\needspace{5\baselineskip}}{}{}
-\pretocmd{\subsection}{\needspace{4\baselineskip}}{}{}
+\pretocmd{\section}{\needspace{4\baselineskip}}{}{}
+\pretocmd{\subsection}{\needspace{3\baselineskip}}{}{}
 
 % =========================
 % CAPTIONS (apparatus, not body text)
