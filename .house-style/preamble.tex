@@ -252,17 +252,20 @@
 % =========================
 \usepackage{imakeidx}
 
-% Three indices: Subject (concepts), Names (authors), Lexical (mentioned words)
+% Four indices: Subject (concepts), Names (authors), Languages, Lexical (mentioned words)
 \makeindex[name=subject, title=Subject Index, columns=2, intoc]
 \makeindex[name=names, title=Name Index, columns=2, intoc]
+\makeindex[name=languages, title=Languages Index, columns=2, intoc]
 \makeindex[name=lexical, title=Lexical Index, columns=2, intoc]
 
 % Helper macros for consistent indexing
 \newcommand{\ixs}[1]{#1\index[subject]{#1}}         % Subject: inline + tag
 \newcommand{\ixn}[1]{#1\index[names]{#1}}           % Names: inline + tag
+\newcommand{\ixg}[1]{#1\index[languages]{#1}}       % Languages: inline + tag
 \newcommand{\ixl}[1]{\textit{#1}\index[lexical]{#1@\textit{#1}}} % Lexical: italicised + sorted correctly
 \newcommand{\ixsq}[1]{\index[subject]{#1}}          % Subject: tag only (quiet)
 \newcommand{\ixnq}[1]{\index[names]{#1}}            % Names: tag only (quiet)
+\newcommand{\ixgq}[1]{\index[languages]{#1}}        % Languages: tag only (quiet)
 \newcommand{\ixlq}[1]{\index[lexical]{#1@\textit{#1}}} % Lexical: tag only (quiet), sorted correctly
 
 % Label index pages with a page-number ref target
@@ -285,4 +288,3 @@
 \AtBeginDocument{%
   \renewcommand*{\glossentryname}[1]{{\mdseries\textsc{\glsentryname{#1}}}}%
 }
-
