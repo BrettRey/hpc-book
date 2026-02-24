@@ -1,6 +1,5 @@
 # Build outputs
 *.pdf
-!hpc-book.pdf
 *.aux
 *.log
 *.out
@@ -18,6 +17,9 @@
 *.ind
 *.lof
 *.lot
+*.acn
+*.glo
+*.ist
 build/
 snapshots/
 
