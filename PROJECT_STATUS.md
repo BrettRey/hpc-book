@@ -1,7 +1,33 @@
 # HPC Book Project Status
 
-**Date**: February 23, 2026
+**Date**: February 24, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
+
+### Session Work (Feb 24, 2026 PM: Full editorial review + critical bug fixes)
+- ✅ **16 chapter précis** written (parallel agents), 300-500 words each
+- ✅ **Book-level editorial report** identifying 11 cross-chapter issues
+- ✅ **16 chapter-level editorial reports** (deep reads, parallel agents)
+- ✅ **Critical bugs fixed**:
+  - Ch 12: removed spurious `[*]` from ~27 grammatical examples (was marking everything ungrammatical)
+  - Ch 14: fixed Markdown `*emphasis*` → `\emph{}` (2 instances)
+  - Ch 14: replaced undefined MMMG abbreviation (4 instances)
+  - Ch 9: fixed `\\mention` double-backslash + deleted orphaned draft line
+- ✅ **Structural additions**: Ch 8 coupling-coda framing, Ch 9 evidential gradient flag, Ch 16 research agenda (§16.7), CHAPTER_OUTLINE.md rewritten
+- ✅ **Editorial followups tracker** created (`notes/precis/editorial-followups.md`)
+- **Commit**: `53f0e12` on `ch16-prose-rewrite`
+- **Next**: Batch house-style fixes (bold labels, backtick quotes, `\mention{}`, "HPC kind" → "HPC category", `\begin{exe}` → `\ea/\z`)
+
+### Session Work (Feb 24, 2026: Figure/table audit + new figures)
+- ✅ **Table/figure audit completed** (carried over from prior session):
+  - Added cross-references to 16 previously unreferenced floats across 9 chapters
+  - Relabelled `fig:10:decoupling` → `tab:10:decoupling` (tabular in figure env)
+  - Renamed Ch 7 images from `6.*` to `7.*` prefix
+  - Archived 17 orphaned images to `figures/archive/`
+- ✅ **New Fig 13.1** (coupling-tightness spectrum): Gemini-generated four-panel image (crystalline→emergent-web), LaTeX label wrapper with small-caps coupling types and mediation axis. Placed before §13.1.
+- ✅ **New Fig 16.1** (evaluation gauntlet): TikZ flowchart — three debts → gauntlet box (predictions + stress tests) → confirm/narrow/downgrade verdicts. Placed in §16.1 intro.
+- ✅ **Phase-transition figure (Ch 3) reviewed**: Identified flat-honeycomb ice as chemically inaccurate. Attempted matplotlib replacement (saved as `3.phase-transition-v2.png`); visually not publication-grade. Parked — options: better Gemini prompt with crystallography instructions, Wikimedia CC composite, or leave as-is.
+- ✅ **All committed** in `e7e503a` on `ch16-prose-rewrite` branch.
+- **New files**: `figures/13.coupling-spectrum.png`, `notes/fig-13-coupling-spectrum-prompt.md`, `code/phase_transition_figure.py`, `figures/3.phase-transition-v2.png`
 
 ### Session Work (Feb 23, 2026: Ch 15 substantive revision)
 - **Value proposition clarified**: Ch 15 explains why categories are *shared* (individual mechanisms don't explain community convergence). Social mechanisms complete the maintenance story.
