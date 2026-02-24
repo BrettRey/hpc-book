@@ -1,0 +1,62 @@
+   373	\caption{The two-layer model. Discrete grammaticality (binary: grammatical or ungrammatical) is filtered through processing and measurement noise to produce gradient acceptability judgments. Items deep in basins produce stable judgments at scale extremes; items near boundaries produce variable judgments distributed across the middle of the scale.}
+   374	\label{fig:two-layer-model}
+   375	\end{figure}
+   376	
+   377	\begin{figure}[t]
+   378	\centering
+   379	\includegraphics[width=0.85\textwidth]{figures/5.judgment-variance.png}
+   380	\caption{Predicted relationship between distance to category boundary and acceptability judgment variance. Items deep in basins (e.g., \mention{dog}) show stable judgments with low variance; items near boundaries (e.g., \mention{near}) show high variability. The qualitative signature~-- variance peaking near the boundary and falling off into each basin~-- is robust; the exact functional form depends on the measurement channel and noise model.}
+   381	\label{fig:judgment-variance}
+   382	\end{figure}
+   383	
+   384	This isn't a new observation~-- the distinction between competence and performance has been with us since Chomsky. But the hyperreal framework adds precision. The boundary isn't merely \enquote{somewhere in the grammar}; it's located at a specific (if unspecifiable) hyperreal threshold. The gradience isn't merely \enquote{performance noise}; it's the predictable consequence of epistemic limitations near a sharp boundary.
+   385	
+   386	Chapter~\ref{ch:grammaticality-itself} develops this picture fully, arguing that grammaticality itself is a homeostatic property cluster~-- a category maintained by mechanisms, with a sharp boundary at hyperreal distance. For now, the point is that gradient judgments and discrete categories are compatible. The discreteness is in the structure; the gradience is in our access to it.
+   387	
+   388	\subsection{Dual membership}
+   389	\label{subsec:5:dual-membership}
+   390	
+   391	One puzzle remains. If categories are discrete~-- if at every point in feature space an item is either in or out~-- how can there be genuine dual membership? How can \mention{near} be both a preposition and an adjective, not contextually selected, not in transition, but stably both? English is comfortable with a kind of dual citizenship here: items like \mention{near} can hold both passports without being in transit.
+   392	
+   393	The answer is that discreteness holds predicate-by-predicate, not across predicates. The predicates \textit{is a preposition} and \textit{is an adjective} are each bivalent: at any point, each is either true or false. But they're not mutually exclusive. The basins can overlap.
+   394	
+   395	This follows naturally from the HPC framework. Categories are maintained by mechanisms, not defined by partition. The mechanisms maintaining English prepositionhood~-- patterns of complementation, head-of-PP status, lack of degree modification~-- are partially independent of those maintaining English adjectivehood~-- gradability, predicative use, comparative morphology. An item can fall within the tolerance threshold for both, satisfying the clustering criteria for each.
+   396	
+   397	Where the mechanisms align, the basins are disjoint: English nouns and verbs occupy separate regions because the mechanisms that maintain them pull in different directions (Figure~\ref{fig:disjoint-overlap}, left). Where the mechanisms cross, the basins overlap: English adjectives and prepositions share enough properties~-- predicative function, modification of nominals~-- that some items cluster with both (Figure~\ref{fig:disjoint-overlap}, right).
+   398	
+   399	The regions of overlap aren't arbitrary. They're located where the property clusters themselves overlap~-- where an item can satisfy the tolerance criteria for both categories simultaneously. These are exactly the cases that trouble essentialism: items that have \enquote{mixed} status because they satisfy criteria for multiple categories. On the HPC + hyperreal view, mixed status isn't indeterminacy but dual location: the item is in two basins at once, stably, because the mechanisms that maintain each basin both apply.
+   400	
+   401	The reciprocals case from §\ref{subsec:5:multi-category} exemplifies this cleanly. Morphology maintains the determinative basin; semantics maintains the pronoun basin. Reciprocals satisfy both. The mixture weights from the blend model~-- 0.534 pronoun-like for \mention{each other}, 0.487 for \mention{one another}~-- aren't noise or measurement error. They are the empirical signature of genuine dual location: stable membership in overlapping basins, maintained by partially independent mechanisms.
+   402	
+   403	\begin{figure}[t]
+   404	\centering
+   405	\includegraphics[width=0.85\textwidth]{figures/5.disjoint-overlap.png}
+   406	\caption{Disjoint vs.\ overlapping category basins. Left: noun--verb mechanisms pull in opposite directions, creating mutual exclusivity. Right: noun--adjective mechanisms are partially independent, permitting overlap. Items like \mention{fun} and \mention{near} occupy the overlap region, satisfying the clustering criteria for both categories simultaneously.}
+   407	\label{fig:disjoint-overlap}
+   408	\end{figure}
+   409	
+   410	\subsection{Summary: discreteness without essence}
+   411	\label{subsec:5:discreteness-summary}
+   412	
+   413	The discreteness problem asked: if underlying properties are continuous, how do discrete categories emerge?
+   414	
+   415	The answer combines two components:
+   416	
+   417	Structure (hyperreal model): Discrete boundaries arise from scale-dependent tolerance. Changes that are negligible at the current scale preserve categorization; changes that are appreciable can flip it. In this formalization, the boundary is sharp, located at a hyperreal threshold, epistemically inaccessible but structurally determinate. Dynamic discreteness is like a snow-covered streetcar right-of-way: the snowfall is continuous, but the rails impose two stubbornly sharp tracks that exist only because of the system underneath them. The category isn't holding still. It's being \emph{held}~-- by mechanisms operating on multiple timescales, by basins that resist perturbation, by forces that push deviants back toward the norm.
+   418	
+   419	Maintenance (HPC framework): The basin structure persists because mechanisms~-- acquisition, entrenchment, alignment, transmission, functional pressure~-- hold properties together. Without these mechanisms, categories would dissolve. With them, the clustering is stable even though boundaries are fuzzy at the edges.
+   420	
+   421	Together, these explain how categories can be:
+   422	\begin{itemize}
+   423	\item Real: maintained by causal mechanisms, not merely stipulated.
+   424	\item Discrete: with sharp boundaries, not gradient membership.
+   425	\item Fuzzy at the edges: because tolerance fails near boundaries, producing instability and apparent gradience.
+   426	\item Stable: because mechanisms maintain the basin structure across time.
+   427	\item Capable of change: because mechanisms can shift, basins can migrate, boundaries can move.
+   428	\end{itemize}
+   429	
+   430	This is what the essentialist wanted~-- real structure, sharp boundaries, determinacy~-- without what the essentialist thought was required: definitions, necessary and sufficient conditions, essences. The categories are real because they're maintained, not because they're defined. The boundaries are sharp because tolerance is scale-dependent, not because some property is binary. The determinacy is causal-structural, not definitional.
+   431	
+   432	The nominalist was right that essences don't exist. The nominalist was wrong to conclude that determinacy fails. The HPC framework, formalised via hyperreal tolerance, shows how to have both: natural kinds without essences, discrete categories from continuous substrates, sharp boundaries that we can't quite see. Dynamic discreteness and real gradience~-- the chapter's twin themes~-- turn out to be two sides of one insight.
+   433	
+   434	\textsc{Definiteness thread.} This chapter predicts a signature phenomenon for definiteness: judgments about borderline cases (e.g., weak definites like \mention{go to the hospital}) should show higher variance than judgments about clear cases, because they sit near the boundary where tolerance fails. Register shift (task context, formality) should modulate variance without eliminating the underlying discreteness. The prediction would be falsified if borderline definiteness showed no variance asymmetry, suggesting the category lacks the basin structure this chapter describes.

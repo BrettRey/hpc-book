@@ -1,0 +1,24 @@
+    97	\begin{figure}[t]
+    98	\centering
+    99	\includegraphics[width=0.85\textwidth]{figures/5.hyperfinite-chain.png}
+   100	\caption{The hyperfinite Sorites chain. The predicate $P$ (e.g., \emph{is a heap}) holds at every standard natural index: tolerance preserves truth across any finite portion of the series. The cutoff $K$ lies at a hypernatural index beyond all standard naturals~-- determinate within the model but not finitely specifiable.}
+   101	\label{fig:hyperfinite-chain}
+   102	\end{figure}
+   103	
+   104	Within this hyperfinite chain, by the transfer principle of nonstandard analysis, any monotone sequence from $P$-true to $P$-false has a least index $K$ at which $P$ flips. This $K$ is a hypernatural~-- not a standard natural number, but a number in the extended system. And crucially, because we've stipulated that $P$ holds at all standard indices (encoding the intuition that tolerance holds throughout any finite portion of the series), $K$ must be nonstandard: infinitely large compared to any standard natural.
+   105	
+   106	The picture that emerges:
+   107	
+   108	\begin{itemize}
+   109	\item Far from $K$: The fractional change at each step is infinitesimal. Relative Tolerance applies. The predicate is preserved.
+   110	\item Near $K$: The fractional change is appreciable (no longer infinitesimal at this scale). Relative Tolerance is silent. The predicate can flip.
+   111	\item At $K$: The boundary. Sharp, determinate, located at a specific hypernatural index~-- but epistemically inaccessible because we can't finitely specify which hypernatural.
+   112	\end{itemize}
+   113	
+   114	This is why the Sorites induction fails. The inductive premise~-- \enquote{if $P(c_i)$ then $P(c_{i+1})$}~-- holds only where Relative Tolerance applies, which is far from the boundary. Near the boundary, the premise is false. The chain breaks not because tolerance is non-transitive, but because tolerance doesn't apply uniformly across the entire series.
+   115	
+   116	\subsection{Sharp boundaries, fuzzy appearances}
+   117	\label{subsec:5:sharp-fuzzy}
+   118	
+   119	Within the hyperreal model, classical bivalent logic is maintained throughout. At every index~-- including hypernatural indices~-- the predicate is either true or false. There are no degrees of heaphood, no fuzzy membership values. The boundary is sharp.
+   120	

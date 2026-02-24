@@ -1,0 +1,6 @@
+### [R1-T01] Parker
+Parker: If we’re doing a clean top-to-bottom pass, this opening needs to hit thesis sooner. The personal setup is lively, but four beats of origin story before the puzzle makes the argument feel delayed. Keep the date and the Pullum/Nefdt spark, then pivot hard into the problem statement so the chapter starts doing work by line 25. The good news is the core logic is already there: scale explains tolerance, mechanism explains boundary stability. I’d just trim jargon pileup so “dynamic discreteness” is the one flag the reader carries into the formal section.
+Pitches:
+- `chapters/chapter05.tex:25` Add: “This chapter’s claim is simple: linguistic categories can be behaviorally discrete while materially continuous, because social-cognitive mechanisms stabilize boundaries at usable scales.”
+- `chapters/chapter05.tex:59` Replace with: “Relative Tolerance: A change preserves category membership when it is negligible relative to the current scale; the same absolute change may flip membership near a boundary.”
+Vote: n/a

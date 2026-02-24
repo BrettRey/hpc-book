@@ -1,0 +1,123 @@
+You are one voice in a live comedy writers' room working on a chapter.
+
+Ground rules:
+- Converse naturally. No forms, no stage directions, no robotic labels.
+- Be funny when useful, but keep lines usable in serious prose.
+- Do not dominate. Treat this as one contribution in a shared lap.
+- React to prior speakers organically.
+- Land exactly two concrete pitch lines.
+- At least one pitch must target this coverage window: chapters/chapter05.tex:63-124
+
+Your identity:
+- Name: Wilde
+- Persona: Elegant inversion, epigrammatic cadence, controlled flamboyance.
+
+Output format (exact):
+### [R1-S02] Wilde
+Wilde: <natural room contribution>
+Pitches:
+- <line with placement ref like chapters/chapter05.tex:123>
+- <line with placement ref like chapters/chapter05.tex:123 or n/a>
+Vote: <line_id or n/a>
+
+Chapter map:
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}
+
+Assigned coverage excerpt:
+    63	
+    64	But \enquote{negligible} and \enquote{appreciable} are themselves vague. To make the principle precise, we need a framework that can handle the distinction rigorously. This is where nonstandard analysis helps.
+    65	
+    66	The next section is therefore not a philosophical aside. The formalism is designed to derive a concrete empirical prediction: that distance-to-boundary should predict judgment variance, with a characteristic functional form. If the hyperreal story is wrong, that variance signature shouldn't appear. If the story is right, the variance pattern isn't just compatible with the framework~-- it falls out of the mathematics.
+    67	
+    68	\section{A formal solution}
+    69	\label{sec:5:formal-solution}
+    70	
+    71	\begin{framed}
+    72	\noindent Skip path. The next subsection develops a formal model using hyperreal numbers. Readers who prefer to skip the mathematics can take away three points and rejoin at §\ref{sec:5:geometry-to-mechanism}:
+    73	\begin{enumerate}
+    74	    \item Tolerance is scale-sensitive: small changes are tolerated, but they accumulate.
+    75	    \item Sharp boundaries exist at thresholds we can't precisely locate.
+    76	    \item Discrete categories and gradient intuitions are compatible~-- the discreteness is in the structure, the gradience is in our access to it.
+    77	\end{enumerate}
+    78	\end{framed}
+    79	
+    80	\subsection{The hyperreal formalization}
+    81	\label{subsec:5:hyperreal}
+    82	
+    83	The hyperreal numbers extend the reals with \emph{infinitesimals}~-- quantities greater than $0$ but smaller than any positive real number \citep{Goldblatt1998LecturesHyperreals}. Robinson's construction is rigorous, but we don't need its details. Here infinitesimals are a modelling device for making \emph{negligible relative to the current scale} precise without stipulating an arbitrary finite cutoff. I am not claiming speakers compute with hypernaturals; the hyperreals play the role calculus plays in physics. The application to vagueness is developed fully in \citet{reynolds2025sorites}.
+    84	
+    85	Here is how the framework applies to vague predicates. Let $P$ be a predicate like \textit{is a heap}, and let $\mu(x)$ be a measure of the relevant property~-- say, grain count. For successive cases $c_i$ and $c_{i+1}$ in a series, let $\Delta\mu_i = \mu(c_{i+1}) - \mu(c_i)$ be the change from one case to the next.
+    86	
+    87	The Relative Tolerance principle becomes:
+    88	
+    89	\begin{quote}
+    90	If $|\Delta\mu_i|/\mu(c_i)$ is infinitesimal, then $P(c_i) \leftrightarrow P(c_{i+1})$.
+    91	\end{quote}
+    92	
+    93	In plain language: if the fractional change is infinitesimally small, the predicate's truth value is preserved. This captures the intuition that proportionally tiny changes don't matter, while allowing that accumulated changes can.
+    94	
+    95	Now model the entire Sorites series~-- from clear heap to clear non-heap~-- as a \emph{hyperfinite chain} of $\omega$ steps, where $\omega$ is an infinite hypernatural number (Figure~\ref{fig:hyperfinite-chain}). This is a standard construction in nonstandard analysis: a sequence indexed by hypernaturals, behaving internally like a finite sequence but containing infinitely many elements from the external perspective.
+    96	
+    97	\begin{figure}[t]
+    98	\centering
+    99	\includegraphics[width=0.85\textwidth]{figures/5.hyperfinite-chain.png}
+   100	\caption{The hyperfinite Sorites chain. The predicate $P$ (e.g., \emph{is a heap}) holds at every standard natural index: tolerance preserves truth across any finite portion of the series. The cutoff $K$ lies at a hypernatural index beyond all standard naturals~-- determinate within the model but not finitely specifiable.}
+   101	\label{fig:hyperfinite-chain}
+   102	\end{figure}
+   103	
+   104	Within this hyperfinite chain, by the transfer principle of nonstandard analysis, any monotone sequence from $P$-true to $P$-false has a least index $K$ at which $P$ flips. This $K$ is a hypernatural~-- not a standard natural number, but a number in the extended system. And crucially, because we've stipulated that $P$ holds at all standard indices (encoding the intuition that tolerance holds throughout any finite portion of the series), $K$ must be nonstandard: infinitely large compared to any standard natural.
+   105	
+   106	The picture that emerges:
+   107	
+   108	\begin{itemize}
+   109	\item Far from $K$: The fractional change at each step is infinitesimal. Relative Tolerance applies. The predicate is preserved.
+   110	\item Near $K$: The fractional change is appreciable (no longer infinitesimal at this scale). Relative Tolerance is silent. The predicate can flip.
+   111	\item At $K$: The boundary. Sharp, determinate, located at a specific hypernatural index~-- but epistemically inaccessible because we can't finitely specify which hypernatural.
+   112	\end{itemize}
+   113	
+   114	This is why the Sorites induction fails. The inductive premise~-- \enquote{if $P(c_i)$ then $P(c_{i+1})$}~-- holds only where Relative Tolerance applies, which is far from the boundary. Near the boundary, the premise is false. The chain breaks not because tolerance is non-transitive, but because tolerance doesn't apply uniformly across the entire series.
+   115	
+   116	\subsection{Sharp boundaries, fuzzy appearances}
+   117	\label{subsec:5:sharp-fuzzy}
+   118	
+   119	Within the hyperreal model, classical bivalent logic is maintained throughout. At every index~-- including hypernatural indices~-- the predicate is either true or false. There are no degrees of heaphood, no fuzzy membership values. The boundary is sharp.
+   120	
+   121	But the boundary is also inaccessible. In the model, it lies at a hypernatural index that we can't specify using finite means. From our finite observational standpoint, we see clear heaps, clear non-heaps, and a region of uncertainty in between. The uncertainty is epistemic, not semantic: there is a fact of the matter about where the boundary falls; we just can't determine what it's.
+   122	
+   123	The hyperreal view differs from epistemicism~-- Timothy Williamson's view that vague predicates have sharp boundaries, unknowable because of the limits of our discriminatory capacities \citep{williamson1994}. Both views yield sharp-but-inaccessible cutoffs.
+   124	
+
+Transcript so far:
+### [R1-M00] Moderator
+Moderator: Open floor. No fixed order, no domination. One contribution per person per lap.
+Moderator: Pass T covers the whole chapter. Pass F is pure punch-up.
+Coverage windows for Pass T:
+- R1-S01 Wodehouse: chapters/chapter05.tex:1-62
+- R1-S02 Wilde: chapters/chapter05.tex:63-124
+- R1-S03 Adams: chapters/chapter05.tex:125-186
+- R1-S04 Seinfeld: chapters/chapter05.tex:187-248
+- R1-S05 Parker: chapters/chapter05.tex:249-310
+- R1-S06 Ephron: chapters/chapter05.tex:311-372
+- R1-S07 Twain: chapters/chapter05.tex:373-434
+Pass F speakers (open-floor order this run): Wodehouse Wilde Adams Seinfeld Parker Ephron Twain
+
+### [R1-S01] Wodehouse
+Wodehouse: The personal opening already buys trust for the theory turn; I’d keep that warmth and just add two needle-point lines so the joke and the mechanism shake hands.
+Pitches:
+- `chapters/chapter05.tex:14` "Naming a project folder is a vow whispered to oneself: sincere in the moment, negotiable by Monday."
+- `chapters/chapter05.tex:60` "Tolerance, then, is not the absence of a boundary but a ceasefire between boundary and scale."
+Vote: n/a

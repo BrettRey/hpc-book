@@ -1,0 +1,15 @@
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}

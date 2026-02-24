@@ -1,0 +1,24 @@
+   121	But the boundary is also inaccessible. In the model, it lies at a hypernatural index that we can't specify using finite means. From our finite observational standpoint, we see clear heaps, clear non-heaps, and a region of uncertainty in between. The uncertainty is epistemic, not semantic: there is a fact of the matter about where the boundary falls; we just can't determine what it's.
+   122	
+   123	The hyperreal view differs from epistemicism~-- Timothy Williamson's view that vague predicates have sharp boundaries, unknowable because of the limits of our discriminatory capacities \citep{williamson1994}. Both views yield sharp-but-inaccessible cutoffs.
+   124	
+   125	But the sources differ. For the epistemicist, the boundary is a brute metaphysical fact. For the hyperreal view, the boundary's existence is a consequence of scale-sensitive tolerance plus monotonicity: the transfer principle entails a cutoff at some hypernatural index. The sharpness falls out of the mathematics; the inaccessibility is built into what kind of thing a hypernatural index is.
+   126	
+   127	The explanatory consequences diverge more sharply. Epistemicism holds that boundaries are static: fixed by semantics plus worldly facts, unchanging unless the predicate's meaning changes. The maintenance view ties the effective boundary to mechanisms of acquisition, entrenchment, alignment, and transmission, and therefore predicts structured boundary \emph{drift} under perturbations~-- something epistemicism can accommodate, but doesn't on its own explain or forecast. The hyperreal apparatus, in short, isn't ornamental: it's the formal face of a framework that predicts structured drift and variance signatures where epistemicism predicts only static inaccessibility.
+   128	
+   129	This explains why tolerance intuitions and boundary intuitions can coexist. When you have a clear heap, you're right that one grain doesn't matter~-- the fractional change is negligible at that scale. When you're near the boundary, you're right that the situation is unclear~-- you're in the region where tolerance breaks down. Both intuitions are correct; they just apply to different regimes.
+   130	
+   131	The model also explains why boundaries are stable. The boundary isn't an arbitrary stipulation imposed by speakers or analysts. It emerges from the structure of the hyperreal model, determined by the interplay between the tolerance principle and the monotonicity of the series. Different choices of nonstandard model (technically: different choices of ultrafilter in the construction) yield different specific values of $K$, but the structural features~-- sharp boundary, epistemic inaccessibility, scale-dependent tolerance~-- are invariant.
+   132	
+   133	A different response to the discreteness problem is available. Khalidi, extending his critique of Boyd's homeostatic requirement, argues that natural kinds can have genuinely \emph{fuzzy} boundaries~-- not sharp-but-inaccessible, just fuzzy \citep[63--69]{khalidi2013}. Chemical isomers shade into each other as bond angles vary continuously. Biological species intergrade where populations overlap. If these paradigmatic natural kinds tolerate fuzziness, why should grammatical categories require sharp edges?
+   134	
+   135	The answer lies in the structure of tolerance intuitions themselves. The Sorites reasoning pattern~-- one grain doesn't make a difference, so no number of grains makes a difference~-- is compelling precisely because we feel the tolerance premise is true. Khalidi-style fuzzy realism dissolves the puzzle by denying that there's a boundary at all: categories just shade into each other, and the puzzle evaporates. But this misses the explanatory target. Speakers don't behave as if categories shade continuously. They exhibit \emph{scale-dependent} tolerance: small changes are tolerated, large changes flip categorisation, and the transition is experienced as sudden even when the underlying change is gradual. The hyperreal model captures this phenomenology. Fuzzy realism doesn't.
+   136	
+   137	This isn't to say Khalidi's \enquote{fuzzy kinds} are never apt. For weak linguistic categories~-- the thin ones from §\ref{sec:4:heterogeneity}~-- genuine fuzziness may be the right description. But for robust categories, where speakers make categorical judgments, exhibit abrupt transitions, and show heightened variance specifically near boundaries, the hyperreal model's sharp-but-inaccessible picture fits the data better. The choice between models is empirical, not metaphysical: does the category exhibit gradient shading (Khalidi) or scale-dependent tolerance (hyperreals)?
+   138	
+   139	\section{From geometry to mechanism}
+   140	\label{sec:5:geometry-to-mechanism}
+   141	
+   142	\subsection{From heaps to categories}
+   143	\label{subsec:5:heaps-to-categories}
+   144	

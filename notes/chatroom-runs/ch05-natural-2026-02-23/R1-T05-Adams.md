@@ -1,0 +1,6 @@
+### [R1-T05] Adams
+Adams: Twain’s “make it falsifiable” note is exactly the right pressure here: the `fun` section already has multiple diagnostics, so frame it as convergent measurement, not just a historical story. Seinfeld’s furniture warning also bites at line 304, where the reader is asked to carry the diachrony-to-synchrony transition without a handle. Add one explicit design sentence that says we are testing two boundary regimes: drift toward a basin versus stable residence at the boundary. The absurd-but-clarifying model is orbital mechanics: `fun` is spiraling into a new orbit, reciprocals are parked at a Lagrange point between pronoun and determiner pulls. If you say that plainly, “three diagnostics” lands as method rather than teaser.
+Pitches:
+- `chapters/chapter05.tex:304` Replace with: “The contrast now becomes testable: \mention{fun} models diachronic movement toward a category boundary, while reciprocals let us test whether a form can remain synchronically stable at that boundary without ongoing directional drift.”
+- `chapters/chapter05.tex:308` Replace with: “The goal is not to force a binary label from isolated tests, but to measure opposing pronoun-like and determinative-like pulls and ask whether intermediate placement is a stable grammatical state.”
+Vote: chapters/chapter05.tex:230

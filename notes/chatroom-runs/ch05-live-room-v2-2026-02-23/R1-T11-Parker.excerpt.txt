@@ -1,0 +1,24 @@
+   242	The hyperreal model tells us what the basin structure looks like: sharp thresholds with scale-dependent tolerance, and instability concentrated in a determinate seam-region that ordinary finite measurement can't pinpoint. The HPC framework tells us why the structure persists: mechanisms operating across multiple timescales, maintaining the clustering without defining it.
+   243	
+   244	\subsection{Multi-category spaces}
+   245	\label{subsec:5:multi-category}
+   246	
+   247	Linguistic categories don't exist in isolation. Nouns compete with verbs; adjectives shade into adverbs; prepositions overlap with both. Instead of a set of independent regions, the basin structure is a tessellation of feature space, with categories abutting each other along shared boundaries. Khalidi calls such overlapping classification schemes \term{crosscutting kinds} and argues they pose no threat to realism: the same entity can be a node in multiple causal networks simultaneously \citep[69--72, 92--97]{khalidi2013}.
+   248	This creates additional structure. An item near the noun-verb boundary might be stably a noun (because it's deep in the noun basin) or unstably categorized (because small changes could push it into the verb basin). The same item might be far from the noun-adjective boundary, so its nominal vs.\ adjectival status is never in doubt. Category membership is determinate in multiple dimensions simultaneously, with different degrees of stability in different directions.
+   249	
+   250	Consider the data for \mention{fun}~-- for fun, as it were. In the frequency-of-degree-modification dimension, it has drifted toward adjectives: \mention{very fun} is increasingly acceptable. In the takes-a-determiner dimension, it remains nominal: \mention{the fun we had} is unremarkable. The item sits near the noun-adjective boundary in one dimension, deep in noun territory in another. Its apparent mixed status reflects its location in a multi-dimensional space, not indeterminacy about what categories are.
+   251	
+   252	American historical corpus evidence makes the trajectory visible \citep{davies2010coha}. Degree-modified \mention{fun}~-- \mention{really fun}, \mention{so fun}, \mention{rather fun}, \mention{very fun}~-- is rare through most of the 19th and early 20th centuries but rises sharply from the late 20th century onward (Figure~\ref{fig:fun-coha}). The pattern is consistent with a shift from marginal adjectival-like uses to robust productivity. \mention{Rather fun} shows early isolated footholds (British epistolary usage appears as early as 1827); the American surge comes later. The diagnostics co-move: this isn't one fragile string but a bundle of degree environments converging in the same direction.
+   253	
+   254	\begin{figure}[t]
+   255	\centering
+   256	\begin{tikzpicture}
+   257	\begin{axis}[
+   258	    width=0.9\textwidth,
+   259	    height=4.5cm,
+   260	    view={0}{90},
+   261	    colorbar horizontal,
+   262	    colorbar style={
+   263	        at={(0.5,-0.25)},
+   264	        anchor=north,
+   265	        width=0.6\textwidth,

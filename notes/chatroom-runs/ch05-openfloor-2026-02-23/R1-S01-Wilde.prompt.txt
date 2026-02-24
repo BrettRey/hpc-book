@@ -1,0 +1,116 @@
+You are one voice in a live comedy writers' room working on a chapter.
+
+Ground rules:
+- Converse naturally. No forms, no stage directions, no robotic labels.
+- Be funny when useful, but keep lines usable in serious prose.
+- Do not dominate. Treat this as one contribution in a shared lap.
+- React to prior speakers organically.
+- Land exactly two concrete pitch lines.
+- At least one pitch must target this coverage window: chapters/chapter05.tex:1-62
+
+Your identity:
+- Name: Wilde
+- Persona: Elegant inversion, epigrammatic cadence, controlled flamboyance.
+
+Output format (exact):
+### [R1-S01] Wilde
+Wilde: <natural room contribution>
+Pitches:
+- <line with placement ref like chapters/chapter05.tex:123>
+- <line with placement ref like chapters/chapter05.tex:123 or n/a>
+Vote: <line_id or n/a>
+
+Chapter map:
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}
+
+Assigned coverage excerpt:
+     1	% SLOGANS: 
+     2	% - Chapter-specific: \"dynamic discreteness\" and \"real gradience\" (twin themes)
+     3	% - Book-wide: \"categories are real because they're maintained\" appears in conclusion
+     4	% See notes/book-slogans.md for the slogan strategy.
+     5	
+     6	\chapter{Discrete from continuous}
+     7	\label{ch:dynamic-discreteness}
+     8	
+     9	% Chapter 4 introduces HPC framework; this chapter applies it to the discreteness problem.
+    10	
+    11	Thursday, 4 December 2025 was one of the most intellectually exciting days of my life.
+    12	
+    13	I had conceived of this book~-- or perhaps I'd say the conceptual process had come to a head~-- the previous Saturday, when I created a project folder on my computer called \texttt{HPC book} and sent a synopsis to some friends with the subject line \enquote{Does linguistics need this book?} I've learned to treat the act of naming a folder as the weakest possible form of commitment, but it was enough to start the chain reaction.
+    14	
+    15	Geoff Pullum said yes. Ryan Nefdt said yes~-- and added something I hadn't thought of:
+    16	
+    17	\begin{quote}
+    18	I personally favour a phase transition approach in which discreteness really is a feature of a system under a particular kind of measurement and context and continuity under a different one (like water moving from liquid to gas takes on different properties). So borrowing more from physics than biology.
+    19	\end{quote}
+    20	
+    21	I woke very early the next morning thinking about phase transitions~-- and about a paper I'd written two months earlier and then set aside. That paper had formalised Sorites tolerance using hyperreal numbers, inspired by work by Toby Ord. It had been \enquote{sitting in a drawer}, waiting for a use. Now it had one.
+    22	
+    23	By bedtime that evening, I had the first draft of this chapter.
+    24	
+    25	Here is the puzzle I hadn't known I needed to solve.
+    26	
+    27	\section{The gradience problem}
+    28	\label{sec:5:gradience-problem}
+    29	
+    30	Linguistic categories look discrete: a word is a noun or it isn't, a sentence is grammatical or it isn't, a sound is /\ipa{ɪ}/ or /\ipa{ɛ}/ in the \mention{pin}/\mention{pen} contrast for the dialects that maintain it. But the properties underlying those categories are continuous: frequency distributions shade smoothly from one pattern to another, acoustic cues vary continuously (vowel formants don't come in bins), semantic features don't come with sharp edges. How do discrete categories emerge from continuous substrates?
+    31	
+    32	Both definition-based essentialism and \enquote{unreal} exemplarism fail to solve this. As argued in Chapter~\ref{ch:kinds-without-essences}, we need a view where emergent patterns maintained by reliable mechanisms constitute real kinds. We need \term{dynamic discreteness}~-- discreteness that's achieved, not given.
+    33	
+    34	The answer lies in scale. A change that's negligible when you're far from a boundary becomes appreciable when you're close. That's why tolerance intuitions coexist with boundary intuitions~-- both are correct, just in different regimes. And the mechanisms that maintain categories~-- acquisition, entrenchment, alignment, transmission~-- are what keep the boundary where it's.
+    35	
+    36	A note on what follows: the discreteness is predicate-by-predicate. This framework doesn't force exclusivity~-- an item can be in two basins, as with dual membership in the noun-adjective zone. The worry that \mention{fun} or \mention{near} will be squeezed into one category or the other is addressed rather than suppressed. Overlap is allowed; the question is what maintains it.
+    37	
+    38	\subsection{The phase-transition intuition}
+    39	\label{subsec:5:phase-intuition}
+    40	
+    41	Chapter~\ref{ch:kinds-without-essences} introduced a physical analogy: phase transitions. Water has no essence of liquidity; the same molecules constitute ice, liquid, and steam depending on temperature and pressure. The boundaries are real and sharp enough for skating or swimming, but they are maintained by dynamics, not definitions.
+    42	
+    43	Phase transitions produce categorical outcomes (solid, liquid, gas) from continuous substrates (temperature, pressure). This suggests the solution: if physical systems can exhibit discrete, stable structure without essences, perhaps linguistic categories can too. We need to say precisely what it's about the dynamics that produces discreteness.
+    44	
+    45	The key insight from physics is that phase boundaries are \emph{scale-sensitive}. Near a phase boundary, small changes in temperature or pressure can flip the system from one phase to another. Far from the boundary, the same small changes have no categorial effect~-- the system remains solidly in one phase. The boundary is sharp, but its sharpness is a feature of the system at a particular scale of observation. Zoom in far enough and you find molecules fluctuating; zoom out and you find stable ice or stable water. The discreteness is real, but it emerges at the macroscopic level from continuous microscopic variation. Macroscopic discreteness is measurement-indexed: phases are crisp relative to thermometers, not relative to individual molecules.
+    46	
+    47	The same logic applies to vague predicates generally. Consider a heap of sand. Ten thousand grains is clearly a heap. One grain is clearly not. The boundary seems sharp~-- at some point, removing one more grain tips the collection from heap to non-heap~-- but we can't pinpoint it. This is the Sorites paradox. Standard responses include epistemicism (the boundary is sharp but unknowable), degree theory (heaphood comes in degrees), and supervaluationism (multiple precisifications are equally acceptable). None quite captures the phase-transition intuition: that the boundary is sharp at the right scale, located in a determinate region, and maintained by dynamics rather than essences.
+    48	
+    49	\subsection{Relative tolerance}
+    50	\label{subsec:5:relative-tolerance}
+    51	
+    52	To make this precise, consider what \enquote{one grain doesn't matter} really means. It can't mean that removing one grain \emph{never} makes a difference~-- that would entail that even a single grain is a heap. What it means is that removing one grain doesn't matter \emph{when you have many grains}. Ten thousand minus one is still clearly a heap. Fifty minus one might not be.
+    53	
+    54	The difference is relative, not absolute. Removing one grain from ten thousand is a 0.01\% change. Removing one grain from fifty is a 2\% change. The same absolute change has different significance depending on the scale.
+    55	
+    56	This suggests a principle:
+    57	
+    58	\begin{quote}
+    59	Relative Tolerance: Changes that are negligibly small \emph{relative to the current scale} preserve category membership. Changes that are appreciable relative to the current scale may not.
+    60	\end{quote}
+    61	
+    62	The principle is intuitive. When you're dealing with a clear heap~-- thousands of grains~-- removing one is negligible. When you're down to borderline cases~-- dozens of grains~-- removing one is appreciable. Tolerance holds in the first regime and fails in the second. The boundary lies where negligible changes accumulate into appreciable ones.
+
+Transcript so far:
+### [R1-M00] Moderator
+Moderator: Open floor. No fixed order, no domination. One contribution per person per lap.
+Moderator: Pass T covers the whole chapter. Pass F is pure punch-up.
+Coverage windows for Pass T:
+- R1-S01 Wilde: chapters/chapter05.tex:1-62
+- R1-S02 Ephron: chapters/chapter05.tex:63-124
+- R1-S03 Seinfeld: chapters/chapter05.tex:125-186
+- R1-S04 Twain: chapters/chapter05.tex:187-248
+- R1-S05 Wodehouse: chapters/chapter05.tex:249-310
+- R1-S06 Parker: chapters/chapter05.tex:311-372
+- R1-S07 Adams: chapters/chapter05.tex:373-434
+Pass F speakers (open-floor order this run): Wodehouse Ephron Wilde Seinfeld Parker Adams Twain

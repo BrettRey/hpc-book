@@ -411,6 +411,8 @@ entries:
   type: subject
 - term: agent-based model
   type: subject
+- term: ABM
+  type: subject
 - term: particle
   type: subject
 - term: infinitival complement

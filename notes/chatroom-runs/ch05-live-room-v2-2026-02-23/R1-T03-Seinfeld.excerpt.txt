@@ -1,0 +1,24 @@
+    49	\subsection{Relative tolerance}
+    50	\label{subsec:5:relative-tolerance}
+    51	
+    52	To make this precise, consider what \enquote{one grain doesn't matter} really means. It can't mean that removing one grain \emph{never} makes a difference~-- that would entail that even a single grain is a heap. What it means is that removing one grain doesn't matter \emph{when you have many grains}. Ten thousand minus one is still clearly a heap. Fifty minus one might not be.
+    53	
+    54	The difference is relative, not absolute. Removing one grain from ten thousand is a 0.01\% change. Removing one grain from fifty is a 2\% change. The same absolute change has different significance depending on the scale.
+    55	
+    56	This suggests a principle:
+    57	
+    58	\begin{quote}
+    59	Relative Tolerance: Changes that are negligibly small \emph{relative to the current scale} preserve category membership. Changes that are appreciable relative to the current scale may not.
+    60	\end{quote}
+    61	
+    62	The principle is intuitive. When you're dealing with a clear heap~-- thousands of grains~-- removing one is negligible. When you're down to borderline cases~-- dozens of grains~-- removing one is appreciable. Tolerance holds in the first regime and fails in the second. The boundary lies where negligible changes accumulate into appreciable ones.
+    63	
+    64	But \enquote{negligible} and \enquote{appreciable} are themselves vague. To make the principle precise, we need a framework that can handle the distinction rigorously. This is where nonstandard analysis helps.
+    65	
+    66	The next section is therefore not a philosophical aside. The formalism is designed to derive a concrete empirical prediction: that distance-to-boundary should predict judgment variance, with a characteristic functional form. If the hyperreal story is wrong, that variance signature shouldn't appear. If the story is right, the variance pattern isn't just compatible with the framework~-- it falls out of the mathematics.
+    67	
+    68	\section{A formal solution}
+    69	\label{sec:5:formal-solution}
+    70	
+    71	\begin{framed}
+    72	\noindent Skip path. The next subsection develops a formal model using hyperreal numbers. Readers who prefer to skip the mathematics can take away three points and rejoin at §\ref{sec:5:geometry-to-mechanism}:

@@ -1,7 +1,18 @@
 # HPC Book Project Status
 
-**Date**: February 22, 2026
+**Date**: February 23, 2026
 **Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
+
+### Session Work (Feb 23, 2026: Ch 15 substantive revision)
+- **Value proposition clarified**: Ch 15 explains why categories are *shared* (individual mechanisms don't explain community convergence). Social mechanisms complete the maintenance story.
+- **Variationist calibration**: Honest about limits — HPC doesn't give variationists new empirical questions; it makes their implicit ontology explicit. Vindicates Milroy/Eckert mechanism requirement. Mechanism ablation prediction made explicit (network dissolution → dialect levelling).
+- **Two-plus-overlap model**: Dialect (community) and register (activity) as two mechanistic dimensions; discourse community reframed as their convergence zone, not a third kind. Reflexive HPC paragraph added.
+- **Ch 14 callbacks**: Register mismatch ≠ ungrammaticality (double-copula); grammaticality judgments as partly indexical products (§15.5 closing).
+- **De-jargoned**: All Bayesian notation removed; O'Connor similarity-maximizing models passage simplified.
+- **Protocol subsection (§15.4.1) cut**: Methods-manual voice; defeat test folded into preceding paragraph.
+- **Pagination fixes (global, preamble.tex)**: Widow/orphan 10000→150; parskip 0pt→0pt plus 1pt; needspace sections 5→4, subsections 4→3. Net: 407→401 pages.
+- **Stale transitions fixed**: Ch 10 was skipping Ch 11 (lexical categories) and pointing to Ch 12 (gender); Ch 12 was pointing backward to Ch 11 as "the final case study" instead of forward to Ch 13 (zipper); Ch 13 phoneme Object gloss tightened with "its value."
+- **Commits**: `79d7a55`, `2fef3f0`, `bcfbb5b`, `3f00e36` on `ch16-prose-rewrite`
 
 ### Session Work (Feb 22, 2026: shared-bib cleanup tranche C completed)
 - ✅ **All remaining duplicate-signature groups resolved** in shared `references.bib`:
@@ -475,25 +486,15 @@
 - ✅ Bib entry added: `reynolds2025proform` (manuscript in preparation)
 - ✅ `notes/chapter11-grist.md` created with clustering tables and mechanism analysis
 
-## In Progress
+## Current Phase
 
-- 🔄 **Ch 13** (The Stack): Restructuring decided (synthesis chapter). Has empirical content (PHOIBLE, HistWords); narrative needs rewriting. Ch 8 coupling coda already written (§8.x).
-- 🔄 **Ch 14** (Grammaticality): Theoretical framework developed; needs prose
-- 🔄 **Ch 15** (What Changes): Outlined only
+**All 16 chapters drafted** (confirmed Feb 23, 2026). Book is now in revision/polish phase.
 
-**Note:** Book is 15 chapters (gender added Dec 26). Chs 1–12 all drafted.
-
-## Next Actions
-
-### Immediate
-1. **Ch 13 Rewrite** - Synthesis chapter; coupling coda already in Ch 8. Narrative needs rebuilding around new architecture.
-2. **Ch 12 Review** - Draft exists and was polished Jan 8; needs review-board pass like Ch 11 got.
-3. **Ch 14 Draft** - Grammaticality itself; framework ready, prose needed.
-
-### Medium-term
-1. Draft Ch 14–15 (Part IV)
-2. Create remaining visualizations and figures
-3. Peirce integration on `projectibility-pivot` branch (Chs 7, 9–14 touched; not yet merged)
+### Outstanding structural work
+- Peirce integration on `projectibility-pivot` branch (Chs 7, 9-14 touched; not yet merged)
+- Remaining visualizations and figures
+- Review-board passes for chapters that haven't had them
+- Bib style-field normalization (`journal`/`journaltitle`, `address`/`location`)
 
 ## Key Decisions Made
 

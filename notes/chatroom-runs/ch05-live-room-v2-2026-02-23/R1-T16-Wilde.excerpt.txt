@@ -1,0 +1,24 @@
+   362	\item Borderline cases distribute across the middle, because items near the boundary are sensitive to noise~-- small processing fluctuations can shift judgments in either direction.
+   363	\item The gradient spread is widest near the boundary, because that's where the signal-to-noise ratio is lowest (see Figures~\ref{fig:two-layer-model} and~\ref{fig:judgment-variance}).
+   364	\end{itemize}
+   365	
+   366	This is a testable prediction. If the two-layer model is right, items independently rated as near category boundaries should show higher variance in acceptability judgments than items rated as central. The prediction isn't that boundary items get middling ratings~-- that's compatible with gradient grammaticality~-- but that their ratings should be more variable across trials and subjects. In the simplest latent-threshold models, variance is maximised in the boundary region and falls off as items move deeper into either basin. The exact functional form depends on the measurement channel (binary choice vs.\ rating scale), the noise model, and the way context deforms the local landscape; what is robust is the qualitative signature: variance tracks proximity to the seam. Existing work on gradient acceptability already points in this direction: \citet{sprouse2013} found that judgment variability correlates with distance from prototypical (un)grammaticality, and \citet{dabrowska2010} showed systematic individual differences in judgments of complex constructions~-- exactly what you'd expect if different speakers have slightly different basin structures.
+   367	
+   368	This last point deserves emphasis. The basin structure isn't uniform across speakers. Speakers with different input histories~-- more or less exposure to written registers, different dialectal backgrounds, varying levels of literacy~-- will have basins with different shapes and different boundary locations. The hyperreal model accommodates this naturally: each speaker's grammar is a different model, with a different boundary index $K$. What varies across speakers isn't just noise; it's the underlying geometry. The framework predicts that variability in judgments should be highest for constructions that fall near the boundary \emph{for most speakers}~-- and that speakers who agree on central cases may nonetheless diverge on peripheral ones, because their boundaries are located at different hyperreal indices.
+   369	
+   370	\begin{figure}[t]
+   371	\centering
+   372	\includegraphics[width=0.85\textwidth]{figures/5.two-layer-grammaticality.png}
+   373	\caption{The two-layer model. Discrete grammaticality (binary: grammatical or ungrammatical) is filtered through processing and measurement noise to produce gradient acceptability judgments. Items deep in basins produce stable judgments at scale extremes; items near boundaries produce variable judgments distributed across the middle of the scale.}
+   374	\label{fig:two-layer-model}
+   375	\end{figure}
+   376	
+   377	\begin{figure}[t]
+   378	\centering
+   379	\includegraphics[width=0.85\textwidth]{figures/5.judgment-variance.png}
+   380	\caption{Predicted relationship between distance to category boundary and acceptability judgment variance. Items deep in basins (e.g., \mention{dog}) show stable judgments with low variance; items near boundaries (e.g., \mention{near}) show high variability. The qualitative signature~-- variance peaking near the boundary and falling off into each basin~-- is robust; the exact functional form depends on the measurement channel and noise model.}
+   381	\label{fig:judgment-variance}
+   382	\end{figure}
+   383	
+   384	This isn't a new observation~-- the distinction between competence and performance has been with us since Chomsky. But the hyperreal framework adds precision. The boundary isn't merely \enquote{somewhere in the grammar}; it's located at a specific (if unspecifiable) hyperreal threshold. The gradience isn't merely \enquote{performance noise}; it's the predictable consequence of epistemic limitations near a sharp boundary.
+   385	

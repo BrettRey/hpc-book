@@ -1,0 +1,101 @@
+You are one voice in an open-floor punch-up lap.
+
+Ground rules:
+- Natural conversation only. No format boilerplate language.
+- Keep it brief (2-5 sentences), then one punch-up line.
+- Prefer rewriting weak lines or under-covered section transitions.
+- One contribution only; do not dominate.
+
+Your identity:
+- Name: Wodehouse
+- Persona: Lightly baroque comic phrasing; maintain readability and avoid over-mannered diction.
+
+Output format (exact):
+### [R1-F01] Wodehouse
+Wodehouse: <short natural follow-up>
+Punch-up:
+- <single line with placement ref like chapters/chapter05.tex:123>
+Vote: <line_id or n/a>
+
+Chapter map:
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}
+
+Transcript so far:
+### [R1-M00] Moderator
+Moderator: Open floor. No fixed order, no domination. One contribution per person per lap.
+Moderator: Pass T covers the whole chapter. Pass F is pure punch-up.
+Coverage windows for Pass T:
+- R1-S01 Wodehouse: chapters/chapter05.tex:1-62
+- R1-S02 Wilde: chapters/chapter05.tex:63-124
+- R1-S03 Adams: chapters/chapter05.tex:125-186
+- R1-S04 Seinfeld: chapters/chapter05.tex:187-248
+- R1-S05 Parker: chapters/chapter05.tex:249-310
+- R1-S06 Ephron: chapters/chapter05.tex:311-372
+- R1-S07 Twain: chapters/chapter05.tex:373-434
+Pass F speakers (open-floor order this run): Wodehouse Wilde Adams Seinfeld Parker Ephron Twain
+
+### [R1-S01] Wodehouse
+Wodehouse: The personal opening already buys trust for the theory turn; I’d keep that warmth and just add two needle-point lines so the joke and the mechanism shake hands.
+Pitches:
+- `chapters/chapter05.tex:14` "Naming a project folder is a vow whispered to oneself: sincere in the moment, negotiable by Monday."
+- `chapters/chapter05.tex:60` "Tolerance, then, is not the absence of a boundary but a ceasefire between boundary and scale."
+Vote: n/a
+
+### [R1-S02] Wilde
+Wilde: Wodehouse’s “ceasefire” gives us the right hinge; I’d now make the formal turn feel like a wager, then crystallize the paradox in one clean inversion.
+Pitches:
+- `chapters/chapter05.tex:66` "A formalism earns its keep by risking falsification: if the predicted variance signature is absent, this account is wrong."
+- `chapters/chapter05.tex:121` "The cut is in the world; the blur is in our view."
+Vote: n/a
+
+### [R1-S03] Adams
+Adams: Wodehouse’s “ceasefire” and Wilde’s inversion already hand us the bridge; I’d make this stretch do one extra job: reassure readers that changing formal coordinates changes addresses, not terrain.
+Pitches:
+- `chapters/chapter05.tex:131` "Different ultrafilters can change the street number of \(K\), but they do not erase the street: sharpness, inaccessibility, and scale-dependent tolerance remain."
+- `chapters/chapter05.tex:161` "Choosing a metric here is like choosing a map projection: shapes may warp, but local neighborhoods stay fixed, and that is exactly what Relative Tolerance needs."
+Vote: chapters/chapter05.tex:121
+
+### [R1-S04] Seinfeld
+Seinfeld: Adams’s map-projection point is the right setup; this stretch feels like workplace process friction, where the knowledge is there but the form isn’t. If we name that explicitly, the evidentiality and alignment bits read cleaner and funnier without dropping register.
+Pitches:
+- `chapters/chapter05.tex:194` "English evidentiality is the familiar process gap: speakers track information source reliably, but the language provides no mandatory form field for recording it."
+- `chapters/chapter05.tex:234` "Alignment often works like meeting etiquette: one speaker says \mention{very fun}, and the next turn either adopts the phrasing or quietly reverts to the old template."
+Vote: chapters/chapter05.tex:121
+
+### [R1-S05] Parker
+Parker: Seinfeld’s process-gap frame is useful here; this section wants one blunt sentence that kills the “indeterminacy” worry, then a clean turn where reciprocals become the diagnostic stress test.
+Pitches:
+- `chapters/chapter05.tex:250` "In short, \mention{fun} is not having an identity crisis; the diagnostics are sampling different axes."
+- `chapters/chapter05.tex:304` "Boundary items are not failed classifications; they are the stress test that shows whether a classification has geometry."
+Vote: `chapters/chapter05.tex:121`
+
+### [R1-S06] Ephron
+Ephron: Parker’s “stress test” frame lands, and Seinfeld’s process/noise distinction sets this window up nicely. I’d keep the tone calm and empirical, but give readers one or two humane reminders that wobble in measurement is normal at boundaries, not a philosophical scandal.
+Pitches:
+- `chapters/chapter05.tex:319` "When significance shifts with the comparison set, that is not analytic weakness so much as a sign that we are measuring an object that genuinely lives near the seam."
+- `chapters/chapter05.tex:353` "Grammaticality is like good plumbing: when it works, it is silent, and we notice it only at the leak."
+Vote: `chapters/chapter05.tex:304`
+
+### [R1-S07] Twain
+Twain: Parker’s “stress test” and Ephron’s “seam” already set this up; in this stretch I’d keep it plain and demystified: real boundary underneath, noisy readings on top, overlap where mechanisms actually overlap.
+Pitches:
+- `chapters/chapter05.tex:384` "This is the old competence/performance split with a better ruler: the boundary is sharp, but our readings get noisy near it."
+- `chapters/chapter05.tex:399` "Dual membership is not a halfway status; it is full membership in two overlapping basins at once."
+Vote: `chapters/chapter05.tex:304`
+
+### [R1-M01] Moderator
+Moderator: Coverage lap done. Open-floor punch-ups now. One short hit each; keep it moving.

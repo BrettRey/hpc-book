@@ -1,0 +1,95 @@
+You are one writer in a live comedy writers' room revising a chapter.
+
+Room norms:
+- Sound like a person in a room, not a review template.
+- React to prior turns organically; short digressions are fine.
+- Keep this contribution to 2-6 sentences before line proposals.
+- Avoid repeating scaffold patterns (for example, "yes on X, no on Y" every turn).
+- Humor should clarify, not derail.
+- Land 1-2 concrete candidate lines with placement refs.
+- At least one candidate must target this focus window: chapters/chapter05.tex:73-96
+
+Identity:
+- Name: Adams
+- Persona: High-concept absurdity, but only when technically clarifying.
+
+Output format (exact):
+### [R1-T04] Adams
+Adams: <natural room contribution>
+Line candidates:
+- <placement ref like chapters/chapter05.tex:123 — proposed line>
+- <optional second line or n/a>
+
+Chapter map:
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}
+
+Focus excerpt:
+    73	\begin{enumerate}
+    74	    \item Tolerance is scale-sensitive: small changes are tolerated, but they accumulate.
+    75	    \item Sharp boundaries exist at thresholds we can't precisely locate.
+    76	    \item Discrete categories and gradient intuitions are compatible~-- the discreteness is in the structure, the gradience is in our access to it.
+    77	\end{enumerate}
+    78	\end{framed}
+    79	
+    80	\subsection{The hyperreal formalization}
+    81	\label{subsec:5:hyperreal}
+    82	
+    83	The hyperreal numbers extend the reals with \emph{infinitesimals}~-- quantities greater than $0$ but smaller than any positive real number \citep{Goldblatt1998LecturesHyperreals}. Robinson's construction is rigorous, but we don't need its details. Here infinitesimals are a modelling device for making \emph{negligible relative to the current scale} precise without stipulating an arbitrary finite cutoff. I am not claiming speakers compute with hypernaturals; the hyperreals play the role calculus plays in physics. The application to vagueness is developed fully in \citet{reynolds2025sorites}.
+    84	
+    85	Here is how the framework applies to vague predicates. Let $P$ be a predicate like \textit{is a heap}, and let $\mu(x)$ be a measure of the relevant property~-- say, grain count. For successive cases $c_i$ and $c_{i+1}$ in a series, let $\Delta\mu_i = \mu(c_{i+1}) - \mu(c_i)$ be the change from one case to the next.
+    86	
+    87	The Relative Tolerance principle becomes:
+    88	
+    89	\begin{quote}
+    90	If $|\Delta\mu_i|/\mu(c_i)$ is infinitesimal, then $P(c_i) \leftrightarrow P(c_{i+1})$.
+    91	\end{quote}
+    92	
+    93	In plain language: if the fractional change is infinitesimally small, the predicate's truth value is preserved. This captures the intuition that proportionally tiny changes don't matter, while allowing that accumulated changes can.
+    94	
+    95	Now model the entire Sorites series~-- from clear heap to clear non-heap~-- as a \emph{hyperfinite chain} of $\omega$ steps, where $\omega$ is an infinite hypernatural number (Figure~\ref{fig:hyperfinite-chain}). This is a standard construction in nonstandard analysis: a sequence indexed by hypernaturals, behaving internally like a finite sequence but containing infinitely many elements from the external perspective.
+    96	
+
+Transcript so far:
+### [R1-M00] Moderator
+Moderator: Open floor. Jump in naturally; do not dominate the room.
+Moderator: Tough-room rule: material first, weak lines are killable.
+Moderator: Conversation pass has 18 turns and covers the whole chapter.
+Moderator: Then one punch-up lap and a separate ballot pass.
+Conversation order this run: Seinfeld Twain Seinfeld Adams Ephron Wodehouse Twain Adams Seinfeld Adams Parker Parker Wodehouse Wodehouse Wilde Wilde Wilde Ephron
+Punch-up order this run: Wilde Seinfeld Adams Wodehouse Ephron Parker Twain
+Ballot order this run: Wilde Seinfeld Adams Wodehouse Ephron Parker Twain
+
+### [R1-T01] Seinfeld
+Seinfeld: The folder-name moment is gold because it’s the most ordinary fake-progress ritual we all do. You make a folder and suddenly your brain goes, “Well, I guess I’m a serious scholar now,” while nothing has actually happened yet. I’d punch that once, then let the Pullum/Nefdt exchange carry the real momentum. And the “first draft by bedtime” line wants one little wink so it feels human, not mythic.
+
+Line candidates:
+- `chapters/chapter05.tex:13` — `I've learned to treat naming a folder as the weakest form of commitment: the intellectual equivalent of buying running shoes and calling it exercise.`
+- `chapters/chapter05.tex:23` — `By bedtime that evening, I had the first draft of this chapter, which felt either like inspiration or terrible time management.`
+
+### [R1-T02] Twain
+Twain: Seinfeld’s right on the folder gag, and this section has the opposite problem: it can drift into seminar-voice if we’re not careful. The argument is strong, but a couple lines would hit harder if they sounded like something you could explain at a kitchen table. Also, “keep the boundary where it’s” reads like a stumble right when the prose should feel firm. Keep the abstraction, just bolt it to one concrete sentence the reader can grab.
+
+Line candidates:
+- `chapters/chapter05.tex:34` — `A change that does nothing in the middle of a category can decide everything at the edge, so tolerance and boundary intuitions can both be right.`
+- `chapters/chapter05.tex:45` — `Macroscopic discreteness is measurement-indexed: crisp to thermometers, blurry to molecules.`
+
+### [R1-T03] Seinfeld
+Seinfeld: Twain’s kitchen-table point is exactly the move here, because this subsection is basically the math version of everyday annoyance thresholds. We all live this: one tiny change in a giant pile feels invisible, but one tiny change near empty suddenly runs your whole afternoon. If we give the reader one ordinary-process example, “relative tolerance” stops sounding like jargon and starts sounding like common sense right before the formal turn.
+
+Line candidates:
+- `chapters/chapter05.tex:54` — `In ordinary life, scale does this constantly: one lost file in a huge download folder is noise; one lost character in a password is the entire problem.`
+- `chapters/chapter05.tex:64` — `So the technical challenge is simple to state: define \enquote{negligible} in a way that tracks scale, so \enquote{doesn't matter} is no longer just a vibe.`

@@ -1,0 +1,29 @@
+key	current_status	current_doi	candidate_doi	candidate_confidence	title_score	author_match	year_match	candidate_title
+kolyaseva2018tipa	doi_metadata_mismatch	10.1016/j.pragma.2018.03.003	10.1016/j.pragma.2018.03.004	high	0.9	True	True	The ‘new’ Russian quotative tipa: Pragmatic scope and functions
+lauwers2021	doi_metadata_mismatch	10.1017/9781108937979.015	10.1017/9781108937979.016	high	1.0	True	True	Plurality Without (Full) Countability: On Mass-Like Categories in Lexical Plurals
+dupre1993	doi_unresolved	10.2307/j.ctv1pncnzh	10.2307/2186103	medium	1.0	False	True	The Disorder of Things: Metaphysical Foundations of the Disunity of Science.
+pullum2019-normativity	doi_metadata_mismatch	10.5281/zenodo.2654375	10.1163/9789004368866_011	low	0.5111	True	False	Word Order Universals and Grammatical Relations
+favier2021	doi_metadata_mismatch	10.1016/j.lingua.2020.102991	10.1016/j.lingua.2020.102991	low	0.6071	True	True	Are there core and peripheral syntactic structures? Experimental evidence from Dutch native speakers with varying literacy levels
+rowlandpine2000	doi_unresolved	10.1016/S0010-0277(00)00100-0	10.1017/s0305000999004055	low	0.6971	True	True	Subject–auxiliary inversion errors and wh-question  acquisition: ‘what children do know?’
+decat2011	doi_metadata_mismatch	10.1017/S0305000910000346	10.1017/s030500091000036x	high	1.0	True	True	Information tracking and encoding in early L1: linguistic competence vs. cognitive limitations
+birnerward1994	doi_metadata_mismatch	10.3765/bls.v20i1.1455	10.3765/bls.v20i1.1479	high	1.0	True	True	Uniqueness, Familiarity, and the Definite Article in English
+husic2021	doi_metadata_mismatch	10.1017/9781108937979.017	10.1017/9781108937979.018	medium	1.0	False	True	Polysemy and the Count–Mass Distinction: What Can We Derive from a Lexicon of Count and Mass Senses?
+gathercole1985	doi_metadata_mismatch	10.1017/S0305000900006498	10.1017/s0305000900006504	high	0.9375	True	True	‘He has too much hard questions’: the acquisition of the linguistic mass–count distinction in <i>much</i> and <i>many</i>
+remijsen2019dinka	doi_metadata_mismatch	10.1017/S0952675719000034	10.1017/s0952675714000219	low	0.6939	True	False	Contrastive tonal alignment in falling contours in Shilluk
+Steinhauer2009	doi_unresolved	10.1177/0267658308098	10.1177/0267658308098995	high	1.0	True	True	Temporal dynamics of late second language acquisition: evidence from event-related brain potentials
+KabakVogel2001	doi_unresolved	10.1017/S0952675701004137	10.1017/s0952675701004201	high	1.0	True	True	The phonological word and stress assignment in Turkish
+mackenzie2019	doi_metadata_mismatch	10.5334/gjgl.840	10.5334/gjgl.622	high	1.0	True	True	Perturbing the community grammar: Individual differences and community-level constraints on sociolinguistic variation
+McCawley1974	doi_metadata_mismatch	10.1515/9783110813456	10.1515/9783110813456-010	high	0.96	True	True	JAMES McCAWLEY
+bertolotti2016	doi_metadata_mismatch	10.1075/ihll.10.02ber	10.1075/ihll.10.02ber	low	0.4571	True	True	Voseo and tuteo, the countryside and the city
+kinkade1983	doi_unresolved	10.1016/0024-3841(83)90070-9	10.1016/0024-3841(83)90045-1	high	1.0	True	True	Salish evidence against the universality of ‘noun’ and ‘verb’
+baker1996	doi_unresolved	10.1093/oso/9780195093087.001.0001	10.1093/oso/9780195093070.001.0001	high	1.0	True	True	The Polysynthesis Parameter
+nefdt2023	doi_metadata_mismatch	10.1093/oso/9780197653098.003.0001	10.1093/oso/9780197653098.001.0001	high	0.96	True	True	Language, Science, and Structure
+jackendoff2023parallel	doi_metadata_mismatch	10.1111/tops.12684	10.1111/tops.12698	medium	1.0	True	False	The Parallel Architecture in Language and Elsewhere
+ackerman2012fluency	doi_metadata_mismatch	10.1016/j.cognition.2012.07.012	10.1016/j.cognition.2013.03.003	low	0.6411	False	True	The role of answer fluency and perceptual fluency in the monitoring and control of reasoning: Reply to
+krejciHilton2022	doi_metadata_mismatch	10.1017/S0954394522000059	10.1017/s0954394517000096	medium	1.0	True	False	There's three variants: Agreement variation in existential<i>there</i>constructions
+drummond_schleef2016_identity	doi_metadata_mismatch	10.4324/9781315669816	10.4324/9781315669816-13	medium	1.0	False	True	Identity in variationist sociolinguistics
+sprouse2012assessing	doi_metadata_mismatch	10.1017/CBO9781139035309.015	10.1353/lan.2012.0004	high	1.0	True	True	A Test of The Relation Between Working-Memory Capacity and Syntactic Island Effects
+Goddard2024	doi_unresolved	10.1016/j.lingua.2024.103652	10.2139/ssrn.4888348	high	1.0	True	True	The Conceptual Building Blocks of Kinship Terminologies
+Luong1990	doi_metadata_mismatch	10.1075/pbns.9	10.1075/pbns.11	high	0.96	True	True	Discursive Practices and Linguistic Meanings
+Dixon1972	doi_unresolved	10.1017/CBO9780511720086	10.1017/cbo9781139084987	high	1.0	True	True	The Dyirbal Language of North Queensland
+AguilarZwarts2014	doi_metadata_mismatch	10.1075/la.219.01agu	10.3765/salt.v0i20.2583	high	1.0	True	True	Weak definites and reference to kinds

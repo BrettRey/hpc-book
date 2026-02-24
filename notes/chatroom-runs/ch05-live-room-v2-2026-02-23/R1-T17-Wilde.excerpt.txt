@@ -1,0 +1,24 @@
+   386	Chapter~\ref{ch:grammaticality-itself} develops this picture fully, arguing that grammaticality itself is a homeostatic property cluster~-- a category maintained by mechanisms, with a sharp boundary at hyperreal distance. For now, the point is that gradient judgments and discrete categories are compatible. The discreteness is in the structure; the gradience is in our access to it.
+   387	
+   388	\subsection{Dual membership}
+   389	\label{subsec:5:dual-membership}
+   390	
+   391	One puzzle remains. If categories are discrete~-- if at every point in feature space an item is either in or out~-- how can there be genuine dual membership? How can \mention{near} be both a preposition and an adjective, not contextually selected, not in transition, but stably both? English is comfortable with a kind of dual citizenship here: items like \mention{near} can hold both passports without being in transit.
+   392	
+   393	The answer is that discreteness holds predicate-by-predicate, not across predicates. The predicates \textit{is a preposition} and \textit{is an adjective} are each bivalent: at any point, each is either true or false. But they're not mutually exclusive. The basins can overlap.
+   394	
+   395	This follows naturally from the HPC framework. Categories are maintained by mechanisms, not defined by partition. The mechanisms maintaining English prepositionhood~-- patterns of complementation, head-of-PP status, lack of degree modification~-- are partially independent of those maintaining English adjectivehood~-- gradability, predicative use, comparative morphology. An item can fall within the tolerance threshold for both, satisfying the clustering criteria for each.
+   396	
+   397	Where the mechanisms align, the basins are disjoint: English nouns and verbs occupy separate regions because the mechanisms that maintain them pull in different directions (Figure~\ref{fig:disjoint-overlap}, left). Where the mechanisms cross, the basins overlap: English adjectives and prepositions share enough properties~-- predicative function, modification of nominals~-- that some items cluster with both (Figure~\ref{fig:disjoint-overlap}, right).
+   398	
+   399	The regions of overlap aren't arbitrary. They're located where the property clusters themselves overlap~-- where an item can satisfy the tolerance criteria for both categories simultaneously. These are exactly the cases that trouble essentialism: items that have \enquote{mixed} status because they satisfy criteria for multiple categories. On the HPC + hyperreal view, mixed status isn't indeterminacy but dual location: the item is in two basins at once, stably, because the mechanisms that maintain each basin both apply.
+   400	
+   401	The reciprocals case from §\ref{subsec:5:multi-category} exemplifies this cleanly. Morphology maintains the determinative basin; semantics maintains the pronoun basin. Reciprocals satisfy both. The mixture weights from the blend model~-- 0.534 pronoun-like for \mention{each other}, 0.487 for \mention{one another}~-- aren't noise or measurement error. They are the empirical signature of genuine dual location: stable membership in overlapping basins, maintained by partially independent mechanisms.
+   402	
+   403	\begin{figure}[t]
+   404	\centering
+   405	\includegraphics[width=0.85\textwidth]{figures/5.disjoint-overlap.png}
+   406	\caption{Disjoint vs.\ overlapping category basins. Left: noun--verb mechanisms pull in opposite directions, creating mutual exclusivity. Right: noun--adjective mechanisms are partially independent, permitting overlap. Items like \mention{fun} and \mention{near} occupy the overlap region, satisfying the clustering criteria for both categories simultaneously.}
+   407	\label{fig:disjoint-overlap}
+   408	\end{figure}
+   409	

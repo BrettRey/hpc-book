@@ -1,0 +1,24 @@
+   266	        height=0.3cm,
+   267	        xlabel={Tokens},
+   268	        xlabel style={yshift=0.2cm},
+   269	        xticklabel style={font=\footnotesize},
+   270	    },
+   271	    colormap={WhiteBlue}{rgb255(0cm)=(255,255,255); rgb255(0.02cm)=(200,220,255); rgb255(1cm)=(8,48,107)},
+   272	    colormap name=WhiteBlue,
+   273	    point meta min=0,
+   274	    point meta max=55,
+   275	    xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+   276	    xticklabels={1870,1900,1910,1920,1930,1940,1950,1960,1970,1980,1990,2000s},
+   277	    xticklabel style={font=\footnotesize, rotate=45, anchor=east},
+   278	    ytick={1,2,3,4},
+   279	    yticklabels={\textit{very fun},\textit{so fun},\textit{really fun},\textit{rather fun}},
+   280	    yticklabel style={font=\small},
+   281	    xlabel={},
+   282	    ylabel={},
+   283	    enlargelimits=false,
+   284	]
+   285	% Data matrix: rows = modifiers (bottom to top: very, so, really, rather)
+   286	% columns = decades (1870, 1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000s)
+   287	% 2000s combines 2000 and 2010 since those are the surge years
+   288	\addplot[matrix plot*, mesh/cols=12, point meta=explicit] coordinates {
+   289	    % very fun: 1870=1, gaps, 1940=1, 1960=1, 1980=2, 1990=3, 2000s=18

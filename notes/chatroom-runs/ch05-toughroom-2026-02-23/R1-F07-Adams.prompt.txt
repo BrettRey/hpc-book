@@ -1,0 +1,154 @@
+You are one voice in an open-floor punch-up lap.
+
+Ground rules:
+- Natural conversation only. No format boilerplate language.
+- Keep it brief (2-5 sentences), then one punch-up line.
+- Prefer rewriting weak lines or under-covered section transitions.
+- Keep a tough-room tempo: quick yes/no judgments on prior material.
+- One contribution only; do not dominate.
+
+Your identity:
+- Name: Adams
+- Persona: High-concept absurdity, but only when technically clarifying.
+
+Output format (exact):
+### [R1-F07] Adams
+Adams: <short natural follow-up>
+Punch-up:
+- <single line with placement ref like chapters/chapter05.tex:123>
+Vote: <line_id from prior turns>
+Kill: <line_id to cut, or n/a>
+
+Chapter map:
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}
+
+Transcript so far:
+### [R1-M00] Moderator
+Moderator: Open floor. No fixed order, no domination. One contribution per person per lap.
+Moderator: Tough-room rule: material first. React sharply, but keep it about the line.
+Moderator: Survival rule: a line needs 2+ votes in this round to carry forward.
+Moderator: Pass T covers the whole chapter. Pass F is pure punch-up.
+Coverage windows for Pass T:
+- R1-S01 Twain: chapters/chapter05.tex:1-62
+- R1-S02 Wodehouse: chapters/chapter05.tex:63-124
+- R1-S03 Wilde: chapters/chapter05.tex:125-186
+- R1-S04 Seinfeld: chapters/chapter05.tex:187-248
+- R1-S05 Parker: chapters/chapter05.tex:249-310
+- R1-S06 Ephron: chapters/chapter05.tex:311-372
+- R1-S07 Adams: chapters/chapter05.tex:373-434
+Pass F speakers (open-floor order this run): Twain Wodehouse Wilde Seinfeld Parker Ephron Adams
+
+### [R1-S01] Twain
+Twain: Material-first works for me. The opening has spark, but it lingers on autobiography when the argument is the sell. Keep the phase-transition move, just pin every claim to scale and measurement so it feels earned, not mystical.
+Pitches:
+- chapters/chapter05.tex:25 — Here is the puzzle: linguistic categories act like switches even when the evidence underneath them comes in continuous gradients.
+- chapters/chapter05.tex:59 — Relative Tolerance: a change preserves category membership only when it is negligible relative to current scale; near a boundary, the same change can reverse the judgment.
+Vote: n/a
+Kill: n/a
+
+### [R1-S02] Wodehouse
+Wodehouse: Twain’s right that the argument sells better when it looks measured rather than mystical. The good news is the machinery is already here; it mostly needs cleaner signposts between intuition, formal claim, and empirical bet. Let the formalism enter not as a tuxedoed digression, but as the bit that risks being wrong in public.
+Pitches:
+- chapters/chapter05.tex:66 — This formal move earns its keep only if it predicts data: as cases approach the boundary, judgment variance should increase in a characteristic functional form.
+- chapters/chapter05.tex:123 — Like epistemicism, this account posits a sharp but inaccessible cutoff; unlike it, the inaccessibility follows from the cutoff’s hypernatural location, not merely from limits on discrimination.
+Vote: chapters/chapter05.tex:59
+Kill: n/a
+
+### [R1-S03] Wilde
+Wilde: Twain has the spine, and Wodehouse has the tailoring. If this section wants to survive peer review, each elegant claim has to cash out as a measurable risk. Keep the glamour, but make the theory answerable to drift and variance.
+Pitches:
+- chapters/chapter05.tex:127 - Epistemicism gives a fixed verdict; the maintenance-hyperreal view gives a testable forecast: perturb acquisition or alignment, and the boundary should drift in structured, modelable ways.
+- chapters/chapter05.tex:161 - We do not need one sacred metric; we need local metric agreement, because any measure that preserves the same tiny neighborhoods should preserve the same Relative Tolerance predictions.
+Vote: chapters/chapter05.tex:66
+Kill: chapters/chapter05.tex:123
+
+### [R1-S04] Seinfeld
+Seinfeld: I’m with Twain and Wodehouse: if this model is doing work, it should fail in legible ways, not just sound impressive. Right now the prose occasionally feels like process friction, where every paragraph opens a new metaphor ticket. Keep the image, but make each image answer one concrete question.
+Pitches:
+- chapters/chapter05.tex:194 - English gives the split case directly: evidential distinctions remain conceptually available, but without obligatory morphology there is no stable grammatical evidential basin for speakers to converge on.
+- chapters/chapter05.tex:230 - Boundaries are not essence detectors; they are equilibrium traces left by repeated acquisition, alignment, and transmission pressures acting over time.
+Vote: chapters/chapter05.tex:66
+Kill: chapters/chapter05.tex:123
+
+### [R1-S05] Parker
+Parker: Twain’s switch framing and Seinfeld’s equilibrium line already do the heavy lifting. Here we should stop touring examples and make the measurement claim blunt: mixed diagnostics are coordinate mismatch, not category fog. Then mark the turn cleanly from diachronic drift to synchronically stable edge cases.
+Pitches:
+- chapters/chapter05.tex:250 — Apparent hybridity here is a measurement artifact: \mention{fun} occupies different coordinates across diagnostics, so the conflict is in our tests, not in category reality.
+- chapters/chapter05.tex:304 — The next case asks a different question: not how an item moves toward a boundary over time, but how an item can remain stably at that boundary within a single synchronic system.
+Vote: chapters/chapter05.tex:66
+Kill: chapters/chapter05.tex:123
+
+### [R1-S06] Ephron
+Ephron: Twain’s switch line and Parker’s synchronic turn already set the table. In this stretch, the writing is best when it admits uncertainty without apologizing for it; that makes the claim feel empirical, not devotional. I’d keep the nerve and trim any over-explaining: sometimes the p-values wobble because the item is genuinely between chairs, not because the statistics forgot their glasses.  
+Pitches:
+- chapters/chapter05.tex:319 — On this account, unstable p-values are not a defect to excuse but part of the signature: boundary items stay qualitatively intermediate even as quantitative confidence shifts with the comparison set.
+- chapters/chapter05.tex:353 — Grammaticality is experientially quiet, so judgment data naturally over-register violations and under-register conformity.
+Vote: chapters/chapter05.tex:66
+Kill: chapters/chapter05.tex:123
+
+### [R1-S07] Adams
+Adams: Seinfeld’s “equilibrium traces” plus Ephron’s variance point is the right backbone: if the graph doesn’t bite, the theory is just expensive incense. I’d make the prediction sentence brutally falsifiable so Figure 5.2 does real labor. Then in dual membership, say it plainly: one lexical item can have two passports because the passport offices are different predicates, not because reality is undecided.
+Pitches:
+- chapters/chapter05.tex:384 — This framework makes a testable shape claim: as items approach the boundary, mean acceptability moves toward the center while judgment variance rises, then falls again inside each basin.
+- chapters/chapter05.tex:393 — Dual membership is conjunction, not indeterminacy: an item can satisfy \textit{is a preposition} and \textit{is an adjective} simultaneously because each predicate has its own sharp, independently maintained boundary.
+Vote: chapters/chapter05.tex:66
+Kill: chapters/chapter05.tex:250
+
+### [R1-M01] Moderator
+Moderator: Coverage lap done. Open-floor punch-ups now. One short hit each; keep it moving.
+
+### [R1-F01] Twain
+Twain: Yes on Adams’s falsifiable-shape sentence and yes on Seinfeld’s equilibrium trace; those are concrete. No on phrasing that sounds impressive but can’t be measured tomorrow. The handoff into the empirical section still needs a hard test sentence, not another metaphor.
+Punch-up:
+- chapters/chapter05.tex:339 — Now we ask for receipts: if boundary proximity does not produce the predicted mean-shift with a variance hump, this model is wrong.
+Vote: chapters/chapter05.tex:384
+Kill: chapters/chapter05.tex:353
+
+### [R1-F02] Wodehouse
+Wodehouse: Yes to Twain’s “receipts” demand and Adams’s shape claim; that pair gives the argument a proper backbone. No to any further metaphor lace between formalism and data, because it slows the wager. The empirical handoff should read like money on the table, not incense in the air.
+Punch-up:
+- chapters/chapter05.tex:339 — Time to cash the cheque: if boundary items do not show the predicted centerward mean with a variance bulge, this model is wrong.
+Vote: chapters/chapter05.tex:384
+Kill: chapters/chapter05.tex:123
+
+### [R1-F03] Wilde
+Wilde: Yes to Twain’s receipts and Wodehouse’s cheque; that is argument with a pulse. No to any transition that perfumes what should be prosecuted. Let the hinge sentence invert the chapter’s luxury: less metaphor, more peril.
+Punch-up:
+- chapters/chapter05.tex:339 — The ornament ends here: if boundary distance fails to yield the predicted centerward mean and variance crest, the mechanism is not subtle, merely false.
+Vote: chapters/chapter05.tex:384
+Kill: chapters/chapter05.tex:123
+
+### [R1-F04] Seinfeld
+Seinfeld: Yes to the receipts point and yes to the variance-shape claim. No to any extra perfume language between formalism and data, because that is where readers start taking a number and waiting. If this thing cannot fail on a graph, it is not theory, it is office decor.
+Punch-up:
+- chapters/chapter05.tex:410 - Summary in plain terms: categories can look fuzzy in use, but a real boundary mechanism keeps producing the same centerward mean shift with a variance hump near the edge.
+Vote: chapters/chapter05.tex:384
+Kill: chapters/chapter05.tex:123
+
+### [R1-F05] Parker
+Parker: Yes on the receipts hinge and yes on 384; that is the only sentence here that can lose in public. No on the current 410 wording, it repeats the graph and blunts the close. End by splitting appearance from mechanism in one cut.
+Punch-up:
+- chapters/chapter05.tex:410 — What looks fuzzy is usage; what stays discrete is mechanism: distance to boundary drives centerward means and a variance peak at the edge.
+Vote: chapters/chapter05.tex:384
+Kill: chapters/chapter05.tex:123
+
+### [R1-F06] Ephron
+Ephron: Yes to the receipts hinge, and yes to `384` because it can actually lose in public. No to closing with another graph recap; the end should separate lived fuzziness from structural maintenance in plain language. Give the reader one social fact and one mechanism, then exit.
+Punch-up:
+- chapters/chapter05.tex:410 — Usage can feel negotiable, but the system is not: repeated social learning keeps reinstating a sharp boundary even when edge judgments blur.
+Vote: chapters/chapter05.tex:384
+Kill: chapters/chapter05.tex:123

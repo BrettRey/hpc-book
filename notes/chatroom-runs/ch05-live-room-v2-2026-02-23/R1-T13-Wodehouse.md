@@ -1,0 +1,6 @@
+### [R1-T13] Wodehouse
+Wodehouse: Parker’s “data hired a lawyer” note is dead-on, and I’d carry that same preemption into the prose transition so nobody suspects rhetorical stagecraft. Right now the jump from \mention{fun} to reciprocals is sound, but we can make it feel like a clean handoff: from watching something approach the border to inspecting a long-term tenant at the border. That keeps “in between” from sounding like “not yet decided,” which is the trap. A small sharpening there will make the diagnostics section read as necessity, not flourish.
+
+Line candidates:
+- `chapters/chapter05.tex:304` — `Boundary phenomena and operationalizing distance come next: the \mention{fun} case shows movement toward a boundary, but reciprocals let us examine a synchronically stable boundary position itself—intermediate by profile, not merely mid-transition.`
+- `chapters/chapter05.tex:310` — `To ask whether this in-betweenness is real rather than decorative, \citet{reynolds2025reciprocals} applies three diagnostics:`

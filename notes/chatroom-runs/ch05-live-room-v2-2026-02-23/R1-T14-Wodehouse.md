@@ -1,0 +1,5 @@
+### [R1-T14] Wodehouse
+Wodehouse: Parker’s anti-lawyer instinct still applies here: the significance caveat should read like expected border turbulence, not a confession under oath. The argument is strongest when we say, calmly, that unstable p-values and stable qualitative placement are exactly what an intermediate item should produce. Then in the English/Shilluk paragraph, one short sentence could keep readers from mistaking “overlap” for “identity.” Give them function-shared, machinery-different, and the whole section snaps into focus.  
+Line candidates:
+- chapters/chapter05.tex:319 — `The p-values are somewhat guest-list sensitive, but the seating chart does not move: reciprocals remain between pronoun and determinative anchors across comparison sets.`
+- chapters/chapter05.tex:331 — `So the systems align in functional basin structure while differing in exponence machinery: similar pressure profile, different engineering.`

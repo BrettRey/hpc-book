@@ -1,0 +1,6 @@
+### [R1-T18] Ephron
+Ephron: Wilde’s “two courts” frame is a great handoff into the summary because it makes the logic feel orderly instead of defensive. In this last stretch, the tone gets a bit verdict-heavy, and I think we can win more trust by sounding slightly less like we’re sentencing two schools of thought. The chapter’s strongest social insight is that people get dependable categories from ongoing maintenance, not from a perfect definition laminated in advance. If we keep that register, the final definiteness prediction lands like a real empirical signature, not a rhetorical flourish.
+
+Line candidates:
+- chapters/chapter05.tex:430 — `This is the structure the essentialist wanted in practice~-- stable kinds, sharp cutoffs, determinate outcomes~-- without the extra metaphysical claim that kinds must be defined by essences.`
+- chapters/chapter05.tex:434 — `So the prediction for definiteness is not softer categories but seam noise: borderline cases should show higher variance, while clear cases stay tightly clustered.`

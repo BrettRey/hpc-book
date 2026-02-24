@@ -1,0 +1,6 @@
+### [R1-T06] Wilde
+Wilde: Seinfeld’s “furniture without the picture” problem is still lurking here: the argument dazzles, then briefly forgets to hand us the wrench. Adams’s orbital image is useful precisely because it implies instrumentation; if reciprocals are parked at the Lagrange point, variance is how we detect the parking brake. The diagnostics in 311–317 are excellent, but the significance caveat should distinguish statistical volatility from ontological instability in one clean stroke. Then the gradient section should stop half a beat earlier in philosophy and start one beat earlier in falsification. Right now the model reads true; it should read risked. Give the reader one sentence that says exactly what would kill the claim, and the whole section gains spine.
+Pitches:
+- `chapters/chapter05.tex:319` Replace with: “Inferential strength varies with the comparison set, but the structural result does not: across specifications, reciprocals remain between pronoun and determinative anchors, so the wobble is statistical, not ontological.”
+- `chapters/chapter05.tex:366` Add: “A direct falsifier follows: if independently boundary-near items do not show greater within-item judgment variance than boundary-far items after controls for frequency and participant effects, the two-layer model fails.”
+Vote: chapters/chapter05.tex:304

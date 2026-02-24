@@ -1,0 +1,161 @@
+You are one independent subagent in a writers' room chapter pass.
+
+Task:
+- Review only the provided chapter materials and prior turns.
+- Produce exactly one turn in the required schema.
+- Keep the conversation useful and specific.
+- You may disagree strongly, but be constructive.
+- Write in natural conversation, as if everyone is in the same room.
+- Do not use labels like "small digression", "Room talk", or stage directions.
+- Respond to prior voices with organic callbacks.
+- Keep it readable and concise (roughly 4-8 sentences before pitches).
+- Land exactly two concrete pitch lines.
+- At least one pitch line must target the assigned coverage window.
+
+Your identity:
+- AgentName: Wilde
+- Persona brief: Elegant inversion, epigrammatic cadence, controlled flamboyance.
+
+Responding-to hints for continuity: [R1-T04], [R1-T05]
+Coverage assignment for this turn: chapters/chapter05.tex:311-372
+
+Required output format (exact headings, no extra preface):
+### [R1-T06] Wilde
+Wilde: <natural conversational contribution>
+Pitches:
+- <line with placement ref like chapters/chapter05.tex:123>
+- <line with placement ref like chapters/chapter05.tex:123 or n/a>
+Vote: <line_id or n/a>
+
+Chapter map (for global orientation):
+6:\chapter{Discrete from continuous}
+27:\section{The gradience problem}
+38:\subsection{The phase-transition intuition}
+49:\subsection{Relative tolerance}
+68:\section{A formal solution}
+80:\subsection{The hyperreal formalization}
+116:\subsection{Sharp boundaries, fuzzy appearances}
+139:\section{From geometry to mechanism}
+142:\subsection{From heaps to categories}
+215:\subsection{Mechanisms and basins}
+244:\subsection{Multi-category spaces}
+339:\section{Empirical consequences}
+342:\subsection{Gradient judgments, discrete categories}
+388:\subsection{Dual membership}
+410:\subsection{Summary: discreteness without essence}
+
+Assigned coverage excerpt (line-numbered):
+   311	
+   312	\begin{enumerate}
+   313	\item Invariance under analytic perturbation: Does the boundary position shift when you change the distance metric, the comparison set, or the feature weights? Across multiple correspondence analysis ordinations, Jaccard distances, and specification curves, reciprocals sit midway between pronoun and determinative anchors~-- a stable intermediate, not an artefact of a particular operationalization.
+   314	
+   315	\item Cross-dimensional tension: Do different feature families pull in different directions? Morphology pulls reciprocals toward determinatives (they lack the case paradigm of core pronouns). Semantics pulls them toward pronouns (they denote referents, not quantities). Syntax and phonology contribute little. The signature of a boundary item is exactly this: opposed pulls from mechanisms that maintain different basins.
+   316	\item Clear anchors behave cleanly: Do items unambiguously inside each basin show the expected clustering? Core pronouns like \mention{he} and \mention{herself} sit deep in the pronoun basin; determinatives like \mention{every} and \mention{either} sit deep in the determinative basin. The methodology confirms what intuition expects: the anchors cluster where they should. The interesting finding is that reciprocals don't.
+   317	\end{enumerate}
+   318	
+   319	A caveat about statistical significance. Whether the boundary position looks \enquote{statistically significant} depends on which comparison items you choose. Pick one reasonable set and the result is extreme; vary the comparison set and the result wobbles. But the \emph{qualitative} finding~-- reciprocals sit between pronoun and determinative anchors~-- is stable across all choices. Under an HPC reading, this is exactly what genuine boundaries should look like: the diagnosis persists, but decisive p-values elude us because the item really is intermediate.
+   320	
+   321	This operationalizes the chapter's theoretical picture. \enquote{Distance to boundary} isn't metaphorical; it can be measured. \enquote{Stability of ambiguity} isn't vague intuition; it's invariance under analytic perturbation~-- the in-betweenness persists when you change your measurement instrument. Reciprocals sit in the overlap region of Figure~\ref{fig:disjoint-overlap}, not because the analysis went wrong but because the basin structure itself has overlap.
+   322	
+   323	The same analysis applies to the existential debates about feature systems raised in §\ref{sec:3:lexeme-obsession}. Is \textsc{gender} a natural kind, or is it reducible to \textsc{number}? The question becomes: do gender and number occupy distinct basins maintained by distinct mechanisms, or is gender a sub-region of a larger number basin, maintained by the same mechanisms at a finer grain?
+   324	
+   325	If the mechanisms maintaining gender systems~-- agreement patterns, acquisition pathways, functional pressures toward nominal classification~-- are distinct from those maintaining number systems, then gender is a genuine natural kind: a separate basin in the space of grammatical features. If the mechanisms overlap substantially~-- if gender turns out to be number's machinery for individuation, as some theorists have argued~-- then the basins merge, and \textsc{gender} as a cross-linguistic category dissolves into \textsc{number}.
+   326	
+   327	This is an empirical question, not a definitional one. The hyperreal model tells us what to look for: distinct basins with sharp thresholds and scale-dependent tolerance. The HPC framework tells us how to investigate: identify the mechanisms, trace their operation, determine whether they cluster distinct properties or the same properties at different scales.
+   328	
+   329	Consider the Shilluk number system introduced in §\ref{sec:3:lexeme-obsession}. English marks number with a suffix: \mention{cat}, \mention{cats}. Shilluk marks it through stem-internal changes in tone, vowel length, and voice quality~-- a singular/plural pair might differ only in whether the vowel is short, long, or overlong, or in whether the tone is Low or Fall. The exponence is lexicalised: each pair must be learned; no productive rule derives one from the other.
+   330	
+   331	What does the HPC + hyperreal view say about this? Both English and Shilluk number systems occupy basins in a feature space whose dimensions include degree of obligatoriness (how often number must be specified), agreement scope (specifier, verb, other constituents), and semantic function (individuation of entities). The exponence dimension~-- where English is affixal and Shilluk is fusional/suprasegmental~-- places them in different regions of morphophonological space but the same region of morphosyntactic and semantic space. They're in overlapping basins, not identical ones~-- independent systems shaped by similar pressures, not one system shared across languages.
+   332	
+   333	The mechanisms maintaining the two systems are partially shared (acquisition of a grammatical contrast where specified, iterated transmission of the singular/non-singular distinction within the contrastive subsystem) and partially distinct (rule-based productivity in English, lexical storage in Shilluk). The prediction is that where the mechanisms align~-- the functional pressure to distinguish singular from plural~-- the categories should pattern similarly across languages. Where they diverge~-- the phonological substance of the exponence~-- we should expect variation. That's exactly what we find. Within the contrastive subsystem, the basin boundary for \textsc{number} is sharp in both languages (a noun is singular or plural, not in between), but the basin's location in the full feature space differs, because different mechanisms weight different dimensions. The same analysis extends to noun-class systems like Swahili's, to Mandarin classifiers, to German gender. Wherever there's grammatical categorisation, there should be basin structure maintained by mechanisms.
+   334	
+   335	A question arises: is the cross-linguistic similarity \emph{convergence} or \emph{homology}? In biology, convergence means similar phenotypes arising independently (the wings of bats and birds), while homology means similarity inherited from a common ancestor (the forelimbs of all mammals). For \textsc{number}, the answer is probably convergence: the functional pressure to distinguish singular from plural exists in any language with nominal reference, and different languages have evolved different morphological solutions. The mechanisms overlap not because of common ancestry but because of common function. For \textsc{noun} and \textsc{verb}, the answer might be different: if these categories reflect universal constraints on predication and reference, they may be homologous~-- inherited from whatever cognitive architecture makes human language possible. The framework should distinguish these cases, and the mechanistic analysis provides the tools: shared mechanisms suggest homology; parallel mechanisms suggest convergence.
+   336	
+   337	If the HPC analysis just confirms that English number and Shilluk number are both \textsc{number}, have we learned anything? Yes: the framework explains \emph{why} they deserve the same label~-- not definitional fiat, but overlapping mechanisms maintaining overlapping basins. And it makes predictions: if we found a putative \enquote{number} category maintained by entirely different mechanisms with no overlap in the functional dimension, the framework would say it's not the same kind~-- same label, different basin.
+   338	
+   339	\section{Empirical consequences}
+   340	\label{sec:5:empirical-consequences}
+   341	
+   342	\subsection{Gradient judgments, discrete categories}
+   343	\label{subsec:5:gradient-discrete}
+   344	
+   345	The discreteness problem has a close cousin: the gradient-judgment problem. Speakers' acceptability judgments are notoriously gradient. Asked to rate sentences on a 1--7 scale, they distribute across the range, with clear acceptability at the extremes and uncertainty in the middle. If categories are discrete, why are judgments gradient?
+   346	
+   347	The hyperreal framework suggests an answer. Distinguish the category from its measurement, the ontology from its epistemology.
+   348	
+   349	Grammaticality~-- the property of conforming to the grammar~-- is discrete. A sentence either satisfies the constraints or it doesn't. The boundary between grammatical and ungrammatical is sharp, located at a hyperreal threshold in some underlying dimension (perhaps accumulated constraint violation, or distance from prototype, or processing cost).
+   350	
+   351	Acceptability~-- the measured response in judgment tasks~-- reflects grammaticality filtered through noise. Processing difficulty, frequency effects, task demands, individual variation, and measurement error all intervene between the discrete category and the gradient response. This is where the maintenance framework bites: grammaticality is the maintained category, acceptability is a noisy instrument whose bias terms are themselves mechanism-sensitive (frequency shapes entrenchment, task framing activates different basin configurations, exposure history shapes where the boundary lies for each speaker).
+   352	
+   353	One reason this distinction is so easy to lose sight of is that the phenomenology is asymmetric. When a sentence is well-formed, nothing in particular announces itself: processing just runs. The felt data are mostly negative~-- the \enquote{catch} of a violation, the extra effort, the moment of repair. There is, in that sense, no positive feeling of grammaticality, just as there is no feeling of having sufficient oxygen; the experiences that demand attention are the absences. This is why boundary detection is cognitively natural: violations have a signature, conformity is typically silent.
+   354	
+   355	A second reason is methodological. Temperature isn't something you see; it's a theoretical magnitude inferred from what thermometers do. Likewise grammaticality is a latent property that we access only through instruments~-- judgments, reaction times, eye movements, priming, production choices~-- each of which can misread the target in both directions, yielding false comfort (illusory well-formedness) or false alarm (grammatical but degraded). The point is clearest in \emph{satiation} effects: repeated exposure can raise acceptability for initially degraded strings, even though it's implausible that the grammar itself has been rewritten over the course of a short experimental session. Satiation is therefore not a nuisance; it's direct evidence that the mapping from grammaticality to felt acceptability is plastic, and that we shouldn't identify the construct with any one measurement channel.
+   356	
+   357	Not all of these factors work the same way. Random fluctuations~-- trial-to-trial variation in attention, incidental processing load, measurement noise~-- blur the signal without shifting it. But frequency effects and task demands can systematically shift the mapping from grammaticality to acceptability. A borderline construction may be judged more acceptable if it's high-frequency than if it's low-frequency, even when both are equally grammatical. Instructions emphasizing naturalness may locate the boundary differently than instructions emphasizing correctness. These are biases, not noise. The two-layer model accommodates them: different contexts may activate different effective basin configurations, shifting where tolerance breaks down.
+   358	
+   359	This predicts:
+   360	\begin{itemize}
+   361	\item Clear cases cluster at scale extremes (1s and 7s), because items deep in the grammatical or ungrammatical basin are stably categorized and noise doesn't flip them.
+   362	\item Borderline cases distribute across the middle, because items near the boundary are sensitive to noise~-- small processing fluctuations can shift judgments in either direction.
+   363	\item The gradient spread is widest near the boundary, because that's where the signal-to-noise ratio is lowest (see Figures~\ref{fig:two-layer-model} and~\ref{fig:judgment-variance}).
+   364	\end{itemize}
+   365	
+   366	This is a testable prediction. If the two-layer model is right, items independently rated as near category boundaries should show higher variance in acceptability judgments than items rated as central. The prediction isn't that boundary items get middling ratings~-- that's compatible with gradient grammaticality~-- but that their ratings should be more variable across trials and subjects. In the simplest latent-threshold models, variance is maximised in the boundary region and falls off as items move deeper into either basin. The exact functional form depends on the measurement channel (binary choice vs.\ rating scale), the noise model, and the way context deforms the local landscape; what is robust is the qualitative signature: variance tracks proximity to the seam. Existing work on gradient acceptability already points in this direction: \citet{sprouse2013} found that judgment variability correlates with distance from prototypical (un)grammaticality, and \citet{dabrowska2010} showed systematic individual differences in judgments of complex constructions~-- exactly what you'd expect if different speakers have slightly different basin structures.
+   367	
+   368	This last point deserves emphasis. The basin structure isn't uniform across speakers. Speakers with different input histories~-- more or less exposure to written registers, different dialectal backgrounds, varying levels of literacy~-- will have basins with different shapes and different boundary locations. The hyperreal model accommodates this naturally: each speaker's grammar is a different model, with a different boundary index $K$. What varies across speakers isn't just noise; it's the underlying geometry. The framework predicts that variability in judgments should be highest for constructions that fall near the boundary \emph{for most speakers}~-- and that speakers who agree on central cases may nonetheless diverge on peripheral ones, because their boundaries are located at different hyperreal indices.
+   369	
+   370	\begin{figure}[t]
+   371	\centering
+   372	\includegraphics[width=0.85\textwidth]{figures/5.two-layer-grammaticality.png}
+
+Prior turns so far this round:
+### [R1-T00] Moderator
+Moderator: We are running a natural comedy writers' room pass. Talk like humans, not forms. The only hard job is coverage: Pass T must get through the whole chapter top-to-bottom.
+Coverage plan for Pass T:
+- R1-T01 Parker: chapters/chapter05.tex:1-62
+- R1-T02 Ephron: chapters/chapter05.tex:63-124
+- R1-T03 Twain: chapters/chapter05.tex:125-186
+- R1-T04 Seinfeld: chapters/chapter05.tex:187-248
+- R1-T05 Adams: chapters/chapter05.tex:249-310
+- R1-T06 Wilde: chapters/chapter05.tex:311-372
+- R1-T07 Wodehouse: chapters/chapter05.tex:373-434
+Candidate line(s):
+1) n/a
+2) n/a
+Vote (optional): n/a
+
+### [R1-T01] Parker
+Parker: If we’re doing a clean top-to-bottom pass, this opening needs to hit thesis sooner. The personal setup is lively, but four beats of origin story before the puzzle makes the argument feel delayed. Keep the date and the Pullum/Nefdt spark, then pivot hard into the problem statement so the chapter starts doing work by line 25. The good news is the core logic is already there: scale explains tolerance, mechanism explains boundary stability. I’d just trim jargon pileup so “dynamic discreteness” is the one flag the reader carries into the formal section.
+Pitches:
+- `chapters/chapter05.tex:25` Add: “This chapter’s claim is simple: linguistic categories can be behaviorally discrete while materially continuous, because social-cognitive mechanisms stabilize boundaries at usable scales.”
+- `chapters/chapter05.tex:59` Replace with: “Relative Tolerance: A change preserves category membership when it is negligible relative to the current scale; the same absolute change may flip membership near a boundary.”
+Vote: n/a
+
+### [R1-T02] Ephron
+Ephron: I’m with Parker on carrying one clean flag into the math, and this section is where that flag either earns trust or gets buried. Right now line 66 sounds a bit defensive (“not a philosophical aside”) when it could sound confident and testable. The skip-path box is great social design for mixed readers, but the three bullets should mirror the same diction used later so skimmers don’t feel they switched books. In the formalization, the logic is strong; what needs polish is reader footing at the handoff from infinitesimals to prediction, so the stakes stay empirical rather than metaphysical. There’s also a small prose stumble at line 121 (“what it’s”), and the epistemicism contrast at 123 wants one clarifying sentence so the difference lands as more than a name-check. Tune those beats and the section reads rigorous and hospitable at the same time.
+Pitches:
+- `chapters/chapter05.tex:66` Replace with: “The next section does empirical work, not detour: it predicts that judgment variance should track distance to boundary in a specific functional form, and that signature should vanish if the hyperreal model is wrong.”
+- `chapters/chapter05.tex:124` Add: “Where epistemicism ties unknowability to limits of discrimination, this model ties it to scale-relative access to a sharp cutoff that is precise in theory but not finitely specifiable in practice.”
+Vote: n/a
+
+### [R1-T03] Twain
+Twain: Parker and Ephron are both right that this chapter is strongest when it sounds like it can be wrong, not just right in theory. In this stretch, line 127 gets a little triumphal before the evidence lands, so I’d phrase it as a prediction claim instead of a verdict. The Khalidi contrast is useful, but “fuzzy realism doesn’t” reads too absolute unless we specify the behavioral pattern it misses. The metric section is the other place to tighten: good substance, too much throat-clearing. Say plainly that we don’t need one sacred metric, just local agreement on what counts as “small,” then move on. That keeps the math grounded and avoids the seminar-tone pileup.
+
+Pitches:
+- `chapters/chapter05.tex:127` Replace with: “On this view, the formalism earns its keep by predicting where boundaries drift and where judgment variance spikes under perturbation, rather than merely positing an inaccessible cutoff.”
+- `chapters/chapter05.tex:161` Replace with: “We do not need one uniquely correct metric; we need metrics that locally agree on what counts as a tiny perturbation near the boundary, because that shared local structure is what Relative Tolerance requires.”
+Vote: n/a
+
+### [R1-T04] Seinfeld
+Seinfeld: Ephron's footing note and Twain's "sound like it can be wrong" both bite here, because this stretch repeats the claim so often it starts sounding ceremonial instead of empirical. The evidentiality example is excellent, then we hit that giant metric sentence and suddenly we are assembling furniture without the picture on the box. One clean prediction in plain English right after the example would keep the reader from wandering. The "two stories" paragraph works once, but by line 240 we have heard geometry versus mechanism four times, and each repeat loses force. I would compress the slogans and let each mechanism carry a distinct observable job: acquisition sets initial clustering, entrenchment steepens cores, alignment repairs local drift, transmission filters variants. The `very fun` / `a lot of fun` beat is gold because it sounds like people talking, not a committee memo.
+Pitches:
+- `chapters/chapter05.tex:194` Add: “Empirical prediction: in English, speakers should preserve evidential distinctions in inference and paraphrase tasks, but fail to show stable morphosyntactic clustering on evidential diagnostics, because no grammatical evidential basin is maintained.”
+- `chapters/chapter05.tex:230` Replace with: “The basin model locates stability in feature space; homeostatic mechanisms explain how interaction and learning keep items near those attractors over time without redefining the boundary.”
+Vote: chapters/chapter05.tex:127
+
+### [R1-T05] Adams
+Adams: Twain’s “make it falsifiable” note is exactly the right pressure here: the `fun` section already has multiple diagnostics, so frame it as convergent measurement, not just a historical story. Seinfeld’s furniture warning also bites at line 304, where the reader is asked to carry the diachrony-to-synchrony transition without a handle. Add one explicit design sentence that says we are testing two boundary regimes: drift toward a basin versus stable residence at the boundary. The absurd-but-clarifying model is orbital mechanics: `fun` is spiraling into a new orbit, reciprocals are parked at a Lagrange point between pronoun and determiner pulls. If you say that plainly, “three diagnostics” lands as method rather than teaser.
+Pitches:
+- `chapters/chapter05.tex:304` Replace with: “The contrast now becomes testable: \mention{fun} models diachronic movement toward a category boundary, while reciprocals let us test whether a form can remain synchronically stable at that boundary without ongoing directional drift.”
+- `chapters/chapter05.tex:308` Replace with: “The goal is not to force a binary label from isolated tests, but to measure opposing pronoun-like and determinative-like pulls and ask whether intermediate placement is a stable grammatical state.”
+Vote: chapters/chapter05.tex:230

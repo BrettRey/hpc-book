@@ -1,0 +1,164 @@
+key	status	doi_normalized	suggested_doi	suggestion_confidence	notes
+millikan1984	missing_doi_candidate_high		10.7551/mitpress/4124.001.0001	high	High-confidence DOI candidate found.
+craver2007	missing_doi_candidate_high		10.1093/acprof:oso/9780199299317.003.0007	high	High-confidence DOI candidate found.
+kolyaseva2018tipa	doi_metadata_mismatch	10.1016/j.pragma.2018.03.003			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+yang2016	missing_doi_candidate_high		10.7551/mitpress/9780262035323.001.0001	high	High-confidence DOI candidate found.
+ohala1990	missing_doi_candidate_high		10.1017/cbo9780511627736.014	high	High-confidence DOI candidate found.
+wilson1999	missing_doi_candidate_high		10.7551/mitpress/6396.003.0013	high	High-confidence DOI candidate found.
+sandler2006	missing_doi_candidate_high		10.1017/cbo9781139163910	high	High-confidence DOI candidate found.
+brentari1998	missing_doi_candidate_high		10.7551/mitpress/5644.001.0001	high	High-confidence DOI candidate found.
+huddleston2005	missing_doi_candidate_high		10.1017/cbo9780511815515	high	High-confidence DOI candidate found.
+lauwers2021	doi_metadata_mismatch	10.1017/9781108937979.015			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+chomsky1965	missing_doi_candidate_high		10.21236/ad0616323	high	High-confidence DOI candidate found.
+boguraev2025	missing_doi_candidate_high		10.18653/v1/2025.emnlp-main.1271	high	High-confidence DOI candidate found.
+dupre1993	doi_unresolved	10.2307/j.ctv1pncnzh			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+hacking1999	missing_doi_candidate_high		10.2307/j.ctv1bzfp1z	high	High-confidence DOI candidate found.
+pullum2019-normativity	doi_metadata_mismatch	10.5281/zenodo.2654375			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+quine1969	missing_doi_candidate_high		10.1007/978-94-017-1466-2_2	high	High-confidence DOI candidate found.
+kornblith1993	missing_doi_candidate_high		10.7551/mitpress/3730.001.0001	high	High-confidence DOI candidate found.
+favier2021	doi_metadata_mismatch	10.1016/j.lingua.2020.102991			Title does not match DOI metadata.
+tomasello1992	missing_doi_candidate_high		10.1017/cbo9780511527678	high	High-confidence DOI candidate found.
+dennett1976	missing_doi_candidate_high		10.1525/9780520353060-008	high	High-confidence DOI candidate found.
+waytz2010	missing_doi_candidate_high		10.1177/0963721409359302	high	High-confidence DOI candidate found.
+shirvertesh2012	missing_doi_candidate_high		10.1111/j.1548-1433.2012.01443.x	high	High-confidence DOI candidate found.
+rispoli1994	missing_doi_candidate_high		10.1017/s0305000900008709	high	High-confidence DOI candidate found.
+russell1905	missing_doi_candidate_high		10.1093/mind/xiv.4.479	high	High-confidence DOI candidate found.
+heim1991	missing_doi_candidate_high		10.1515/9783110126969.7.487	high	High-confidence DOI candidate found.
+carlsonsussman2005	missing_doi_candidate_high		10.1515/9783110197549.71	high	High-confidence DOI candidate found.
+aguilarguevarazwarts2010	missing_doi_candidate_high		10.3765/salt.v20i0.2583	high	High-confidence DOI candidate found.
+himmelmann1997	missing_doi_candidate_high		10.1515/9783110929621	high	High-confidence DOI candidate found.
+rozendaalbaker2008	missing_doi_candidate_high		10.1017/s0305000908008702	high	High-confidence DOI candidate found.
+diessel1999	missing_doi_candidate_high		10.1075/tsl.42	high	High-confidence DOI candidate found.
+diessel2004	missing_doi_candidate_high		10.1017/cbo9780511486531	high	High-confidence DOI candidate found.
+rowlandpine2000	doi_unresolved	10.1016/S0010-0277(00)00100-0			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+krifka2004	missing_doi_candidate_high		10.3765/salt.v13i0.2880	high	High-confidence DOI candidate found.
+krifka1989	missing_doi_candidate_high		10.1515/9783110877335-005	high	High-confidence DOI candidate found.
+brockmann2018	missing_doi_candidate_high		10.21248/zaspil.60.2018.466	high	High-confidence DOI candidate found.
+decat2011	doi_metadata_mismatch	10.1017/S0305000910000346			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+lyons1999	missing_doi_candidate_high		10.1017/cbo9780511605789	high	High-confidence DOI candidate found.
+poesio1994	missing_doi_candidate_high		10.3765/salt.v4i0.2465	high	High-confidence DOI candidate found.
+birnerward1994	doi_metadata_mismatch	10.3765/bls.v20i1.1455			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+aikhenvald2004	missing_doi_candidate_high		10.1093/oso/9780199263882.001.0001	high	High-confidence DOI candidate found.
+ide2005	missing_doi_candidate_high		10.1075/pbns.139.06ide	high	High-confidence DOI candidate found.
+husic2021	doi_metadata_mismatch	10.1017/9781108937979.017			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+kauffman1993	missing_doi_candidate_high		10.1093/oso/9780195079517.001.0001	high	High-confidence DOI candidate found.
+gathercole1985	doi_metadata_mismatch	10.1017/S0305000900006498			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+remijsen2019dinka	doi_metadata_mismatch	10.1017/S0952675719000034			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+garner2016	missing_doi_candidate_high		10.1093/acref/9780190491482.001.0001	high	High-confidence DOI candidate found.
+downing1996propernames	missing_doi_candidate_high		10.1075/tsl.33.05dow	high	High-confidence DOI candidate found.
+doetjes2012	missing_doi_candidate_high		10.1515/9783110253382.2559	high	High-confidence DOI candidate found.
+bellman1961adaptive	missing_doi_candidate_high		10.1515/9781400874668	high	High-confidence DOI candidate found.
+emmorey2002	missing_doi_candidate_high		10.4324/9781410603982	high	High-confidence DOI candidate found.
+scottphillips2024communication	missing_doi_candidate_high		10.31234/osf.io/dargm	high	High-confidence DOI candidate found.
+goldberg2003	missing_doi_candidate_high		10.1016/s1364-6613(03)00080-9	high	High-confidence DOI candidate found.
+Watt1968	missing_doi_candidate_high		10.1177/007542426800200109	high	High-confidence DOI candidate found.
+sorace2005	missing_doi_candidate_high		10.1016/j.lingua.2004.07.002	high	High-confidence DOI candidate found.
+kay1999grammatical	missing_doi_candidate_high		10.2307/417472	high	High-confidence DOI candidate found.
+gibson1998	missing_doi_candidate_high		10.1016/s0010-0277(98)00034-1	high	High-confidence DOI candidate found.
+scott-phillips2024intuitions	missing_doi_candidate_high		10.31234/osf.io/qvrmk	high	High-confidence DOI candidate found.
+Boskovic2005a	missing_doi_candidate_high		10.1111/j.1467-9582.2005.00118.x	high	High-confidence DOI candidate found.
+Steinhauer2009	doi_unresolved	10.1177/0267658308098			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+KabakVogel2001	doi_unresolved	10.1017/S0952675701004137			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+dressler1995	missing_doi_candidate_high		10.1007/978-94-017-3714-2_4	high	High-confidence DOI candidate found.
+Ringen1999	missing_doi_candidate_high		10.1023/a:1006158818498	high	High-confidence DOI candidate found.
+dimaggio1982	missing_doi_candidate_high		10.2307/2094962	high	High-confidence DOI candidate found.
+campbell-kibler2007	missing_doi_candidate_high		10.1215/00031283-2007-002	high	High-confidence DOI candidate found.
+campbell-kibler2008	missing_doi_candidate_high		10.1017/s0047404508080974	high	High-confidence DOI candidate found.
+campbell-kibler2009	missing_doi_candidate_high		10.1017/s0954394509000052	high	High-confidence DOI candidate found.
+Rawls1971	missing_doi_candidate_high		10.4159/9780674042605	high	High-confidence DOI candidate found.
+hawkins2014	missing_doi_candidate_high		10.1093/acprof:oso/9780199664993.001.0001	high	High-confidence DOI candidate found.
+hawkins2004	missing_doi_candidate_high		10.1093/acprof:oso/9780199252695.001.0001	high	High-confidence DOI candidate found.
+nowak2006	missing_doi_candidate_high		10.2307/j.ctvjghw98	high	High-confidence DOI candidate found.
+goldberg2019	missing_doi_candidate_high		10.1515/9780691183954	high	High-confidence DOI candidate found.
+chierchia_logic_2013	missing_doi_candidate_high		10.1093/acprof:oso/9780199697977.001.0001	high	High-confidence DOI candidate found.
+mayerthaler1988	missing_doi_candidate_high		10.1075/slcs.10.13may	high	High-confidence DOI candidate found.
+dressler1994	missing_doi_candidate_high		10.1515/9783110877052	high	High-confidence DOI candidate found.
+Wimsatt2007	missing_doi_candidate_high		10.2307/j.ctv1pncnrh	high	High-confidence DOI candidate found.
+chomsky1957	missing_doi_candidate_high		10.1515/9783112316009	high	High-confidence DOI candidate found.
+preston1989	missing_doi_candidate_high		10.1515/9783110871913	high	High-confidence DOI candidate found.
+adli2004	missing_doi_candidate_high		10.1515/9783050084275	high	High-confidence DOI candidate found.
+mackenzie2019	doi_metadata_mismatch	10.5334/gjgl.840			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+Haslanger2012	missing_doi_candidate_high		10.1093/acprof:oso/9780199892631.001.0001	high	High-confidence DOI candidate found.
+McCawley1974	doi_metadata_mismatch	10.1515/9783110813456			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+Sapir1925	missing_doi_candidate_high		10.2307/409004	high	High-confidence DOI candidate found.
+Handler1986	missing_doi_candidate_high		10.1075/sihols.41.17han	high	High-confidence DOI candidate found.
+gibson2000	missing_doi_candidate_high		10.7551/mitpress/3654.003.0008	high	High-confidence DOI candidate found.
+Sapir1927b	missing_doi_candidate_high		10.1037/13401-006	high	High-confidence DOI candidate found.
+ClementsSezer1982	missing_doi_candidate_high		10.1515/9783112423325-007	high	High-confidence DOI candidate found.
+bertolotti2016	doi_metadata_mismatch	10.1075/ihll.10.02ber			Title does not match DOI metadata.
+samejima1997	missing_doi_candidate_high		10.1007/978-1-4757-2691-6_5	high	High-confidence DOI candidate found.
+dik1997	missing_doi_candidate_high		10.1515/9783110218374	high	High-confidence DOI candidate found.
+boyd1989	missing_doi_candidate_high		10.1111/j.1746-8361.1989.tb00928.x	high	High-confidence DOI candidate found.
+boyd1999b	missing_doi_candidate_high		10.1023/a:1004511407133	high	High-confidence DOI candidate found.
+gibson2019efficiency	missing_doi_candidate_high		10.1016/j.tics.2019.09.005	high	High-confidence DOI candidate found.
+maling1983	missing_doi_candidate_high		10.1007/978-94-009-6989-6_8	high	High-confidence DOI candidate found.
+carnap1937	missing_doi_candidate_high		10.2307/2017161	high	High-confidence DOI candidate found.
+chomsky2001	missing_doi_candidate_high		10.7551/mitpress/4056.003.0004	high	High-confidence DOI candidate found.
+marcus1993	missing_doi_candidate_high		10.21236/ada273556	high	High-confidence DOI candidate found.
+culicover1999	missing_doi_candidate_high		10.1093/oso/9780198700241.001.0001	high	High-confidence DOI candidate found.
+dabrowska2012	missing_doi_candidate_high		10.1075/lab.2.3.01dab	high	High-confidence DOI candidate found.
+biber1988	missing_doi_candidate_high		10.1017/cbo9780511621024	high	High-confidence DOI candidate found.
+winter2002	missing_doi_candidate_high		10.1080/07268600120122535	high	High-confidence DOI candidate found.
+guldemann2008	missing_doi_candidate_high		10.1515/9783110211450	high	High-confidence DOI candidate found.
+kinkade1983	doi_unresolved	10.1016/0024-3841(83)90070-9			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+carey2009	missing_doi_candidate_high		10.1093/acprof:oso/9780195367638.001.0001	high	High-confidence DOI candidate found.
+dahl2000	missing_doi_candidate_high		10.1515/9783110802603.99	high	High-confidence DOI candidate found.
+kay1978	missing_doi_candidate_high		10.2307/412789	high	High-confidence DOI candidate found.
+baker1996	doi_unresolved	10.1093/oso/9780195093087.001.0001			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+CotnoirVarzi2021	missing_doi_candidate_high		10.1093/oso/9780198749004.001.0001	high	High-confidence DOI candidate found.
+lindblom1990	missing_doi_candidate_high		10.1007/978-94-009-2037-8_16	high	High-confidence DOI candidate found.
+nefdt2023	doi_metadata_mismatch	10.1093/oso/9780197653098.003.0001			Title does not match DOI metadata.
+gellmann1994	missing_doi_candidate_high		10.1063/1.2808634	high	High-confidence DOI candidate found.
+Luka2005	missing_doi_candidate_high		10.1016/j.jml.2005.01.013	high	High-confidence DOI candidate found.
+jackendoff1997	missing_doi_candidate_high		10.1163/9789004373167_003	high	High-confidence DOI candidate found.
+culicover2005simpler	missing_doi_candidate_high		10.1093/acprof:oso/9780199271092.001.0001	high	High-confidence DOI candidate found.
+jackendoff2020texture	missing_doi_candidate_high		10.1093/oso/9780198827900.001.0001	high	High-confidence DOI candidate found.
+jackendoff2017defense	missing_doi_candidate_high		10.1111/cogs.12324	high	High-confidence DOI candidate found.
+jackendoff2023parallel	doi_metadata_mismatch	10.1111/tops.12684			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+ackerman2012fluency	doi_metadata_mismatch	10.1016/j.cognition.2012.07.012			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+ullman2001neurocognitive	missing_doi_candidate_high		10.1038/35094573	high	High-confidence DOI candidate found.
+wagers2009agreement	missing_doi_candidate_high		10.1016/j.jml.2009.04.002	high	High-confidence DOI candidate found.
+ferreira2002good	missing_doi_candidate_high		10.1111/1467-8721.00158	high	High-confidence DOI candidate found.
+nozari2011is	missing_doi_candidate_high		10.1016/j.cogpsych.2011.05.001	high	High-confidence DOI candidate found.
+brown1966tip	missing_doi_candidate_high		10.1016/s0022-5371(66)80040-3	high	High-confidence DOI candidate found.
+krejciHilton2022	doi_metadata_mismatch	10.1017/S0954394522000059			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+denis2016mans	missing_doi_candidate_high		10.33137/twpl.v37i0.26973	high	High-confidence DOI candidate found.
+drummond_schleef2016_identity	doi_metadata_mismatch	10.4324/9781315669816			Title does not match DOI metadata.
+BrownFord1961	missing_doi_candidate_high		10.1037/h0042862	high	High-confidence DOI candidate found.
+MacWhinney2000	missing_doi_candidate_high		10.1162/coli.2000.26.4.657	high	High-confidence DOI candidate found.
+BensonAnglin1987	missing_doi_candidate_high		10.1177/014272378700701903	high	High-confidence DOI candidate found.
+Bloch2006	missing_doi_candidate_high		10.1017/cbo9780511499630.006	high	High-confidence DOI candidate found.
+Leech2014	missing_doi_candidate_high		10.1093/acprof:oso/9780195341386.001.0001	high	High-confidence DOI candidate found.
+BrownLevinson1987	missing_doi_candidate_high		10.1017/cbo9780511813085	high	High-confidence DOI candidate found.
+ElbertPukui1979	missing_doi_candidate_high		10.1515/9780824840792	high	High-confidence DOI candidate found.
+Sloat1969	missing_doi_candidate_high		10.2307/411749	high	High-confidence DOI candidate found.
+Heine2002	missing_doi_candidate_high		10.1075/tsl.49.08hei	high	High-confidence DOI candidate found.
+powell2020	missing_doi_candidate_high		10.7551/mitpress/11182.001.0001	high	High-confidence DOI candidate found.
+manning2003	missing_doi_candidate_high		10.7551/mitpress/5582.003.0011	high	High-confidence DOI candidate found.
+richersonboyd2005	missing_doi_candidate_high		10.7208/chicago/9780226712130.001.0001	high	High-confidence DOI candidate found.
+skyrms2010	missing_doi_candidate_high		10.1093/acprof:oso/9780199580828.001.0001	high	High-confidence DOI candidate found.
+sprouse2012assessing	doi_metadata_mismatch	10.1017/CBO9781139035309.015			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+bicchieri2006	missing_doi_candidate_high		10.1017/cbo9780511616037	high	High-confidence DOI candidate found.
+Braun1988	missing_doi_candidate_high		10.1515/9783110848113	high	High-confidence DOI candidate found.
+Nichols1988	missing_doi_candidate_high		10.1515/9783110852387.557	high	High-confidence DOI candidate found.
+Goddard2024	doi_unresolved	10.1016/j.lingua.2024.103652			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+Morgan1871	missing_doi_candidate_high		10.5962/bhl.title.29577	high	High-confidence DOI candidate found.
+Wierzbicka2017	missing_doi_candidate_high		10.1093/oso/9780198736721.003.0002	high	High-confidence DOI candidate found.
+Joseph2012	missing_doi_candidate_high		10.3917/lang.185.0125	high	High-confidence DOI candidate found.
+Luong1990	doi_metadata_mismatch	10.1075/pbns.9			Title does not match DOI metadata. | First-author surname does not match DOI metadata.
+Dixon1972	doi_unresolved	10.1017/CBO9780511720086			DOI did not resolve cleanly via Crossref/doi.org: HTTP Error 404: Not Found
+AguilarZwarts2014	doi_metadata_mismatch	10.1075/la.219.01agu			Title does not match DOI metadata.
+adger2025mereological	missing_doi_candidate_high		10.7551/mitpress/15777.001.0001	high	High-confidence DOI candidate found.
+anderson1992amorphous	missing_doi_candidate_high		10.1017/cbo9780511586262	high	High-confidence DOI candidate found.
+casatiVarzi1999places	missing_doi_candidate_high		10.7551/mitpress/5253.001.0001	high	High-confidence DOI candidate found.
+clements1985geometry	missing_doi_candidate_high		10.1017/s0952675700000440	high	High-confidence DOI candidate found.
+fine2010part	missing_doi_candidate_high		10.5840/jphil20101071139	high	High-confidence DOI candidate found.
+krifka1998origins	missing_doi_candidate_high		10.1007/978-94-011-3969-4_9	high	High-confidence DOI candidate found.
+koslicki2008structure	missing_doi_candidate_high		10.1093/acprof:oso/9780199539895.001.0001	high	High-confidence DOI candidate found.
+landman2000events	missing_doi_candidate_high		10.1007/978-94-011-4359-2	high	High-confidence DOI candidate found.
+moltmann1997parts	missing_doi_candidate_high		10.1093/oso/9780195095746.001.0001	high	High-confidence DOI candidate found.
+polkowski2011rough	missing_doi_candidate_high		10.1007/978-3-642-22279-5_6	high	High-confidence DOI candidate found.
+sider2001four	missing_doi_candidate_high		10.1093/019924443x.001.0001	high	High-confidence DOI candidate found.
+Broussard2018	missing_doi_candidate_high		10.7551/mitpress/11022.001.0001	high	High-confidence DOI candidate found.
+Crawford2021	missing_doi_candidate_high		10.12987/9780300252392	high	High-confidence DOI candidate found.
+Duranti2011	missing_doi_candidate_high		10.1017/cbo9780511997068.006	high	High-confidence DOI candidate found.

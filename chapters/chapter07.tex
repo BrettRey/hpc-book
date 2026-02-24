@@ -31,7 +31,7 @@ The rest of this chapter unpacks that claim. Polish\ixgq{Polish} aspect\ixsq{asp
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/6.npi-fragmentation.png}
+\includegraphics[width=0.85\textwidth]{figures/7.npi-fragmentation.png}
 \caption{Uniform label, jagged reality. The category \term{NPI\ixsq{NPI}} (negative polarity item) groups expressions that share sensitivity to negative contexts, but \ixnq{Hoeksema, Jack}\citet[30]{hoeksema2012} documents twelve distinct licensing patterns. No single mechanism maintains them as a kind; the label names a distributional class, not an HPC cluster.}
 \label{fig:npi-fragmentation}
 \end{figure}
@@ -72,7 +72,7 @@ The textbooks offer crisp definitions. Imperfective presents an event as unbound
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\textwidth]{figures/6.aspect-viewpoint.png}
+\includegraphics[width=\textwidth]{figures/7.aspect-viewpoint.png}
 \caption{The textbook account of Slavic\ixgq{Slavic languages} aspect. Imperfective presents the event from inside, as ongoing; perfective presents it from outside, as a completed whole. This is the \enquote{viewpoint} metaphor that has dominated aspectual theory for a century.}
 \label{fig:aspect-viewpoint}
 \end{figure}
@@ -131,7 +131,7 @@ This is projectibility\ixsq{projectibility} grounded in mechanism\ixsq{mechanism
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/6.aspect-mechanism.png}
+\includegraphics[width=0.85\textwidth]{figures/7.aspect-mechanism.png}
 \caption{The mechanism-based view of aspectual projectibility. Instead of applying semantic definitions, learners extract cue--outcome associations~-- morphological patterns, tense contexts, lexical biases~-- that allow prediction of novel forms. The question this answers isn't \enquote{what does aspect\ixsq{aspect} mean?} but \enquote{what maintains aspectual patterns?} (Percentages are schematic; actual weights vary by verb and context.)}
 \label{fig:aspect-mechanism}
 \end{figure}
@@ -162,7 +162,7 @@ This resolves the puzzle of naming. We call it \term{aspect\ixsq{aspect}} becaus
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/6.island-volcano.png}
+\includegraphics[width=0.85\textwidth]{figures/7.island-volcano.png}
 \caption{Mechanistic drift: a volcanic island. The volcano built the island but is now dormant. What maintains the island today~-- coral reefs, root networks, soil formation~-- differs from what created it. Polish\ixgq{Polish} aspect is analogous: the semantic-temporal distinctions that may once have been the primary mechanism have gone dormant. What maintains aspectual patterns now is lexeme-specific cue structure. The label names the island, not the volcano.}
 \label{fig:island-volcano}
 \end{figure}
@@ -175,7 +175,7 @@ The cross-linguistic term \term{aspect\ixsq{aspect}} functions as a \term{compar
 
 To make the mechanism\ixsq{mechanism}/projectibility\ixsq{projectibility} distinction concrete, we can use an \term{agent-based model\ixsq{agent-based model}} (ABM).\footnote{The Python scripts for the simulations in this book are available at \url{https://github.com/BrettRey/hpc-book/tree/main/code}.} If ABMs are unfamiliar: read this as a controlled cartoon. We specify a few local learning rules, let many interactions run, and ask what population-level pattern those rules can sustain.
 
-The role of the ABM here is illustrative rather than probative. It doesn't test Polish\ixgq{Polish} corpus frequencies, recover diachronic pathways, or adjudicate between full psycholinguistic theories. It asks a conditional question: if the mechanism story is on the right track, can a minimal toy system produce the qualitative signature we claim?
+The role of the ABM\ixsq{agent-based model} here is illustrative rather than probative. It doesn't test Polish\ixgq{Polish} corpus frequencies, recover diachronic pathways, or adjudicate between full psycholinguistic theories. It asks a conditional question: if the mechanism story is on the right track, can a minimal toy system produce the qualitative signature we claim?
 
 The toy world has two moving parts. First, each agent tracks a global semantic-cue weight $w$~-- how much a broad semantic signal helps predict form. Second, each agent tracks lexeme-specific boundaries $\theta$~-- item-level decision points for category packaging. Agents repeatedly predict, observe, and update both parameters from prediction error. In the current figure-generating run, the population size is 200 agents. We intentionally avoid arbitrarily massive populations in this script because, at fixed interaction horizon, updates per agent scale as $T/N$: inflating $N$ without inflating $T$ mostly under-trains individuals rather than adding inferential strength.
 
@@ -194,7 +194,7 @@ The measured pattern is straightforward. Once the semantic cue is randomized, it
 
 The interpretation is one step removed from the measurements. What we infer from this pattern is a shift in predictive load: from global semantic cueing to entrenched item-specific boundaries. That is precisely the volcanic-island claim~-- the volcano can go dormant while the island persists.
 
-Because the model is deliberately minimal, the warrant is limited. The ABM supports mechanism\ixsq{mechanism} plausibility and clarifies expected signatures under perturbation. It doesn't by itself establish the Polish\ixgq{Polish} facts, estimate real historical trajectories, or calibrate effect sizes; those still come from corpus and behavioural evidence. The plotted curve is one seeded realization, and the code now ships run manifests so the signature can be audited across seeds rather than read as a single privileged trajectory. In practice this means favouring moderate population sizes with multi-seed summaries over extreme population sizes with thin per-agent learning.
+Because the model is deliberately minimal, the warrant is limited. The ABM\ixsq{agent-based model} supports mechanism\ixsq{mechanism} plausibility and clarifies expected signatures under perturbation. It doesn't by itself establish the Polish\ixgq{Polish} facts, estimate real historical trajectories, or calibrate effect sizes; those still come from corpus and behavioural evidence. The plotted curve is one seeded realization, and the code now ships run manifests so the signature can be audited across seeds rather than read as a single privileged trajectory. In practice this means favouring moderate population sizes with multi-seed summaries over extreme population sizes with thin per-agent learning.
 
 At default settings, a 20-seed sensitivity run preserves the same qualitative asymmetry: post-switch semantic effect is near zero on average ($0.011 \pm 0.008$), while boundary similarity and consensus remain high ($0.989 \pm 0.003$, $0.845 \pm 0.005$). Mechanism controls behave as expected: if we remove the switch entirely, post-switch semantic effect stays high (about $0.308$ instead of about $0.015$ in the switched baseline).
 
@@ -273,7 +273,7 @@ A semanticist works with \term{proper names}: expressions that refer directly to
 
 A syntactician works with \term{proper nouns}: words that head nominal projections, resist articles in certain languages, trigger particular agreement patterns, and fill argument slots. These properties cluster because of distributional pressures: words that behave similarly in one syntactic environment tend to behave similarly in others.
 
-The extensions overlap substantially~-- most expressions that are proper names are also proper nouns. But the overlapping extension doesn't mean they're the same category\ixsq{category}. They're different HPCs, maintained by different mechanisms, projectible for different purposes.
+The extensions overlap substantially~-- most expressions that are proper names are also proper nouns. But the overlapping extension doesn't mean they're the same category\ixsq{category}. They're different HPCs, maintained by different mechanisms, projectible for different purposes (Table~\ref{tab:proper-noun-name}).
 
 \begin{table}[t]
 \centering
@@ -424,7 +424,7 @@ The prediction is testable: core category\ixsq{category} members~-- high-frequen
 
 Recent experimental work confirms the pattern. In grammaticality judgments for Dutch\ixgq{Dutch} syntax, peripheral structures are correctly identified only 57\% of the time (SD $\approx$ 0.27), while core structures are correctly identified 90\% of the time (SD $\approx$ 0.09)~-- the variance triples at the periphery \ixnq{Favier, Sybren}\ixnq{Huettig, Falk}\citep[Table~2]{favier2021}. Similarly for syntactic variants indexed to verb frequency: low-frequency verbs elicit higher acceptance of violations (a fourfold increase in error rates: 6.58\% vs.\ 1.58\%), because weak entrenchment\ixsq{entrenchment} permits wider variation in what speakers treat as grammatical \ixnq{Sassenhagen, Jona}\ixnq{Blything, Rob}\ixnq{Lieven, Elena V. M.}\ixnq{Ambridge, Ben}\citep{sassenhagen2018}. In morphology, the pattern is starker still: high-frequency English\ixgq{English} adjectives elicit near-unanimous agreement on comparative form, while low-frequency and nonce English\ixgq{English} adjectives split speakers \ixnq{Graziano-King, Janet}\ixnq{Cairns, Helen Smith}\citep{grazianoking2005}.
 
-This is what the maintenance view\ixsq{maintenance view} predicts. Where mechanisms are strong and consistent, judgments converge; where mechanisms are weak or variable, judgments diverge. The variance tracks the strength of the causal structure. Projectibility\ixsq{projectibility} isn't all-or-nothing; it's graded by entrenchment\ixsq{entrenchment}. Crucially, the variance isn't just about the items; it's about the speakers. Low-frequency forms are ``weakly entrenched'' only in aggregate~-- for any given form, some speakers have encountered it often, others rarely, others never. What looks like category\ixsq{category} fuzziness at the population level is actually speaker-by-speaker variation in experience \ixnq{D\kabrowska, Ewa}\citep{dabrowska2012}. This reinforces the maintenance account: categories fail to project uniformly because the maintaining mechanisms haven't operated uniformly across the population.
+This is what the maintenance view\ixsq{maintenance view} predicts. Where mechanisms are strong and consistent, judgments converge; where mechanisms are weak or variable, judgments diverge. The variance tracks the strength of the causal structure. Projectibility\ixsq{projectibility} isn't all-or-nothing; it's graded by entrenchment\ixsq{entrenchment}. Crucially, the variance isn't just about the items; it's about the speakers. Low-frequency forms are ``weakly entrenched'' only in aggregate~-- for any given form, some speakers have encountered it often, others rarely, others never. What looks like category\ixsq{category} fuzziness at the population level is actually speaker-by-speaker variation in experience \ixnq{Dabrowska, Ewa}\citep{dabrowska2012}. This reinforces the maintenance account: categories fail to project uniformly because the maintaining mechanisms haven't operated uniformly across the population.
 
 
 \subsection{What the framework offers}

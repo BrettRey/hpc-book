@@ -1,0 +1,24 @@
+   218	The hyperreal model describes the geometry of category boundaries. The HPC framework describes what maintains that geometry. The two are complementary.
+   219	
+   220	Two stories, then. The first is representational: grammatical categories are regions in a feature space, with prototypes at centres and boundaries where similarity to multiple prototypes is balanced. This is the geometry.
+   221	
+   222	The second is causal: the geometry persists because mechanisms~-- acquisition, entrenchment, alignment, transmission, functional pressure~-- exert forces that keep items clustered and boundaries stable. Conceptual-space approaches develop the first story in rich detail \citep{gardenfors2000,gardenfors2014}; HPC frameworks develop the second \citep{boyd1991,boyd1999}.
+   223	
+   224	Both are needed. The geometry tells you what shape the categories have. The mechanisms tell you why they hold that shape.
+   225	
+   226	Rosch's insight that categories have graded internal structure organized around prototypes is preserved~-- but repurposed. What's graded is typicality, not membership. An item is in the category or out; that boundary is sharp. But items inside the category vary in how typical they are, how central to the basin, how far from competing boundaries. HPC retains the gradience while relocating it: not degrees of membership but degrees of stability. A typical noun is one that sits deep in the noun basin, far from competition; an atypical noun sits nearer a boundary, more vulnerable to drift, eruptions, erosion. The mechanisms~-- entrenchment, alignment, transmission~-- are the forces that maintain this structure.
+   227	
+   228	The hyperreal formalisation adds precision about boundaries: sharp but located at unreachable distances, exactly as tolerance intuitions suggest. Prototype theory describes the shape; HPC explains the stability; hyperreals explain the sharpness.
+   229	
+   230	The basin shows where stability sits; the spinning top shows what keeps it there. Stability is dynamic, maintained by active forces rather than static rigidity. The homeostatic mechanisms are exactly these stabilizing forces. They don't define the boundaries~-- that would be essentialism~-- but they maintain the landscape geometry.
+   231	
+   232	Acquisition shapes the initial configuration: learners sensitive to input distributions reproduce the basin structure. Entrenchment deepens the basins: high-frequency items anchor the category, steepening the walls around the prototype.
+   233	
+   234	Interactive alignment maintains consistency: speakers coordinate usage, effectively pushing deviants back toward the norm. Consider alignment in action. Suppose you say \mention{that was very fun}~-- using the degree modifier that signals adjectival status. Your interlocutor might accommodate, adopting \mention{very fun} in their next turn. Or they might resist, persisting with \mention{a lot of fun}. Either way, the micro-choice shifts local expectations: accommodation reinforces the adjectival pattern; resistance maintains the nominal one. Scale this up, and you get a distributed mechanism for maintaining shared norms.
+   235	
+   236	Iterated transmission acts as a filter across generations. Not all variants survive; the ones that do tend to be clear exemplars well inside basins. As \citet{kirby2008} demonstrated, transmission bottlenecks can select for learnable structures. In their experimental evolution of artificial languages, random mappings became compositional over ten generations because the bottleneck of imperfect learning filtered out the arbitrary variants. This pattern isn't inevitable~-- it depends on particular task pressures and on the right balance of expressivity and compressibility~-- but it illustrates how structure can emerge without intentional design.
+   237	
+   238	Finally, functional pressure ensures the basins serve communicative needs. Categories exist because they package referents or encode events. Where functional pressure is strong, basins are deep and boundaries are sharp.
+   239	
+   240	All these forces act together to maintain the basin geometry. The hyperreal model describes the shape; the mechanisms explain why it holds.
+   241	

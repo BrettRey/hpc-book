@@ -1,0 +1,5 @@
+### [R1-T10] Adams
+Adams: Seinfeld’s lab-goggles warning hits this subsection too: we’ve got the right machinery, but “geometry” and “mechanism” still read like two departments that only communicate by memo. I’d give one line where the landscape is the map and the HPC forces are the weather, because that instantly explains why the same ridges persist without smuggling in essences. Then at alignment, name it as continual micro-corrections so readers see distributed control, not hand-wavy social magic. That keeps the spinning-top metaphor as an engine, not set dressing.  
+Line candidates:
+- chapters/chapter05.tex:230 — The basin is the map; homeostatic mechanisms are the weather system that keeps sending usage back into the same valleys without redefining where the ridgelines are.
+- chapters/chapter05.tex:234 — Interactive alignment is continual micro-correction: each accommodation or resistance nudges local expectations, and millions of those nudges stabilize the shared boundary.

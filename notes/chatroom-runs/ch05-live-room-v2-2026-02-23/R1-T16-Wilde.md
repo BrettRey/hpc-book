@@ -1,0 +1,5 @@
+### [R1-T16] Wilde
+Wilde: We finally have the right posture here: not pleading for gradience, but predicting where it must appear. In this window, I’d make the test criterion sound like a signature a statistician could spot in a dark alley. Then I’d tighten the speaker-variation sentence so the paradox turns elegant: agreement in the center, disagreement at the rim. The chapter sings loudest when the boundary stays sharp and the evidence stays messy.  
+Line candidates:
+- chapters/chapter05.tex:366 — `The crucial empirical signature isn't middling means~-- it's seam-sensitive dispersion: judgment variance should peak near the boundary and taper toward basin centers.`
+- chapters/chapter05.tex:368 — `Speakers may converge on central cases yet diverge at the periphery, because their basin boundaries are similar in kind, not identical in location.`

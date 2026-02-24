@@ -1,0 +1,1640 @@
+{
+  "items": [
+    {
+      "id": 903,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter04.tex",
+      "line": 26,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Boyd, Richard",
+      "tag": "\\ixnq{Boyd, Richard}",
+      "start": 3071,
+      "end": 3091,
+      "context": "l isn't a shared essence but a shared causal history: mechanisms of reproduction, selection, and development that keep certain properties clustering together. Boyd's term~-- homeostatic property cluster (HPC) kinds \\citep{boyd1991,boyd1999}~-- is worth unpacking. \\emph{Stasis}: standing, position~-- the cluster \\emph{",
+      "normalized_term": "Boyd, Richard"
+    },
+    {
+      "id": 904,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter04.tex",
+      "line": 30,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Millikan, Ruth",
+      "tag": "\\ixnq{Millikan, Ruth}",
+      "start": 4500,
+      "end": 4521,
+      "context": "usion rates should differ for items that comply with the basin versus those that violate it. Those predictions are developed in \u00a7\\ref{subsec:4:falsification}. Ruth Millikan provides deeper metaphysical grounding: \\enquote{Anything with a structure that tends actively to maintain or reconstitute itself over time~[\\ldot",
+      "normalized_term": "Millikan, Ruth"
+    },
+    {
+      "id": 917,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter04.tex",
+      "line": 100,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Illari, Phyllis McKay",
+      "tag": "\\ixnq{Illari, Phyllis McKay}",
+      "start": 16836,
+      "end": 16864,
+      "context": "evelops a more detailed treatment~-- but it's enough to show that \\enquote{mechanisms maintain categories} isn't hand-waving. A note on terminology: following Illari and \\ixnq{Williamson, Jon}Williamson's \\textcite{illari2012} consensus view, I take a mechanism for a phenomenon to consist of \\enquote{entities and acti",
+      "normalized_term": "Illari, Phyllis McKay"
+    },
+    {
+      "id": 918,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter04.tex",
+      "line": 100,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Williamson, Jon",
+      "tag": "\\ixnq{Williamson, Jon}",
+      "start": 16875,
+      "end": 16897,
+      "context": "t it's enough to show that \\enquote{mechanisms maintain categories} isn't hand-waving. A note on terminology: following \\ixnq{Illari, Phyllis McKay}Illari and Williamson's \\textcite{illari2012} consensus view, I take a mechanism for a phenomenon to consist of \\enquote{entities and activities organized in such a way th",
+      "normalized_term": "Williamson, Jon"
+    },
+    {
+      "id": 936,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter04.tex",
+      "line": 174,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Khalidi, Muhammad Ali",
+      "tag": "\\ixnq{Khalidi, Muhammad Ali}",
+      "start": 31219,
+      "end": 31247,
+      "context": "label{subsec:4:homeostasis-causation} A critic might grant that mechanisms matter but question whether \\emph{homeostasis\\ixsq{homeostasis}} is the right word. Muhammad Ali Khalidi, in a systematic critique of Boyd's HPC framework, argues that the homeostatic requirement is too restrictive \\citep[72--79]{khalidi2013}.",
+      "normalized_term": "Khalidi, Muhammad Ali"
+    },
+    {
+      "id": 967,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter04.tex",
+      "line": 341,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Aristotle",
+      "tag": "\\ixnq{Aristotle}",
+      "start": 64452,
+      "end": 64468,
+      "context": "intain it robustly. The periphery is where indeterminacy lives~-- and that's not a problem for the framework; it's a prediction. \\section{Recovering Aristotle} \\label{sec:4:aristotle} Aristotle has had a longer career as a caricature of essentialism than as a guide to how kinds actually persist. But as \u00a7\\ref{sec:2:w",
+      "normalized_term": "Aristotle"
+    },
+    {
+      "id": 3530,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter02.tex",
+      "line": 29,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Aristotle",
+      "tag": "\\ixnq{Aristotle}",
+      "start": 4086,
+      "end": 4102,
+      "context": "o, the interesting question is which one fails. \\bigskip A clarification is needed here about intellectual history. The target of this chapter isn't Aristotle. Aristotle\\ixnq{Aristotle}'s essentialism\\ixsq{essentialism} was more sophisticated than the methodological practice I'm diagnosing. For Aristotle\\ixnq{Aristo",
+      "normalized_term": "Aristotle"
+    },
+    {
+      "id": 3531,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter02.tex",
+      "line": 31,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Aristotle",
+      "tag": "\\ixnq{Aristotle}",
+      "start": 4114,
+      "end": 4130,
+      "context": "is which one fails. \\bigskip A clarification is needed here about intellectual history. The target of this chapter isn't Aristotle\\ixnq{Aristotle}. Aristotle's essentialism\\ixsq{essentialism} was more sophisticated than the methodological practice I'm diagnosing. For Aristotle\\ixnq{Aristotle}, an essence isn't a che",
+      "normalized_term": "Aristotle"
+    },
+    {
+      "id": 3533,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter02.tex",
+      "line": 31,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Aristotle",
+      "tag": "\\ixnq{Aristotle}",
+      "start": 4250,
+      "end": 4266,
+      "context": "q{Aristotle}. Aristotle\\ixnq{Aristotle}'s essentialism\\ixsq{essentialism} was more sophisticated than the methodological practice I'm diagnosing. For Aristotle, an essence isn't a checklist of necessary and sufficient conditions but an explanatory core: the \\emph{to ti \\^en einai}, what it's to be the thing, which exp",
+      "normalized_term": "Aristotle"
+    },
+    {
+      "id": 3534,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter02.tex",
+      "line": 31,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Aristotle",
+      "tag": "\\ixnq{Aristotle}",
+      "start": 4649,
+      "end": 4665,
+      "context": "e, on this view, is whatever makes it do tiger-things~-- not a list of features (stripes, carnivory, size) but a causal-explanatory principle. Nor did Aristotle assume that every category\\ixsq{category} has an essence. Artefacts, social kinds, arbitrary groupings~-- these aren't essence-bearing in the way that natural",
+      "normalized_term": "Aristotle"
+    },
+    {
+      "id": 3626,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter02.tex",
+      "line": 164,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "will",
+      "tag": "\\ixl{will}",
+      "start": 27474,
+      "end": 27484,
+      "context": "d analysts disagree about which is essential, but the framework provides no resolution. But there's a deeper problem, and it's diachronic. Categories change. was a lexical verb\\ixsq{verb} meaning \\enquote{want, desire.} Now it's an auxiliary\\ixsq{auxiliary} expressing futurity. \\mention{While} was a noun\\ixsq{noun}",
+      "normalized_term": "will"
+    },
+    {
+      "id": 3966,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 12,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 625,
+      "end": 640,
+      "context": "alia, where it was a reasonable hour. But there's something fitting about the image of a linguist awake in the dark, wrestling with a single word. The word was . I had asked him whether there were grounds for treating it as a \\ixsq{preposition}preposition\\ixsq{preposition} rather than an \\ixsq{adverb}adverb\\ixsq{adverb",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 3973,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 18,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Huddleston, Rodney",
+      "tag": "\\ixnq{Huddleston, Rodney}",
+      "start": 1350,
+      "end": 1375,
+      "context": "ative complement uses. But I don't know how to handle \\mention{this suggests otherwise} or \\mention{the correctness or otherwise of the proposal}. \\end{quote} Huddleston wasn't a careless analyst. He was the lead author of \\textit{The Cambridge Grammar\\ixsq{grammar} of the English Language} (CGEL) \\citep{huddleston200",
+      "normalized_term": "Huddleston, Rodney"
+    },
+    {
+      "id": 3976,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 18,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 1688,
+      "end": 1703,
+      "context": "ston2002}~-- 1,860 pages, seventeen years in the making, the most comprehensive descriptive grammar\\ixsq{grammar} of English ever produced. If anyone knew what was, it should've been him. But he didn't. Not because he had missed something. Because the word wouldn't hold still. \\bigskip This book is about what that",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 3977,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 28,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 2258,
+      "end": 2273,
+      "context": "ility is itself stable. Some structures stay stable not because they are fixed, but because they are continuously kept in balance. The natural reading is that is simply a hard case~-- an outlier, a word with an unusual history, a problem for specialists. Every grammar\\ixsq{grammar} has its edge cases. You note them,",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 3979,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 30,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 2473,
+      "end": 2488,
+      "context": "word with an unusual history, a problem for specialists. Every grammar\\ixsq{grammar} has its edge cases. You note them, flag the uncertainty, and move on. But isn't alone. The same kind\\ixsq{kind} of stability shows up at every scale. \\ixlq{cattle}\\mention{Cattle} takes plural agreement (\\mention{the cattle are graz",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 3981,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 32,
+      "cmd": "ixlq",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixlq{cattle}",
+      "start": 2566,
+      "end": 2579,
+      "context": "edge cases. You note them, flag the uncertainty, and move on. But \\ixl{otherwise} isn't alone. The same kind\\ixsq{kind} of stability shows up at every scale. \\mention{Cattle} takes plural agreement (\\mention{the cattle are grazing}) but has no singular. You can say \\mention{many cattle} (and in agricultural contexts,",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 3982,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 34,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "the",
+      "tag": "\\ixl{the}",
+      "start": 3127,
+      "end": 3136,
+      "context": "ush}, not \\mention{*a teethbrush}). The usual singular--plural paradigm simply doesn't apply. And it has been this way for centuries. Weak and generic uses of (\\mention{go to the hospital}, \\mention{the tiger is endangered}) resist the standard definition of definiteness.\\ixsq{definiteness} Part~III returns to defini",
+      "normalized_term": "the"
+    },
+    {
+      "id": 3985,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 36,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "think",
+      "tag": "\\ixl{think}",
+      "start": 3637,
+      "end": 3648,
+      "context": "I had to think myself through that argument} is attested and interpretable by analogy to \\mention{talk oneself through} and \\mention{work oneself through}; but is ordinarily intransitive. Here a construction forces an intransitive verb into a caused-motion frame, and speakers differ about whether the result belongs.",
+      "normalized_term": "think"
+    },
+    {
+      "id": 3987,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 38,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "pin",
+      "tag": "\\ixl{pin}",
+      "start": 3905,
+      "end": 3914,
+      "context": "frame, and speakers differ about whether the result belongs. Even \\ixs{phoneme} boundaries can be stable and conditional: /\\ipa{\u026a}/ and /\\ipa{\u025b}/ distinguish from \\ixl{pen} for many speakers, but the contrast collapses before nasals in several varieties. And at the social end, \\ixs{register} and \\ixs{honorific} sys",
+      "normalized_term": "pin"
+    },
+    {
+      "id": 3988,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 38,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "pen",
+      "tag": "\\ixl{pen}",
+      "start": 3920,
+      "end": 3929,
+      "context": "akers differ about whether the result belongs. Even \\ixs{phoneme} boundaries can be stable and conditional: /\\ipa{\u026a}/ and /\\ipa{\u025b}/ distinguish \\ixl{pin} from for many speakers, but the contrast collapses before nasals in several varieties. And at the social end, \\ixs{register} and \\ixs{honorific} systems impose bou",
+      "normalized_term": "pen"
+    },
+    {
+      "id": 3991,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 40,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "gonna",
+      "tag": "\\ixl{gonna}",
+      "start": 4147,
+      "end": 4158,
+      "context": "ls in several varieties. And at the social end, \\ixs{register} and \\ixs{honorific} systems impose boundaries that are real in practice yet gradient in uptake: can be ordinary in casual speech and jarring in academic prose; in honorific systems the choice between plain and polite forms carries systematic inferences.",
+      "normalized_term": "gonna"
+    },
+    {
+      "id": 3996,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 48,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Aristotle",
+      "tag": "\\ixnq{Aristotle}",
+      "start": 5094,
+      "end": 5110,
+      "context": "at least the textbook version of it, sometimes called \\enquote{classical} or \\enquote{Aristotelian} (whether or not Aristotle himself held quite this position). It has the virtue of clarity: either something is an X or it isn't. That clarity has built the infrastructure of modern linguistics~-- great descriptive gramma",
+      "normalized_term": "Aristotle"
+    },
+    {
+      "id": 3999,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 52,
+      "cmd": "ixlq",
+      "type": "language",
+      "term": "run",
+      "tag": "\\ixlq{run}",
+      "start": 6145,
+      "end": 6155,
+      "context": "ntral members and peripheral members and fuzzy boundaries all the way down. A robin is a better example of \\textsc{bird} than a penguin is, but both are birds. \\mention{Run} is a better example of \\textsc{verb\\ixsq{verb}} than \\ixl{beware} is, but both are verbs. Stop expecting sharp edges. \\ixs{gradience} is the natur",
+      "normalized_term": "run"
+    },
+    {
+      "id": 4001,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 52,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "beware",
+      "tag": "\\ixl{beware}",
+      "start": 6222,
+      "end": 6234,
+      "context": "robin is a better example of \\textsc{bird} than a penguin is, but both are birds. \\ixlq{run}\\mention{Run} is a better example of \\textsc{verb\\ixsq{verb}} than is, but both are verbs. Stop expecting sharp edges. \\ixs{gradience} is the nature of the beast. This view also captures something real~-- the empirical fact o",
+      "normalized_term": "beware"
+    },
+    {
+      "id": 4003,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 54,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixl{cattle}",
+      "start": 6561,
+      "end": 6573,
+      "context": "ence, the persistent failure of neat definitions. But as it's usually deployed in linguistics, it purchases descriptive adequacy at the cost of explanation. If is a \\enquote{less central} noun, why does its non-centrality take exactly the form it takes~-- no singular, plural agreement, full compatibility with numerals",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4004,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 80,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 9799,
+      "end": 9814,
+      "context": "s left open? \\bigskip Huddleston's email sits in my files, seventeen years old now. \\enquote{Its classification is quite a puzzle.} The puzzle was never just . It was what kind of thing a grammatical category has to be for that sentence to be exactly the right thing to say. \\section{Essentialism\\ixsq{essentialism}",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4007,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 86,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Chomsky, Noam",
+      "tag": "\\ixnq{Chomsky, Noam}",
+      "start": 10570,
+      "end": 10590,
+      "context": "This picture brought order: it made syntactic theory look like a matter of discovery rather than stipulation, and for decades that's how linguistics proceeded. This assumption~-- that each category has an \\emph{essence}, a set of properties necessary and sufficient for membership~-- embodies what philosophers call \\t",
+      "normalized_term": "Chomsky, Noam"
+    },
+    {
+      "id": 4014,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 90,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "dog",
+      "tag": "\\ixl{dog}",
+      "start": 11210,
+      "end": 11219,
+      "context": "alism\\ixsq{essentialism} is the natural view. It's where you start if no one has told you there's a problem. The intuition runs deep. When a child learns that picks out the class\\ixsq{class} of dogs, we're tempted to think that there's some inner dogness~-- some cluster of necessary properties~-- that all and only do",
+      "normalized_term": "dog"
+    },
+    {
+      "id": 4038,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 95,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Jespersen, Otto",
+      "tag": "\\ixnq{Jespersen, Otto}",
+      "start": 13607,
+      "end": 13629,
+      "context": "sers are built on it. The infrastructure of linguistic analysis presupposes that categories have boundaries and that the boundaries can, in principle, be found.\\ixnq{Quirk, Randolph} The strongest modern version of essentialism grounds categories in substantive theoretical claims about what the categories \\emph{are}.",
+      "normalized_term": "Jespersen, Otto"
+    },
+    {
+      "id": 4039,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 95,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Quirk, Randolph",
+      "tag": "\\ixnq{Quirk, Randolph}",
+      "start": 13629,
+      "end": 13651,
+      "context": "The infrastructure of linguistic analysis presupposes that categories have boundaries and that the boundaries can, in principle, be found.\\ixnq{Jespersen, Otto} The strongest modern version of essentialism grounds categories in substantive theoretical claims about what the categories \\emph{are}. \\citet{baker2003} prov",
+      "normalized_term": "Quirk, Randolph"
+    },
+    {
+      "id": 4041,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 97,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Baker, Mark",
+      "tag": "\\ixnq{Baker, Mark}",
+      "start": 14470,
+      "end": 14488,
+      "context": "they hold because of what nouns, verbs, and adjectives essentially are. The features don't just describe the categories; they flow from the categories' natures. The same essentialist logic extended to semantics. Jerrold Katz, working in the 1960s and 70s, defended the classical theory of lexical concepts: each word's",
+      "normalized_term": "Baker, Mark"
+    },
+    {
+      "id": 4042,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 99,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "bachelor",
+      "tag": "\\ixl{bachelor}",
+      "start": 14765,
+      "end": 14779,
+      "context": "al theory of lexical concepts: each word's meaning is defined by a set of necessary and sufficient semantic features \\citep{katz1972}. The standard example was , analyzed as [+adult] [+male] [+unmarried]. Anything satisfying those features is a bachelor; anything lacking one isn't. Katz treated such decompositions as c",
+      "normalized_term": "bachelor"
+    },
+    {
+      "id": 4043,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 99,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Katz, Jerrold",
+      "tag": "\\ixnq{Katz, Jerrold}",
+      "start": 15139,
+      "end": 15159,
+      "context": "know when they know a word's meaning. The category \\textsc{bachelor} has an essence: unmarried adult maleness. The definition carves the concept at its joints. But much work in formal linguistics uses feature bundles\\ixsq{feature bundle} without Baker's or Katz's deeper commitments. Categories are specified as [+N, \\",
+      "normalized_term": "Katz, Jerrold"
+    },
+    {
+      "id": 4046,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 107,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 16260,
+      "end": 16275,
+      "context": "ccumulate, and at some point you have to ask whether the machinery is doing explanatory work or merely recording the failures of a prior commitment. Return to . Huddleston's puzzlement wasn't a lapse but a report from the front lines. The word looks like an adverb (\\mention{think otherwise}), looks like an adjective (",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4047,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 107,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 16671,
+      "end": 16686,
+      "context": "esist any standard label (\\mention{the correctness or otherwise of the proposal}). What are the necessary and sufficient conditions for adverbhood that include in \\mention{think otherwise} and exclude it in \\mention{the correctness or otherwise}? There aren't any. Every definition either lets in too much or leaves out",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4048,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 109,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 16900,
+      "end": 16915,
+      "context": "on{the correctness or otherwise}? There aren't any. Every definition either lets in too much or leaves out too much. The essentialist response is predictable: is polysemous, multiply listed, historically complex. Each use gets its own entry, its own feature specification, its own subcategorization frame. The grammar",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4049,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 109,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 17230,
+      "end": 17245,
+      "context": "mmar doesn't fail; it proliferates. But this is bookkeeping, not explanation. We wanted to know what makes something an adverb. We got a list of contexts where behaves adverbially, and another list where it doesn't, and no principled account of why the word straddles the boundary instead of sitting on one side or the",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4056,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 116,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "nearer",
+      "tag": "\\ixl{nearer}",
+      "start": 18579,
+      "end": 18591,
+      "context": "hout a preceding \\mention{to} (\\mention{near\\ixsq{near} the house}), which makes it look like a preposition. But it also has comparative and superlative forms (, \\ixl{nearest}), which makes it look like an adjective. It can function as a predicative complement (an expression that ascribes a property to the subject or o",
+      "normalized_term": "nearer"
+    },
+    {
+      "id": 4057,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 116,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "nearest",
+      "tag": "\\ixl{nearest}",
+      "start": 18593,
+      "end": 18606,
+      "context": "ng \\mention{to} (\\mention{near\\ixsq{near} the house}), which makes it look like a preposition. But it also has comparative and superlative forms (\\ixl{nearer}, ), which makes it look like an adjective. It can function as a predicative complement (an expression that ascribes a property to the subject or object) after \\m",
+      "normalized_term": "nearest"
+    },
+    {
+      "id": 4060,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 116,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "near",
+      "tag": "\\ixl{near}",
+      "start": 19397,
+      "end": 19407,
+      "context": "ct homonyms are posited)? The answer is that the definitions weren't necessary and sufficient after all. They were family portraits, not passport photos~-- and has the look of both families. Compare \\ixl{pease}, which until Early Modern English was a mass noun like \\ixl{cattle}. Speakers reanalyzed the final \\ixl{-se",
+      "normalized_term": "near"
+    },
+    {
+      "id": 4061,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "pease",
+      "tag": "\\ixl{pease}",
+      "start": 19448,
+      "end": 19459,
+      "context": "finitions weren't necessary and sufficient after all. They were family portraits, not passport photos~-- and \\ixl{near} has the look of both families. Compare , which until Early Modern English was a mass noun like \\ixl{cattle}. Speakers reanalyzed the final \\ixl{-se} as plural \\ixl{-s}, back-formed a singular \\ixl{pe",
+      "normalized_term": "pease"
+    },
+    {
+      "id": 4062,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixl{cattle}",
+      "start": 19515,
+      "end": 19527,
+      "context": "ily portraits, not passport photos~-- and \\ixl{near} has the look of both families. Compare \\ixl{pease}, which until Early Modern English was a mass noun like . Speakers reanalyzed the final \\ixl{-se} as plural \\ixl{-s}, back-formed a singular \\ixl{pea}, and the word regularized. No functional anchor blocked the analo",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4063,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "-se",
+      "tag": "\\ixl{-se}",
+      "start": 19559,
+      "end": 19568,
+      "context": "xl{near} has the look of both families. Compare \\ixl{pease}, which until Early Modern English was a mass noun like \\ixl{cattle}. Speakers reanalyzed the final as plural \\ixl{-s}, back-formed a singular \\ixl{pea}, and the word regularized. No functional anchor blocked the analogy. \\ixlq{cattle}\\mention{Cattle} has \\ix",
+      "normalized_term": "-se"
+    },
+    {
+      "id": 4064,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "-s",
+      "tag": "\\ixl{-s}",
+      "start": 19579,
+      "end": 19587,
+      "context": "k of both families. Compare \\ixl{pease}, which until Early Modern English was a mass noun like \\ixl{cattle}. Speakers reanalyzed the final \\ixl{-se} as plural , back-formed a singular \\ixl{pea}, and the word regularized. No functional anchor blocked the analogy. \\ixlq{cattle}\\mention{Cattle} has \\ixl{cow}; \\ixl{pease}",
+      "normalized_term": "-s"
+    },
+    {
+      "id": 4065,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "pea",
+      "tag": "\\ixl{pea}",
+      "start": 19612,
+      "end": 19621,
+      "context": "{pease}, which until Early Modern English was a mass noun like \\ixl{cattle}. Speakers reanalyzed the final \\ixl{-se} as plural \\ixl{-s}, back-formed a singular , and the word regularized. No functional anchor blocked the analogy. \\ixlq{cattle}\\mention{Cattle} has \\ixl{cow}; \\ixl{pease} had nothing. The essentialist acc",
+      "normalized_term": "pea"
+    },
+    {
+      "id": 4066,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixlq",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixlq{cattle}",
+      "start": 19691,
+      "end": 19704,
+      "context": "eakers reanalyzed the final \\ixl{-se} as plural \\ixl{-s}, back-formed a singular \\ixl{pea}, and the word regularized. No functional anchor blocked the analogy. \\mention{Cattle} has \\ixl{cow}; \\ixl{pease} had nothing. The essentialist account says both words should've stable essential properties. But one regularized and",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4067,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cow",
+      "tag": "\\ixl{cow}",
+      "start": 19725,
+      "end": 19734,
+      "context": "se} as plural \\ixl{-s}, back-formed a singular \\ixl{pea}, and the word regularized. No functional anchor blocked the analogy. \\ixlq{cattle}\\mention{Cattle} has ; \\ixl{pease} had nothing. The essentialist account says both words should've stable essential properties. But one regularized and one didn't, and the differenc",
+      "normalized_term": "cow"
+    },
+    {
+      "id": 4068,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 118,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "pease",
+      "tag": "\\ixl{pease}",
+      "start": 19736,
+      "end": 19747,
+      "context": "al \\ixl{-s}, back-formed a singular \\ixl{pea}, and the word regularized. No functional anchor blocked the analogy. \\ixlq{cattle}\\mention{Cattle} has \\ixl{cow}; had nothing. The essentialist account says both words should've stable essential properties. But one regularized and one didn't, and the difference isn't in th",
+      "normalized_term": "pease"
+    },
+    {
+      "id": 4070,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 124,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 20497,
+      "end": 20512,
+      "context": "al curiosities. They're systematic sites of instability. And the words that straddle these boundaries tend to be high-frequency items with broad distributions: , \\ixl{fun}, \\ixl{near}. Frequency isn't a feature; distribution is a consequence of how a word behaves, not a defining criterion. These are precisely the patte",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4071,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 124,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 20514,
+      "end": 20523,
+      "context": "hey're systematic sites of instability. And the words that straddle these boundaries tend to be high-frequency items with broad distributions: \\ixl{otherwise}, , \\ixl{near}. Frequency isn't a feature; distribution is a consequence of how a word behaves, not a defining criterion. These are precisely the patterns a theor",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4072,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 124,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "near",
+      "tag": "\\ixl{near}",
+      "start": 20525,
+      "end": 20535,
+      "context": "ematic sites of instability. And the words that straddle these boundaries tend to be high-frequency items with broad distributions: \\ixl{otherwise}, \\ixl{fun}, . Frequency isn't a feature; distribution is a consequence of how a word behaves, not a defining criterion. These are precisely the patterns a theory of categor",
+      "normalized_term": "near"
+    },
+    {
+      "id": 4073,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 126,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Shakespeare, William",
+      "tag": "\\ixnq{Shakespeare, William}",
+      "start": 21406,
+      "end": 21433,
+      "context": "xisted, distributed by register, construction type, and verb class. Shakespeare inverts lexical verbs in questions; a generation later, the pattern is receding. Essentialist grammars have to treat each stage as a discrete system, missing the continuity that drove the change. The alternative~-- acknowledging that syntac",
+      "normalized_term": "Shakespeare, William"
+    },
+    {
+      "id": 4075,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 128,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "run",
+      "tag": "\\ixl{run}",
+      "start": 21832,
+      "end": 21841,
+      "context": "sentialism forbids. None of this means essentialism is useless. For most words, most of the time, the category labels work. \\ixlq{dog}\\mention{Dog} is a noun; is a verb; \\ixl{quickly} is an adverb. The labels support generalization. They organize grammars. They enable pedagogy. If every word were like \\ixl{otherwise}",
+      "normalized_term": "run"
+    },
+    {
+      "id": 4076,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 128,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "quickly",
+      "tag": "\\ixl{quickly}",
+      "start": 21853,
+      "end": 21866,
+      "context": "None of this means essentialism is useless. For most words, most of the time, the category labels work. \\ixlq{dog}\\mention{Dog} is a noun; \\ixl{run} is a verb; is an adverb. The labels support generalization. They organize grammars. They enable pedagogy. If every word were like \\ixl{otherwise}, linguistic analysis wou",
+      "normalized_term": "quickly"
+    },
+    {
+      "id": 4077,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 128,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 21986,
+      "end": 22001,
+      "context": "noun; \\ixl{run} is a verb; \\ixl{quickly} is an adverb. The labels support generalization. They organize grammars. They enable pedagogy. If every word were like , linguistic analysis would be impossible. But neither is every word like \\ixl{dog}. And the question is what to make of the words that aren't. The essentialis",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4078,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 130,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "dog",
+      "tag": "\\ixl{dog}",
+      "start": 22076,
+      "end": 22085,
+      "context": "They organize grammars. They enable pedagogy. If every word were like \\ixl{otherwise}, linguistic analysis would be impossible. But neither is every word like . And the question is what to make of the words that aren't. The essentialist answer~-- treat them as exceptions, lexical idiosyncrasies, marginal cases~-- work",
+      "normalized_term": "dog"
+    },
+    {
+      "id": 4093,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 139,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Dik, Simon C.",
+      "tag": "\\ixnq{Dik, Simon C.}",
+      "start": 24829,
+      "end": 24849,
+      "context": "tion as a universal, notional distinction grounded in essential cognitive abilities for conceptualizing things versus processes. Functional grammarians in Dik's tradition \\citep{dik1997} allow that not every language has a \\mention{subject\\ixsq{subject}}\\ixsq{subject}, but hold that once a language does, the function c",
+      "normalized_term": "Dik, Simon C."
+    },
+    {
+      "id": 4099,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 143,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 26444,
+      "end": 26453,
+      "context": "nd analysis. Grammars need to be written. Students need to be taught. Parsers need to be built. All of these tasks become vastly simpler if you can assume that is either a noun\\ixsq{noun} or an adjective\\ixsq{adjective}, that \\ixl{near} is either a preposition\\ixsq{preposition} or an adjective\\ixsq{adjective}, that \\i",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4102,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 143,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "near",
+      "tag": "\\ixl{near}",
+      "start": 26520,
+      "end": 26530,
+      "context": "s need to be built. All of these tasks become vastly simpler if you can assume that \\ixl{fun} is either a noun\\ixsq{noun} or an adjective\\ixsq{adjective}, that is either a preposition\\ixsq{preposition} or an adjective\\ixsq{adjective}, that \\ixl{otherwise} has a stable category\\ixsq{category} assignment. The alternativ",
+      "normalized_term": "near"
+    },
+    {
+      "id": 4105,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 143,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 26611,
+      "end": 26626,
+      "context": "n} is either a noun\\ixsq{noun} or an adjective\\ixsq{adjective}, that \\ixl{near} is either a preposition\\ixsq{preposition} or an adjective\\ixsq{adjective}, that has a stable category\\ixsq{category} assignment. The alternative~-- treating every item as occupying a unique position in continuous category\\ixsq{category} sp",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4109,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 147,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Pullum, Geoffrey K.",
+      "tag": "\\ixnq{Pullum, Geoffrey K.}",
+      "start": 27548,
+      "end": 27574,
+      "context": "the work to proceed, even when the idealizations are known to be false. Some grammarians make this tension explicit.\\footnote{For example, Geoffrey K.\\ Pullum (personal communication) writes: \\enquote{I am well aware that I am (for pragmatic reasons) presupposing an essentialist mindset that assumes `Categories exist",
+      "normalized_term": "Pullum, Geoffrey K."
+    },
+    {
+      "id": 4116,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 156,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Rosch, Eleanor",
+      "tag": "\\ixnq{Rosch, Eleanor}",
+      "start": 29439,
+      "end": 29460,
+      "context": "amme around the claim that fuzziness wasn't a defect in our descriptions but a fact about how concepts work. In the early 1970s, the psychologist Eleanor Rosch ran a series of experiments that should've been impossible on the classical view \\citep{rosch1975}. She asked subjects to rate how good an example each item wa",
+      "normalized_term": "Rosch, Eleanor"
+    },
+    {
+      "id": 4123,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 162,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Lakoff, George",
+      "tag": "\\ixnq{Lakoff, George}",
+      "start": 30972,
+      "end": 30993,
+      "context": "By the 1980s, prototype\\ixsq{prototype} theory had become a major framework in cognitive psychology, and linguists were importing it wholesale. George Lakoff's \\textit{Women, Fire, and Dangerous Things} \\citep{lakoff1987} argued that prototype\\ixsq{prototype} structure was fundamental to human cognition, not a quirk o",
+      "normalized_term": "Lakoff, George"
+    },
+    {
+      "id": 4125,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 162,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Taylor, John",
+      "tag": "\\ixnq{Taylor, John}",
+      "start": 31211,
+      "end": 31230,
+      "context": "987} argued that prototype\\ixsq{prototype} structure was fundamental to human cognition, not a quirk of folk categories but the way concepts work. John Taylor's \\textit{Linguistic Categorization} \\citep{taylor2003} applied the framework systematically to grammatical categories. The cognitive linguistics\\ixsq{cognitive",
+      "normalized_term": "Taylor, John"
+    },
+    {
+      "id": 4127,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 162,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Langacker, Ronald",
+      "tag": "\\ixnq{Langacker, Ronald}",
+      "start": 31453,
+      "end": 31477,
+      "context": "the framework systematically to grammatical categories. The cognitive linguistics\\ixsq{cognitive linguistics} movement, associated with Lakoff, Ronald Langacker, and others, built an entire research programme around the idea that linguistic categories are prototype\\ixsq{prototype}-structured, gradient, and grounded in",
+      "normalized_term": "Langacker, Ronald"
+    },
+    {
+      "id": 4130,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 164,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 31826,
+      "end": 31835,
+      "context": "eal was obvious. Here, finally, was a framework that took the evidence seriously. The messy cases that essentialism\\ixsq{essentialism} swept under the rug (the s and \\ixl{near}s and \\ixl{otherwise}s) became data rather than noise. If category\\ixsq{category} membership is gradient, then words can be more or less noun\\ix",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4131,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 164,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "near",
+      "tag": "\\ixl{near}",
+      "start": 31841,
+      "end": 31851,
+      "context": ". Here, finally, was a framework that took the evidence seriously. The messy cases that essentialism\\ixsq{essentialism} swept under the rug (the \\ixl{fun}s and s and \\ixl{otherwise}s) became data rather than noise. If category\\ixsq{category} membership is gradient, then words can be more or less noun\\ixsq{noun}-like, m",
+      "normalized_term": "near"
+    },
+    {
+      "id": 4132,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 164,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 31857,
+      "end": 31872,
+      "context": "was a framework that took the evidence seriously. The messy cases that essentialism\\ixsq{essentialism} swept under the rug (the \\ixl{fun}s and \\ixl{near}s and s) became data rather than noise. If category\\ixsq{category} membership is gradient, then words can be more or less noun\\ixsq{noun}-like, more or less verbal, m",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4151,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 176,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 35377,
+      "end": 35386,
+      "context": "te properties, and I assumed that the clustering itself required no further explanation. If pressed, I would've acknowledged gradience; I would've granted that was a marginal noun (or a marginal adjective). But I wouldn't have asked \\emph{why} that particular configuration of properties, \\emph{why} stable for decades,",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4157,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 182,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 36476,
+      "end": 36485,
+      "context": "exhibit these properties to varying degrees. A word like \\ixl{dog} exhibits all of them (in its nominal use); it's a prototypical noun\\ixsq{noun}. A word like exhibits some but not others; it's a marginal noun\\ixsq{noun}, or a noun\\ixsq{noun}-becoming-adjective\\ixsq{adjective}, or a word in the gradient space between",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4168,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 192,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 38619,
+      "end": 38628,
+      "context": "ategories have fuzzy boundaries; feature-bundle approaches tell you which properties cluster. Neither tells you why the periphery has the structure it has: why is becoming adjective-like in one specific way and not another, why \\ixl{cattle} has exactly the peculiar profile it has, why \\ixl{otherwise} straddles exactly",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4169,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 192,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixl{cattle}",
+      "start": 38697,
+      "end": 38709,
+      "context": "erties cluster. Neither tells you why the periphery has the structure it has: why \\ixl{fun} is becoming adjective-like in one specific way and not another, why has exactly the peculiar profile it has, why \\ixl{otherwise} straddles exactly those categories and not others. Return to \\ixl{cattle}. The prototype theorist",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4170,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 192,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 38755,
+      "end": 38770,
+      "context": "e structure it has: why \\ixl{fun} is becoming adjective-like in one specific way and not another, why \\ixl{cattle} has exactly the peculiar profile it has, why straddles exactly those categories and not others. Return to \\ixl{cattle}. The prototype theorist can say: \\ixl{cattle} is a less prototypical noun than \\ixl{",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4171,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 194,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixl{cattle}",
+      "start": 38833,
+      "end": 38845,
+      "context": "ay and not another, why \\ixl{cattle} has exactly the peculiar profile it has, why \\ixl{otherwise} straddles exactly those categories and not others. Return to . The prototype theorist can say: \\ixl{cattle} is a less prototypical noun than \\ixl{dog}. It lacks the singular\u2013plural contrast that prototypical nouns have. I",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4172,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 194,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixl{cattle}",
+      "start": 38879,
+      "end": 38891,
+      "context": "ly the peculiar profile it has, why \\ixl{otherwise} straddles exactly those categories and not others. Return to \\ixl{cattle}. The prototype theorist can say: is a less prototypical noun than \\ixl{dog}. It lacks the singular\u2013plural contrast that prototypical nouns have. It takes plural agreement but resists \\mention{",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4174,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 194,
+      "cmd": "ixlq",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixlq{cattle}",
+      "start": 39617,
+      "end": 39630,
+      "context": "ive-like in its modification patterns. The space of possible non-prototypical members is vast. But actual non-prototypical members cluster in predictable ways. \\mention{Cattle} isn't random noise around the noun prototype. It's a stable configuration that has persisted for centuries. The stability problem is general.",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4177,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 202,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Taylor, John",
+      "tag": "\\ixnq{Taylor, John}",
+      "start": 40460,
+      "end": 40479,
+      "context": "al members stay central. The gradient structure holds still. Why? \\bigskip Prototype theory, as it's usually deployed in linguistics, has no answer. Taylor's \\textit{Linguistic Categorization} \\citep{taylor2003}, perhaps the most influential application of the framework to grammar, describes prototype effects in det",
+      "normalized_term": "Taylor, John"
+    },
+    {
+      "id": 4181,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 220,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Bybee, Joan",
+      "tag": "\\ixnq{Bybee, Joan}",
+      "start": 42664,
+      "end": 42682,
+      "context": "\\enquote{why is there a boundary there at all, and why does it persist?} A strand of cognitive linguistics\\ixsq{cognitive linguistics}~-- associated with Bybee, Goldberg\\ixnq{Goldberg, Adele}, and others~-- goes further than classical prototype theory. These researchers don't merely accept gradience; they study the me",
+      "normalized_term": "Bybee, Joan"
+    },
+    {
+      "id": 4182,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 220,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Goldberg, Adele",
+      "tag": "\\ixnq{Goldberg, Adele}",
+      "start": 42692,
+      "end": 42714,
+      "context": "dary there at all, and why does it persist?} A strand of cognitive linguistics\\ixsq{cognitive linguistics}~-- associated with Bybee\\ixnq{Bybee, Joan}, Goldberg, and others~-- goes further than classical prototype theory. These researchers don't merely accept gradience; they study the mechanisms that produce it: freque",
+      "normalized_term": "Goldberg, Adele"
+    },
+    {
+      "id": 4184,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 220,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Labov, William",
+      "tag": "\\ixnq{Labov, William}",
+      "start": 43374,
+      "end": 43395,
+      "context": "echanisms \\emph{are} the category, not merely forces acting on it~-- is what the present framework adds. Variationists\\ixsq{variationist linguistics} like Labov and Tagliamonte\\ixnq{Tagliamonte, Sali}, typologists\\ixsq{typology} like Haspelmath\\ixnq{Haspelmath, Martin} and Croft\\ixnq{Croft, William}, grammaticalization",
+      "normalized_term": "Labov, William"
+    },
+    {
+      "id": 4185,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 220,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Tagliamonte, Sali",
+      "tag": "\\ixnq{Tagliamonte, Sali}",
+      "start": 43411,
+      "end": 43435,
+      "context": "t merely forces acting on it~-- is what the present framework adds. Variationists\\ixsq{variationist linguistics} like Labov\\ixnq{Labov, William} and Tagliamonte, typologists\\ixsq{typology} like Haspelmath\\ixnq{Haspelmath, Martin} and Croft\\ixnq{Croft, William}, grammaticalization theorists tracking the pathways by whic",
+      "normalized_term": "Tagliamonte, Sali"
+    },
+    {
+      "id": 4187,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 220,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Haspelmath, Martin",
+      "tag": "\\ixnq{Haspelmath, Martin}",
+      "start": 43479,
+      "end": 43504,
+      "context": "Variationists\\ixsq{variationist linguistics} like Labov\\ixnq{Labov, William} and Tagliamonte\\ixnq{Tagliamonte, Sali}, typologists\\ixsq{typology} like Haspelmath and Croft\\ixnq{Croft, William}, grammaticalization theorists tracking the pathways by which forms change~-- all have been studying stabilizing dynamics, often",
+      "normalized_term": "Haspelmath, Martin"
+    },
+    {
+      "id": 4188,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 220,
+      "cmd": "ixnq",
+      "type": "name",
+      "term": "Croft, William",
+      "tag": "\\ixnq{Croft, William}",
+      "start": 43514,
+      "end": 43535,
+      "context": "guistics} like Labov\\ixnq{Labov, William} and Tagliamonte\\ixnq{Tagliamonte, Sali}, typologists\\ixsq{typology} like Haspelmath\\ixnq{Haspelmath, Martin} and Croft, grammaticalization theorists tracking the pathways by which forms change~-- all have been studying stabilizing dynamics, often without foregrounding what that",
+      "normalized_term": "Croft, William"
+    },
+    {
+      "id": 4189,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 229,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "fun",
+      "tag": "\\ixl{fun}",
+      "start": 44577,
+      "end": 44586,
+      "context": "- and this clarity has built the infrastructure of modern linguistics. Grammars, parsers, textbooks, annotation schemes: all of it rests on the assumption that is either a noun or an adjective (or perhaps a verb), that \\ixl{otherwise} belongs somewhere. The definitional grounding is false, but the discreteness is load",
+      "normalized_term": "fun"
+    },
+    {
+      "id": 4190,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 229,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 44646,
+      "end": 44661,
+      "context": ". Grammars, parsers, textbooks, annotation schemes: all of it rests on the assumption that \\ixl{fun} is either a noun or an adjective (or perhaps a verb), that belongs somewhere. The definitional grounding is false, but the discreteness is load-bearing. Take it away and the architecture sags. Prototype theory offers",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4191,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 231,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "cattle",
+      "tag": "\\ixl{cattle}",
+      "start": 45100,
+      "end": 45112,
+      "context": "this accuracy has licensed a generation of work on the messiness that essentialism couldn't see. But accuracy about appearances isn't explanation. To say that is a non-prototypical noun is to redescribe the problem, not to solve it. The gradient structure is stable. Prototype theory records the stability. It doesn't",
+      "normalized_term": "cattle"
+    },
+    {
+      "id": 4192,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 237,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 45803,
+      "end": 45818,
+      "context": "is phenomenologically apt but explanatorily inert. \\bigskip Return one last time to Huddleston's email. \\enquote{I don't know how to handle} certain uses of . The essentialist hears this as a problem to be solved: find better criteria, and the word will sort itself out. The prototype theorist hears it as a fact to",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4193,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 239,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 45991,
+      "end": 46006,
+      "context": "ialist hears this as a problem to be solved: find better criteria, and the word will sort itself out. The prototype theorist hears it as a fact to be accepted: is marginal, gradient, a fuzzy case in a fuzzy system. Neither hears what Huddleston actually wrote. He didn't say the criteria were unclear. He didn't say t",
+      "normalized_term": "otherwise"
+    },
+    {
+      "id": 4209,
+      "file": "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book/chapters/chapter01.tex",
+      "line": 263,
+      "cmd": "ixl",
+      "type": "language",
+      "term": "otherwise",
+      "tag": "\\ixl{otherwise}",
+      "start": 50010,
+      "end": 50025,
+      "context": "d what holds the clusters together, or why certain configurations persist, or what kind\\ixsq{kind} of thing a grammatical category\\ixsq{category} has to be for to sit at an intersection for three centuries without budging. And none has noticed that the hardest questions aren't about words at all. Only then will we be",
+      "normalized_term": "otherwise"
+    }
+  ],
+  "decisions": [
+    {
+      "id": 903,
+      "keep": true,
+      "reason": "Substantive discussion of Boyd's HPC framework."
+    },
+    {
+      "id": 904,
+      "keep": true,
+      "reason": "Substantive introduction of Millikan's metaphysical grounding."
+    },
+    {
+      "id": 917,
+      "keep": false,
+      "reason": "Passing mention/citation for consensus view."
+    },
+    {
+      "id": 918,
+      "keep": false,
+      "reason": "Passing mention/citation for consensus view."
+    },
+    {
+      "id": 936,
+      "keep": true,
+      "reason": "Substantive discussion of Khalidi's critique."
+    },
+    {
+      "id": 967,
+      "keep": true,
+      "reason": "Substantive discussion of Aristotle's ideas."
+    },
+    {
+      "id": 3530,
+      "keep": true,
+      "reason": "Substantive discussion of Aristotle's essentialism."
+    },
+    {
+      "id": 3531,
+      "keep": true,
+      "reason": "Substantive discussion of Aristotle's essentialism."
+    },
+    {
+      "id": 3533,
+      "keep": true,
+      "reason": "Substantive discussion of Aristotle's essentialism."
+    },
+    {
+      "id": 3534,
+      "keep": true,
+      "reason": "Substantive discussion of Aristotle's essentialism."
+    },
+    {
+      "id": 3626,
+      "keep": true,
+      "reason": "Analyzed as data showing historical change."
+    },
+    {
+      "id": 3966,
+      "keep": true,
+      "reason": "Analyzed as data (preposition vs adverb)."
+    },
+    {
+      "id": 3973,
+      "keep": true,
+      "reason": "Substantive discussion of Huddleston's analysis."
+    },
+    {
+      "id": 3976,
+      "keep": false,
+      "reason": "Repeated mention adding no new linguistic analysis."
+    },
+    {
+      "id": 3977,
+      "keep": true,
+      "reason": "Analyzed as data (hard case, outlier)."
+    },
+    {
+      "id": 3979,
+      "keep": false,
+      "reason": "Repeated mention/rhetorical transition."
+    },
+    {
+      "id": 3981,
+      "keep": true,
+      "reason": "Analyzed as data (plural agreement, no singular)."
+    },
+    {
+      "id": 3982,
+      "keep": true,
+      "reason": "Analyzed as data (weak and generic uses)."
+    },
+    {
+      "id": 3985,
+      "keep": true,
+      "reason": "Analyzed as data (intransitive forced into caused-motion)."
+    },
+    {
+      "id": 3987,
+      "keep": true,
+      "reason": "Analyzed as data (phoneme boundaries)."
+    },
+    {
+      "id": 3988,
+      "keep": true,
+      "reason": "Analyzed as data (phoneme boundaries)."
+    },
+    {
+      "id": 3991,
+      "keep": true,
+      "reason": "Analyzed as data (register boundaries)."
+    },
+    {
+      "id": 3996,
+      "keep": false,
+      "reason": "Rhetorical name drop ('Aristotelian')."
+    },
+    {
+      "id": 3999,
+      "keep": false,
+      "reason": "Throwaway example of a verb."
+    },
+    {
+      "id": 4001,
+      "keep": false,
+      "reason": "Throwaway example of a verb."
+    },
+    {
+      "id": 4003,
+      "keep": true,
+      "reason": "Analyzed as data (non-centrality of the noun)."
+    },
+    {
+      "id": 4004,
+      "keep": false,
+      "reason": "Repeated mention/transition."
+    },
+    {
+      "id": 4007,
+      "keep": false,
+      "reason": "Name not clearly in text/passing context mention."
+    },
+    {
+      "id": 4014,
+      "keep": false,
+      "reason": "Throwaway example of a noun class."
+    },
+    {
+      "id": 4038,
+      "keep": false,
+      "reason": "Citation-like name drop."
+    },
+    {
+      "id": 4039,
+      "keep": false,
+      "reason": "Citation-like name drop."
+    },
+    {
+      "id": 4041,
+      "keep": true,
+      "reason": "Substantive mention of Baker's theoretical commitments."
+    },
+    {
+      "id": 4042,
+      "keep": true,
+      "reason": "Analyzed as data (classical theory example)."
+    },
+    {
+      "id": 4043,
+      "keep": true,
+      "reason": "Substantive discussion of Katz's semantic theory."
+    },
+    {
+      "id": 4046,
+      "keep": true,
+      "reason": "Analyzed as data (categorical ambiguity)."
+    },
+    {
+      "id": 4047,
+      "keep": true,
+      "reason": "Analyzed as data (categorical ambiguity)."
+    },
+    {
+      "id": 4048,
+      "keep": true,
+      "reason": "Analyzed as data (polysemy, feature specification)."
+    },
+    {
+      "id": 4049,
+      "keep": true,
+      "reason": "Analyzed as data (distributional boundary)."
+    },
+    {
+      "id": 4056,
+      "keep": true,
+      "reason": "Analyzed as data (comparative forms)."
+    },
+    {
+      "id": 4057,
+      "keep": true,
+      "reason": "Analyzed as data (superlative forms)."
+    },
+    {
+      "id": 4060,
+      "keep": true,
+      "reason": "Analyzed as data (categorical ambiguity)."
+    },
+    {
+      "id": 4061,
+      "keep": true,
+      "reason": "Analyzed as data (historical change, mass noun)."
+    },
+    {
+      "id": 4062,
+      "keep": false,
+      "reason": "Comparison mention, adds no new analysis here."
+    },
+    {
+      "id": 4063,
+      "keep": true,
+      "reason": "Analyzed as data (morphological reanalysis)."
+    },
+    {
+      "id": 4064,
+      "keep": true,
+      "reason": "Analyzed as data (morphological reanalysis)."
+    },
+    {
+      "id": 4065,
+      "keep": true,
+      "reason": "Analyzed as data (back-formation)."
+    },
+    {
+      "id": 4066,
+      "keep": true,
+      "reason": "Analyzed as data (contrast with pease)."
+    },
+    {
+      "id": 4067,
+      "keep": true,
+      "reason": "Analyzed as data (functional anchor)."
+    },
+    {
+      "id": 4068,
+      "keep": true,
+      "reason": "Analyzed as data (lack of functional anchor)."
+    },
+    {
+      "id": 4070,
+      "keep": false,
+      "reason": "Repeated mention in a list."
+    },
+    {
+      "id": 4071,
+      "keep": false,
+      "reason": "Throwaway example in a list."
+    },
+    {
+      "id": 4072,
+      "keep": false,
+      "reason": "Repeated mention in a list."
+    },
+    {
+      "id": 4073,
+      "keep": false,
+      "reason": "Passing mention of historical figure/period."
+    },
+    {
+      "id": 4075,
+      "keep": false,
+      "reason": "Throwaway example."
+    },
+    {
+      "id": 4076,
+      "keep": false,
+      "reason": "Throwaway example."
+    },
+    {
+      "id": 4077,
+      "keep": false,
+      "reason": "Repeated mention/rhetorical."
+    },
+    {
+      "id": 4078,
+      "keep": false,
+      "reason": "Throwaway example."
+    },
+    {
+      "id": 4093,
+      "keep": false,
+      "reason": "Passing mention/citation of tradition."
+    },
+    {
+      "id": 4099,
+      "keep": false,
+      "reason": "Throwaway example."
+    },
+    {
+      "id": 4102,
+      "keep": false,
+      "reason": "Throwaway example."
+    },
+    {
+      "id": 4105,
+      "keep": false,
+      "reason": "Passing mention in a list of assumptions."
+    },
+    {
+      "id": 4109,
+      "keep": true,
+      "reason": "Substantive quote and discussion of his viewpoint."
+    },
+    {
+      "id": 4116,
+      "keep": true,
+      "reason": "Substantive discussion of her experiments."
+    },
+    {
+      "id": 4123,
+      "keep": true,
+      "reason": "Substantive discussion of his book and arguments."
+    },
+    {
+      "id": 4125,
+      "keep": true,
+      "reason": "Substantive mention of his work applying the framework."
+    },
+    {
+      "id": 4127,
+      "keep": false,
+      "reason": "Passing mention in a list of associated figures."
+    },
+    {
+      "id": 4130,
+      "keep": false,
+      "reason": "Throwaway pluralized example in a list."
+    },
+    {
+      "id": 4131,
+      "keep": false,
+      "reason": "Throwaway pluralized example in a list."
+    },
+    {
+      "id": 4132,
+      "keep": false,
+      "reason": "Throwaway pluralized example in a list."
+    },
+    {
+      "id": 4151,
+      "keep": false,
+      "reason": "Passing example in a personal narrative."
+    },
+    {
+      "id": 4157,
+      "keep": true,
+      "reason": "Analyzed for its marginal category behavior."
+    },
+    {
+      "id": 4168,
+      "keep": true,
+      "reason": "Analyzed for its historical change and category behavior."
+    },
+    {
+      "id": 4169,
+      "keep": true,
+      "reason": "Analyzed for its specific grammatical profile."
+    },
+    {
+      "id": 4170,
+      "keep": true,
+      "reason": "Analyzed for its specific category-straddling behavior."
+    },
+    {
+      "id": 4171,
+      "keep": false,
+      "reason": "Repeated mention introducing the analysis, redundant with 4172 on the same line."
+    },
+    {
+      "id": 4172,
+      "keep": true,
+      "reason": "Substantive linguistic analysis of its category behavior (lacks contrast)."
+    },
+    {
+      "id": 4174,
+      "keep": false,
+      "reason": "Repeated mention concluding the same paragraph's analysis, redundant with 4172."
+    },
+    {
+      "id": 4177,
+      "keep": true,
+      "reason": "Substantive discussion of his book's application."
+    },
+    {
+      "id": 4181,
+      "keep": false,
+      "reason": "Passing name drop in a list of associated researchers."
+    },
+    {
+      "id": 4182,
+      "keep": false,
+      "reason": "Passing name drop in a list of associated researchers."
+    },
+    {
+      "id": 4184,
+      "keep": false,
+      "reason": "Passing name drop in a list of variationists."
+    },
+    {
+      "id": 4185,
+      "keep": false,
+      "reason": "Passing name drop in a list of variationists."
+    },
+    {
+      "id": 4187,
+      "keep": false,
+      "reason": "Passing name drop in a list of typologists."
+    },
+    {
+      "id": 4188,
+      "keep": false,
+      "reason": "Passing name drop in a list of typologists."
+    },
+    {
+      "id": 4189,
+      "keep": false,
+      "reason": "Repeated passing mention as an example."
+    },
+    {
+      "id": 4190,
+      "keep": false,
+      "reason": "Repeated passing mention as an example."
+    },
+    {
+      "id": 4191,
+      "keep": false,
+      "reason": "Repeated mention adding no new discussion."
+    },
+    {
+      "id": 4192,
+      "keep": true,
+      "reason": "Introduces specific problem with the word's categorization."
+    },
+    {
+      "id": 4193,
+      "keep": false,
+      "reason": "Repeated mention right after 4192."
+    },
+    {
+      "id": 4209,
+      "keep": true,
+      "reason": "Analyzed for its historical stability across centuries."
+    }
+  ],
+  "notes": [
+    "Retained names with substantive discussion of their theories or framing. Dropped citation-like name drops (Illari, Williamson, Quirk, Jespersen) and passing historical mentions (Shakespeare).",
+    "Retained lexical items that are the subject of specific linguistic analysis (e.g., 'otherwise', 'pease', 'cattle', '-se'). Dropped items used only as generic examples ('dog', 'run', 'beware') or repeated in lists without new analysis.",
+    "Retained substantive discussions of names (Pullum, Rosch, Lakoff, Taylor) and dropped passing lists of names (Langacker, Bybee, Goldberg, Labov, Tagliamonte, Haspelmath, Croft).",
+    "Retained occurrences of lexical items ('fun', 'cattle', 'otherwise') where their grammatical profile, historical change, or category behavior are actually analyzed, while dropping passing references, throwaway plurals, and adjacent redundant mentions."
+  ],
+  "meta": {
+    "types": [
+      "language",
+      "name"
+    ],
+    "source_report": "reports/book-indexer-judgment-subject-name-glossary.json",
+    "strict_mode": true
+  }
+}

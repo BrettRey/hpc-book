@@ -9,7 +9,97 @@ A theory that survives every possible result explains nothing; if it can't lose,
 
 The constructive argument is behind us: definitions fail, mechanisms do the work, projectibility\ixsq{projectibility} is indexed to purpose, and the case studies have put the framework under load. Now comes the expensive part. A framework earns its keep only when it names the outcomes that would kill it~-- and shows its receipts.
 
-This chapter is short on purpose. No new slogan, no new case study. Just a gauntlet: what we predict, what would falsify those predictions, and what work follows if we take the risk seriously. Build studies that can make the framework wrong. That's the instruction.
+This chapter is short on purpose. No new slogan, no new case study. Just a gauntlet: what we predict, what would falsify those predictions, and what work follows if we take the risk seriously. Build studies that can make the framework wrong. That's the instruction. Figure~\ref{fig:16:gauntlet} maps the evaluation pathway.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.55cm and 1.8cm,
+    % Node styles (matching Ch 10 conventions)
+    entrybox/.style={
+        rectangle, draw, rounded corners=3pt, thick,
+        minimum width=4.2cm, minimum height=0.8cm,
+        align=center, font=\small\bfseries
+    },
+    gatebox/.style={
+        rectangle, draw, rounded corners=3pt, fill=black!5,
+        minimum width=4.2cm, minimum height=0.8cm,
+        align=center, font=\small
+    },
+    gauntletbox/.style={
+        rectangle, draw, rounded corners=3pt, fill=black!10,
+        minimum width=5.6cm, align=left,
+        font=\small, text width=5.4cm, inner sep=8pt
+    },
+    exitbox/.style={
+        rectangle, draw=black!50, dashed, rounded corners=2pt,
+        minimum height=0.6cm,
+        align=center, font=\footnotesize
+    },
+    verdictbox/.style={
+        rectangle, draw, rounded corners=3pt, thick,
+        minimum width=2.2cm, minimum height=0.7cm,
+        align=center, font=\small\scshape
+    },
+    % Arrow styles
+    pass/.style={->, >={Stealth[length=3mm]}, thick},
+    fail/.style={->, >={Stealth[length=2.5mm]}, thick, dashed, draw=black!50}
+]
+
+% === ENTRY ===
+\node[entrybox] (entry) {Proposed category};
+
+% === THREE DEBTS ===
+\node[gatebox, below=0.9cm of entry] (d1) {1.\ Show clustering};
+\node[gatebox, below=0.5cm of d1] (d2) {2.\ Identify stabilizers};
+\node[gatebox, below=0.5cm of d2] (d3) {3.\ Demonstrate projection};
+
+% === EXIT BRANCHES ===
+\node[exitbox, right=1.8cm of d1] (e1) {Not a candidate};
+\node[exitbox, right=1.8cm of d2] (e2) {Essentialist challenge};
+\node[exitbox, right=1.8cm of d3] (e3) {Nominalist challenge};
+
+% === GAUNTLET BOX ===
+\node[gauntletbox, below=1cm of d3] (gauntlet) {%
+    \textbf{Predictions}\\[2pt]
+    \hspace{0.3cm}Asymmetric fraying?\\
+    \hspace{0.3cm}Sticky-lock drift order?\\[6pt]
+    \textbf{Stress tests}\\[2pt]
+    \hspace{0.3cm}Mechanism-light projection?\\
+    \hspace{0.3cm}Baseline parity after controls?%
+};
+
+% === VERDICTS ===
+\node[verdictbox, below left=1.2cm and 2cm of gauntlet] (confirm) {confirm};
+\node[verdictbox, below=1.2cm of gauntlet] (narrow) {narrow};
+\node[verdictbox, below right=1.2cm and 2cm of gauntlet] (downgrade) {downgrade};
+
+% === MAIN SPINE ===
+\draw[pass] (entry) -- (d1);
+\draw[pass] (d1) -- (d2);
+\draw[pass] (d2) -- (d3);
+\draw[pass] (d3) -- (gauntlet);
+
+% === FAIL EXITS ===
+\draw[fail] (d1.east) -- (e1.west);
+\draw[fail] (d2.east) -- (e2.west);
+\draw[fail] (d3.east) -- (e3.west);
+
+% === VERDICT ARROWS ===
+\draw[pass] (gauntlet.south) -- ++(0,-0.35) -| (confirm.north);
+\draw[pass] (gauntlet.south) -- (narrow.north);
+\draw[pass] (gauntlet.south) -- ++(0,-0.35) -| (downgrade.north);
+
+% === GROUP LABELS ===
+\node[font=\footnotesize, text=black!60, rotate=90, anchor=south]
+    at ([xshift=-0.6cm]d2.west) {Three debts};
+\node[font=\footnotesize, text=black!60, rotate=90, anchor=south]
+    at ([xshift=-0.6cm]gauntlet.west) {Gauntlet};
+
+\end{tikzpicture}
+\caption{The evaluation gauntlet. Every proposed category owes three debts (solid path); failure at any gate exits to the named challenge (dashed). Categories that clear all three enter the gauntlet: two predictions the framework bets on, and two stress tests that could kill it. Cumulative evidence determines the verdict.}
+\label{fig:16:gauntlet}
+\end{figure}
 
 One running case will keep this honest: English\ixgq{English} \mention{data}\ixlq{data}. Picture a conference Q\&A. A corpus linguist puts up a slide: \enquote{The data \emph{is} clear.} Someone in the third row winces. Someone else nods. In the hallway afterwards, the argument isn't about the findings; it's about the verb\ixsq{verb}. That argument is the test bench~-- not because \mention{data}\ixlq{data} is exotic, but because it sits exactly where the framework has to perform: at a boundary that's shifting, conditioned, and measurable.
 
@@ -133,7 +223,7 @@ Nominalist stress test & Baseline random-walk or convenience-label models match 
 
 The machinery is straightforward: hierarchical models for variance structure, changepoint or state-space methods for lag estimates, held-out log-loss on out-of-construction splits for baseline comparisons. The details belong in a preregistration, not a book chapter.
 
-As Chapters~\ref{ch:projectibility} and \ref{ch:countability} stress, didactic ABMs are mechanism\ixsq{mechanism} sketches, not alibis; status judgements rest on replicated empirical datasets, not on one toy trajectory.
+As Chapters~\ref{ch:projectibility} and \ref{ch:countability} stress, didactic ABMs\ixsq{agent-based model} are mechanism\ixsq{mechanism} sketches, not alibis; status judgements rest on replicated empirical datasets, not on one toy trajectory.
 
 \section{Conclusion: the zipper\ixsq{zipper} under load}
 \label{sec:16:zipper-at-scale}
