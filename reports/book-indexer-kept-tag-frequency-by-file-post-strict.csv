@@ -1,0 +1,707 @@
+file,term,count
+"appendix_diagnostics.tex","homeostasis",3
+"appendix_diagnostics.tex","projectibility",2
+"appendix_diagnostics.tex","mechanism",2
+"appendix_diagnostics.tex","HPC",1
+"appendix_how_written.tex","bidirectional inference",1
+"chapter01.tex","otherwise",18
+"chapter01.tex","prototype",10
+"chapter01.tex","cattle",9
+"chapter01.tex","noun",8
+"chapter01.tex","fun",8
+"chapter01.tex","category",6
+"chapter01.tex","essentialism",6
+"chapter01.tex","near",5
+"chapter01.tex","adverb",4
+"chapter01.tex","verb",4
+"chapter01.tex","adjective",4
+"chapter01.tex","gradience",3
+"chapter01.tex","subject",3
+"chapter01.tex","nounhood",3
+"chapter01.tex","maintenance view",3
+"chapter01.tex","preposition",2
+"chapter01.tex","phoneme",2
+"chapter01.tex","run",2
+"chapter01.tex","dog",2
+"chapter01.tex","feature bundle",2
+"chapter01.tex","pease",2
+"chapter01.tex","Taylor, John",2
+"chapter01.tex","cognitive linguistics",2
+"chapter01.tex","Huddleston, Rodney",1
+"chapter01.tex","the",1
+"chapter01.tex","construction",1
+"chapter01.tex","think",1
+"chapter01.tex","pin",1
+"chapter01.tex","pen",1
+"chapter01.tex","honorific",1
+"chapter01.tex","gonna",1
+"chapter01.tex","Aristotle",1
+"chapter01.tex","beware",1
+"chapter01.tex","homonymy",1
+"chapter01.tex","Chomsky, Noam",1
+"chapter01.tex","object",1
+"chapter01.tex","Jespersen, Otto",1
+"chapter01.tex","Quirk, Randolph",1
+"chapter01.tex","feature system",1
+"chapter01.tex","Baker, Mark",1
+"chapter01.tex","bachelor",1
+"chapter01.tex","Katz, Jerrold",1
+"chapter01.tex","nearer",1
+"chapter01.tex","nearest",1
+"chapter01.tex","-se",1
+"chapter01.tex","-s",1
+"chapter01.tex","pea",1
+"chapter01.tex","cow",1
+"chapter01.tex","Shakespeare, William",1
+"chapter01.tex","quickly",1
+"chapter01.tex","inflectional class",1
+"chapter01.tex","thematic role",1
+"chapter01.tex","speech act",1
+"chapter01.tex","information structure",1
+"chapter01.tex","kind",1
+"chapter01.tex","Dik, Simon C.",1
+"chapter01.tex","Role and Reference Grammar",1
+"chapter01.tex","macrorole",1
+"chapter01.tex","Pullum, Geoffrey K.",1
+"chapter01.tex","Rosch, Eleanor",1
+"chapter01.tex","Lakoff, George",1
+"chapter01.tex","Langacker, Ronald",1
+"chapter01.tex","feature matrix",1
+"chapter01.tex","acceptability",1
+"chapter01.tex","grammaticality",1
+"chapter01.tex","Bybee, Joan",1
+"chapter01.tex","Goldberg, Adele",1
+"chapter01.tex","variationist linguistics",1
+"chapter01.tex","Labov, William",1
+"chapter01.tex","Tagliamonte, Sali",1
+"chapter01.tex","typology",1
+"chapter01.tex","Haspelmath, Martin",1
+"chapter01.tex","Croft, William",1
+"chapter01.tex","nominalism",1
+"chapter01.tex","usage-based linguistics",1
+"chapter01.tex","construction grammar",1
+"chapter01.tex","sociolinguistics",1
+"chapter01.tex","functionalism",1
+"chapter02.tex","essentialism",30
+"chapter02.tex","category",16
+"chapter02.tex","verb",14
+"chapter02.tex","auxiliary",13
+"chapter02.tex","subject",12
+"chapter02.tex","species",7
+"chapter02.tex","grammar",6
+"chapter02.tex","phoneme",5
+"chapter02.tex","Aristotle",4
+"chapter02.tex","grammaticalization",4
+"chapter02.tex","noun",3
+"chapter02.tex","preposition",3
+"chapter02.tex","homeostatic property cluster",2
+"chapter02.tex","near",2
+"chapter02.tex","adjective",2
+"chapter02.tex","kind",2
+"chapter02.tex","mechanism",2
+"chapter02.tex","gradience",2
+"chapter02.tex","anaphor",1
+"chapter02.tex","interrogative phrase",1
+"chapter02.tex","bounding node",1
+"chapter02.tex","voice",1
+"chapter02.tex","feature bundle",1
+"chapter02.tex","canonical clause",1
+"chapter02.tex","contrast",1
+"chapter02.tex","verbless clause",1
+"chapter02.tex","will",1
+"chapter02.tex","boundary case",1
+"chapter02.tex","standing wave",1
+"chapter02.tex","nominalism",1
+"chapter03.tex","gender",19
+"chapter03.tex","kind",18
+"chapter03.tex","category",15
+"chapter03.tex","noun",12
+"chapter03.tex","grammaticality",9
+"chapter03.tex","mechanism",8
+"chapter03.tex","essentialism",7
+"chapter03.tex","classifier",6
+"chapter03.tex","aspect",6
+"chapter03.tex","comparative concept",5
+"chapter03.tex","nominalism",5
+"chapter03.tex","definiteness",5
+"chapter03.tex","interpretant",4
+"chapter03.tex","habit",4
+"chapter03.tex","analogy",3
+"chapter03.tex","adjective",3
+"chapter03.tex","construction",2
+"chapter03.tex","verb",2
+"chapter03.tex","spinning top",2
+"chapter03.tex","acceptability",2
+"chapter03.tex","construction grammar",2
+"chapter03.tex","gradience",2
+"chapter03.tex","sociolinguistics",2
+"chapter03.tex","homeostatic property cluster",2
+"chapter03.tex","preposition",2
+"chapter03.tex","prototype",2
+"chapter03.tex","class",2
+"chapter03.tex","contrast",2
+"chapter03.tex","grammar",2
+"chapter03.tex","ungrammatical",2
+"chapter03.tex","subject",1
+"chapter03.tex","passive",1
+"chapter03.tex","transmission",1
+"chapter03.tex","functionalism",1
+"chapter03.tex","inference",1
+"chapter03.tex","species",1
+"chapter03.tex","projectable",1
+"chapter03.tex","grammaticalization",1
+"chapter03.tex","identifiability",1
+"chapter03.tex","familiarity",1
+"chapter03.tex","uniqueness",1
+"chapter03.tex","value",1
+"chapter03.tex","projectibility",1
+"chapter04.tex","noun",5
+"chapter04.tex","mechanism",4
+"chapter04.tex","interactive alignment",4
+"chapter04.tex","homeostasis",4
+"chapter04.tex","maintenance view",3
+"chapter04.tex","HPC",3
+"chapter04.tex","category",3
+"chapter04.tex","kind",3
+"chapter04.tex","fun",3
+"chapter04.tex","species",2
+"chapter04.tex","verb",2
+"chapter04.tex","entrenchment",2
+"chapter04.tex","Boyd, Richard",1
+"chapter04.tex","Millikan, Ruth",1
+"chapter04.tex","copied kind",1
+"chapter04.tex","etiological kind",1
+"chapter04.tex","unicept",1
+"chapter04.tex","Illari, Phyllis McKay",1
+"chapter04.tex","Williamson, Jon",1
+"chapter04.tex","stabilizer",1
+"chapter04.tex","meta-Occam",1
+"chapter04.tex","acquisition",1
+"chapter04.tex","animacy",1
+"chapter04.tex","auxiliary",1
+"chapter04.tex","iterated transmission",1
+"chapter04.tex","Khalidi, Muhammad Ali",1
+"chapter04.tex","simple causal theory",1
+"chapter04.tex","stable",1
+"chapter04.tex","instance stability",1
+"chapter04.tex","cliquish stability",1
+"chapter04.tex","field-relative projectibility",1
+"chapter04.tex","deitality",1
+"chapter04.tex","near",1
+"chapter04.tex","symmetry condition",1
+"chapter04.tex","dominance condition",1
+"chapter04.tex","class",1
+"chapter04.tex","Aristotle",1
+"chapter04.tex","comparative concept",1
+"chapter04.tex","definiteness",1
+"chapter05.tex","basin",21
+"chapter05.tex","HPC",14
+"chapter05.tex","relative tolerance",10
+"chapter05.tex","gradience",9
+"chapter05.tex","category",8
+"chapter05.tex","acceptability",6
+"chapter05.tex","alignment",5
+"chapter05.tex","adjective",5
+"chapter05.tex","fun",4
+"chapter05.tex","dynamic discreteness",3
+"chapter05.tex","gender",3
+"chapter05.tex","grammaticality",3
+"chapter05.tex","near",3
+"chapter05.tex","essentialism",2
+"chapter05.tex","prototype",2
+"chapter05.tex","verb",2
+"chapter05.tex","noun",2
+"chapter05.tex","ungrammatical",2
+"chapter05.tex","grammar",2
+"chapter05.tex","preposition",2
+"chapter05.tex","definiteness",2
+"chapter05.tex","maintenance view",1
+"chapter05.tex","analogy",1
+"chapter05.tex","spinning top",1
+"chapter05.tex","acquisition",1
+"chapter05.tex","entrenchment",1
+"chapter05.tex","interactive alignment",1
+"chapter05.tex","iterated transmission",1
+"chapter05.tex","crosscutting kinds",1
+"chapter05.tex","subject",1
+"chapter05.tex","kind",1
+"chapter05.tex","phenomenology",1
+"chapter05.tex","homeostatic property cluster",1
+"chapter05.tex","mixture",1
+"chapter06.tex","mechanism",50
+"chapter06.tex","category",34
+"chapter06.tex","stabilizer",18
+"chapter06.tex","social indexing",15
+"chapter06.tex","transmission",13
+"chapter06.tex","processing economy",12
+"chapter06.tex","entrenchment",7
+"chapter06.tex","construction",7
+"chapter06.tex","maintenance view",5
+"chapter06.tex","register",5
+"chapter06.tex","projectibility",5
+"chapter06.tex","alignment",5
+"chapter06.tex","particle",5
+"chapter06.tex","noun",3
+"chapter06.tex","social meaning",3
+"chapter06.tex","basin",3
+"chapter06.tex","HPC",3
+"chapter06.tex","acquisition",3
+"chapter06.tex","analogy",2
+"chapter06.tex","kind",2
+"chapter06.tex","indexical field",2
+"chapter06.tex","information structure",2
+"chapter06.tex","acceptability",2
+"chapter06.tex","inference",1
+"chapter06.tex","meta-Occam",1
+"chapter06.tex","standardization",1
+"chapter06.tex","indexicality",1
+"chapter06.tex","error and repair",1
+"chapter06.tex","creativity",1
+"chapter06.tex","prototype",1
+"chapter06.tex","aspect",1
+"chapter06.tex","compositionality",1
+"chapter06.tex","maintained kind",1
+"chapter07.tex","projectibility",43
+"chapter07.tex","mechanism",41
+"chapter07.tex","category",38
+"chapter07.tex","aspect",25
+"chapter07.tex","habit",18
+"chapter07.tex","maintenance view",17
+"chapter07.tex","perfective",16
+"chapter07.tex","animacy",15
+"chapter07.tex","would-be",10
+"chapter07.tex","entrenchment",8
+"chapter07.tex","field-relative projectibility",7
+"chapter07.tex","kind",7
+"chapter07.tex","interpretant",7
+"chapter07.tex","noun",7
+"chapter07.tex","inference",5
+"chapter07.tex","verb",5
+"chapter07.tex","boundedness",4
+"chapter07.tex","HPC",4
+"chapter07.tex","field",4
+"chapter07.tex","NPI",3
+"chapter07.tex","alignment",3
+"chapter07.tex","object",3
+"chapter07.tex","proper name",3
+"chapter07.tex","definiteness",3
+"chapter07.tex","deitality",3
+"chapter07.tex","homeostasis",2
+"chapter07.tex","class",2
+"chapter07.tex","essentialism",2
+"chapter07.tex","grammar",2
+"chapter07.tex","countability",2
+"chapter07.tex","identifiability",2
+"chapter07.tex","uniqueness",2
+"chapter07.tex","gender",2
+"chapter07.tex","nominalism",1
+"chapter07.tex","mechanistic drift",1
+"chapter07.tex","comparative concept",1
+"chapter07.tex","agent-based model",1
+"chapter07.tex","feature system",1
+"chapter07.tex","form cluster",1
+"chapter07.tex","subject",1
+"chapter07.tex","familiarity",1
+"chapter07.tex","contrast",1
+"chapter07.tex","adjective",1
+"chapter07.tex","designatum",1
+"chapter07.tex","antecedent",1
+"chapter07.tex","acquisition",1
+"chapter07.tex","stabilizer",1
+"chapter07.tex","register",1
+"chapter08.tex","adverb",17
+"chapter08.tex","mechanism",13
+"chapter08.tex","homeostasis",12
+"chapter08.tex","category",10
+"chapter08.tex","HPC",9
+"chapter08.tex","class",9
+"chapter08.tex","non-finite clause",8
+"chapter08.tex","projectibility",8
+"chapter08.tex","kind",7
+"chapter08.tex","inflation problem",6
+"chapter08.tex","preposition",6
+"chapter08.tex","loose coupling",5
+"chapter08.tex","stabilizer",4
+"chapter08.tex","alignment",4
+"chapter08.tex","epistemic kind",4
+"chapter08.tex","two-diagnostic test",4
+"chapter08.tex","fat class",4
+"chapter08.tex","maintenance view",4
+"chapter08.tex","auxiliary",4
+"chapter08.tex","habit",4
+"chapter08.tex","subject",3
+"chapter08.tex","voice",3
+"chapter08.tex","entrenchment",3
+"chapter08.tex","adjective",3
+"chapter08.tex","contrast",3
+"chapter08.tex","phoneme",3
+"chapter08.tex","construction",3
+"chapter08.tex","mode",3
+"chapter08.tex","hard coupling",3
+"chapter08.tex","composite coupling",3
+"chapter08.tex","perturbation sensitivity",2
+"chapter08.tex","social indexing",2
+"chapter08.tex","passive",2
+"chapter08.tex","infinitival complement",2
+"chapter08.tex","comparative concept",2
+"chapter08.tex","gradience",2
+"chapter08.tex","definiteness",2
+"chapter08.tex","deitality",2
+"chapter08.tex","maintained kind",1
+"chapter08.tex","transmission",1
+"chapter08.tex","boundedness",1
+"chapter08.tex","perfective",1
+"chapter08.tex","register",1
+"chapter08.tex","meta-Occam",1
+"chapter08.tex","acceptability",1
+"chapter08.tex","would-be",1
+"chapter08.tex","Madagascar fallacy",1
+"chapter08.tex","species",1
+"chapter08.tex","acquisition",1
+"chapter08.tex","homeostatic property cluster",1
+"chapter08.tex","workarounds",1
+"chapter08.tex","animacy",1
+"chapter08.tex","factivity",1
+"chapter08.tex","typology",1
+"chapter08.tex","bidirectional inference",1
+"chapter08.tex","interpretant",1
+"chapter08.tex","field",1
+"chapter08.tex","inference",1
+"chapter08.tex","countability",1
+"chapter08.tex","gender",1
+"chapter08.tex","designatum",1
+"chapter09.tex","countability",29
+"chapter09.tex","count cluster",26
+"chapter09.tex","basin",16
+"chapter09.tex","singulative",16
+"chapter09.tex","bidirectional inference",10
+"chapter09.tex","HPC",8
+"chapter09.tex","mechanism",6
+"chapter09.tex","individuation cluster",6
+"chapter09.tex","would-be",6
+"chapter09.tex","homeostasis",5
+"chapter09.tex","inference",4
+"chapter09.tex","atomicity",3
+"chapter09.tex","grammar",3
+"chapter09.tex","acquisition",3
+"chapter09.tex","functional anchoring",3
+"chapter09.tex","classifier",3
+"chapter09.tex","projectibility",3
+"chapter09.tex","prototype",2
+"chapter09.tex","chunking",2
+"chapter09.tex","entrenchment",2
+"chapter09.tex","category",2
+"chapter09.tex","ungrammatical",2
+"chapter09.tex","gradience",2
+"chapter09.tex","homeostatic property cluster",1
+"chapter09.tex","stabilizer",1
+"chapter09.tex","interpretant",1
+"chapter09.tex","kind",1
+"chapter09.tex","boundedness",1
+"chapter09.tex","enumerability",1
+"chapter09.tex","homogeneity resistance",1
+"chapter09.tex","mass-word",1
+"chapter09.tex","grammaticality",1
+"chapter09.tex","spinning top",1
+"chapter09.tex","analogy",1
+"chapter09.tex","transmission",1
+"chapter09.tex","comparative concept",1
+"chapter09.tex","acceptability",1
+"chapter09.tex","two-diagnostic test",1
+"chapter09.tex","form cluster",1
+"chapter09.tex","identifiability",1
+"chapter09.tex","familiarity",1
+"chapter09.tex","uniqueness",1
+"chapter09.tex","verb",1
+"chapter10.tex","definiteness",36
+"chapter10.tex","form cluster",22
+"chapter10.tex","uniqueness",16
+"chapter10.tex","identifiability",14
+"chapter10.tex","referent",13
+"chapter10.tex","deitality",11
+"chapter10.tex","familiarity",11
+"chapter10.tex","grammaticalization",9
+"chapter10.tex","proper function",8
+"chapter10.tex","mechanism",8
+"chapter10.tex","HPC",7
+"chapter10.tex","countability",5
+"chapter10.tex","kind",5
+"chapter10.tex","would-be",4
+"chapter10.tex","alignment",3
+"chapter10.tex","construction",3
+"chapter10.tex","interpretant",3
+"chapter10.tex","acquisition",3
+"chapter10.tex","value",3
+"chapter10.tex","bidirectional inference",2
+"chapter10.tex","individuation cluster",2
+"chapter10.tex","count cluster",2
+"chapter10.tex","anaphoric recoverability",2
+"chapter10.tex","mechanistic drift",2
+"chapter10.tex","species",2
+"chapter10.tex","homeostasis",2
+"chapter10.tex","category",2
+"chapter10.tex","verb",2
+"chapter10.tex","weak definite",1
+"chapter10.tex","basin",1
+"chapter10.tex","crosscutting kinds",1
+"chapter10.tex","projectibility",1
+"chapter10.tex","habit",1
+"chapter10.tex","zipper",1
+"chapter10.tex","field-relative projectibility",1
+"chapter10.tex","prototype",1
+"chapter10.tex","Normal conditions",1
+"chapter10.tex","derived",1
+"chapter10.tex","interactive alignment",1
+"chapter10.tex","prestige selection",1
+"chapter10.tex","transmission",1
+"chapter10.tex","two-diagnostic test",1
+"chapter10.tex","classifier",1
+"chapter10.tex","noun",1
+"chapter10.tex","adverb",1
+"chapter11.tex","category",61
+"chapter11.tex","adjective",22
+"chapter11.tex","adverb",20
+"chapter11.tex","noun",15
+"chapter11.tex","mechanism",14
+"chapter11.tex","class",13
+"chapter11.tex","HPC",13
+"chapter11.tex","interrogative",13
+"chapter11.tex","pro-form",10
+"chapter11.tex","verb",8
+"chapter11.tex","acquisition",6
+"chapter11.tex","analogy",6
+"chapter11.tex","deitality",5
+"chapter11.tex","entrenchment",4
+"chapter11.tex","gender",4
+"chapter11.tex","grammar",3
+"chapter11.tex","field-relative projectibility",3
+"chapter11.tex","maintenance view",3
+"chapter11.tex","referent",3
+"chapter11.tex","projectibility",3
+"chapter11.tex","essentialism",2
+"chapter11.tex","nounhood",2
+"chapter11.tex","construction",2
+"chapter11.tex","comparative concept",2
+"chapter11.tex","value",2
+"chapter11.tex","transmission",2
+"chapter11.tex","contrast",2
+"chapter11.tex","antecedent",2
+"chapter11.tex","IRE words",2
+"chapter11.tex","identifiability",1
+"chapter11.tex","uniqueness",1
+"chapter11.tex","familiarity",1
+"chapter11.tex","definiteness",1
+"chapter11.tex","hard coupling",1
+"chapter11.tex","loose coupling",1
+"chapter11.tex","composite coupling",1
+"chapter11.tex","fat class",1
+"chapter11.tex","Communicative Situations",1
+"chapter11.tex","com-sit",1
+"chapter11.tex","habit",1
+"chapter11.tex","grammaticalization",1
+"chapter11.tex","pro-form inventory",1
+"chapter12.tex","gender",75
+"chapter12.tex","pro-form",35
+"chapter12.tex","antecedent",30
+"chapter12.tex","designatum",26
+"chapter12.tex","referent",22
+"chapter12.tex","HPC",8
+"chapter12.tex","interrogative",6
+"chapter12.tex","pro-form inventory",6
+"chapter12.tex","value",6
+"chapter12.tex","entrenchment",6
+"chapter12.tex","acquisition",5
+"chapter12.tex","inference",4
+"chapter12.tex","epicene",4
+"chapter12.tex","habit",3
+"chapter12.tex","mechanism",3
+"chapter12.tex","category",3
+"chapter12.tex","alignment",3
+"chapter12.tex","construction",3
+"chapter12.tex","ungrammatical",2
+"chapter12.tex","conditioned",2
+"chapter12.tex","animacy",2
+"chapter12.tex","bidirectional inference",2
+"chapter12.tex","semantic transparency",2
+"chapter12.tex","mechanistic drift",2
+"chapter12.tex","object",1
+"chapter12.tex","would-be",1
+"chapter12.tex","stabilizer",1
+"chapter12.tex","personhood cluster",1
+"chapter12.tex","transmission",1
+"chapter12.tex","interactive alignment",1
+"chapter12.tex","two-diagnostic test",1
+"chapter12.tex","projectibility",1
+"chapter12.tex","homeostasis",1
+"chapter12.tex","dialect",1
+"chapter12.tex","standardization",1
+"chapter12.tex","gradience",1
+"chapter12.tex","countability",1
+"chapter13.tex","object",31
+"chapter13.tex","interpretant",30
+"chapter13.tex","zipper",8
+"chapter13.tex","stabilizer",8
+"chapter13.tex","phoneme",7
+"chapter13.tex","HPC",7
+"chapter13.tex","habit",6
+"chapter13.tex","construction",6
+"chapter13.tex","composite coupling",5
+"chapter13.tex","hard coupling",4
+"chapter13.tex","loose coupling",4
+"chapter13.tex","kind",4
+"chapter13.tex","analogy",3
+"chapter13.tex","inference",3
+"chapter13.tex","field",3
+"chapter13.tex","value",2
+"chapter13.tex","alignment",2
+"chapter13.tex","contrast",2
+"chapter13.tex","category",2
+"chapter13.tex","projectibility",2
+"chapter13.tex","transmission",2
+"chapter13.tex","grammaticality",2
+"chapter13.tex","countability",1
+"chapter13.tex","standardization",1
+"chapter13.tex","classifier",1
+"chapter13.tex","register",1
+"chapter13.tex","identifiability",1
+"chapter13.tex","uniqueness",1
+"chapter13.tex","definiteness",1
+"chapter13.tex","information structure",1
+"chapter13.tex","entrenchment",1
+"chapter13.tex","bidirectional inference",1
+"chapter13.tex","would-be",1
+"chapter13.tex","two-diagnostic test",1
+"chapter14.tex","grammaticality",52
+"chapter14.tex","value",29
+"chapter14.tex","detector",29
+"chapter14.tex","ungrammatical",15
+"chapter14.tex","entrenchment",14
+"chapter14.tex","feeling of ungrammaticality",13
+"chapter14.tex","structural meaning",13
+"chapter14.tex","zipper",12
+"chapter14.tex","register",10
+"chapter14.tex","HPC",8
+"chapter14.tex","grammar",7
+"chapter14.tex","immune system",7
+"chapter14.tex","category",7
+"chapter14.tex","appropriateness",7
+"chapter14.tex","acceptability",6
+"chapter14.tex","mechanism",6
+"chapter14.tex","construction",6
+"chapter14.tex","discourse community",5
+"chapter14.tex","would-be",5
+"chapter14.tex","contrast",5
+"chapter14.tex","stabilizer",4
+"chapter14.tex","phenomenology",4
+"chapter14.tex","habit",3
+"chapter14.tex","basin",3
+"chapter14.tex","homeostasis",3
+"chapter14.tex","kind",2
+"chapter14.tex","countability",2
+"chapter14.tex","deitality",2
+"chapter14.tex","dialect",2
+"chapter14.tex","object",2
+"chapter14.tex","interpretant",2
+"chapter14.tex","selective fallibility",2
+"chapter14.tex","phoneme",2
+"chapter14.tex","nounhood",2
+"chapter14.tex","standing wave",2
+"chapter14.tex","spinning top",2
+"chapter14.tex","syntactic satiation",2
+"chapter14.tex","schema drift",2
+"chapter14.tex","projectibility",2
+"chapter14.tex","definiteness",2
+"chapter14.tex","information structure",1
+"chapter14.tex","subcompositional",1
+"chapter14.tex","wiring diagram",1
+"chapter14.tex","grammatical basin",1
+"chapter14.tex","alignment",1
+"chapter14.tex","aspect",1
+"chapter14.tex","garden-path sentence",1
+"chapter14.tex","comparative illusion",1
+"chapter14.tex","Escher sentence",1
+"chapter14.tex","verb",1
+"chapter14.tex","rerepresentation",1
+"chapter14.tex","conspicuous absence",1
+"chapter14.tex","workarounds",1
+"chapter14.tex","two-diagnostic test",1
+"chapter14.tex","contingent",1
+"chapter15.tex","dialect",17
+"chapter15.tex","conditioned",10
+"chapter15.tex","register",10
+"chapter15.tex","inference",10
+"chapter15.tex","category",9
+"chapter15.tex","double copula",8
+"chapter15.tex","HPC",8
+"chapter15.tex","grammar",7
+"chapter15.tex","discourse community",6
+"chapter15.tex","construction",4
+"chapter15.tex","mixed bin",4
+"chapter15.tex","mixture",4
+"chapter15.tex","indexical field",4
+"chapter15.tex","immune system",3
+"chapter15.tex","alignment",3
+"chapter15.tex","homeostasis",3
+"chapter15.tex","mechanism",3
+"chapter15.tex","field",3
+"chapter15.tex","mode",3
+"chapter15.tex","indexicality",3
+"chapter15.tex","interactive alignment",2
+"chapter15.tex","projectable",2
+"chapter15.tex","particle",2
+"chapter15.tex","sociolinguistics",2
+"chapter15.tex","projectibility",2
+"chapter15.tex","maintenance view",2
+"chapter15.tex","noun",2
+"chapter15.tex","subject",2
+"chapter15.tex","iterated transmission",1
+"chapter15.tex","countability",1
+"chapter15.tex","transmission",1
+"chapter15.tex","unconditioned probability",1
+"chapter15.tex","conditioned probability",1
+"chapter15.tex","typology",1
+"chapter15.tex","fat class",1
+"chapter15.tex","field-relative projectibility",1
+"chapter15.tex","orderly heterogeneity",1
+"chapter15.tex","basin",1
+"chapter15.tex","tenor",1
+"chapter15.tex","acquisition",1
+"chapter15.tex","Communicative Situations",1
+"chapter15.tex","com-sit",1
+"chapter15.tex","social meaning",1
+"chapter15.tex","ungrammatical",1
+"chapter15.tex","value",1
+"chapter15.tex","would-be",1
+"chapter15.tex","detector",1
+"chapter15.tex","grammaticality",1
+"chapter15.tex","identifiability",1
+"chapter15.tex","deitality",1
+"chapter16.tex","category",9
+"chapter16.tex","mechanism",5
+"chapter16.tex","singulative",3
+"chapter16.tex","alignment",3
+"chapter16.tex","zipper",3
+"chapter16.tex","projectibility",2
+"chapter16.tex","adjective",2
+"chapter16.tex","verb",1
+"chapter16.tex","meta-Occam",1
+"chapter16.tex","maintenance view",1
+"chapter16.tex","functional anchoring",1
+"chapter16.tex","basin",1
+"chapter16.tex","projectable",1
+"section1-2-revised.tex","prototype",20
+"section1-2-revised.tex","category",6
+"section1-2-revised.tex","noun",5
+"section1-2-revised.tex","gradience",3
+"section1-2-revised.tex","essentialism",2
+"section1-2-revised.tex","adjective",2
+"section1-2-revised.tex","cognitive linguistics",1
+"section1-2-revised.tex","nounhood",1
+"section1-2-revised.tex","fun",1
+"section1-2-revised.tex","acceptability",1
+"section1-2-revised.tex","grammaticality",1
+"section1-2-revised.tex","analogy",1
+"section1-2-revised.tex","entrenchment",1
+"section1-2-revised.tex","adverb",1
+"section1-2-revised.tex","verb",1
+"section1-2-revised.tex","homeostatic property cluster",1

@@ -1,0 +1,513 @@
+entries:
+- term: maintenance view
+  type: subject
+- term: Boyd, Richard
+  type: name
+- term: Millikan, Ruth
+  type: name
+- term: Illari, Phyllis McKay
+  type: name
+- term: Williamson, Jon
+  type: name
+- term: entrenchment
+  type: subject
+- term: interactive alignment
+  type: subject
+- term: Khalidi, Muhammad Ali
+  type: name
+- term: homeostatic property cluster
+  type: subject
+- term: Chomsky, Noam
+  type: name
+- term: verbless clause
+  type: subject
+- term: preposition
+  type: subject
+- term: adverb
+  type: subject
+- term: Huddleston, Rodney
+  type: name
+- term: definiteness
+  type: subject
+- term: construction
+  type: subject
+- term: phoneme
+  type: subject
+- term: register
+  type: subject
+- term: honorific
+  type: subject
+- term: category
+  type: subject
+- term: noun
+  type: subject
+- term: essentialism
+  type: subject
+- term: Aristotle
+  type: name
+- term: prototype
+  type: subject
+- term: gradience
+  type: subject
+- term: homonymy
+  type: subject
+- term: adjective
+  type: subject
+- term: subject
+  type: subject
+- term: object
+  type: subject
+- term: verb
+  type: subject
+- term: Jespersen, Otto
+  type: name
+- term: Quirk, Randolph
+  type: name
+- term: feature system
+  type: subject
+- term: Baker, Mark
+  type: name
+- term: Katz, Jerrold
+  type: name
+- term: feature bundle
+  type: subject
+- term: fun
+  type: subject
+- term: near
+  type: subject
+- term: boundary case
+  type: subject
+- term: Shakespeare, William
+  type: name
+- term: construction type
+  type: subject
+- term: inflectional class
+  type: subject
+- term: thematic role
+  type: subject
+- term: speech act
+  type: subject
+- term: information structure
+  type: subject
+- term: mechanism
+  type: subject
+- term: Langacker, Ronald
+  type: name
+- term: Dik, Simon C.
+  type: name
+- term: Role and Reference Grammar
+  type: subject
+- term: macrorole
+  type: subject
+- term: Pullum, Geoffrey K.
+  type: name
+- term: Rosch, Eleanor
+  type: name
+- term: Lakoff, George
+  type: name
+- term: Taylor, John
+  type: name
+- term: cognitive linguistics
+  type: subject
+- term: feature matrix
+  type: subject
+- term: Goodman, Nelson
+  type: name
+- term: nounhood
+  type: subject
+- term: Bybee, Joan
+  type: name
+- term: Goldberg, Adele
+  type: name
+- term: variationist linguistics
+  type: subject
+- term: Labov, William
+  type: name
+- term: Tagliamonte, Sali
+  type: name
+- term: typology
+  type: subject
+- term: Haspelmath, Martin
+  type: name
+- term: Croft, William
+  type: name
+- term: Bell, John
+  type: name
+- term: nominalism
+  type: subject
+- term: usage-based linguistics
+  type: subject
+- term: construction grammar
+  type: subject
+- term: sociolinguistics
+  type: subject
+- term: functionalism
+  type: subject
+- term: composite coupling
+  type: subject
+- term: hard coupling
+  type: subject
+- term: loose coupling
+  type: subject
+- term: homeostatic property cluster (HPC)
+  type: subject
+- term: HPC
+  type: subject
+- term: projectibility
+  type: subject
+- term: homeostasis
+  type: subject
+- term: stabilizer
+  type: subject
+- term: alignment
+  type: subject
+- term: analogy
+  type: subject
+- term: error and repair
+  type: subject
+- term: processing economy
+  type: subject
+- term: social indexing
+  type: subject
+- term: indexicality
+  type: subject
+- term: creativity
+  type: subject
+- term: standardization
+  type: subject
+- term: meta-Occam
+  type: subject
+- term: class
+  type: subject
+- term: kind
+  type: subject
+- term: value
+  type: subject
+- term: habit
+  type: subject
+- term: interpretant
+  type: subject
+- term: would-be
+  type: subject
+- term: acquisition
+  type: subject
+- term: transmission
+  type: subject
+- term: proper function
+  type: subject
+- term: derived proper function
+  type: subject
+- term: deitality
+  type: subject
+- term: fat class
+  type: subject
+- term: thin class
+  type: subject
+- term: inflation problem
+  type: subject
+- term: comparative concept
+  type: subject
+- term: epistemic kind
+  type: subject
+- term: Madagascar fallacy
+  type: subject
+- term: etiological kind
+  type: subject
+- term: simple causal theory
+  type: subject
+- term: stable property cluster
+  type: subject
+- term: instance stability
+  type: subject
+- term: symmetry condition
+  type: subject
+- term: dominance condition
+  type: subject
+- term: species
+  type: subject
+- term: countability
+  type: subject
+- term: individuation cluster
+  type: subject
+- term: boundedness
+  type: subject
+- term: atomicity
+  type: subject
+- term: enumerability
+  type: subject
+- term: homogeneity resistance
+  type: subject
+- term: count cluster
+  type: subject
+- term: bidirectional inference
+  type: subject
+- term: functional anchoring
+  type: subject
+- term: mass-word
+  type: subject
+- term: quasi-count noun
+  type: subject
+- term: singulative
+  type: subject
+- term: classifier
+  type: subject
+- term: chunking
+  type: subject
+- term: basin (attractor)
+  type: subject
+- term: basin
+  type: subject
+- term: definiteness cluster
+  type: subject
+- term: familiarity
+  type: subject
+- term: uniqueness
+  type: subject
+- term: identifiability
+  type: subject
+- term: anaphoric recoverability
+  type: subject
+- term: prestige selection
+  type: subject
+- term: form cluster
+  type: subject
+- term: weak definite
+  type: subject
+- term: Normal conditions
+  type: subject
+- term: field-relative projectibility
+  type: subject
+- term: two-diagnostic test
+  type: subject
+- term: proper noun
+  type: subject
+- term: proper name
+  type: subject
+- term: auxiliary
+  type: subject
+- term: voice
+  type: subject
+- term: anaphor
+  type: subject
+- term: interrogative phrase
+  type: subject
+- term: bounding node
+  type: subject
+- term: canonical clause
+  type: subject
+- term: animacy
+  type: subject
+- term: factivity
+  type: subject
+- term: copied kind
+  type: subject
+- term: unicept
+  type: subject
+- term: iterated transmission
+  type: subject
+- term: perturbation sensitivity
+  type: subject
+- term: cliquish stability
+  type: subject
+- term: dynamic discreteness
+  type: subject
+- term: real gradience
+  type: subject
+- term: relative tolerance
+  type: subject
+- term: mechanistic drift
+  type: subject
+- term: aspect
+  type: subject
+- term: negative polarity item (NPI)
+  type: subject
+- term: NPI
+  type: subject
+- term: perfective
+  type: subject
+- term: grue problem
+  type: subject
+- term: crosscutting kinds
+  type: subject
+- term: grammaticalization
+  type: subject
+- term: replicator
+  type: subject
+- term: interactor
+  type: subject
+- term: non-finite clause
+  type: subject
+- term: open texture
+  type: subject
+- term: Backgrounded Constituent Infelicity
+  type: subject
+- term: gender
+  type: subject
+- term: epicene
+  type: subject
+- term: designatum
+  type: subject
+- term: semantic transparency
+  type: subject
+- term: personhood cluster
+  type: subject
+- term: pro-form inventory
+  type: subject
+- term: grammaticality
+  type: subject
+- term: acceptability
+  type: subject
+- term: structural meaning
+  type: subject
+- term: grammaticality illusion
+  type: subject
+- term: zipper
+  type: subject
+- term: detector
+  type: subject
+- term: comparative illusion
+  type: subject
+- term: Escher sentence
+  type: subject
+- term: selective fallibility
+  type: subject
+- term: double copula
+  type: subject
+- term: cultural attractor
+  type: subject
+- term: mixed bin
+  type: subject
+- term: conditioned probability
+  type: subject
+- term: unconditioned probability
+  type: subject
+- term: maintained kind
+  type: subject
+- term: dialect
+  type: subject
+- term: field
+  type: subject
+- term: tenor
+  type: subject
+- term: mode
+  type: subject
+- term: discourse community
+  type: subject
+- term: Communicative Situation (com-sit)
+  type: subject
+- term: com-sit
+  type: subject
+- term: general category fallacy
+  type: subject
+- term: looping kind
+  type: subject
+- term: interactive kind
+  type: subject
+- term: social meaning
+  type: subject
+- term: indexical field
+  type: subject
+- term: thick term
+  type: subject
+- term: agent-based model
+  type: subject
+- term: particle
+  type: subject
+- term: infinitival complement
+  type: subject
+- term: perfect construction
+  type: subject
+- term: progressive construction
+  type: subject
+- term: lexical category
+  type: subject
+- term: pro-form
+  type: subject
+- term: IRE words
+  type: subject
+- term: referent
+  type: subject
+- term: antecedent
+  type: subject
+- term: adposition
+  type: subject
+- term: grammatical basin
+  type: subject
+- term: maintenance mechanism
+  type: subject
+- term: feeling of ungrammaticality
+  type: subject
+- term: agreement attraction
+  type: subject
+- term: fluency
+  type: subject
+- term: tip-of-the-tongue
+  type: subject
+- term: passive
+  type: subject
+- term: declarative
+  type: subject
+- term: interrogative
+  type: subject
+- term: imperative
+  type: subject
+- term: compositionality
+  type: subject
+- term: inference
+  type: subject
+- term: appropriateness
+  type: subject
+- term: standing wave
+  type: subject
+- term: spinning top
+  type: subject
+- term: syntactic satiation
+  type: subject
+- term: schema drift
+  type: subject
+- term: rerepresentation
+  type: subject
+- term: conspicuous absence
+  type: subject
+- term: garden-path sentence
+  type: subject
+- term: conditioned system
+  type: subject
+- term: orderly heterogeneity
+  type: subject
+- term: projectable
+  type: subject
+- term: academic register
+  type: subject
+- term: basin recognition
+  type: subject
+- term: mixture
+  type: subject
+- term: real general
+  type: subject
+- term: Language Acquisition Device
+  type: subject
+- term: subcompositional
+  type: subject
+- term: ungrammatical
+  type: subject
+- term: wiring diagram
+  type: subject
+- term: immune system
+  type: subject
+- term: phenomenology
+  type: subject
+- term: contrast
+  type: subject
+- term: workarounds
+  type: subject
+- term: contingent
+  type: subject
+- term: grammar
+  type: subject
+- term: conditioned
+  type: subject
+- term: Communicative Situations
+  type: subject
+- term: slur
+  type: subject
