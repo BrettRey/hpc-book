@@ -1,4 +1,4 @@
-# Chapter Outline: Language Without Essences: The Metaphysics of Linguistic Categories
+# Chapter Outline: Words That Won't Hold Still
 
 ## Part I: The Problem (3 chapters)
 
@@ -11,47 +11,52 @@
 - Setting up the stakes: linguistics has a problem it doesn't know it has
 - The "Impasse": Essentialism fails on data; Prototype Theory fails on explanation.
 - Teaser examples outside morphosyntax: phoneme contrasts, register/style, pragmatic labels
-- *Note: HPC introduction moved to Part II.*
+- The Huddleston email as through-line (returns three times)
 
 ### Ch 2: Essentialism and its discontents
-*Why the default view fails—furniture, weak definites, boundary cases*
+*Why the default view fails -- the CGEL verbless-clause microcosm*
 
 **Key points:**
 - The essentialist default: necessary and sufficient conditions
-- Systematic failures: *furniture*, *the*, reciprocals
-- Essentialist pressure points beyond grammar (phonemes, register, pragmatic taxonomies)
-- Boundary cases aren't noise—they're evidence
+- Systematic failures: *CGEL* verbless clause, "subject" across traditions, phoneme concepts
+- The diachronic challenge: grammaticalization of *will*, standing-wave metaphor
+- Boundary cases aren't noise -- they're evidence
 - The "blocked question": definition-seeking vs. mechanism-seeking
-- *Note: "The temptation" section moved/integrated into Chapter 3.*
+- Biology parallel: species concepts, *Smilodon*/*Thylacosmilus*
+- Why essentialism persists: textbooks, publication norms, engineering
 
 ### Ch 3: What we haven't been asking
-*The pivot: The nominalist temptation and why it fails*
+*The pivot: nominalism fails too; the maintenance question*
 
 **Key points:**
-- **The nominalist temptation:** Haspelmath's "comparative concepts" argument. If definitions fail, maybe categories are just convenient fictions?
-- **The cost:** If categories are just yardsticks, cross-linguistic stability is unexplained.
-- **The nominalist overcorrection:** Conflating "no essence" with "no determinacy."
-- **The need for discipline:** If some categories are natural kinds and some aren't, we need criteria.
-- **The questions neither tradition has posed:** What maintains stability without essence?
-- Preview the book's bigger promise: a sieve for linguistic categories, not just grammatical ones
+- **The nominalist temptation:** Haspelmath's "comparative concepts," Croft's RCG
+- **The cost:** Cross-linguistic stability unexplained if categories are just yardsticks
+- Phase-transition analogy (water/ice/steam): discrete without essence
+- Island constraints (Cuneo & Goldberg): mechanism replaces definition
+- Survey of approaches with "the right instincts": usage-based, CxG, sociolinguistics, functionalism
+- **Peirce-Boyd synthesis introduced:** cable metaphor + interpretant-as-habit (Peirce); HPC kinds (Boyd)
+- **The lexeme obsession:** feature systems (gender, number, tense, definiteness) neglected
+- Extended English/Shilluk/Japanese number comparison
+- Preview of grammaticality as maintained cluster
 
 ---
 
-## Part II: The Fix
+## Part II: The Fix (5 chapters)
 
-### Ch 4: Homeostatic Property Clusters
+### Ch 4: Categories without essences
 *The third option: neither essence nor fiction*
 
 **Key points:**
-- The species problem in biology: Boyd's HPC solution
-- What HPC kinds are: property clusters + mechanisms
-- The standing-wave metaphor: dynamic stability
-- Sciences that made the shift (biology, chemistry)
-- From biology to linguistics: the parallel (grammar, phonology, register)
-- Mechanisms preview (acquisition, entrenchment, alignment, transmission) — *conceptual intro; full treatment in Ch 7*
-- What counts as explanation: mechanism-talk vs. circular classification
-- HPC recovers determinacy: causal grounding, localized indeterminacy
-- Neo-Aristotelian coda: Ch 2 exonerated Aristotle; Ch 4 recovers him
+- Boyd's HPC framework and Millikan's copied kinds/unicepts
+- The species/grammar parallel with mechanism-mapping table
+- The HPC commitment: property cluster + maintenance processes → projectible generalisations
+- Five stabilizers sketched (acquisition, entrenchment, alignment, transmission, functional pressure)
+- Interlocutors: Khalidi (simple causal theory), Slater (stable property clusters), Magnus (natural kind not needed)
+- Engagement with Ambridge's radical exemplar model (honeycomb turned back)
+- Sign language convergence (NSL, ABSL, Battison)
+- Falsification section: what would count against the framework
+- Comparative-concepts subsection engages Haspelmath
+- Neo-Aristotelian coda
 
 ### Ch 5: Discrete from continuous
 *The discreteness problem and its hyperreal solution*
@@ -59,135 +64,178 @@
 **Key points:**
 - The discreteness problem: continuous substrates → discrete categories
 - Phase transitions as model: scale-dependent tolerance
-- The hyperreal formalization: infinitesimals, sharp boundaries
-- From heaps to categories: multi-dimensional feature spaces
-- Mechanisms and basins: geometry + maintenance — *applied to discreteness; deep-dive in Ch 7*
-- Worked non-grammar example: phoneme boundaries from continuous cues
-- Gradient judgments, discrete categories
-- Dual membership explained
+- Hyperreal formalization: Relative Tolerance, sharp boundary at hypernatural index
+- Distinguished from Williamson (epistemicism) and Khalidi (fuzzy realism)
+- Multi-dimensional feature space: basins, ridges, saddle points
+- Gower-style embedding with weighted norms
+- Three worked examples: *fun* drift (COHA), English reciprocals (correspondence analysis), Shilluk number
+- Two-layer model: grammaticality (discrete) vs. acceptability (noisy measurement)
+- Variance-at-boundaries prediction → Ch 14
 
-### Ch 6: Projectibility and the good bet
-*The epistemic payoff*
+### Ch 6: The Stabilizers
+*The mechanistic story -- biological explanatory style*
 
 **Key points:**
+- Mechanism inventory along two dimensions: timescale × locus (four-quadrant figure)
+- Fedorenko et al. (2024): forcing function is specifically communicative
+- **Case study 1:** Quotatives (*be like*, German *so*, Japanese *tte*, Turkish *diye*) -- convergent maintenance
+- Five-stabilizer stress test with perturbation-prediction table
+- **Case study 2:** Independent relative *whose* -- maintained from below by parsing, not from above by social pressure
+- Mechanisms as categories, categories as mechanisms (self-application)
+- Anti-foundationalist epistemology: explanatory networks don't need bedrock
+- Theoretical commitments: process ontology, interventionist realism, reciprocal maintenance
+
+### Ch 7: Projectibility and the good bet
+*The epistemic payoff -- what mechanisms buy*
+
+**Key points:**
+- Central claim: projectibility is what mechanisms are *for*; what makes a category real
 - **The HPC Slogan:** "A category is a profile, stabilized by mechanisms, projectible relative to purposes."
-- **The definitional bet:** Definitions are predictions about clustering, not constitutive truths.
-- **The mechanistic alternative:** Projectibility tracks mechanism, not definition (Polish aspect & Goodman's grue).
-- **Field-Relative Projectibility:** Projectibility is indexed to analytical purpose. Different subfields may have different right-sized categories for overlapping extensions.
-- **The "Tomato Hook":** Botanist (fruit) vs. Chef (vegetable) as lay-accessibility bridge.
-- **Three-way discipline:** Metaphysics (mechanism) vs. Epistemology (projectibility) vs. Pragmatics (purpose/domain).
-- **Generalising the lesson:** Definitional failure as diagnostic; mechanism-based success.
-- **The epistemic payoff:** Degrees of projectibility; why we are entitled to induce.
+- **Polish aspect:** Divjak et al.'s three models; definitional model predicts worst
+- Volcanic-island metaphor: semantic distinctions go dormant; lexeme-specific cues maintain pattern
+- **Peircean apparatus:** interpretant = habit of inference; projectibility = would-be; Goodman's grue dissolved
+- Correlation vs. mediation: NPI contrast case
+- **Field-relative projectibility:** tomato, proper noun/name, constituency/dependency, colour non-grammaticalisation
+- Prasertsom et al.: animacy-based noun classes learned better than colour-based (domain-general bias)
+- Degrees of projectibility: variance tracks entrenchment strength
+- Interest-relativity isn't circular (Craver, Onishi and Serpico, Lemeire)
 
-### Ch 7: The Stabilisers (renamed from Homeostasis)
-*The mechanistic story — biological explanatory style*
-
-**Key points:**
-- The cluster: what properties co-occur? (macrophage → nouns)
-- Stabilisers at multiple scales (cognitive, acquisition, discourse, social, transmission)
-- Variation as activation states: same kind, different state under different signals
-- One case in depth: **TBD — evidentials (Japanese/Turkish) or cross-linguistic quotatives**
-- Side-by-side sketches: contrast maintenance (phonology) and social enforcement (register)
-- Robustness tests: learning transfer, intervention stability, cross-context generalisation
-- Degrees of projectibility: mechanism support → stability gradient
-- Commitments: process ontology, reciprocal realism, variation as signal, cross-level coherence
-- *Scope: Full treatment of mechanisms previewed in Ch 4; applied to basins in Ch 5*
-- *Integrated citations: MacKenzie 2019, Weiner & Labov 1983*
-
-### Ch 8: Failure modes—thin, fat, negative
+### Ch 8: Failure modes -- thin, fat, negative
 *How to know when you don't have a kind*
 
 **Key points:**
-- **The Inflation Problem:** Why we see HPCs everywhere (payoff vs property confusion)
-- **O'Connor's Diagnostic:** Payoff similarity ≠ property similarity (sim-max games)
-- **Thin clustering:** Insufficient homeostasis (whose-stranding, nonce coinages)
-- **Fat clustering:** Multiple kinds lumped together (adverb wastebasket)
-- **Negative diagnosis:** Taxonomic convenience, not natural kind (non-finite)
-- **The Grain Question:** Madagascar analogy—individual constructions are HPCs, "grammar" is an ecosystem
-- Non-grammar worked failure: a familiar pragmatic or register label that looks useful but doesn't behave like a kind
-- **Two-Diagnostic Test:** Projectibility (epistemic) + Homeostasis (ontological)
-- **Principled criteria for kind-hood:** Learning transfer, intervention stability, cross-context generalisation
+- **The inflation problem:** framework must exclude to explain
+- **Thin clustering:** preposition copying (Radford & Felser), *cromulent* (Miller)
+- **Fat clustering:** adverb wastebasket (Ernst), *otherwise* (Huddleston)
+- **Negative diagnosis:** *non-finite clause*, Left Branch Condition
+- **The grain question:** Madagascar analogy; individual constructions are HPCs, "grammar" is an ecosystem
+- **Two-diagnostic test:** Projectibility + Homeostasis
+- **Seven-step HPC-kind audit template** (reusable in Part III)
+- **Coupling continuum (§8.x):** hard (phonemes) → loose (grammatical categories) → composite (constructions). This section introduces the theoretical vocabulary that structures all of Part III and the scale-invariance argument in Ch 13.
 
 ---
 
-## Part III: Categories Reconsidered
+## Part III: Categories Reconsidered (5 chapters)
 *Case studies in field-relative projectibility*
 
+**Design note:** The case studies are ordered from tightest coupling to loosest. Ch 9 (countability) is the strongest, most data-rich case; each subsequent chapter loosens the coupling and shows what happens when maintenance thins. This is deliberate: the sequence demonstrates the framework's range, not diminishing quality.
+
 ### Ch 9: Countability
-*A grammatical category done right*
+*A grammatical category done right -- the tightest coupling*
 
 **Key points:**
-- Property cluster for countability
-- Mechanisms stabilizing count/mass distinction
-- Peripheral cases as tolerated variation
+- Two-cluster architecture: individuation cluster (semantic) + count cluster (morphosyntactic)
+- Bidirectional inference holds the coupling
+- Implicational hierarchy: tight diagnostics fail before loose ones
+- Object-mass nouns (*furniture*, *footwear*) prove two-cluster architecture
+- Diachronic: *pea* (cluster extending), *data* (cluster eroding), *cattle* vs. *folks*
+- ABM simulation with 20-seed sensitivity runs and freeze-learning control
+- Cross-linguistic: Welsh singulatives, Mandarin classifiers, Halkomelem, Yudja
+- COCA frequency data (8.6-fold suppression of *three folks*)
 
 ### Ch 10: Definiteness and deitality
-*Form-meaning misalignment explained*
+*Form-meaning misalignment explained -- looser coupling*
 
 **Key points:**
-- Weak definites, generic definites, other "exceptions"
-- Form and function as separate HPC kinds
-- Why misalignment is stable
+- Two HPCs conflated: semantic definiteness (identifiability, uniqueness, familiarity) and form cluster (distributional profile from demonstrative source)
+- Three distributional diagnostics for the form cluster
+- Millikan's proper function + Himmelmann's context expansion explain the coupling
+- Weak definites, generic definites, narrative *this* as derived functions
+- "Deitality" terminology proposed
+- Five maintenance mechanisms for form cluster; developmental acquisition sequence for definiteness cluster
+- Cross-linguistic: Greek (articles with names), Japanese (demonstratives without articles)
 
 ### Ch 11: Lexical categories and their maintenance
-*What holds word classes together — or fails to*
+*Word classes on a gradient of mechanism density*
 
 **Key points:**
-- Adverbs as failure case (the wastebasket — no unified proper function)
-- Nouns/Verbs as robust HPCs (cross-linguistic stability, convergent mechanisms)
-- Adjectives as thinner HPCs (weaker maintenance regimes)
-- "Pronouns" as mechanism-braiding: Shark/Dolphin/Ichthyosaur convergent evolution
-- Scope framing: four major classes + pronouns; functional categories deferred
+- Gradient of mechanism density predicts cross-linguistic stability, acquisitional trajectory, diachronic resilience
+- **Robust:** Noun/verb as "skeleton" -- five converging mechanisms, shark/dolphin analogy
+- **Thin:** Adjective as "plumage" -- Dixon's typological gradient
+- **Fat:** Adverb as wastebasket -- no category-level coupling
+- **Braided:** Pronouns -- three independently maintained category types in one territory (lexical, operational IRE, semantic pro-form)
+- Diachronic: demonstrative stock vs. interrogative stock; acquisition recapitulates
+- *more* reclassification critique (Reynolds 2024)
 
-### Ch 12: Gender and the maintenance spectrum
-*From semantically transparent to purely entrenched*
-
-**Key points:**
-- English gender: designatum-driven (hierarchical personhood system)
-- French gender: entrenchment-driven (antecedent controls, semantic link dead)
-- German: hybrid (noun-class + referential overrides)
-- The maintenance spectrum: transparent ↔ entrenched
-- HPC predicts different learning curves, diachronic trajectories
-
-### Ch 13: The stack
-*From phonemes to constructions—variations in coupling*
+### Ch 12: Pro-form gender
+*Tight coupling, narrow scope -- the maintenance spectrum*
 
 **Key points:**
-- **The Phonology Exception:** Why phonemes don't decompose; acoustic and distributional properties as a single "hard-coupled" HPC.
-- **Morphemes:** Identifying the onset of form-meaning decoupling.
-- **The Stack:** From "hard-coupled" (phonology) to "loose-coupled" (grammatical categories).
-- **Constructions:** Re-uniting the profiles into a single communicative device.
-- **Scale-invariant framework.**
+- English gender as system-wide personhood partition across all pro-forms (not just he/she/it)
+- Two-cluster HPC: semantic personhood + lexico-grammatical pro-form inventory
+- Designatum/referent/antecedent three-way distinction
+- Three maintenance mechanisms: cognitive grounding, semantic transparency, alignment/repair
+- The maintenance spectrum: English (designatum-driven) → German (hybrid) → French (entrenchment-driven)
+- Chain-coherence and constructional-conditioning phenomena
+- Cross-linguistic: Haspelmath on who/what universal, Siemund on dialectal variation
+
+### Ch 13: The category zipper
+*Scale-invariance -- from phonemes to constructions*
+
+**Key points:**
+- HPC framework is scale-invariant; coupling regime varies
+- Zipper metaphor: teeth engage wherever mechanisms make engagement cheap
+- Four tiers: hard (phonemes, PHOIBLE data) → opaque (words, HistWords) → loose (grammatical categories, Part III synthesis) → composite (constructions, UD corpus battery)
+- Designed-to-fail controls: pooled resultatives, *X much?*
+- Negative cases: academic register, Indo-European, polysynthesis
+- Null case: Russian definiteness (coupling at zero)
+- **Note:** Discourse level appears in summary table but has no section or evidence -- needs addressing
 
 ---
 
-## Part IV: Implications
+## Part IV: Implications (3 chapters)
 
 ### Ch 14: Grammaticality itself
-*The deepest category, also an HPC*
+*The deepest category, also an HPC -- the zipper closing*
 
 **Key points:**
-- Grammaticality judgments: gradient, context-sensitive, stable.
-- The category "grammatical" as HPC kind.
-- **Form-meaning pairing as principled necessity**: If grammatical HPCs typically decompose into semantic + morphosyntactic clusters (the field-relativity principle), this explains CxG's claim that constructions are form-meaning pairings.
-- **Coupled mechanisms**: Acquisition data (Tomasello's "the Max") proves they are distinct-but-braided mechanisms, not a single monolithic whole.
+- Grammaticality as maintained coupling between morphosyntactic form and structural meaning
+- "Structural meaning" distinguished from compositional semantics, felicity, pragmatic inference
+- Ungrammaticality as immune system: noisy detector, not oracle
+- Five-part mechanism sketch (coupling state, processing channel, detector, threshold, entrenchment update)
+- Three-register phenomenology (qualitative jolt, reactive resistance, normative correction)
+- Grammaticality illusions: garden paths, comparative illusions (Phillips, Wagers, Lau)
+- Satiation: Snyder, left-branch extraction resistance, schema drift (Vagnino & Walker)
+- Individual differences tracking exposure ecologies (Dabrowska)
+- Dual-role thesis: grammaticality is both category and mechanism (spinning top)
+- Grammaticality as a species of appropriateness narrowed to morphosyntactic channel
 
-### Ch 15: What changes
-*Methodology, theory, typology—concrete consequences*
+### Ch 15: The social stabilization of kinds
+*Why categories stay aligned across speakers*
 
 **Key points:**
-- Methodological shifts: gradient judgments, corpus distributions, experimental probes
-- Theoretical dissolution: gradience vs. discreteness debate
-- Typological rigor: assessing cross-linguistic categories empirically
-- What questions linguists should now ask
+- Missing social layer: Part II's mechanisms are cognitive/individual; this adds inter-speaker convergence
+- Categories as coordination equilibria
+- Mixed-bin diagnostic: apparent looseness often = pooled tight subsystems
+- **Case studies:** double copula (Janda, Coppock), existential *there's/there are* (Krejci & Hilton)
+- Unmixing along two dimensions: community (dialect) and activity (register)
+- Belfast study (Milroy): network density collapse → feature levelling
+- Developmental: Wiese's communicative situations, Kinzler et al. infant source inference
+- Indexicality as inverse function: hearing form, attributing source
+- Return to Haspelmath/Croft nominalist challenge with equipped reply
+- O'Connor's coordination games: communicative clarity vs. identity management
+- Methodological commitment: "No conditioning gain, no maintenance claim"
+
+### Ch 16: What changes
+*The gauntlet -- predictions, stress tests, and defeat conditions*
+
+**Key points:**
+- Synthesis ledger (Table 16.1): mechanism commitment, observable signature, downgrade signal for each domain
+- **Prediction 1:** Asymmetric fraying -- diagnostics erode in structured order, not as uniform noise (*data* as running example)
+- **Prediction 2:** Sticky-lock drift -- usage/semantic pressure moves first, morphosyntactic locks lag and fail in bursts
+- **Stress test A (essentialist):** category that projects without identifiable maintenance
+- **Stress test B (nominalist):** variation as random walk after noise controls
+- Operationalising with named variables: hierarchical models, changepoint methods, held-out log-loss
+- Ontological commitment: the sustaining *is* the reality (Ladyman & Ross)
+- **Research agenda:** collects outstanding predictions from all chapters (see §16.x)
 
 ---
 
 ## Notes
 
-- Each chapter should include worked examples
-- Part III chapters are case studies demonstrating the framework
+- Each chapter includes worked examples
+- Part III is deliberately ordered from tightest to loosest coupling
 - Part IV synthesizes implications for practice
-- Target: ~15-20 pages per chapter for substantive chapters
+- Target: ~15--20 pages per chapter for substantive chapters
 
-**Total: 15 chapters across 4 parts** (Gender chapter added, December 2025)
+**Total: 16 chapters across 4 parts** (Social stabilization chapter added, February 2026)
