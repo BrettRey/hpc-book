@@ -263,10 +263,14 @@
 \newcommand{\ixn}[1]{#1\index[names]{#1}}           % Names: inline + tag
 \newcommand{\ixg}[1]{#1\index[languages]{#1}}       % Languages: inline + tag
 \newcommand{\ixl}[1]{\textit{#1}\index[lexical]{#1@\textit{#1}}} % Lexical: italicised + sorted correctly
+\newcommand{\ixls}[2]{\textit{#2}\index[lexical]{#1@\textit{#2}}} % Lexical: explicit sort key + display
 \newcommand{\ixsq}[1]{\index[subject]{#1}}          % Subject: tag only (quiet)
 \newcommand{\ixnq}[1]{\index[names]{#1}}            % Names: tag only (quiet)
 \newcommand{\ixgq}[1]{\index[languages]{#1}}        % Languages: tag only (quiet)
 \newcommand{\ixlq}[1]{\index[lexical]{#1@\textit{#1}}} % Lexical: tag only (quiet), sorted correctly
+\newcommand{\ixlqs}[2]{\index[lexical]{#1@\textit{#2}}} % Lexical: quiet tag with explicit sort/display
+\newcommand{\ixlgq}[3]{\index[lexical]{#1@\textit{#2} (#3)}\index[languages]{#3!Lexical items!#1@\textit{#2}}} % Lexical + language co-index
+\newcommand{\ixlgqs}[4]{\index[lexical]{#1@\textit{#2} (#3, ``#4'')}\index[languages]{#3!Lexical items!#1@\textit{#2} (``#4'')}} % Lexical + language + gloss
 
 % Label index pages with a page-number ref target
 \makeatletter

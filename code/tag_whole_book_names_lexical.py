@@ -2,12 +2,13 @@
 """Tag names and lexical items across all chapter .tex files.
 
 Name tags:
-- Insert \\ixnq{Family, Given} before \\textcite / \\citet / \\citeauthor
-  commands based on citation keys resolved via references.bib files.
+- Insert \\ixnq{Family, Given} before in-text citation commands using
+  citation keys resolved via references.bib files.
 
 Lexical tags:
-- Insert \\ixlq{term} after \\mention{term} when term looks like a simple
-  lexical item and no immediate lexical tag already follows.
+- Insert \\ixlq{term} after \\mention{term} for simple lexical mentions.
+- For complex \\mention{...} examples, infer topical terms from local context
+  and add one or two \\ixlq{term} tags when confidence is high enough.
 """
 
 from __future__ import annotations
@@ -36,36 +37,168 @@ CITE_RE = re.compile(
 )
 MENTION_RE = re.compile(r"\\mention\{(?P<body>[^{}]*)\}")
 ADJACENT_NAME_TAGS_RE = re.compile(r"(?:\\ixnq\{([^{}]+)\}\s*)+$")
-FOLLOWING_LEX_TAG_RE = re.compile(r"\s*\\ixlq\{[^{}]+\}")
+FOLLOWING_LEX_TAG_RE = re.compile(
+    r"\s*(?:\\ixlq\{[^{}]+\}|\\ixlqs\{[^{}]+\}\{[^{}]+\}|"
+    r"\\ixlgq\{[^{}]+\}\{[^{}]+\}\{[^{}]+\}|"
+    r"\\ixlgqs\{[^{}]+\}\{[^{}]+\}\{[^{}]+\}\{[^{}]+\})"
+)
 
 # Keep this conservative to avoid indexing full phrases/sentences.
 LEX_SIMPLE_RE = re.compile(r"^[A-Za-z][A-Za-z'-]*$")
 LEX_AFFIX_RE = re.compile(r"^-[A-Za-z]+$")
+LEX_TOKEN_RE = re.compile(r"[A-Za-z][A-Za-z'-]*")
 LEX_STOPWORDS = {
+    "about",
+    "after",
+    "all",
+    "also",
     "a",
     "an",
+    "any",
     "and",
     "are",
     "as",
     "at",
     "be",
+    "because",
+    "been",
+    "before",
+    "being",
+    "but",
+    "by",
+    "can",
+    "could",
+    "did",
+    "do",
+    "does",
+    "done",
     "for",
     "from",
+    "get",
+    "go",
+    "goes",
+    "going",
+    "had",
+    "has",
+    "have",
+    "he",
+    "her",
+    "hers",
+    "herself",
+    "him",
+    "himself",
+    "his",
+    "how",
+    "are",
     "i",
+    "if",
     "in",
+    "into",
     "is",
     "it",
+    "its",
+    "itself",
+    "just",
+    "left",
+    "let",
+    "like",
+    "made",
+    "make",
+    "many",
+    "me",
+    "might",
+    "more",
+    "most",
+    "my",
+    "myself",
+    "no",
+    "not",
+    "now",
+    "in",
     "of",
     "on",
+    "one",
+    "only",
     "or",
+    "other",
+    "our",
+    "ours",
+    "ourselves",
+    "out",
+    "quite",
+    "really",
+    "say",
+    "says",
+    "see",
+    "she",
+    "should",
+    "so",
+    "some",
+    "such",
+    "than",
     "that",
     "the",
+    "their",
+    "theirs",
+    "them",
+    "themselves",
+    "then",
+    "there",
+    "these",
+    "they",
     "this",
+    "those",
+    "through",
     "to",
+    "too",
+    "up",
+    "very",
     "was",
+    "we",
+    "well",
     "were",
+    "what",
+    "when",
+    "where",
+    "which",
+    "while",
+    "who",
+    "why",
     "with",
+    "would",
+    "you",
+    "your",
+    "yours",
+    "yourself",
+    "yourselves",
 }
+LEX_CONTEXT_CUES = (
+    "word",
+    "words",
+    "term",
+    "terms",
+    "label",
+    "labels",
+    "example",
+    "examples",
+    "expression",
+    "expressions",
+    "form",
+    "forms",
+    "item",
+    "items",
+    "called",
+    "means",
+    "meaning",
+)
+LEX_NP_HEAD_RE = re.compile(
+    r"\b(?:the|a|an|this|that|these|those|my|your|his|her|our|their)\s+"
+    r"(?:[A-Za-z][A-Za-z'-]*\s+){0,3}([A-Za-z][A-Za-z'-]*)\b",
+    flags=re.IGNORECASE,
+)
+LEX_CONTEXT_WINDOW = 240
+LEX_COMPLEX_MIN_SCORE = 4
+LEX_COMPLEX_MAX_TERMS = 1
 
 
 def clean_latex_text(text: str) -> str:
@@ -149,6 +282,122 @@ def normalize_lexical_term(text: str) -> str | None:
     return value
 
 
+def extract_existing_lexical_terms(text: str) -> set[str]:
+    terms: set[str] = set()
+    for m in re.finditer(r"\\ixlq\{([^{}]+)\}", text):
+        terms.add(m.group(1).strip().lower())
+    for m in re.finditer(r"\\ixlqs\{([^{}]+)\}\{[^{}]+\}", text):
+        terms.add(m.group(1).strip().lower())
+    for m in re.finditer(r"\\ixlgq\{([^{}]+)\}\{[^{}]+\}\{[^{}]+\}", text):
+        terms.add(m.group(1).strip().lower())
+    for m in re.finditer(
+        r"\\ixlgqs\{([^{}]+)\}\{[^{}]+\}\{[^{}]+\}\{[^{}]+\}", text
+    ):
+        terms.add(m.group(1).strip().lower())
+    return terms
+
+
+def singular_fallback(word: str) -> str:
+    if len(word) <= 3:
+        return word
+    if word.endswith("ies") and len(word) > 4:
+        return word[:-3] + "y"
+    if word.endswith("es") and len(word) > 4:
+        return word[:-2]
+    if word.endswith("s") and not word.endswith("ss"):
+        return word[:-1]
+    return word
+
+
+def tokenise_for_scoring(text: str) -> list[str]:
+    return [t.lower() for t in LEX_TOKEN_RE.findall(clean_latex_text(text))]
+
+
+def infer_complex_mention_terms(
+    body: str, prefix: str, suffix: str, known_terms: set[str]
+) -> list[str]:
+    # Skip command-heavy mentions; these are usually not lexical exemplars.
+    if "\\" in body:
+        return []
+    cleaned = clean_latex_text(body)
+    raw_tokens = LEX_TOKEN_RE.findall(cleaned)
+    if not raw_tokens:
+        return []
+
+    candidates: list[str] = []
+    seen: set[str] = set()
+    for tok in raw_tokens:
+        cand = tok.lower()
+        if cand in seen:
+            continue
+        if cand in LEX_STOPWORDS:
+            continue
+        if len(cand) < 2:
+            continue
+        seen.add(cand)
+        candidates.append(cand)
+    if not candidates:
+        return []
+
+    head_candidates: set[str] = set()
+    for m in LEX_NP_HEAD_RE.finditer(cleaned):
+        head = m.group(1).lower()
+        if head not in LEX_STOPWORDS:
+            head_candidates.add(head)
+
+    context_text = f"{prefix} {suffix}"
+    context_tokens = tokenise_for_scoring(context_text)
+    context_counts: dict[str, int] = {}
+    for tok in context_tokens:
+        context_counts[tok] = context_counts.get(tok, 0) + 1
+    near_context = clean_latex_text(prefix[-160:]).lower()
+    cue_bonus = any(cue in near_context for cue in LEX_CONTEXT_CUES)
+
+    scored: list[tuple[int, int, str]] = []
+    for i, cand in enumerate(candidates):
+        # Keep only terms that are already lexicalized, clear NP heads,
+        # or recurrent in the surrounding discussion.
+        if (
+            cand not in known_terms
+            and cand not in head_candidates
+            and context_counts.get(cand, 0) < 2
+        ):
+            continue
+        score = 0
+        if cand in head_candidates:
+            score += 2
+        if cand in known_terms:
+            score += 2
+        score += min(2, context_counts.get(cand, 0)) * 2
+        singular = singular_fallback(cand)
+        if singular != cand:
+            score += min(1, context_counts.get(singular, 0))
+        if cue_bonus and (context_counts.get(cand, 0) > 0):
+            score += 1
+        scored.append((score, -i, cand))
+
+    scored.sort(reverse=True)
+    picked: list[str] = []
+    for score, _, cand in scored:
+        if score < LEX_COMPLEX_MIN_SCORE:
+            continue
+        if cand not in picked:
+            picked.append(cand)
+        if len(picked) >= LEX_COMPLEX_MAX_TERMS:
+            break
+
+    # Fallback: for NP-like examples, index the head noun if it is context-backed.
+    if not picked and head_candidates:
+        # Determiner-headed lexical examples are common in this manuscript;
+        # prefer these when context confirms the head word.
+        for head in head_candidates:
+            if context_counts.get(head, 0) > 0 or head in known_terms:
+                picked.append(head)
+                break
+
+    return picked
+
+
 def extract_adjacent_name_tags(prefix: str) -> set[str]:
     tags: set[str] = set()
     # Collect only trailing adjacent ixnq tags.
@@ -161,7 +410,9 @@ def extract_adjacent_name_tags(prefix: str) -> set[str]:
     return tags
 
 
-def tag_file(path: Path, author_map: dict[str, list[str]]) -> tuple[int, int]:
+def tag_file(
+    path: Path, author_map: dict[str, list[str]], known_terms: set[str]
+) -> tuple[int, int]:
     text = path.read_text(encoding="utf-8")
     name_insertions: list[tuple[int, str]] = []
     lex_insertions: list[tuple[int, str]] = []
@@ -186,16 +437,24 @@ def tag_file(path: Path, author_map: dict[str, list[str]]) -> tuple[int, int]:
         tags = "".join(f"\\ixnq{{{author}}}" for author in missing)
         name_insertions.append((start, tags))
 
-    # Lexical tags after mention commands (simple lexical items only).
+    # Lexical tags after mention commands.
     for m in MENTION_RE.finditer(text):
         end = m.end()
         body = m.group("body")
-        term = normalize_lexical_term(body)
-        if not term:
-            continue
         if FOLLOWING_LEX_TAG_RE.match(text, end):
             continue
-        lex_insertions.append((end, f"\\ixlq{{{term}}}"))
+        term = normalize_lexical_term(body)
+        if term:
+            lex_insertions.append((end, f"\\ixlq{{{term}}}"))
+            continue
+
+        prefix = text[max(0, m.start() - LEX_CONTEXT_WINDOW) : m.start()]
+        suffix = text[end : end + LEX_CONTEXT_WINDOW]
+        inferred = infer_complex_mention_terms(body, prefix, suffix, known_terms)
+        if not inferred:
+            continue
+        tags = "".join(f"\\ixlq{{{term}}}" for term in inferred)
+        lex_insertions.append((end, tags))
 
     if not name_insertions and not lex_insertions:
         return 0, 0
@@ -230,16 +489,22 @@ def main() -> int:
     author_map = load_citation_author_map(bib_paths)
 
     files = sorted(chapters_dir.glob("*.tex"))
+    known_terms: set[str] = set()
+    for path in files:
+        known_terms |= extract_existing_lexical_terms(path.read_text(encoding="utf-8"))
+
     total_name = 0
     total_lex = 0
     touched = 0
     for path in files:
-        n, l = tag_file(path, author_map)
+        n, l = tag_file(path, author_map, known_terms)
         if n or l:
             touched += 1
             total_name += n
             total_lex += l
             print(f"{path}: +{n} names, +{l} lexical")
+            # Make newly inserted terms available to later files in the run.
+            known_terms |= extract_existing_lexical_terms(path.read_text(encoding="utf-8"))
     print(
         f"Done. files_touched={touched}, names_inserted={total_name}, lexical_inserted={total_lex}"
     )
