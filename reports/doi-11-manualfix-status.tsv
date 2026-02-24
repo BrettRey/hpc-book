@@ -1,0 +1,12 @@
+key	status_before	status_after	doi_before	doi_after
+dupre1993	doi_unresolved	missing_doi_candidate_medium	10.2307/j.ctv1pncnzh	
+rowlandpine2000	doi_unresolved	doi_ok	10.1016/S0010-0277(00)00100-0	10.1017/S0305000999004055
+pullum2019-normativity	doi_metadata_mismatch	doi_ok	10.5281/zenodo.2654375	10.5281/zenodo.2654367
+favier2021	doi_metadata_mismatch	doi_ok	10.1016/j.lingua.2020.102991	10.1016/j.lingua.2020.102991
+husic2021	doi_metadata_mismatch	doi_ok_author_variant	10.1017/9781108937979.017	10.1017/9781108937979.018
+remijsen2019dinka	doi_metadata_mismatch	missing_doi_candidate_low	10.1017/S0952675719000034	
+bertolotti2016	doi_metadata_mismatch	doi_ok	10.1075/ihll.10.02ber	10.1075/ihll.10.02ber
+jackendoff2023parallel	doi_metadata_mismatch	doi_ok	10.1111/tops.12684	10.1111/tops.12698
+ackerman2012fluency	doi_metadata_mismatch	doi_ok	10.1016/j.cognition.2012.07.012	10.3758/s13423-012-0305-z
+krejciHilton2022	doi_metadata_mismatch	doi_ok	10.1017/S0954394522000059	10.1017/S0954394517000096
+drummond_schleef2016_identity	doi_metadata_mismatch	doi_ok	10.4324/9781315669816	10.4324/9781315669816-13
