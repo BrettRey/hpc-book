@@ -30,9 +30,8 @@ LANGUAGE_INDEX_MAP = {
     "Canadian English": "English!Canadian",
     "American English": "English!American",
     "Internet English": "English!Internet",
-    "UD English": "English!UD",
     "AAVE": "English!African American (AAVE)",
-    "AAE": "English!African American (AAE)",
+    "AAE": "English!African American (AAVE)",
     "English": "English",
 
     # Sign languages / named sign systems
@@ -44,7 +43,7 @@ LANGUAGE_INDEX_MAP = {
     "ABSL": "Al-Sayyid Bedouin Sign Language (ABSL)",
     "NSL": "Nicaraguan Sign Language (NSL)",
     "BSL": "British Sign Language (BSL)",
-    "ISN": "Nicaraguan Sign Language (ISN)",
+    "ISN": "Nicaraguan Sign Language (NSL)",
 
     # Spoken languages
     "Mandarin Chinese": "Chinese!Mandarin",
