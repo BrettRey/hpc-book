@@ -6,7 +6,7 @@
 
 \section{Operationalizing the diagnostics}
 
-The two criteria are not operationalized symmetrically.
+The two criteria aren't operationalized symmetrically.
 
 Projectibility\ixsq{projectibility} is tested directly: the question is whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? This is tested via out-of-sample prediction: cross-validated classification accuracy, held-out F1 scores, cross-corpus transfer. Concrete thresholds can be declared in advance: ROC-AUC $\geq 0.70$, PR-AUC $\geq 0.70$, macro-F1 $\geq 0.35$, held-out cohesion $\geq 0.30$. These thresholds are somewhat arbitrary conventions, but that's the point: declaring them in advance disciplines the inference.
 
