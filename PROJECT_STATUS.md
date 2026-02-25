@@ -1,7 +1,31 @@
 # HPC Book Project Status
 
 **Date**: February 24, 2026
-**Current Phase**: Full 16-chapter draft in place; Part IV gauntlet/ABM evidence refinement active
+**Current Phase**: Full 16-chapter draft in place; revision/polish phase
+
+### Session Work (Feb 24, 2026 late: House-style batch fixes from editorial reports)
+- ✅ **All 9 editorial batch-fix tasks completed** across 16 chapter files (-64 lines net):
+  - Em-dash → en-dash in epigraph attributions (11 files)
+  - Backtick-tick quotes → `\enquote{}` (10 files)
+  - Bare `*` → `\ungram` markers (6 files, 11 instances)
+  - `\begin{exe}`/`\begin{xlist}` → `\ea`/`\z` in Ch 15
+  - Capitalise sentence-initial it's/that's (4 files, 15 instances)
+  - `\bigskip` removal (6 files, 32 instances)
+  - `\citet` → `\textcite` standardisation (11 files, 68 instances)
+  - Semantic macro fixes: `\emph{}` → `\term{}` for term introductions; `\textit{}` → `\mention{}` for linguistic forms (6 files, 10 instances)
+  - "HPC kind" → "HPC category" in book's own voice (7 files, ~23 instances); kept "kind" in Boyd attributions and philosophical contrasts
+  - Mechanical: Ch 4 grammar fix, Ch 2 table caption, Ch 14 LBE expansion, Ch 6 forward-reference tense (4 instances), Ch 4 `\term{Noun}` → `\term{noun}`
+- ✅ **Decision:** Ch 15 stays in Part IV
+- **Commit:** `20994a3` on `ch16-prose-rewrite`, pushed
+- **Remaining editorial work:**
+  - Ch 16 weak landing (second worked example, Ladyman & Ross, practical methodology)
+  - Peirce earned-or-imposed audit (Chs 7, 9–14)
+  - Discourse level missing from Ch 13 summary table
+  - Stabiliser vs mechanism terminology consistency
+  - Parallel Architecture paragraphs (Chs 1, 3)
+  - Bold labels in prose (~40+ instances, Chs 6, 7, 8, 10, 13)
+  - Peirce branch merge (`projectibility-pivot` → `ch16-prose-rewrite`)
+  - Bib style-field normalisation
 
 ### Session Work (Feb 24, 2026 PM: Full editorial review + critical bug fixes)
 - ✅ **16 chapter précis** written (parallel agents), 300-500 words each
