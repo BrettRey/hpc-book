@@ -88,4 +88,16 @@
 \printindex[languages]
 \printindex[lexical]
 
+% Ensure back cover starts on an even page.
+% If the next page is odd, insert one blank page (e.g., blank p. 425).
+\clearpage
+\ifodd\value{page}
+  \null
+  \thispagestyle{empty}
+  \clearpage
+\fi
+
+% Back cover
+\input{frontmatter/backcoverpage.tex}
+
 \end{document}
