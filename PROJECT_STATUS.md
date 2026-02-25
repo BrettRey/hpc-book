@@ -3,6 +3,17 @@
 **Date**: February 24, 2026
 **Current Phase**: Full 16-chapter draft in place; revision/polish phase
 
+### Session Work (Feb 25, 2026: Bibliography audit complete)
+- ✅ **Two-pass bibliography audit** across ~292 entries in central bib
+  - Pass 1: 17 fixes (fabricated authors, wrong entry types, incorrect pages/years/DOIs)
+  - Pass 2: 3 fixes (ross1967 redundant note, pullum2025 pages, ekstrom2025 now published)
+  - All fixes verified via Crossref API
+- ✅ **Local bib/chapter fixes**: fortson2004 author format, chapter11 citation key Gibson2026→gibson2025
+- ✅ **Cover page**: removed provisional-citations warning; draft disclaimer retained
+- ✅ **Final scan**: 2 remaining "advance online" / "forthcoming" entries confirmed genuinely unpublished (O'Doherty, Scott-Phillips)
+- **Commits:** `a092be0`, `6ea519e` on `ch16-prose-rewrite`, pushed
+- **Note:** Biber 2.19 cache corruption encountered; fixed by clearing PAR temp cache
+
 ### Session Work (Feb 24, 2026 late: House-style batch fixes from editorial reports)
 - ✅ **All 9 editorial batch-fix tasks completed** across 16 chapter files (-64 lines net):
   - Em-dash → en-dash in epigraph attributions (11 files)
