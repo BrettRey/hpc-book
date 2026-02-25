@@ -1,7 +1,13 @@
 # HPC Book Project Status
 
-**Date**: February 24, 2026
+**Date**: February 25, 2026
 **Current Phase**: Full 16-chapter draft in place; revision/polish phase
+
+### Session Work (Feb 25, 2026: Index cleanup + lexical gloss audit)
+- ✅ **HPC "applied to linguistics" reclassification completed**: 4 straggler tags fixed (ch03→`!defined`, ch05→`!cross-linguistic`, ch09→`!lexical categories`, ch14→`!grammaticality`). Zero bare or `!applied` tags remain.
+- ✅ **Lexical index gloss audit**: all 16 unglossed foreign-language entries now glossed across ch06, ch10, ch11, ch12 (Japanese, Turkish, Swahili, Latin, French, German, Greek). Rule: every non-English entry gets a gloss.
+- ✅ **Build verified**: 453 pages, all 4 indexes regenerate cleanly (0 makeindex warnings)
+- **Not yet committed**
 
 ### Session Work (Feb 25, 2026: Bibliography audit complete)
 - ✅ **Two-pass bibliography audit** across ~292 entries in central bib
