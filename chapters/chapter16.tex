@@ -13,6 +13,7 @@ This chapter is short on purpose. No new slogan, no new case study. Just a gaunt
 
 \begin{figure}[htbp]
 \centering
+\resizebox{0.85\textwidth}{!}{%
 \begin{tikzpicture}[
     node distance=0.55cm and 1.8cm,
     % Node styles (matching Ch 10 conventions)
@@ -70,9 +71,9 @@ This chapter is short on purpose. No new slogan, no new case study. Just a gaunt
 };
 
 % === VERDICTS ===
-\node[verdictbox, below left=1.2cm and 2cm of gauntlet] (confirm) {confirm};
+\node[verdictbox, below left=1.2cm and 1.2cm of gauntlet] (confirm) {confirm};
 \node[verdictbox, below=1.2cm of gauntlet] (narrow) {narrow};
-\node[verdictbox, below right=1.2cm and 2cm of gauntlet] (downgrade) {downgrade};
+\node[verdictbox, below right=1.2cm and 1.2cm of gauntlet] (downgrade) {downgrade};
 
 % === MAIN SPINE ===
 \draw[pass] (entry) -- (d1);
@@ -96,7 +97,7 @@ This chapter is short on purpose. No new slogan, no new case study. Just a gaunt
 \node[font=\footnotesize, text=black!60, rotate=90, anchor=south]
     at ([xshift=-0.6cm]gauntlet.west) {Gauntlet};
 
-\end{tikzpicture}
+\end{tikzpicture}}%
 \caption{The evaluation gauntlet. Every proposed category owes three debts (solid path); failure at any gate exits to the named challenge (dashed). Categories that clear all three enter the gauntlet: two predictions the framework bets on, and two stress tests that could kill it. Cumulative evidence determines the verdict.}
 \label{fig:16:gauntlet}
 \end{figure}
