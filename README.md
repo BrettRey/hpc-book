@@ -37,10 +37,11 @@ The book is organized in four parts:
 - Phonemes and register (non-grammar worked cases)
 - Long-standing puzzles resolved
 
-### Part IV: Implications
+### Part IV: What Changes
 - What this means for grammaticality
-- Consequences for linguistic practice
-- Methodological shifts
+- Social stabilization of categories
+- How categories travel (cross-domain extension)
+- The gauntlet: predictions, stress tests, defeat conditions
 
 ## Directory Structure
 

@@ -1,7 +1,7 @@
 # Words That Won't Hold Still (HPC Book)
 
-**Status:** Full 16-chapter draft in repository; implication-phase refinement ongoing  
-**Type:** Academic book (16 chapters, 4 parts)  
+**Status:** Full 17-chapter draft in repository; revision/polish phase
+**Type:** Academic book (17 chapters, 4 parts)  
 **Working title:** "Language Without Essences: The Metaphysics of Linguistic Categories"  
 **Last updated:** 2026-02-22
 
@@ -28,10 +28,11 @@
 - [x] Chapter 12 - draft in place
 - [x] Chapter 13 - synthesis draft in place
 
-### Part IV: Implications (Ch 14-16)
+### Part IV: What Changes (Ch 14-17)
 - [x] Chapter 14 - draft in place
 - [x] Chapter 15 - draft in place
-- [x] Chapter 16 - gauntlet revamp completed and board-reviewed
+- [x] Chapter 16 - How Categories Travel (new, Feb 2026)
+- [x] Chapter 17 - The Gauntlet (formerly Ch 16; board-reviewed)
 
 ### Supporting Material
 - [x] Front matter and appendices integrated

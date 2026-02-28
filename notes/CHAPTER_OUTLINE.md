@@ -183,7 +183,7 @@
 
 ---
 
-## Part IV: Implications (3 chapters)
+## Part IV: What Changes (4 chapters)
 
 ### Ch 14: Grammaticality itself
 *The deepest category, also an HPC -- the zipper closing*
@@ -216,18 +216,32 @@
 - O'Connor's coordination games: communicative clarity vs. identity management
 - Methodological commitment: "No conditioning gain, no maintenance claim"
 
-### Ch 16: What changes
-*The gauntlet -- predictions, stress tests, and defeat conditions*
+### Ch 16: How categories travel
+*Cross-domain extension as a predicted capacity -- engaging cognitive linguistics*
 
 **Key points:**
-- Synthesis ledger (Table 16.1): mechanism commitment, observable signature, downgrade signal for each domain
+- Rapoport's Rules engagement with cognitive linguistics: what CogLing got right (Rosch, Lakoff, Bybee, Langacker) and the gap (phenomenology without etiology)
+- Boyd's theory-constitutive metaphor (1979): metaphors that constitute causal claims, not pedagogical aids
+- Cross-domain extension defined: when two HPC kinds share partial mechanism-sustained property overlap, inferences licensed by one extend to the other
+- Worked example: canine TRAIL as HPC kind (Thesen 1993, Hepper & Wells 2005, Fagan et al. 2025)
+- Phylogenetic depth: kind-formation capacity predates language; language amplifies, doesn't create
+- The Boyd circle: the theory predicts the capacity it uses (reflexivity as explanatory coherence, not circularity)
+- Peirce's cable metaphor as a TCM in Boyd's sense
+- Methodological upshot: stop looking for the mapping, start looking for the shared maintenance
+- Falsification condition: cross-domain extension should track mechanism density
+
+### Ch 17: The gauntlet
+*Predictions, stress tests, and defeat conditions*
+
+**Key points:**
+- Synthesis ledger (Table 17.1): mechanism commitment, observable signature, downgrade signal for each domain
 - **Prediction 1:** Asymmetric fraying -- diagnostics erode in structured order, not as uniform noise (*data* as running example)
 - **Prediction 2:** Sticky-lock drift -- usage/semantic pressure moves first, morphosyntactic locks lag and fail in bursts
 - **Stress test A (essentialist):** category that projects without identifiable maintenance
 - **Stress test B (nominalist):** variation as random walk after noise controls
 - Operationalising with named variables: hierarchical models, changepoint methods, held-out log-loss
 - Ontological commitment: the sustaining *is* the reality (Ladyman & Ross)
-- **Research agenda:** collects outstanding predictions from all chapters (see §16.x)
+- **Research agenda:** collects outstanding predictions from all chapters (see §17.x)
 
 ---
 
@@ -238,4 +252,4 @@
 - Part IV synthesizes implications for practice
 - Target: ~15--20 pages per chapter for substantive chapters
 
-**Total: 16 chapters across 4 parts** (Social stabilization chapter added, February 2026)
+**Total: 17 chapters across 4 parts** (Cross-domain extension chapter added, February 2026)

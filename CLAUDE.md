@@ -132,11 +132,11 @@ Uses `biblatex` with APA style and `natbib=true`:
 
 ## Book Structure
 
-Four parts, 15 chapters:
+Four parts, 17 chapters:
 1. **Part I: The Problem** (Ch 1-3) - Essentialism's failures, nominalism's limits
 2. **Part II: The Fix** (Ch 4-8) - HPC kinds, discreteness, projectibility, homeostasis, failure modes
 3. **Part III: Categories Reconsidered** (Ch 9-13) - Countability, definiteness, lexical categories, gender, the stack
-4. **Part IV: Implications** (Ch 14-15) - Grammaticality, methodological consequences
+4. **Part IV: What Changes** (Ch 14-17) - Grammaticality, social stabilization, cross-domain extension, the gauntlet
 
 ### Current Chapter Status (Jan 2026)
 - **Ch 1-3**: Drafted and revised (Part I: The Problem)
