@@ -150,8 +150,10 @@ Four parts, 17 chapters:
 - **Ch 11**: §11.1–§11.5 drafted; §11.6–§11.8 remaining (Lexical Categories)
 - **Ch 12**: Drafted and revised (Pro-form Gender)
 - **Ch 13**: Restructuring decided — synthesis chapter; coupling coda goes in Ch 8 (see `notes/ch13-restructuring-analysis.md`)
-- **Ch 14**: Outlined (Grammaticality itself)
-- **Ch 15**: Outlined (Methodological consequences)
+- **Ch 14**: Drafted and revised (Grammaticality itself)
+- **Ch 15**: Drafted and revised (Social stabilization)
+- **Ch 16**: Drafted and revised (How Categories Travel)
+- **Ch 17**: Drafted and revised (The Gauntlet)
 
 ## Chapter Development Workflow
 
