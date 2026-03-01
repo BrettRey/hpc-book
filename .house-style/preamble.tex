@@ -247,6 +247,18 @@
 \newcommand{\ie}{i.e.,\xspace}
 \newcommand{\etc}{etc.\xspace}
 
+% Definiteness thread: recurring end-of-chapter sidebar (Chs 4–9)
+% Bringhurst-style: reduced size, partial hairline rule, letterspaced label
+\newenvironment{definitenessthread}{%
+  \par\addvspace{1.5\baselineskip}%
+  \noindent\rule{3em}{0.4pt}\par\nobreak
+  \vspace{0.3\baselineskip}\nobreak
+  \begingroup\small\noindent
+  {\addfontfeatures{LetterSpace=12}\textsc{definiteness}}.\enspace\ignorespaces
+}{%
+  \par\endgroup\addvspace{1\baselineskip}%
+}
+
 % =========================
 % Indices (imakeidx)
 % =========================
