@@ -43,7 +43,8 @@ The constructive argument is behind us. Categories are property clusters maintai
         align=center, font=\small\scshape
     },
     pass/.style={->, >={Stealth[length=3mm]}, thick},
-    fail/.style={->, >={Stealth[length=2.5mm]}, thick, dashed, draw=black!50}
+    fail/.style={->, >={Stealth[length=2.5mm]}, thick, dashed, draw=black!50},
+    verdictarrow/.style={->, >={Stealth[length=2.5mm]}, thick}
 ]
 
 % === ENTRY ===
@@ -55,25 +56,25 @@ The constructive argument is behind us. Categories are property clusters maintai
 \node[gatebox, below=0.5cm of d2] (d3) {3.\ Demonstrate projection};
 
 % === EXIT BRANCHES ===
-\node[exitbox, right=1.8cm of d1] (e1) {Not a candidate};
-\node[exitbox, right=1.8cm of d2] (e2) {Essentialist challenge};
-\node[exitbox, right=1.8cm of d3] (e3) {Nominalist challenge};
+\node[exitbox, right=1.8cm of d1] (e1) {No cluster to explain};
+\node[exitbox, right=1.8cm of d2] (e2) {Cluster without mechanism};
+\node[exitbox, right=1.8cm of d3] (e3) {Maintained but not projectible};
 
 % === GAUNTLET BOX ===
 \node[gauntletbox, below=1cm of d3] (gauntlet) {%
-    \textbf{Predictions}\\[2pt]
-    \hspace{0.3cm}Asymmetric fraying?\\
-    \hspace{0.3cm}Sticky-lock drift order?\\
-    \hspace{0.3cm}Phase transition in genesis?\\[6pt]
-    \textbf{Stress tests}\\[2pt]
-    \hspace{0.3cm}Mechanism-light projection?\\
-    \hspace{0.3cm}Baseline parity after controls?%
+    \textbf{Predictions} (illustrative; full list App.~C)\\[2pt]
+    \hspace{0.3cm}Asymmetric fraying\\
+    \hspace{0.3cm}Sticky-lock drift\\
+    \hspace{0.3cm}Phase transition in genesis\\[6pt]
+    \textbf{Defeat conditions}\\[2pt]
+    \hspace{0.3cm}Projection without maintenance (D1)\\
+    \hspace{0.3cm}Structure without lift (D2)%
 };
 
 % === VERDICTS ===
-\node[verdictbox, below left=1.2cm and 1.2cm of gauntlet] (confirm) {confirm};
-\node[verdictbox, below=1.2cm of gauntlet] (narrow) {narrow};
-\node[verdictbox, below right=1.2cm and 1.2cm of gauntlet] (downgrade) {downgrade};
+\node[verdictbox, below left=1.4cm and 1.2cm of gauntlet] (confirm) {confirm};
+\node[verdictbox, below=1.4cm of gauntlet] (narrow) {narrow};
+\node[verdictbox, below right=1.4cm and 1.2cm of gauntlet] (downgrade) {downgrade};
 
 % === MAIN SPINE ===
 \draw[pass] (entry) -- (d1);
@@ -87,22 +88,22 @@ The constructive argument is behind us. Categories are property clusters maintai
 \draw[fail] (d3.east) -- (e3.west);
 
 % === VERDICT ARROWS ===
-\draw[pass] (gauntlet.south) -- ++(0,-0.35) -| (confirm.north);
-\draw[pass] (gauntlet.south) -- (narrow.north);
-\draw[pass] (gauntlet.south) -- ++(0,-0.35) -| (downgrade.north);
+\draw[verdictarrow] (gauntlet.south) -- ++(0,-0.4) -| node[pos=0.25, below, font=\scriptsize] {predictions hold} (confirm.north);
+\draw[verdictarrow] (gauntlet.south) -- node[right, font=\scriptsize, xshift=1pt] {mixed} (narrow.north);
+\draw[verdictarrow] (gauntlet.south) -- ++(0,-0.4) -| node[pos=0.25, below, font=\scriptsize] {defeat conditions met} (downgrade.north);
 
 % === GROUP LABELS ===
-\node[font=\footnotesize, text=black!60, rotate=90, anchor=south]
-    at ([xshift=-0.6cm]d2.west) {Three debts};
-\node[font=\footnotesize, text=black!60, rotate=90, anchor=south]
+\node[font=\footnotesize, text=black!60, rotate=90, anchor=center]
+    at ([xshift=-0.6cm]d1.west |- d2.center) {Three debts};
+\node[font=\footnotesize, text=black!60, rotate=90, anchor=center]
     at ([xshift=-0.6cm]gauntlet.west) {Gauntlet};
 
 \end{tikzpicture}}%
-\caption{The evaluation pathway. Every proposed category owes three debts (solid path); failure at any gate exits to the named challenge (dashed). Categories that clear all three enter the gauntlet: three predictions the framework bets on, and two stress tests that could break it. Cumulative evidence determines the verdict.}
+\caption{The evaluation pathway. Every proposed category owes three debts (solid path); failure at any gate exits to the diagnosis at right (dashed). Categories that clear all three enter the gauntlet: framework predictions and defeat conditions from Appendix~\ref{app:predictions}. Cumulative evidence determines the verdict.}
 \label{fig:17:gauntlet}
 \end{figure}
 
-At the quantum scale there are no cats, and at the scale of the isolated token there are no categories. A category\ixsq{category!as HPC kind} can be real at any grain~-- phonological, morphosyntactic, semantic, discourse, social~-- as long as it's maintained and projectible there. The framework doesn't privilege any level of linguistic organisation, and it doesn't exempt any level from scrutiny.
+\enquote{At the quantum scale there are no cats} \citep[199]{ladyman2007}, and at the scale of the isolated token there are no categories. A category\ixsq{category!as HPC kind} can be real at any grain~-- phonological, morphosyntactic, semantic, discourse, social~-- as long as it's maintained and projectible there. The framework doesn't privilege any level of linguistic organisation, and it doesn't exempt any level from scrutiny.
 
 Every proposed category\ixsq{category!as HPC kind} owes three debts: show that properties cluster, identify the stabilisers that maintain the clustering, and demonstrate projection~-- what learning one case buys you for the next. The three debts form a chain. Clustering alone isn't enough, because accidental clusters don't persist; the clustering has to be maintained by identifiable stabilisers. And maintenance alone doesn't earn the label, because a maintained cluster that doesn't project~-- that doesn't let you predict anything about unexamined cases~-- hasn't earned its keep as a category.
 
