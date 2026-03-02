@@ -1,7 +1,51 @@
 # HPC Book Project Status
 
-**Date**: February 25, 2026
-**Current Phase**: Full 16-chapter draft in place; revision/polish phase
+**Date**: March 2, 2026
+**Current Phase**: Full 17-chapter draft + postscript in place; revision/polish phase
+
+### Multi-day instance (Feb 28 -- Mar 2, 2026): 18 commits, major structural and editorial work
+
+**Structural:**
+- ✅ **Split Ch 16 → Ch 16 + Ch 17**: Ch 16 ("How Categories Travel") and Ch 17 ("The Gauntlet") now separate chapters. Book is 17 chapters + postscript.
+- ✅ **Predictions appendix (Appendix C)**: 30 numbered predictions + 2 defeat conditions gathered from across the book.
+- ✅ **Postscript created**: ~370 words on "language" as a category the book doesn't address.
+- ✅ **Cross-reference infrastructure**: index tags, section labels, `\ref` conversions, Ch 15 prose fixes.
+- ✅ **Definiteness thread**: new `\definiteness` environment, added to Ch 9, removed from Chs 14-15.
+
+**Ch 16 (How Categories Travel):**
+- ✅ Metaphor paper integration, projectibility restoration, embodiment reply
+- ✅ Counting diagnostic, functional domain definition, painted-line case, Noyes & Keil development
+- ✅ Trail passage: show-first-name-second rewrite
+- ✅ Prose tightening, LLM nuance, covariation honesty
+- ✅ TCM-gauntlet connection; Canudas-Grabolosa et al. (2026) homesigner study integrated
+
+**Ch 17 (The Gauntlet):**
+- ✅ Ladyman & Ross attribution, Figure 17.1 revision, Sancho Panza epigraph
+- ✅ **§17.2 full rewrite** ("What HPC opens"): 5 expert-perspective Sonnet agents (Boyd, Haspelmath, Kendler, Bybee, Borsboom) identified convergent criticisms. Disentangled Kendler MPC from Borsboom network theory; fixed DSM to polythetic; acknowledged Mayr's BSC already mechanistic; addressed Haspelmath's cross-linguistic gap; three psychiatry-linguistics disanalogies. Now distinguishes "reframes" / "imports" / "opens."
+
+**Projectibility-as-constitutive correction:**
+- ✅ ~20 edits across 8 chapters restoring projectibility as third constitutive leg of Boyd's HPC (not downstream bonus). Ch 16 synthesis ledger fully rewritten.
+
+**Humour audit:**
+- ✅ Full-book scan with Sonnet + Codex agents; combined report in `notes/humour-audit-combined.md`
+- ✅ Ch 3: evaluated ~20 additions critically (Tier 1/2/3), applied 17 (Tiers 1+2)
+- ✅ Ch 13: 8 meaning-bearing inserts
+
+**Prose and voice:**
+- ✅ Revoiced Chs 11, 13; aphoristic prose audit
+- ✅ Ch 12: sex/social-gender/grammatical-gender diagnostic
+- ✅ Boyd circle fix (textcite for inline citations)
+- ✅ Ch 15: five prose fixes
+
+**Gauntlet reframing (conceptual):**
+- Diagnosed that gauntlet predictions test maintenance degradation, not projection
+- Budding-not-fission insight for grammaticalization
+- Diff-in-diff across biology/psychiatry/ecology/linguistics
+- Full notes: `notes/gauntlet-reframing-2026-02-28.md`
+
+**Bibliography:** `borsboom2017` added; zero undefined citations; 492 pages clean.
+
+**Process note:** Brett corrected me for implementing humour additions without critical evaluation. Always evaluate before implementing.
 
 ### Session Work (Feb 25, 2026: Index cleanup + lexical gloss audit)
 - ✅ **HPC "applied to linguistics" reclassification completed**: 4 straggler tags fixed (ch03→`!defined`, ch05→`!cross-linguistic`, ch09→`!lexical categories`, ch14→`!grammaticality`). Zero bare or `!applied` tags remain.
