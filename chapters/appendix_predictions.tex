@@ -1,0 +1,201 @@
+\chapter{Predictions}
+\label{app:predictions}
+
+This appendix collects the empirical predictions that the HPC framework generates across the book's case studies. The point is accountability: if the framework is to be preferred over essentialism and prototype theory on grounds of testability, the predictions should be findable in one place, each with a source chapter and a defeat condition that says what would count as disconfirmation.
+
+Predictions vary in sharpness. Some are quantitative (P28 specifies that conditioned models outperform pooled baselines on a measurable metric); some are directional (P1 predicts that tight diagnostics erode before loose ones, without specifying rates); some are consistency checks (P20 predicts within-family correlation without specifying its magnitude). All are defeasible. Chapter~\ref{ch:what-changes} develops the full defeat-condition architecture; the defeat entries below are compressed from that discussion.
+
+% --- Prediction macro (local to this appendix) ---
+\newcommand{\prediction}[5]{%
+  \item[\textbf{#1.}] \textbf{#2.}
+  #3
+  \par\noindent\hspace{1em}\textit{Source:} #4.
+  \textit{Defeat:} #5.
+  \medskip
+}
+
+\section{Framework predictions}
+
+These follow from the HPC architecture itself: any maintained category, in any domain, should exhibit them.
+
+\begin{description}
+
+\prediction{P1}{Asymmetric fraying}{%
+When stabilisers weaken, tight diagnostics should erode before loose ones. Decay is patterned, keyed to which mechanism weakened first, not spreading uniformly across the cluster.}{Chapter~\ref{ch:countability}, Chapter~\ref{ch:what-changes}}{%
+Diagnostics move as unstructured noise; no stable variance structure across replications.}
+
+\prediction{P2}{Sticky-lock drift}{%
+Usage and semantic properties shift before morphosyntactic frames do; when frames finally fail, they fail in bursts rather than gradually. The asymmetry reflects the difference between frequency-sensitive and structurally entrenched maintenance.}{Chapter~\ref{ch:what-changes}}{%
+Frame loss is gradual and proportional to frequency decline, with no burst signature.}
+
+\prediction{P3}{Phase transition in genesis}{%
+Grammaticalization should show nonlinear cluster formation~-- a point at which co-occurring properties snap into a self-sustaining equilibrium~-- rather than the continuous clines assumed by standard accounts.}{Chapter~\ref{ch:what-changes}}{%
+Historical data shows smooth, monotonic co-change with no identifiable inflection point.}
+
+\prediction{P4}{Cross-domain extension tracks mechanism density}{%
+Metaphor productivity correlates with shared maintenance structure between source and target domains, not with surface similarity alone.}{Chapter~\ref{ch:how-categories-travel}}{%
+Productivity correlates with surface overlap and shows no residual effect of mechanism sharing.}
+
+\prediction{P5}{Conditioning recovers structure}{%
+Apparent gradience in category membership decomposes under social conditioning (dialect, register, community). If conditioning produces no gain in prediction, the maintenance claim is unsupported.}{Chapter~\ref{ch:social-stabilization}}{%
+Conditioned and pooled models perform identically; variation is irreducible noise.}
+
+\prediction{P6}{Conventionalization requires mechanism support}{%
+Frequency alone doesn't conventionalize a metaphor; the target domain must supply maintenance mechanisms that sustain the transferred cluster. High-frequency metaphors without target-domain support should decay.}{Chapter~\ref{ch:how-categories-travel}}{%
+Frequency fully predicts conventionalization with no residual role for mechanism structure.}
+
+\prediction{P7}{Failure modes predict metaphor quality}{%
+A fat source domain yields ambiguous metaphor (too many properties compete for relevance); a thin source yields shallow metaphor (too few properties to anchor); a negative source yields nothing usable.}{Chapter~\ref{ch:how-categories-travel}}{%
+Metaphor quality is independent of source-domain cluster structure.}
+
+\prediction{P8}{Developmental cluster tightening}{%
+Children's diagnostics should become more correlated over time, not merely more accurate individually. The signature of maintenance is increasing covariance among properties, not just improving performance on each one.}{Chapter~\ref{ch:what-changes}}{%
+Diagnostic accuracy improves but inter-diagnostic correlations remain flat or decrease.}
+
+\prediction{P9}{Category comorbidity}{%
+Categories that share maintenance mechanisms should co-occur typologically more often than chance predicts. Shared stabilisers create non-accidental dependencies between categories across languages.}{Chapter~\ref{ch:what-changes}}{%
+Typological co-occurrence is fully predicted by genealogical and areal confounds with no residual mechanism effect.}
+
+\prediction{P10}{Hub-node asymmetry}{%
+For each category, one property's removal should destabilize the cluster more than others. The hub property is the one most densely connected to maintenance mechanisms, identifiable by targeted perturbation.}{Chapter~\ref{ch:what-changes}}{%
+All properties contribute equally to cluster stability; no perturbation asymmetry is detectable.}
+
+\prediction{P11}{Competitive exclusion}{%
+When two forms grammaticalize into the same functional niche, the outcome tracks mechanism overlap: the form with greater access to existing maintenance infrastructure survives.}{Chapter~\ref{ch:what-changes}}{%
+Outcome is random with respect to mechanism overlap and tracks only frequency or prestige.}
+
+\end{description}
+
+
+\section{Case-study predictions}
+
+These are specific to the domains examined in Part~III and Part~IV.
+
+\subsection*{Countability (Chapter~\ref{ch:countability})}
+
+\begin{description}
+
+\prediction{P12}{Implicational hierarchy}{%
+No noun should stably accept tight diagnostics (cardinal numerals, \mention{a/an}) while rejecting loose ones (\mention{many}, agreement). The predicted distribution is triangular, not rectangular.}{Chapter~\ref{ch:countability}}{%
+A substantial class of nouns stably accepts tight diagnostics while rejecting loose ones.}
+
+\prediction{P13}{Functional anchoring}{%
+Quasi-count nouns with singulative anchors (\mention{cow}/\mention{cattle}) should remain stable across generations; those without (\mention{folks}) should drift.}{Chapter~\ref{ch:countability}}{%
+Anchored and unanchored nouns drift at indistinguishable rates.}
+
+\prediction{P14}{Data drift signature}{%
+Cardinal/\mention{a(n)} erode before \mention{many}/agreement when countability weakens. The erosion is asymmetric, not uniform.}{Chapter~\ref{ch:countability}}{%
+Erosion is uniform across diagnostics with no ordering effect.}
+
+\prediction{P15}{Welsh collective basin}{%
+Collectives in Welsh accept loose diagnostics but reject tight ones without singulative marking~-- a mirror image of the English hierarchy, predicted by the same cluster architecture with different mechanism weighting.}{Chapter~\ref{ch:countability}}{%
+Welsh collectives show no tight/loose asymmetry, or the asymmetry is reversed.}
+
+\prediction{P16}{Cross-linguistic hierarchy}{%
+Classifier languages should show an analogous tight/loose asymmetry in their own diagnostic systems, reflecting shared cluster architecture despite different morphosyntactic resources.}{Chapter~\ref{ch:countability}}{%
+Classifier-language diagnostics show no implicational structure.}
+
+\end{description}
+
+\subsection*{Definiteness and deitality (Chapter~\ref{ch:definiteness-and-deitality})}
+
+\begin{description}
+
+\prediction{P17}{Prosodic rescue asymmetry}{%
+Prosody rescues existential pivots (\mention{there's a dog}) but not partitive complements. Distributional restrictions lack prosodic repair paths; functional restrictions have them.}{Chapter~\ref{ch:definiteness-and-deitality}}{%
+Prosodic rescue works equally across both restriction types, or fails for both.}
+
+\prediction{P18}{Dialectal preservation}{%
+Dialects that drop articles should preserve form-cluster patterning with demonstratives. The cluster survives the loss of one exponent because other mechanisms sustain it.}{Chapter~\ref{ch:definiteness-and-deitality}}{%
+Article-dropping dialects show no residual form-cluster coherence.}
+
+\prediction{P19}{Acquisition order}{%
+Children master distributional restrictions before semantic licensing conditions. The prediction follows from the relative accessibility of the two maintenance regimes.}{Chapter~\ref{ch:definiteness-and-deitality}}{%
+Semantic licensing is acquired first, or both are acquired simultaneously.}
+
+\prediction{P20}{Two-cluster coherence}{%
+Form-cluster and semantic-cluster diagnostics correlate within their respective families but decouple between them. This is the signature of two overlapping HPCs, not one.}{Chapter~\ref{ch:definiteness-and-deitality}}{%
+Within-family and between-family correlations are indistinguishable.}
+
+\end{description}
+
+\subsection*{Grammaticality (Chapter~\ref{ch:grammaticality-itself})}
+
+\begin{description}
+
+\prediction{P21}{Three-register dissociation}{%
+Qualitative jolt, reactive resistance, and normative correction should dissociate experimentally. Garden-path sentences produce jolt without lasting resistance; comparative illusions produce jolt that fades under reflection.}{Chapter~\ref{ch:grammaticality-itself}}{%
+The three registers pattern as a single undifferentiated response.}
+
+\prediction{P22}{Selective satiation}{%
+Syntactic satiation should affect frequency-sensitive constraints but not deeply entrenched violations. Repeated exposure normalizes peripheral cases, not core ones.}{Chapter~\ref{ch:grammaticality-itself}}{%
+Satiation is uniform across constraint types, or absent entirely.}
+
+\prediction{P23}{Individual differences index exposure}{%
+Speakers with different exposure histories should show different grammaticality thresholds for the same construction, reflecting different entrenchment profiles rather than different grammars.}{Chapter~\ref{ch:grammaticality-itself}}{%
+Thresholds are uniform across exposure profiles once dialect is controlled.}
+
+\prediction{P24}{Basin stability at boundaries}{%
+Gradient judgments at boundaries reflect dynamic equilibrium: sharp within individual grammars but showing variance across speakers. The variance is structured by social conditioning, not random.}{Chapter~\ref{ch:grammaticality-itself}}{%
+Gradient judgments are randomly distributed across speakers with no conditioning structure.}
+
+\end{description}
+
+\subsection*{Pro-form gender (Chapter~\ref{ch:proform-gender})}
+
+\begin{description}
+
+\prediction{P25}{Chain coherence costs}{%
+Mixed-gender chains should incur measurable processing costs: longer reading times, more recall errors, more spontaneous repairs. The cost reflects disrupted maintenance, not just ambiguity.}{Chapter~\ref{ch:proform-gender}}{%
+Mixed chains produce no processing cost beyond what referent ambiguity predicts.}
+
+\prediction{P26}{Personhood-driven assignment}{%
+Children should assign pro-forms to novel entities based on personhood construal, not animacy alone. A robot construed as a person attracts \mention{she}/\mention{he}; one construed as a tool attracts \mention{it}.}{Chapter~\ref{ch:proform-gender}}{%
+Assignment tracks animacy with no residual personhood effect.}
+
+\prediction{P27}{Gender repairs faster than number}{%
+Gender mismatches in anaphoric chains should be repaired more readily than other agreement errors, reflecting the relatively loose coupling of English gender maintenance.}{Chapter~\ref{ch:proform-gender}}{%
+Gender repairs are no faster than number or case repairs.}
+
+\end{description}
+
+\subsection*{Social stabilization (Chapter~\ref{ch:social-stabilization})}
+
+\begin{description}
+
+\prediction{P28}{Conditioned models outperform pooled}{%
+Models that condition on dialect, register, or community should outperform pooled baselines on out-of-sample prediction of acceptability judgments. The gain measures the contribution of social maintenance.}{Chapter~\ref{ch:social-stabilization}}{%
+Conditioning produces no improvement; a single pooled model suffices.}
+
+\end{description}
+
+\subsection*{Cross-domain extension (Chapter~\ref{ch:how-categories-travel})}
+
+\begin{description}
+
+\prediction{P29}{LLM indiscriminate extension}{%
+Language models without goals should project structural overlap indiscriminately, extending categories wherever distributional similarity exists, without the selectivity that goal-directed agents display.}{Chapter~\ref{ch:how-categories-travel}}{%
+LLMs show goal-like selectivity in cross-domain extension without explicit goal structures.}
+
+\prediction{P30}{Painted-line prediction}{%
+Dogs recruit the trail category for objects sharing only visual-geometric properties across functional domains~-- evidence that cross-domain extension tracks perceptual overlap when mechanism support is absent.}{Chapter~\ref{ch:how-categories-travel}}{%
+Dogs show no trail-category recruitment for painted lines, or recruitment requires functional overlap.}
+
+\end{description}
+
+
+\section{Defeat conditions}
+
+Two findings would break the framework, not just a single prediction within it.
+
+\begin{description}
+
+\prediction{D1}{Projection without maintenance}{%
+A robust, cross-linguistically stable category that projects strongly~-- supporting reliable inductive generalizations across novel instances~-- with no identifiable causal structure sustaining the cluster. This would show that the maintenance leg of the HPC triad is dispensable.}{Chapter~\ref{ch:what-changes}}{%
+This \emph{is} the defeat condition.}
+
+\prediction{D2}{Structure without lift}{%
+Usage variation that, once sampling noise is properly controlled, proves to be a random walk with no recoverable structure. This would show that the projection leg is illusory~-- that the apparent patterns licensing induction are artifacts of insufficient statistical control.}{Chapter~\ref{ch:what-changes}}{%
+This \emph{is} the defeat condition.}
+
+\end{description}
