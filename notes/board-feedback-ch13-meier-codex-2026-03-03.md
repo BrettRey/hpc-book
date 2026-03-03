@@ -1,0 +1,27 @@
+**Strengths**
+- Strongest empirical move: the decoupling argument across ASL/BSL/ISL vs Kata Kolok/ABSL/NSL/homesign. You show that referent tracking can be robust where productive agreement morphology is weak/absent, which directly supports the two-cluster claim ([chapter13-sign-anaphor.tex:152](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:152), [chapter13-sign-anaphor.tex:154](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:154), [chapter13-sign-anaphor.tex:162](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:162); cf. [ch13-sign-lit-notes-emergence.md:5](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-emergence.md:5), [ch13-sign-lit-notes-emergence.md:11](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-emergence.md:11)).
+- The Schlenker/Kuhn juxtaposition is well chosen and empirically grounded; it makes the variable-like vs feature-like tension explicit and useful for your HPC decomposition ([chapter13-sign-anaphor.tex:58](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:58), [chapter13-sign-anaphor.tex:60](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:60), [chapter13-sign-anaphor.tex:62](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:62)).
+
+**Major Concerns**
+- **Person terminology may overstate a 1/2/3 paradigm.** Current phrasing implies canonical person/number agreement on verbs, but your own notes emphasize first vs non-first as the key grammatical contrast, with weaker 2nd/3rd separation ([chapter13-sign-anaphor.tex:77](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:77), [chapter13-sign-anaphor.tex:173](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:173), [chapter13-sign-anaphor.tex:196](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:196); cf. [ch13-sign-lit-notes-sandler-lillomartin.md:86](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-sandler-lillomartin.md:86), [ch13-sign-lit-notes-mechanisms.md:32](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:32), [ch13-sign-lit-notes-mechanisms.md:33](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:33)).
+- **“Agreement verbs” language is a bit too settled/categorical.** The chapter occasionally reads as if agreement status is uncontroversial; your notes preserve the indicating-verb and hybrid linguistic+gestural debate ([chapter13-sign-anaphor.tex:42](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:42); cf. [ch13-sign-lit-notes-mechanisms.md:42](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:42), [ch13-sign-lit-notes-mechanisms.md:43](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:43), [ch13-sign-lit-notes-mechanisms.md:142](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:142)).
+- **Pronoun/pointing wording risks a false dichotomy.** You quote hybrid status, but the lead sentence still frames pronouns as straightforward pointing gestures, which can miscue readers about the coupling model ([chapter13-sign-anaphor.tex:40](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:40); cf. [ch13-sign-lit-notes-mechanisms.md:11](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:11), [ch13-sign-lit-notes-mechanisms.md:15](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/notes/ch13-sign-lit-notes-mechanisms.md:15)).
+
+**Priority Fixes**
+1. Edit pronoun/pointing line for hybrid status:  
+   At [chapter13-sign-anaphor.tex:40](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:40), change  
+   `Sign language pronouns are pointing gestures directed at established loci.`  
+   to  
+   `Sign-language pronominals are indexical points to discourse-linked loci, with both grammatical and gestural structure.`
+
+2. Soften categorical agreement claim:  
+   At [chapter13-sign-anaphor.tex:42](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:42), change  
+   `In ASL, object agreement is obligatory; subject agreement is optional...`  
+   to  
+   `In ASL, directional marking is typically strongest toward objects and more variable toward subjects, with distribution constrained by verb class and discourse use...`
+
+3. Tighten person terminology to ASL-appropriate contrasts:  
+   At [chapter13-sign-anaphor.tex:77](/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC%20book/chapters/chapter13-sign-anaphor.tex:77), change  
+   `Mark person/number on verbs via directionality...`  
+   to  
+   `Mark participant contrasts (especially first vs non-first) and number-related distinctions via directionality...`
