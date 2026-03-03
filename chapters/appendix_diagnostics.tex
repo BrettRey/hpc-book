@@ -7,22 +7,26 @@
 \section{A compact formalization}
 \label{sec:app:compact-formalization}
 
-The main argument treats an HPC category as a three-part object: a property profile, a maintenance story, and a projectibility payoff \parencite{boyd1991}. The formalization below makes those parts explicit and keeps them distinct.
+The main argument treats an HPC category as a three-part object: a property profile, a maintenance story, and a projectibility payoff \parencite{boyd1991}. The formalization below makes those parts explicit and keeps them distinct. This is regimentation, not an essence-style definition: the goal is to state success conditions transparently, not to legislate category membership by notation.
 
-For a candidate category $C$ and analytical field $F$, define
+For a candidate category $C$ and analytical field
 \[
-\mathrm{HPC}_F(C)=\left\langle \mathcal{P}(C),\mathcal{M}(C),\Pi_F(C)\right\rangle .
+F=(Q_F,I_F,L_F,D_F,\Sigma_F),
 \]
-Here $\mathcal{P}(C)$ is the profile layer, $\mathcal{M}(C)$ is the maintenance layer, and $\Pi_F(C)$ is the field-indexed projectibility layer.
+define
+\[
+\mathrm{HPC}_F(C)=\left\langle \mathcal{P}_F(C),\mathcal{M}(C),\Pi_F(C)\right\rangle .
+\]
+Here $Q_F$ is a query family, $I_F$ an intervention family, $L_F$ a loss function, $D_F$ a declared diagnostic/measurement regime, and $\Sigma_F$ a scope declaration (population, register, time slice, grain). $\mathcal{P}_F(C)$ is the profile layer, $\mathcal{M}(C)$ is the maintenance layer, and $\Pi_F(C)$ is the field-indexed projectibility layer.
 
 \subsection*{Profile layer: dependence structure}
 
-Let $X=(X_1,\dots,X_p)$ be diagnostic variables for tokens assigned to $C$. A compact dependence score is
+Let $X^F=(X_1,\dots,X_p)$ be the pre-registered diagnostic family from $D_F$ for tokens assigned to $C$. A compact dependence score is
 \[
-S(C)=\frac{1}{|E_C|}\sum_{(i,j)\in E_C} I(X_i;X_j)
+S_F(C)=\frac{1}{|E_C|}\sum_{(i,j)\in E_C} I(X_i;X_j)
       -\frac{1}{|E_0|}\sum_{(i,j)\in E_0} I(X_i;X_j),
 \]
-where $I(\cdot;\cdot)$ is mutual information, $E_C$ is the set of within-cluster diagnostic pairs, and $E_0$ is a matched baseline pair set. This restates the co-occurrence intuition in information-theoretic terms: a profile exists when $S(C)>0$ robustly across resamples.
+where $I(\cdot;\cdot)$ is mutual information, $E_C$ is a pre-declared set of diagnostic-variable index pairs $(i,j)$ (all pairs or graph edges), and $E_0$ is a matched baseline pair set. $S_F(C)$ denotes a bias-controlled dependence summary (mutual information is the default implementation, but other dependence functionals are admissible). This restates the co-occurrence intuition in information-theoretic terms: a profile exists when $S_F(C)>0$ robustly across resamples. The statistic is a summary, not a claim that pairwise dependence is sufficient in principle; higher-order dependence can be substituted where theory or data demands it.
 
 \subsection*{Maintenance layer: dynamical mechanism}
 
@@ -36,46 +40,48 @@ Z_{t+1}^{(a)}=f_{\theta}\!\left(Z_t^{(a)},U_t,\mathrm{do}(A_t=a)\right)+\eta_t .
 \]
 Graph and network implementations are special cases of this layer \parencite{khalidi2015three,borsboom2017}.
 
-Homeostasis\ixsq{homeostasis!defined} is a return-to-basin claim. Let $\mathcal{B}_C$ be the basin for $C$ in diagnostic space and $d$ a distance metric. Define
+Homeostasis\ixsq{homeostasis!defined} is a return-to-basin (of attraction) claim. Let $\mathcal{B}_C^{(a)}$ be the post-perturbation basin for $C$ in diagnostic space and let distance-to-set be defined as $d(x,\mathcal{B})=\inf_{b\in\mathcal{B}} d(x,b)$. Define
 \[
-\tau_{\delta}(a)=\inf\left\{h\geq 0 : \mathbb{E}\!\left[d\!\left(X_{t+h}^{(a)},\mathcal{B}_C\right)\right]\leq \delta\right\}.
+\tau_{\delta}(a)=\inf\left\{h\geq 0 : \mathbb{E}\!\left[d\!\left(X_{t+h}^{(a)},\mathcal{B}_C^{(a)}\right)\right]\leq \delta\right\}.
 \]
-For admissible perturbations $a$, homeostasis holds when $\tau_{\delta}(a)$ is finite for a pre-registered tolerance $\delta$.
+For local perturbations, $\mathcal{B}_C^{(a)}=\mathcal{B}_C$; for structural perturbations, basin geometry may shift. For admissible perturbations $a$, homeostasis holds when $\tau_{\delta}(a)$ is finite for a pre-registered tolerance $\delta$. This operationalizes homeostasis proper (active return). Broader maintenance evidence (metastability, causal isolation, frozen accidents) remains part of $\mathcal{M}(C)$ but does not by itself satisfy the homeostasis check.
 
 \subsection*{Projectibility layer: field-relative lift}
 
-Define a field explicitly as $F=(Q_F,I_F,L_F)$, where $Q_F$ is a query family, $I_F$ an intervention family, and $L_F$ a loss function. Then projectibility is expected lift over a baseline:
+Given $F=(Q_F,I_F,L_F,D_F,\Sigma_F)$, projectibility is expected lift over a baseline:
 \[
 \Pi_F(C)=\mathbb{E}_{(x,y)\sim D_F}\!\left[L_F\!\left(\hat{y}_{\mathrm{base}}(x),y\right)-L_F\!\left(\hat{y}_{C}(x),y\right)\right].
 \]
 Projectibility\ixsq{projectibility!defined} for field $F$ holds when $\Pi_F(C)>0$ robustly out of sample.
 
-This is where interest-relativity belongs. Craver's and Onishi--Serpico's challenge is real: explanatory interests change variable sets and evaluation targets \parencite{craver2009,onishi2022}. In this formalization, that dependence is explicit in $F$, while maintenance claims remain empirical via perturbation and recovery. This avoids a mechanism-free account that is too thin and avoids treating any one graph as uniquely privileged \parencite{lemeire2018}.
+This is where interest-relativity belongs. Craver's and Onishi--Serpico's challenge is real: explanatory interests change variable sets, scope choices, and evaluation targets \parencite{craver2009,onishi2022}. In this formalization, that dependence is explicit in $D_F$ and $\Sigma_F$ as well as $Q_F$ and $L_F$, while maintenance claims remain empirical via perturbation and recovery. This avoids a mechanism-free account that is too thin and avoids treating any one graph as uniquely privileged \parencite{lemeire2018}.
 
-This structure also links directly to existing formal threads. Martínez's informationally connected property-cluster proposal maps to the profile score $S(C)$ via mutual information \parencite{martinez2015informationally}. Rehder's causal-model theory instantiates the maintenance--projectibility bridge with a generative Bayesian network over features \parencite{rehder2003causal}. Van Rooij and Schulz's natural-kind analysis in Pearl-style causal models maps to the intervention and ablation clauses \parencite{vanrooijschulz2019}.
+This structure also links directly to existing formal threads. Martínez's informationally connected property-cluster proposal maps to the profile score $S_F(C)$ via mutual information \parencite{martinez2015informationally}. Rehder's causal-model theory instantiates the maintenance--projectibility bridge with a generative Bayesian network over features \parencite{rehder2003causal}. Van Rooij and Schulz's natural-kind analysis in Pearl-style causal models maps to the intervention and ablation clauses \parencite{vanrooijschulz2019}.
 
 \subsection*{Operational decision rule}
 
 For a declared field $F$, treat $C$ as an HPC category only if all four checks pass:
 \begin{enumerate}
-    \item Profile: $S(C)$ exceeds a pre-registered null margin.
+    \item Profile: $S_F(C)$ exceeds a pre-registered null margin under the declared $D_F,\Sigma_F$ regime.
     \item Homeostasis: $\tau_{\delta}(a)<\infty$ across the admissible perturbation set.
     \item Projectibility: $\Pi_F(C)>0$ on held-out data.
-    \item Ablation: removing a candidate stabilizer decreases $S(C)$ or $\Pi_F(C)$ by at least $\epsilon$.
+    \item Ablation: removing a candidate stabilizer worsens at least one target by a pre-registered margin: $S_F(C)$ decreases, $\Pi_F(C)$ decreases, or $\tau_{\delta}(a)$ increases (possibly to $\infty$).
 \end{enumerate}
 
 \subsection*{Failure-mode mapping}
 
 The Part~II and Part~III failure modes map directly onto these quantities:
 \begin{description}
-    \item[Too thin.] Low $S(C)$, weak or absent recovery, and near-zero $\Pi_F(C)$.
-    \item[Too fat.] Non-trivial $S(C)$ but no stable ablation signature and poor transfer across fields $F$.
+    \item[Too thin.] Low $S_F(C)$, weak or absent recovery, and near-zero $\Pi_F(C)$.
+    \item[Too fat.] Non-trivial $S_F(C)$ but no stable ablation signature and poor transfer across fields $F$.
     \item[Merely negative.] Complement-defined grouping with no coherent maintenance dynamics and no predictive lift.
 \end{description}
 
 \section{Operationalizing the diagnostics}
 
 The two criteria aren't operationalized symmetrically.
+
+This section compresses the audit-template workflow from Chapter~\ref{ch:failure-modes}: declare scope and diagnostics, test profile and projectibility, probe maintenance by perturbation and ablation, and make falsifiers explicit.
 
 Projectibility\ixsq{projectibility!defined} is tested directly: the question is whether patterns learned from one sample generalize to another~-- can we infer properties of new instances from old ones? This is tested via out-of-sample prediction: cross-validated classification accuracy, held-out F1 scores, cross-corpus transfer. Concrete thresholds can be declared in advance: ROC-AUC $\geq 0.70$, PR-AUC $\geq 0.70$, macro-F1 $\geq 0.35$, held-out cohesion $\geq 0.30$. These thresholds are somewhat arbitrary conventions, but that's the point: declaring them in advance disciplines the inference.
 
