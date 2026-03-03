@@ -1,5 +1,28 @@
 # Project Log
 
+## 2026-03-03: Appendix A formalization + formal-literature bridge
+- **Compact formalization added to Appendix A** (`chapters/appendix_diagnostics.tex`):
+  - Defined HPC object as `HPC_F(C)=⟨P(C), M(C), Π_F(C)⟩`.
+  - Added MI-based profile score `S(C)` for dependence structure.
+  - Added dynamical maintenance equations with intervention notation `do(A_t=a)`.
+  - Added return-to-basin homeostasis criterion `τ_δ(a)`.
+  - Added field tuple `F=(Q_F, I_F, L_F)` and predictive-lift definition `Π_F(C)`.
+  - Added four-check operational rule (profile, homeostasis, projectibility, ablation).
+  - Added explicit thin/fat/negative failure-mode mapping to formal diagnostics.
+- **Named bridge to formal threads inserted**:
+  - Martínez (information-theoretic cluster formalization),
+  - Rehder (causal-model categorization),
+  - van Rooij & Schulz (Pearl-style causal analysis of kind-grounded dispositions).
+- **Bibliography updates (local source)**:
+  - Added to `references-local.bib`: `martinez2015informationally`, `rehder2003causal`, `vanrooijschulz2019`.
+  - Verified metadata/DOIs via Crossref before insertion.
+- **Verification**:
+  - `latexmk hpc-book.tex` successful; no undefined citations introduced.
+  - Output regenerated as `build/hpc-book.pdf` (498 pages).
+  - `python code/validate_bib.py` successful (`references.bib` parsed).
+- **Note**:
+  - New references are intentionally local-first and can be promoted later to shared `references.bib` via normal bib-sync workflow.
+
 ## 2026-02-22: Shared-bib tranche C completion + cited-audit alias support
 - **Duplicate-group closure completed**:
   - Resolved all 19 remaining `possible_duplicate_record` groups in shared `references.bib`.

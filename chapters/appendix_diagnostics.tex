@@ -4,6 +4,75 @@
 % This appendix contains methodological details for the projectibility and homeostasis diagnostics
 % discussed in Chapter~\ref{ch:the-category-zipper}.
 
+\section{A compact formalization}
+\label{sec:app:compact-formalization}
+
+The main argument treats an HPC category as a three-part object: a property profile, a maintenance story, and a projectibility payoff \parencite{boyd1991}. The formalization below makes those parts explicit and keeps them distinct.
+
+For a candidate category $C$ and analytical field $F$, define
+\[
+\mathrm{HPC}_F(C)=\left\langle \mathcal{P}(C),\mathcal{M}(C),\Pi_F(C)\right\rangle .
+\]
+Here $\mathcal{P}(C)$ is the profile layer, $\mathcal{M}(C)$ is the maintenance layer, and $\Pi_F(C)$ is the field-indexed projectibility layer.
+
+\subsection*{Profile layer: dependence structure}
+
+Let $X=(X_1,\dots,X_p)$ be diagnostic variables for tokens assigned to $C$. A compact dependence score is
+\[
+S(C)=\frac{1}{|E_C|}\sum_{(i,j)\in E_C} I(X_i;X_j)
+      -\frac{1}{|E_0|}\sum_{(i,j)\in E_0} I(X_i;X_j),
+\]
+where $I(\cdot;\cdot)$ is mutual information, $E_C$ is the set of within-cluster diagnostic pairs, and $E_0$ is a matched baseline pair set. This restates the co-occurrence intuition in information-theoretic terms: a profile exists when $S(C)>0$ robustly across resamples.
+
+\subsection*{Maintenance layer: dynamical mechanism}
+
+Let $Z_t$ be a latent maintenance state encoding stabilizers (acquisition, entrenchment, alignment, transmission, functional pressure). Write
+\[
+Z_{t+1}=f_{\theta}(Z_t,U_t)+\eta_t,\qquad X_t=g_{\phi}(Z_t)+\epsilon_t .
+\]
+Interventions are represented in Pearl-style notation \parencite{pearl2009}:
+\[
+Z_{t+1}^{(a)}=f_{\theta}\!\left(Z_t^{(a)},U_t,\mathrm{do}(A_t=a)\right)+\eta_t .
+\]
+Graph and network implementations are special cases of this layer \parencite{khalidi2015three,borsboom2017}.
+
+Homeostasis\ixsq{homeostasis!defined} is a return-to-basin claim. Let $\mathcal{B}_C$ be the basin for $C$ in diagnostic space and $d$ a distance metric. Define
+\[
+\tau_{\delta}(a)=\inf\left\{h\geq 0 : \mathbb{E}\!\left[d\!\left(X_{t+h}^{(a)},\mathcal{B}_C\right)\right]\leq \delta\right\}.
+\]
+For admissible perturbations $a$, homeostasis holds when $\tau_{\delta}(a)$ is finite for a pre-registered tolerance $\delta$.
+
+\subsection*{Projectibility layer: field-relative lift}
+
+Define a field explicitly as $F=(Q_F,I_F,L_F)$, where $Q_F$ is a query family, $I_F$ an intervention family, and $L_F$ a loss function. Then projectibility is expected lift over a baseline:
+\[
+\Pi_F(C)=\mathbb{E}_{(x,y)\sim D_F}\!\left[L_F\!\left(\hat{y}_{\mathrm{base}}(x),y\right)-L_F\!\left(\hat{y}_{C}(x),y\right)\right].
+\]
+Projectibility\ixsq{projectibility!defined} for field $F$ holds when $\Pi_F(C)>0$ robustly out of sample.
+
+This is where interest-relativity belongs. Craver's and Onishi--Serpico's challenge is real: explanatory interests change variable sets and evaluation targets \parencite{craver2009,onishi2022}. In this formalization, that dependence is explicit in $F$, while maintenance claims remain empirical via perturbation and recovery. This avoids a mechanism-free account that is too thin and avoids treating any one graph as uniquely privileged \parencite{lemeire2018}.
+
+This structure also links directly to existing formal threads. Martínez's informationally connected property-cluster proposal maps to the profile score $S(C)$ via mutual information \parencite{martinez2015informationally}. Rehder's causal-model theory instantiates the maintenance--projectibility bridge with a generative Bayesian network over features \parencite{rehder2003causal}. Van Rooij and Schulz's natural-kind analysis in Pearl-style causal models maps to the intervention and ablation clauses \parencite{vanrooijschulz2019}.
+
+\subsection*{Operational decision rule}
+
+For a declared field $F$, treat $C$ as an HPC category only if all four checks pass:
+\begin{enumerate}
+    \item Profile: $S(C)$ exceeds a pre-registered null margin.
+    \item Homeostasis: $\tau_{\delta}(a)<\infty$ across the admissible perturbation set.
+    \item Projectibility: $\Pi_F(C)>0$ on held-out data.
+    \item Ablation: removing a candidate stabilizer decreases $S(C)$ or $\Pi_F(C)$ by at least $\epsilon$.
+\end{enumerate}
+
+\subsection*{Failure-mode mapping}
+
+The Part~II and Part~III failure modes map directly onto these quantities:
+\begin{description}
+    \item[Too thin.] Low $S(C)$, weak or absent recovery, and near-zero $\Pi_F(C)$.
+    \item[Too fat.] Non-trivial $S(C)$ but no stable ablation signature and poor transfer across fields $F$.
+    \item[Merely negative.] Complement-defined grouping with no coherent maintenance dynamics and no predictive lift.
+\end{description}
+
 \section{Operationalizing the diagnostics}
 
 The two criteria aren't operationalized symmetrically.

@@ -3,6 +3,30 @@
 **Date**: March 3, 2026
 **Current Phase**: 17-chapter draft + postscript; new Ch 13 (sign language anaphor) planned. Revision/polish phase.
 
+### Session (Mar 3, 2026): Ch 5 revisions from ChatGPT 5.2 feedback
+
+- ✅ **7 surgical edits** to `chapters/chapter05.tex` (clear wins + worth doing from ChatGPT 5.2 pro review)
+  - ω → H notation fix (avoids confusion with first infinite ordinal)
+  - K's status clarified (not psychologically real)
+  - Invariant prediction named explicitly (latent-threshold model vs hyperreal contribution)
+  - "That's exactly what we find" softened
+  - "stable manifolds of saddle points" jargon dialled back
+  - Bivalence indexed to individual speaker's maintained grammar
+  - Probabilistic-competence alternatives acknowledged (3 sentences, cross-refs Ch 14)
+- ✅ **Verified:** No remaining `$\omega$`; XeLaTeX compiles cleanly (480 pages)
+
+### Session (Mar 3, 2026): Ch 13 sign anaphor drafted
+
+- ✅ **Chapter 13 drafted** (`chapters/chapter13-sign-anaphor.tex`): ~5500 words, 7 sections, 2 tables
+  - Core move: anaphoric tracking ≠ spatial agreement (two HPC clusters, not one)
+  - Schlenker/Kuhn debate resolved as each describing a different cluster
+  - Coupling gradient table: ASL → BSL → ISL → NSL → ABSL → Kata Kolok → homesign
+  - Labels: `sec:sign:` prefix, `ch:sign-anaphor` chapter label
+- ✅ **18 bib entries** added to `references-local.bib` (verified against PDFs)
+- ✅ **Compiled successfully** (no LaTeX errors); PDF reviewed
+- ✅ **Inserted in `hpc-book.tex`** after Ch 12, before zipper chapter
+- **Pending:** Brett's review, chapter renumbering infrastructure, flagged bib verifications
+
 ### Session (Mar 3, 2026): Editorial decisions + new chapter decision
 
 **Editorial decisions resolved:**
@@ -19,6 +43,27 @@
 - Literature pass needed before writing (Sandler & Lillo-Martin 2006, Schlenker 2018, Padden 1988, Cormier et al., village sign languages)
 
 **Next session:** Start with `notes/ch13-sign-anaphor-scope.md`. Literature pass first, then chapter structure, then drafting.
+
+### Session (Mar 3, 2026): HPC formalization appendix + citation bridge
+
+- ✅ **Appendix A formalization added** (`chapters/appendix_diagnostics.tex`):
+  - Triad definition: `HPC_F(C)=⟨P(C), M(C), Π_F(C)⟩`
+  - Profile layer with MI-based dependence score `S(C)`
+  - Maintenance layer as dynamical mechanism with intervention form `do(A_t=a)` and return-to-basin criterion `τ_δ(a)`
+  - Projectibility layer as field-relative predictive lift `Π_F(C)`
+  - Four-check decision rule (profile, homeostasis, projectibility, ablation)
+  - Thin/fat/negative failure-mode mapping to formal quantities
+- ✅ **Named literature bridge inserted** in Appendix A:
+  - Martínez (informationally connected property clusters)
+  - Rehder (causal-model categorization)
+  - van Rooij & Schulz (Pearl-style causal analysis of natural kinds/dispositions)
+- ✅ **Local bibliography updates** in `references-local.bib`:
+  - Added `martinez2015informationally`, `rehder2003causal`, `vanrooijschulz2019`
+  - DOI metadata verified via Crossref API before insertion
+- ✅ **Verification complete**:
+  - `latexmk hpc-book.tex` successful; no undefined-citation warnings; output `build/hpc-book.pdf` at **498 pages**
+  - `python code/validate_bib.py` successful (`references.bib` parsed cleanly)
+- ⚠️ **Scope note:** The three new bibliography records are currently local (`references-local.bib`) and not yet promoted to shared `references.bib`.
 
 ### Multi-day instance (Feb 28 -- Mar 2, 2026): 18 commits, major structural and editorial work
 
