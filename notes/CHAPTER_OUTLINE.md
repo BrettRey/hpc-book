@@ -264,4 +264,4 @@
 - Part IV synthesizes implications for practice
 - Target: ~15--20 pages per chapter for substantive chapters
 
-**Total: 17 chapters across 4 parts** (Cross-domain extension chapter added, February 2026)
+**Total: 18 chapters across 4 parts** (Cross-domain extension chapter added, February 2026)

@@ -68,7 +68,7 @@
 ### Multi-day instance (Feb 28 -- Mar 2, 2026): 18 commits, major structural and editorial work
 
 **Structural:**
-- ✅ **Split Ch 16 → Ch 16 + Ch 17**: Ch 16 ("How Categories Travel") and Ch 17 ("The Gauntlet") now separate chapters. Book is 17 chapters + postscript.
+- ✅ **Split Ch 16 → Ch 16 + Ch 17**: Ch 16 ("How Categories Travel") and Ch 17 ("The Gauntlet") now separate chapters. With the signed-language insertion, the current structure is 18 chapters + postscript.
 - ✅ **Predictions appendix (Appendix C)**: 30 numbered predictions + 2 defeat conditions gathered from across the book.
 - ✅ **Postscript created**: ~370 words on "language" as a category the book doesn't address.
 - ✅ **Cross-reference infrastructure**: index tags, section labels, `\ref` conversions, Ch 15 prose fixes.
@@ -617,11 +617,13 @@
 - ✅ **Ch 7**: The Stabilisers - drafted and revised (quotatives case study)
 - ✅ **Ch 8**: Failure Modes - drafted (thin/fat/negative taxonomy)
 
-### Part III: Categories Reconsidered (Chapters 9-12)
+### Part III: Categories Reconsidered (Chapters 9-14)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
 - ✅ **Ch 10**: Definiteness - complete and audited (Dec 25, 2025)
 - ✅ **Ch 11**: Lexical Categories - complete (Feb 20, 2026). Six sections, review board, rhetorical polish.
 - ✅ **Ch 12**: Gender and the Maintenance Spectrum - drafted (Dec 26), polished (Jan 8). Ship/table hook, transparent→entrenched spectrum, English/French/German cases.
+- ✅ **Ch 13**: Sign-language discourse reference - drafted and revised as a modality stress test for the Part III diagnostics.
+- ✅ **Ch 14**: The category zipper - drafted and revised as Part III synthesis across the coupling gradient.
 
 ### Session Work (Dec 15-16, 2025)
 - ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)
@@ -661,7 +663,7 @@
 
 ## Current Phase
 
-**All 16 chapters drafted** (confirmed Feb 23, 2026). Book is now in revision/polish phase.
+**All 18 chapters drafted**. Book is now in revision/polish phase.
 
 ### Outstanding structural work
 - Peirce integration on `projectibility-pivot` branch (Chs 7, 9-14 touched; not yet merged)
