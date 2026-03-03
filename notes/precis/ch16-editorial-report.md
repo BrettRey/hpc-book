@@ -1,61 +1,75 @@
-# Chapter 16 Editorial Report: What Changes
+# Chapter 16 Editorial Report: How Categories Travel
 
 ---
 
 ## 1. Argument
 
-The chapter's argument is sound and appropriately scoped: it does what a final chapter should do by converting the book's theoretical apparatus into falsifiable commitments. The three-debts/gauntlet structure (show clustering, identify stabilisers, demonstrate projection, then predict and stress-test) is the right instrument for a closing chapter. The dual stress tests -- the essentialist's best case (mechanism-light projection) and the nominalist's best case (baseline parity) -- are genuinely well-constructed; they put the framework at risk from both sides of the debate the book opened in Chapters 1--3, which gives the ending structural symmetry with the beginning. One logical gap: the chapter asserts that the conditioned-vs-pooled comparison from Ch 15 is "the same test" applied across all rows of Table 16.1, but this flattens a genuine disanalogy. The conditioned model was developed for sociolinguistic variation (register, community); applying it to countability or lexical categories requires different conditioning variables (semantic domain, morphological context), and the chapter doesn't acknowledge that the "same test" is actually a family of tests with shared logic but different operationalisations.
+The chapter's central argument -- that cross-domain extension falls out of the HPC framework as a predicted capacity rather than an additional stipulation -- is well-constructed and genuinely advances the book's programme. The move from "categories are maintained clusters" to "maintained clusters that share mechanism-sustained property overlap support inferential transfer" is logically tight and earns the reflexivity of the Boyd circle. The engagement with cognitive linguistics follows Rapoport's Rules faithfully: Rosch, Lakoff, Bybee, and Langacker are credited with genuine contributions before the diagnostic gap is identified. The distinction between Boyd's TCM and Lakoff and Johnson's conceptual metaphor is sharp and load-bearing: TCMs work because of shared causal architecture, not because source and target share surface features. The literary-metaphor paragraph (Dickinson) is a welcome contrast that sharpens the distinction between mechanism-supported and mechanism-independent mapping.
+
+One argumentative tension: the chapter claims cognitive linguistics lacked "the apparatus for saying when a maintained cluster actually projects" (L18), but usage-based work (Bybee, Goldberg) does have productivity metrics -- type frequency, statistical preemption, entrenchment measures. The gap is more precisely that these metrics describe productivity without explaining what makes a productive pattern projectible in the philosophical sense (supporting novel inferences about unexamined cases). The chapter should be precise about what's missing: not productivity measurement, but a theory of why productivity tracks shared causal architecture.
 
 ## 2. Structure
 
-The section ordering is mostly right. The progression from ontological framing (SS16.2) through synthesis ledger (SS16.3) to empirical predictions (SS16.4) to falsification conditions (SS16.5) to operationalisation (SS16.6) follows a natural deductive tightening. The new "Research agenda" section (SS16.7) sits well between "Operationalizing the gauntlet" and the conclusion: it collects the book's accumulated IOUs in one honest ledger, which is exactly what the book-level editorial report (item 6) recommended. The section earns its place. One structural concern: SS16.2 ("No level privilege, no level immunity") is three paragraphs of ontological positioning that overlap substantially with the conclusion (SS16.8), which re-states the Ladyman and Ross commitment and the scale-dependent ontology claim. The chapter would tighten if SS16.2's content were folded into the conclusion, letting the chapter move directly from the gauntlet figure into the synthesis ledger.
+The section ordering is strong. The cognitive-linguistics engagement (SS16.1) earns the right to introduce TCM (SS16.2) by showing what the nearest tradition got right and what it missed. The trail example (SS16.3) is well-placed: it grounds cross-domain extension in a non-linguistic domain before the Boyd circle (SS16.4) turns reflexive, which keeps the reflexivity from feeling premature. "What this means" (SS16.5) draws out consequences in a natural five-point sequence.
+
+The chapter is appropriately sized for its role: it develops one major argument (cross-domain extension) with one extended example (trail) and one structural payoff (Boyd circle), then connects to Ch 17. It doesn't try to do too much.
+
+One structural note: SS16.1 ("The nearest tradition") is the longest section and could be trimmed. The Rosch/cue-validity paragraph (L20) is thorough but runs to ~150 words; the embodiment paragraph (L22) could be shortened since the point (grammatical categories aren't perceptually grounded) is made quickly and then re-stated.
 
 ## 3. Prose
 
-The voice is right for a closing chapter: clipped, declarative, deliberately austere. "A theory that survives every possible result explains nothing; if it can't lose, it can't win" (line 8) is one of the best opening lines in the book. The *data* conference-Q&A vignette (line 104) is vivid and instantly legible. The suitcase-zipper image in the conclusion (line 252) is effective precisely because it is domestic rather than technical. Where the prose drags: the operationalisation section (SS16.6, lines 200--226) reads like a methods preregistration rather than a book chapter; "hierarchical models for variance structure, changepoint or state-space methods for lag estimates, held-out log-loss on out-of-construction splits" (line 224) is a list that only a quantitative linguist would parse, and it risks losing the generalist reader the book has been cultivating. The sentence "The details belong in a preregistration, not a book chapter" (line 224) knows this but doesn't fix it -- it concedes the problem without solving it. Consider cutting the technical enumeration and letting the sentence stand alone.
+The voice is confident and clear, with good variation between expository, argumentative, and narrative registers. The trail example is vivid and well-paced: the progression from trained tracking to substrate-crossing to painted soccer lines is elegant, and the dog-on-painted-lines image is instantly memorable.
+
+Strong lines: "Language doesn't create cross-domain extension. It extends how far a category can travel" (L72). "The poet's art is precise selection at the mechanism boundary" (L53). "They follow any line, including the painted ones" (L74, on LLMs).
+
+The LLM paragraph (L74) is sharp and well-timed -- it uses a contemporary reference to sharpen a conceptual point without becoming a distraction. The framing "endogenous goals are what let the dog be selective" is the right diagnosis.
+
+Where the prose drags: the counting paragraph in SS16.5 (L113, "The sharpest gap is counting") rehearses the definiteness/deitality argument at length. The reader has already seen this case in Ch 10; a shorter reminder would suffice. The final two paragraphs of SS16.5 (L117--119) are dense and partially overlap: both connect Ch 16's argument to Ch 17's gauntlet, and the second (L119) re-states the TCM point about biology-to-linguistics. Consider merging.
 
 ## 4. Evidence
 
-The *data* example is well-chosen and well-deployed: it is mid-shift, measurable, and familiar to any academic audience. But the chapter leans on it exclusively, and this creates a vulnerability the book-level report already flagged. No second case is developed at comparable resolution. A brief second pass through, say, the *fun* drift (from Ch 1 and Ch 5) or the *be like* quotative (from Ch 6) -- even at half the resolution of *data* -- would demonstrate that the gauntlet generalises rather than merely fitting one noun's trajectory. The synthesis ledger (Table 16.1) does useful bookkeeping but is backward-looking (summarising earlier chapters' commitments) rather than forward-looking (showing the gauntlet in action). The new Research Agenda section (SS16.7) partially addresses this by collecting the IOUs, but it remains a catalogue of debts rather than a demonstration of payment. The gauntlet table (Table 16.2) is the chapter's most operationally useful contribution.
+The trail example is the chapter's evidentiary centrepiece and it works well. Thesen (1993), Hepper and Wells (2005), and Fagan et al. (2025) are appropriately cited. The canid-vs-felid contrast from Fagan et al. is a good touch: it shows mechanism density predicting category depth across species, which parallels the book's claim about mechanism density predicting category robustness across grammatical domains.
+
+The Noyes and Keil (2019) experimental evidence for kind assumptions without essence assumptions (SS16.2, L49) is well-deployed: the effect sizes ($d = 1.09$ vs $d = 0.37$) are specific and diagnostic.
+
+What's missing: the chapter makes strong claims about cross-domain extension tracking shared mechanisms, but the only worked non-linguistic case is the trail. A brief second example -- even from a different domain (economics, ecology, engineering) -- would show the principle generalises beyond animal cognition. The biology-to-linguistics transfer itself is the implicit second case, but making it explicit as evidence (beyond the Boyd circle's structural argument) would strengthen the chapter.
 
 ## 5. Cross-chapter coherence
 
-The new Research Agenda section (SS16.7) directly addresses the book-level report's concern (item 6) about accumulated promissory content: it collects seven open fronts with specificity. This is a significant improvement. Cross-references to earlier chapters are handled well: the *data* case threads through Ch 9 (countability), the conditioned-vs-pooled test through Ch 15, the zipper through Ch 13. One notable absence: Ch 8's failure-mode audit template (the seven-step instrument) is the direct ancestor of the gauntlet, but the chapter doesn't explicitly connect the two. A sentence in SS16.1 noting that the gauntlet extends the Ch 8 audit from single-case diagnosis to cross-domain falsification would close the loop. The chapter also doesn't pick up on Ch 13's discourse-level gap except in the Research Agenda -- the zipper metaphor is used repeatedly but the missing discourse tooth is never acknowledged in the main argument. The chapter's final line ("Words that won't hold still can still hold together -- until they don't") echoes the title of Ch 1 effectively, closing the frame.
+The chapter connects well backward: Rosch to Ch 1, prototype theory to Ch 3, mechanisms to Ch 6, projectibility to Ch 7, failure modes to Ch 8, definiteness/deitality to Ch 10, proper noun/name to Ch 7. The forward connection to Ch 17 is explicit and load-bearing: the TCM from biology to linguistics licences Ch 17's gauntlet predictions.
+
+The Peirce connection (cable metaphor as TCM, L94) is well-integrated and doesn't feel imposed -- it adds genuine content by identifying Peirce's metaphor as an instance of the very capacity being theorised.
+
+One absence: Ch 13's coupling continuum (hard/loose/composite) isn't mentioned. The trail example could be framed in coupling terms -- the tracking dog on grass is tightly coupled, on concrete is loosely coupled, on painted lines is at the composite boundary. This would connect Ch 16 to Ch 13's theoretical vocabulary more explicitly.
 
 ## 6. House style issues
 
-**En-dash/em-dash.** Line 3: `— James Ladyman` uses an em-dash. House style requires an en-dash with spaces for attributions. Should be `-- James Ladyman` (or use the `\epigraph` command's built-in formatting if it handles this). The epigraph macro likely handles the dash, but verify.
+**Semantic macros.** Generally correct. `\term{}` used for cross-domain extension (L45), theory-constitutive metaphor (L39), functional domain (L68). `\mention{}` used for linguistic forms. One instance worth checking: "kind assumption" and "essence assumption" at L49 use `\term{}` -- correct if these are being introduced as technical terms.
 
-**\mention{} and \term{} usage.** Generally correct. Line 113 has `\term{meta-Occam\ixsq{meta-Occam}}` which is correct (introducing a technical concept). Line 115 uses `adjective\ixsq{adjective}` without `\term{}` or `\mention{}` -- this should be `\term{adjective}` in at least the first instance, since it is a category name being used in a technical sense. Similarly, line 115 has `category\ixsq{category}` bare where `\term{category}` would be appropriate in at least one occurrence. And 3 more instances of bare `category\ixsq{category}` in lines 169, 183, 188.
+**En-dash usage.** Correct throughout; en-dashes with spaces for parentheticals (L14, L16, L20, etc.).
 
-**Index entries in running text.** The chapter has extensive `\ixsq{}`, `\ixlq{}`, `\ixnq{}` indexing, which is fine. But several index entries appear to be attached to words that don't need semantic markup (e.g., `alignment\ixsq{alignment}` at line 256 without `\term{}`). The index commands are correctly placed, but where the indexed term is also being used technically, the semantic macro should wrap the visible text.
+**Contractions.** Present and natural: "isn't" (L7), "don't" (L41), "didn't" (L22), "can't" (L30). Good.
 
-**Contractions.** The chapter uses contractions well and consistently: "can't," "don't," "isn't," "we're," "won't." No violations.
+**Quotation marks.** `\enquote{}` used correctly (L53, L172, etc.).
 
-**Quotation marks.** `\enquote{}` is used correctly throughout (lines 104, 162, 167, 254, 258). No bare quotation marks.
+**Paragraph length.** Most paragraphs are within guidelines. The Rosch/cue-validity paragraph (L20) and the five-consequences paragraphs in SS16.5 run longer (~100-120 words in some cases), but this is appropriate for substantive expository passages.
 
-**Paragraph length.** Most paragraphs are within the ~60-word target. The Research Agenda paragraphs (SS16.7) tend to run longer -- the countability paragraph (lines 233--234) is approximately 80 words, which is acceptable, but the pro-form gender paragraph (lines 239--240) runs to roughly 90 words. Neither is a violation of the 100-word guideline, but they are denser than the rest of the chapter.
-
-**Bold/lists.** The Research Agenda section uses `\textsc{}` labels for each domain (Countability, Definiteness, etc.) as paragraph openers. This is a reasonable structural choice for a ledger-style section and doesn't violate the style guide's prohibition on bold labels, since small-caps topic markers are used elsewhere in the book for running threads.
+**Index entries.** Extensive and well-placed. `\ixsq{}`, `\ixlq{}`, `\ixnq{}` used consistently.
 
 ## 7. Specific recommendations
 
-1. **Add a second gauntlet case at sketch resolution.** The *fun* drift (introduced in Ch 1, developed in Ch 5) would take 300--500 words and would show the gauntlet operating on a different category boundary (noun-to-adjective rather than count-to-mass). Insert after the *data* operationalisation in SS16.6 or as a brief subsection before the Research Agenda. This is the single change most likely to strengthen the chapter.
+1. **Sharpen the cognitive-linguistics gap diagnosis.** L18: "the apparatus for saying when a maintained cluster actually projects" could be misread as claiming usage-based linguistics has no productivity metrics. Clarify: the gap is between measuring frequency-based productivity and explaining why productivity tracks shared causal architecture.
 
-2. **Trim SS16.2 ("No level privilege") and fold its content into the conclusion.** The Ladyman-and-Ross ontological commitment is stated in the epigraph (line 3), restated in SS16.2 (lines 111--112), and restated again in the conclusion (lines 256--257). Three statements of the same principle is two too many. Move the meta-Occam and comparative-concept paragraphs (lines 113--115) to the conclusion and cut SS16.2 entirely.
+2. **Trim the counting paragraph in SS16.5.** L113: the definiteness/deitality and proper noun/name cases are re-argued at length. The reader knows these cases; a 2-sentence reminder would suffice.
 
-3. **Explicitly connect the gauntlet to Ch 8's audit template.** In SS16.1, after "Figure~\ref{fig:16:gauntlet} maps the evaluation pathway" (line 12), add a sentence: something like "The template extends the seven-step audit from Chapter 8 to the cross-domain level: what worked for diagnosing single categories now becomes a falsification instrument for the framework itself."
+3. **Merge the final two paragraphs of SS16.5.** L117 and L119 both connect Ch 16 to Ch 17 and both invoke the TCM point. Combine into one closing paragraph.
 
-4. **Cut or compress the technical enumeration in SS16.6.** Lines 224--226 ("The machinery is straightforward: hierarchical models for variance structure...") can be reduced to "The statistical machinery -- variance decomposition, changepoint analysis, held-out prediction -- belongs in a preregistration, not a book chapter." This preserves the gesture without alienating non-quantitative readers.
+4. **Consider connecting the trail to Ch 13's coupling vocabulary.** The trail across substrates maps naturally to the coupling continuum: tight on grass, loose on concrete, at the composite boundary on painted lines. A parenthetical would do.
 
-5. **Fix the \term{} markup on bare category names.** Line 115: first instance of `adjective` should be `\term{adjective}`. Line 115: `category` as a technical term should get `\term{}` on at least one instance per paragraph where it is doing load-bearing theoretical work.
+5. **Consider a second non-linguistic example.** A 2-3 sentence sketch of cross-domain extension in another field (medicine, engineering, ecology) would show the principle isn't domain-specific.
 
-6. **Check the epigraph dash.** Line 3: verify whether `\epigraph` handles the attribution dash automatically. If the em-dash is manually inserted, replace with en-dash per house style.
-
-7. **Consider whether the Research Agenda needs a brief framing coda.** The section's final paragraph ("That's seven open fronts...") is strong, but the transition to the conclusion is abrupt. A single bridging sentence -- e.g., "The gauntlet is the instrument; the agenda is the programme" -- would smooth the joint.
-
-8. **Address the conditioned-vs-pooled disanalogy.** In SS16.3 (line 122), where the chapter claims all rows face "the same test," add a parenthetical or footnote acknowledging that the conditioning variables differ across domains (register and community for social stabilisation; semantic domain and morphological context for countability) while the inferential logic is shared.
+6. **The embodiment paragraph (L22) can be shortened.** The point is made by the second sentence ("But the grammatical categories this book examines aren't perceptually grounded"); the preceding setup about spatial schemas and basic-level categories can be compressed.
 
 ---
 
-*Report based on the full chapter text and cross-referenced against all 16 chapter precis, the book-level editorial report, and the house style guide.*
+*Report based on the full chapter text, cross-referenced against Ch 17 precis, the chapter outline, and the house style guide.*
