@@ -115,10 +115,10 @@
 
 ---
 
-## Part III: Categories Reconsidered (5 chapters)
+## Part III: Categories Reconsidered (6 chapters)
 *Case studies in field-relative projectibility*
 
-**Design note:** The case studies are ordered from tightest coupling to loosest. Ch 9 (countability) is the strongest, most data-rich case; each subsequent chapter loosens the coupling and shows what happens when maintenance thins. This is deliberate: the sequence demonstrates the framework's range, not diminishing quality.
+**Design note:** The case studies are ordered from tightest coupling to loosest. Ch 9 (countability) is the strongest, most data-rich case; each subsequent chapter loosens the coupling and shows what happens when maintenance thins. Ch 13 (sign language anaphor) tests modality independence. This is deliberate: the sequence demonstrates the framework's range, not diminishing quality.
 
 ### Ch 9: Countability
 *A grammatical category done right -- the tightest coupling*
@@ -169,7 +169,19 @@
 - Chain-coherence and constructional-conditioning phenomena
 - Cross-linguistic: Haspelmath on who/what universal, Siemund on dialectal variation
 
-### Ch 13: The category zipper
+### Ch 13: Sign language anaphor
+*Modality independence -- the same architecture in a different channel*
+
+**Key points:**
+- Tests whether HPC architecture is substrate-neutral (manual-visual vs oral-aural)
+- Two-cluster architecture: semantic referent tracking + formal spatial system (loci, pointing, agreement verbs)
+- Mechanisms: spatial working memory, acquisition sequence, alignment, role shift
+- Failure modes: locus decay, competition, refresh strategies
+- Cross-linguistic variation: ASL (spatial loci + agreement verbs), BSL (body shift), village sign languages (reduced systems)
+- The coupling is transparent: you can literally see the mechanism operating
+- **Full scoping notes:** `notes/ch13-sign-anaphor-scope.md`
+
+### Ch 14: The category zipper
 *Scale-invariance -- from phonemes to constructions*
 
 **Key points:**
@@ -185,7 +197,7 @@
 
 ## Part IV: What Changes (4 chapters)
 
-### Ch 14: Grammaticality itself
+### Ch 15: Grammaticality itself
 *The deepest category, also an HPC -- the zipper closing*
 
 **Key points:**
@@ -200,7 +212,7 @@
 - Dual-role thesis: grammaticality is both category and mechanism (spinning top)
 - Grammaticality as a species of appropriateness narrowed to morphosyntactic channel
 
-### Ch 15: The social stabilization of kinds
+### Ch 16: The social stabilization of kinds
 *Why categories stay aligned across speakers*
 
 **Key points:**
@@ -216,7 +228,7 @@
 - O'Connor's coordination games: communicative clarity vs. identity management
 - Methodological commitment: "No conditioning gain, no maintenance claim"
 
-### Ch 16: How categories travel
+### Ch 17: How categories travel
 *Cross-domain extension as a predicted capacity -- engaging cognitive linguistics*
 
 **Key points:**
@@ -230,7 +242,7 @@
 - Methodological upshot: stop looking for the mapping, start looking for the shared maintenance
 - Falsification condition: cross-domain extension should track mechanism density
 
-### Ch 17: The gauntlet
+### Ch 18: The gauntlet
 *Predictions, stress tests, and defeat conditions*
 
 **Key points:**

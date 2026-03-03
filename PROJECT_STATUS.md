@@ -1,7 +1,24 @@
 # HPC Book Project Status
 
-**Date**: March 2, 2026
-**Current Phase**: Full 17-chapter draft + postscript in place; revision/polish phase
+**Date**: March 3, 2026
+**Current Phase**: 17-chapter draft + postscript; new Ch 13 (sign language anaphor) planned. Revision/polish phase.
+
+### Session (Mar 3, 2026): Editorial decisions + new chapter decision
+
+**Editorial decisions resolved:**
+- ✅ **PA → footnote** (Ch 1): Jackendoff paragraph moved to footnote on "third possibility" pivot
+- ✅ **Peirce tightening** (Chs 9, 12): Reduced would-be repetition in Ch 9 (8→3); cut Ch 7 recap and redundant Peirce attribution in Ch 12
+- ✅ **Discourse scope-limit** (Ch 13): Visible sentence before stabilizer-weighting map + table footnote
+- ✅ **Budding expansion** (Ch 17): 4 sentences → ~450 words. New terms: budding, mechanism parasitism
+- ✅ **CC-BY 4.0** on colophon; GitHub repo URL added
+- ✅ **"Foundations of linguistics"** named as subfield in preface
+
+**Architectural decision:**
+- ✅ **New Ch 13: Sign language anaphor** -- tests modality independence of HPC architecture. Spatial loci as formal cluster, referent tracking as semantic cluster. Current Ch 13 (stack) → Ch 14; Part IV chapters renumber (15--18). Full scoping notes: `notes/ch13-sign-anaphor-scope.md`
+- Book becomes **18 chapters** + postscript
+- Literature pass needed before writing (Sandler & Lillo-Martin 2006, Schlenker 2018, Padden 1988, Cormier et al., village sign languages)
+
+**Next session:** Start with `notes/ch13-sign-anaphor-scope.md`. Literature pass first, then chapter structure, then drafting.
 
 ### Multi-day instance (Feb 28 -- Mar 2, 2026): 18 commits, major structural and editorial work
 
