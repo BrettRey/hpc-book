@@ -30,7 +30,7 @@ Biology faced the same puzzle. Darwin demolished the idea that species have esse
 
 The philosopher Richard Boyd offered a solution: *homeostatic property clusters*. A species isn't defined by a checklist of necessary properties. It's a bundle of features that tend to co-occur — fur patterns, behaviours, genetic markers — held together by causal mechanisms like interbreeding, shared ecology, and gene flow. The boundaries are fuzzy at the edges, but the cluster is real because *something maintains it*.
 
-Think of a spinning top. It stays upright not because it's rigid but because it's *moving*. The spin resists perturbation. Push it slightly, and gyroscopic forces bring it back. Stop the spin, and the top falls.
+Think of a spinning top. It stays upright not because it's rigid but because it's *moving*. The spin resists perturbation. Push it slightly, and gyroscopic forces pull it back toward its path. Stop the spin, and the top falls.
 
 Grammatical categories are like this. What keeps *noun* stable isn't a definition — it's a tangle of mechanisms:
 
