@@ -9,6 +9,9 @@
 
 The main argument treats an HPC category as a three-part object: a property profile, a maintenance story, and a projectibility payoff \parencite{boyd1991}. The formalization below makes those parts explicit and keeps them distinct. This is regimentation, not an essence-style definition: the goal is to state success conditions transparently, not to legislate category membership by notation.
 
+Why put this here at all? Because it makes the success conditions checkable: you can see exactly what counts as profile evidence, maintenance evidence, and predictive lift, and what would count against each. The prose argument in the main chapters is primary; the notation is an audit trail.
+Read the clauses as design constraints, not turn-key estimators: the hard work remains operationalization, sampling, and perturbation design.
+
 For a candidate category $C$ and analytical field
 \[
 F=(Q_F,I_F,L_F,D_F,\Sigma_F),
@@ -18,6 +21,8 @@ define
 \mathrm{HPC}_F(C)=\left\langle \mathcal{P}_F(C),\mathcal{M}(C),\Pi_F(C)\right\rangle .
 \]
 Here $Q_F$ is a query family, $I_F$ an intervention family, $L_F$ a loss function, $D_F$ a declared diagnostic/measurement regime, and $\Sigma_F$ a scope declaration (population, register, time slice, grain). $\mathcal{P}_F(C)$ is the profile layer, $\mathcal{M}(C)$ is the maintenance layer, and $\Pi_F(C)$ is the field-indexed projectibility layer.
+
+Toy reading with concrete diagnostics: take $C$ as English count nouns in edited prose, and let diagnostics $A/B/C$ in $D_F$ be numeral compatibility, plural morphology, and agreement behaviour. Let $Q_F$ ask whether unseen tokens pattern as count-like, let $\Sigma_F$ fix scope to a declared register/time slice, and let $L_F$ be held-out prediction loss. Then $S_F(C)$ asks whether $A/B/C$ co-vary above baseline, $\tau_{\delta}(a)$ asks whether that profile returns after perturbation, and $\Pi_F(C)$ asks whether modelling $C$ beats a baseline on new data.
 
 \subsection*{Profile layer: dependence structure}
 
