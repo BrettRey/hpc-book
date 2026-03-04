@@ -1,12 +1,12 @@
 #!/bin/bash
-# Chapter 14 Advisory Board (parallel Codex agents)
+# Chapter 15 Advisory Board (parallel Codex agents)
 
 set -euo pipefail
 
 cd "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book"
 
 read -r -d '' CONTEXT << 'EOF' || true
-# Chapter 14 Review Task: "Grammaticality itself"
+# Chapter 15 Review Task: "Grammaticality itself"
 
 Core chapter claim:
 - Grammaticality is itself an HPC kind: a maintained coupling between morphosyntactic form and structural meaning.
@@ -41,7 +41,7 @@ run_codex() {
     codex exec --full-auto -C "$(pwd)" -o "$out" \
         "You are ${name}, ${specialty}.
 
-Read chapters/chapter14.tex in full before writing.
+Read chapters/chapter15.tex in full before writing.
 
 ${CONTEXT}
 

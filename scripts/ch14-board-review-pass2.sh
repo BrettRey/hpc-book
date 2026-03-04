@@ -1,14 +1,14 @@
 #!/bin/bash
-# Chapter 14 Advisory Board (pass 2, parallel Codex agents)
+# Chapter 15 Advisory Board (pass 2, parallel Codex agents)
 
 set -euo pipefail
 
 cd "/Users/brettreynolds/Documents/LLM-CLI-projects/papers/HPC book"
 
 read -r -d '' CONTEXT << 'EOF' || true
-# Chapter 14 Review Task (Pass 2): "Grammaticality itself"
+# Chapter 15 Review Task (Pass 2): "Grammaticality itself"
 
-Read `chapters/chapter14.tex` in full.
+Read `chapters/chapter15.tex` in full.
 This is a second-pass review after a targeted revision addressing prior board concerns.
 
 Core chapter claim:
@@ -44,7 +44,7 @@ run_codex() {
     codex exec --full-auto -C "$(pwd)" -o "$out" \
         "You are ${name}, ${specialty}.
 
-Read chapters/chapter14.tex in full before writing.
+Read chapters/chapter15.tex in full before writing.
 
 ${CONTEXT}
 

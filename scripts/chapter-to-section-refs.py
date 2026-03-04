@@ -19,7 +19,7 @@ CHANGES = [
      r"Chapter~\ref{ch:failure-modes} introduced the Two-Diagnostic Test",
      r"§\ref{sec:8:diagnostics} introduced the Two-Diagnostic Test",
      "TDT reference"),
-    ("chapter14.tex",
+    ("chapter15.tex",
      r"Chapter~\ref{ch:failure-modes} introduced the Two-Diagnostic Test",
      r"§\ref{sec:8:diagnostics} introduced the Two-Diagnostic Test",
      "TDT reference"),
@@ -41,7 +41,7 @@ CHANGES = [
      "fat-class signature (part 1 — remove Chapter ref)"),
     # Add section ref after "signature" — handled separately below
 
-    ("chapter15.tex",
+    ("chapter16.tex",
      r"fat class\ixsq{fat class} (Chapter~\ref{ch:failure-modes})",
      r"fat class\ixsq{fat class} (§\ref{sec:8:fat})",
      "fat class parenthetical"),
@@ -59,13 +59,13 @@ CHANGES = [
      "tolerance dynamics"),
 
     # === Basin dynamics → sec:5:geometry-to-mechanism ===
-    ("chapter15.tex",
+    ("chapter16.tex",
      r"basin dynamics of Chapter~\ref{ch:dynamic-discreteness}",
      r"basin dynamics of §\ref{sec:5:geometry-to-mechanism}",
      "basin dynamics"),
 
     # === Triadic architecture → sec:13:mediation ===
-    ("chapter14.tex",
+    ("chapter15.tex",
      r"triadic architecture of Chapter~\ref{ch:the-category-zipper}",
      r"triadic architecture of §\ref{sec:13:mediation}",
      "triadic/mediation architecture"),
@@ -87,13 +87,13 @@ CHANGES = [
      r"Chapter~\ref{ch:projectibility} argued that projectibility",
      r"§\ref{sec:7:what-projection-is} argued that projectibility",
      "would-be generation"),
-    ("chapter15.tex",
+    ("chapter16.tex",
      r"the terms of Chapter~\ref{ch:projectibility}, the indexical field",
      r"the terms of §\ref{sec:7:what-projection-is}, the indexical field",
      "would-be space"),
 
     # === Field-relative projectibility → sec:7:field-relative ===
-    ("chapter15.tex",
+    ("chapter16.tex",
      r"field-relative projectibility\ixsq{field-relative projectibility} (Chapter~\ref{ch:projectibility})",
      r"field-relative projectibility\ixsq{field-relative projectibility} (§\ref{sec:7:field-relative})",
      "field-relative projectibility"),
@@ -105,37 +105,37 @@ CHANGES = [
      "proper noun/name distinction"),
 
     # === Mixed-bin diagnostic → sec:15:mixed-bin ===
-    ("chapter17.tex",
+    ("chapter18.tex",
      r"Chapter~\ref{ch:social-stabilization} established (conditioned models",
      r"§\ref{sec:15:mixed-bin} established (conditioned models",
      "mixed-bin diagnostic"),
 
     # === Hub-node coupling → sec:13:map ===
-    ("chapter17.tex",
+    ("chapter18.tex",
      r"(Chapter~\ref{ch:the-category-zipper}) but doesn't ask",
      r"(§\ref{sec:13:map}) but doesn't ask",
      "stabilizer-weighting map"),
 
     # === Definiteness/deitality budding → sec:10:coupling ===
-    ("chapter17.tex",
+    ("chapter18.tex",
      r"case from Chapter~\ref{ch:definiteness-and-deitality} provides",
      r"case from §\ref{sec:10:coupling} provides",
      "definiteness budding case"),
 
     # === Data case study → sec:9:data ===
-    ("chapter17.tex",
+    ("chapter18.tex",
      r"\\mention{data}\\ixlq{data} from Chapter~\\ref{ch:countability}",
      r"\\mention{data}\\ixlq{data} from §\\ref{sec:9:data}",
      "data case study"),
 
     # === Personhood hierarchy → sec:12:hierarchy ===
-    ("chapter17.tex",
+    ("chapter18.tex",
      r"Chapter~\ref{ch:proform-gender} established",
      r"§\ref{sec:12:hierarchy} established",
      "personhood hierarchy"),
 
     # === Chain coherence → sec:12:chain-coherence ===
-    ("chapter17.tex",
+    ("chapter18.tex",
      r"Chapter~\ref{ch:proform-gender} showed that once",
      r"§\ref{sec:12:chain-coherence} showed that once",
      "chain coherence"),
