@@ -1071,3 +1071,34 @@ Deep integration of Wiese (2023) and sociolinguistic stabilizers into Chapter 15
 
 ### Remaining bib work
 - Tranche C (optional): resolve remaining 19 `possible_duplicate_record` groups and normalize field-style mixes (`journal`/`journaltitle`, `address`/`location`, `year`/`date`).
+
+---
+
+## 5 March 2026 — Ch 4 terminology alignment, projection reintegration, and redundancy trim
+
+### Session summary
+- Focused edits in `chapters/chapter04.tex` to keep the maintenance–projection–purpose triad explicit and consistent.
+- Added a targeted call-forward from §4.8 to Chapter 5 (`§5.1` and `§5.3`) so transition-zone claims hand off to the discreteness model.
+- Replaced remaining “feature/not-a-bug” stock phrasing in Ch 4 with domain-specific wording.
+- Reduced local overuse of the tiger example by replacing two clustered instances with species/organism phrasing while retaining tiger as the anchor exemplar.
+- Tightened §4.10 to remove repeated commitment/mechanism restatements and compress the falsification recap.
+- Updated the slogan lead-in in §4.10 to include projection explicitly: categories are real in part because they are maintained, and because maintenance supports projection.
+
+### Decisions made
+- Keep Chapter 4 references section-specific where possible; avoid unnecessary chapter-number callbacks in running prose.
+- Keep projection visible even inside maintenance-focused sections; maintenance language should not eclipse the projection leg.
+- Treat §4.10 as a stress-test/handoff section, not a place to re-teach the full mechanism inventory.
+- Disable automatic PDF opening during iterative edits unless explicitly requested.
+
+### Context learned
+- Terminology sensitivity remains high around `category` vs `class`; wording is strongest when both mechanism and projectibility are explicit.
+- Reader experience improves when repeated metaphors/slogans are diversified and local example density is controlled.
+- Ch 4 benefits from concise recap framing; excessive restatement can feel formulaic even when analytically correct.
+
+### Verification
+- Full book builds completed with `latexmk -xelatex -interaction=nonstopmode -f hpc-book.tex` after edits.
+- `hpc-book-current.pdf` synced from `build/hpc-book.pdf` without auto-opening.
+
+### State at end of session
+- Ch 4 revised and compiled; root current PDF refreshed.
+- Working preference recorded: no automatic `open` calls for PDFs during edit cycles.
