@@ -45,11 +45,11 @@ Z_{t+1}^{(a)}=f_{\theta}\!\left(Z_t^{(a)},U_t,\mathrm{do}(A_t=a)\right)+\eta_t .
 \]
 Graph and network implementations are special cases of this layer \parencite{khalidi2015three,borsboom2017}.
 
-Homeostasis\ixsq{homeostasis!defined} is a return-to-basin (of attraction) claim. Let $\mathcal{B}_C^{(a)}$ be the post-perturbation basin for $C$ in diagnostic space and let distance-to-set be defined as $d(x,\mathcal{B})=\inf_{b\in\mathcal{B}} d(x,b)$. Define
+Homeostasis\ixsq{homeostasis!defined} is one especially strong maintenance pattern: a return-to-basin (of attraction) claim. Let $\mathcal{B}_C^{(a)}$ be the post-perturbation operational proxy for $C$'s basin in diagnostic space and let distance-to-set be defined as $d(x,\mathcal{B})=\inf_{b\in\mathcal{B}} d(x,b)$. Define
 \[
 \tau_{\delta}(a)=\inf\left\{h\geq 0 : \mathbb{E}\!\left[d\!\left(X_{t+h}^{(a)},\mathcal{B}_C^{(a)}\right)\right]\leq \delta\right\}.
 \]
-For local perturbations, $\mathcal{B}_C^{(a)}=\mathcal{B}_C$; for structural perturbations, basin geometry may shift. For admissible perturbations $a$, homeostasis holds when $\tau_{\delta}(a)$ is finite for a pre-registered tolerance $\delta$. This operationalizes homeostasis proper (active corrective return toward the maintained basin, with exact-state return as a limiting case). Broader maintenance evidence (metastability, causal isolation, frozen accidents) remains part of $\mathcal{M}(C)$ but does not by itself satisfy the homeostasis check.
+For local perturbations, $\mathcal{B}_C^{(a)}=\mathcal{B}_C$; for structural perturbations, basin geometry may shift. For admissible perturbations $a$, homeostasis holds when $\tau_{\delta}(a)$ is finite for a pre-registered tolerance $\delta$. This operationalizes homeostasis proper (active corrective return toward the maintained basin, with exact-state return as a limiting case). But the book's maintenance picture is broader than homeostasis proper. Metastability, causal isolation, frozen accidents, and related stability sources remain part of $\mathcal{M}(C)$ and can satisfy the maintenance layer when independently evidenced, even if they do not yield finite return times under the relevant perturbations.
 
 \subsection*{Projectibility layer: field-relative lift}
 
@@ -68,9 +68,9 @@ This structure also links directly to existing formal threads. Martínez's infor
 For a declared field $F$, treat $C$ as an HPC category only if all four checks pass:
 \begin{enumerate}
     \item Profile: $S_F(C)$ exceeds a pre-registered null margin under the declared $D_F,\Sigma_F$ regime.
-    \item Homeostasis: $\tau_{\delta}(a)<\infty$ across the admissible perturbation set.
+    \item Maintenance: either homeostasis proper is supported by $\tau_{\delta}(a)<\infty$ across the admissible perturbation set, or broader maintenance evidence identifies a stabilizing route robust enough to explain persistence under the declared $D_F,\Sigma_F$ regime.
     \item Projectibility: $\Pi_F(C)>0$ on held-out data.
-    \item Ablation: removing a candidate stabilizer worsens at least one target by a pre-registered margin: $S_F(C)$ decreases, $\Pi_F(C)$ decreases, or $\tau_{\delta}(a)$ increases (possibly to $\infty$).
+    \item Ablation/perturbation: removing or weakening a candidate stabilizer worsens at least one target by a pre-registered margin: $S_F(C)$ decreases, $\Pi_F(C)$ decreases, or, where homeostasis proper is at issue, $\tau_{\delta}(a)$ increases (possibly to $\infty$).
 \end{enumerate}
 
 \subsection*{Failure-mode mapping}
