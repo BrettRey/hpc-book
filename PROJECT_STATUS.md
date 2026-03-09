@@ -1,7 +1,31 @@
 # HPC Book Project Status
 
-**Date**: March 3, 2026
+**Date**: March 8, 2026
 **Current Phase**: 17-chapter draft + postscript; new Ch 13 (sign language anaphor) planned. Revision/polish phase.
+
+### Session (Mar 8, 2026, night): Ch 15 texture + structure overhaul
+
+- ✅ **6 review-board revisions** implemented (projectibility loop, phenomenology table as prediction, code-switching example, constitutive/regulative, evidence count fix, convergence paragraph)
+- ✅ **Aphoristic texture pass**: calibrated against response paper (target 4-5 on 1-10 scale). Merged short paragraphs, softened 8 sealed zingers, added forward connectors throughout.
+- ✅ **Section consolidation**: 9 sections → 5. Merged claim+projectibility, detector+phenomenology, dual-role+evidence+verdict. 16 pages no longer fragmented.
+- ✅ **Point fixes**: "prototypically" hedge, zipper flip, "goes zip", upright brackets in garden-path, comparative illusion explanation expanded with "more countries than I have" contrast.
+- ✅ **Style audit**: clean. 3 paragraphs over 100 words (all intentional merges).
+- **Note**: `\olang{}` not defined in HPC book preamble — use `\mention{}` for foreign examples.
+
+### Session (Mar 8, 2026): Ch 15 projectibility revision
+
+- ✅ **New §14.2 "What grammaticality lets you do"** (~450 words): novel deployment, analogical extension, repair (post-hoc + inhibitive), productivity asymmetries
+- ✅ **Transition fix**: projection-first hierarchy explicit at §14.3 opening
+- ✅ **Phenomenology link**: normative register connected to projection (§\ref back to §14.2)
+- ✅ **Appropriateness landing**: rewritten from detector to projectible coupling
+- ✅ **Dual-role expansion**: parenthetical replaced with 3 sentences of projection evidence
+- ✅ **HPC audit**: projectibility paragraph back-references §14.2's four evidence types
+- ✅ **Conclusion rewrite**: lands on projection ("more than a feeling"), forward ref reframed as coupling alignment
+- ✅ **Relevance-theory comparison**: reframed around differential predictions (not granularity)
+- ✅ **Inhibitive repair example** added (Brett's suggestion): adaptiveability → adaptability
+- ✅ **HPC audit (check-hpc)**: GREEN — projectibility gap closed
+- ✅ **Style audit**: clean (one paragraph-length flag, non-blocking)
+- **Issue:** Full 3-pass build produced unopenable PDF; single-pass rebuild also wouldn't open. May need investigation.
 
 ### Session (Mar 3, 2026): Ch 5 revisions from ChatGPT 5.2 feedback
 
