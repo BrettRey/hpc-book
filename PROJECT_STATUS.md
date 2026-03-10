@@ -1,7 +1,25 @@
 # HPC Book Project Status
 
-**Date**: March 8, 2026
+**Date**: March 9, 2026
 **Current Phase**: 17-chapter draft + postscript; new Ch 13 (sign language anaphor) planned. Revision/polish phase.
+
+### Session (Mar 9, 2026, night #2): Ch 15 editorial polish + appropriateness reframing
+
+- ✅ **Table 15.2**: wrapped with `p{}` columns; value glosses improved (morpheme: "grammatical or lexical contribution"; construction: "structural meaning")
+- ✅ **Correctio reduction**: inventoried ~18 instances, cut 9 (kept only those blocking specific misreadings)
+- ✅ **"fake a question" fix**: rising intonation on a declarative IS a genuine question, not a fake one
+- ✅ **Appropriateness reframing (3 passes)**: removed genus-species structure that subordinated grammaticality to appropriateness. Now parallel couplings throughout: heading ("Parallel couplings"), intro paragraph, and L189 paragraph that still treated appropriateness as genus. Table caption updated.
+- ✅ **Contraction fix**: "it is nothing but" → "it's nothing but"
+- ✅ **Build verified**: 468 pages, single-pass compile clean.
+
+### Session (Mar 9, 2026, night): Ch 15 review-response + rhythm pass
+
+- ✅ **Structural revision (review response):** 4 orphaned labels fixed (Projectibility → subsection, phenomenology label deleted, empirical → new §15.5 "Predictions and evidence", HPC audit → subsection). Chapter now has 6 clean sections.
+- ✅ **Content revisions:** Circularity fix (system-property vs judgment-mechanism distinguished, spinning-top cut from §15.4 only), softened 4 overreach points (comparative illusion, "catastrophically worse", ERP paragraph, embedded-inversion claims), three registers lowered to heuristic.
+- ✅ **3 new sources:** Lu et al. 2024 (satiation meta-analysis), Scott-Phillips 2025 (intuitions as byproduct), Dąbrowska 2018 (individual differences). Vagnino & Walker reframed with analogy hedge. All in references-local.bib.
+- ✅ **Aphoristic rhythm pass:** 9 mic-drop sentences folded into surrounding analytical prose. Looking forward opening rewritten from keynote slides to analytical recap. Kept 4 genuinely pivotal compressions. Long analytical sentences (L64, L178, L281) left intact.
+- ✅ **Build verified:** 488 pages, all citations resolved, style audit clean.
+- **Decision:** Analytical prose sets the baseline rhythm; short sentences reserved for pivotal turns only (1-2 per section, not 1 per paragraph).
 
 ### Session (Mar 8, 2026, night): Ch 15 texture + structure overhaul
 
