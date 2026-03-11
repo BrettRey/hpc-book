@@ -52,22 +52,22 @@ This workflow orients you to the project. Use it at the start of any new session
 1. **Read CLAUDE.md** — Project overview, build commands, house style summary
 
 2. **Review project structure**
-   - `chapters/` — LaTeX chapter files (chapter01.tex through chapter14.tex)
+   - `chapters/` — LaTeX chapter files (chapter01.tex through chapter18.tex), plus `postscript.tex` and appendices
    - `figures/` — PNG/PDF figures
    - `notes/` — planning docs, master notes, handoffs
    - `.house-style/` — preamble.tex and style-guide.md
    - `literature/` — Symlink to centralized literature folder
 
 3. **Key files**
-   - `main.tex` — book root (chapters are commented out for fast compilation)
+   - `hpc-book.tex` — book root (comment out chapters for faster compilation when needed)
    - `references.bib` — bibliography
-   - `synopsis.md` — 880-word book summary
+   - `notes/synopsis.md` — book summary
 
-4. **Current state** (as of Dec 11, 2025)
-   - Part I (Ch 1-3): Drafted and revised
-   - Part II (Ch 4-8): Drafted, citations refined
-   - Part III (Ch 9-12): Outlined only
-   - Next: Pre-draft planning for Ch 9 (Countability)
+4. **Current state** (as of March 11, 2026)
+   - Full manuscript: 18 chapters + postscript drafted
+   - Current phase: revision/polish
+   - Recent emphasis: Ch 15 review-agent revision pass and final-structure cleanup
+   - Current cleanup targets: shared-bib field normalization and table/figure line-break hygiene
 
 ## Process Reminders
 
@@ -92,8 +92,8 @@ latexmk hpc-book.tex
 ⚠️ Always use `latexmk` to keep build artifacts in `build/` folder.
 
 **Git:**
-- Branch: `restructure-part-1`
-- Commit after significant changes, push at session end
+- Check the live branch/worktree with `git status --short --branch`
+- Commit after significant changes when requested
 
 ## Quick Status (Zero-Token)
 

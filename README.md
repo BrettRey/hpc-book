@@ -1,8 +1,10 @@
-# Language Without Essences: The Metaphysics of Linguistic Categories
+# Words That Won't Hold Still: How Linguistic Categories Work
 
 ## Project Overview
 
-This repository contains the working materials for a linguistics/philosophy book that argues many core linguistic categories are **Homeostatic Property Cluster (HPC)** kinds rather than essentialist or purely nominalist constructs.
+This repository contains the working materials for a linguistics/philosophy book that argues many core linguistic categories are **Homeostatic Property Cluster (HPC)** categories rather than essentialist or purely nominalist constructs.
+
+**Current manuscript status:** 18 chapters plus a postscript are drafted, and the project is in revision/polish phase.
 
 ### Core Thesis
 
@@ -24,22 +26,24 @@ The book is organized in four parts:
 - Diagnosis of essentialism's failures
 - Why nominalism/prototype theory leaves stability unexplained
 
-### Part II: The Solution
-- Projectibility: Why categories support induction
-- Homeostasis: What holds property clusters together
-- Failure modes: Recognizing when you don't have a kind
+### Part II: The Fix
+- Categories without essences
+- Discrete from continuous
+- The Stabilizers
+- Projectibility and the good bet
+- Failure modes
 
-### Part III: Applications
+### Part III: Categories Reconsidered
 - Countability
-- Definiteness
-- Word classes
-- Constructions
-- Phonemes and register (non-grammar worked cases)
-- Long-standing puzzles resolved
+- Definiteness and deitality
+- Lexical categories and their maintenance
+- Pro-form gender
+- Where the hands point
+- The category zipper
 
 ### Part IV: What Changes
-- What this means for grammaticality
-- Social stabilization of categories
+- Grammaticality itself
+- The social stabilization of kinds
 - How categories travel (cross-domain extension)
 - The gauntlet: predictions, stress tests, defeat conditions
 
@@ -47,18 +51,18 @@ The book is organized in four parts:
 
 ```
 .
-├── chapters/          # Book chapters (LaTeX or Markdown)
+├── chapters/          # Book chapters, postscript, appendices
 ├── code/              # Code examples, analyses, demonstrations
 ├── figures/           # Diagrams, charts, visualizations
 ├── build/             # Compiled outputs (PDFs, etc.)
 ├── notes/             # Research notes, outlines, drafts
-├── synopsis.html      # Current synopsis (~880 words)
+├── notes/synopsis.md  # Current synopsis
 └── README.md          # This file
 ```
 
 ## Key Concepts
 
-- **HPC (Homeostatic Property Cluster) kinds**: Categories defined by bundled properties maintained by underlying mechanisms
+- **HPC (Homeostatic Property Cluster) categories**: Categories defined by bundled properties maintained by underlying mechanisms
 - **Mechanism**: Causal processes that stabilize category properties (acquisition, entrenchment, interactive alignment, iterated transmission)
 - **Gradience without arbitrariness**: Fuzzy boundaries are compatible with real, stable categories
 - **Projectibility**: Categories support inductive generalizations because mechanisms are real and stable
@@ -73,35 +77,39 @@ The book is organized in four parts:
 - [x] **Chapter 1** drafted and revised (introduction to HPC framework)
 - [x] **Chapter 2** drafted and revised (essentialism critique, Aristotle rehabilitation)
 - [x] **Chapter 3** drafted and revised (nominalist retreat, Shilluk example)
-- [x] **Chapter 4** drafted and revised (HPC introduction)
-- [x] **Chapter 5** drafted and revised (discreteness problem, hyperreal formalization)
-- [x] **Chapter 6** drafted and revised (projectibility)
-- [x] **Chapter 7** drafted and revised (The Stabilisers, quotatives case study)
-- [x] **Chapter 8** drafted (Failure Modes, thin/fat/negative taxonomy)
+- [x] **Chapter 4** drafted and revised (Categories without essences)
+- [x] **Chapter 5** drafted and revised (Discrete from continuous)
+- [x] **Chapter 6** drafted and revised (The Stabilizers)
+- [x] **Chapter 7** drafted and revised (Projectibility and the good bet)
+- [x] **Chapter 8** drafted and revised (Failure modes, thin/fat/negative taxonomy)
 - [x] **Chapter 9** drafted and revised (Countability)
-- [x] **Chapter 10** drafted and revised (Definiteness)
-- [x] **Chapter 11** plan approved
-- [x] **Chapter 12** drafted and revised (non-grammar worked cases: phonemes, register)
-- [ ] **Chapter 13** planning ready (Grammaticality itself, double-copula vignette)
-- [ ] **Chapter 14** outlined (Methodological consequences)
+- [x] **Chapter 10** drafted and revised (Definiteness and Deitality)
+- [x] **Chapter 11** complete (lexical categories and their maintenance)
+- [x] **Chapter 12** drafted and revised (Pro-form Gender)
+- [x] **Chapter 13** drafted and revised (Where the hands point)
+- [x] **Chapter 14** drafted and revised (The category zipper)
+- [x] **Chapter 15** drafted and heavily revised (Grammaticality itself)
+- [x] **Chapter 16** drafted and revised (The Social Stabilization of Kinds)
+- [x] **Chapter 17** drafted and revised (How categories travel)
+- [x] **Chapter 18** drafted and revised (The gauntlet)
+- [x] **Postscript** integrated
 - [x] Figures for Chapters 1, 2, 5
 - [x] Bibliography (~3700 entries)
 - [x] Glossary redone (Dec 26)
 
 ## Next Steps
 
-1. Draft Chapter 13 (Grammaticality itself)
-2. Draft Chapter 14 (Methodological consequences)
-3. Integrate cross-chapter forward/back references
-4. Final polish pass on completed chapters
-5. Compile and review complete manuscript
+1. Normalize remaining shared-bib style fields (`journal`/`journaltitle`, `address`/`location`)
+2. Run a targeted overfull/underfull pass on high-visibility tables and figures
+3. Continue revision/polish passes on implication chapters
+4. Compile and review the full manuscript
 
 ## Editorial Notes
 
-- **Chapter 4 restored (Dec 4, 2025)** as HPC introduction chapter. The book now has 14 chapters total across 4 parts.
+- The manuscript currently stands at 18 chapters plus a postscript across 4 parts.
 - This is a **foundations book** that makes explicit the metaphysics underlying linguistic category theory. The goal is not just to provide a useful analytical tool, but to correctly characterize what linguistic categories *are* and transform what questions linguists ask and what answers they accept.
-- **Chapter 5 revision (Dec 4, 2025)**: Consolidated from draft, implemented advisory board feedback (Boyd, Rosch, Dąbrowska, Jackendoff, Godfrey-Smith, Croft), and addressed Packaging Board concerns (front-loading, defensiveness, paragraph load, syntactic texture). Renamed to "Discrete from continuous" to reflect focus.
+- Current work is refinement rather than drafting: review-board integration, bibliography normalization, and layout cleanup.
 
 ---
 
-*Last updated: January 8, 2026*
+*Last updated: March 11, 2026*

@@ -1,7 +1,17 @@
 # HPC Book Project Status
 
-**Date**: March 9, 2026
-**Current Phase**: 17-chapter draft + postscript; new Ch 13 (sign language anaphor) planned. Revision/polish phase.
+**Date**: March 11, 2026
+**Current Phase**: Full 18-chapter draft + postscript in repository. Revision/polish phase.
+
+### Session (Mar 10, 2026, morning): Ch 15 review-agent revision + Geoff email
+
+- ✅ **11 review agents recovered**: 5 Codex GPT-5.4 (Bender, Goldberg, Godfrey-Smith, Dupré, Heath) + 6 Sonnet (projectibility audit GREEN, Millikan, Hacking, Dąbrowska, John Joseph, Jackendoff). All gave Revise & Resubmit except projectibility audit (GREEN).
+- ✅ **Revision plan**: 14 items across 3 priority tiers, written to `notes/ch15-revision-plan-2026-03-10.md`.
+- ✅ **All 14 items implemented**: circularity grounded diachronically (7/11 agents), community grain operationalized (8/11), evidential hedges tightened (6/11), "She don't like it" community-indexed, HPC audit expanded, contingency/convergence strengthened, relevance-theory divergent prediction added, discreteness qualified as derived, licensing clarified as emergent, bootstrapping note added, biological analogy limited, social mechanism forward-pointer strengthened, Reynolds 2026 flagged as unpublished, structural meaning acknowledged as research-programme task.
+- ✅ **Shipped**: `c0b69f0` → master. 494 pages, +57 lines net.
+- ✅ **Snapshot**: `snapshots/hpc-book-2026-03-10.pdf`
+- ✅ **Geoff Pullum email**: Sent Chs 4 + 15 for feedback (not Ch 2 — preaching to the choir). Asked about framework clarity, data handling, and essentialist smuggling.
+- **Decision**: Ch 4 + Ch 15 is the right pairing for syntacticians: framework + application, not problem + application.
 
 ### Session (Mar 9, 2026, night #2): Ch 15 editorial polish + appropriateness reframing
 
@@ -641,8 +651,8 @@
 - ✅ `.gitignore` configured for LaTeX/academic project
 - ✅ README.md with project overview
 - ✅ Synopsis finalized (~880 words)
-- ✅ Core thesis articulated (HPC kinds for linguistic categories)
-- ✅ 15-chapter structure (4 parts: Problem, Fix, Categories, Implications) — gender chapter added Dec 26
+- ✅ Core thesis articulated (HPC categories for linguistic categories)
+- ✅ 18-chapter structure + postscript (4 parts: The Problem, The Fix, Categories Reconsidered, What Changes)
 - ✅ House style guide established (`.house-style/style-guide.md`)
 - ✅ LaTeX preamble with custom macros (`.house-style/preamble.tex`)
 - ✅ Bibliography system (BibTeX with Biber backend)
@@ -650,22 +660,28 @@
 ### Part I: The Problem (Chapters 1-3)
 - ✅ **Ch 1**: Words That Won't Hold Still - drafted and revised
 - ✅ **Ch 2**: Essentialism and its Discontents - drafted and revised
-- ✅ **Ch 3**: What We Haven't Been Asking - drafted and revised
+- ✅ **Ch 3**: What we haven't been asking - drafted and revised
 
 ### Part II: The Fix (Chapters 4-8)
-- ✅ **Ch 4**: Homeostatic Property Clusters - drafted and revised
-- ✅ **Ch 5**: Discrete from Continuous - drafted and revised
-- ✅ **Ch 6**: Projectibility and the Good Bet - drafted and revised
-- ✅ **Ch 7**: The Stabilisers - drafted and revised (quotatives case study)
-- ✅ **Ch 8**: Failure Modes - drafted (thin/fat/negative taxonomy)
+- ✅ **Ch 4**: Categories without essences - drafted and revised
+- ✅ **Ch 5**: Discrete from continuous - drafted and revised
+- ✅ **Ch 6**: The Stabilizers - drafted and revised (quotatives case study)
+- ✅ **Ch 7**: Projectibility and the good bet - drafted and revised
+- ✅ **Ch 8**: Failure modes - drafted and revised (thin/fat/negative taxonomy)
 
 ### Part III: Categories Reconsidered (Chapters 9-14)
 - ✅ **Ch 9**: Countability - drafted and refined (LEGO/emoji hooks, cross-linguistic section)
-- ✅ **Ch 10**: Definiteness - complete and audited (Dec 25, 2025)
-- ✅ **Ch 11**: Lexical Categories - complete (Feb 20, 2026). Six sections, review board, rhetorical polish.
-- ✅ **Ch 12**: Gender and the Maintenance Spectrum - drafted (Dec 26), polished (Jan 8). Ship/table hook, transparent→entrenched spectrum, English/French/German cases.
-- ✅ **Ch 13**: Sign-language discourse reference - drafted and revised as a modality stress test for the Part III diagnostics.
+- ✅ **Ch 10**: Definiteness and Deitality - complete and audited (Dec 25, 2025)
+- ✅ **Ch 11**: Lexical categories and their maintenance - complete (Feb 20, 2026). Six sections, review board, rhetorical polish.
+- ✅ **Ch 12**: Pro-form Gender - drafted (Dec 26), polished (Jan 8). Ship/table hook, transparent→entrenched spectrum, English/French/German cases.
+- ✅ **Ch 13**: Where the hands point - drafted and revised as the Part III modality stress test.
 - ✅ **Ch 14**: The category zipper - drafted and revised as Part III synthesis across the coupling gradient.
+
+### Part IV: What Changes (Chapters 15-18)
+- ✅ **Ch 15**: Grammaticality itself - drafted and revised; major review-agent pass completed March 2026.
+- ✅ **Ch 16**: The Social Stabilization of Kinds - drafted and revised.
+- ✅ **Ch 17**: How categories travel - drafted and revised.
+- ✅ **Ch 18**: The gauntlet - drafted and revised.
 
 ### Session Work (Dec 15-16, 2025)
 - ✅ Terminology standardized: "linguistic categories" throughout (Chs 2, 3, 5)
@@ -705,13 +721,12 @@
 
 ## Current Phase
 
-**All 18 chapters drafted**. Book is now in revision/polish phase.
+**All 18 chapters plus the postscript are drafted**. The book is now in revision/polish phase.
 
 ### Outstanding structural work
-- Peirce integration on `projectibility-pivot` branch (Chs 7, 9-14 touched; not yet merged)
-- Remaining visualizations and figures
-- Review-board passes for chapters that haven't had them
 - Bib style-field normalization (`journal`/`journaltitle`, `address`/`location`)
+- Targeted overfull/underfull pass on high-visibility tables and figures (especially Chs 9, 13, and 16)
+- Remaining review/polish passes where useful
 
 ## Key Decisions Made
 
@@ -723,13 +738,14 @@
 
 ## Key Files
 
-- `chapters/chapter01.tex` through `chapter08.tex` - Main chapter files
+- `chapters/chapter01.tex` through `chapter18.tex` - Main chapter files
+- `chapters/postscript.tex` - Closing postscript
 - `notes/CHAPTER_OUTLINE.md` - Authoritative chapter structure
 - `notes/chapter07-master.md` - Consolidated Ch 7 notes (pattern for other chapters)
 - `notes/chapter08-master.md` - Ch 8 failure modes notes
+- `notes/ch13-sign-anaphor-scope.md` - Scope and literature plan for the sign-language chapter
 - `notes/oconnor-and-hpc-levels.md` - O'Connor engagement and grain-of-analysis
-- `literature/stack.tex` - Standalone paper manuscript (HPC stack)
-- `synopsis.md` - Book synopsis
+- `notes/synopsis.md` - Book synopsis
 
 ## Recent Session Work (Dec 11, 2025)
 
@@ -752,11 +768,11 @@
 
 ## Research Questions Addressed
 
-- ✅ What are the specific mechanisms for linguistic categories? (Ch 7)
-- ✅ How do we empirically test for homeostasis? (Ch 7 robustness tests)
+- ✅ What are the specific mechanisms for linguistic categories? (Ch 6)
+- ✅ How do we empirically test for homeostasis? (Chs 6, 8, Appendix A)
 - ✅ What are the clearest failure cases? (Ch 8 thin/fat/negative)
-- ✅ How does this interact with formal/computational approaches? (Ch 8 criteria)
-- ✅ What predictions does HPC make that essentialism doesn't? (Ch 6, 7)
+- ✅ How does this interact with formal/computational approaches? (Ch 5, Ch 18, Appendix A)
+- ✅ What predictions does HPC make that essentialism doesn't? (Chs 5, 7, 18)
 
 ---
 

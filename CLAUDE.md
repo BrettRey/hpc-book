@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a LaTeX academic book project: "Words That Won't Hold Still: How Linguistic Categories Work" (working title also: "Language Without Essences"). The core thesis is that many core linguistic categories (with grammar as the main focus) are Homeostatic Property Cluster (HPC) kinds rather than essentialist or nominalist constructs.
+This is a LaTeX academic book project: "Words That Won't Hold Still: How Linguistic Categories Work" (working title also: "Language Without Essences"). The core thesis is that many core linguistic categories (with grammar as the main focus) are Homeostatic Property Cluster (HPC) categories rather than essentialist or nominalist constructs.
 
 ## Build Commands
 
@@ -21,14 +21,14 @@ python code/validate_bib.py
 
 The project uses XeLaTeX (not pdfLaTeX) because of fontspec and the Charis SIL font.
 
-**Compilation workflow:** Most chapters in `hpc-book.tex` are commented out for faster compilation. Uncomment the chapter(s) you're working on.
+**Compilation workflow:** `hpc-book.tex` currently includes the full manuscript. For faster iteration, comment out the chapter(s) you're not working on.
 
 **Build artifacts:** The `.latexmkrc` routes output to `build/`. Use `latexmk -xelatex hpc-book.tex` for the recommended workflow. Snapshots are saved to `snapshots/` with date stamps.
 
 ## Repository Structure
 
-- `hpc-book.tex` - Main document; chapters are commented out for faster compilation
-- `chapters/` - Individual chapter files (chapter01.tex through chapter15.tex)
+- `hpc-book.tex` - Main document; full manuscript currently included
+- `chapters/` - Individual chapter files (chapter01.tex through chapter18.tex), plus `postscript.tex` and appendices
 - `.house-style/preamble.tex` - All LaTeX packages and custom macros
 - `.house-style/style-guide.md` - Writing conventions (MUST READ before editing prose)
 - `references.bib` - Bibliography (BibTeX format, Biber backend)
@@ -70,7 +70,7 @@ When building agent-based models or simulations for the book:
 - `notes/*-analysis.md` - Literature analysis files
 - `notes/board-*-*.md` - Advisory board feedback simulations
 - `PROJECT_LOG.md` — Session history with meta-reflection on what works
-- `synopsis.md` - Book synopsis (~880 words)
+- `notes/synopsis.md` - Book synopsis
 
 ## House Style Conventions
 
@@ -132,28 +132,30 @@ Uses `biblatex` with APA style and `natbib=true`:
 
 ## Book Structure
 
-Four parts, 17 chapters:
+Four parts, 18 chapters plus a postscript:
 1. **Part I: The Problem** (Ch 1-3) - Essentialism's failures, nominalism's limits
-2. **Part II: The Fix** (Ch 4-8) - HPC kinds, discreteness, projectibility, homeostasis, failure modes
-3. **Part III: Categories Reconsidered** (Ch 9-13) - Countability, definiteness, lexical categories, gender, the stack
-4. **Part IV: What Changes** (Ch 14-17) - Grammaticality, social stabilization, cross-domain extension, the gauntlet
+2. **Part II: The Fix** (Ch 4-8) - HPC categories, discreteness, stabilizers, projectibility, failure modes
+3. **Part III: Categories Reconsidered** (Ch 9-14) - Countability, definiteness/deitality, lexical categories, pro-form gender, sign-language anaphor, the zipper
+4. **Part IV: What Changes** (Ch 15-18) - Grammaticality, social stabilization, cross-domain extension, the gauntlet
 
-### Current Chapter Status (Jan 2026)
+### Current Chapter Status (Mar 2026)
 - **Ch 1-3**: Drafted and revised (Part I: The Problem)
-- **Ch 4**: Drafted and revised (HPC introduction)
+- **Ch 4**: Drafted and revised (Categories without essences)
 - **Ch 5**: Drafted and revised (discreteness problem)
-- **Ch 6**: Drafted and revised (projectibility)
-- **Ch 7**: Drafted and revised (The Stabilisers)
-- **Ch 8**: Drafted and revised (Failure Modes)
+- **Ch 6**: Drafted and revised (The Stabilizers)
+- **Ch 7**: Drafted and revised (Projectibility and the good bet)
+- **Ch 8**: Drafted and revised (Failure modes)
 - **Ch 9**: Drafted and revised (Countability) - ABM complete
-- **Ch 10**: Drafted and revised (Definiteness)
-- **Ch 11**: §11.1–§11.5 drafted; §11.6–§11.8 remaining (Lexical Categories)
+- **Ch 10**: Drafted and revised (Definiteness and Deitality)
+- **Ch 11**: Complete (Feb 20, 2026). Six sections, review board, rhetorical polish
 - **Ch 12**: Drafted and revised (Pro-form Gender)
-- **Ch 13**: Restructuring decided — synthesis chapter; coupling coda goes in Ch 8 (see `notes/ch13-restructuring-analysis.md`)
-- **Ch 14**: Drafted and revised (Grammaticality itself)
-- **Ch 15**: Drafted and revised (Social stabilization)
-- **Ch 16**: Drafted and revised (How Categories Travel)
-- **Ch 17**: Drafted and revised (The Gauntlet)
+- **Ch 13**: Drafted and revised (Where the hands point; sign-language anaphor chapter)
+- **Ch 14**: Drafted and revised (The category zipper)
+- **Ch 15**: Drafted and heavily revised (major review-agent pass completed Mar 10, 2026)
+- **Ch 16**: Drafted and revised (The Social Stabilization of Kinds)
+- **Ch 17**: Drafted and revised (How categories travel)
+- **Ch 18**: Drafted and revised (The gauntlet)
+- **Postscript + appendices**: Integrated
 
 ## Chapter Development Workflow
 
@@ -206,7 +208,7 @@ When describing categories, do NOT use single-property gatekeeping tests for mem
 
 ## Key Concepts
 
-- **HPC (Homeostatic Property Cluster) kinds**: Categories defined by property clusters maintained by causal mechanisms
+- **HPC (Homeostatic Property Cluster) categories**: Categories defined by property clusters maintained by causal mechanisms
 - **Mechanisms**: Acquisition, entrenchment, interactive alignment, iterated transmission
 - **Projectibility**: Why categories support inductive generalizations
 - **Failure modes**: Thin clustering, fat clustering, negative diagnosis
@@ -217,7 +219,7 @@ When describing categories, do NOT use single-property gatekeeping tests for mem
 - **Do NOT use "kind"** — the book uses "category" throughout.
 - **Fat/thin/negative** diagnose CLASSES, not categories. A fat class is not a category. A thin class may be a category in some languages but not others (adjective).
 - **IRE words** = interrogative, relative, exclamative. The cross-linguistic functional family. Distinct from *wh*-words (English phonology, includes *how* which lacks *wh*-) and *question words* (too narrow — relative *who* isn't interrogative).
-- **Coupling** (Ch 8 coda, Ch 13 synthesis): hard-coupled (phonemes) → loose-coupled (grammatical categories) → re-unified (constructions).
+- **Coupling** (Ch 8 coda, Ch 14 synthesis): hard-coupled (phonemes) → loose-coupled (grammatical categories) → re-unified (constructions).
 
 ## Session Layout (Startup & Shutdown)
     

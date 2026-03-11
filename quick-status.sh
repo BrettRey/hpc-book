@@ -26,21 +26,18 @@ echo -e "${BOLD}  HPC BOOK STATUS${NC}"
 echo -e "${BOLD}═══════════════════════════════════════════════════════════════${NC}"
 
 # ─────────────────────────────────────────────────────────────────
-# CHAPTER STATUS (from PROJECT_STATUS.md)
+# CHAPTER STATUS
 # ─────────────────────────────────────────────────────────────────
 echo ""
 echo -e "${BLUE}▶ CHAPTER STATUS${NC}"
 echo "─────────────────────────────────────────────────────────────────"
 
-# Extract Part/Chapter status from the Completed and In Progress sections
+echo "  Manuscript: 18 chapters + postscript"
 echo "  Part I (Ch 1-3):  Complete"
 echo "  Part II (Ch 4-8): Complete"
-echo ""
-echo "  Part III:"
-grep -E "^- (✅|🔄).*\*\*Ch (9|10|11|12)\*\*" PROJECT_STATUS.md 2>/dev/null | sed 's/^- /    /' | head -4
-echo ""
-echo "  Part IV:"
-grep -E "^- 🔄.*Ch (13|14|15)" PROJECT_STATUS.md 2>/dev/null | sed 's/^- /    /' | head -3
+echo "  Part III (Ch 9-14): Complete"
+echo "  Part IV (Ch 15-18): Complete"
+echo "  Revision/polish: Active"
 
 # ─────────────────────────────────────────────────────────────────
 # CURRENTLY ACTIVE (uncommented in hpc-book.tex)
