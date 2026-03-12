@@ -28,7 +28,7 @@ Neither answer explains how categories can be *real* without having *essences*.
 
 Biology faced the same puzzle. Darwin demolished the idea that species have essences — fixed, unchanging forms. Yet species are obviously real. Nobody has ever been mauled by a merely convenient label.
 
-The philosopher Richard Boyd offered a solution: *homeostatic property clusters*. A species isn't defined by a checklist of necessary properties. It's a bundle of features that tend to co-occur — fur patterns, behaviours, genetic markers — held together by causal mechanisms like interbreeding, shared ecology, and gene flow. The boundaries are fuzzy at the edges, but the cluster is real because *something maintains it*.
+The philosopher Richard Boyd offered a solution: *homeostatic property clusters*. A species isn't defined by a checklist of necessary properties. It's a bundle of features that tend to co-occur — fur patterns, behaviours, genetic markers — held together by causal mechanisms like interbreeding, shared ecology, and gene flow. The edges can be hard to locate exactly, but the cluster is real because *something maintains it*.
 
 Think of a spinning top. It stays upright not because it's rigid but because it's *moving*. The spin resists perturbation. Push it slightly, and gyroscopic forces pull it back toward its path. Stop the spin, and the top falls.
 
