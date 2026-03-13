@@ -1,6 +1,6 @@
 {
   "experiment": "volcano_drift",
-  "generated_utc": "2026-02-22T01:21:58.382212+00:00",
+  "generated_utc": "2026-03-12T22:58:22.279039+00:00",
   "parameters": {
     "T": 24000,
     "boundary_similarity_scale": 1.5,
@@ -18,10 +18,16 @@
   "seed": 42,
   "summary": {
     "boundary_similarity_post_mean": 0.9862483004924442,
+    "consensus_post_late_mean": 0.8588562434690982,
     "consensus_post_mean": 0.8462595340443017,
-    "semantic_effect_post_mean": 0.014920134945929262,
-    "semantic_effect_pre_mean": 0.2880206174873404,
+    "semantic_effect_post_late_mean": 0.08783814300681152,
+    "semantic_effect_post_mean": 0.07845725216640462,
+    "semantic_effect_pre_late_mean": 0.3489944268329193,
+    "semantic_effect_pre_mean": 0.29390380495824187,
+    "w_final": 0.08251892467348146,
+    "w_post_late_mean": 0.0832508877787286,
     "w_post_mean": 0.09092659667657023,
+    "w_pre_late_mean": 0.09306595568327015,
     "w_pre_mean": 0.05230488153071462
   }
 }

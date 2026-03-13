@@ -8,7 +8,7 @@ Core idea:
 - Agents learn a binary category boundary on a continuous cue x ("shape"/"distributional cue")
 - There is also a semantic cue s ∈ {+1,-1} that is informative pre-switch and uninformative post-switch
 - We track:
-    A) semantic cue effect and mean learned semantic weight w
+    A) semantic cue effect in agent predictions and mean learned semantic weight w
     B) persistence of the category: boundary similarity to the pre-switch mean, and consensus (sharpness)
 
 Deliberate simplifications:
@@ -160,9 +160,9 @@ def simulate(n_agents: int = 200,
     # Track pre-switch reference boundary mean (estimated online)
     pre_switch_theta_means: List[float] = []
 
-    # Rolling window for semantic cue effect
+    # Rolling window for semantic cue effect in agent output
     buf_s: List[int] = []
-    buf_y: List[int] = []
+    buf_pred: List[int] = []
 
     # Series
     times = []
@@ -191,6 +191,8 @@ def simulate(n_agents: int = 200,
         )
         freeze_w = freeze_w_after_switch and (t >= t_switch)
         freeze_theta = freeze_theta_after_switch and (t >= t_switch)
+        # Record the agent's current output before learning from this token.
+        y_hat = 1 if a.predict_prob(x, s) >= 0.5 else 0
         a.update(x, s, y, freeze_theta=freeze_theta, freeze_w=freeze_w)
 
         # Collect reference stats
@@ -202,18 +204,19 @@ def simulate(n_agents: int = 200,
 
         # rolling semantic effect
         buf_s.append(s)
-        buf_y.append(y)
+        buf_pred.append(y_hat)
         if len(buf_s) > window:
-            buf_s.pop(0); buf_y.pop(0)
+            buf_s.pop(0); buf_pred.pop(0)
 
         if (t % window) == 0 and t > 0:
             times.append(t)
 
-            # semantic cue effect: P(y=1|s=+)-P(y=1|s=-) in the recent window
+            # semantic cue effect in model output:
+            # P(pred=1|s=+) - P(pred=1|s=-) in the recent window.
             s_arr = np.array(buf_s)
-            y_arr = np.array(buf_y)
-            p_pos = y_arr[s_arr == +1].mean() if np.any(s_arr == +1) else np.nan
-            p_neg = y_arr[s_arr == -1].mean() if np.any(s_arr == -1) else np.nan
+            pred_arr = np.array(buf_pred)
+            p_pos = pred_arr[s_arr == +1].mean() if np.any(s_arr == +1) else np.nan
+            p_neg = pred_arr[s_arr == -1].mean() if np.any(s_arr == -1) else np.nan
             sem_effect.append(p_pos - p_neg)
 
             w_mean.append(ww.mean())
@@ -258,11 +261,10 @@ def make_main_plot(series: Dict[str, np.ndarray], t_switch: int, out_png: str):
 
     # A: semantic mechanism
     ax[0].plot(times, series["sem_effect"], color=PALETTE["vermillion"], lw=1.6, label="Semantic cue effect")
-    ax[0].plot(times, series["w_mean"], color=PALETTE["blue"], lw=1.6, label=r"Mean semantic coefficient $w$")
     ax[0].axvline(t_switch, color=PALETTE["gray"], linestyle="--", alpha=0.6)
     ax[0].set_title("A. Decline of semantic mechanism", loc="left")
     ax[0].set_xlabel("Interactions (Time)")
-    ax[0].set_ylabel("Effect / Coefficient")
+    ax[0].set_ylabel("Cue effect")
     ax[0].legend(loc="lower left", frameon=False)
 
     # B: persistence
@@ -323,14 +325,27 @@ def _series_summary(series: Dict[str, np.ndarray], t_switch: int = 12000) -> Dic
     times = series["times"]
     pre_mask = times < t_switch
     post_mask = times >= t_switch
+    tail = 5
+
+    def _tail_mean(values: np.ndarray, mask: np.ndarray) -> float:
+        subset = np.asarray(values[mask], dtype=float)
+        if subset.size == 0:
+            return float("nan")
+        return float(np.nanmean(subset[-tail:]))
 
     return {
         "semantic_effect_pre_mean": float(np.nanmean(series["sem_effect"][pre_mask])) if np.any(pre_mask) else float("nan"),
         "semantic_effect_post_mean": float(np.nanmean(series["sem_effect"][post_mask])) if np.any(post_mask) else float("nan"),
+        "semantic_effect_pre_late_mean": _tail_mean(series["sem_effect"], pre_mask),
+        "semantic_effect_post_late_mean": _tail_mean(series["sem_effect"], post_mask),
         "w_pre_mean": float(np.nanmean(series["w_mean"][pre_mask])) if np.any(pre_mask) else float("nan"),
         "w_post_mean": float(np.nanmean(series["w_mean"][post_mask])) if np.any(post_mask) else float("nan"),
+        "w_pre_late_mean": _tail_mean(series["w_mean"], pre_mask),
+        "w_post_late_mean": _tail_mean(series["w_mean"], post_mask),
+        "w_final": float(series["w_mean"][-1]) if len(series["w_mean"]) else float("nan"),
         "boundary_similarity_post_mean": float(np.nanmean(series["boundary_sim"])) if len(series["boundary_sim"]) else float("nan"),
         "consensus_post_mean": float(np.nanmean(series["consensus"][post_mask])) if np.any(post_mask) else float("nan"),
+        "consensus_post_late_mean": _tail_mean(series["consensus"], post_mask),
     }
 
 
@@ -738,9 +753,6 @@ def main():
             shutil.copy2(src, dst)
             print(f"Copied: {dst}")
 
-        times = series["times"]
-        pre_mask = times < t_switch_eff
-        post_mask = times >= t_switch_eff
         _save_manifest(
             "volcano_drift_experiment_manifest.json",
             {
@@ -760,14 +772,7 @@ def main():
                     "window": args.window,
                     "boundary_similarity_scale": 1.5,
                 },
-                "summary": {
-                    "semantic_effect_pre_mean": float(np.nanmean(series["sem_effect"][pre_mask])) if np.any(pre_mask) else None,
-                    "semantic_effect_post_mean": float(np.nanmean(series["sem_effect"][post_mask])) if np.any(post_mask) else None,
-                    "w_pre_mean": float(np.nanmean(series["w_mean"][pre_mask])) if np.any(pre_mask) else None,
-                    "w_post_mean": float(np.nanmean(series["w_mean"][post_mask])) if np.any(post_mask) else None,
-                    "boundary_similarity_post_mean": float(np.nanmean(series["boundary_sim"])) if len(series["boundary_sim"]) else None,
-                    "consensus_post_mean": float(np.nanmean(series["consensus"][post_mask])) if np.any(post_mask) else None,
-                },
+                "summary": _series_summary(series, t_switch=t_switch_eff),
             },
         )
 
@@ -790,7 +795,7 @@ def main():
             reliabilities=reliabilities,
         )
 
-    if args.exp == "sensitivity":
+    if args.exp in ("sensitivity", "all"):
         _run_seed_sensitivity(
             seed_start=args.seed_start,
             seed_end=args.seed_end,
